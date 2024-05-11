@@ -84,11 +84,11 @@ function HotDealTodayCard() {
                         Product Price
                     </productPrice>
                 </productNamePrice>
+                {/* <h5> Popularity Status </h5> */}
+                {/* <h5> Product Details & CTA </h5> */}
                 <button style={buttonStyles}>
                     Add to Cart
                 </button>
-                <h5> Popularity Status </h5>
-                <h5> Product Details & CTA </h5>
             </productDetails>
         </hotDealCard>
     );
