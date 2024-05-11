@@ -15,7 +15,7 @@ function PopularCategoriesSection() {
             alignSelf: 'stretch',
         }}>
             <div> 
-                <SectionHeader />
+                <SectionHeader text="Popular Categories" />
             </div>
             <categoryCards style={{
                 display: "flex",
