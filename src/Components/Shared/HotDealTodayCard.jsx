@@ -1,7 +1,7 @@
 import HotDealCardImage from "/src/assets/Images/HotDealCardImage.png";
 
 
-// Card Styles
+// CARD STYLES
 const cardStyles = {
     display: "flex",
     width: "160px",
@@ -142,6 +142,8 @@ const productDetailsStyles = {
     alignSelf: 'stretch'
 };
 
+
+//CARD FUNCTIONS
 function HotDealTodayCard() {
     const progress = 50;
 
