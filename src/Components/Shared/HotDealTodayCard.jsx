@@ -1,5 +1,6 @@
 import HotDealCardImage from "/src/assets/Images/HotDealCardImage.png";
 
+
 // Card Styles
 const cardStyles = {
     display: "flex",
@@ -103,6 +104,13 @@ const progressDistance = {
     overflow: 'hidden', // Hide overflowing content
 };
 
+const unitsSold = {
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    gap: 'var(--spacing-system-guides-corner-radius-1, 0.25rem)',
+};
+
 const imageStyles = {
     height: "160px",
     minHeight: "160px",
@@ -135,8 +143,7 @@ const productDetailsStyles = {
 };
 
 function HotDealTodayCard() {
-    // Assuming the progress is 50% for demonstration purposes
-    const progress = 50; // Set the progress value here
+    const progress = 50;
 
     return (
         <hotDealCard style={cardStyles}>
@@ -152,7 +159,8 @@ function HotDealTodayCard() {
                     </productPrice>
                 </productNamePrice>
                 <popularityStatus style={popularityStatus}>
-                    <div style={{ ...progressDistance, width: `${progress}%`, background: 'var(--Colors-Brand-brand-primary, #DA154D)' }}></div>
+                    <progressDistance style={{ ...progressDistance, width: `${progress}%`, background: 'var(--Colors-Brand-brand-primary, #DA154D)' }}></progressDistance>
+                    {/* <h6 style={unitsSold}>  </h6> */}
                 </popularityStatus>
                 <button style={buttonStyles}> Add to Cart </button>
             </productDetails>
