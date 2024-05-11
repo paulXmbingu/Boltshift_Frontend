@@ -16,7 +16,9 @@ function HotDealTodayCard() {
         borderRadius: "var(--spacing-system-guides-corner-radius-3, 12px)",
         border: "1px solid var(--Colors-Border-border-secondary, #EAECF0)",
         background: "var(--Colors-Background-bg-primary, #FFF)",
-        overflow: "hidden"
+        overflow: "hidden",
+        transition: "transform 0.2s",
+        cursor: "pointer"
     };
 
     const imageStyles = {
