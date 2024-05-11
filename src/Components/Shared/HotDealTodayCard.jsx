@@ -21,6 +21,26 @@ function HotDealTodayCard() {
         cursor: "pointer"
     };
 
+    const productNamePrice = {
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'flex-start',
+    };
+
+    const productName = {
+        display: 'flex',
+        alignItems: 'flex-start',
+        alignContent: 'flex-start',
+        flexWrap: 'wrap',
+    };
+
+    const productPrice = {
+        display: 'flex',
+        alignItems: 'flex-start',
+        alignContent: 'flex-start',
+        flexWrap: 'wrap',
+    };
+
     const imageStyles = {
         height: "160px",
         minHeight: "160px",
@@ -56,13 +76,14 @@ function HotDealTodayCard() {
         <hotDealCard style={cardStyles}>
             <img src={HotDealCardImage} alt="Product Image" style={imageStyles} />
             <productDetails style={productDetailsStyles}>
-                <div style={{
-                    display: 'flex',
-                    flexDirection: 'column',
-                    alignItems: 'flex-start'
-                }}>
-                    <h6> Product Name </h6>
-                </div>
+                <productNamePrice style={productNamePrice}>
+                    <productName style={productName}>
+                        Product Name
+                    </productName>
+                    <productPrice style={productPrice}> 
+                        Product Price
+                    </productPrice>
+                </productNamePrice>
                 <button style={buttonStyles}>
                     Add to Cart
                 </button>
