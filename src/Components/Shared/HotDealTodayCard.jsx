@@ -1,6 +1,5 @@
 import HotDealCardImage from "/src/assets/Images/HotDealCardImage.png";
 
-
 function HotDealTodayCard() {
     return (
         <hotDealCard style={{
@@ -42,8 +41,22 @@ function HotDealTodayCard() {
                     alignItems: 'flex-start'
                 }}>
                     <h6> Product Name </h6>
-                    <h6> Product Price </h6>
+                    {/* <h6> Product Price </h6> */}
                 </div>
+                    <button style={{
+                            display: 'flex',
+                            padding: 'var(--spacing-md, 8px) var(--spacing-lg, 12px)',
+                            justifyContent: 'center',
+                            alignItems: 'center',
+                            gap: 'var(--spacing-xs, 4px)',
+                            alignSelf: 'stretch',
+                            borderRadius: 'var(--radius-md, 8px)',
+                            border: '1px solid var(--Component-colors-Components-Buttons-Secondary-button-secondary-border, #D0D5DD)',
+                            background: 'var(--Component-colors-Components-Buttons-Secondary-button-secondary-bg, #FFF)',
+                            boxShadow: '0px 1px 2px 0px rgba(16, 24, 40, 0.05)'
+                    }}>
+                        Add to Cart
+                    </button>
                 <h5> Popularity Status </h5>
                 <h5> Product Details & CTA </h5>
             </productDetails>
