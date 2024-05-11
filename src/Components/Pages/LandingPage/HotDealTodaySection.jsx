@@ -15,7 +15,7 @@ function HotDealTodaySection() {
             alignSelf: "stretch",
         }} >
             <div> 
-            <SectionHeader text="Hot Deals Today" />
+                <SectionHeader text="Hot Deals Today" />
             </div>
             <catCards style={{
                 display: "flex",
