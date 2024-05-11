@@ -1,7 +1,6 @@
 import HotDealCardImage from "/src/assets/Images/HotDealCardImage.png";
 
-
-//Card Styles
+// Card Styles
 const cardStyles = {
     display: "flex",
     width: "160px",
@@ -58,6 +57,52 @@ const productPrice = {
     flexWrap: 'wrap',
 };
 
+const currency = {
+    display: '-webkit-box',
+    WebkitBoxOrient: 'vertical',
+    WebkitLineClamp: 1,
+    overflow: 'hidden',
+    color: 'var(--colors-text-text-brand-tertiary-600, #DA154D)',
+    textAlign: 'center',
+    textOverflow: 'ellipsis',
+    fontFamily: 'Inter',
+    fontSize: '12px',
+    fontStyle: 'normal',
+    fontWeight: 400,
+    lineHeight: '18px', // 150%
+};
+
+const ammount = {
+    display: '-webkit-box',
+    WebkitBoxOrient: 'vertical',
+    WebkitLineClamp: 1,
+    overflow: 'hidden',
+    color: 'var(--colors-text-text-brand-tertiary-600, #DA154D)',
+    textOverflow: 'ellipsis',
+    fontFamily: 'Inter',
+    fontSize: '12px',
+    fontStyle: 'normal',
+    fontWeight: 500,
+    lineHeight: '18px', // 150%
+};
+
+const popularityStatus = {
+    display: 'flex',
+    alignItems: 'center',
+    gap: 'var(--spacing-system-guides-corner-radius-1, 4px)',
+    alignSelf: 'stretch',
+};
+
+const progressDistance = {
+    display: 'flex',
+    alignItems: 'center',
+    flex: '1 0 0',
+    borderRadius: 'var(--spacing-system-guides-corner-radius-2, 8px)',
+    background: 'var(--Colors-Background-bg-brand-secondary, #FDE8EE)',
+    height: '4px', // Set the height of the progress bar
+    overflow: 'hidden', // Hide overflowing content
+};
+
 const imageStyles = {
     height: "160px",
     minHeight: "160px",
@@ -90,25 +135,26 @@ const productDetailsStyles = {
 };
 
 function HotDealTodayCard() {
+    // Assuming the progress is 50% for demonstration purposes
+    const progress = 50; // Set the progress value here
+
     return (
         <hotDealCard style={cardStyles}>
             <img src={HotDealCardImage} alt="Product Image" style={imageStyles} />
             <productDetails style={productDetailsStyles}>
                 <productNamePrice style={productNamePrice}>
                     <productName style={productName}>
-                        <productNameText style={productNameText}>
-                            Wine - Montecillo Rioja Crianza
-                        </productNameText>
+                        <productNameText style={productNameText}> Wine - Montecillo Rioja Crianza </productNameText>
                     </productName>
                     <productPrice style={productPrice}> 
-                        Product Price
+                        <currency style={currency}> Kshs. </currency>
+                        <ammount style={ammount}> 92,900 </ammount>
                     </productPrice>
                 </productNamePrice>
-                {/* <h5> Popularity Status </h5> */}
-                {/* <h5> Product Details & CTA </h5> */}
-                <button style={buttonStyles}>
-                    Add to Cart
-                </button>
+                <popularityStatus style={popularityStatus}>
+                    <div style={{ ...progressDistance, width: `${progress}%`, background: 'var(--Colors-Brand-brand-primary, #DA154D)' }}></div>
+                </popularityStatus>
+                <button style={buttonStyles}> Add to Cart </button>
             </productDetails>
         </hotDealCard>
     );
