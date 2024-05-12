@@ -1,6 +1,5 @@
 import HotDealCardImage from "/src/assets/Images/HotDealCardImage.png";
 
-
 // CARD STYLES
 const cardStyles = {
     display: "flex",
@@ -141,7 +140,6 @@ const productDetailsStyles = {
     gap: `var(--spacing-system-guides-corner-radius-1, 4px)`,
     alignSelf: 'stretch'
 };
-
 
 //CARD FUNCTIONS
 function HotDealTodayCard() {
