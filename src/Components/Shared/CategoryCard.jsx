@@ -1,7 +1,7 @@
 import CategoryIcon from "/src/assets/Icons/T-shirt.svg";
 
 
-//COMPONENT STYLING
+//COMPONENTS STYLING
 const cardStyle={
     display: 'flex',
     height: 'var(--spacing-system-guides-corner-radius-32, 128px)',
