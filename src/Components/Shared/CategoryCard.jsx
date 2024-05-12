@@ -6,7 +6,7 @@ const cardStyle={
     display: 'flex',
     height: 'var(--spacing-system-guides-corner-radius-32, 128px)',
     minWidth: '128px',
-    maxWidth: 'var(--spacing-system-guides-corner-radius-40, 128px)',
+    maxWidth: 'var(--spacing-system-guides-corner-radius-40, 160px)',
     minHeight: 'var(--spacing-system-guides-corner-radius-12, 48px)',
     maxHeight: 'var(--spacing-system-guides-corner-radius-32, 128px)',
     padding: 'var(--spacing-system-guides-corner-radius-3, 12px)',
