@@ -1,4 +1,5 @@
 import HotDealCardImage from "/src/assets/Images/HotDealCardImage.png";
+import FireIcon from "/src/assets/Icons/Fire.svg";
 
 // CARD STYLES
 const cardStyles = {
@@ -139,6 +140,14 @@ const noLeft = {
     lineHeight: '1.125rem', // 150%
 };
 
+const Fire = {
+    display: 'flex',
+    width: '1rem',
+    height: '1rem',
+    justifyContent: 'center',
+    alignItems: 'center',    
+};
+
 const imageStyles = {
     height: "160px",
     minHeight: "160px",
@@ -190,6 +199,7 @@ function HotDealTodayCard() {
                 <popularityStatus style={popularityStatus}>
                     <progressDistance style={{ ...progressDistance, width: `${progress}%`, background: 'var(--Colors-Brand-brand-primary, #DA154D)' }}></progressDistance>
                     <unitsSold style={unitsSold}>
+                        <img src={FireIcon} alt="Fire Icon" style={Fire} />
                         <noSold style={noSold}> 28 </noSold>
                         <noLeft style={noLeft}> Left </noLeft>
                     </unitsSold>
