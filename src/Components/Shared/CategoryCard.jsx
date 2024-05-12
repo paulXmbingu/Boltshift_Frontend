@@ -1,7 +1,7 @@
 import CategoryIcon from "/src/assets/Icons/T-shirt.svg";
 
 
-//COMPONENTS STYLING
+//STYLING
 const cardStyle={
     display: 'flex',
     height: 'var(--spacing-system-guides-corner-radius-32, 128px)',
@@ -48,7 +48,7 @@ const categoryText={
 }
 
 
-//COMPONENT FUNCTIONALITY
+//FUNCTIONALITY
 function CategoryCard() {
     return (
         <categoryCard style={cardStyle}>
