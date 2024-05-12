@@ -1,7 +1,6 @@
 import CategoryCard from "../../Shared/CategoryCard";
 import SectionHeader from "../../Shared/SectionHeader";
 
-
 const popCatSection={
     display: 'flex',
     minWidth: 'var(--Grid-layouts-iPhone-375px, 375px)',
@@ -21,7 +20,6 @@ const categoryCards={
     alignSelf: "stretch",
     flexWrap: "wrap"
 }
-
 
 function PopularCategoriesSection() {
     return (
