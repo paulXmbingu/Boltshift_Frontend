@@ -38,6 +38,8 @@ function PopularCategoriesSection() {
                <CategoryCard />
                <CategoryCard />
                <CategoryCard />
+               <CategoryCard />
+               <CategoryCard />
             </categoryCards>
         </popCatSection>
     );
