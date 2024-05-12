@@ -203,7 +203,7 @@ function HotDealTodayCard() {
                     <unitsSold style={unitsSold}>
                         <img src={FireIcon} alt="Fire Icon" style={Fire} />
                         <noSold style={noSold}> 28 </noSold>
-                        <noLeft style={noLeft}> Left </noLeft>
+                        <noLeft style={noLeft}> Right </noLeft>
                     </unitsSold>
                 </popularityStatus>
                 <button style={buttonStyles}> Add to Cart </button>
