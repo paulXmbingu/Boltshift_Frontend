@@ -18,6 +18,7 @@ const cardStyle={
     borderRadius: 'var(--spacing-system-guides-corner-radius-2, 8px)',
     border: '1px solid var(--Colors-Border-border-secondary, #EAECF0)',
     background: 'var(--Colors-Background-bg-primary, #FFF)',
+    cursor: "pointer"
 }
 
 const categoryIcon={
