@@ -7,7 +7,7 @@ const cardStyles = {
     width: "160px",
     height: "var(--spacing-system-guides-corner-radius-72, 288px)",
     minWidth: "var(--spacing-system-guides-corner-radius-40, 160px)",
-    maxWidth: "var(--spacing-system-guides-corner-radius-40, 192px)",
+    maxWidth: "var(--spacing-system-guides-corner-radius-40, 160px)",
     minHeight: "var(--spacing-system-guides-corner-radius-72, 288px)",
     maxHeight: "var(--spacing-system-guides-corner-radius-64, 288px)",
     paddingBottom: "var(--spacing-system-guides-corner-radius-3, 12px)",
