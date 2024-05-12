@@ -189,7 +189,7 @@ function HotDealTodayCard() {
             <productDetails style={productDetailsStyles}>
                 <productNamePrice style={productNamePrice}>
                     <productName style={productName}>
-                        <productNameText style={productNameText}> Wine - Montecillo Rioja Crianza </productNameText>
+                        <productNameText style={productNameText}> Modern White Velvet 3-Seater Sofa Channel Tufted Upholstered Luxury Solid Wood </productNameText>
                     </productName>
                     <productPrice style={productPrice}> 
                         <currency style={currency}> Kshs. </currency>
