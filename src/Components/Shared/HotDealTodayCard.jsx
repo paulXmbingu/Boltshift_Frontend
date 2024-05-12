@@ -110,6 +110,35 @@ const unitsSold = {
     gap: 'var(--spacing-system-guides-corner-radius-1, 0.25rem)',
 };
 
+const noSold = {
+    display: '-webkit-box',
+    WebkitBoxOrient: 'vertical',
+    WebkitLineClamp: 1,
+    overflow: 'hidden',
+    color: 'var(--colors-text-text-brand-tertiary-600, #DA154D)',
+    textOverflow: 'ellipsis',
+    fontFamily: 'Inter',
+    fontSize: '0.75rem',
+    fontStyle: 'normal',
+    fontWeight: 400,
+    lineHeight: '1.125rem', // 150%
+};
+
+const noLeft = {
+    display: '-webkit-box',
+    WebkitBoxOrient: 'vertical',
+    WebkitLineClamp: 1,
+    overflow: 'hidden',
+    color: 'var(--colors-text-text-brand-tertiary-600, #DA154D)',
+    textAlign: 'center',
+    textOverflow: 'ellipsis',
+    fontFamily: 'Inter',
+    fontSize: '0.75rem',
+    fontStyle: 'normal',
+    fontWeight: 400,
+    lineHeight: '1.125rem', // 150%
+};
+
 const imageStyles = {
     height: "160px",
     minHeight: "160px",
@@ -160,7 +189,10 @@ function HotDealTodayCard() {
                 </productNamePrice>
                 <popularityStatus style={popularityStatus}>
                     <progressDistance style={{ ...progressDistance, width: `${progress}%`, background: 'var(--Colors-Brand-brand-primary, #DA154D)' }}></progressDistance>
-                    {/* <h6 style={unitsSold}>  </h6> */}
+                    <unitsSold style={unitsSold}>
+                        <noSold style={noSold}> 28 </noSold>
+                        <noLeft style={noLeft}> Left </noLeft>
+                    </unitsSold>
                 </popularityStatus>
                 <button style={buttonStyles}> Add to Cart </button>
             </productDetails>
