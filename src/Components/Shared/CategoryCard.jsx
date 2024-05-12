@@ -5,7 +5,7 @@ import CategoryIcon from "/src/assets/Icons/T-shirt.svg";
 const cardStyle={
     display: 'flex',
     height: 'var(--spacing-system-guides-corner-radius-32, 128px)',
-    minWidth: '128px',
+    minWidth: '160px',
     maxWidth: 'var(--spacing-system-guides-corner-radius-40, 160px)',
     minHeight: 'var(--spacing-system-guides-corner-radius-12, 48px)',
     maxHeight: 'var(--spacing-system-guides-corner-radius-32, 128px)',

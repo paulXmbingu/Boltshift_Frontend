@@ -4,7 +4,7 @@ import PopularCategoriesSection from "./PopularCategoriesSection";
 const pageLayout={
     display: "flex",
     minWidth: "var(--Grid-layouts-iPhone-375px, 375px)",
-    maxWidth: "1920px",
+    maxWidth: "1280px",
     flexDirection: "column",
     alignItems: "center",
     alignSelf: "stretch",
