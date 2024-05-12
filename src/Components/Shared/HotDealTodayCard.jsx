@@ -40,7 +40,7 @@ const productNameText = {
     width: '128px',
     maxWidth: 'var(--spacing-system-guides-corner-radius-32, 128px)',
     WebkitBoxOrient: 'vertical',
-    WebkitLineClamp: 1,
+    WebkitLineClamp: 2,
     overflow: 'hidden',
     color: 'var(--colors-text-text-primary-900, #101828)',
     textOverflow: 'ellipsis',
