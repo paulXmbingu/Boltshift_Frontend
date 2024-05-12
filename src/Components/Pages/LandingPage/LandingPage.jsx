@@ -1,8 +1,7 @@
 import HotDealTodaySection from "./HotDealTodaySection";
 import PopularCategoriesSection from "./PopularCategoriesSection";
 
-
-const pageStyle={
+const pageLayout={
     display: "flex",
     minWidth: "var(--Grid-layouts-iPhone-375px, 375px)",
     maxWidth: "1920px",
@@ -11,13 +10,12 @@ const pageStyle={
     alignSelf: "stretch",
 }
 
-
 function LandingPage() {
     return(
-        <div style={pageStyle}>
+        <pageLayout style={pageLayout}>
             <PopularCategoriesSection />
             <HotDealTodaySection />
-        </div>
+        </pageLayout>
     );
 };
 
