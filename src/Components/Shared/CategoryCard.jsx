@@ -1,5 +1,7 @@
 import React from 'react';
 
+
+//STYLING
 const cardStyle = {
     display: 'flex',
     height: 'var(--spacing-system-guides-corner-radius-32, 128px)',
@@ -45,6 +47,8 @@ const categoryText = {
     lineHeight: '18px', // 150%
 };
 
+
+//FUNCTIONALITY
 function CategoryCard({ icon, name, isAllCategories }) {
     const cardStyleWithShadow = {
         ...cardStyle,
