@@ -26,24 +26,33 @@ const categoryCards={
 
 //FUNCTIONALITY
 function PopularCategoriesSection() {
+
+    //DATA
+    const categories = [
+        { icon: "/src/assets/Icons/T-shirt.svg", name: "Clothing" },
+        { icon: "/src/assets/Icons/Books.svg", name: "Books" },
+        { icon: "/src/assets/Icons/Books.svg", name: "Books" },
+        { icon: "/src/assets/Icons/Books.svg", name: "Books" },
+        { icon: "/src/assets/Icons/Books.svg", name: "Books" },
+        { icon: "/src/assets/Icons/Books.svg", name: "Books" },
+        { icon: "/src/assets/Icons/Books.svg", name: "Books" },
+        { icon: "/src/assets/Icons/Books.svg", name: "Books" },
+        { icon: "/src/assets/Icons/Books.svg", name: "Books" },
+        { icon: "/src/assets/Icons/Books.svg", name: "Books" },
+        { icon: "/src/assets/Icons/Books.svg", name: "Books" },
+        { icon: "/src/assets/Icons/Books.svg", name: "Books" },
+        { icon: "/src/assets/Icons/Books.svg", name: "Books" },
+        { icon: "/src/assets/Icons/Books.svg", name: "Books" },
+    ];
+
+    //COMPONENT
     return (
         <popCatSection style={popCatSection}>
             <SectionHeader text="Popular Categories" />
             <categoryCards style={categoryCards}>
-               <CategoryCard />
-               <CategoryCard />
-               <CategoryCard />
-               <CategoryCard />
-               <CategoryCard />
-               <CategoryCard />
-               <CategoryCard />
-               <CategoryCard />
-               <CategoryCard />
-               <CategoryCard />
-               <CategoryCard />
-               <CategoryCard />
-               <CategoryCard />
-               <CategoryCard />
+                {categories.map((category, index) => (
+                    <CategoryCard key={index} icon={category.icon} name={category.name} />
+                ))}
             </categoryCards>
         </popCatSection>
     );

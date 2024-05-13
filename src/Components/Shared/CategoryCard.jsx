@@ -49,12 +49,12 @@ const categoryText={
 
 
 //FUNCTIONALITY
-function CategoryCard() {
+function CategoryCard({ icon,name }) {
     return (
         <categoryCard style={cardStyle}>
-            <img src={CategoryIcon} alt="Category Icon" style={categoryIcon} />
+            <img src={icon} alt="Category Icon" style={categoryIcon} />
             <categoryName style={categoryName}>
-                <categoryText style={categoryText}> Category Name </categoryText>
+                <categoryText style={categoryText}> {name} </categoryText>
             </categoryName>
         </categoryCard>
     );
