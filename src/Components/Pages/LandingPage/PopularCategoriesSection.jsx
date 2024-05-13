@@ -1,6 +1,19 @@
 import CategoryCard from "../../Shared/CategoryCard";
 import SectionHeader from "../../Shared/SectionHeader";
 import Clothing from "/src/assets/Icons/T-shirt.svg";
+import WomenClothing from "/src/assets/Icons/Dress.svg";
+import Watches from "/src/assets/Icons/Watch.svg";
+import HomeAppliance from "/src/assets/Icons/T-shirt.svg";
+import SportOutdoor from "/src/assets/Icons/T-shirt.svg";
+import BooksStationery from "/src/assets/Icons/T-shirt.svg";
+import HomeLiving from "/src/assets/Icons/T-shirt.svg";
+import Health from "/src/assets/Icons/T-shirt.svg";
+import Mobile from "/src/assets/Icons/T-shirt.svg";
+import Laptop from "/src/assets/Icons/T-shirt.svg";
+import Desktop from "/src/assets/Icons/T-shirt.svg";
+import Headphones from "/src/assets/Icons/T-shirt.svg";
+import Jewelery from "/src/assets/Icons/T-shirt.svg";
+import AllCategories from "/src/assets/Icons/T-shirt.svg";
 
 //STYLING
 const popCatSection={
@@ -31,8 +44,8 @@ function PopularCategoriesSection() {
     //DATA
     const categories = [
         { icon: Clothing, name: "Clothing" },
-        { icon: "/src/assets/Icons/Dress.svg", name: "Women Clothing" },
-        { icon: "/src/assets/Icons/Watch.svg", name: "Watches" },
+        { icon: WomenClothing, name: "Women Clothing" },
+        { icon: Watches, name: "Watches" },
         { icon: "/src/assets/Icons/Fork and knife with plate.svg", name: "Home Appliance" },
         { icon: "/src/assets/Icons/Soccer ball.svg", name: "Sport & Outdoor" },
         { icon: "/src/assets/Icons/Books.svg", name: "Books & Stationery" },
