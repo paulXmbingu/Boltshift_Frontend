@@ -57,6 +57,7 @@ function CategoryCard({ icon, name, isAllCategories }) {
         }),
     };
 
+    //COMPONENT
     return (
         <categoryCard style={isAllCategories ? cardStyleWithShadow : cardStyle}>
             <img src={icon} alt="Category Icon" style={categoryIcon} />

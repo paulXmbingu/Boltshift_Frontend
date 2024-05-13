@@ -16,6 +16,8 @@ import Headphones from '/src/assets/Icons/Headphone.svg';
 import Jewelery from '/src/assets/Icons/Ring.svg';
 import AllCategories from '/src/assets/Icons/Shopping bags.svg';
 
+
+//STYLING
 const popCatSection = {
     display: 'flex',
     minWidth: 'var(--Grid-layouts-iPhone-375px, 375px)',
@@ -36,7 +38,11 @@ const categoryCards = {
     flexWrap: 'wrap',
 };
 
+
+//FUNCTIONALITY
 function PopularCategoriesSection() {
+    
+    //DATA
     const categories = [
         { icon: Clothing, name: 'Clothing' },
         { icon: WomenClothing, name: 'Women Clothing' },
@@ -54,6 +60,7 @@ function PopularCategoriesSection() {
         { icon: AllCategories, name: 'All Categories' },
     ];
 
+    //COMPONENT
     return (
         <popCatSection style={popCatSection}>
             <SectionHeader text="Popular Categories" />
