@@ -5,14 +5,14 @@ import WomenClothing from "/src/assets/Icons/Dress.svg";
 import Watches from "/src/assets/Icons/Watch.svg";
 import HomeAppliance from "/src/assets/Icons/Fork and knife with plate.svg";
 import SportOutdoor from "/src/assets/Icons/Soccer ball.svg";
-import BooksStationery from "/src/assets/Icons/T-shirt.svg";
-import HomeLiving from "/src/assets/Icons/T-shirt.svg";
-import Health from "/src/assets/Icons/T-shirt.svg";
-import Mobile from "/src/assets/Icons/T-shirt.svg";
-import Laptop from "/src/assets/Icons/T-shirt.svg";
-import Desktop from "/src/assets/Icons/T-shirt.svg";
-import Headphones from "/src/assets/Icons/T-shirt.svg";
-import Jewelery from "/src/assets/Icons/T-shirt.svg";
+import BooksStationery from "/src/assets/Icons/Books.svg";
+import HomeLiving from "/src/assets/Icons/Shallow pan of food.svg";
+import Health from "/src/assets/Icons/Stethoscope.svg";
+import Mobile from "/src/assets/Icons/Mobile phone.svg";
+import Laptop from "/src/assets/Icons/Laptop.svg";
+import Desktop from "/src/assets/Icons/Desktop computer.svg";
+import Headphones from "/src/assets/Icons/Headphone.svg";
+import Jewelery from "/src/assets/Icons/Ring.svg";
 import AllCategories from "/src/assets/Icons/Shopping bags.svg";
 
 
@@ -48,15 +48,15 @@ function PopularCategoriesSection() {
         { icon: WomenClothing, name: "Women Clothing" },
         { icon: Watches, name: "Watches" },
         { icon: "/src/assets/Icons/Fork and knife with plate.svg", name: "Home Appliance" },
-        { icon: "/src/assets/Icons/Soccer ball.svg", name: "Sport & Outdoor" },
-        { icon: "/src/assets/Icons/Books.svg", name: "Books & Stationery" },
-        { icon: "/src/assets/Icons/Shallow pan of food.svg", name: "Home & Living" },
-        { icon: "/src/assets/Icons/Stethoscope.svg", name: "Health" },
-        { icon: "/src/assets/Icons/Mobile phone.svg", name: "Mobile Phones" },
-        { icon: "/src/assets/Icons/Laptop.svg", name: "Laptops" },
-        { icon: "/src/assets/Icons/Desktop computer.svg", name: "Desktop Computers" },
-        { icon: "/src/assets/Icons/Headphone.svg", name: "Headphones" },
-        { icon: "/src/assets/Icons/Ring.svg", name: "Jewelery" },
+        { icon: SportOutdoor, name: "Sport & Outdoor" },
+        { icon: BooksStationery, name: "Books & Stationery" },
+        { icon: HomeAppliance, name: "Home & Living" },
+        { icon: Health, name: "Health" },
+        { icon: Mobile, name: "Mobile Phones" },
+        { icon: Laptop, name: "Laptops" },
+        { icon: Desktop, name: "Desktop Computers" },
+        { icon: Headphones, name: "Headphones" },
+        { icon: Jewelery, name: "Jewelery" },
         { icon: AllCategories, name: "All Categories" },
     ];
 
