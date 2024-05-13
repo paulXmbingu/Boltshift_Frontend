@@ -46,7 +46,7 @@ Boltshift Marketplace is a cutting-edge e-commerce platform that combines high-q
 
 1. Clone this repository to your local machine using: 
    ```
-   git clone https://github.com/Excite-Innovation-Company/Boltshift-Frontend.git
+   git clone https://github.com/paulXmbingu/Boltshift-Frontend
    ```
 
 2. Install the required dependencies:
