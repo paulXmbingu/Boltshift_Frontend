@@ -1,4 +1,4 @@
-import HotDealCardImage from "/src/assets/Images/HotDealCardImage.png";
+import HotDealCardImage from "/src/assets/Images/Bedside.jpeg";
 import FireIcon from "/src/assets/Icons/Fire.svg";
 
 
