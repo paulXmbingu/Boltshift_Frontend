@@ -1,4 +1,4 @@
-import SecHeaderIcon from "/src/assets/Icons/Shopping bags.svg";
+import SecHeaderIcon from "/src/assets/Icons/Fire.svg";
 
 const sectionHeaderStyles = {
     container: {
