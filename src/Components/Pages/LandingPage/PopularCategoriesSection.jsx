@@ -1,6 +1,6 @@
 import CategoryCard from "../../Shared/CategoryCard";
 import SectionHeader from "../../Shared/SectionHeader";
-
+import Clothing from "/src/assets/Icons/T-shirt.svg";
 
 //STYLING
 const popCatSection={
@@ -30,7 +30,7 @@ function PopularCategoriesSection() {
 
     //DATA
     const categories = [
-        { icon: "/src/assets/Icons/T-shirt.svg", name: "Clothing" },
+        { icon: Clothing, name: "Clothing" },
         { icon: "/src/assets/Icons/Dress.svg", name: "Women Clothing" },
         { icon: "/src/assets/Icons/Watch.svg", name: "Watches" },
         { icon: "/src/assets/Icons/Fork and knife with plate.svg", name: "Home Appliance" },
