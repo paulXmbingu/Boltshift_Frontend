@@ -1,6 +1,8 @@
 import HotDealTodayCard from "../../Shared/HotDealTodayCard";
 import SectionHeader from "../../Shared/SectionHeader";
 
+
+//STYLING
 const popCatSection={
     display: "flex",
     minWidth: "var(--Grid-layouts-iPhone-375px, 375px)",
@@ -21,12 +23,12 @@ const catCards={
     flexWrap: "wrap"
 }
 
+
+//FUNCTIONALITY
 function HotDealTodaySection() {
     return (
         <hotDealTodaySection style={popCatSection} >
-            <div> 
-                <SectionHeader text="Hot Deals Today" />
-            </div>
+            <SectionHeader text="Hot Deals Today" />
             <catCards style={catCards}>
                 <HotDealTodayCard />
                 <HotDealTodayCard />
