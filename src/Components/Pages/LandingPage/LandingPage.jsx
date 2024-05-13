@@ -14,7 +14,7 @@ function LandingPage() {
     return(
         <pageLayout style={pageLayout}>
             <PopularCategoriesSection />
-            <HotDealTodaySection/>
+            <HotDealTodaySection />
         </pageLayout>
     );
 };
