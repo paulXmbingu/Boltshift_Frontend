@@ -24,7 +24,7 @@ const categoryCards={
 }
 
 
-//STYLING
+//FUNCTIONALITY
 function PopularCategoriesSection() {
     return (
         <popCatSection style={popCatSection}>
