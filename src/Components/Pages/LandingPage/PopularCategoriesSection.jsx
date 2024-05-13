@@ -30,19 +30,19 @@ function PopularCategoriesSection() {
     //DATA
     const categories = [
         { icon: "/src/assets/Icons/T-shirt.svg", name: "Clothing" },
-        { icon: "/src/assets/Icons/Books.svg", name: "Books" },
-        { icon: "/src/assets/Icons/Books.svg", name: "Books" },
-        { icon: "/src/assets/Icons/Books.svg", name: "Books" },
-        { icon: "/src/assets/Icons/Books.svg", name: "Books" },
-        { icon: "/src/assets/Icons/Books.svg", name: "Books" },
-        { icon: "/src/assets/Icons/Books.svg", name: "Books" },
-        { icon: "/src/assets/Icons/Books.svg", name: "Books" },
-        { icon: "/src/assets/Icons/Books.svg", name: "Books" },
-        { icon: "/src/assets/Icons/Books.svg", name: "Books" },
-        { icon: "/src/assets/Icons/Books.svg", name: "Books" },
-        { icon: "/src/assets/Icons/Books.svg", name: "Books" },
-        { icon: "/src/assets/Icons/Books.svg", name: "Books" },
-        { icon: "/src/assets/Icons/Books.svg", name: "Books" },
+        { icon: "/src/assets/Icons/Dress.svg", name: "Women Clothing" },
+        { icon: "/src/assets/Icons/Watch.svg", name: "Watches" },
+        { icon: "/src/assets/Icons/Fork and knife with plate.svg", name: "Home Appliance" },
+        { icon: "/src/assets/Icons/Soccer ball.svg", name: "Sport & Outdoor" },
+        { icon: "/src/assets/Icons/Books.svg", name: "Books & Stationery" },
+        { icon: "/src/assets/Icons/Shallow pan of food.svg", name: "Home & Living" },
+        { icon: "/src/assets/Icons/Stethoscope.svg", name: "Health" },
+        { icon: "/src/assets/Icons/Mobile phone.svg", name: "Mobile Phones" },
+        { icon: "/src/assets/Icons/Laptop.svg", name: "Laptops" },
+        { icon: "/src/assets/Icons/Desktop computer.svg", name: "Desktop Computers" },
+        { icon: "/src/assets/Icons/Headphone.svg", name: "Headphones" },
+        { icon: "/src/assets/Icons/Ring.svg", name: "Jewelery" },
+        { icon: "/src/assets/Icons/Shopping bags.svg", name: "All Categories" },
     ];
 
     //COMPONENT
