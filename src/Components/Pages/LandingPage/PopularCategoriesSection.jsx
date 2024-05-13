@@ -3,8 +3,8 @@ import SectionHeader from "../../Shared/SectionHeader";
 import Clothing from "/src/assets/Icons/T-shirt.svg";
 import WomenClothing from "/src/assets/Icons/Dress.svg";
 import Watches from "/src/assets/Icons/Watch.svg";
-import HomeAppliance from "/src/assets/Icons/T-shirt.svg";
-import SportOutdoor from "/src/assets/Icons/T-shirt.svg";
+import HomeAppliance from "/src/assets/Icons/Fork and knife with plate.svg";
+import SportOutdoor from "/src/assets/Icons/Soccer ball.svg";
 import BooksStationery from "/src/assets/Icons/T-shirt.svg";
 import HomeLiving from "/src/assets/Icons/T-shirt.svg";
 import Health from "/src/assets/Icons/T-shirt.svg";
@@ -13,7 +13,8 @@ import Laptop from "/src/assets/Icons/T-shirt.svg";
 import Desktop from "/src/assets/Icons/T-shirt.svg";
 import Headphones from "/src/assets/Icons/T-shirt.svg";
 import Jewelery from "/src/assets/Icons/T-shirt.svg";
-import AllCategories from "/src/assets/Icons/T-shirt.svg";
+import AllCategories from "/src/assets/Icons/Shopping bags.svg";
+
 
 //STYLING
 const popCatSection={
@@ -56,7 +57,7 @@ function PopularCategoriesSection() {
         { icon: "/src/assets/Icons/Desktop computer.svg", name: "Desktop Computers" },
         { icon: "/src/assets/Icons/Headphone.svg", name: "Headphones" },
         { icon: "/src/assets/Icons/Ring.svg", name: "Jewelery" },
-        { icon: "/src/assets/Icons/Shopping bags.svg", name: "All Categories" },
+        { icon: AllCategories, name: "All Categories" },
     ];
 
     //COMPONENT
