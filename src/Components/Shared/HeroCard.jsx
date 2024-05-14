@@ -1,5 +1,5 @@
 import React from 'react';
-import HeroImage from "/src/assets/Images/Sofa.jpg";
+import HeroImage from "../../assets/Images/Sofa.jpg";
 
 const heroCardStyle={
     display: 'flex',
@@ -12,7 +12,9 @@ const heroCardStyle={
     flexWrap: 'wrap',
     borderRadius: 'var(--spacing-system-guides-corner-radius-3, 12px)',
     border: '1px solid var(--Gray-200, #EAECF0)',
-    background: 'var(--Gradient-Linear-Color-20, linear-gradient(45deg, #E9DEFA 0%, #FFF6EB 100%))'    
+    background: 'var(--Gradient-Linear-Color-20, linear-gradient(45deg, #E9DEFA 0%, #FFF6EB 100%))',
+    overflow: 'hidden'
+
 }
 
 const productNamePrice={
@@ -38,7 +40,6 @@ const productImage={
     gap: '20px',
     flex: '1 0 0',
     background: 'var(--Base-White, #FFF)',
-    overflow: 'hidden'
 }
 
 
@@ -46,9 +47,8 @@ function HeroCard() {
     return(
         <div style={heroCardStyle}>
             <div style={productNamePrice}>
-                <div>
-                    Product Name Price 
-                </div>
+                <div> Product Details & CTA </div>
+                <div> Pagination </div>
             </div>
             <div style={productImage}>
                 <img src={HeroImage} alt="Hero Image" />
