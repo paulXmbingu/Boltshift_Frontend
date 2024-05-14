@@ -4,7 +4,6 @@ import CTAbutton from './CTAButton';
 import TailIcon from "../../assets/Icons/chevron-right.svg";
 import DiscountTag from './DiscountTag';
 
-
 //STYLING
 const heroCardStyle={
     display: 'flex',
@@ -133,8 +132,6 @@ const prodDescriptionText={
     fontWeight: 400,
     lineHeight: '20px' /* 142.857% */    
 }
-
-
 
 //FUNCTIONALITY
 function HeroCard() {
