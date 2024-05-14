@@ -34,7 +34,14 @@ const productImage={
     gap: '20px',
     flex: '1 0 0',
     background: 'var(--Base-White, #FFF)',
+    position: 'relative'
 }
+
+const favoriteButtonStyle = {
+    position: 'absolute',
+    top: '0',
+    right: '0'
+};
 
 const productNamePrice={
     display: 'flex',
@@ -147,7 +154,7 @@ function HeroCard() {
                 <HeroPagination />
             </div>
             <div style={productImage}>
-                <FavoriteButton />
+                <FavoriteButton style={favoriteButtonStyle} />
                 <img src={HeroImage} alt="Hero Image" />
             </div>
         </div>

@@ -8,7 +8,8 @@ const favStyling={
     alignItems: 'flex-start',
     gap: '8px',
     position: 'absolute',
-    right: '0px'
+    right: '0px',
+    cursor: 'pointer'
 }
 
 const featuredIcon={
