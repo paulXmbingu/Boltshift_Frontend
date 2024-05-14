@@ -76,15 +76,13 @@ const productName={
 }
 
 const productNameText={
-    display: 'flex',
-    flexDirection: 'column',
-    justifyContent: 'center',
+    display: '-webkit-box',
+    WebkitBoxOrient: 'vertical',
+    WebkitLineClamp: 5,
     flex: '1 0 0',
-    alignSelf: 'stretch',
     overflow: 'hidden',
     color: 'var(--colors-text-text-brand-secondary-700, #BF1343)',
     textOverflow: 'ellipsis',
-    whiteSpace: 'nowrap',
     
     /* Display sm/Semibold */
     fontFamily: 'Inter',
@@ -125,26 +123,33 @@ const prodDescriptionText={
 function HeroCard() {
     return(
         <div style={heroCardStyle}>
-
             <div style={productNamePrice}>
                 <div style={detailsCTA}>
                     <DiscountTag />
                     <div style={nameDescription}>
                         <div style={productName}>
                             <div style={productNameText}>
-                                Modern White Velvet 3-Seater Sofa Channel Tufted Upholstered Luxury Solid Wood 
+                                {`Modern White Velvet 3-Seater Sofa Channel Tufted Upholstered Luxury Solid Wood`}
                             </div>
                         </div>
                         <div style={prodDescription}>
                             <div style={prodDescriptionText}>
-                            This velvet couch is a sophisticated and trendy sofa that focuses on furniture because of its sumptuous velvet quilted fabric and strong wood legs. Make the living area feel like a million bucks with this couch because this three-seated couch is sleek and trendy, converting any living area into a fashionable environment. This sofa's robust wood construction ensures it will provide years of reliable service. With its long-lasting support and deep comfort, this couch is the perfect choice for your home. As for the inside, it's comprised of solid, high-resilience foam, a substance chosen for its ability to return to its former shape swiftly and with a nice greeting.                            </div>
+                                {`This velvet couch is a sophisticated and trendy sofa that focuses on 
+                                furniture because of its sumptuous velvet quilted fabric and strong wood legs. 
+                                Make the living area feel like a million bucks with this couch because this
+                                three-seated couch is sleek and trendy, converting any living area into a 
+                                fashionable environment. This sofa's robust wood construction ensures it will 
+                                provide years of reliable service. With its long-lasting support and deep comfort, 
+                                this couch is the perfect choice for your home. As for the inside, it's comprised 
+                                of solid, high-resilience foam, a substance chosen for its ability to return to its 
+                                former shape swiftly and with a nice greeting.`}
+                            </div>
                         </div>
                     </div>
                     <CTAbutton label="Shop Now" tailIcon={TailIcon} />
                 </div>
                 <HeroPagination />
             </div>
-
             <div style={productImage}>
                 <img src={HeroImage} alt="Hero Image" />
             </div>
