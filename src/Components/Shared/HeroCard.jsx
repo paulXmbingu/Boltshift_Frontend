@@ -128,9 +128,7 @@ function HeroCard() {
                     <DiscountTag />
                     <div style={nameDescription}>
                         <div style={productName}>
-                            <div style={productNameText}>
-                                {`Modern White Velvet 3-Seater Sofa Channel Tufted Upholstered Luxury Solid Wood`}
-                            </div>
+                            <div style={productNameText}> {`Modern White Velvet 3-Seater Sofa Channel Tufted Upholstered Luxury Solid Wood`} </div>
                         </div>
                         <div style={prodDescription}>
                             <div style={prodDescriptionText}>
@@ -145,9 +143,7 @@ function HeroCard() {
                                 former shape swiftly and with a nice greeting.`}
                             </div>
                         </div>
-                    </div>
-                    <CTAbutton label="Shop Now" tailIcon={TailIcon} />
-                </div>
+                    </div> <CTAbutton label="Shop Now" tailIcon={TailIcon} /> </div>
                 <HeroPagination />
             </div>
             <div style={productImage}>
