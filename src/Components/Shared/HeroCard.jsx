@@ -1,3 +1,6 @@
+import React from 'react';
+import HeroImage from "/src/assets/Images/Sofa.jpg";
+
 const heroCardStyle={
     display: 'flex',
     justifyContent: 'flex-end',
@@ -22,6 +25,7 @@ const productNamePrice={
     gap: 'var(--spacing-system-guides-corner-radius-10, 40px)',
     flex: '1 0 0'    
 }
+
 const productImage={
     display: 'flex',
     height: 'var(--Base-4-Premitives-148, 592px)',
@@ -33,15 +37,22 @@ const productImage={
     alignItems: 'center',
     gap: '20px',
     flex: '1 0 0',
-    background: 'var(--Base-White, #FFF)'    
+    background: 'var(--Base-White, #FFF)',
+    overflow: 'hidden'
 }
 
 
 function HeroCard() {
     return(
         <div style={heroCardStyle}>
-            <div style={productNamePrice}> Product Name Price </div>
-            <div style={productImage}> Product Image </div>
+            <div style={productNamePrice}>
+                <div>
+                    Product Name Price 
+                </div>
+            </div>
+            <div style={productImage}>
+                <img src={HeroImage} alt="Hero Image" />
+            </div>
         </div>
     );
 };
