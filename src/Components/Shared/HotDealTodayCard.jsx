@@ -1,5 +1,7 @@
+import React from "react";
 import HotDealCardImage from "/src/assets/Images/Perfume.jpeg";
 import FireIcon from "/src/assets/Icons/Fire.svg";
+import FavoriteButton from "./FavoriteButton"
 
 
 //STYLING
@@ -187,6 +189,7 @@ function HotDealTodayCard() {
 
     return (
         <div style={cardStyles}>
+            {/* <FavoriteButton /> */}
             <img src={HotDealCardImage} alt="Product Image" style={imageStyles} />
             <div style={productDetailsStyles}>
                 <div style={productNamePrice}>
