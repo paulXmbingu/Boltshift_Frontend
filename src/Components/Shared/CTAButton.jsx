@@ -1,7 +1,5 @@
 import React from "react";
 
-
-
 //STYLING
 const buttonStyling={
     color: 'var(--Base-White, #FFF)',
@@ -32,15 +30,14 @@ const tailIconStyle={
     height: 'var(--Base-4-Premitives-5, 20px)'    
 }
 
-
 //FUNCTIONALITY
 function CTAbutton({label,tailIcon}) {
     return(
         <button style={buttonStyling}>
-            {label}
-            {tailIcon && <div style={tailIconStyle}>
+            {label} {tailIcon &&
+            <div style={tailIconStyle}>
                 <img src={tailIcon} alt="Tail Icon"  />
-                </div>}
+            </div>}
         </button>
     );
 };
