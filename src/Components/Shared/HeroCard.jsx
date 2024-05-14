@@ -19,7 +19,6 @@ const heroCardStyle={
     border: '1px solid var(--Gray-200, #EAECF0)',
     background: 'var(--Gradient-Linear-Color-20, linear-gradient(45deg, #E9DEFA 0%, #FFF6EB 100%))',
     overflow: 'hidden'
-
 }
 
 const productImage={
