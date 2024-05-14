@@ -1,6 +1,9 @@
 import React from 'react';
 import HeroImage from "../../assets/Images/Sofa.jpg";
 
+
+
+//STYLING
 const heroCardStyle={
     display: 'flex',
     justifyContent: 'flex-end',
@@ -42,13 +45,120 @@ const productImage={
     background: 'var(--Base-White, #FFF)',
 }
 
+const detailsCTA={
+    display: 'flex',
+    maxWidth: 'var(--spacing-system-guides-corner-radius-72, 288px)',
+    flexDirection: 'column',
+    justifyContent: 'center',
+    alignItems: 'flex-start',
+    gap: 'var(--spacing-system-guides-corner-radius-12, 48px)',
+    alignSelf: 'stretch'    
+}
 
+const pagination={
+    display: 'flex',
+    padding: 'var(--spacing-md, 8px)',
+    justifyContent: 'center',
+    alignItems: 'center',
+    gap: 'var(--spacing-lg, 12px)',
+    borderRadius: 'var(--radius-full, 9999px)',
+    background: 'var(--Component-colors-Alpha-alpha-white-90, rgba(255, 255, 255, 0.90))',
+    
+    /* Backdrop blurs/backdrop-blur-sm */
+    backdropFilter: 'blur(4px)'    
+}
+
+const CTAbutton={
+    color: 'var(--Base-White, #FFF)',
+    /* Text md/Semibold */
+    fontFamily: 'Inter',
+    fontSize: '16px',
+    fontStyle: 'normal',
+    fontWeight: 600,
+    lineHeight: '24px' /* 150% */,
+    display: 'flex',
+    minWidth: 'var(--Base-4-Premitives-72, 288px)',
+    maxWidth: 'var(--Base-4-Premitives-72, 288px)',
+    padding: '12px 20px',
+    justifyContent: 'center',
+    alignItems: 'center',
+    gap: '8px',
+    alignSelf: 'stretch',
+    borderRadius: '8px',
+    border: '1px solid var(--colors-foreground-fg-brand-primary-600, #DA154D)',
+    background: 'var(--colors-foreground-fg-brand-primary-600, #DA154D)',
+    
+    /* Shadow/xs */
+    boxShadow: '0px 1px 2px 0px rgba(16, 24, 40, 0.05)'    
+}
+
+const tag={
+    display: 'flex',
+    padding: 'var(--spacing-xs, 4px) 10px',
+    alignItems: 'center',
+    gap: '3px',
+    borderRadius: 'var(--radius-sm, 6px)',
+    border: '1px solid var(--Gradient-Linear-Color-69, #F74FAC)',
+    background: 'var(--Base-White, #FFF)'       
+}
+
+const nameDescription={
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'center',
+    alignItems: 'flex-start',
+    gap: '8px',
+    alignSelf: 'stretch'           
+}
+
+const productName={
+    display: 'flex',
+    minWidth: 'var(--Base-4-Premitives-72, 288px)',
+    maxWidth: 'var(--Base-4-Premitives-72, 288px)',
+    alignItems: 'flex-start',
+    alignSelf: 'stretch',
+    flexWrap: 'wrap'    
+}
+
+const productNameText={
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'center',
+    flex: '1 0 0',
+    alignSelf: 'stretch',
+    overflow: 'hidden',
+    color: 'var(--colors-text-text-brand-secondary-700, #BF1343)',
+    textOverflow: 'ellipsis',
+    whiteSpace: 'nowrap',
+    
+    /* Display sm/Semibold */
+    fontFamily: 'Inter',
+    fontSize: '30px',
+    fontStyle: 'normal',
+    fontWeight: 600,
+    lineHeight: '38px' /* 126.667% */    
+}
+
+
+
+//FUNCTIONALITY
 function HeroCard() {
     return(
         <div style={heroCardStyle}>
             <div style={productNamePrice}>
-                <div> Product Details & CTA </div>
-                <div> Pagination </div>
+                <div style={detailsCTA}>
+                    <button style={tag}> Open Sales Discount 50% </button>
+                    <div style={nameDescription}>
+                        <div style={productName}>
+                            <div style={productNameText}>
+                                Modern White Velvet 3-Seater Sofa Channel Tufted Upholstered Luxury Solid Wood 
+                            </div>
+                        </div>
+                        <div> Product Description </div>
+                    </div>
+                    <button style={CTAbutton}> Shop Now </button>
+                </div>
+                <div style={pagination}> Pagination </div>
             </div>
             <div style={productImage}>
                 <img src={HeroImage} alt="Hero Image" />
