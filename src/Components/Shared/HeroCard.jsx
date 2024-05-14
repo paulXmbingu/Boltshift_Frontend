@@ -132,8 +132,8 @@ function HeroCard() {
         <div style={heroCardStyle}>
             <div style={productNamePrice}>
                 <div style={detailsCTA}>
-                    <DiscountTag />
                     <div style={nameDescription}>
+                        <DiscountTag />
                         <div style={productName}>
                             <div style={productNameText}> {`Modern White Velvet 3-Seater Sofa Channel Tufted Upholstered Luxury Solid Wood`} </div>
                         </div>
