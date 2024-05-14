@@ -133,7 +133,7 @@ function HeroCard() {
                         </div>
                         <div> Product Description </div>
                     </div>
-                    <CTAbutton label='Shop Now' icon='TailIcon' />
+                    <CTAbutton label="Shop Now" tailIcon={TailIcon} />
                 </div>
                 <div style={pagination}> Pagination </div>
             </div>

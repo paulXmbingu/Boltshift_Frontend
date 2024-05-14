@@ -34,12 +34,12 @@ const tailIconStyle={
 
 
 //FUNCTIONALITY
-function CTAbutton({label,icon}) {
+function CTAbutton({label,tailIcon}) {
     return(
         <button style={buttonStyling}>
             {label}
-            {icon && <div style={tailIconStyle}>
-                <img src={icon} alt="Tail Icon"  />
+            {tailIcon && <div style={tailIconStyle}>
+                <img src={tailIcon} alt="Tail Icon"  />
                 </div>}
         </button>
     );
