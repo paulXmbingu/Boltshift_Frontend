@@ -1,6 +1,7 @@
 import React from 'react';
 import HeroImage from "../../assets/Images/Sofa.jpg";
 import CTAbutton from './CTAButton';
+import TailIcon from "../../assets/Icons/chevron-right.svg";
 
 
 //STYLING
@@ -132,7 +133,7 @@ function HeroCard() {
                         </div>
                         <div> Product Description </div>
                     </div>
-                    <CTAbutton />
+                    <CTAbutton label='Shop Now' icon='TailIcon' />
                 </div>
                 <div style={pagination}> Pagination </div>
             </div>

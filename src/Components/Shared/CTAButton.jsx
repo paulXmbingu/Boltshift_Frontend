@@ -1,4 +1,5 @@
-import TailIcon from "../../assets/Icons/chevron-right.svg";
+import React from "react";
+
 
 
 //STYLING
@@ -26,20 +27,20 @@ const buttonStyling={
     boxShadow: '0px 1px 2px 0px rgba(16, 24, 40, 0.05)'    
 }
 
-const tailIcon={
+const tailIconStyle={
     width: 'var(--Base-4-Premitives-5, 20px)',
     height: 'var(--Base-4-Premitives-5, 20px)'    
 }
 
 
 //FUNCTIONALITY
-function CTAbutton() {
+function CTAbutton({label,icon}) {
     return(
         <button style={buttonStyling}>
-            Shop Now
-            <div style={tailIcon}>
-                <img src={TailIcon} alt="Tail Icon"  />
-            </div>
+            {label}
+            {icon && <div style={tailIconStyle}>
+                <img src={icon} alt="Tail Icon"  />
+                </div>}
         </button>
     );
 };
