@@ -18,14 +18,16 @@ const paginationDot={
     width: '8px',
     height: '8px',
     borderRadius: 'var(--radius-full, 9999px)',
-    background: 'var(--Colors-Background-bg-quaternary, #EAECF0)'    
+    background: 'var(--Colors-Background-bg-quaternary, #EAECF0)',
+    cursor: 'pointer',
 }
 
 const paginationDotCurrent={
     width: '40px',
     height: '6px',
     borderRadius: 'var(--radius-full, 9999px)',
-    background: 'var(--Colors-Foreground-fg-brand-primary_alt, #DA154D)'
+    background: 'var(--Colors-Foreground-fg-brand-primary_alt, #DA154D)',
+    cursor: 'pointer',
 }
 
 //FUNCTIONALITY

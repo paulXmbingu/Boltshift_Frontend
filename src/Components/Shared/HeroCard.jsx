@@ -40,7 +40,7 @@ const productImage={
 const favoriteButtonStyle = {
     position: 'absolute',
     top: '0',
-    right: '0'
+    right: ''
 };
 
 const productNamePrice={

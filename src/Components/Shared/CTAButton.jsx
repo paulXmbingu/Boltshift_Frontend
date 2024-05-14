@@ -22,7 +22,8 @@ const buttonStyling={
     background: 'var(--colors-foreground-fg-brand-primary-600, #DA154D)',
     
     /* Shadow/xs */
-    boxShadow: '0px 1px 2px 0px rgba(16, 24, 40, 0.05)'    
+    boxShadow: '0px 1px 2px 0px rgba(16, 24, 40, 0.05)',  
+    cursor: 'pointer',
 }
 
 const tailIconStyle={
