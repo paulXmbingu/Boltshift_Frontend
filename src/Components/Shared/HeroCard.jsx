@@ -2,6 +2,7 @@ import React from 'react';
 import HeroImage from "../../assets/Images/Sofa.jpg";
 import CTAbutton from './CTAButton';
 import TailIcon from "../../assets/Icons/chevron-right.svg";
+import DiscountTag from './DiscountTag';
 
 
 //STYLING
@@ -21,17 +22,6 @@ const heroCardStyle={
 
 }
 
-const productNamePrice={
-    display: 'flex',
-    minWidth: 'var(--Base-4-Premitives-72, 288px)',
-    padding: 'var(--spacing-system-guides-corner-radius-24, 96px) 0px var(--spacing-system-guides-corner-radius-6, 24px) 0px',
-    flexDirection: 'column',
-    justifyContent: 'center',
-    alignItems: 'center',
-    gap: 'var(--spacing-system-guides-corner-radius-10, 40px)',
-    flex: '1 0 0'    
-}
-
 const productImage={
     display: 'flex',
     height: 'var(--Base-4-Premitives-148, 592px)',
@@ -44,6 +34,17 @@ const productImage={
     gap: '20px',
     flex: '1 0 0',
     background: 'var(--Base-White, #FFF)',
+}
+
+const productNamePrice={
+    display: 'flex',
+    minWidth: 'var(--Base-4-Premitives-72, 288px)',
+    padding: 'var(--spacing-system-guides-corner-radius-24, 96px) 0px var(--spacing-system-guides-corner-radius-6, 24px) 0px',
+    flexDirection: 'column',
+    justifyContent: 'center',
+    alignItems: 'center',
+    gap: 'var(--spacing-system-guides-corner-radius-10, 40px)',
+    flex: '1 0 0'    
 }
 
 const detailsCTA={
@@ -67,16 +68,6 @@ const pagination={
     
     /* Backdrop blurs/backdrop-blur-sm */
     backdropFilter: 'blur(4px)'    
-}
-
-const tag={
-    display: 'flex',
-    padding: 'var(--spacing-xs, 4px) 10px',
-    alignItems: 'center',
-    gap: '3px',
-    borderRadius: 'var(--radius-sm, 6px)',
-    border: '1px solid var(--Gradient-Linear-Color-69, #F74FAC)',
-    background: 'var(--Base-White, #FFF)'       
 }
 
 const nameDescription={
@@ -116,27 +107,59 @@ const productNameText={
     lineHeight: '38px' /* 126.667% */    
 }
 
+const prodDescription={
+    display: 'flex',
+    height: '55px',
+    minWidth: 'var(--Base-4-Premitives-72, 288px)',
+    maxWidth: 'var(--Base-4-Premitives-72, 288px)',
+    flexDirection: 'column',
+    alignItems: 'flex-start',
+    alignSelf: 'stretch'    
+}
+
+const prodDescriptionText={
+    display: '-webkit-box',
+    WebkitBoxOrient: 'vertical',
+    WebkitLineClamp: 3,
+    alignSelf: 'stretch',
+    overflow: 'hidden',
+    color: 'var(--Gray-600, #475467)',
+    textOverflow: 'ellipsis',
+    
+    /* Text sm/Regular */
+    fontFamily: 'Inter',
+    fontSize: '14px',
+    fontStyle: 'normal',
+    fontWeight: 400,
+    lineHeight: '20px' /* 142.857% */    
+}
+
 
 
 //FUNCTIONALITY
 function HeroCard() {
     return(
         <div style={heroCardStyle}>
+
             <div style={productNamePrice}>
                 <div style={detailsCTA}>
-                    <button style={tag}> Open Sales Discount 50% </button>
+                    <DiscountTag />
                     <div style={nameDescription}>
                         <div style={productName}>
                             <div style={productNameText}>
                                 Modern White Velvet 3-Seater Sofa Channel Tufted Upholstered Luxury Solid Wood 
                             </div>
                         </div>
-                        <div> Product Description </div>
+                        <div style={prodDescription}>
+                            <div style={prodDescriptionText}>
+                            This velvet couch is a sophisticated and trendy sofa that focuses on furniture because of its sumptuous velvet quilted fabric and strong wood legs. Make the living area feel like a million bucks with this couch because this three-seated couch is sleek and trendy, converting any living area into a fashionable environment. This sofa's robust wood construction ensures it will provide years of reliable service. With its long-lasting support and deep comfort, this couch is the perfect choice for your home. As for the inside, it's comprised of solid, high-resilience foam, a substance chosen for its ability to return to its former shape swiftly and with a nice greeting.                            </div>
+                        </div>
                     </div>
                     <CTAbutton label="Shop Now" tailIcon={TailIcon} />
                 </div>
                 <div style={pagination}> Pagination </div>
             </div>
+
             <div style={productImage}>
                 <img src={HeroImage} alt="Hero Image" />
             </div>
