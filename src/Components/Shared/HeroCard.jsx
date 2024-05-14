@@ -1,6 +1,6 @@
 import React from 'react';
 import HeroImage from "../../assets/Images/Sofa.jpg";
-
+import CTAbutton from './CTAButton';
 
 
 //STYLING
@@ -68,30 +68,6 @@ const pagination={
     backdropFilter: 'blur(4px)'    
 }
 
-const CTAbutton={
-    color: 'var(--Base-White, #FFF)',
-    /* Text md/Semibold */
-    fontFamily: 'Inter',
-    fontSize: '16px',
-    fontStyle: 'normal',
-    fontWeight: 600,
-    lineHeight: '24px' /* 150% */,
-    display: 'flex',
-    minWidth: 'var(--Base-4-Premitives-72, 288px)',
-    maxWidth: 'var(--Base-4-Premitives-72, 288px)',
-    padding: '12px 20px',
-    justifyContent: 'center',
-    alignItems: 'center',
-    gap: '8px',
-    alignSelf: 'stretch',
-    borderRadius: '8px',
-    border: '1px solid var(--colors-foreground-fg-brand-primary-600, #DA154D)',
-    background: 'var(--colors-foreground-fg-brand-primary-600, #DA154D)',
-    
-    /* Shadow/xs */
-    boxShadow: '0px 1px 2px 0px rgba(16, 24, 40, 0.05)'    
-}
-
 const tag={
     display: 'flex',
     padding: 'var(--spacing-xs, 4px) 10px',
@@ -156,7 +132,7 @@ function HeroCard() {
                         </div>
                         <div> Product Description </div>
                     </div>
-                    <button style={CTAbutton}> Shop Now </button>
+                    <CTAbutton />
                 </div>
                 <div style={pagination}> Pagination </div>
             </div>
