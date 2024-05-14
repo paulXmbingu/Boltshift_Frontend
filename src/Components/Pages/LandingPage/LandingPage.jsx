@@ -1,3 +1,4 @@
+import HeroSection from "./HeroSection";
 import HotDealTodaySection from "./HotDealTodaySection";
 import PopularCategoriesSection from "./PopularCategoriesSection";
 
@@ -13,6 +14,7 @@ const pageLayout={
 function LandingPage() {
     return(
         <pageLayout style={pageLayout}>
+            <HeroSection />
             <PopularCategoriesSection />
             <HotDealTodaySection/>
         </pageLayout>
