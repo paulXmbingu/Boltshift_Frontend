@@ -11,17 +11,6 @@ const favStyling={
     right: '0px'
 }
 
-const wishlistIcon={
-    display: 'flex',
-    width: '32px',
-    height: '32px',
-    justifyContent: 'center',
-    alignItems: 'center',
-    
-    /* Background blur / xl */
-    backdropFilter: 'blur(20px)'    
-}
-
 const featuredIcon={
     display: 'flex',
     width: '16px',
@@ -41,8 +30,8 @@ const featuredIcon={
 function FavoriteButton() {
     return (
         <div style={favStyling} >
-            <div style={wishlistIcon}>
-                <img src={WishilistIcon} alt="Wishilist Icon" style={featuredIcon}/>
+            <div style={featuredIcon}>
+                <img src={WishilistIcon} alt="Wishilist Icon"/>
             </div>
         </div>
     );
