@@ -4,6 +4,7 @@ import CTAbutton from './CTAButton';
 import TailIcon from "../../assets/Icons/chevron-right.svg";
 import DiscountTag from './DiscountTag';
 import HeroPagination from './HeroPagination';
+import FavoriteButton from './FavoriteButton';
 
 //STYLING
 const heroCardStyle={
@@ -146,6 +147,7 @@ function HeroCard() {
                 <HeroPagination />
             </div>
             <div style={productImage}>
+                <FavoriteButton />
                 <img src={HeroImage} alt="Hero Image" />
             </div>
         </div>
