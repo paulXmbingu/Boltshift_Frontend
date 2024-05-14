@@ -9,13 +9,33 @@ const vendorSectionStyle={
     padding: 'var(--container-padding-mobile, 16px) var(--spacing-system-guides-corner-radius-4, 16px) var(--spacing-xs, 4px) var(--spacing-system-guides-corner-radius-4, 16px)',
     alignItems: 'flex-start',
     gap: 'var(--spacing-2xl, 20px)',
-    alignSelf: 'stretch'
+    alignSelf: 'stretch',
+    overflow: 'auto'
 }
 
 //FUNCTIONALITY
 function VendorSection() {
     return(
         <div style={vendorSectionStyle}>
+            <VendorStory />
+            <VendorStory />
+            <VendorStory />
+            <VendorStory />
+            <VendorStory />
+            <VendorStory />
+            <VendorStory />
+            <VendorStory />
+            <VendorStory />
+            <VendorStory />
+            <VendorStory />
+            <VendorStory />
+            <VendorStory />
+            <VendorStory />
+            <VendorStory />
+            <VendorStory />
+            <VendorStory />
+            <VendorStory />
+            <VendorStory />
             <VendorStory />
         </div>
     );

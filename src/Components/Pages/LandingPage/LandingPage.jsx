@@ -1,7 +1,7 @@
 import HeroSection from "./HeroSection";
 import HotDealTodaySection from "./HotDealTodaySection";
 import PopularCategoriesSection from "./PopularCategoriesSection";
-import VendorSection from "./SectionVendor";
+import VendorSection from "./VendorSection";
 
 const pageLayout={
     display: "flex",
