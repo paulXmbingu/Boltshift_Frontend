@@ -161,4 +161,4 @@ function HeroCard() {
     );
 };
 
-export default HeroCard
+export default HeroCard;

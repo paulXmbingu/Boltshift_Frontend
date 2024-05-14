@@ -186,29 +186,29 @@ function HotDealTodayCard() {
     const progress = 50;
 
     return (
-        <hotDealCard style={cardStyles}>
+        <div style={cardStyles}>
             <img src={HotDealCardImage} alt="Product Image" style={imageStyles} />
-            <productDetails style={productDetailsStyles}>
-                <productNamePrice style={productNamePrice}>
-                    <productName style={productName}>
-                        <productNameText style={productNameText}> Modern White Velvet 3-Seater Sofa Channel Tufted Upholstered Luxury Solid Wood </productNameText>
-                    </productName>
-                    <productPrice style={productPrice}> 
+            <div style={productDetailsStyles}>
+                <div style={productNamePrice}>
+                    <div style={productName}>
+                        <div style={productNameText}> Modern White Velvet 3-Seater Sofa Channel Tufted Upholstered Luxury Solid Wood </div>
+                    </div>
+                    <div style={productPrice}> 
                         <currency style={currency}> Kshs. </currency>
                         <ammount style={ammount}> 92,900 </ammount>
-                    </productPrice>
-                </productNamePrice>
-                <popularityStatus style={popularityStatus}>
-                    <progressDistance style={{ ...progressDistance, width: `${progress}%`, background: 'var(--Colors-Brand-brand-primary, #DA154D)' }}></progressDistance>
-                    <unitsSold style={unitsSold}>
+                    </div>
+                </div>
+                <div style={popularityStatus}>
+                    <div style={{ ...progressDistance, width: `${progress}%`, background: 'var(--Colors-Brand-brand-primary, #DA154D)' }}></div>
+                    <div style={unitsSold}>
                         <img src={FireIcon} alt="Fire Icon" style={Fire} />
-                        <noSold style={noSold}> 28 </noSold>
-                        <noLeft style={noLeft}> Right </noLeft>
-                    </unitsSold>
-                </popularityStatus>
+                        <div style={noSold}> 28 </div>
+                        <div style={noLeft}> Right </div>
+                    </div>
+                </div>
                 <button style={buttonStyles}> Add to Cart </button>
-            </productDetails>
-        </hotDealCard>
+            </div>
+        </div>
     );
 };
 
