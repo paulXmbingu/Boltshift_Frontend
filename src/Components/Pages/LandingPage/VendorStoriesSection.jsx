@@ -54,7 +54,7 @@ function VendorStoriesSection() {
             <VendorStory logo={Catalog} label='Catalog' />
             <VendorStory logo={CloudWatch} label='CloudWatch' />
             <VendorStory logo={CommandR} label='Command+R' />
-            <VendorStory logo={Epicurious} label='Epicurious.svg' />
+            <VendorStory logo={Epicurious} label='Epicurious' />
             <VendorStory logo={FeatherDev} label='FeatherDev' />
             <VendorStory logo={FocalPoint} label='FocalPoint' />
             <VendorStory logo={Galileo} label='Galileo' />
