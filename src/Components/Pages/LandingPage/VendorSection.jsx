@@ -59,10 +59,8 @@ function VendorSection() {
             <VendorStory logo={Layers} label='Layers' />
             <VendorStory logo={Lightbox} label='Lightbox' />
             <VendorStory logo={Luminous} label='Luminous' />
-            <VendorStory logo={Luminous} label='Luminous' />
             <VendorStory logo={Polymath} label='Polymath' />
             <VendorStory logo={Segment} label='Segment' />
-            <VendorStory logo={Sisyphus} label='Sisyphus' />
             <VendorStory logo={Sisyphus} label='Sisyphus' />
             <VendorStory logo={Spherule} label='Spherule' />
         </div>
