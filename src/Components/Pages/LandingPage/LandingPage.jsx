@@ -1,3 +1,4 @@
+import TopNav from "../../Shared/TopNav";
 import HeroSection from "./HeroSection";
 import HotDealTodaySection from "./HotDealTodaySection";
 import PopularCategoriesSection from "./PopularCategoriesSection";
@@ -15,6 +16,7 @@ const pageLayout={
 function LandingPage() {
     return(
         <pageLayout style={pageLayout}>
+            <TopNav />
             <VendorStoriesSection />
             <HeroSection />
             <PopularCategoriesSection />

@@ -9,7 +9,7 @@ import FavoriteButton from './FavoriteButton';
 //STYLING
 const heroCardStyle={
     display: 'flex',
-    justifyContent: 'flex-end',
+    justifyContent: 'center',
     alignItems: 'center',
     alignContent: 'center',
     gap: '0px var(--spacing-system-guides-corner-radius-6, 24px)',
