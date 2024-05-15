@@ -31,7 +31,7 @@ const sectionHeaderStyles = {
     }
 };
 
-function SectionHeader({ text }) {
+function SectionHeader({ icon, text }) {
     return (
         <div style={sectionHeaderStyles.container}>
             <img src={SecHeaderIcon} style={sectionHeaderStyles.image} />
