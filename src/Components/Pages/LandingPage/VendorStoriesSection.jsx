@@ -33,7 +33,7 @@ const vendorSectionStyle={
     alignItems: 'flex-start',
     gap: 'var(--spacing-2xl, 20px)',
     alignSelf: 'stretch',
-    overflow: 'auto'
+    overflow: 'scroll'
 }
 
 //FUNCTIONALITY
