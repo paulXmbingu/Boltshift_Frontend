@@ -16,7 +16,7 @@ function LandingPage() {
     return(
         <pageLayout style={pageLayout}>
             <VendorStoriesSection />
-            <HeroSection />
+            {/* <HeroSection /> */}
             <PopularCategoriesSection />
             <HotDealTodaySection/>
         </pageLayout>
