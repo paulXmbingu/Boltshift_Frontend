@@ -1,7 +1,7 @@
 import HeroSection from "./HeroSection";
 import HotDealTodaySection from "./HotDealTodaySection";
 import PopularCategoriesSection from "./PopularCategoriesSection";
-import VendorSection from "./VendorSection";
+import VendorStoriesSection from "./VendorStoriesSection";
 
 const pageLayout={
     display: "flex",
@@ -15,7 +15,7 @@ const pageLayout={
 function LandingPage() {
     return(
         <pageLayout style={pageLayout}>
-            <VendorSection />
+            <VendorStoriesSection />
             <HeroSection />
             <PopularCategoriesSection />
             <HotDealTodaySection/>

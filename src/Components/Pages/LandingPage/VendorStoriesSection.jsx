@@ -37,7 +37,7 @@ const vendorSectionStyle={
 }
 
 //FUNCTIONALITY
-function VendorSection() {
+function VendorStoriesSection() {
     return(
         <div style={vendorSectionStyle}>
             <VendorStory logo={SenjesCuisines} label='Senjes Cuisines' />
@@ -67,4 +67,4 @@ function VendorSection() {
     );
 };
 
-export default VendorSection;
+export default VendorStoriesSection;
