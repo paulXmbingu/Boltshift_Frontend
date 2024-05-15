@@ -1,5 +1,7 @@
 import HotDealTodayCard from "../../Shared/HotDealTodayCard";
 import SectionHeader from "../../Shared/SectionHeader";
+import Fire from "../../../assets/Icons/Fire.svg";
+
 
 
 //STYLING
@@ -28,7 +30,7 @@ const catCards={
 function HotDealTodaySection() {
     return (
         <hotDealTodaySection style={popCatSection} >
-            <SectionHeader headerTitle="Hot Deals Today" icon={}/>
+            <SectionHeader headerTitle="Hot Deals Today" icon={Fire}/>
             <catCards style={catCards}>
                 <HotDealTodayCard />
                 <HotDealTodayCard />

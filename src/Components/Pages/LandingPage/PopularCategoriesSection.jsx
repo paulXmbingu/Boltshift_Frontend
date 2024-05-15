@@ -15,6 +15,7 @@ import Desktop from '/src/assets/Icons/Desktop computer.svg';
 import Headphones from '/src/assets/Icons/Headphone.svg';
 import Jewelery from '/src/assets/Icons/Ring.svg';
 import AllCategories from '/src/assets/Icons/Shopping bags.svg';
+import ShoppingBags from "../../../assets/Icons/Shopping bags.svg";
 
 
 //STYLING
@@ -63,7 +64,7 @@ function PopularCategoriesSection() {
     //COMPONENT
     return (
         <popCatSection style={popCatSection}>
-            <SectionHeader text="Popular Categories" />
+            <SectionHeader headerTitle="Popular Categories" icon={ShoppingBags}/>
             <categoryCards style={categoryCards}>
                 {categories.map((category, index) => (
                     <CategoryCard key={index} icon={category.icon} name={category.name} isAllCategories={category.name === 'All Categories'} />
