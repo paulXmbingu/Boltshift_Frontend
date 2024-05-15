@@ -150,7 +150,8 @@ function HeroCard() {
                                 former shape swiftly and with a nice greeting.`}
                             </div>
                         </div>
-                    </div> <CTAbutton label="Shop Now" tailIcon={TailIcon} /> </div>
+                    </div> <CTAbutton label="Shop Now" tailIcon={TailIcon} />
+                </div>
                 <HeroPagination />
             </div>
             <div style={productImage}>
