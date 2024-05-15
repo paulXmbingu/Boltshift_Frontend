@@ -3,6 +3,9 @@ import VendorStory from "../../Shared/VendorStory";
 import SenjesCuisines from "../../../assets/Logos/Senjes Cuisines.svg";
 import AcmeGroup from "../../../assets/Logos/Acme Group.svg";
 import AltShift from "../../../assets/Logos/AltShift.svg";
+import Biosynthesis from "../../../assets/Logos/Biosynthesis.svg";
+import Capsule from "../../../assets/Logos/Capsule.svg";
+import Catalog from "../../../assets/Logos/Catalog.svg";
 
 //STYLING
 const vendorSectionStyle={
@@ -23,6 +26,9 @@ function VendorSection() {
             <VendorStory logo={SenjesCuisines} label='Senjes Cuisines' />
             <VendorStory logo={AcmeGroup} label='Acme Group' />
             <VendorStory logo={AltShift} label='AltShift' />
+            <VendorStory logo={Biosynthesis} label='Biosynthesis' />
+            <VendorStory logo={Capsule} label='Capsule' />
+            <VendorStory logo={Catalog} label='Catalog' />
         </div>
     );
 };
