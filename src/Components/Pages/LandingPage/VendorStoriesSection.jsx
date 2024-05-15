@@ -25,15 +25,15 @@ import Sisyphus from "../../../assets/Logos/Sisyphus.svg";
 import Spherule from "../../../assets/Logos/Spherule.svg";
 
 //STYLING
-const vendorSectionStyle = {
+const StoriesTray = {
     display: 'flex',
-    minWidth: 'var(--Grid-layouts-iPhone-375px, 375px)',
-    maxWidth: 'var(--grid-layouts-desktop-1280-px, 1280px)',
+    height: '104px',
     padding: 'var(--container-padding-mobile, 16px) var(--spacing-system-guides-corner-radius-4, 16px) var(--spacing-xs, 4px) var(--spacing-system-guides-corner-radius-4, 16px)',
     alignItems: 'flex-start',
     gap: 'var(--spacing-2xl, 20px)',
+    flexShrink: 0,
     alignSelf: 'stretch',
-    overflow: 'scroll',
+    overflow: 'auto',
     '-ms-overflow-style': 'none',  /* Internet Explorer 10+ */
     'scrollbar-width': 'none',      /* Firefox */
     '&::-webkit-scrollbar': {
@@ -41,10 +41,20 @@ const vendorSectionStyle = {
     }
 };
 
+const StoriesSection = {
+    display: 'flex',
+    height: '104px',
+    maxWidth: 'var(--container-max-width-desktop, 1280px)',
+    flexDirection: 'column',
+    alignItems: 'center',
+    gap: '10px',
+    alignSelf: 'stretch'
+};
+
 //FUNCTIONALITY
 function VendorStoriesSection() {
     return(
-        <div style={vendorSectionStyle}>
+        <div style={StoriesTray}>
             <VendorStory logo={SenjesCuisines} label='Senjes Cuisines' />
             <VendorStory logo={Excite} label='Excite! Innovation ' />
             <VendorStory logo={AcmeGroup} label='Acme Group' />
