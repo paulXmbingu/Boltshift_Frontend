@@ -184,7 +184,7 @@ const productDetailsStyles = {
 
 
 //FUNCTIONALITY
-function HotDealTodayCard() {
+function HotDealTodayCard({}) {
     const progress = 50;
 
     return (
