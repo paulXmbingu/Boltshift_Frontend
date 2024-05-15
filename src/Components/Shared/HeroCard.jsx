@@ -47,10 +47,10 @@ const productNamePrice={
     display: 'flex',
     minWidth: 'var(--Base-4-Premitives-72, 288px)',
     padding: 'var(--spacing-system-guides-corner-radius-24, 96px) 0px var(--spacing-system-guides-corner-radius-6, 24px) 0px',
-    flexDirection: 'column',
+    // flexDirection: 'column',
     justifyContent: 'center',
     alignItems: 'center',
-    gap: 'var(--spacing-system-guides-corner-radius-10, 40px)',
+    // gap: 'var(--spacing-system-guides-corner-radius-10, 40px)',
     flex: '1 0 0'    
 }
 
