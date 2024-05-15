@@ -1,4 +1,6 @@
 import React from "react";
+import BrandLogo from "../../assets/Logos/Brand Logo.svg"
+import MenuIcon from "../../assets/Icons/menu-03.svg"
 
 // STYLING
 const navStyle = {
@@ -22,12 +24,29 @@ const navStyle = {
   zIndex: 1000 // Optional, adjust as needed
 };
 
+const logoStyle = {
+  display: 'flex',
+  width: '170px',
+  height: '48px',
+  padding: '2px 0.738px 2px 0px',
+  justifyContent: 'center',
+  alignItems: 'center',
+  gap: '11.38px',
+  cursor: 'pointer'
+};
+
+const menuIconStyle = {
+  width: 'var(--Base-4-Premitives-6, 24px)',
+  height: 'var(--Base-4-Premitives-6, 24px)',
+  cursor: 'pointer'
+};
+
 // FUNCTIONALITY
 function TopNav() {
   return(
     <div style={navStyle}>
-        <div> Menu </div>
-        <div> Brand Logo </div>
+        <img src={MenuIcon} alt="Menu Icon" style={menuIconStyle} />
+        <img src={BrandLogo} alt="Brand Logo" style={logoStyle}/>
         <div> Search & Filter </div>
         <div> Profile & Icons </div>
     </div>
