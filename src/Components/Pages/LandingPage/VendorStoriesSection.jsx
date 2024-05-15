@@ -41,7 +41,7 @@ function VendorStoriesSection() {
     return(
         <div style={vendorSectionStyle}>
             <VendorStory logo={SenjesCuisines} label='Senjes Cuisines' />
-            <VendorStory logo={Excite} label='Excite! Innovation Company' />
+            <VendorStory logo={Excite} label='Excite! Innovation ' />
             <VendorStory logo={AcmeGroup} label='Acme Group' />
             <VendorStory logo={AltShift} label='AltShift' />
             <VendorStory logo={Biosynthesis} label='Biosynthesis' />
