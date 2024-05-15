@@ -25,7 +25,7 @@ import Sisyphus from "../../../assets/Logos/Sisyphus.svg";
 import Spherule from "../../../assets/Logos/Spherule.svg";
 
 //STYLING
-const vendorSectionStyle={
+const vendorSectionStyle = {
     display: 'flex',
     minWidth: 'var(--Grid-layouts-iPhone-375px, 375px)',
     maxWidth: 'var(--grid-layouts-desktop-1280-px, 1280px)',
@@ -33,8 +33,13 @@ const vendorSectionStyle={
     alignItems: 'flex-start',
     gap: 'var(--spacing-2xl, 20px)',
     alignSelf: 'stretch',
-    overflow: 'scroll'
-}
+    overflow: 'scroll',
+    '-ms-overflow-style': 'none',  /* Internet Explorer 10+ */
+    'scrollbar-width': 'none',      /* Firefox */
+    '&::-webkit-scrollbar': {
+        display: 'none'              /* Webkit-based browsers */
+    }
+};
 
 //FUNCTIONALITY
 function VendorStoriesSection() {
