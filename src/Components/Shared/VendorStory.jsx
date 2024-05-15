@@ -1,5 +1,4 @@
 import React from "react";
-import vendorLogo from "../../assets/Logos/Nietzsche.svg";
 
 //STYLING
 const storyStyle={
@@ -18,7 +17,7 @@ const vendorLogoStyle={
     background: 'var(--Avatar-company-logo-Biosynthesis, url(<path-to-image>) lightgray 50% / cover no-repeat)'    
 }
 
-const vendorName={
+const vendorNameStyle={
     display: 'flex',
     maxWidth: 'var(--Base-4-Premitives-32, 128px)',
     minHeight: 'var(--Base-4-Premitives-4, 16px)',
@@ -30,7 +29,7 @@ const vendorName={
     alignSelf: 'stretch'
 }
 
-const vendorLabel={
+const vendorLabelStyle={
     display: '-webkit-box',
     webkitBoxOrient: 'vertical',
     webkitLineClamp: '1',
@@ -49,12 +48,12 @@ const vendorLabel={
 }
 
 //FUNCTIONALITY
-function VendorStory() {
+function VendorStory({logo,label}) {
     return(
         <div style={storyStyle}>
-            <img src={vendorLogo} alt="Vendor Logo" style={vendorLogoStyle} />
-            <div style={vendorName}>
-                <div style={vendorLabel}> Vendor Label </div>
+            <img src={logo} alt="Vendor Logo" style={vendorLogoStyle} />
+            <div style={vendorNameStyle}>
+                <div style={vendorLabelStyle}> {label} </div>
             </div>
         </div>
     );

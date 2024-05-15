@@ -1,5 +1,8 @@
 import React from "react";
 import VendorStory from "../../Shared/VendorStory";
+import SenjesCuisines from "../../../assets/Logos/Senjes Cuisines.svg";
+import AcmeGroup from "../../../assets/Logos/Acme Group.svg";
+import AltShift from "../../../assets/Logos/AltShift.svg";
 
 //STYLING
 const vendorSectionStyle={
@@ -17,26 +20,9 @@ const vendorSectionStyle={
 function VendorSection() {
     return(
         <div style={vendorSectionStyle}>
-            <VendorStory />
-            <VendorStory />
-            <VendorStory />
-            <VendorStory />
-            <VendorStory />
-            <VendorStory />
-            <VendorStory />
-            <VendorStory />
-            <VendorStory />
-            <VendorStory />
-            <VendorStory />
-            <VendorStory />
-            <VendorStory />
-            <VendorStory />
-            <VendorStory />
-            <VendorStory />
-            <VendorStory />
-            <VendorStory />
-            <VendorStory />
-            <VendorStory />
+            <VendorStory logo={SenjesCuisines} label='Senjes Cuisines' />
+            <VendorStory logo={AcmeGroup} label='Acme Group' />
+            <VendorStory logo={AltShift} label='AltShift' />
         </div>
     );
 };
