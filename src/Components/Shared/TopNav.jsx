@@ -88,7 +88,7 @@ function TopNav() {
         <div style={searchWrapper}>
           Search
         </div>
-        <div> Profile & Icons </div>
+        <div> Icons and Profile </div>
     </div>
   );
 };
