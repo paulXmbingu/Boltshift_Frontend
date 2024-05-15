@@ -28,7 +28,7 @@ const catCards={
 function HotDealTodaySection() {
     return (
         <hotDealTodaySection style={popCatSection} >
-            <SectionHeader text="Hot Deals Today" />
+            <SectionHeader headerTitle="Hot Deals Today" icon={}/>
             <catCards style={catCards}>
                 <HotDealTodayCard />
                 <HotDealTodayCard />

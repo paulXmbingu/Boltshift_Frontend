@@ -1,5 +1,6 @@
-import SecHeaderIcon from "/src/assets/Icons/Shopping bags.svg";
+import React from "react";
 
+//STYLING
 const sectionHeaderStyles = {
     container: {
         display: 'flex',
@@ -11,10 +12,12 @@ const sectionHeaderStyles = {
         alignSelf: 'stretch',
         flexWrap: 'wrap',
     },
+
     image: {
         width: '32px',
         height: '32px',
     },
+    
     text: {
         display: '-webkit-box',
         WebkitBoxOrient: 'vertical',
@@ -31,12 +34,13 @@ const sectionHeaderStyles = {
     }
 };
 
-function SectionHeader({ icon, text }) {
+//FUNCTIONALITY
+function SectionHeader({ headerTitle, icon }) {
     return (
         <div style={sectionHeaderStyles.container}>
-            <img src={SecHeaderIcon} style={sectionHeaderStyles.image} />
+            <img src={icon} style={sectionHeaderStyles.image} />
             <div style={sectionHeaderStyles.text}>
-                {text}
+                {headerTitle}
             </div>
         </div>
     );
