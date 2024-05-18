@@ -1,4 +1,4 @@
-import HotDealTodayCard from "../../Shared/HotDealTodayCard";
+import HotDealCard from "../../Shared/HotDealCard";
 import SectionHeader from "../../Shared/SectionHeader";
 import Fire from "../../../assets/Icons/Fire.svg";
 
@@ -32,13 +32,13 @@ function HotDealTodaySection() {
         <hotDealTodaySection style={popCatSection} >
             <SectionHeader headerTitle="Hot Deals Today" icon={Fire}/>
             <catCards style={catCards}>
-                <HotDealTodayCard />
-                <HotDealTodayCard />
-                <HotDealTodayCard />
-                <HotDealTodayCard />
-                <HotDealTodayCard />
-                <HotDealTodayCard />
-                <HotDealTodayCard />
+                <HotDealCard />
+                <HotDealCard />
+                <HotDealCard />
+                <HotDealCard />
+                <HotDealCard />
+                <HotDealCard />
+                <HotDealCard />
             </catCards>
         </hotDealTodaySection>
     );

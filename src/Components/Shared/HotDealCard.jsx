@@ -184,7 +184,7 @@ const productDetailsStyles = {
 
 
 //FUNCTIONALITY
-function HotDealTodayCard({}) {
+function HotDealCard({}) {
     const progress = 50;
 
     return (
@@ -215,4 +215,4 @@ function HotDealTodayCard({}) {
     );
 };
 
-export default HotDealTodayCard;
+export default HotDealCard;
