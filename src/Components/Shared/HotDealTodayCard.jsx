@@ -206,7 +206,7 @@ function HotDealTodayCard({}) {
                     <div style={unitsSold}>
                         <img src={FireIcon} alt="Fire Icon" style={Fire} />
                         <div style={noSold}> 28 </div>
-                        <div style={noLeft}> Right </div>
+                        <div style={noLeft}> Left </div>
                     </div>
                 </div>
                 <button style={buttonStyles}> Add to Cart </button>
