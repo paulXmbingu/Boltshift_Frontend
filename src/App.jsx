@@ -5,7 +5,6 @@ import InstallPrompt from './Components/InstallPrompt';
 function App() {
   return (
     <div>
-      <InstallPrompt />
       <LandingPage />
     </div>
   )
