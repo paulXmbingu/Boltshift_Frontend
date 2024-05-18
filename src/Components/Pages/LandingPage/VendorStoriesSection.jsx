@@ -34,6 +34,7 @@ const StoriesTray = {
     flexShrink: 0,
     alignSelf: 'stretch',
     overflow: 'auto',
+    alignItems: 'flex-start',
     '-ms-overflow-style': 'none',  /* Internet Explorer 10+ */
     'scrollbar-width': 'none',      /* Firefox */
     '&::-webkit-scrollbar': {
