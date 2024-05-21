@@ -1,6 +1,5 @@
 import React from 'react';
 
-
 //STYLING
 const cardStyle = {
     display: 'flex',
