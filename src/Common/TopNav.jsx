@@ -1,6 +1,6 @@
 import React from "react";
-import BrandLogo from "../../assets/Logos/Brand Logo.svg"
-import MenuIcon from "../../assets/Icons/menu-03.svg"
+import BrandLogo from "../assets/Logos/Brand Logo.svg"
+import MenuIcon from "../assets/Icons/UI/menu-03.svg"
 
 // STYLING
 const navStyle = {

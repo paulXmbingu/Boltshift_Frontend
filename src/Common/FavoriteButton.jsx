@@ -1,5 +1,5 @@
 import React from "react";
-import WishilistIcon from "../../assets/Icons/heart-rounded.svg";
+import WishilistIcon from "../assets/Icons/UI/heart-rounded.svg";
 
 //STYLING
 const favStyling={

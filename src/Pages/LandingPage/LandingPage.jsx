@@ -1,4 +1,4 @@
-import TopNav from "../../Shared/TopNav";
+import TopNav from "../../Common/TopNav";
 import HeroSection from "./HeroSection";
 import HotDealTodaySection from "./HotDealTodaySection";
 import PopularCategoriesSection from "./PopularCategoriesSection";

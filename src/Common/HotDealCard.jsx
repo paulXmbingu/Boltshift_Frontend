@@ -1,6 +1,6 @@
 import React from "react";
-import HotDealCardImage from "/src/assets/Images/Perfume.jpeg";
-import FireIcon from "/src/assets/Icons/Fire.svg";
+import HotDealCardImage from "../assets/Images/Photos/Perfume.jpeg";
+import FireIcon from "../assets/Icons/Illustrated/Fire.svg";
 import FavoriteButton from "./FavoriteButton"
 
 

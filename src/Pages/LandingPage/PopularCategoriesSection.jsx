@@ -1,21 +1,21 @@
 import React from 'react';
-import CategoryCard from '../../Shared/CategoryCard';
-import SectionHeader from '../../Shared/SectionHeader';
-import Clothing from '/src/assets/Icons/T-shirt.svg';
-import WomenClothing from '/src/assets/Icons/Dress.svg';
-import Watches from '/src/assets/Icons/Watch.svg';
-import HomeAppliance from '/src/assets/Icons/Fork and knife with plate.svg';
-import SportOutdoor from '/src/assets/Icons/Soccer ball.svg';
-import BooksStationery from '/src/assets/Icons/Books.svg';
-import HomeLiving from '/src/assets/Icons/Shallow pan of food.svg';
-import Health from '/src/assets/Icons/Stethoscope.svg';
-import Mobile from '/src/assets/Icons/Mobile phone.svg';
-import Laptop from '/src/assets/Icons/Laptop.svg';
-import Desktop from '/src/assets/Icons/Desktop computer.svg';
-import Headphones from '/src/assets/Icons/Headphone.svg';
-import Jewelery from '/src/assets/Icons/Ring.svg';
-import AllCategories from '/src/assets/Icons/Shopping bags.svg';
-import ShoppingBags from "../../../assets/Icons/Shopping bags.svg";
+import CategoryCard from '../../Common/CategoryCard';
+import SectionHeader from '../../Common/SectionHeader';
+import Clothing from '../../assets/Icons/Illustrated/T-shirt.svg';
+import WomenClothing from '../../assets/Icons/Illustrated/Dress.svg';
+import Watches from '../../assets/Icons/Illustrated/Watch.svg';
+import HomeAppliance from '../../assets/Icons/Illustrated/Fork and knife with plate.svg';
+import SportOutdoor from '../../assets/Icons/Illustrated/Soccer ball.svg';
+import BooksStationery from '../../assets/Icons/Illustrated/Books.svg';
+import HomeLiving from '../../assets/Icons/Illustrated/Shallow pan of food.svg';
+import Health from '../../assets/Icons/Illustrated/Stethoscope.svg';
+import Mobile from '../../assets/Icons/Illustrated/Mobile phone.svg';
+import Laptop from '../../assets/Icons/Illustrated/Laptop.svg';
+import Desktop from '../../assets/Icons/Illustrated/Desktop computer.svg';
+import Headphones from '../../assets/Icons/Illustrated/Headphone.svg';
+import Jewelery from '../../assets/Icons/Illustrated/Ring.svg';
+import ShoppingBags from "../../assets/Icons/Illustrated/Shopping bags.svg";
+import AllCategories from '../../assets/Icons/Illustrated/Shopping bags.svg';
 
 
 //STYLING

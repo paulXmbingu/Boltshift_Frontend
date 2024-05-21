@@ -1,6 +1,6 @@
-import HotDealCard from "../../Shared/HotDealCard";
-import SectionHeader from "../../Shared/SectionHeader";
-import Fire from "../../../assets/Icons/Fire.svg";
+import HotDealCard from "../../Common/HotDealCard";
+import SectionHeader from "../../Common/SectionHeader";
+import Fire from "../../assets/Icons/Illustrated/Fire.svg";
 
 
 

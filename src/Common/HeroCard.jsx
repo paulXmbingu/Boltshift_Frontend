@@ -1,8 +1,8 @@
 import React from 'react';
-import HeroImage from "../../assets/Images/Sofa.jpg";
-import CTAbutton from './CTAButton';
-import TailIcon from "../../assets/Icons/chevron-right.svg";
-import DiscountTag from './DiscountTag';
+import HeroImage from "../assets/Images/Photos/Sofa.jpg";
+import CTAbutton from '../Components/Atoms/CTAButton';
+import TailIcon from "../assets/Icons/UI/chevron-right.svg";
+import DiscountTag from '../Components/Atoms/DiscountTag';
 import HeroPagination from './HeroPagination';
 import FavoriteButton from './FavoriteButton';
 

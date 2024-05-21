@@ -1,4 +1,4 @@
-import HeroCard from "../../Shared/HeroCard";
+import HeroCard from "../../Common/HeroCard";
 
 const heroSectionstyle={
     display: 'flex',
