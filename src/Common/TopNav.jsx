@@ -1,6 +1,7 @@
 import React from "react";
 import BrandLogo from "../assets/Logos/Brand Logo.svg"
 import MenuIcon from "../assets/Icons/UI/menu-03.svg"
+import UserAvatar from "./UserAvatar";
 
 // STYLING
 const navStyle = {
@@ -85,8 +86,10 @@ function TopNav() {
     <div style={navStyle}>
         <img src={MenuIcon} alt="Menu Icon" style={menuIconStyle} />
         <img src={BrandLogo} alt="Brand Logo" style={logoStyle}/>
-        {/* <div style={searchWrapper}> Search Bar </div> */}
-        <div> Icons </div>
+        <div style={searchWrapper}> Search Bar </div>
+        <div> 
+          <UserAvatar />
+        </div>
     </div>
   );
 };
