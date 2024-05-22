@@ -85,7 +85,7 @@ const profileNotification = {
   height: 'var(--Base-4-Premitives-6, 24px)',
   flexShrink: 0,
   borderRadius: 'var(--Corner-Radius-12, 48px)',
-  background: 'url(<path-to-image>) lightgray 50% / cover no-repeat',
+  // background: 'url(<path-to-image>) lightgray 50% / cover no-repeat',
   cursor: 'pointer',
   display: 'flex',
   justifyContent: 'flex-end',
