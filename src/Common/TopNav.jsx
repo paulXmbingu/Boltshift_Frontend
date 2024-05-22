@@ -80,14 +80,31 @@ const searchButtonStyle = {
   boxShadow: '0px 1px 2px 0px rgba(16, 24, 40, 0.05)'
 };
 
+const profileNotification = {
+  width: 'var(--Base-4-Premitives-6, 24px)',
+  height: 'var(--Base-4-Premitives-6, 24px)',
+  flexShrink: 0,
+  borderRadius: 'var(--Corner-Radius-12, 48px)',
+  background: 'url(<path-to-image>) lightgray 50% / cover no-repeat',
+  cursor: 'pointer',
+  display: 'flex',
+  justifyContent: 'flex-end',
+  alignItems: 'center',
+  gap: 'var(--spacing-system-guides-corner-radius-1, 4px)',
+};
+
+
+
 // FUNCTIONALITY
 function TopNav() {
   return(
     <div style={navStyle}>
         <img src={MenuIcon} alt="Menu Icon" style={menuIconStyle} />
         <img src={BrandLogo} alt="Brand Logo" style={logoStyle}/>
-        <div style={searchWrapper}> Search Bar </div>
-        <div> 
+        {/* <div style={searchWrapper}> Search Bar </div> */}
+        <div style={profileNotification}> 
+          <UserAvatar />
+          <UserAvatar />
           <UserAvatar />
         </div>
     </div>
