@@ -101,7 +101,9 @@ function TopNav() {
     <div style={navStyle}>
         <img src={MenuIcon} alt="Menu Icon" style={menuIconStyle} />
         <img src={BrandLogo} alt="Brand Logo" style={logoStyle}/>
-        <div style={searchWrapper}> Search Bar </div>
+        <div style={searchWrapper}> 
+          <input type="search" name="Search Products" id="" style={searchInput} placeholder="Search Products" />
+        </div>
         <div style={profileNotification}> 
           <UserAvatar />
         </div>
