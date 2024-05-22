@@ -184,13 +184,13 @@ const productDetailsStyles = {
 
 
 //FUNCTIONALITY
-function HotDealCard({}) {
+function HotDealCard({imageSrc}) {
     const progress = 50;
 
     return (
         <div style={cardStyles}>
             {/* <FavoriteButton /> */}
-            <img src={HotDealCardImage} alt="Product Image" style={imageStyles} />
+            <img src={imageSrc} alt="Product Image" style={imageStyles} />
             <div style={productDetailsStyles}>
                 <div style={productNamePrice}>
                     <div style={productName}>
