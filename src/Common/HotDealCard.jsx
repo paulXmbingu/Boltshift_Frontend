@@ -1,5 +1,4 @@
 import React from "react";
-import HotDealCardImage from "../assets/Images/Photos/Perfume.jpeg";
 import FireIcon from "../assets/Icons/Illustrated/Fire.svg";
 import FavoriteButton from "./FavoriteButton"
 
