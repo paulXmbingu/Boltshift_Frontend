@@ -9,7 +9,7 @@ const navStyle = {
   minWidth: 'var(--Grid-layouts-iPhone-375px, 375px)',
   maxWidth: 'var(--grid-layouts-desktop-1280-px, 1280px)',
   minHeight: 'var(--Base-4-Premitives-24, 72px)',
-  padding: 'var(--Base-4-Premitives-4, 4px) var(--spacing-system-guides-corner-radius-4, 4px)',
+  padding: 'var(--Base-4-Premitives-4, 16px) var(--spacing-system-guides-corner-radius-4, 16px)',
   justifyContent: 'center',
   alignItems: 'center',
   alignContent: 'center',
