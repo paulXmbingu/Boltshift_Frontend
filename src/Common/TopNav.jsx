@@ -104,8 +104,6 @@ function TopNav() {
         <div style={searchWrapper}> Search Bar </div>
         <div style={profileNotification}> 
           <UserAvatar />
-          <UserAvatar />
-          <UserAvatar />
         </div>
     </div>
   );
