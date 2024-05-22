@@ -85,9 +85,7 @@ function TopNav() {
     <div style={navStyle}>
         <img src={MenuIcon} alt="Menu Icon" style={menuIconStyle} />
         <img src={BrandLogo} alt="Brand Logo" style={logoStyle}/>
-        <div style={searchWrapper}>
-          Search Bar
-        </div>
+        {/* <div style={searchWrapper}> Search Bar </div> */}
         <div> Icons </div>
     </div>
   );
