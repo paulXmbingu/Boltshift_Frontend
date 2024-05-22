@@ -9,7 +9,7 @@ const navStyle = {
   minWidth: 'var(--Grid-layouts-iPhone-375px, 375px)',
   maxWidth: 'var(--grid-layouts-desktop-1280-px, 1280px)',
   minHeight: 'var(--Base-4-Premitives-24, 72px)',
-  padding: 'var(--Base-4-Premitives-4, 4px) var(--spacing-system-guides-corner-radius-4, 4px)',
+  padding: 'var(--Base-4-Premitives-4, 16px) var(--spacing-system-guides-corner-radius-4, 16px)',
   justifyContent: 'center',
   alignItems: 'center',
   alignContent: 'center',
@@ -85,7 +85,7 @@ const profileNotification = {
   height: 'var(--Base-4-Premitives-6, 24px)',
   flexShrink: 0,
   borderRadius: 'var(--Corner-Radius-12, 48px)',
-  background: 'url(<path-to-image>) lightgray 50% / cover no-repeat',
+  // background: 'url(<path-to-image>) lightgray 50% / cover no-repeat',
   cursor: 'pointer',
   display: 'flex',
   justifyContent: 'flex-end',
@@ -103,8 +103,6 @@ function TopNav() {
         <img src={BrandLogo} alt="Brand Logo" style={logoStyle}/>
         <div style={searchWrapper}> Search Bar </div>
         <div style={profileNotification}> 
-          <UserAvatar />
-          <UserAvatar />
           <UserAvatar />
         </div>
     </div>
