@@ -1,0 +1,44 @@
+.story {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-xs, 4px);
+    cursor: pointer;
+  }
+  
+  .vendorLogo {
+    width: var(--Base-4-Premitives-16, 64px);
+    height: var(--Base-4-Premitives-16, 64px);
+    border-radius: var(--radius-full, 9999px);
+    border: 2px solid var(--Gradient-Linear-Color-69, #F74FAC);
+    background: var(--Avatar-company-logo-Biosynthesis, lightgray 50% / cover no-repeat);
+  }
+  
+  .vendorName {
+    display: flex;
+    max-width: var(--Base-4-Premitives-32, 128px);
+    min-height: var(--Base-4-Premitives-4, 16px);
+    max-height: var(--Base-4-Premitives-4, 16px);
+    padding: var(--spacing-none, 0px);
+    justify-content: center;
+    align-items: center;
+    gap: var(--spacing-none, 0px);
+    align-self: stretch;
+  }
+  
+  .vendorLabel {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    flex: 1 0 0;
+    overflow: hidden;
+    color: var(--colors-text-text-primary-900, #101828);
+    text-align: center;
+    text-overflow: ellipsis;
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px; /* 150% */
+  }
+  

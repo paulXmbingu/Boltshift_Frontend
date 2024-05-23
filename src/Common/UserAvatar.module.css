@@ -1,0 +1,9 @@
+.avatar {
+    width: var(--Base-4-Premitives-6, 24px);
+    height: var(--Base-4-Premitives-6, 24px);
+    flex-shrink: 0;
+    border-radius: var(--Corner-Radius-12, 48px);
+    background: lightgray 50% / cover no-repeat;
+    cursor: pointer;
+  }
+  
