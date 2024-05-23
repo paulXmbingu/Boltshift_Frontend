@@ -1,8 +1,17 @@
 .notificationHolder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: var(--spacing-system-guides-corner-radius-10, 40px);
     height: var(--spacing-system-guides-corner-radius-10, 40px);
     flex-shrink: 0;
     border-radius: var(--radius-full, 9999px);
+}
+
+.notificationHolder:hover {
+    background: var(--Colors-Background-bg-brand-secondary, #FDE8EE);
+    cursor: pointer;
+    transition: background 0.3s ease;
 }
 
 .icons {
