@@ -1,0 +1,23 @@
+.stories-tray {
+    display: flex;
+    height: 104px;
+    padding: 16px;
+    gap: 20px;
+    flex-shrink: 0;
+    align-self: stretch;
+    overflow: auto;
+}
+
+.stories-tray::-webkit-scrollbar {
+    display: none;
+}
+
+.stories-section {
+    display: flex;
+    height: 104px;
+    max-width: 1280px;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+}
