@@ -19,7 +19,7 @@ function TopNav() {
         <img src={ProductLogo} alt="Product Logo" className={styles.logo} />
       </div>
       <div className={styles.searchFilter}>
-        Search and Filter 
+        Search and Filter
       </div>
       <div className={styles.notifications}>
         <NotificationIcon icon={Favorite} />
