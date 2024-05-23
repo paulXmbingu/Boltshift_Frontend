@@ -1,0 +1,19 @@
+.popCatSection {
+    display: flex;
+    min-width: 375px;
+    max-width: 1280px;
+    padding: 48px 16px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+    align-self: stretch;
+}
+
+.catCards {
+    display: flex;
+    align-items: flex-start;
+    align-content: flex-start;
+    gap: 16px 16px;
+    align-self: stretch;
+    flex-wrap: wrap;
+}
