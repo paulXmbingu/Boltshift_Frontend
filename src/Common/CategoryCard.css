@@ -18,7 +18,8 @@
     transition: all 0.3s ease;
 }
 
-.cardStyle:hover {
+.cardStyle:hover,
+.cardStyle:active {
     border-radius: var(--spacing-system-guides-corner-radius-2, 8px);
     border: 1px solid var(--Colors-Border-border-brand-solid, #DA154D);
     background: var(--Colors-Background-bg-primary, #FFF);
