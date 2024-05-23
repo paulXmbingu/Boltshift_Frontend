@@ -4,6 +4,8 @@ import MenuIcon from "../assets/Icons/UI/menu-03.svg";
 import UserAvatar from "../Components/Atoms/UserAvatar";
 import styles from './TopNav.module.css';
 import UserPhoto from '../assets/Images/Photos/Paul Mbingu - Avatar.png';
+import Bell from '../assets/Icons/UI/bell-02.svg'
+import NotificationIcon from "../Components/Molecules/NotificationIcon";
 
 function TopNav() {
   return (
@@ -18,9 +20,10 @@ function TopNav() {
         Search and Filter 
       </div>
       <div className={styles.notifications}>
-        <div> Notification 1 </div>
-        <div> Notification 2 </div>
-        <div> Notification 3 </div>
+        {/* <NotificationIcon /> */}
+        <UserAvatar userPhoto={UserPhoto} />
+        <UserAvatar userPhoto={UserPhoto} />
+        <UserAvatar userPhoto={UserPhoto} />
         <UserAvatar userPhoto={UserPhoto} />
       </div>
     </div>
