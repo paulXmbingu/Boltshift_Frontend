@@ -11,7 +11,7 @@
 .notificationHolder:hover {
     background: var(--Colors-Background-bg-brand-secondary, #FDE8EE);
     cursor: pointer;
-    transition: background 0.3s ease; /* Changed to background for consistency */
+    transition: background 0.3s ease;
 }
 
 .icons {
