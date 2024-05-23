@@ -1,27 +1,20 @@
+import React from "react";
 import TopNav from "../../Common/TopNav";
 import HeroSection from "./HeroSection";
 import HotDealTodaySection from "./HotDealTodaySection";
 import PopularCategoriesSection from "./PopularCategoriesSection";
 import VendorStoriesSection from "./VendorStoriesSection";
-
-const pageLayout={
-    display: "flex",
-    minWidth: "var(--Grid-layouts-iPhone-375px, 375px)",
-    maxWidth: "1280px",
-    flexDirection: "column",
-    alignItems: "center",
-    alignSelf: "stretch",
-}
+import styles from "./LandingPage.module.css";
 
 function LandingPage() {
     return(
-        <pageLayout style={pageLayout}>
+        <div className={styles.pageLayout}>
             <TopNav />
             {/* <VendorStoriesSection /> */}
             {/* <HeroSection /> */}
             <PopularCategoriesSection />
             <HotDealTodaySection/>
-        </pageLayout>
+        </div>
     );
 };
 
