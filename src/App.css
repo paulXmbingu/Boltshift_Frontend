@@ -3,7 +3,7 @@
     font-feature-settings: 'liga' 1, 'calt' 1;
   }
 
-  @supports (font-variation-settings: normal) {
+@supports (font-variation-settings: normal) {
     :root { font-family: InterVariable, sans-serif; }
   }
 
@@ -13,3 +13,8 @@
     max-width: 1280px;
     margin: 0 auto;
   }
+
+  ::selection {
+    background: var(--Colors-Background-bg-brand-secondary, #FDE8EE);
+    color: var(--colors-text-text-brand-tertiary-600, #DA154D);
+}
