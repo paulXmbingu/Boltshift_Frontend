@@ -1,4 +1,4 @@
-.notification {
+.notificationHolder {
     width: var(--spacing-system-guides-corner-radius-10, 40px);
     height: var(--spacing-system-guides-corner-radius-10, 40px);
     flex-shrink: 0;

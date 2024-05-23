@@ -20,7 +20,7 @@ function TopNav() {
         Search and Filter 
       </div>
       <div className={styles.notifications}>
-        {/* <NotificationIcon /> */}
+        <NotificationIcon icon={Bell} />
         <UserAvatar userPhoto={UserPhoto} />
         <UserAvatar userPhoto={UserPhoto} />
         <UserAvatar userPhoto={UserPhoto} />
