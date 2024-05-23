@@ -20,12 +20,14 @@
   .menuIcon {
   width: var(--Base-4-Premitives-6, 24px);
   height: var(--Base-4-Premitives-6, 24px);
+  cursor: pointer;
   }
 
 .productLogo {
   display: flex;
   align-items: center;
   gap: var(--spacing-system-guides-corner-radius-2, 8px);
+  cursor: pointer;
   }
 
 .logo {
@@ -36,6 +38,7 @@
   justify-content: center;
   align-items: center;
   gap: 11.38px;
+  cursor: pointer;
   }
 
 .searchFilter {
