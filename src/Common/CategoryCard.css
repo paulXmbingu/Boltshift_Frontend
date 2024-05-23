@@ -20,6 +20,7 @@
 
 .cardStyle:hover,
 .cardStyle:active {
+    transform: scale(1.025);
     border-radius: var(--spacing-system-guides-corner-radius-2, 8px);
     border: 1px solid var(--Colors-Border-border-brand-solid, #DA154D);
     background: var(--Colors-Background-bg-primary, #FFF);
