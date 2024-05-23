@@ -1,0 +1,12 @@
+.notification {
+    width: var(--spacing-system-guides-corner-radius-10, 40px);
+    height: var(--spacing-system-guides-corner-radius-10, 40px);
+    flex-shrink: 0;
+    border-radius: var(--radius-full, 9999px);
+}
+
+.icons {
+    width: var(--Base-4-Premitives-6, 24px);
+    height: var(--Base-4-Premitives-6, 24px);
+    flex-shrink: 0;
+}
