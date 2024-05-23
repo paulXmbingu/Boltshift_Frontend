@@ -5,3 +5,11 @@
   @supports (font-variation-settings: normal) {
     :root { font-family: InterVariable, sans-serif; }
   }
+
+  #root {
+    transform-origin: top;
+    transform: scale(1.0);
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+  
