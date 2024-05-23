@@ -1,0 +1,11 @@
+.heroSection {
+    display: flex;
+    height: 688px;
+    min-width: 375px;
+    max-width: 1280px;
+    padding: 48px 16px;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    align-self: stretch;
+}
