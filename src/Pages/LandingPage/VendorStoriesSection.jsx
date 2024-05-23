@@ -2,7 +2,6 @@ import React from "react";
 import VendorStory from "../../Common/VendorStory";
 import styles from "./VendorStoriesSection.module.css";
 
-// Import logos
 import SenjesCuisines from "../../assets/Logos/Senjes Cuisines.svg";
 import Excite from "../../assets/Logos/Untitled UI.svg";
 import AcmeGroup from "../../assets/Logos/Acme Group.svg";
