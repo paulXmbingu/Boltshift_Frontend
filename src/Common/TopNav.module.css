@@ -1,88 +1,57 @@
-/* TopNav.module.css */
 .nav {
-    display: flex;
-    min-width: var(--Grid-layouts-iPhone-375px, 375px);
-    max-width: var(--grid-layouts-desktop-1280-px, 1280px);
-    min-height: var(--Base-4-Premitives-24, 72px);
-    padding: var(--Base-4-Premitives-4, 16px) var(--spacing-system-guides-corner-radius-4, 16px);
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    gap: 16px var(--Base-4-Premitives-4, 16px);
-    align-self: stretch;
-    flex-wrap: wrap;
-    border-radius: var(--spacing-system-guides-corner-radius-0, 0px);
-    background: var(--Base-White, #FFF);
-    backdrop-filter: blur(8px); /* Background blur/md */
-    position: sticky;
-    top: 0;
-    z-index: 1000; /* Optional, adjust as needed */
-  }
-  
-  .logo {
-    display: flex;
-    width: 170px;
-    height: 48px;
-    padding: 2px 0.738px 2px 0px;
-    justify-content: center;
-    align-items: center;
-    gap: 11.38px;
-    cursor: pointer;
+  display: flex;
+  min-width: var(--Grid-layouts-iPhone-375px, 375px);
+  max-width: var(--grid-layouts-desktop-1280-px, 1280px);
+  min-height: var(--Base-4-Premitives-24, 96px);
+  padding: var(--Base-4-Premitives-4, 16px) var(--spacing-system-guides-corner-radius-4, 16px);
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  gap: 16px var(--Base-4-Premitives-4, 16px);
+  align-self: stretch;
+  flex-wrap: wrap;
+  border-radius: var(--spacing-system-guides-corner-radius-0, 0px);
+  background: var(--Base-White, #FFF);
+
+  /* Background blur/md */
+  backdrop-filter: blur(8px);
   }
   
   .menuIcon {
-    width: var(--Base-4-Premitives-6, 24px);
-    height: var(--Base-4-Premitives-6, 24px);
-    cursor: pointer;
+  width: var(--Base-4-Premitives-6, 24px);
+  height: var(--Base-4-Premitives-6, 24px);
   }
-  
-  .searchWrapper {
-    display: flex;
-    height: 48px;
-    min-width: var(--spacing-system-guides-corner-radius-80, 320px);
-    max-width: var(--spacing-system-guides-corner-radius-220, 880px);
-    align-items: center;
-    gap: var(--Base-4-Premitives-3, 12px);
-    flex: 1 0 0;
+
+.productLogo {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-system-guides-corner-radius-2, 8px);
   }
-  
-  .searchInput {
-    display: flex;
-    height: var(--Base-4-Premitives-11, 44px);
-    min-width: var(--Base-4-Premitives-32, 128px);
-    max-width: var(--Base-4-Premitives-220, 880px);
-    max-height: var(--Base-4-Premitives-11, 44px);
-    padding-left: var(--Base-4-Premitives-3, 12px);
-    align-items: center;
-    gap: 8px;
-    align-self: stretch;
-    border-radius: var(--Base-4-Premitives-2, 8px);
-    border: 1px solid var(--Colors-Border-border-primary, #D0D5DD);
-    background: var(--Colors-Base-white, #FFF);
+
+.logo {
+  display: flex;
+  width: 170px;
+  height: 48px;
+  padding: 2px 0.738px 2px 0px;
+  justify-content: center;
+  align-items: center;
+  gap: 11.38px;
   }
-  
-  .searchButton {
-    display: flex;
-    padding: var(--Base-4-Premitives-2, 8px) 14px;
-    justify-content: center;
-    align-items: center;
-    gap: 8px;
-    align-self: stretch;
-    border-radius: var(--Base-4-Premitives-0, 0px);
-    border: 1px solid var(--colors-foreground-fg-brand-primary-600, #DA154D);
-    background: var(--colors-foreground-fg-brand-primary-600, #DA154D);
-    box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+
+.searchFilter {
+  display: flex;
+  height: 48px;
+  min-width: var(--spacing-system-guides-corner-radius-80, 320px);
+  max-width: var(--spacing-system-guides-corner-radius-220, 880px);
+  align-items: center;
+  gap: var(--Base-4-Premitives-3, 12px);
+  flex: 1 0 0;
   }
-  
-  .profileNotification {
-    width: var(--Base-4-Premitives-6, 24px);
-    height: var(--Base-4-Premitives-6, 24px);
-    flex-shrink: 0;
-    border-radius: var(--Corner-Radius-12, 48px);
-    cursor: pointer;
+
+  .notifications {
     display: flex;
     justify-content: flex-end;
     align-items: center;
     gap: var(--spacing-system-guides-corner-radius-1, 4px);
-  }
+    }
   

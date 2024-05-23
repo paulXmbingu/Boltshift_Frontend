@@ -1,0 +1,20 @@
+.userAvatar {
+    width: var(--Base-4-Premitives-8, 32px);
+    height: var(--Base-4-Premitives-8, 32px);
+    flex-shrink: 0;
+}
+
+.userPhoto {
+    width: var(--Base-4-Premitives-8, 32px);
+    height: var(--Base-4-Premitives-8, 32px);
+    flex-shrink: 0;
+    border-radius: var(--Corner-Radius-12, 48px);
+    border: 2px solid var(--Colors-Border-border-tertiary, #F2F4F7);
+    background: var(--Colors-Background-bg-quaternary, #EAECF0);
+    cursor: pointer;
+    transition: border-color 0.3s ease;
+}
+
+.userPhoto:hover {
+    border-color: var(--Colors-Border-border-brand-solid, #DA154D);
+}
