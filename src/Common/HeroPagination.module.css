@@ -1,0 +1,26 @@
+.pagination {
+    display: flex;
+    padding: var(--spacing-md, 8px);
+    justify-content: center;
+    align-items: center;
+    gap: var(--spacing-lg, 12px);
+    border-radius: var(--radius-full, 9999px);
+    background: var(--Component-colors-Alpha-alpha-white-90, rgba(255, 255, 255, 0.90));
+    backdrop-filter: blur(4px); /* Backdrop blurs/backdrop-blur-sm */
+}
+
+.paginationDot {
+    width: 8px;
+    height: 8px;
+    border-radius: var(--radius-full, 9999px);
+    background: var(--Colors-Background-bg-quaternary, #EAECF0);
+    cursor: pointer;
+}
+
+.paginationDotCurrent {
+    width: 40px;
+    height: 6px;
+    border-radius: var(--radius-full, 9999px);
+    background: var(--Colors-Foreground-fg-brand-primary_alt, #DA154D);
+    cursor: pointer;
+}

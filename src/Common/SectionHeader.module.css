@@ -1,0 +1,30 @@
+.container {
+    display: flex;
+    min-width: 336px;
+    max-width: 1280px;
+    align-items: flex-start;
+    align-content: flex-start;
+    gap: 4px;
+    align-self: stretch;
+    flex-wrap: wrap;
+}
+
+.image {
+    width: 32px;
+    height: 32px;
+}
+
+.text {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+    color: #333741;
+    text-align: center;
+    text-overflow: ellipsis;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px;
+}

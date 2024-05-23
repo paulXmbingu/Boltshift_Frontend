@@ -1,0 +1,10 @@
+.tag {
+    display: flex;
+    padding: var(--spacing-xs, 4px) 10px;
+    align-items: center;
+    gap: 3px;
+    border-radius: var(--radius-sm, 6px);
+    border: 1px solid var(--Gradient-Linear-Color-69, #F74FAC);
+    background: var(--Base-White, #FFF);
+  }
+  

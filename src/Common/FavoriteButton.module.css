@@ -1,0 +1,22 @@
+.favStyling {
+    display: flex;
+    padding: var(--spacing-system-guides-corner-radius-2, 8px);
+    align-items: flex-start;
+    gap: 8px;
+    position: absolute;
+    right: 0px;
+    cursor: pointer;
+}
+
+.featuredIcon {
+    display: flex;
+    width: 16px;
+    height: 16px;
+    padding: 8px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: var(--radius-full, 9999px);
+    background: var(--Gray-50, #F9FAFB);
+    backdrop-filter: blur(20px);
+}
