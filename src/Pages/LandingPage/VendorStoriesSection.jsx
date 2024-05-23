@@ -1,5 +1,7 @@
 import React from "react";
 import VendorStory from "../../Common/VendorStory";
+import styles from "./VendorStoriesSection.module.css";
+
 import SenjesCuisines from "../../assets/Logos/Senjes Cuisines.svg";
 import Excite from "../../assets/Logos/Untitled UI.svg";
 import AcmeGroup from "../../assets/Logos/Acme Group.svg";
@@ -24,38 +26,9 @@ import Segment from "../../assets/Logos/Segment.svg";
 import Sisyphus from "../../assets/Logos/Sisyphus.svg";
 import Spherule from "../../assets/Logos/Spherule.svg";
 
-//STYLING
-const StoriesTray = {
-    display: 'flex',
-    height: '104px',
-    padding: 'var(--container-padding-mobile, 16px) var(--spacing-system-guides-corner-radius-4, 16px) var(--spacing-xs, 4px) var(--spacing-system-guides-corner-radius-4, 16px)',
-    alignItems: 'flex-start',
-    gap: 'var(--spacing-2xl, 20px)',
-    flexShrink: 0,
-    alignSelf: 'stretch',
-    overflow: 'auto',
-    alignItems: 'flex-start',
-    '-ms-overflow-style': 'none',  /* Internet Explorer 10+ */
-    'scrollbar-width': 'none',      /* Firefox */
-    '&::-webkit-scrollbar': {
-        display: 'none'              /* Webkit-based browsers */
-    }
-};
-
-const StoriesSection = {
-    display: 'flex',
-    height: '104px',
-    maxWidth: 'var(--container-max-width-desktop, 1280px)',
-    flexDirection: 'column',
-    alignItems: 'center',
-    gap: '10px',
-    alignSelf: 'stretch'
-};
-
-//FUNCTIONALITY
 function VendorStoriesSection() {
-    return(
-        <div style={StoriesTray}>
+    return (
+        <div className={styles["stories-tray"]}>
             <VendorStory logo={SenjesCuisines} label='Senjes Cuisines' />
             <VendorStory logo={Excite} label='Excite! Innovation ' />
             <VendorStory logo={AcmeGroup} label='Acme Group' />
@@ -81,6 +54,6 @@ function VendorStoriesSection() {
             <VendorStory logo={Spherule} label='Spherule' />
         </div>
     );
-};
+}
 
 export default VendorStoriesSection;
