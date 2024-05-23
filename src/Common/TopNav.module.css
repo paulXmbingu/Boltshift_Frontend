@@ -15,9 +15,9 @@
 
   /* Background blur/md */
   backdrop-filter: blur(8px);
-  position: sticky;
+  /* position: sticky;
   top: 0;
-  z-index: 1000;
+  z-index: 1000; */
 }
 
 .menuIcon {
@@ -61,11 +61,3 @@
   flex: 1 0 0;
 }
 
-.sticky {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 1000;
-  backdrop-filter: blur(8px); /* Keep the blur effect for a consistent appearance */
-}
