@@ -1,4 +1,25 @@
 :root {
+  font-family: Inter, sans-serif;
+  font-feature-settings: 'liga' 1, 'calt' 1;
+}
+
+@supports (font-variation-settings: normal) {
+  :root { font-family: InterVariable, sans-serif; }
+}
+
+#root {
+  transform-origin: top;
+  transform: scale(.9);
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+::selection {
+  background: var(--Colors-Background-bg-brand-secondary, #FDE8EE);
+  color: var(--colors-text-text-brand-tertiary-600, #DA154D);
+}
+
+:root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -30,11 +51,6 @@ body {
   justify-content: flex-start;
   min-width: 320px;
   min-height: 100vh;
-}
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
 }
 
 @media (prefers-color-scheme: light) {
