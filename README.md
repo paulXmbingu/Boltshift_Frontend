@@ -70,7 +70,7 @@ Boltshift Marketplace is a cutting-edge e-commerce platform that combines high-q
 - Usability Study: Maze & Useberry
 - Frontend Framework: React.js
 - State Management: Redux
-- Styling: CSS Modules, Styled Components
+- Styling: CSS Modules
 - Routing: React Router
 - Authentication: Firebase Authentication
 - Payment Processing: Stripe API
