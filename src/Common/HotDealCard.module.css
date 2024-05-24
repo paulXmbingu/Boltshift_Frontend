@@ -16,6 +16,7 @@
     overflow: hidden;
     transition: transform 0.2s, border 0.2s, box-shadow 0.2s;
     cursor: pointer;
+    position: relative;
 }
 
 .CardStyle:hover,
@@ -180,4 +181,10 @@
     align-items: flex-start;
     gap: var(--spacing-system-guides-corner-radius-1, 4px);
     align-self: stretch;
+}
+
+.favoriteButtonContainer {
+    position: absolute;
+    top: 0;
+    right: 0;
 }

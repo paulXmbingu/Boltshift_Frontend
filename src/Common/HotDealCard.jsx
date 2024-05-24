@@ -8,7 +8,9 @@ function HotDealCard({ imageSrc }) {
 
     return (
         <div className={styles.CardStyle}>
-            {/* <FavoriteButton /> */}
+            <div className={styles.favoriteButtonContainer}>
+                <FavoriteButton />
+            </div>
             <img src={imageSrc} alt="Product Image" className={styles.imageStyles} />
             <div className={styles.productDetailsStyles}>
                 <div className={styles.productNamePrice}>
