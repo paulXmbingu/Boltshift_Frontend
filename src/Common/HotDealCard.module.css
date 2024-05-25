@@ -3,7 +3,7 @@
     width: 160px;
     height: var(--spacing-system-guides-corner-radius-72, 288px);
     min-width: var(--spacing-system-guides-corner-radius-40, 160px);
-    max-width: var(--spacing-system-guides-corner-radius-40, 160px);
+    max-width: var(--spacing-system-guides-corner-radius-84, 336px);
     min-height: var(--spacing-system-guides-corner-radius-72, 288px);
     max-height: var(--spacing-system-guides-corner-radius-64, 288px);
     padding-bottom: var(--spacing-system-guides-corner-radius-3, 12px);
