@@ -1,10 +1,10 @@
 .cardStyle {
     display: flex;
     height: var(--spacing-system-guides-corner-radius-32, 128px);
-    min-width: 136px;
-    max-width: var(--spacing-system-guides-corner-radius-40, 136px);
     min-height: var(--spacing-system-guides-corner-radius-12, 48px);
     max-height: var(--spacing-system-guides-corner-radius-32, 128px);
+    min-width: 136px;
+    max-width: var(--spacing-system-guides-corner-radius-40, 136px);
     padding: var(--spacing-system-guides-corner-radius-3, 12px);
     flex-direction: column;
     justify-content: center;
