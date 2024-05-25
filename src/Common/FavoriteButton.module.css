@@ -6,6 +6,7 @@
     position: absolute;
     right: 0px;
     cursor: pointer;
+    transition: background-color 0.3s;
 }
 
 .featuredIcon {
@@ -18,5 +19,11 @@
     flex-shrink: 0;
     border-radius: var(--radius-full, 9999px);
     background: var(--Gray-50, #F9FAFB);
-    /* backdrop-filter: blur(20px); */
+    transition: transform 0.3s;
+}
+
+.wishilistIcon {
+    width: 16px;
+    height: 16px;
+    flex-shrink: 0;
 }
