@@ -51,7 +51,7 @@ Boltshift Marketplace is a cutting-edge e-commerce platform that combines high-q
 
 2. Install the required dependencies:
    ```
-   npm install vite --save-dev
+   npm i
    ```
 
 ### Usage
