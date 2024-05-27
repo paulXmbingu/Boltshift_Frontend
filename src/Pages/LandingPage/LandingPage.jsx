@@ -11,7 +11,7 @@ function LandingPage() {
         <div className={styles.pageLayout}>
             <TopNav />
             <VendorStoriesSection />
-            <HeroSection />
+            {/* <HeroSection /> */}
             <PopularCategoriesSection />
             <HotDealTodaySection/>
         </div>
