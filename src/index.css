@@ -14,3 +14,7 @@
   background: var(--Colors-Background-bg-brand-secondary, #FDE8EE);
   color: var(--colors-text-text-brand-tertiary-600, #DA154D);
 }
+
+body {
+  margin: auto;
+}
