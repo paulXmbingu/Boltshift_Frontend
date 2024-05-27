@@ -21,8 +21,7 @@ function HeroCard() {
                         </div>
                         <div className={styles.prodDescription}>
                             <div className={styles.prodDescriptionText}>
-                                This velvet couch is a sophisticated and trendy sofa that focuses on
-                                furniture because of its sumptuous velvet quilted fabric and strong wood legs.
+                                This velvet couch is a sophisticated and trendy sofa that focuses on furniture because of its sumptuous velvet quilted fabric and strong wood legs.
                             </div>
                         </div>
                     </div>
@@ -31,9 +30,9 @@ function HeroCard() {
                 <HeroPagination />
             </div>
             <div className={styles.productImage}>
-                <FavoriteButton className={styles.favoriteButton} />
                 <img src={HeroImage} alt="Hero" />
             </div>
+            <FavoriteButton className={styles.favoriteButton} />
         </div>
     );
 }

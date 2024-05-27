@@ -29,9 +29,10 @@
 }
 
 .favoriteButton {
-    position: absolute;
-    top: 0;
-    right: 0;
+    position: fixed;
+    top: 100px; /* Adjust as needed */
+    right: 100px; /* Adjust as needed */
+    z-index: 999; /* Ensure it's above other elements */
 }
 
 .productNamePrice {
