@@ -1,7 +1,6 @@
 import React from "react";
 import styles from './CTAbutton.module.css';
 
-// FUNCTIONALITY
 function CTAbutton({label, tailIcon}) {
     return (
         <button className={styles.buttonStyling}>

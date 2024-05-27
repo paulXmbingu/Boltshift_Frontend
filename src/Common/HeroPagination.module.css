@@ -6,7 +6,6 @@
     gap: var(--spacing-lg, 12px);
     border-radius: var(--radius-full, 9999px);
     background: var(--Component-colors-Alpha-alpha-white-90, rgba(255, 255, 255, 0.90));
-    backdrop-filter: blur(4px); /* Backdrop blurs/backdrop-blur-sm */
 }
 
 .paginationDot {
