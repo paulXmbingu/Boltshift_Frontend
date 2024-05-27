@@ -4,6 +4,7 @@
     align-items: center;
     gap: var(--spacing-xs, 4px);
     cursor: pointer;
+    transition: transform 0.2s, border 0.2s, box-shadow 0.2s;
 }
   
 .vendorLogo {
