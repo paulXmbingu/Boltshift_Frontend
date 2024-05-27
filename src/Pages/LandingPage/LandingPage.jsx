@@ -5,6 +5,7 @@ import HotDealTodaySection from "./HotDealTodaySection";
 import PopularCategoriesSection from "./PopularCategoriesSection";
 import VendorStoriesSection from "./VendorStoriesSection";
 import styles from "./LandingPage.module.css";
+import FeaturedProductsSection from "./FeaturedProductsSection";
 
 function LandingPage() {
     return(
@@ -14,6 +15,7 @@ function LandingPage() {
             <HeroSection />
             <PopularCategoriesSection />
             <HotDealTodaySection/>
+            <FeaturedProductsSection />
         </div>
     );
 };
