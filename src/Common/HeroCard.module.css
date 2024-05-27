@@ -11,6 +11,8 @@
     border: 1px solid var(--Gray-200, #EAECF0);
     background: var(--Gradient-Linear-Color-20, linear-gradient(45deg, #E9DEFA 0%, #FFF6EB 100%));
     overflow: hidden;
+    position: relative;
+
 }
 
 .productImage {
@@ -29,10 +31,9 @@
 }
 
 .favoriteButton {
-    position: fixed;
-    top: 100px; /* Adjust as needed */
-    right: 100px; /* Adjust as needed */
-    z-index: 999; /* Ensure it's above other elements */
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 
 .productNamePrice {

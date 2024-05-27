@@ -30,7 +30,7 @@ function HeroCard() {
                 <HeroPagination />
             </div>
             <div className={styles.productImage}>
-                <img src={HeroImage} alt="Hero" />
+                <img src={HeroImage} alt="Hero Image" />
             </div>
             <FavoriteButton className={styles.favoriteButton} />
         </div>
