@@ -10,7 +10,7 @@ function LandingPage() {
     return(
         <div className={styles.pageLayout}>
             <TopNav />
-            {/* <VendorStoriesSection /> */}
+            <VendorStoriesSection />
             {/* <HeroSection /> */}
             <PopularCategoriesSection />
             <HotDealTodaySection/>
