@@ -26,8 +26,8 @@ function HeroCard() {
                         </div>
                     </div>
                     <CTAbutton label="Shop Now" tailIcon={TailIcon} />
-                </div>
                 <HeroPagination />
+                </div>
             </div>
             <div className={styles.productImage}>
                 <img src={HeroImage} alt="Hero Image" />
