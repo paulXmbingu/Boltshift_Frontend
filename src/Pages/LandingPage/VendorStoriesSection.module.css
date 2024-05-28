@@ -1,9 +1,10 @@
 .stories-tray {
     display: flex;
     height: 104px;
-    padding: 16px;
-    gap: 20px;
-    flex-shrink: 0;
+    max-width: var(--width-3xl, 1280px);
+    padding: var(--container-padding-mobile, 16px) var(--spacing-system-guides-corner-radius-4, 16px) var(--spacing-xs, 4px) var(--spacing-system-guides-corner-radius-4, 16px);
+    align-items: flex-start;
+    gap: var(--spacing-2xl, 20px);
     align-self: stretch;
     overflow: auto;
 }
