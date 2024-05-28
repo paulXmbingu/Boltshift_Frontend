@@ -32,7 +32,7 @@ function HeroCard() {
             <div className={styles.productImage}>
                 <img src={HeroImage} alt="Hero Image" className={styles.heroImage} />
             </div>
-            <FavoriteButton className={styles.favoriteButton} />
+            {/* <FavoriteButton className={styles.favoriteButton} /> */}
         </div>
     );
 }
