@@ -10,6 +10,7 @@
     border: 1px solid var(--Gray-200, #EAECF0);
     background: var(--Gradient-Linear-Color-20, linear-gradient(45deg, #E9DEFA 0%, #FFF6EB 100%));
     overflow: hidden;
+    position: relative;
 }
 
 .productImage {
@@ -36,8 +37,8 @@
 
 .favoriteButton {
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 10;
+    right: 10;
 }
 
 .productNamePrice {
