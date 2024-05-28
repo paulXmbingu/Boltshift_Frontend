@@ -26,7 +26,6 @@
     align-items: center;
     gap: 20px;
     flex: 1 0 0;
-    background: var(--Base-White, #FFF);
     position: relative;
 }
 
