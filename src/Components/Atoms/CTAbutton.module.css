@@ -20,6 +20,32 @@
     /* Shadow/xs */
     box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
     cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+.buttonStyling:hover {
+    color: var(--Base-White, #FFF);
+    /* Text md/Semibold */
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px; /* 150% */
+    display: flex;
+    min-width: var(--Base-4-Premitives-72, 288px);
+    max-width: var(--Base-4-Premitives-72, 288px);
+    padding: 12px 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    align-self: stretch;
+    border-radius: var(--radius-md, 8px);
+    border: 1px solid var(--Component-colors-Components-Buttons-Primary-button-primary-border_hover, #BF1343);
+    background: var(--Component-colors-Components-Buttons-Primary-button-primary-bg_hover, #BF1343);
+    
+    /* Shadows/shadow-xs */
+    box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+    cursor: pointer;
   }
   
   .tailIconStyle {
