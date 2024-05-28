@@ -1,18 +1,15 @@
 .heroCard {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     align-content: center;
-    gap: 0 var(--spacing-system-guides-corner-radius-6, 24px);
-    flex: 1 0 0;
+    gap: 0px var(--spacing-system-guides-corner-radius-6, 24px);
     align-self: stretch;
     flex-wrap: wrap;
     border-radius: var(--spacing-system-guides-corner-radius-3, 12px);
     border: 1px solid var(--Gray-200, #EAECF0);
     background: var(--Gradient-Linear-Color-20, linear-gradient(45deg, #E9DEFA 0%, #FFF6EB 100%));
     overflow: hidden;
-    position: relative;
-
 }
 
 .productImage {
@@ -27,6 +24,11 @@
     gap: 20px;
     flex: 1 0 0;
     position: relative;
+}
+
+.heroImage {
+    flex: 1 0 0;
+    align-self: stretch;
 }
 
 .favoriteButton {
