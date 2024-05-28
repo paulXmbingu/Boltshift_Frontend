@@ -29,6 +29,9 @@
 .heroImage {
     flex: 1 0 0;
     align-self: stretch;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
 }
 
 .favoriteButton {
