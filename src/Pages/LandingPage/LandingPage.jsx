@@ -10,7 +10,7 @@ import FeaturedProductsSection from "./FeaturedProductsSection";
 function LandingPage() {
     return(
         <div className={styles.pageLayout}>
-            <TopNav />
+            {/* <TopNav /> */}
             <VendorStoriesSection />
             <HeroSection />
             <PopularCategoriesSection />
