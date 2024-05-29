@@ -26,6 +26,16 @@
     border: 1px solid var(--Colors-Border-border-primary, #D0D5DD);
     background: var(--Colors-Base-white, #FFF);
     transition: all 0.2s ease;
+    overflow: hidden;
+    color: var(--Base-Black, var(--Colors-Base-black, #000));
+    text-overflow: ellipsis;
+
+    /* Text sm/Regular */
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 142.857% */
 }
 
 .searchIcon {
@@ -50,6 +60,14 @@
     align-items: center;
     gap: 8px;
     box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+    color: var(--Base-White, var(--Colors-Base-white, #FFF));
+
+    /* Text xs/Semibold */
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 18px; /* 150% */
     transition: all 0.3s ease;
 }
 
