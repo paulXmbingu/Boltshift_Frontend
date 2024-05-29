@@ -9,9 +9,10 @@ const SearchInput = () => {
                 <img src={SearchIcon} alt="Search" className={styles.searchIcon} />
                 <input
                     className={styles.input}
-                    placeholder='Search for products, brands, and more...'
+                    placeholder='What are you looking for today?'
                     type="search"
                 />
+                <button className={styles.searchButton}>Search</button>
             </div>
         </div>
     );
