@@ -6,10 +6,11 @@ const SearchInput = () => {
         <div className={styles.searchInput}>
             <div className={styles.inputWithLabel}>
                 <input
+                    className={styles.input}
+                    placeholder='Search for products, brands, and more...'
                     type="search" 
                     name="" 
                     id="" 
-                    className={styles.input}
                 />
             </div>
         </div>
