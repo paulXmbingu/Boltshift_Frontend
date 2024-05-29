@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './SearchInput.module.css';
 import SearchIcon from '../../assets/Icons/UI/search-sm.svg';
 
-export const SearchInput = () => {
+const SearchInput = () => {
     return (
         <div className={styles.searchInput}>
             <div className={styles.inputWithLabel}>
@@ -17,3 +17,5 @@ export const SearchInput = () => {
         </div>
     );
 };
+
+export default SearchInput;
