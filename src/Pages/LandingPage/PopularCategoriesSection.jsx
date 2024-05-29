@@ -1,6 +1,6 @@
 import React from 'react';
-import CategoryCard from '../../Common/CategoryCard';
-import SectionHeader from '../../Common/SectionHeader';
+import CategoryCard from '../../Components/Shared/CategoryCard';
+import SectionHeader from '../../Components/Shared/SectionHeader';
 import styles from './PopularCategoriesSection.module.css';
 import ShoppingBags from "../../assets/Icons/Illustrated/Shopping bags.svg";
 import Clothing from '../../assets/Icons/Illustrated/T-shirt.svg';

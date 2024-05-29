@@ -1,5 +1,5 @@
 import React from "react";
-import VendorStory from "../../Common/VendorStory";
+import VendorStory from "../../Components/Shared/VendorStory";
 import styles from "./VendorStoriesSection.module.css";
 
 import SenjesCuisines from "../../assets/Logos/Senjes Cuisines.svg";
