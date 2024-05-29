@@ -50,6 +50,23 @@
     align-items: center;
     gap: 8px;
     box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+    transition: all 0.3s ease;
+}
+
+.searchButton:hover {
+    height: 44px;
+    padding: var(--Base-4-Premitives-2, 8px) 14px;
+    border-radius: var(--radius-md, 8px);
+    border-radius: 0 var(--Base-4-Premitives-2, 8px) var(--Base-4-Premitives-2, 8px) 0;
+    background: var(--Component-colors-Components-Buttons-Primary-button-primary-bg_hover, #BF1343);
+    color: #FFF;
+    cursor: pointer;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
 }
 
 .input:hover, .input:focus, .input:active, .input:checked {
