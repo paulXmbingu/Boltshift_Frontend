@@ -1,6 +1,9 @@
+import React from 'react';
+import styles from './SearchInput.module.css';
+
 const SearchInput = () => {
     return(
-        <div className={style.searchInput}>
+        <div className={styles.searchInput}>
             Search Input
         </div>
     );
