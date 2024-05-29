@@ -9,6 +9,7 @@ import Favorite from '../assets/Icons/UI/heart.svg'
 import Cart from '../assets/Icons/UI/shopping-cart-03.svg'
 import Bell from '../assets/Icons/UI/bell-02.svg'
 import Search from '../assets/Icons/UI/search-sm.svg'
+import SearchInput from "../Components/Molecules/SearchInput";
 
 function TopNav() {
   return (
@@ -20,7 +21,7 @@ function TopNav() {
         <img src={ProductLogo} alt="Product Logo" className={styles.logo} />
       </div>
       <div className={styles.searchFilter}>
-        <NotificationIcon icon={Search} />
+        {/* <SearchInput /> */}
       </div>
       <div className={styles.notifications}>
         <NotificationIcon icon={Favorite} />

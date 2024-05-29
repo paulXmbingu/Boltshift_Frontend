@@ -1,0 +1,12 @@
+.searchInput {
+    display: flex;
+    min-width: var(--Base-4-Premitives-72, 288px);
+    max-width: var(--Base-4-Premitives-220, 880px);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: var(--Base-4-Premitives-1, 4px);
+    flex: 1 0 0;
+    align-self: stretch;
+}
+
