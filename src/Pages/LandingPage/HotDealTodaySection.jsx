@@ -1,6 +1,6 @@
 import React from "react";
-import HotDealCard from "../../Common/HotDealCard";
-import SectionHeader from "../../Common/SectionHeader";
+import HotDealCard from "../../Components/Shared/HotDealCard";
+import SectionHeader from "../../Components/Shared/SectionHeader";
 import Fire from "../../assets/Icons/Illustrated/Fire.svg";
 import styles from "./HotDealTodaySection.module.css";
 

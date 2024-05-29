@@ -1,5 +1,5 @@
 import React from "react";
-import HeroCard from "../../Common/HeroCard";
+import HeroCard from "../../Components/Shared/HeroCard";
 import styles from "./HeroSection.module.css";
 
 function HeroSection() {

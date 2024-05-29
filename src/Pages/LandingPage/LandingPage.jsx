@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./LandingPage.module.css";
-import TopNav from "../../Common/TopNav";
+import TopNav from "../../Components/Shared/TopNav";
 import HeroSection from "./HeroSection";
 import HotDealTodaySection from "./HotDealTodaySection";
 import PopularCategoriesSection from "./PopularCategoriesSection";
