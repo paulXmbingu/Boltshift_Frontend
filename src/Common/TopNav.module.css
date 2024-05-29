@@ -13,9 +13,9 @@
   border-radius: var(--spacing-system-guides-corner-radius-0, 0px);
   background: var(--Base-White, #FFF);
 
-  /* position: sticky;
+  position: sticky;
   top: 0;
-  z-index: 999; */
+  z-index: 999;
 }
 
 .menuIcon {
