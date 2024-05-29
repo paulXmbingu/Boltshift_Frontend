@@ -11,7 +11,7 @@
     width: var(--Base-4-Premitives-16, 64px);
     height: var(--Base-4-Premitives-16, 64px);
     border-radius: var(--radius-full, 9999px);
-    border: 2px solid var(--Colors-Border-border-brand, #F7ABC1);
+    border: 1px solid var(--Colors-Border-border-primary, #D0D5DD);
     background: var(--Avatar-company-logo-Senjes-Cuisines, url(<path-to-image>) lightgray 50% / cover no-repeat);
 }
 
@@ -20,7 +20,7 @@
   width: var(--Base-4-Premitives-16, 64px);
   height: var(--Base-4-Premitives-16, 64px);
   border-radius: var(--radius-full, 9999px);
-  border: 2px solid var(--Colors-Border-border-brand-solid, #DA154D);
+  border: 1px solid var(--Colors-Border-border-brand-solid, #DA154D);
   background: var(--Avatar-company-logo-Senjes-Cuisines, url(<path-to-image>) lightgray 50% / cover no-repeat);
 
   /* Focus rings/ring-brand */
