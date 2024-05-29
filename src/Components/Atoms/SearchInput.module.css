@@ -25,7 +25,7 @@
     border-radius: var(--Base-4-Premitives-2, 8px) 0 0 var(--Base-4-Premitives-2, 8px);
     border: 1px solid var(--Colors-Border-border-primary, #D0D5DD);
     background: var(--Colors-Base-white, #FFF);
-    transition: all 0.1s ease;
+    transition: all 0.2s ease;
 }
 
 .searchIcon {
