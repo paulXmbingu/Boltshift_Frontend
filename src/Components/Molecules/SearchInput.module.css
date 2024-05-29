@@ -15,13 +15,14 @@
     display: flex;
     align-items: center;
     align-self: stretch;
+    width: 100%;
 }
 
 .input {
     flex: 1;
     height: var(--Base-4-Premitives-11, 44px);
     padding-left: var(--Base-4-Premitives-7, 36px); /* Adjust to make space for the icon */
-    border-radius: var(--Base-4-Premitives-2, 8px);
+    border-radius: var(--Base-4-Premitives-2, 8px) 0 0 var(--Base-4-Premitives-2, 8px);
     border: 1px solid var(--Colors-Border-border-primary, #D0D5DD);
     background: var(--Colors-Base-white, #FFF);
     transition: all 0.1s ease;
@@ -33,6 +34,22 @@
     width: var(--Base-4-Premitives-5, 20px);
     height: var(--Base-4-Premitives-5, 20px);
     pointer-events: none; /* Ensure the icon does not block input clicks */
+}
+
+.searchButton {
+    height: 44px;
+    padding: var(--Base-4-Premitives-2, 8px) 14px;
+    border-radius: 0 var(--Base-4-Premitives-2, 8px) var(--Base-4-Premitives-2, 8px) 0;
+    border: 1px solid var(--colors-foreground-fg-brand-primary-600, #DA154D);
+    background: var(--colors-foreground-fg-brand-primary-600, #DA154D);
+    color: #FFF;
+    cursor: pointer;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
 }
 
 .input:hover, .input:focus, .input:active, .input:checked {
