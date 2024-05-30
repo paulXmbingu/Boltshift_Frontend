@@ -5,7 +5,7 @@
     font-size: 16px;
     font-style: normal;
     font-weight: 600;
-    line-height: 24px; /* 150% */
+    line-height: 24px; /* 150*/
     display: flex;
     min-width: var(--Base-4-Premitives-72, 288px);
     max-width: var(--Base-4-Premitives-72, 288px);
