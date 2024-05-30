@@ -9,10 +9,16 @@ const FeaturedProductCard = ( {productPhoto, productLabel} ) => {
                 <div className={styles.productNamePrice} >
                 <div className={`${styles.productName} ${styles.productLabel}`}>
                     {productLabel}
+                </div >
+                <div className={styles.productPrice}>
+                    <div className={styles.currency}> Kshs.</div>
+                    <div className={styles.priceLabel}> 63,073 </div>
                 </div>
-                    <div> Product Price</div>
                 </div>
-                <div> Counter and CTA </div>
+                <div className={styles.counterCTA}>
+                    Counter
+                    <button className={styles.button}> Add to Cart </button>
+                </div>
             </div>
         </div>
     )
