@@ -17,3 +17,14 @@
     align-self: stretch;
     flex-wrap: wrap;
 }
+
+/* .smallCards {
+    display: flex;
+    min-width: var(--spacing-system-guides-corner-radius-84, 336px);
+    align-items: flex-start;
+    align-content: flex-start;
+    gap: 16px var(--container-padding-mobile, 16px);
+    flex: 1 0 0;
+    flex-wrap: wrap;
+    flex-direction: row;
+} */

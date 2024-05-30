@@ -13,9 +13,9 @@ import SearchInput from "../../Components/Atoms/SearchInput";
 
 function TopNav() {
   return (
-    <div className={styles.nav}>
+    <div className={styles.desktopNav}>
       <div className={styles.menu}>
-        <img src={MenuIcon} alt="Menu Icon" className={styles.menuIcon} /> 
+        <img src={MenuIcon} alt="Menu Icon" className={styles.desktopMenuIcon} /> 
       </div>
       <div className={styles.productLogo}>
         <img src={ProductLogo} alt="Product Logo" className={styles.logo} />
@@ -34,3 +34,23 @@ function TopNav() {
 }
 
 export default TopNav;
+
+<div className={styles.mobileNav}>
+  <div className={styles.mobileTopNav}>
+  <div className={styles.mobileMenu}>
+        <img src={MenuIcon} alt="Menu Icon" className={styles.MobileMenuIcon} /> 
+    </div>
+    <div className={styles.mobileProductLogo}>
+        <img src={ProductLogo} alt="Product Logo" className={styles.MobileLogo} />
+    </div>
+    <div className={styles.mobileNotifications}>
+        <NotificationIcon icon={Favorite} />
+        <NotificationIcon icon={Cart} />
+        <NotificationIcon icon={Bell} />
+        <UserAvatar userPhoto={UserPhoto} />
+    </div>
+  </div>
+  <div className={styles.mobileSearchFilter}>
+    <SearchInput />
+  </div>
+</div>

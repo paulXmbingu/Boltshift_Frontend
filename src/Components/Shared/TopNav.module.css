@@ -1,8 +1,7 @@
-.nav {
+.desktopNav {
   display: flex;
   min-width: var(--Grid-layouts-iPhone-375px, 375px);
   max-width: var(--grid-layouts-desktop-1280-px, 1280px);
-  /* min-height: var(--Base-4-Premitives-24, 96px); */
   padding: var(--Base-4-Premitives-4, 16px) var(--spacing-system-guides-corner-radius-4, 16px);
   justify-content: center;
   align-items: center;
@@ -18,7 +17,7 @@
   z-index: 999;
 }
 
-.menuIcon {
+.desktopMenuIcon {
   width: var(--Base-4-Premitives-6, 24px);
   height: var(--Base-4-Premitives-6, 24px);
   cursor: pointer;
@@ -59,3 +58,74 @@
   flex: 1 0 0;
 }
 
+/* MOBILE STYLING */
+.mobileNav {
+  display: flex;
+  width: var(--Breaking-Points-iPhone-375px, 375px);
+  min-width: var(--Breaking-Points-iPhone-375px, 375px);
+  max-width: var(--Breaking-Points-Desktop-1280px, 1280px);
+  min-height: var(--Base-4-Premitives-20, 80px);
+  padding: var(--Base-4-Premitives-4, 16px) var(--spacing-system-guides-corner-radius-4, 16px);
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--Base-4-Premitives-4, 16px);
+  border-radius: var(--spacing-system-guides-corner-radius-0, 0px);
+  background: var(--Colors-Background-bg-brand-primary, #FEF1F5);
+
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.mobileTopNav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  align-self: stretch;
+  flex-wrap: wrap;
+}
+
+.mobileSearchFilter {
+  display: flex;
+  height: var(--Base-4-Premitives-11, 44px);
+  min-width: var(--spacing-system-guides-corner-radius-80, 320px);
+  max-width: var(--spacing-system-guides-corner-radius-220, 880px);
+  align-items: center;
+  gap: var(--Base-4-Premitives-3, 12px);
+  align-self: stretch;
+}
+
+.mobileMenu {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-system-guides-corner-radius-1, 4px);
+}
+
+.MobileMenuIcon {
+  width: 24px;
+  height: 24px;
+}
+
+.mobileProductLogo {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-system-guides-corner-radius-2, 8px);
+}
+
+.MobileLogo {
+  display: flex;
+  width: 113.333px;
+  height: 32px;
+  padding: 1.333px 0.492px 1.333px 0px;
+  justify-content: center;
+  align-items: center;
+  gap: 7.586px;
+}
+
+.mobileNotifications {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: var(--spacing-system-guides-corner-radius-3, 12px);
+}
