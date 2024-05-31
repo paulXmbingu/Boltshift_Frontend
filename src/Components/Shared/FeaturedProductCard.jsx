@@ -16,7 +16,9 @@ const FeaturedProductCard = ( {productPhoto, productLabel} ) => {
                 </div>
                 </div>
                 <div className={styles.counterCTA}>
-                    Counter
+                    <div className={styles.offerCountDown}>
+                    Offer Count Down
+                    </div>
                     <button className={styles.button}> Add to Cart </button>
                 </div>
             </div>
