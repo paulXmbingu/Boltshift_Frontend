@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import styles from "./OfferCountDown.module.css"
 
 const OfferCountDown = () => {
-    const [days, setDays] = useState(30);
+    const [days, setDays] = useState(2);
     const [hours, setHours] = useState(23);
     const [minutes, setMinutes] = useState(59);
     const [seconds, setSeconds] = useState(59);
