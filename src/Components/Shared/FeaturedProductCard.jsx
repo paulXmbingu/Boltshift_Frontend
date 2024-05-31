@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./FeaturedProductCard.module.css";
+import OfferCountDown from "./OfferCountDown";
 
 const FeaturedProductCard = ( {productPhoto, productLabel} ) => {
     return(
@@ -17,7 +18,7 @@ const FeaturedProductCard = ( {productPhoto, productLabel} ) => {
                 </div>
                 <div className={styles.counterCTA}>
                     <div className={styles.offerCountDown}>
-                    Offer Count Down
+                        <OfferCountDown />
                     </div>
                     <button className={styles.button}> Add to Cart </button>
                 </div>
