@@ -28,7 +28,7 @@ const Footer = () => {
                         <div className={styles.linkText}> Features </div> 
                         <div className={styles.linkText}> Pricing </div> 
                         <div className={styles.linkText}> Careers </div> 
-                        <div className={styles.linkText}> Help </div> 
+                        <div className={styles.linkText}> Support </div> 
                         <div className={styles.linkText}> Development </div> 
                         <div className={styles.linkText}> Privacy/Terms & Conditions </div> 
                 </div>
