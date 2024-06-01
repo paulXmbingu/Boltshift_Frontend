@@ -1,6 +1,6 @@
 .footerWrapper {
     display: flex;
-    width: var(--width-3xl, 1280px);
+    /* width: var(--width-3xl, 1280px); */
     min-width: var(--Grid-layouts-iPhone-375px, 375px);
     max-width: var(--Containers-xl, 1280px);
     padding: var(--spacing-system-guides-corner-radius-0, 0px) var(--container-padding-mobile, 16px) var(--spacing-6xl, 48px) var(--container-padding-mobile, 16px);
