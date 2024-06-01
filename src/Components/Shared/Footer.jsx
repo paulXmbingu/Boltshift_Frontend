@@ -1,11 +1,20 @@
 import React from "react";
 import styles from "./Footer.module.css"
+import ProductLogo from "../../assets/Logos/Brand Logo.svg";
+import AppleStore from "../../assets/Logos/Apple Mobile app store badge.svg";
+import GoogleStore from "../../assets/Logos/Google Mobile app store badge.svg";
 
 const Footer = () => {
     return(
         <div className={styles.footerWrapper}>
             <div className={styles.logoStores}>
-                Logo and Stores
+                <div className={styles.productLogo}> 
+                    <img src={ProductLogo} alt="Product Logo" className={styles.logo} />
+                </div>
+                <div className={styles.appStores}>
+                    <img src={AppleStore} alt="Apple Logo" className={styles.storeLogo} />
+                    <img src={GoogleStore} alt="Apple Logo" className={styles.storeLogo} />
+                </div>
             </div>
             <div className={styles.linksSocials}>
                 Links and Socials
