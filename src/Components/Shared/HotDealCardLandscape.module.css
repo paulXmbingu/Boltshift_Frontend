@@ -1,0 +1,191 @@
+.CardStyle {
+    display: flex;
+    width: var(--spacing-system-guides-corner-radius-84, 336px);
+    height: var(--spacing-system-guides-corner-radius-72, 288px);
+    min-height: var(--spacing-system-guides-corner-radius-72, 288px);
+    max-height: var(--spacing-system-guides-corner-radius-64, 288px);
+    padding-bottom: var(--spacing-system-guides-corner-radius-3, 12px);
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: var(--spacing-system-guides-corner-radius-3, 12px);
+    border: 1px solid var(--Colors-Border-border-secondary, #EAECF0);
+    background: var(--Colors-Background-bg-primary, #FFF);
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.2s ease;
+}
+
+.CardStyle:hover,
+.CardStyle:focus {
+    transform: scale(1.0125);
+    border: 1px solid var(--Colors-Border-border-brand-solid, #DA154D);
+    box-shadow: 0px 12px 16px -4px rgba(16, 24, 40, 0.08), 0px 4px 6px -2px rgba(16, 24, 40, 0.03);
+}
+
+.productNamePrice {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.productName {
+    display: flex;
+    align-items: flex-start;
+    align-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.productNameText {
+    display: -webkit-box;
+    max-width: var(--spacing-system-guides-corner-radius-72, 288px);
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    color: var(--colors-text-text-primary-900, #101828);
+    text-overflow: ellipsis;
+
+    /* Text xs/Medium */
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px; /* 150% */
+}
+
+.productPrice {
+    display: flex;
+    align-items: flex-start;
+    align-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.currency {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+    color: var(--colors-text-text-brand-tertiary-600, #DA154D);
+    text-align: center;
+    text-overflow: ellipsis;
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px; /* 150% */
+}
+
+.ammount {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+    color: var(--colors-text-text-brand-tertiary-600, #DA154D);
+    text-overflow: ellipsis;
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px; /* 150% */
+}
+
+.popularityStatus {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-system-guides-corner-radius-1, 4px);
+    align-self: stretch;
+}
+
+.progressDistance {
+    display: flex;
+    align-items: center;
+    flex: 1 0 0;
+    border-radius: var(--spacing-system-guides-corner-radius-2, 8px);
+    background: var(--Colors-Background-bg-brand-secondary, #FDE8EE);
+    height: 4px; /* Set the height of the progress bar */
+    overflow: hidden; /* Hide overflowing content */
+}
+
+.unitsSold {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--spacing-system-guides-corner-radius-1, 0.25rem);
+}
+
+.noSold {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+    color: var(--colors-text-text-brand-tertiary-600, #DA154D);
+    text-overflow: ellipsis;
+    font-family: Inter;
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.125rem; /* 150% */
+}
+
+.noLeft {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+    color: var(--colors-text-text-brand-tertiary-600, #DA154D);
+    text-align: center;
+    text-overflow: ellipsis;
+    font-family: Inter;
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.125rem; /* 150% */
+}
+
+.Fire {
+    display: flex;
+    width: 1rem;
+    height: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.imageStyles {
+    height: 160px;
+    min-height: 160px;
+    max-height: 160px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.buttonStyles {
+    display: flex;
+    padding: var(--spacing-md, 8px) var(--spacing-lg, 12px);
+    justify-content: center;
+    align-items: center;
+    gap: var(--spacing-xs, 4px);
+    align-self: stretch;
+    border-radius: var(--radius-md, 8px);
+    border: 1px solid var(--Component-colors-Components-Buttons-Secondary-button-secondary-border, #D0D5DD);
+    background: var(--Component-colors-Components-Buttons-Secondary-button-secondary-bg, #FFF);
+    box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+    cursor: pointer;
+}
+
+.productDetailsStyles {
+    display: flex;
+    padding: 0px var(--spacing-system-guides-corner-radius-3, 12px);
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    gap: var(--spacing-system-guides-corner-radius-1, 4px);
+    align-self: stretch;
+}
+
+.favoriteButtonContainer {
+    position: absolute;
+    top: 0;
+    right: 0;
+}

@@ -1,7 +1,7 @@
 .featuredProductCard {
     display: flex;
     width: var(--spacing-system-guides-corner-radius-84, 336px);
-    height: var(--spacing-system-guides-corner-radius-148, 592px);
+    height: var(--spacing-system-guides-corner-radius-148, 606px);
     padding-bottom: var(--spacing-system-guides-corner-radius-3, 12px);
     flex-direction: column;
     justify-content: space-between;
@@ -62,7 +62,7 @@
     display: -webkit-box;
     width: 289px;
     -webkit-box-orient: vertical;
-    -webkit-line-clamp: 1;
+    -webkit-line-clamp: 2;
     flex-shrink: 0;
     overflow: hidden;
     color: var(--colors-text-text-primary-900, #101828);
@@ -149,4 +149,11 @@
     font-weight: 500;
     line-height: 20px; /* 142.857% */
     cursor: pointer;
+}
+
+.offerCountDown {
+    display: flex;
+    padding: var(--spacing-system-guides-corner-radius-1, 4px);
+    align-items: flex-start;
+    gap: var(--spacing-system-guides-corner-radius-1, 4px);
 }

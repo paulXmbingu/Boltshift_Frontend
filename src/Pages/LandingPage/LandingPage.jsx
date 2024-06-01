@@ -6,6 +6,7 @@ import HotDealTodaySection from "./HotDealTodaySection";
 import PopularCategoriesSection from "./PopularCategoriesSection";
 import VendorStoriesSection from "./VendorStoriesSection";
 import FeaturedProductsSection from "./FeaturedProductsSection";
+import FooterSection from "./FooterSection";
 
 function LandingPage() {
     return(
@@ -16,6 +17,7 @@ function LandingPage() {
             <PopularCategoriesSection />
             <HotDealTodaySection/>
             <FeaturedProductsSection />
+            <FooterSection />
         </div>
     );
 };
