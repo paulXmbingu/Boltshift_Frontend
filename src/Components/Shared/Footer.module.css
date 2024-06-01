@@ -1,0 +1,57 @@
+.footerWrapper {
+    display: flex;
+    width: var(--width-3xl, 1280px);
+    min-width: var(--Grid-layouts-iPhone-375px, 375px);
+    max-width: var(--Containers-xl, 1280px);
+    padding: var(--spacing-system-guides-corner-radius-0, 0px) var(--container-padding-mobile, 16px) var(--spacing-6xl, 48px) var(--container-padding-mobile, 16px);
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--container-padding-desktop, 32px);
+    background: var(--Colors-Background-bg-primary, #FFF);
+}
+
+.logoStores {
+    display: flex;
+    padding-top: var(--container-padding-mobile, 16px);
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    row-gap: var(--container-padding-desktop, 32px);
+    align-self: stretch;
+    flex-wrap: wrap;
+    border-top: 1px solid var(--Colors-Border-border-secondary, #EAECF0);
+}
+
+.linksSocials {
+    display: flex;
+    padding: 0px var(--spacing-none, 0px);
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-6xl, 48px);
+    align-self: stretch;
+}
+
+.copyrightInfoWrapper {
+    display: flex;
+    padding-top: var(--container-padding-mobile, 16px);
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    row-gap: var(--container-padding-desktop, 32px);
+    align-self: stretch;
+    flex-wrap: wrap;
+    border-top: 1px solid var(--Colors-Border-border-secondary, #EAECF0);
+}
+
+.copyrightInfoText {
+    flex: 1 0 0;
+    color: var(--colors-text-text-tertiary-600, #475467);
+    text-align: center;
+
+    /* Text xs/Regular */
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px; /* 150% */
+}
