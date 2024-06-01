@@ -50,6 +50,33 @@
     height: 40px;
 }
 
+.footerLinks {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    row-gap: var(--Base-4-Premitives-4, 16px);
+    align-self: stretch;
+    flex-wrap: wrap;
+}
+
+/* .link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+} */
+
+.linkText {
+    color: var(--colors-text-text-tertiary-600, #475467);
+
+    /* Text md/Medium */
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 150% */
+}
+
 .linksSocials {
     display: flex;
     padding: 0px var(--spacing-none, 0px);
