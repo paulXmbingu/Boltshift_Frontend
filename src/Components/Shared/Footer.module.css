@@ -59,6 +59,18 @@
     align-self: stretch;
 }
 
+.socialIcons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--spacing-system-guides-corner-radius-6, 24px);
+}
+
+.socialLogo {
+    width: var(--Base-4-Premitives-6, 24px);
+    height: var(--Base-4-Premitives-6, 24px);
+}
+
 .copyrightInfoWrapper {
     display: flex;
     padding-top: var(--container-padding-mobile, 16px);
