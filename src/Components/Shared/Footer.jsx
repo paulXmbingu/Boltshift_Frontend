@@ -30,7 +30,7 @@ const Footer = () => {
                         <div className={styles.linkText}> Careers </div> 
                         <div className={styles.linkText}> Help </div> 
                         <div className={styles.linkText}> Development </div> 
-                        <div className={styles.linkText}> Legal </div> 
+                        <div className={styles.linkText}> Privacy/Terms & Conditions </div> 
                 </div>
                 <div className={styles.socialIcons}>
                     <img src={Dribbble} alt="Dribbble" className={styles.socialLogo} />
