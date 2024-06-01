@@ -43,7 +43,7 @@ const Footer = () => {
             </div>
             <div className={styles.copyrightInfoWrapper}>
                 <div className={styles.copyrightInfoText}>
-                    © 2010 - 2024 Paul Mbingu and/or Excite! Innovation Company. All rights reserved. All other trademarks, service marks, and company names are the property of their respective owners. Excite! Innovation Company↗ is a Premier Digital Product Innovation Company that specializes in UIUX Research, Design & Software Engineering. Boltshift is a NON-COMMERCIAL EXPERIMENT conducted by Paul Mbingu↗ on behalf of Excite! Innovation Company, exclusively intended for educational purposes. This experiment is not intended for commercial use. Special thanks to Senje's Cuisines ↗, Marion Ngayi ↗, Mercy Mbingu, Kombo Mwanake ↗, and Felix Ouma ↗ as frontend developer and UI engineer.
+                    © 2010 - 2024 Paul Mbingu and/or Excite! Innovation Company. All rights reserved. All other trademarks, service marks, and company names are the property of their respective owners. <b>Excite! Innovation Company</b>↗ is a Premier Digital Product Innovation Company that specializes in UIUX Research, Design & Software Engineering. Boltshift is a NON-COMMERCIAL EXPERIMENT conducted by <b>Paul Mbingu</b>↗ on behalf of <b>Excite! Innovation Company</b>, exclusively intended for educational purposes. This experiment is not intended for commercial use. Special thanks to Senje's Cuisines ↗, <b>Marion Ngayi</b>↗, <b>Mercy Mbingu</b>, <b>Kombo Mwanake</b>↗, and <b>Felix Ouma</b>↗ as frontend developer and UI engineer.
                 </div>
             </div>
         </div>
