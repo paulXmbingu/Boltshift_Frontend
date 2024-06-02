@@ -1,0 +1,77 @@
+/* BUTTON PRIMARY MEDIUM */
+.Btn_Primary_MD {
+    display: inline-flex;
+    padding: 10px 14px;
+    justify-content: center;
+    align-items: center;
+    gap: var(--spacing-xs, 4px);
+    border-radius: var(--radius-md, 8px);
+    border: 1px solid var(--Component-colors-Components-Buttons-Primary-button-primary-border, #DA154D);
+    background: var(--Component-colors-Components-Buttons-Primary-button-primary-bg, #DA154D);
+
+    /* Shadows/shadow-xs */
+    box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+    color: var(--Component-colors-Components-Buttons-Primary-button-primary-fg, #FFF);
+
+    /* Text sm/Semibold */
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px; /* 142.857% */
+
+    cursor: pointer;
+    transition: all 0.2s ease;
+    outline: none;
+}
+
+.Btn_Primary_MD:hover {
+    display: inline-flex;
+    padding: 10px 14px;
+    justify-content: center;
+    align-items: center;
+    gap: var(--spacing-xs, 4px);
+    border-radius: var(--radius-md, 8px);
+    border: 1px solid var(--Component-colors-Components-Buttons-Primary-button-primary-border_hover, #BF1343);
+    background: var(--Component-colors-Components-Buttons-Primary-button-primary-bg_hover, #BF1343);
+
+    /* Shadows/shadow-xs */
+    box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+}
+
+.Btn_Primary_MD:focus {
+    display: inline-flex;
+    padding: 10px 14px;
+    justify-content: center;
+    align-items: center;
+    gap: var(--spacing-xs, 4px);
+    border-radius: var(--radius-md, 8px);
+    border: 1px solid var(--Component-colors-Components-Buttons-Primary-button-primary-border, #DA154D);
+    background: var(--Component-colors-Components-Buttons-Primary-button-primary-bg, #DA154D);
+
+    /* Focus rings/ring-brand-shadow-xs */
+    box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05), 0px 0px 0px 4px rgba(234, 39, 94, 0.24);
+}
+
+.Btn_Primary_LG:disabled {
+    display: inline-flex;
+    padding: 10px 14px;
+    justify-content: center;
+    align-items: center;
+    gap: var(--spacing-xs, 4px);
+    border-radius: var(--radius-md, 8px);
+    border: 1px solid var(--Colors-Border-border-disabled_subtle, #EAECF0);
+    background: var(--Colors-Background-bg-disabled, #F2F4F7);
+
+    /* Shadows/shadow-xs */
+    box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+
+    color: var(--Colors-Foreground-fg-disabled, #98A2B3);
+
+    /* Text sm/Semibold */
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px; /* 142.857% */
+}
