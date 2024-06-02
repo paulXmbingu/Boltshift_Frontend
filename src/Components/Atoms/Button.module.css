@@ -22,7 +22,6 @@
 
     cursor: pointer;
     transition: all 0.2s ease;
-    align-self: stretch;
     outline: none;
 }
 
