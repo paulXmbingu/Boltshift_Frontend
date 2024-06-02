@@ -56,3 +56,5 @@ const TopNavSmall = () => {
     </div>
   );
 }
+
+export { TopNavLarge, TopNavSmall };
