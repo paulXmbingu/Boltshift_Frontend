@@ -52,10 +52,10 @@
 
 .footerLinks {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     align-content: center;
-    row-gap: var(--Base-4-Premitives-4, 16px);
+    gap: var(--Base-4-Premitives-4, 16px) var(--spacing-5xl, 40px);
     align-self: stretch;
     flex-wrap: wrap;
 }
