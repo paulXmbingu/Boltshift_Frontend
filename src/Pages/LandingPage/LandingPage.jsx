@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./LandingPage.module.css";
-import TopNav from "../../Components/Shared/TopNav";
+import { TopNavLarge } from "../../Components/Shared/TopNav";
 import HeroSection from "./HeroSection";
 import HotDealTodaySection from "./HotDealTodaySection";
 import PopularCategoriesSection from "./PopularCategoriesSection";
@@ -11,7 +11,7 @@ import FooterSection from "./FooterSection";
 function LandingPage() {
     return(
         <div className={styles.pageLayout}>
-            <TopNav />
+            <TopNavLarge />
             <VendorStoriesSection />
             <HeroSection />
             <PopularCategoriesSection />
