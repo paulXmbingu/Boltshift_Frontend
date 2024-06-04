@@ -11,7 +11,7 @@ import Bell from '../../assets/Icons/UI/bell-02.svg'
 import Search from '../../assets/Icons/UI/search-sm.svg'
 import SearchInput from "../../Components/Atoms/SearchInput";
 
-function TopNav() {
+const TopNavLarge = () => {
   return (
     <div className={styles.desktopNav}>
       <div className={styles.menu}>
@@ -33,24 +33,28 @@ function TopNav() {
   );
 }
 
-export default TopNav;
+const TopNavSmall = () => {
+  return (
+    <div className={styles.mobileNav}>
+      <div className={styles.mobileTopNav}>
+        <div className={styles.mobileMenu}>
+              <img src={MenuIcon} alt="Menu Icon" className={styles.MobileMenuIcon} /> 
+        </div>
+          <div className={styles.mobileProductLogo}>
+              <img src={ProductLogo} alt="Product Logo" className={styles.MobileLogo} />
+          </div>
+          <div className={styles.mobileNotifications}>
+              <NotificationIcon icon={Favorite} />
+              <NotificationIcon icon={Cart} />
+              <NotificationIcon icon={Bell} />
+              <UserAvatar userPhoto={UserPhoto} />
+          </div>
+      </div>
+      <div className={styles.mobileSearchFilter}>
+        <SearchInput />
+      </div>
+    </div>
+  );
+}
 
-<div className={styles.mobileNav}>
-  <div className={styles.mobileTopNav}>
-  <div className={styles.mobileMenu}>
-        <img src={MenuIcon} alt="Menu Icon" className={styles.MobileMenuIcon} /> 
-    </div>
-    <div className={styles.mobileProductLogo}>
-        <img src={ProductLogo} alt="Product Logo" className={styles.MobileLogo} />
-    </div>
-    <div className={styles.mobileNotifications}>
-        <NotificationIcon icon={Favorite} />
-        <NotificationIcon icon={Cart} />
-        <NotificationIcon icon={Bell} />
-        <UserAvatar userPhoto={UserPhoto} />
-    </div>
-  </div>
-  <div className={styles.mobileSearchFilter}>
-    <SearchInput />
-  </div>
-</div>
+export { TopNavLarge, TopNavSmall };
