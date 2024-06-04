@@ -1,7 +1,7 @@
 .cardStyle {
     display: flex;
     width: var(--Base-4-Premitives-40, 136px);
-    height: var(--Base-4-Premitives-32, 112px);
+    height: var(--Base-4-Premitives-32, 128px);
     padding: var(--spacing-system-guides-corner-radius-3, 12px);
     flex-direction: column;
     justify-content: center;
