@@ -38,6 +38,7 @@
     width: var(--Base-4-Premitives-40, 160px);
     height: var(--Base-4-Premitives-40, 160px);
     flex-shrink: 0;
+    object-fit: cover;
 }
 
 .detailsCTA {
