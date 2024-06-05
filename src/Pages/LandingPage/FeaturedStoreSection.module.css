@@ -1,4 +1,4 @@
-.popCatSection {
+.catSection {
     display: flex;
     min-width: 375px;
     max-width: 1280px;
@@ -9,7 +9,7 @@
     align-self: stretch;
 }
 
-.catCards {
+.featuredStoreCards {
     display: flex;
     align-items: flex-start;
     align-content: flex-start;
@@ -18,12 +18,12 @@
     flex-wrap: wrap;
 }
 
-.smallCards {
+.smallLandscapeCards {
     display: flex;
     min-width: var(--spacing-system-guides-corner-radius-84, 336px);
     align-items: flex-start;
     align-content: flex-start;
-    gap: var(--container-padding-mobile, 16px);
+    gap: 16px var(--spacing-xl, 16px);
     flex: 1 0 0;
     flex-wrap: wrap;
 }
