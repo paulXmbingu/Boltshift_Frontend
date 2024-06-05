@@ -1,4 +1,4 @@
-.popCatSection {
+.catSection {
     display: flex;
     min-width: 375px;
     max-width: 1280px;
@@ -18,12 +18,3 @@
     flex-wrap: wrap;
 }
 
-.smallCards {
-    display: flex;
-    min-width: var(--spacing-system-guides-corner-radius-84, 336px);
-    align-items: flex-start;
-    align-content: flex-start;
-    gap: var(--container-padding-mobile, 16px);
-    flex: 1 0 0;
-    flex-wrap: wrap;
-}
