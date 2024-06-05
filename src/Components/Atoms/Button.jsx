@@ -9,7 +9,7 @@ const Btn_Primary_MD = () => {
     );
 };
 
-export { Btn_Primary_LG, Btn_Primary_MD };
+
 
 const Btn_Primary_LG = () => {
     return (
@@ -18,3 +18,14 @@ const Btn_Primary_LG = () => {
         </button>
     );
 };
+
+
+
+export const Btn_Sec_Gray_SM = () => {
+    return(
+        <button>  </button>
+    );
+};
+
+
+export { Btn_Primary_LG, Btn_Primary_MD };
