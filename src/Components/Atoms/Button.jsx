@@ -1,6 +1,13 @@
 import React from "react";
 import styles from "./Button.module.css";
 
+const Btn_Sec_Gray_SM = () => {
+    return(
+        <button>  </button>
+    );
+};
+
+
 const Btn_Primary_MD = () => {
     return (
         <button className={styles.Btn_Primary_MD}>
@@ -8,7 +15,6 @@ const Btn_Primary_MD = () => {
         </button>
     );
 };
-
 
 
 const Btn_Primary_LG = () => {
@@ -21,11 +27,4 @@ const Btn_Primary_LG = () => {
 
 
 
-export const Btn_Sec_Gray_SM = () => {
-    return(
-        <button>  </button>
-    );
-};
-
-
-export { Btn_Primary_LG, Btn_Primary_MD };
+export { Btn_Sec_Gray_SM, Btn_Primary_MD, Btn_Primary_LG };
