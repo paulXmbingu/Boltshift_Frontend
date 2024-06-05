@@ -9,7 +9,7 @@
     align-self: stretch;
 }
 
-.catCards {
+.featuredStoreCards {
     display: flex;
     align-items: flex-start;
     align-content: flex-start;
@@ -18,3 +18,12 @@
     flex-wrap: wrap;
 }
 
+.smallLandscapeCards {
+    display: flex;
+    min-width: var(--spacing-system-guides-corner-radius-84, 336px);
+    align-items: flex-start;
+    align-content: flex-start;
+    gap: 16px var(--spacing-xl, 16px);
+    flex: 1 0 0;
+    flex-wrap: wrap;
+}

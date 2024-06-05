@@ -10,8 +10,9 @@ function FeaturedStore() {
     return (
         <div className={styles.catSection}>
             <SectionHeader headerTitle="Featured Store" icon={ConvenienceStore}/>
-            <div className={styles.catCards}>
-
+            <div className={styles.featuredStoreCards}>
+                <div> Featured Store Card </div>
+                <div className={styles.smallLandscapeCards}> Small Landscape Cards </div>
             </div>
            </div>
     );
