@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './LandScapeProductCard.module.css';
+import { Btn_Sec_Gray_SM } from '../Atoms/Button';
 
 const LandScapeProductCard = ({productImage, productText, price }) => {
     return (
@@ -17,7 +18,7 @@ const LandScapeProductCard = ({productImage, productText, price }) => {
                         <div className={styles.price}> {price} </div>
                     </div>
                 </div>
-                <div> Button </div>
+                <Btn_Sec_Gray_SM ButtonCTA={`Add to Cart`} iconLeading={``} />
             </div>
         </div>
     );
