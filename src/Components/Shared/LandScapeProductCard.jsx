@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './LandScapeProductCard.module.css';
 
-const LandScapeProductCard = ({productImage, productText }) => {
+const LandScapeProductCard = ({productImage, productText, price }) => {
     return (
         <div className={styles.landScapeProductCard}>
             <div className={styles.imageMask}>
@@ -12,7 +12,10 @@ const LandScapeProductCard = ({productImage, productText }) => {
                     <div className={styles.productName}>
                         <div className={styles.productText}> {productText} </div>
                     </div>
-                    <div> Product Price </div>
+                    <div className={styles.productPrice}>
+                        <div className={styles.currency}> Ksh. </div>
+                        <div className={styles.price}> {price} </div>
+                    </div>
                 </div>
                 <div> Button </div>
             </div>
