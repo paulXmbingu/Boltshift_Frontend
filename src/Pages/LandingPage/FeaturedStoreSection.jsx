@@ -11,12 +11,7 @@ function FeaturedStoreSection() {
             <div className={styles.featuredStoreCards}>
                 Featured Store Card Component
                 <div className={styles.smallLandscapeCards}>
-                    <LandScapeProductCard />
-                    <LandScapeProductCard />
-                    <LandScapeProductCard />
-                    <LandScapeProductCard />
-                    <LandScapeProductCard />
-                    <LandScapeProductCard />
+                    <LandScapeProductCard productImage={`https://i.pinimg.com/736x/b2/4f/c9/b24fc9c02f7ae7ef59b7297463ab69be.jpg`} productText={`Vintage Leather Backpack For Women`} />
                 </div>
             </div>
            </div>
