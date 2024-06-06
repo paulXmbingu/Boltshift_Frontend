@@ -11,7 +11,7 @@ function FeaturedStoreSection() {
         <div className={styles.catSection}>
             <SectionHeader headerTitle="Featured Store" icon={ConvenienceStore}/>
             <div className={styles.featuredStoreCards}>
-                <FeaturedStoreCard storeIcon={UntitledUI} storeDescription={` Explore a diverse range of high-quality products across various categories, from electronics and fashion to home essentials and more.`} />
+                <FeaturedStoreCard storeIcon={UntitledUI} storeLabel={`Senjes Cuisine's`} storeDescription={` Explore a diverse range of high-quality products across various categories, from electronics and fashion to home essentials and more.`} />
                 <div className={styles.smallLandscapeCards}>
                     <LandScapeProductCard productImage={`https://i.pinimg.com/736x/b2/4f/c9/b24fc9c02f7ae7ef59b7297463ab69be.jpg`} productText={`Vintage Leather Backpack For Women`} price={`86,999`} />
                     <LandScapeProductCard productImage={`https://i.pinimg.com/564x/db/1c/f1/db1cf11a5aef3f32f33a261b42299c61.jpg`} productText={`Yves Saint Laurent Makeup | Rouge Volupt Shine Lipstick Balm | Color: Gold/Red | Size: Os`} price={`3,943`} />
