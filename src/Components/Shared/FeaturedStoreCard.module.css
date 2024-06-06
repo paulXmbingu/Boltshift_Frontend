@@ -25,3 +25,17 @@
     gap: var(--spacing-system-guides-corner-radius-16, 64px);
     flex: 1 0 0;
 }
+
+.storeDetails {
+    display: flex;
+    width: var(--Base-4-Premitives-64, 256px);
+    max-width: var(--Base-4-Premitives-64, 256px);
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-system-guides-corner-radius-2, 8px);
+}
+
+.storeIcon {
+    width: 72px;
+    height: 72px;
+}
