@@ -1,10 +1,27 @@
 .tag {
-    display: flex;
-    padding: var(--spacing-xs, 4px) 10px;
-    align-items: center;
-    gap: 3px;
-    border-radius: var(--radius-sm, 6px);
-    border: 1px solid var(--Gradient-Linear-Color-69, #F74FAC);
-    background: var(--Base-White, #FFF);
+  display: flex;
+  padding: var(--spacing-xs, 4px) 10px;
+  align-items: center;
+  gap: 3px;
+  border-radius: var(--radius-sm, 6px);
+  border: 1px solid var(--Gradient-Linear-Color-69, #F74FAC);
+  background: var(--Base-White, #FFF);
   }
   
+.tagContent {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm, 6px);
+}
+  
+.tagText {
+  color: var(--Primary-950, #1F0217);
+  text-align: center;
+  
+  /* Text sm/Medium */
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px; /* 142.857% */
+}
