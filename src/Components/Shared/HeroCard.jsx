@@ -1,11 +1,11 @@
 import React from 'react';
 import HeroImage from "../../assets/Images/Photos/Sofa.jpg";
-import CTAbutton from '../../Components/Atoms/CTAButton';
 import TailIcon from '../../assets/Icons/UI/chevron-right.svg';
 import DiscountTag from '../../Components/Atoms/DiscountTag';
 import HeroPagination from './HeroPagination';
 import FavoriteButton from './FavoriteButton';
 import styles from './HeroCard.module.css';
+import { Btn_Pri_XL } from '../Atoms/Button';
 
 function HeroCard() {
     return (
@@ -25,8 +25,8 @@ function HeroCard() {
                             </div>
                         </div>
                     </div>
-                    <CTAbutton label="Shop Now" tailIcon={TailIcon} />
-                <HeroPagination />
+                    <Btn_Pri_XL ButtonCTA={`Shop Now`} iconTrailing={TailIcon} />
+                    <HeroPagination />
                 </div>
             </div>
             <div className={styles.productImage}>

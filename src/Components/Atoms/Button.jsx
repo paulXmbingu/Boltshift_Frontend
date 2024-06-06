@@ -1,6 +1,20 @@
 import React from "react";
 import styles from "./Button.module.css";
 
+const Btn_Pri_SM = ({ iconLeading, ButtonCTA, iconTrailing }) => {
+    return (
+        <button className={styles.priSM}>
+            {iconLeading && <img src={iconLeading} alt="Leading Icon" className={styles.leadingIconPriSM} />}
+            <div className={styles.textPaddingPriSM}>
+                <div className={styles.cTATextPriSM}>
+                    {ButtonCTA}
+                </div>
+            </div>
+            {iconTrailing && <img src={iconTrailing} alt="Trailing Icon" className={styles.trailingIconPriSM} />}
+        </button>
+    );
+};
+
 const Btn_Sec_Gray_SM = ({ iconLeading, ButtonCTA, iconTrailing }) => {
     return (
         <button className={styles.secGraySM}>
@@ -31,4 +45,18 @@ const Btn_Primary_LG = ({ ButtonCTA }) => {
     );
 };
 
-export { Btn_Sec_Gray_SM, Btn_Primary_MD, Btn_Primary_LG };
+const Btn_Pri_XL = ({ iconLeading, ButtonCTA, iconTrailing }) => {
+    return (
+        <button className={styles.priXL}>
+            {iconLeading && <img src={iconLeading} alt="Leading Icon" className={styles.leadingIconPriXL} />}
+            <div className={styles.textPaddingPriXL}>
+                <div className={styles.cTATextPriXL}>
+                    {ButtonCTA}
+                </div>
+            </div>
+            {iconTrailing && <img src={iconTrailing} alt="Trailing Icon" className={styles.trailingIconPriXL} />}
+        </button>
+    );
+};
+
+export { Btn_Pri_SM,Btn_Sec_Gray_SM, Btn_Primary_MD, Btn_Primary_LG, Btn_Pri_XL };

@@ -1,3 +1,77 @@
+/* BUTTON PRIMARY SMALL */
+.textPaddingPriSM {
+    display: flex;
+    padding: var(--spacing-none, 0px) var(--spacing-xxs, 2px);
+    justify-content: center;
+    align-items: center;
+}
+
+.cTATextPriSM {
+    color: var(--Component-colors-Components-Buttons-Primary-button-primary-fg, #FFF);
+
+    /* Text sm/Semibold */
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px; /* 142.857% */
+}
+
+.priSM {
+    display: inline-flex;
+    padding: var(--spacing-md, 8px) var(--spacing-lg, 12px);
+    justify-content: center;
+    align-items: center;
+    gap: var(--spacing-xs, 4px);
+    border-radius: var(--radius-md, 8px);
+    border: 1px solid var(--Component-colors-Components-Buttons-Primary-button-primary-border, #DA154D);
+    background: var(--Component-colors-Components-Buttons-Primary-button-primary-bg, #DA154D);
+
+    /* Shadows/shadow-xs */
+    box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+    cursor: pointer;
+    transition: all 0.1s ease;
+    outline: none;
+    width: 100%; 
+}
+
+.priSM:hover {
+    border-radius: var(--radius-md, 8px);
+    border: 1px solid var(--Component-colors-Components-Buttons-Primary-button-primary-border_hover, #BF1343);
+    background: var(--Component-colors-Components-Buttons-Primary-button-primary-bg_hover, #BF1343);
+    
+    /* Shadows/shadow-xs */
+    box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+}
+
+.priSM:focus {
+    border-radius: var(--radius-md, 8px);
+    border: 1px solid var(--Component-colors-Components-Buttons-Primary-button-primary-border, #DA154D);
+    background: var(--Component-colors-Components-Buttons-Primary-button-primary-bg, #DA154D);
+    
+    /* Focus rings/ring-brand-shadow-xs */
+    box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05), 0px 0px 0px 4px rgba(234, 39, 94, 0.24);
+}
+
+.priSM:disabled {
+    border-radius: var(--radius-md, 8px);
+    border: 1px solid var(--Colors-Border-border-disabled_subtle, #EAECF0);
+    background: var(--Colors-Background-bg-disabled, #F2F4F7);
+    
+    /* Shadows/shadow-xs */
+    box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+}
+
+.leadingIconPriSM {
+    width: 20px;
+    height: 20px;
+}
+
+.trailingIconPriSM {
+    width: 20px;
+    height: 20px;
+}
+
 /* BUTTON SECONDARY SMALL GRAY */
 .textPadding {
     display: flex;
@@ -71,7 +145,6 @@
     width: 20px;
     height: 20px;
 }
-
 
 /* BUTTON PRIMARY MEDIUM */
 .Btn_Primary_MD {
@@ -149,4 +222,78 @@
     font-style: normal;
     font-weight: 600;
     line-height: 20px; /* 142.857% */
+}
+
+/* BUTTON PRIMARY XL  */
+.textPaddingPriXL {
+    display: flex;
+    padding: var(--spacing-none, 0px) var(--spacing-xxs, 2px);
+    justify-content: center;
+    align-items: center;
+}
+
+.cTATextPriXL {
+    color: var(--Component-colors-Components-Buttons-Primary-button-primary-fg, #FFF);
+
+    /* Text md/Semibold */
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px; /* 150% */
+}
+
+.priXL {
+    display: inline-flex;
+    padding: var(--spacing-lg, 12px) 18px;
+    justify-content: center;
+    align-items: center;
+    gap: var(--spacing-sm, 6px);
+    border-radius: var(--radius-md, 8px);
+    border: 1px solid var(--Component-colors-Components-Buttons-Primary-button-primary-border, #DA154D);
+    background: var(--Component-colors-Components-Buttons-Primary-button-primary-bg, #DA154D);
+
+    /* Shadows/shadow-xs */
+    box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+    cursor: pointer;
+    transition: all 0.1s ease;
+    outline: none;
+    width: 100%; 
+}
+
+.priXL:hover {
+    border-radius: var(--radius-md, 8px);
+    border: 1px solid var(--Component-colors-Components-Buttons-Primary-button-primary-border_hover, #BF1343);
+    background: var(--Component-colors-Components-Buttons-Primary-button-primary-bg_hover, #BF1343);
+    
+    /* Shadows/shadow-xs */
+    box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+}
+
+.priXL:focus {
+    border-radius: var(--radius-md, 8px);
+    border: 1px solid var(--Component-colors-Components-Buttons-Primary-button-primary-border, #DA154D);
+    background: var(--Component-colors-Components-Buttons-Primary-button-primary-bg, #DA154D);
+    
+    /* Focus rings/ring-brand-shadow-xs */
+    box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05), 0px 0px 0px 4px rgba(234, 39, 94, 0.24);
+}
+
+.priXL:disabled {
+    border-radius: var(--radius-md, 8px);
+    border: 1px solid var(--Colors-Border-border-disabled_subtle, #EAECF0);
+    background: var(--Colors-Background-bg-disabled, #F2F4F7);
+    
+    /* Shadows/shadow-xs */
+    box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+}
+
+.leadingIconPriXL {
+    width: 20px;
+    height: 20px;
+}
+
+.trailingIconPriXL {
+    width: 20px;
+    height: 20px;
 }
