@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./FeaturedProductCard.module.css";
 import OfferCountDown from "./OfferCountDown";
+import { Btn_Pri_SM } from "../Atoms/Button";
 
 const FeaturedProductCard = ( {productPhoto, productLabel} ) => {
     return(
@@ -20,7 +21,7 @@ const FeaturedProductCard = ( {productPhoto, productLabel} ) => {
                     <div className={styles.offerCountDown}>
                         <OfferCountDown />
                     </div>
-                    <button className={styles.button}> Add to Cart </button>
+                    <Btn_Pri_SM ButtonCTA={`Add to Cart`} />
                 </div>
             </div>
         </div>
