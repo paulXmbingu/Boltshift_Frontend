@@ -45,6 +45,20 @@ const Btn_Primary_LG = ({ ButtonCTA }) => {
     );
 };
 
+const Btn_Ter_LG = ({ iconLeading, ButtonCTA, iconTrailing }) => {
+    return (
+        <button className={styles.TerLG}>
+            {iconLeading && <img src={iconLeading} alt="Leading Icon" className={styles.leadingIconTerLG} />}
+            <div className={styles.textPaddingTerLG}>
+                <div className={styles.cTATextTerLG}>
+                    {ButtonCTA}
+                </div>
+            </div>
+            {iconTrailing && <img src={iconTrailing} alt="Trailing Icon" className={styles.trailingIconTerLG} />}
+        </button>
+    );
+};
+
 const Btn_Pri_XL = ({ iconLeading, ButtonCTA, iconTrailing }) => {
     return (
         <button className={styles.priXL}>
@@ -59,4 +73,4 @@ const Btn_Pri_XL = ({ iconLeading, ButtonCTA, iconTrailing }) => {
     );
 };
 
-export { Btn_Pri_SM, Btn_Sec_Gray_SM, Btn_Primary_MD, Btn_Primary_LG, Btn_Pri_XL };
+export { Btn_Pri_SM, Btn_Sec_Gray_SM, Btn_Primary_MD, Btn_Primary_LG, Btn_Ter_LG, Btn_Pri_XL };

@@ -31,8 +31,9 @@
     width: var(--Base-4-Premitives-64, 256px);
     max-width: var(--Base-4-Premitives-64, 256px);
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    gap: var(--spacing-system-guides-corner-radius-2, 8px);
+    gap: var(--container-padding-mobile, 16px);
 }
 
 .logoContainer {

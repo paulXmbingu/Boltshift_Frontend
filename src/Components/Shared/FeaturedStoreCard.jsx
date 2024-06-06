@@ -1,5 +1,7 @@
 import React from "react";
 import styles from "./FeaturedStoreCard.module.css"
+import { Btn_Ter_LG } from "../Atoms/Button";
+import chevronRight from '../../assets/Icons/UI/chevron-right (1).svg';
 
 const FeaturedStoreCard = ({ storeIcon, storeDescription, storeLabel }) => {
     return(
@@ -13,8 +15,8 @@ const FeaturedStoreCard = ({ storeIcon, storeDescription, storeLabel }) => {
                         <div className={styles.storeLabel}> {storeLabel} </div>
                     </div>
                     <div className={styles.storeDescription}> {storeDescription} </div>
+                    <Btn_Ter_LG ButtonCTA={`Visit Store`} iconTrailing={chevronRight} />
                 </div>
-                <div> CTA Button </div>
             </div>
         </div>
     );

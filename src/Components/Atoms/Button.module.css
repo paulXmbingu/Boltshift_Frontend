@@ -224,6 +224,61 @@
     line-height: 20px; /* 142.857% */
 }
 
+/* BUTTON TERTIARY LG  */
+.textPaddingTerLG {
+    display: flex;
+    padding: var(--spacing-none, 0px) var(--spacing-xxs, 2px);
+    justify-content: center;
+    align-items: center;
+}
+
+.cTATextTerLG{
+    color: var(--Component-colors-Components-Buttons-Tertiary-button-tertiary-fg, #475467);
+
+    /* Text md/Semibold */
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px; /* 150% */
+}
+
+.TerLG {
+    display: inline-flex;
+    padding: 10px var(--spacing-xl, 16px);
+    justify-content: center;
+    align-items: center;
+    gap: var(--spacing-sm, 6px);
+    border-radius: var(--radius-md, 8px);
+    cursor: pointer;
+    transition: all 0.1s ease;
+    outline: none;
+    width: 100%; 
+}
+
+.TerLG:hover {
+    border-radius: var(--radius-md, 8px);
+    background: var(--Component-colors-Components-Buttons-Tertiary-button-tertiary-bg_hover, #F9FAFB);
+}
+
+.TerLG:focus {
+    border-radius: var(--radius-md, 8px);
+}
+
+.TerLG:disabled {
+    border-radius: var(--radius-md, 8px);
+}
+
+.leadingIconTerLG {
+    width: 20px;
+    height: 20px;
+}
+
+.trailingIconTerLG {
+    width: 20px;
+    height: 20px;
+}
+
 /* BUTTON PRIMARY XL  */
 .textPaddingPriXL {
     display: flex;
