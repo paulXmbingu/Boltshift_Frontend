@@ -16,7 +16,7 @@
 }
 
 .cardStyle:hover,
-.cardStyle:active {
+.cardStyle:focus-within {
     border-radius: var(--spacing-system-guides-corner-radius-3, 12px);
     border: 1px solid var(--Colors-Border-border-brand-solid, #DA154D);
     background: var(--Colors-Background-bg-primary, #FFF);
