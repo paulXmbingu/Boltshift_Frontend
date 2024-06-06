@@ -39,3 +39,21 @@
     width: 72px;
     height: 72px;
 }
+
+.storeDescription {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    align-self: stretch;
+    overflow: hidden;
+    color: var(--colors-text-text-quarterary-500, #667085);
+    text-align: center;
+    text-overflow: ellipsis;
+
+    /* Text sm/Medium */
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px; /* 142.857% */
+}
