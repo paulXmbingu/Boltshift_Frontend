@@ -2,6 +2,7 @@ import React from "react";
 import FireIcon from "../../assets/Icons/Illustrated/Fire.svg";
 import FavoriteButton from "./FavoriteButton";
 import styles from './HotDealCard.module.css';
+import { Btn_Sec_Gray_SM } from "../Atoms/Button";
 
 function HotDealCard({ imageSrc, productNameText, ammount, noSold }) {
     const progress = 50;
@@ -30,7 +31,7 @@ function HotDealCard({ imageSrc, productNameText, ammount, noSold }) {
                         <div className={styles.noLeft}> Left </div>
                     </div>
                 </div>
-                <button className={styles.buttonStyles}> Add to Cart </button>
+                <Btn_Sec_Gray_SM ButtonCTA={`Add to Cart`} />
             </div>
         </div>
     );
