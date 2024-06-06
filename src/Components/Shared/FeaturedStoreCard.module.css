@@ -35,9 +35,20 @@
     gap: var(--spacing-system-guides-corner-radius-2, 8px);
 }
 
+.logoContainer {
+    display: flex;
+    padding: var(--spacing-none, 0px);
+    justify-content: center;
+    align-items: center;
+    gap: var(--spacing-none, 0px);
+    border-radius: var(--radius-full, 9999px);
+    border: 1px solid var(--Colors-Border-border-secondary, #EAECF0);
+    overflow: hidden;
+}
+
 .storeIcon {
-    width: 72px;
-    height: 72px;
+    width: 96px;
+    height: 96px;
 }
 
 .storeDescription {
@@ -50,10 +61,33 @@
     text-align: center;
     text-overflow: ellipsis;
 
-    /* Text sm/Medium */
+    /* Text sm/Regular */
     font-family: Inter;
     font-size: 14px;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 400;
     line-height: 20px; /* 142.857% */
+}
+
+.storeName {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.storeLabel {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+    color: var(--colors-text-text-primary-900, #101828);
+    text-align: center;
+    text-overflow: ellipsis;
+
+    /* Text xl/Semibold */
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 30px; /* 150% */
 }
