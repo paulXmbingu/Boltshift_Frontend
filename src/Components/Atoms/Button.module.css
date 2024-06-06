@@ -257,6 +257,11 @@
 }
 
 .TerLG:hover {
+    display: inline-flex;
+    padding: 10px var(--spacing-xl, 16px);
+    justify-content: center;
+    align-items: center;
+    gap: var(--spacing-sm, 6px);
     border-radius: var(--radius-md, 8px);
     background: var(--Component-colors-Components-Buttons-Tertiary-button-tertiary-bg_hover, #F9FAFB);
 }
