@@ -59,4 +59,4 @@ const Btn_Pri_XL = ({ iconLeading, ButtonCTA, iconTrailing }) => {
     );
 };
 
-export { Btn_Pri_SM,Btn_Sec_Gray_SM, Btn_Primary_MD, Btn_Primary_LG, Btn_Pri_XL };
+export { Btn_Pri_SM, Btn_Sec_Gray_SM, Btn_Primary_MD, Btn_Primary_LG, Btn_Pri_XL };
