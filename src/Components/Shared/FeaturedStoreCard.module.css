@@ -25,3 +25,35 @@
     gap: var(--spacing-system-guides-corner-radius-16, 64px);
     flex: 1 0 0;
 }
+
+.storeDetails {
+    display: flex;
+    width: var(--Base-4-Premitives-64, 256px);
+    max-width: var(--Base-4-Premitives-64, 256px);
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-system-guides-corner-radius-2, 8px);
+}
+
+.storeIcon {
+    width: 72px;
+    height: 72px;
+}
+
+.storeDescription {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    align-self: stretch;
+    overflow: hidden;
+    color: var(--colors-text-text-quarterary-500, #667085);
+    text-align: center;
+    text-overflow: ellipsis;
+
+    /* Text sm/Medium */
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px; /* 142.857% */
+}
