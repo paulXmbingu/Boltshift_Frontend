@@ -9,7 +9,7 @@ function PopularProductsSection() {
         <div className={styles.Section}>
             <SectionHeader headerTitle="Popular Products" icon={RedHeart}/>
                 <div className={styles.smallLandscapeCards}>
-                    <LandScapeProductCard productImage={`https://i.pinimg.com/736x/b2/4f/c9/b24fc9c02f7ae7ef59b7297463ab69be.jpg`} productText={`Vintage Leather Backpack For Women`} price={`86,999`} />
+                    <LandScapeProductCard productImage={`https://i.pinimg.com/564x/39/fe/8e/39fe8e99aba5b48410de08e75dee6975.jpg`} productText={`Men's Short Sleeve Polo Shirt With Letter Pattern And Color-Block Design`} price={`2,987`} />
                     <LandScapeProductCard productImage={`https://i.pinimg.com/736x/b2/4f/c9/b24fc9c02f7ae7ef59b7297463ab69be.jpg`} productText={`Vintage Leather Backpack For Women`} price={`86,999`} />
                     <LandScapeProductCard productImage={`https://i.pinimg.com/736x/b2/4f/c9/b24fc9c02f7ae7ef59b7297463ab69be.jpg`} productText={`Vintage Leather Backpack For Women`} price={`86,999`} />
                     <LandScapeProductCard productImage={`https://i.pinimg.com/564x/db/1c/f1/db1cf11a5aef3f32f33a261b42299c61.jpg`} productText={`Yves Saint Laurent Makeup | Rouge Volupt Shine Lipstick Balm | Color: Gold/Red | Size: Os`} price={`3,943`} />
