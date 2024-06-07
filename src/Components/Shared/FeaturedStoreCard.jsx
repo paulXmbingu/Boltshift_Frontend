@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./FeaturedStoreCard.module.css"
 import { Btn_Ter_LG } from "../Atoms/Button";
 import chevronRight from '../../assets/Icons/UI/chevron-right (1).svg';
+import { StoreStatusButton } from "../Atoms/ShopStatusButton";
 
 const FeaturedStoreCard = ({ storeIcon, storeDescription, storeLabel }) => {
     return(
@@ -13,6 +14,9 @@ const FeaturedStoreCard = ({ storeIcon, storeDescription, storeLabel }) => {
                     </div>
                     <div className={styles.storeName}>
                         <div className={styles.storeLabel}> {storeLabel} </div>
+                    </div>
+                    <div>
+                        <StoreStatusButton />
                     </div>
                     <div className={styles.storeDescription}> {storeDescription} </div>
                     <Btn_Ter_LG ButtonCTA={`Visit Store`} iconTrailing={chevronRight} />

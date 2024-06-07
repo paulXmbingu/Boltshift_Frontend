@@ -2,10 +2,14 @@ import React from "react";
 import styles from "./FeaturedProductCard.module.css";
 import OfferCountDown from "./OfferCountDown";
 import { Btn_Pri_SM } from "../Atoms/Button";
+import FavoriteButton from "./FavoriteButton";
 
 const FeaturedProductCard = ( {productPhoto, productLabel} ) => {
     return(
         <div className={styles.featuredProductCard}>
+            <div className={styles.favoriteButtonContainer}>
+                <FavoriteButton />
+            </div>
             <img src={productPhoto} alt="productPhoto" className={styles.productPhoto} />
             <div className={styles.productDetails} >
                 <div className={styles.productNamePrice} >

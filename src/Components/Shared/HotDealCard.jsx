@@ -6,7 +6,6 @@ import { Btn_Sec_Gray_SM } from "../Atoms/Button";
 
 function HotDealCard({ imageSrc, productNameText, ammount, noSold }) {
     const progress = 50;
-
     return (
         <div className={styles.CardStyle}>
             <div className={styles.favoriteButtonContainer}>

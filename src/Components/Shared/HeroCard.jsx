@@ -10,6 +10,9 @@ import { Btn_Pri_XL } from '../Atoms/Button';
 function HeroCard() {
     return (
         <div className={styles.heroCard}>
+            <div className={styles.favoriteButtonContainer}>
+                <FavoriteButton />
+            </div>
             <div className={styles.productNamePrice}>
                 <div className={styles.detailsCTA}>
                     <div className={styles.nameDescription}>
@@ -32,7 +35,6 @@ function HeroCard() {
             <div className={styles.productImage}>
                 <img src={HeroImage} alt="Hero Image" className={styles.heroImage} />
             </div>
-            {/* <FavoriteButton className={styles.favoriteButton} /> */}
         </div>
     );
 }

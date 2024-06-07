@@ -12,6 +12,7 @@
     overflow: hidden;
     cursor: pointer;
     transition: all 0.1s ease;
+    position: relative;
 }
 
 .featuredProductCard:hover,
@@ -157,4 +158,10 @@
     padding: var(--spacing-system-guides-corner-radius-1, 4px);
     align-items: flex-start;
     gap: var(--spacing-system-guides-corner-radius-1, 4px);
+}
+
+.favoriteButtonContainer {
+    position: absolute;
+    top: 0;
+    right: 0;
 }

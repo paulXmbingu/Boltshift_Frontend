@@ -1,0 +1,29 @@
+.buttonWrap {
+    display: flex;
+    padding: var(--spacing-md, 8px) 14px;
+    justify-content: center;
+    align-items: center;
+    gap: var(--spacing-md, 8px);
+    border-radius: var(--radius-md, 8px);
+    border: 1px solid var(--Component-colors-Components-Buttons-Secondary-button-secondary-border, #D0D5DD);
+    background: var(--Component-colors-Components-Buttons-Secondary-button-secondary-bg, #FFF);
+
+    /* Shadows/shadow-xs */
+    box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+}
+
+.statusLabel {
+    color: var(--Component-colors-Components-Buttons-Secondary-button-secondary-fg, #344054);
+
+    /* Text sm/Semibold */
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px; /* 142.857% */
+}
+
+.indicator {
+    width: 10px;
+    height: 10px;
+}
