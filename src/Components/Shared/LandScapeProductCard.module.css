@@ -11,6 +11,7 @@
     cursor: pointer;
     transition: all 0.1s ease;
     overflow: hidden;
+    position: relative;
 }
 
 .landScapeProductCard:hover {
@@ -131,4 +132,10 @@
     font-style: normal;
     font-weight: 500;
     line-height: 18px; /* 150% */
+}
+
+.favoriteButtonContainer {
+    position: absolute;
+    top: 0;
+    right: 0;
 }

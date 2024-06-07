@@ -119,3 +119,9 @@
     font-weight: 400;
     line-height: 20px; /* 142.857% */
 }
+
+.favoriteButtonContainer {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
