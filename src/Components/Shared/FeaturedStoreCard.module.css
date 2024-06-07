@@ -1,18 +1,22 @@
 .defaultWrapper {
     display: flex;
-    height: var(--Base-4-Premitives-128, 512px);
+    height: var(--Base-4-Premitives-128, 492px);
     min-width: var(--spacing-system-guides-corner-radius-84, 336px);
-    max-width: var(--spacing-system-guides-corner-radius-128, 512px);
+    max-width: var(--spacing-system-guides-corner-radius-128, 492px);
     min-height: var(--Grid-layouts-iPhone-375px, 375px);
-    max-height: var(--spacing-system-guides-corner-radius-128, 512px);
+    max-height: var(--spacing-system-guides-corner-radius-128, 492px);
+    padding: var(--spacing-lg, 12px);
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    align-content: center;
+    gap: var(--spacing-lg, 12px);
     flex: 1 0 0;
-    flex-wrap: wrap;
-    border-radius: var(--spacing-system-guides-corner-radius-3, 12px);
+    border-radius: var(--radius-sm, 6px);
     border: 1px solid var(--Colors-Border-border-secondary, #EAECF0);
     background: var(--Colors-Background-bg-primary, #FFF);
+
+    /* Focus ring/4px gray-100 */
+    box-shadow: 0px 0px 0px 4px #F2F4F7;
 }
 
 .storeInfo {
