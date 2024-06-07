@@ -6,7 +6,7 @@
     position: absolute;
     right: 0px;
     cursor: pointer;
-    transition: background-color 0.1s;
+    transition: background-color 0.1s ease;
 }
 
 .featuredIcon {
@@ -18,8 +18,60 @@
     align-items: center;
     flex-shrink: 0;
     border-radius: var(--radius-full, 9999px);
-    background: var(--Gray-50, #F9FAFB);
-    transition: transform 0.3s;
+    background: var(--Colors-Background-bg-primary, #FFF);
+    transition: transform 0.3s ease;
+}
+
+.featuredIcon:hover {
+    display: flex;
+    width: 16px;
+    height: 16px;
+    padding: 8px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: var(--radius-full, 9999px);
+    background: var(--Colors-Background-bg-primary, #FFF);
+    transition: transform 0.3s ease;
+}
+
+.featuredIcon::selection {
+    display: flex;
+    width: 16px;
+    height: 16px;
+    padding: 8px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: var(--radius-full, 9999px);
+    background: var(--Colors-Background-bg-primary, #FFF);
+    transition: transform 0.3s ease;
+}
+
+.featuredIcon:focus {
+    display: flex;
+    width: 16px;
+    height: 16px;
+    padding: 8px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: var(--radius-full, 9999px);
+    background: var(--Colors-Background-bg-primary, #FFF);
+    transition: transform 0.3s ease;
+}
+
+.featuredIcon:focus-within {
+    display: flex;
+    width: 16px;
+    height: 16px;
+    padding: 8px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: var(--radius-full, 9999px);
+    background: var(--Colors-Background-bg-primary, #FFF);
+    transition: transform 0.3s ease;
 }
 
 .wishilistIcon {
