@@ -7,7 +7,7 @@ const LandScapeProductCard = ({productImage, productText, price }) => {
     return (
         <div className={styles.landScapeProductCard}>
             <div className={styles.favoriteButtonContainer}>
-                {/* <FavoriteButton /> */}
+                <FavoriteButton />
             </div>
             <div className={styles.imageMask}>
                 <img src={productImage} alt="Product Image" className={styles.productImage} />
