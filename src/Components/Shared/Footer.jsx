@@ -26,8 +26,12 @@ const Footer = () => {
                 <div className={styles.footerLinks}>
                         <div className={styles.linkText}> Overview </div>
                         <div className={styles.linkText}> Features </div>
+                        <div className={styles.linkText}> Blog </div>
                         <div className={styles.linkText}> Pricing </div>
                         <div className={styles.linkText}> Support </div>
+                        <div className={styles.linkText}> FAQs </div>
+                        <div className={styles.linkText}> Privacy </div>
+                        <div className={styles.linkText}> Ts & Cs </div>
                         <div className={styles.linkText}> Legal </div>
                         <div className={styles.linkText}> Team </div>
                         <div className={styles.linkText}> Careers </div>
