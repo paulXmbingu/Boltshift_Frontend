@@ -35,9 +35,9 @@
 }
 
 .productImage {
-    width: var(--Base-4-Premitives-32, 128px);
-    height: var(--Base-4-Premitives-32, 128px);
-    flex-shrink: 0;
+    max-width: 100%;
+    /* max-height: 100%; */
+    object-fit: cover;
 }
 
 .productDetails {
