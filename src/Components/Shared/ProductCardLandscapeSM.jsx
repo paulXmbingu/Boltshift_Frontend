@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./ProductCardLandscapeSM.module.css"
 import { Btn_Sec_Gray_SM } from "../Atoms/Button";
 
-const ProductCardLandscapeSM = ( {ProductImage, } ) => {
+const ProductCardLandscapeSM = ( {ProductImage, productLabel, price } ) => {
     return(
         <div className={styles.cardWrapper}>
             <div className={styles.imageWrapper}> 
@@ -10,8 +10,13 @@ const ProductCardLandscapeSM = ( {ProductImage, } ) => {
             </div>
             <div className={styles.productDetails}>
                 <div className={styles.namePrice}>
-                    <div> Product Name </div>
-                    <div> Product Price </div>
+                    <div className={styles.productName}>
+                        <span className={styles.productLabel}> {productLabel} </span>
+                    </div>
+                    <div className={styles.productPrice}>
+                        <span className={styles.currency}> Ksh. </span>
+                        <span className={styles.price}> {price} </span>
+                    </div>
                 </div>
                 <Btn_Sec_Gray_SM ButtonCTA={`Add to Cart`} />
             </div>

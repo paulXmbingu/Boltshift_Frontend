@@ -10,20 +10,20 @@ function PopularProductsSection() {
             <SectionHeader headerTitle="Popular Products" icon={RedHeart}/>
                 <div className={styles.smallLandscapeCards}>
                     <div className={styles.cardStacking}>
-                        <ProductCardLandscapeSM ProductImage={`https://i.pinimg.com/736x/0c/93/5e/0c935e2dbbee2e70295843f0aa5d61e4.jpg`} />
-                        <ProductCardLandscapeSM ProductImage={`https://i.pinimg.com/736x/0c/93/5e/0c935e2dbbee2e70295843f0aa5d61e4.jpg`} />
+                        <ProductCardLandscapeSM ProductImage={`https://i.pinimg.com/736x/0c/93/5e/0c935e2dbbee2e70295843f0aa5d61e4.jpg`} productLabel={`Bullstrap Reserve - The Voyager Travel Bag`} price={`987`} />
+                        <ProductCardLandscapeSM ProductImage={`https://i.pinimg.com/736x/0c/93/5e/0c935e2dbbee2e70295843f0aa5d61e4.jpg`} productLabel={`Bullstrap Reserve - The Voyager Travel Bag`} price={`987`} />
                     </div>
                     <div className={styles.cardStacking}>
-                        <ProductCardLandscapeSM ProductImage={`https://i.pinimg.com/736x/0c/93/5e/0c935e2dbbee2e70295843f0aa5d61e4.jpg`} />
-                        <ProductCardLandscapeSM ProductImage={`https://i.pinimg.com/736x/0c/93/5e/0c935e2dbbee2e70295843f0aa5d61e4.jpg`} />
+                        <ProductCardLandscapeSM ProductImage={`https://i.pinimg.com/736x/0c/93/5e/0c935e2dbbee2e70295843f0aa5d61e4.jpg`} productLabel={`Bullstrap Reserve - The Voyager Travel Bag`} price={`987`} />
+                        <ProductCardLandscapeSM ProductImage={`https://i.pinimg.com/736x/0c/93/5e/0c935e2dbbee2e70295843f0aa5d61e4.jpg`} productLabel={`Bullstrap Reserve - The Voyager Travel Bag`} price={`987`} />
                     </div>
                     <div className={styles.cardStacking}>
-                        <ProductCardLandscapeSM ProductImage={`https://i.pinimg.com/736x/0c/93/5e/0c935e2dbbee2e70295843f0aa5d61e4.jpg`} />
-                        <ProductCardLandscapeSM ProductImage={`https://i.pinimg.com/736x/0c/93/5e/0c935e2dbbee2e70295843f0aa5d61e4.jpg`} />
+                        <ProductCardLandscapeSM ProductImage={`https://i.pinimg.com/736x/0c/93/5e/0c935e2dbbee2e70295843f0aa5d61e4.jpg`} productLabel={`Bullstrap Reserve - The Voyager Travel Bag`} price={`987`} />
+                        <ProductCardLandscapeSM ProductImage={`https://i.pinimg.com/736x/0c/93/5e/0c935e2dbbee2e70295843f0aa5d61e4.jpg`} productLabel={`Bullstrap Reserve - The Voyager Travel Bag`} price={`987`} />
                     </div>
                     <div className={styles.cardStacking}>
-                        <ProductCardLandscapeSM ProductImage={`https://i.pinimg.com/736x/0c/93/5e/0c935e2dbbee2e70295843f0aa5d61e4.jpg`} />
-                        <ProductCardLandscapeSM ProductImage={`https://i.pinimg.com/736x/0c/93/5e/0c935e2dbbee2e70295843f0aa5d61e4.jpg`} />
+                        <ProductCardLandscapeSM ProductImage={`https://i.pinimg.com/736x/0c/93/5e/0c935e2dbbee2e70295843f0aa5d61e4.jpg`} productLabel={`Bullstrap Reserve - The Voyager Travel Bag`} price={`987`} />
+                        <ProductCardLandscapeSM ProductImage={`https://i.pinimg.com/736x/0c/93/5e/0c935e2dbbee2e70295843f0aa5d61e4.jpg`} productLabel={`Bullstrap Reserve - The Voyager Travel Bag`} price={`987`} />
                     </div>
                 </div>
            </div>
