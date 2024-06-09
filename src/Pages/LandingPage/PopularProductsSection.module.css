@@ -11,10 +11,23 @@
 
 .smallLandscapeCards {
     display: flex;
-    min-width: var(--spacing-system-guides-corner-radius-84, 336px);
     align-items: flex-start;
-    align-content: flex-start;
-    gap: 16px var(--spacing-xl, 16px);
-    flex: 1 0 0;
-    flex-wrap: wrap;
+    gap: var(--spacing-system-guides-corner-radius-4, 16px);
+    align-self: stretch;
+    overflow-x:auto;
+    white-space: nowrap;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    padding: 2px;
+}
+
+.smallLandscapeCards::-webkit-scrollbar {
+    display: none;  /* Safari and Chrome */
+}
+
+.cardStacking {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--container-padding-mobile, 16px);
 }
