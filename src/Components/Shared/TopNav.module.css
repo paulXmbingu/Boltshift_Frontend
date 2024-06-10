@@ -61,7 +61,7 @@
 /* MOBILE STYLING */
 .mobileNav {
   display: flex;
-  width: var(--Breaking-Points-iPhone-375px, 375px);
+  /* width: var(--Breaking-Points-iPhone-375px, 375px); */
   min-width: var(--Breaking-Points-iPhone-375px, 375px);
   max-width: var(--Breaking-Points-Desktop-1280px, 1280px);
   min-height: var(--Base-4-Premitives-20, 80px);
@@ -70,8 +70,7 @@
   align-items: flex-start;
   gap: var(--Base-4-Premitives-4, 16px);
   border-radius: var(--spacing-system-guides-corner-radius-0, 0px);
-  background: var(--Colors-Background-bg-brand-primary, #FEF1F5);
-
+  background: var(--Colors-Background-bg-primary, #FFF);
   position: sticky;
   top: 0;
   z-index: 999;
@@ -94,6 +93,12 @@
   align-items: center;
   gap: var(--Base-4-Premitives-3, 12px);
   align-self: stretch;
+}
+
+.mobileMenuLogo{
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md, 8px);
 }
 
 .mobileMenu {
@@ -125,7 +130,8 @@
 
 .mobileNotifications {
   display: flex;
+  width: 140px;
   justify-content: flex-end;
   align-items: center;
-  gap: var(--spacing-system-guides-corner-radius-3, 12px);
+  gap: var(--spacing-xs, 4px);
 }
