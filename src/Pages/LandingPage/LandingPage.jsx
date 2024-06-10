@@ -12,11 +12,11 @@ import PopularProductsSection from "./PopularProductsSection";
 import TrendingProductsSection from "./TrendingProductsSection";
 
 function LandingPage() {
-    const [isLargeScreen, setIsLargeScreen] = useState(window.innerWidth > 768);
+    const [isLargeScreen, setIsLargeScreen] = useState(window.innerWidth > 640);
 
     useEffect(() => {
         const handleResize = () => {
-            setIsLargeScreen(window.innerWidth > 768);
+            setIsLargeScreen(window.innerWidth > 640);
         };
 
         window.addEventListener("resize", handleResize);
