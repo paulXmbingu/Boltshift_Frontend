@@ -14,6 +14,14 @@
     display: none;
 }
 
+.horTab {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--spacing-md, 8px);
+    align-self: stretch;
+    border-bottom: 1px solid var(--Colors-Border-border-secondary, #EAECF0);
+}
+
 .smallLandscapeCards {
     display: flex;
     align-items: flex-start;
