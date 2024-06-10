@@ -14,4 +14,13 @@
     align-items: flex-start;
     gap: var(--spacing-system-guides-corner-radius-4, 16px);
     align-self: stretch;
+    overflow-x:auto;
+    white-space: nowrap;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    padding: 4px;
+}
+
+.trendingCards::-webkit-scrollbar {
+    display: none;
 }
