@@ -9,6 +9,7 @@ import FeaturedProductsSection from "./FeaturedProductsSection";
 import FooterSection from "./FooterSection";
 import FeaturedStoreSection from "./FeaturedStoreSection";
 import PopularProductsSection from "./PopularProductsSection";
+import TrendingProductsSection from "./TrendingProductsSection";
 
 function LandingPage() {
     return(
@@ -21,6 +22,7 @@ function LandingPage() {
             <FeaturedProductsSection />
             <FeaturedStoreSection />
             <PopularProductsSection />
+            <TrendingProductsSection />
             <FooterSection />
         </div>
     );
