@@ -87,6 +87,7 @@
     color: var(--colors-text-text-primary-900, #101828);
     text-align: center;
     text-overflow: ellipsis;
+    white-space: normal;
     
     /* Text sm/Regular */
     font-family: Inter;
