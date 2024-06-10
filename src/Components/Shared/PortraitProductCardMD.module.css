@@ -136,3 +136,9 @@
     font-weight: 600;
     line-height: 30px; /* 150% */
 }
+
+.favoriteButtonContainer {
+    position: absolute;
+    top: 0;
+    right: 0;
+}

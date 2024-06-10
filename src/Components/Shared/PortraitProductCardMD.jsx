@@ -1,10 +1,14 @@
 import React from "react";
 import styles from "./PortraitProductCardMD.module.css"
 import { Btn_Sec_Gray_SM } from "../Atoms/Button";
+import FavoriteButton from "./FavoriteButton"
 
 const PortraitProductCardMD = ({ productImage, productLabel, price }) => {
     return(
         <div className={styles.cardWrapper}>
+            <div className={styles.favoriteButtonContainer}>
+                <FavoriteButton />
+            </div>
             <div className={styles.productImageWrapper}>
                 <img src={productImage} alt="" className={styles.productImage} />
             </div>
