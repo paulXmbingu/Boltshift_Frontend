@@ -115,12 +115,12 @@
 
 .MobileLogo {
   display: flex;
-  width: 113.333px;
-  height: 32px;
-  padding: 1.333px 0.492px 1.333px 0px;
+  width: 141.667px;
+  height: 40px;
+  padding: 1.667px 0.615px 1.667px 0px;
   justify-content: center;
   align-items: center;
-  gap: 7.586px;
+  gap: 9.483px;
 }
 
 .mobileNotifications {
