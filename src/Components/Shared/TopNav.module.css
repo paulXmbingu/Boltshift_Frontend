@@ -60,10 +60,10 @@
 
 /* MOBILE STYLING */
 .mobileNav {
-  display: flex;
-  /* width: var(--Breaking-Points-iPhone-375px, 375px); */
-  min-width: var(--Breaking-Points-iPhone-375px, 375px);
-  max-width: var(--Breaking-Points-Desktop-1280px, 1280px);
+  display: inline-flex;
+  width: var(--Breaking-Points-iPhone-375px, 375px);
+  /* min-width: var(--Breaking-Points-iPhone-375px, 375px); */
+  /* max-width: var(--Breaking-Points-Desktop-1280px, 1280px); */
   min-height: var(--Base-4-Premitives-20, 80px);
   padding: var(--Base-4-Premitives-4, 16px) var(--spacing-system-guides-corner-radius-4, 16px);
   flex-direction: column;
@@ -71,6 +71,7 @@
   gap: var(--Base-4-Premitives-4, 16px);
   border-radius: var(--spacing-system-guides-corner-radius-0, 0px);
   background: var(--Colors-Background-bg-primary, #FFF);
+  
   position: sticky;
   top: 0;
   z-index: 999;
@@ -83,6 +84,8 @@
   align-content: center;
   align-self: stretch;
   flex-wrap: wrap;
+  width: 100%;
+
 }
 
 .mobileSearchFilter {
@@ -93,6 +96,7 @@
   align-items: center;
   gap: var(--Base-4-Premitives-3, 12px);
   align-self: stretch;
+  width: 100%;
 }
 
 .mobileMenuLogo{
