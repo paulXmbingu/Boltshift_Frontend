@@ -10,7 +10,7 @@
     overflow-x: hidden;
 }
 
-.Section:-webkit-scrollbar {
+.Section::-webkit-scrollbar {
     display: none;
 }
 
@@ -20,6 +20,11 @@
     gap: var(--spacing-md, 8px);
     align-self: stretch;
     border-bottom: 1px solid var(--Colors-Border-border-secondary, #EAECF0);
+    overflow-x: auto;
+}
+
+.horTab::-webkit-scrollbar {
+    display: none;
 }
 
 .smallLandscapeCards {
@@ -27,15 +32,15 @@
     align-items: flex-start;
     gap: var(--spacing-system-guides-corner-radius-4, 16px);
     align-self: stretch;
-    overflow-x:auto;
+    overflow-x: auto;
     white-space: nowrap;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
+    -ms-overflow-style: none; /* for Internet Explorer and Edge */
+    scrollbar-width: none; /* for Firefox */
     padding: 2px;
 }
 
 .smallLandscapeCards::-webkit-scrollbar {
-    display: none;  /* Safari and Chrome */
+    display: none;  /* for Safari and Chrome */
 }
 
 .cardStacking {
