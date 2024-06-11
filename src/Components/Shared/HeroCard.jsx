@@ -1,5 +1,5 @@
 import React from 'react';
-import HeroImage from "../../assets/Images/Photos/Sofa.jpg";
+// import HeroImage from "../../assets/Images/Photos/Sofa.jpg";
 import TailIcon from '../../assets/Icons/UI/chevron-right.svg';
 import DiscountTag from '../../Components/Atoms/DiscountTag';
 import HeroPagination from './HeroPagination';
@@ -33,7 +33,7 @@ const HeroCardDesktop = () => {
                 </div>
             </div>
             <div className={styles.productImage}>
-                <img src={HeroImage} alt="Hero Image" className={styles.heroImage} />
+                <img src={`https://i.pinimg.com/736x/4a/f7/9b/4af79b2836fde2ff29e907c9511e8b8b.jpg`} alt="Hero Image" className={styles.heroImage} />
             </div>
         </div>
     );
@@ -47,7 +47,7 @@ const HeroCardMobile = () => {
             </div>
             <div className={styles.imageDetailsMobile}>
                 <div className={styles.imageMobeileWrap}>
-                    <img src={HeroImage} alt="Hero Image" className={styles.mobileImage} />
+                    <img src={`https://i.pinimg.com/736x/4a/f7/9b/4af79b2836fde2ff29e907c9511e8b8b.jpg`} alt="Hero Image" className={styles.mobileImage} />
                     {/* <HeroPagination className={styles.pagination} /> Move here */}
                 </div>
                 <div className={styles.detailsMobileWrap}>
