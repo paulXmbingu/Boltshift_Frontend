@@ -1,7 +1,7 @@
 {
   "name": "Boltshift Marketplace",
   "short_name": "Boltshift",
-  "description": "Innovative e-commerce platform offering diverse, high-quality products for a seamless shopping experience.",
+  "description": "Shop top brands across fashion, electronics, and home decor. Secure, fast, and hassle-free shopping experience.",
   "start_url": "/",
   "display": "standalone",
   "orientation": "portrait",
