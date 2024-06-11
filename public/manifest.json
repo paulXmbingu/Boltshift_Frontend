@@ -51,9 +51,6 @@
   ],
   "prefer_related_applications": false,
   "scope": "/",
-  "serviceworker": {
-    "src": "/service-worker.js"
-  },
   "lang": "en",
   "dir": "ltr"
 }
