@@ -1,5 +1,4 @@
 import React from 'react';
-// import HeroImage from "../../assets/Images/Photos/Sofa.jpg";
 import TailIcon from '../../assets/Icons/UI/chevron-right.svg';
 import DiscountTag from '../../Components/Atoms/DiscountTag';
 import HeroPagination from './HeroPagination';
