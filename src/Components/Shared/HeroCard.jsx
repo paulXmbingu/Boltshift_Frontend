@@ -48,7 +48,7 @@ const HeroCardMobile = () => {
             <div className={styles.imageDetailsMobile}>
                 <div className={styles.imageMobeileWrap}>
                     <img src={HeroImage} alt="Hero Image" className={styles.mobileImage} />
-                    <HeroPagination className={styles.pagination} /> {/* Move here */}
+                    {/* <HeroPagination className={styles.pagination} /> Move here */}
                 </div>
                 <div className={styles.detailsMobileWrap}>
                     <div className={styles.detailsMobileCTA}>
