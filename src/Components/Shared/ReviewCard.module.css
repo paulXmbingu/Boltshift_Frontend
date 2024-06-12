@@ -1,5 +1,7 @@
 .cardWrap{
-    display: inline-flex;
+    display: flex;
+    width: var(--Base-4-Premitives-72, 288px);
+    height: var(--Base-4-Premitives-56, 224px);
     min-width: var(--spacing-system-guides-corner-radius-72, 288px);
     max-width: var(--spacing-system-guides-corner-radius-72, 288px);
     min-height: var(--spacing-system-guides-corner-radius-56, 224px);
@@ -8,26 +10,18 @@
     flex-direction: column;
     align-items: flex-start;
     gap: var(--spacing-system-guides-corner-radius-3, 12px);
-    border-radius: var(--spacing-system-guides-corner-radius-3, 12px);
+    flex-shrink: 0;
+    border-radius: var(--radius-xl, 12px);
     border: 1px solid var(--Colors-Border-border-secondary, #EAECF0);
     background: var(--Colors-Background-bg-secondary, #F9FAFB);
 }
 
-.testimonyTextWrap{
-    display: flex;
-    padding: var(--spacing-none, 0px);
-    align-items: flex-start;
-    align-content: flex-start;
-    gap: 12px var(--spacing-lg, 12px);
-    align-self: stretch;
-    flex-wrap: wrap;
-}
-
-.testimonyText{
+.testimonialText{
     display: -webkit-box;
+    height:fit-content;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 5;
-    flex: 1 0 0;
+    align-self: stretch;
     overflow: hidden;
     color: var(--colors-text-text-tertiary-600, #475467);
     text-overflow: ellipsis;
@@ -38,15 +32,16 @@
     font-style: normal;
     font-weight: 400;
     line-height: 18px; /* 150% */
+    white-space: pre-line;
 }
 
-.buyerInfo {
+.buyerDetails{
     display: flex;
     align-items: flex-start;
     gap: var(--spacing-system-guides-corner-radius-3, 12px);
 }
 
-.buyerAvatar {
+.buyerPhoto{
     display: flex;
     width: 72px;
     height: 72px;
@@ -57,11 +52,59 @@
 
     /* Shadows/shadow-md */
     box-shadow: 0px 4px 8px -2px rgba(16, 24, 40, 0.10), 0px 2px 4px -2px rgba(16, 24, 40, 0.06);
+    overflow: hidden;
 }
 
-.buyerPhoto{
+.buyerAvatar{
     width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.detailsStack{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    gap: var(--spacing-system-guides-corner-radius-1, 4px);
+    align-self: stretch;
+}
+
+.buyerNameVerification{
+    display: flex;
+    padding: var(--spacing-system-guides-corner-radius-0, 0px);
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: var(--spacing-system-guides-corner-radius-0, 0px);
+    align-self: stretch;
+}
+
+.buyerName{
+    color: var(--colors-text-text-secondary-700, #344054);
+
+    /* Text md/Semibold */
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px; /* 150% */
+}
+
+.dateWrap{
+    display: flex;
+    padding: var(--spacing-system-guides-corner-radius-0, 0px) var(--spacing-system-guides-corner-radius-1, 4px);
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.date{
+    color: var(--colors-text-text-quarterary-500, #667085);
+
+    /* Text xs/Regular */
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px; /* 150% */
 }
