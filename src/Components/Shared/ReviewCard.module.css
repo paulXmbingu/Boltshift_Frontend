@@ -1,11 +1,7 @@
 .cardWrap{
     display: flex;
-    width: var(--Base-4-Premitives-72, 288px);
-    height: var(--Base-4-Premitives-56, 224px);
-    min-width: var(--spacing-system-guides-corner-radius-72, 288px);
-    max-width: var(--spacing-system-guides-corner-radius-72, 288px);
-    min-height: var(--spacing-system-guides-corner-radius-56, 224px);
-    max-height: var(--spacing-system-guides-corner-radius-56, 224px);
+    width: var(--Base-4-Premitives-64, 260px);
+    height: var(--Base-4-Premitives-56, 196px);
     padding: var(--spacing-system-guides-corner-radius-4, 16px);
     flex-direction: column;
     align-items: flex-start;

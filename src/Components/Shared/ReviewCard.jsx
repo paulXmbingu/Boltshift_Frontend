@@ -11,7 +11,7 @@ const ReviewCard = () => {
                 <div className={styles.detailsStack}> 
                     <div className={styles.buyerNameVerification}>
                         <div className={styles.buyerName}> Marion Ngayi </div>
-                        <div> Buyer Verification Badge </div>
+                        <div> Verification Badge </div>
                     </div>
                     <div> 
                         <div className={styles.dateWrap}> 
