@@ -1,0 +1,15 @@
+.cardWrap{
+    display: inline-flex;
+    min-width: var(--spacing-system-guides-corner-radius-72, 288px);
+    max-width: var(--spacing-system-guides-corner-radius-72, 288px);
+    min-height: var(--spacing-system-guides-corner-radius-56, 224px);
+    max-height: var(--spacing-system-guides-corner-radius-56, 224px);
+    padding: var(--spacing-system-guides-corner-radius-4, 16px);
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--spacing-system-guides-corner-radius-3, 12px);
+    border-radius: var(--spacing-system-guides-corner-radius-3, 12px);
+    border: 1px solid var(--Colors-Border-border-secondary, #EAECF0);
+    background: var(--Colors-Background-bg-secondary, #F9FAFB);
+}
+
