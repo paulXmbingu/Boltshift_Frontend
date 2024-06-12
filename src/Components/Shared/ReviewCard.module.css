@@ -1,7 +1,7 @@
 .cardWrap{
     display: flex;
     width: var(--Base-4-Premitives-64, 260px);
-    height: var(--Base-4-Premitives-56, 196px);
+    height: var(--Base-4-Premitives-56, 192px);
     padding: var(--spacing-system-guides-corner-radius-4, 16px);
     flex-direction: column;
     align-items: flex-start;
