@@ -1,10 +1,13 @@
 import React from "react";
 import styles from "./ReviewCard.module.css"
 
-const ReviewCard = () => {
+const ReviewCard = ( { Testimony,  } ) => {
     return (
         <div className={styles.cardWrap}>
-            Review Card
+            <div> Buyer Info </div>
+            <div className={styles.testimonyTextWrap}>
+                <span className={styles.testimonyText}> {Testimony} </span>
+            </div>
         </div>
     );
 };

@@ -9,10 +9,10 @@ const RecentReviewSection = () => {
     <div className={styles.section}>
       <SectionHeader headerTitle={"Recent Reviews"} icon={ThumbsUp}/>
       <div className={styles.reviewCards}>
-        <ReviewCard />
-        <ReviewCard />
-        <ReviewCard />
-        <ReviewCard />
+        <ReviewCard Testimony={`"We’ve tried countless prototyping tools and ProtoPie is hands down the most flexible and powerful tool that fits perfectly into any team’s workflow. No matter which tools or platform are being used, we can import our design assets in seconds and make awesome code-free prototypes in minutes."`} />
+        <ReviewCard Testimony={`"We’ve tried countless prototyping tools and ProtoPie is hands down the most flexible and powerful tool that fits perfectly into any team’s workflow. No matter which tools or platform are being used, we can import our design assets in seconds and make awesome code-free prototypes in minutes."`} />
+        <ReviewCard Testimony={`"We’ve tried countless prototyping tools and ProtoPie is hands down the most flexible and powerful tool that fits perfectly into any team’s workflow. No matter which tools or platform are being used, we can import our design assets in seconds and make awesome code-free prototypes in minutes."`} />
+        <ReviewCard Testimony={`"We’ve tried countless prototyping tools and ProtoPie is hands down the most flexible and powerful tool that fits perfectly into any team’s workflow. No matter which tools or platform are being used, we can import our design assets in seconds and make awesome code-free prototypes in minutes."`} />
       </div>
     </div>
   );
