@@ -141,6 +141,7 @@
     background: var(--Gradient-Linear-Color-20, linear-gradient(45deg, #E9DEFA 0%, #FFF6EB 100%));
     position: relative;
     overflow: hidden;
+    height: auto;
 }
 
 .imageDetailsMobile{
@@ -189,6 +190,7 @@
     flex: 1 0 0;
     align-self: stretch;
     background: var(--Gradient-Linear-Color-20, linear-gradient(45deg, #E9DEFA 0%, #FFF6EB 100%));
+    height: auto;
 }
 
 .detailsMobileCTA{
@@ -225,6 +227,7 @@
     align-items: center;
     gap: var(--spacing-system-guides-corner-radius-0, 0px);
     align-self: stretch;
+    height: auto;
 }
 
 .productNameMobile{
@@ -234,6 +237,7 @@
     align-content: flex-start;
     align-self: stretch;
     flex-wrap: wrap;
+    height: auto;
 }
 
 .productNameTextMobile{
@@ -277,4 +281,5 @@
     font-style: normal;
     font-weight: 400;
     line-height: 18px; /* 150% */
+    height: auto;
 }
