@@ -6,7 +6,7 @@ const ReviewCard = () => {
         <div className={styles.cardWrap}>
             <div className={styles.buyerDetails}>
                 <div className={styles.buyerPhoto}> 
-                    <img src={`https://i.pinimg.com/564x/14/60/62/1460627efb7e337450e4e32f662adebc.jpg`} alt="" className={styles.buyerAvatar} />
+                    <img src={`https://i.pinimg.com/564x/94/93/c4/9493c4f74c3f0994401b18716a974cad.jpg`} alt="" className={styles.buyerAvatar} />
                 </div>
                 <div className={styles.detailsStack}> 
                     <div className={styles.buyerNameVerification}>
