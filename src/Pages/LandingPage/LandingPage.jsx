@@ -12,7 +12,7 @@ import PopularProductsSection from "./PopularProductsSection";
 import TrendingProductsSection from "./TrendingProductsSection";
 
 function LandingPage() {
-    const [isLargeScreen, setIsLargeScreen] = useState(window.innerWidth > 768);
+    const [isLargeScreen, setIsLargeScreen] = useState(typeof window !== "undefined" ? window.innerWidth > 768 : false);
 
     useEffect(() => {
         const handleResize = () => {
