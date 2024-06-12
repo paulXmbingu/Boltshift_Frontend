@@ -1,5 +1,7 @@
 import React from "react";
-import styles from "./ReviewCard.module.css"
+import styles from "./ReviewCard.module.css";
+import { Badge_PillColor_SM_LeadIcon_Success } from "../Atoms/Badge";
+import CheckIcon from "../../assets/Icons/UI/check.svg";
 
 const ReviewCard = () => {
     return (
@@ -11,7 +13,7 @@ const ReviewCard = () => {
                 <div className={styles.detailsStack}> 
                     <div className={styles.buyerNameVerification}>
                         <div className={styles.buyerName}> Marion Ngayi </div>
-                        <div> Verification Badge </div>
+                        <Badge_PillColor_SM_LeadIcon_Success LeadingIcon={CheckIcon} Label={`Verified Buyer`} />
                     </div>
                     <div> 
                         <div className={styles.dateWrap}> 
