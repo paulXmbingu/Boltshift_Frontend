@@ -1,21 +1,10 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
+import { useMediaQuery } from "react-responsive";
 import { HeroCardDesktop, HeroCardMobile } from "../../Components/Shared/HeroCard";
 import styles from "./HeroSection.module.css";
 
-const useIsLargeScreen = () => {
-  const [isLargeScreen, setIsLargeScreen] = useState(window.innerWidth > 768);
-
-  useEffect(() => {
-    const handleResize = () => setIsLargeScreen(window.innerWidth > 768);
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
-
-  return isLargeScreen;
-};
-
 function HeroSection() {
-  const isLargeScreen = useIsLargeScreen();
+  const isLargeScreen = useMediaQuery({ query: "(min-width: 768px)" });
 
   return (
     <div className={styles.heroSection}>
