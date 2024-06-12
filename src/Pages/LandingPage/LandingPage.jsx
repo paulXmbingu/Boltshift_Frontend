@@ -10,6 +10,7 @@ import FooterSection from "./FooterSection";
 import FeaturedStoreSection from "./FeaturedStoreSection";
 import PopularProductsSection from "./PopularProductsSection";
 import TrendingProductsSection from "./TrendingProductsSection";
+import RecentReviewSection from "./RecentReviewSection";
 
 function LandingPage() {
     const [isLargeScreen, setIsLargeScreen] = useState(typeof window !== "undefined" ? window.innerWidth > 768 : false);
@@ -34,6 +35,7 @@ function LandingPage() {
             <FeaturedStoreSection />
             <PopularProductsSection />
             <TrendingProductsSection />
+            <RecentReviewSection />
             <FooterSection />
         </div>
     );
