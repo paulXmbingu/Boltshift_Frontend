@@ -1,11 +1,11 @@
 .section {
     display: flex;
-    min-width: 375px;
-    max-width: 1280px;
-    padding: 48px 16px;
+    min-width: var(--Grid-layouts-iPhone-375px, 375px);
+    max-width: var(--grid-layouts-desktop-1280-px, 1280px);
+    padding: var(--spacing-system-guides-corner-radius-12, 48px) var(--spacing-system-guides-corner-radius-4, 16px);
     flex-direction: column;
     align-items: flex-start;
-    gap: 40px;
+    gap: var(--spacing-system-guides-corner-radius-10, 40px);
     align-self: stretch;
 }
 
