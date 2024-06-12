@@ -13,3 +13,27 @@
     background: var(--Colors-Background-bg-secondary, #F9FAFB);
 }
 
+.testimonyTextWrap{
+    display: flex;
+    padding: var(--spacing-none, 0px);
+    align-items: flex-start;
+    gap: var(--spacing-lg, 12px);
+    align-self: stretch;
+}
+
+.testimonyText{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 5;
+    flex: 1 0 0;
+    overflow: hidden;
+    color: var(--colors-text-text-tertiary-600, #475467);
+    text-overflow: ellipsis;
+
+    /* Text xs/Regular */
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px; /* 150% */
+}
