@@ -59,66 +59,57 @@
 }
 
 /* MOBILE STYLING */
-.mobileNav {
+.mobileNav{
   display: flex;
-  width: 100%;
-  /* padding: var(--Base-4-Premitives-4, 16px) var(--spacing-system-guides-corner-radius-4, 16px); */
+  /* width: 841px; */
+  padding: var(--Base-4-Premitives-4, 16px) var(--container-padding-mobile, 16px);
   flex-direction: column;
-  align-items: flex-start;
+  justify-content: center;
+  align-items: center;
   gap: var(--Base-4-Premitives-4, 16px);
   border-radius: var(--spacing-system-guides-corner-radius-0, 0px);
   background: var(--Colors-Background-bg-primary, #FFF);
+
+  width: 100%;
   position: sticky;
   top: 0;
   z-index: 999;
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  overflow-x: hidden; /* Prevent horizontal overflow */
 }
 
-.mobileTopNav {
+.topNavMobile{
   display: flex;
+  height: var(--Base-4-Premitives-10, 40px);
   justify-content: space-between;
   align-items: center;
-  align-content: center;
   align-self: stretch;
-  flex-wrap: wrap;
-  padding: var(--Base-4-Premitives-4, 16px) var(--Base-4-Premitives-4, 16px);
 }
 
-.mobileSearchFilter {
-  display: flex;
-  width: calc(100% - var(--Base-4-Premitives-4, 16px) * 2);
-  height: var(--Base-4-Premitives-11, 44px);
-  min-width: calc(var(--spacing-system-guides-corner-radius-80, 320px) - var(--Base-4-Premitives-4, 16px) * 2);
-  max-width: calc(var(--spacing-system-guides-corner-radius-220, 880px) - var(--Base-4-Premitives-4, 16px) * 2);
-  align-items: center;
-  gap: var(--Base-4-Premitives-3, 12px);
-  align-self: stretch;
-  margin: 0 var(--Base-4-Premitives-4, 16px);
-}
-
-.mobileMenuLogo{
-display: flex;
-align-items: center;
-gap: var(--spacing-md, 8px);
-}
-
-.mobileMenu {
+.menuLogoMobile{
   display: flex;
   align-items: center;
-  gap: var(--spacing-system-guides-corner-radius-1, 4px);
+  gap: var(--spacing-md, 8px);
 }
 
-.MobileMenuIcon {
+.menuIconMobile{
   width: 24px;
   height: 24px;
 }
 
-.mobileProductLogo {
+.logoWrapMobile{
   display: flex;
   align-items: center;
   gap: var(--spacing-system-guides-corner-radius-2, 8px);
 }
 
-.MobileLogo {
+.logoWrapMobile{
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-system-guides-corner-radius-2, 8px);
+}
+
+.brandLogoMobile{
   display: flex;
   width: 141.667px;
   height: 40px;
@@ -128,10 +119,19 @@ gap: var(--spacing-md, 8px);
   gap: 9.483px;
 }
 
-.mobileNotifications {
+.notificationsMobile{
   display: flex;
   width: 140px;
   justify-content: flex-end;
   align-items: center;
   gap: var(--spacing-xs, 4px);
+}
+
+.serchFilterMobile{
+  display: flex;
+  height: var(--Base-4-Premitives-11, 44px);
+  justify-content: center;
+  align-items: center;
+  gap: var(--spacing-lg, 12px);
+  align-self: stretch;
 }

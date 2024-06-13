@@ -35,23 +35,23 @@ const TopNavLarge = () => {
 const TopNavSmall = () => {
   return (
     <div className={styles.mobileNav}>
-      <div className={styles.mobileTopNav}>
-        <div className={styles.mobileMenuLogo}>
-          <div className={styles.mobileMenu}>
-                <img src={MenuIcon} alt="Menu Icon" className={styles.MobileMenuIcon} /> 
+      <div className={styles.topNavMobile}>
+        <div className={styles.menuLogoMobile}>
+          <div className={styles.menuWrapMobile}>
+            <img src={MenuIcon} alt="Menu Icon" className={styles.menuIconMobile} />
           </div>
-          <div className={styles.mobileProductLogo}>
-              <img src={ProductLogo} alt="Product Logo" className={styles.MobileLogo} />
+          <div className={styles.logoWrapMobile}>
+            <img src={ProductLogo} alt="" className={styles.brandLogoMobile} />
           </div>
         </div>
-          <div className={styles.mobileNotifications}>
-              <NotificationIcon icon={Favorite} />
-              <NotificationIcon icon={Cart} />
-              <NotificationIcon icon={Bell} />
-              <UserAvatar userPhoto={UserPhoto} />
-          </div>
+        <div className={styles.notificationsMobile}>
+          <NotificationIcon icon={Favorite} />
+          <NotificationIcon icon={Cart} />
+          <NotificationIcon icon={Bell} />
+          <UserAvatar userPhoto={UserPhoto} /> 
+        </div>
       </div>
-      <div className={styles.mobileSearchFilter}>
+      <div className={styles.serchFilterMobile}> 
         <SearchInput />
       </div>
     </div>
