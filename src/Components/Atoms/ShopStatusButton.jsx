@@ -6,7 +6,7 @@ const StoreStatusButton = ({}) => {
     return (
         <div className={styles.buttonWrap}>
             <img src={StoreStatus} alt="" className={styles.indicator} />
-            <div className={styles.statusLabel}> We Are Open </div>
+            <div className={styles.statusLabel}> We are Open </div>
         </div>
     );
 };
