@@ -41,7 +41,7 @@ const TopNavSmall = () => {
             <img src={MenuIcon} alt="Menu Icon" className={styles.menuIconMobile} />
           </div>
           <div className={styles.logoWrapMobile}>
-            <img src={ProductLogo} alt="" className={styles.brandLogoMobile} />
+            <img src={ProductLogo} alt="Product Logo" className={styles.brandLogoMobile} />
           </div>
         </div>
         <div className={styles.notificationsMobile}>
