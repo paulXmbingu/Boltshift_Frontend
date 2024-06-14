@@ -1,6 +1,6 @@
 .heroSection {
     display: flex;
-    min-width: 375px;
+    /* min-width: 375px; */
     max-width: 1280px;
     padding: 48px 16px;
     flex-direction: column;
