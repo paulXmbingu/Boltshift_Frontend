@@ -45,17 +45,6 @@
     transition: all 0.1s ease;
 }
 
-.tabLabel:hover {
-    color: var(--colors-text-text-brand-secondary-700, #BF1343);
-
-    /* Text sm/Semibold */
-    font-family: Inter;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 20px; /* 142.857% */
-}
-
 .tabLabel:focus,
 .tabLabel:focus-within {
     color: var(--colors-text-text-quarterary-500, #667085);
