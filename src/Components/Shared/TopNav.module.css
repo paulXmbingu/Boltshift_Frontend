@@ -68,8 +68,8 @@
   align-items: center;
   gap: var(--Base-4-Premitives-4, 16px);
   border-radius: var(--spacing-system-guides-corner-radius-0, 0px);
-  background: var(--Colors-Background-bg-primary, #FFF);
-
+  background: var(--Colors-Background-bg-secondary, #F9FAFB);
+    
   width: 100%;
   position: sticky;
   top: 0;
