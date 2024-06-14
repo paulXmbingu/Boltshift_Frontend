@@ -10,7 +10,10 @@
   align-self: stretch;
   flex-wrap: wrap;
   border-radius: var(--spacing-system-guides-corner-radius-0, 0px);
-  background: var(--Base-White, #FFF);
+  background: var(--Component-colors-Alpha-alpha-white-90, rgba(255, 255, 255, 0.90));
+  
+  /* Backdrop blurs/backdrop-blur-md */
+  backdrop-filter: blur(8px);
 
   position: sticky;
   top: 0;
@@ -68,8 +71,11 @@
   align-items: center;
   gap: var(--Base-4-Premitives-4, 16px);
   border-radius: var(--spacing-system-guides-corner-radius-0, 0px);
-  background: var(--Colors-Background-bg-secondary, #F9FAFB);
-    
+  background: var(--Component-colors-Alpha-alpha-white-90, rgba(255, 255, 255, 0.90));
+  
+  /* Backdrop blurs/backdrop-blur-md */
+  backdrop-filter: blur(8px);
+
   width: 100%;
   position: sticky;
   top: 0;
