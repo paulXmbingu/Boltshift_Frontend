@@ -1,7 +1,9 @@
 .searchInput {
     display: flex;
-    min-width: var(--Base-4-Premitives-72, 288px);
-    max-width: var(--Base-4-Premitives-220, 880px);
+    width: 100%;
+    
+    /* min-width: var(--Base-4-Premitives-72, 288px);
+    max-width: var(--Base-4-Premitives-220, 880px); */
     flex-direction: column;
     justify-content: center;
     align-items: center;

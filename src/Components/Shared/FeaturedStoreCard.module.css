@@ -1,8 +1,9 @@
 .defaultWrapper {
     display: flex;
     height: var(--Base-4-Premitives-128, 492px);
-    min-width: var(--spacing-system-guides-corner-radius-84, 336px);
-    max-width: var(--spacing-system-guides-corner-radius-128, 492px);
+    width: 100%;
+    /* min-width: var(--spacing-system-guides-corner-radius-84, 336px); */
+    /* max-width: var(--spacing-system-guides-corner-radius-128, 492px); */
     min-height: var(--Grid-layouts-iPhone-375px, 375px);
     max-height: var(--spacing-system-guides-corner-radius-128, 492px);
     padding: var(--spacing-lg, 12px);
