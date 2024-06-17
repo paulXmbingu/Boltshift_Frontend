@@ -97,7 +97,7 @@
 .dateWrap{
     display: flex;
     padding: var(--spacing-system-guides-corner-radius-0, 0px) var(--spacing-system-guides-corner-radius-1, 4px);
-    justify-content: center;
+    justify-content: left;
     align-items: center;
     gap: 10px;
 }
@@ -111,6 +111,14 @@
     font-style: normal;
     font-weight: 400;
     line-height: 18px; /* 150% */
+}
+
+.buyerRating{
+    display: flex;
+    padding: var(--spacing-system-guides-corner-radius-0, 0px);
+    align-items: center;
+    gap: var(--spacing-system-guides-corner-radius-1, 4px);
+    scale: 50%;
 }
 
 .reviewedProduct{

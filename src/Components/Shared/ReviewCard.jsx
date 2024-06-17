@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./ReviewCard.module.css";
 import { Badge_PillColor_SM_LeadIcon_Success } from "../Atoms/Badge";
 import CheckIcon from "../../assets/Icons/UI/check.svg";
+import { StarRating4 } from "../Molecules/StarRating";
 
 const ReviewCard = ({ ReviewerName, ReviewerPhoto,ReviewDate, Review, ProductImage, ProductNameLabel, PriceLabel }) => {
     return (
@@ -20,7 +21,7 @@ const ReviewCard = ({ ReviewerName, ReviewerPhoto,ReviewDate, Review, ProductIma
                             <div className={styles.dateWrap}> 
                                 <span className={styles.date}> {ReviewDate} </span>
                             </div>
-                            <div> ⭐⭐⭐⭐☆ </div>
+                            <StarRating4 />
                         </div>
                     </div>
                 </div>
