@@ -17,11 +17,8 @@
     gap: var(--spacing-6xl, 48px);
     align-self: stretch;
     border-radius: var(--radius-2xl, 16px);
-    border: 1px solid var(--Colors-Border-border-secondary, #EAECF0);
+    border: 1px solid var(--Colors-Border-border-tertiary, #F2F4F7);
     background: var(--Colors-Background-bg-secondary, #F9FAFB);
-
-    /* Focus rings/ring-gray */
-    box-shadow: 0px 0px 0px 4px rgba(152, 162, 179, 0.14);
     position: relative;
     overflow: hidden;
 }

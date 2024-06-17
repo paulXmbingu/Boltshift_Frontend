@@ -12,6 +12,7 @@ function FeaturedStoreSection() {
                 {/* <div className={styles.storeBackgoundWrapper}>
                     <img src={`https://i.pinimg.com/564x/c4/58/03/c458036c4c9d585e003b3bff76d010fc.jpg`} alt="Store Background" className={styles.storeBackgound} /> 
                 </div> */}
+                <div> Store Cover Art </div>
                 <div> Store Details </div>
                 <div> Horizontal Tabs </div>
                 <div className={styles.smallLandscapeCards}>
