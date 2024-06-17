@@ -1,0 +1,16 @@
+.star {
+    width: 20px; 
+    height: 20px;
+}
+
+
+.starRating {
+    display: flex;
+    padding: var(--spacing-system-guides-corner-radius-0, 0px);
+    align-items: center;
+    gap: var(--spacing-system-guides-corner-radius-2, 4px);
+    flex-wrap: wrap;
+    height: fit-content;
+    width: fit-content;
+}
+  
