@@ -10,7 +10,7 @@
 
 .featureStoreWrapper{
     display: flex;
-    padding: var(--spacing-11xl, 160px) var(--spacing-3xl, 24px) var(--spacing-3xl, 24px) var(--spacing-3xl, 24px);
+    padding: var(--spacing-11xl, 160px) var(--spacing-xl, 16px) var(--spacing-xl, 16px) var(--spacing-xl, 16px);
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -50,7 +50,7 @@
     padding: var(--spacing-none, 0px);
     align-items: flex-start;
     align-content: flex-start;
-    gap: 12px var(--spacing-xl, 12px);
+    gap: 16px var(--spacing-xl, 16px);
     align-self: stretch;
     flex-wrap: wrap;
 }
