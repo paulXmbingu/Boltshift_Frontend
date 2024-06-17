@@ -9,9 +9,9 @@ function FeaturedStoreSection() {
         <div className={styles.catSection}>
             <SectionHeader headerTitle="Featured Store" icon={ConvenienceStore} />
             <div className={styles.featureStoreWrapper}>
-                {/* <div className={styles.storeBackgoundWrapper}>
-                    <img src={`https://i.pinimg.com/564x/c4/58/03/c458036c4c9d585e003b3bff76d010fc.jpg`} alt="Store Background" className={styles.storeBackgound} /> 
-                </div> */}
+                <div className={styles.storeBackgoundWrapper}>
+                    <img src={`https://res.cloudinary.com/excit3/image/upload/v1718663336/Boltshift%20Branding/Store_Background_y8a6x7.jpg`} alt="Store Background" className={styles.storeBackgound} /> 
+                </div>
                 <div> Store Cover Art </div>
                 <div> Store Details </div>
                 <div> Horizontal Tabs </div>
