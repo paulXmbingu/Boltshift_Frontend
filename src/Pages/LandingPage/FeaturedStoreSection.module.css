@@ -107,6 +107,39 @@
     height: 24px;
 }
 
+.starCount {
+    display: flex;
+    padding: var(--spacing-system-guides-corner-radius-0, 0px);
+    align-items: center;
+    gap: var(--spacing-system-guides-corner-radius-1, 4px);
+}
+
+.ratingReview {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--spacing-system-guides-corner-radius-1, 4px);
+}
+
+.reviewCountWrap {
+    display: flex;
+    padding: var(--spacing-system-guides-corner-radius-0, 0px);
+    justify-content: center;
+    align-items: center;
+    gap: var(--spacing-system-guides-corner-radius-0, 0px);
+}
+
+.reviewCount {
+    color: var(--colors-text-text-quarterary-500, #667085);
+
+    /* Text xs/Regular */
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px; /* 150% */
+}
+
 .storeCTAs {
     display: flex;
     justify-content: center;

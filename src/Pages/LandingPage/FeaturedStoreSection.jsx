@@ -5,8 +5,8 @@ import ConvenienceStore from "../../assets/Icons/Illustrated/Convenience store.s
 import ProductCardLandscapeSM from "../../Components/Shared/ProductCardLandscapeSM"
 import StoreLogo from "../../assets/Logos/Senjes Cuisines.svg"
 import StoreVerification from "../../assets/Icons/UI/Verified tick.svg"
-
 import { Btn_Pri_SM, Btn_Sec_Gray_SM, Btn_Ter_LG } from "../../Components/Atoms/Button";
+import { StarRating4 } from "../../Components/Molecules/StarRating";
 
 function FeaturedStoreSection() {
     return (
@@ -23,7 +23,12 @@ function FeaturedStoreSection() {
                             <span className={styles.storeLabel}> Senjes Cuisines Store </span>
                             <img src={StoreVerification} alt="Verification Mark" className={styles.storeVerification} />
                         </div>
-                        <div> Store Rating and Review Count </div>
+                        <div className={styles.ratingReview}>
+                            <StarRating4 className={styles.starCount} />
+                            <div className={styles.reviewCountWrap}>
+                                <span className={styles.reviewCount}> (123.46k reviews) </span>
+                            </div>
+                        </div>
                     </div>
                     <div className={styles.storeCTAs}>
                         <Btn_Sec_Gray_SM ButtonCTA={`Follow Us`} iconTrailing={``} />
