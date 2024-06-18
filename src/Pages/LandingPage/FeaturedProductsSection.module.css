@@ -26,4 +26,5 @@
     gap: var(--container-padding-mobile, 16px);
     flex: 1 0 0;
     flex-wrap: wrap;
+    flex-grow: 1;
 }
