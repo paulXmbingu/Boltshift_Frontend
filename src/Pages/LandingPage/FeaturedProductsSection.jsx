@@ -18,7 +18,7 @@ function FeaturedProductsSection() {
                     <HotDealCard imageSrc = {`https://i.pinimg.com/474x/15/b3/80/15b3806913fd88a77b85243f70b3db26.jpg`} productNameText={`Modern White Velvet 3-Seater Sofa Channel Tufted Upholstered Luxury Solid Wood`} ammount={`92,372`} noSold={`67`} />
                     <HotDealCard imageSrc = {`https://i.pinimg.com/564x/46/70/38/4670389521111bea70e791c9ec735a77.jpg`} productNameText={`Candy Color Pointed Toe Low Cut Stiletto High Heels Prom Shoes`}ammount={`56,536`} noSold={`56`} />
                     <HotDealCard imageSrc = {`https://i.pinimg.com/474x/0a/2c/6c/0a2c6ceff686936f64249d979a0788cd.jpg`} productNameText={`Modern Chic Round Nesting Coffee Table with Storage White Stone Coffee Table Set of 2`} ammount={`95,434`} noSold={`85`} />
-                    <HotDealCardLandscape imageSrc = {`https://i.pinimg.com/564x/f5/a3/22/f5a322d002e83c2fc43c94c5b9112a5f.jpg`} productNameText={`Stupendous Modern Leather Bed - 2 x Nightstand, Blue`} ammount={`595,999`} noSold={`12`} />
+                    {/* <HotDealCardLandscape imageSrc = {`https://i.pinimg.com/564x/f5/a3/22/f5a322d002e83c2fc43c94c5b9112a5f.jpg`} productNameText={`Stupendous Modern Leather Bed - 2 x Nightstand, Blue`} ammount={`595,999`} noSold={`12`} /> */}
                 </div>
            </div>
         </div>
