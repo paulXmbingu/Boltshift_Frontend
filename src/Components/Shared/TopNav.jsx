@@ -26,7 +26,7 @@ const TopNavLarge = () => {
         <NotificationIcon icon={Favorite} />
         <NotificationIcon icon={Cart} />
         <NotificationIcon icon={Bell} />
-        <UserAvatar userPhoto={UserPhoto} />
+        <UserAvatar userPhoto={`https://res.cloudinary.com/excit3/image/upload/v1718726412/Boltshift%20Branding/Paul_Mbingu_-_Avatar_-_Casual_-_Full_BG_tbr4ml.png`} />
       </div>
     </div>
   );
