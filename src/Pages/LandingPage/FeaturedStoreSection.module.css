@@ -32,7 +32,6 @@
     box-sizing: border-box;
     overflow: hidden;
     width: 100%;
-    z-index: 0;
     top: 0;
     left: 0;
 }
@@ -42,6 +41,61 @@
     height: 100%;
     object-fit: cover;
     position: absolute;
+}
+
+.storeDetails {
+    display: flex;
+    max-width: var(--width-md, 560px);
+    max-height: var(--Base-4-Premitives-128, 512px);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: var(--spacing-xl, 16px);
+    align-self: stretch;
+    z-index: 1;
+}
+
+.storeLogo {
+    display: flex;
+    width: var(--Base-4-Premitives-32, 128px);
+    height: var(--Base-4-Premitives-32, 128px);
+    padding: var(--spacing-none, 0px);
+    justify-content: center;
+    align-items: center;
+    gap: var(--spacing-none, 0px);
+    border-radius: var(--radius-full, 9999px);
+    border: 2px solid var(--Colors-Border-border-tertiary, #F2F4F7);
+    background: var(--Avatar-company-logo-Senjes-Cuisines, lightgray 50% / cover no-repeat);
+
+    /* Focus rings/ring-gray */
+    box-shadow: 0px 0px 0px 4px rgba(152, 162, 179, 0.14);
+    overflow: hidden;
+}
+
+.storeCTAs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--spacing-xl, 16px);
+}
+
+.storeDescription {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    align-self: stretch;
+    overflow: hidden;
+    overflow: hidden;
+    color: var(--colors-text-text-tertiary-600, #475467);
+    text-align: center;
+    text-overflow: ellipsis;
+    
+    /* Text sm/Medium */
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px; /* 150% */
 }
 
 .smallLandscapeCards{

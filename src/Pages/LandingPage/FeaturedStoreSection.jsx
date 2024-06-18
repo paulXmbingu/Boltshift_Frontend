@@ -3,6 +3,8 @@ import styles from "./FeaturedStoreSection.module.css";
 import SectionHeader from "../../Components/Shared/SectionHeader";
 import ConvenienceStore from "../../assets/Icons/Illustrated/Convenience store.svg";
 import ProductCardLandscapeSM from "../../Components/Shared/ProductCardLandscapeSM"
+import StoreLogo from "../../assets/Logos/Senjes Cuisines.svg"
+import { Btn_Pri_SM, Btn_Sec_Gray_SM } from "../../Components/Atoms/Button";
 
 function FeaturedStoreSection() {
     return (
@@ -12,8 +14,16 @@ function FeaturedStoreSection() {
                 <div className={styles.storeBackgoundWrapper}>
                     <img src={`https://res.cloudinary.com/excit3/image/upload/v1718663336/Boltshift%20Branding/Store_Background_y8a6x7.jpg`} alt="Store Background" className={styles.storeBackgound} /> 
                 </div>
-                <div> Store Cover Art </div>
-                <div> Store Details </div>
+                <div className={styles.storeDetails}> 
+                    <img src={StoreLogo} alt="Store Logo" className={styles.storeLogo} /> 
+                    <div>Store Name</div>
+                    <div className={styles.storeCTAs}>
+                        <Btn_Sec_Gray_SM ButtonCTA={`Visit Store`} iconTrailing={``} />
+                    </div>
+                    <div className={styles.storeDescription}>
+                        Senjes Cuisines is a celebrated eatery offering a fusion of global flavors with local ingredients. Our diverse menu features gourmet dishes, artisanal beverages, and exquisite desserts, all in a cozy, welcoming atmosphere.
+                    </div>
+                </div>
                 <div> Horizontal Tabs </div>
                 <div className={styles.smallLandscapeCards}>
                     <ProductCardLandscapeSM price={`104,899`} productLabel={`Recliner Lounge Chairs - Relax in Style and Comfort - Crafted from Genuine Leather`} ProductImage={`https://i.pinimg.com/564x/cc/63/67/cc6367600b3b55d912e60a24076d4c9d.jpg`}  />
