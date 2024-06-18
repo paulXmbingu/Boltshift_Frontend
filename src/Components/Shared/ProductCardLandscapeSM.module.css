@@ -1,6 +1,7 @@
 .cardWrapper {
     display: flex;
     width: var(--Base-4-Premitives-72, 288px);
+    max-width: var(--width-xxs, 320px);
     height: var(--Base-4-Premitives-32, 128px);
     align-items: center;
     gap: var(--spacing-lg, 12px);
@@ -11,6 +12,7 @@
     overflow: hidden;
     cursor: pointer;
     transition: all 0.1s ease;
+    flex-grow: 1;
 }
 
 .cardWrapper:hover,
