@@ -144,7 +144,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: var(--spacing-xl, 16px);
+    gap: var(--spacing-xl, 4px);
+    width:292px;
 }
 
 .storeDescription {
@@ -164,6 +165,24 @@
     font-style: normal;
     font-weight: 500;
     line-height: 18px; /* 150% */
+}
+
+.horizotalTabsWrap {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--spacing-md, 8px);
+    align-self: stretch;
+    border-bottom: 1px solid var(--Colors-Border-border-secondary, #EAECF0);
+    width: 100%;
+    overflow-x: auto; /* Allows horizontal scrolling */
+    -webkit-overflow-scrolling: touch; /* Smooth scrolling for touch devices */
+}
+
+.tabGroup {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--spacing-lg, 12px);
+    min-width: 100%; /* Ensures tabs take up full width */
 }
 
 .smallLandscapeCards{

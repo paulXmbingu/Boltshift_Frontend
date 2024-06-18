@@ -5,8 +5,10 @@ import ConvenienceStore from "../../assets/Icons/Illustrated/Convenience store.s
 import ProductCardLandscapeSM from "../../Components/Shared/ProductCardLandscapeSM"
 import StoreLogo from "../../assets/Logos/Senjes Cuisines.svg"
 import StoreVerification from "../../assets/Icons/UI/Verified tick.svg"
-import { Btn_Pri_SM, Btn_Sec_Gray_SM, Btn_Ter_LG } from "../../Components/Atoms/Button";
+import { Btn_Sec_Gray_SM, Btn_Ter_LG } from "../../Components/Atoms/Button";
 import { StarRating4 } from "../../Components/Molecules/StarRating";
+import { HorTabUnderLineSM, HorTabUnderLineSMSelected } from "../../Components/Atoms/Tab";
+import ChevronRight from "../../assets/Icons/UI/chevron-right (1).svg"
 
 function FeaturedStoreSection() {
     return (
@@ -32,12 +34,25 @@ function FeaturedStoreSection() {
                     </div>
                     <div className={styles.storeCTAs}>
                         <Btn_Sec_Gray_SM ButtonCTA={`Follow Us`} iconTrailing={``} />
+                        <Btn_Ter_LG ButtonCTA={`Visit Store`} iconTrailing={ChevronRight} />
                     </div>
                     <div className={styles.storeDescription}>
                         Senjes Cuisines is a celebrated eatery offering a fusion of global flavors with local ingredients. Our diverse menu features gourmet dishes, artisanal beverages, and exquisite desserts, all in a cozy, welcoming atmosphere.
                     </div>
                 </div>
-                <div> Horizontal Tabs </div>
+                <div className={styles.horizotalTabsWrap}>
+                    <div className={styles.tabGroup}>
+                        <HorTabUnderLineSMSelected tabLabel={`Home`} />
+                        <HorTabUnderLineSM tabLabel={`Womens' Fashion`} />
+                        <HorTabUnderLineSM tabLabel={`Mens' Fashion`} />
+                        <HorTabUnderLineSM tabLabel={`Boys' Fashion`} />
+                        <HorTabUnderLineSM tabLabel={`Girls' Fashion`} />
+                        <HorTabUnderLineSM tabLabel={`Baby`} />
+                        <HorTabUnderLineSM tabLabel={`Home & Kitchen`} />
+                        <HorTabUnderLineSM tabLabel={`Video Games`} />
+                        <HorTabUnderLineSM tabLabel={`Electronics`} />
+                    </div>
+                </div>
                 <div className={styles.smallLandscapeCards}>
                     <ProductCardLandscapeSM price={`104,899`} productLabel={`Recliner Lounge Chairs - Relax in Style and Comfort - Crafted from Genuine Leather`} ProductImage={`https://i.pinimg.com/564x/cc/63/67/cc6367600b3b55d912e60a24076d4c9d.jpg`}  />
                     <ProductCardLandscapeSM price={`32,078`} productLabel={`Men's PU Shoulder Bag with Zipper Closure`} ProductImage={`https://i.pinimg.com/736x/39/14/15/391415b615904b2d0b09d1f1edbe9a98.jpg`}  />
