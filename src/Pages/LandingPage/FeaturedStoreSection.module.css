@@ -20,6 +20,7 @@
     background: var(--Colors-Background-bg-secondary, #F9FAFB);
     position: relative;
     overflow: hidden;
+    width: 100%;
 }
 
 .storeBackgoundWrapper {
@@ -33,6 +34,7 @@
     width: 100%;
     top: 0;
     left: 0;
+    
 }
 
 .storeBackgound {
@@ -45,12 +47,14 @@
 .storeDetails {
     display: flex;
     max-width: var(--width-md, 560px);
+    box-sizing: border-box;
     max-height: var(--Base-4-Premitives-128, 512px);
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: var(--spacing-xl, 16px);
     z-index: 1;
+    
 }
 
 .storeLogo {
@@ -145,7 +149,7 @@
     justify-content: center;
     align-items: center;
     gap: var(--spacing-xl, 4px);
-    width:292px;
+    width:286px;
 }
 
 .storeDescription {
@@ -173,16 +177,16 @@
     gap: var(--spacing-md, 8px);
     align-self: stretch;
     border-bottom: 1px solid var(--Colors-Border-border-secondary, #EAECF0);
-    width: 100%;
-    overflow-x: auto; /* Allows horizontal scrolling */
-    -webkit-overflow-scrolling: touch; /* Smooth scrolling for touch devices */
+    /* width: 100%; */
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
 }
 
 .tabGroup {
     display: flex;
     align-items: flex-start;
     gap: var(--spacing-lg, 12px);
-    min-width: 100%; /* Ensures tabs take up full width */
+    /* min-width: 100%; */
 }
 
 .smallLandscapeCards{
