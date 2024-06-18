@@ -4,7 +4,9 @@ import SectionHeader from "../../Components/Shared/SectionHeader";
 import ConvenienceStore from "../../assets/Icons/Illustrated/Convenience store.svg";
 import ProductCardLandscapeSM from "../../Components/Shared/ProductCardLandscapeSM"
 import StoreLogo from "../../assets/Logos/Senjes Cuisines.svg"
-import { Btn_Pri_SM, Btn_Sec_Gray_SM } from "../../Components/Atoms/Button";
+import StoreVerification from "../../assets/Icons/UI/Verified tick.svg"
+
+import { Btn_Pri_SM, Btn_Sec_Gray_SM, Btn_Ter_LG } from "../../Components/Atoms/Button";
 
 function FeaturedStoreSection() {
     return (
@@ -16,9 +18,15 @@ function FeaturedStoreSection() {
                 </div>
                 <div className={styles.storeDetails}> 
                     <img src={StoreLogo} alt="Store Logo" className={styles.storeLogo} /> 
-                    <div>Store Name</div>
+                    <div className={styles.storeName}>
+                        <div className={styles.storeLabelWrap}>
+                            <span className={styles.storeLabel}> Senjes Cuisines Store </span>
+                            <img src={StoreVerification} alt="Verification Mark" className={styles.storeVerification} />
+                        </div>
+                        <div> Store Rating and Review Count </div>
+                    </div>
                     <div className={styles.storeCTAs}>
-                        <Btn_Sec_Gray_SM ButtonCTA={`Visit Store`} iconTrailing={``} />
+                        <Btn_Sec_Gray_SM ButtonCTA={`Follow Us`} iconTrailing={``} />
                     </div>
                     <div className={styles.storeDescription}>
                         Senjes Cuisines is a celebrated eatery offering a fusion of global flavors with local ingredients. Our diverse menu features gourmet dishes, artisanal beverages, and exquisite desserts, all in a cozy, welcoming atmosphere.
