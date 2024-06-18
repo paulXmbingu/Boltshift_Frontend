@@ -8,7 +8,7 @@
     align-self: stretch;
 }
 
-.featureStoreWrapper{
+.featureStoreWrapper {
     display: flex;
     padding: var(--spacing-10xl, 128px) var(--spacing-xl, 16px) var(--spacing-xl, 16px) var(--spacing-xl, 16px);
     flex-direction: column;
@@ -20,8 +20,6 @@
     background: var(--Colors-Background-bg-secondary, #F9FAFB);
     position: relative;
     overflow: hidden;
-
-
 }
 
 .storeBackgoundWrapper {
@@ -52,7 +50,6 @@
     justify-content: center;
     align-items: center;
     gap: var(--spacing-xl, 16px);
-    align-self: stretch;
     z-index: 1;
 }
 
@@ -71,6 +68,43 @@
     /* Focus rings/ring-gray */
     box-shadow: 0px 0px 0px 4px rgba(152, 162, 179, 0.14);
     overflow: hidden;
+}
+
+.storeName {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: var(--spacing-none, 0px);
+}
+
+.storeLabelWrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--spacing-xxs, 2px);
+}
+
+.storeLabel {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+    color: var(--colors-text-text-primary-900, #101828);
+    text-align: center;
+    text-overflow: ellipsis;
+
+    /* Text xl/Semibold */
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 30px; /* 150% */
+}
+
+.storeVerification {
+    width: 24px;
+    height: 24px;
 }
 
 .storeCTAs {
