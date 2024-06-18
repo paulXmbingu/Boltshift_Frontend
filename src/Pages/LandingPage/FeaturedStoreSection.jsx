@@ -4,6 +4,7 @@ import SectionHeader from "../../Components/Shared/SectionHeader";
 import ConvenienceStore from "../../assets/Icons/Illustrated/Convenience store.svg";
 import ProductCardLandscapeSM from "../../Components/Shared/ProductCardLandscapeSM"
 import StoreLogo from "../../assets/Logos/Senjes Cuisines.svg"
+import { Btn_Pri_SM, Btn_Sec_Gray_SM } from "../../Components/Atoms/Button";
 
 function FeaturedStoreSection() {
     return (
@@ -16,9 +17,11 @@ function FeaturedStoreSection() {
                 <div className={styles.storeDetails}> 
                     <img src={StoreLogo} alt="Store Logo" className={styles.storeLogo} /> 
                     <div>Store Name</div>
-                    <div>CTAs</div>
+                    <div className={styles.storeCTAs}>
+                        <Btn_Sec_Gray_SM ButtonCTA={`Visit Store`} iconTrailing={``} />
+                    </div>
                     <div className={styles.storeDescription}>
-                        Senjes Cuisines is a renowned eatery offering a fusion of global flavors, emphasizing local ingredients and culinary traditions. Our diverse menu features gourmet dishes, artisanal beverages, and exquisite desserts, all crafted with passion and precision. Senjes Cuisines is dedicated to providing an exceptional dining experience in a cozy and welcoming atmosphere.
+                        Senjes Cuisines is a celebrated eatery offering a fusion of global flavors with local ingredients. Our diverse menu features gourmet dishes, artisanal beverages, and exquisite desserts, all in a cozy, welcoming atmosphere.
                     </div>
                 </div>
                 <div> Horizontal Tabs </div>

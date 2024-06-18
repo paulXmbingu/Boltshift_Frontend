@@ -72,6 +72,13 @@
     overflow: hidden;
 }
 
+.storeCTAs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--spacing-xl, 16px);
+}
+
 .storeDescription {
     display: -webkit-box;
     -webkit-box-orient: vertical;
@@ -83,9 +90,9 @@
     text-align: center;
     text-overflow: ellipsis;
     
-    /* Text xs/Medium */
+    /* Text sm/Medium */
     font-family: Inter;
-    font-size: 12px;
+    font-size: 14px;
     font-style: normal;
     font-weight: 500;
     line-height: 18px; /* 150% */
