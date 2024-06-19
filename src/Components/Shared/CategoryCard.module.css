@@ -2,6 +2,7 @@
     display: flex;
     width: var(--Base-4-Premitives-40, 136px);
     max-width: var(--Base-4-Premitives-40, 160px);
+    max-width: var(--Base-4-Premitives-40, 128px);
     height: var(--Base-4-Premitives-32, 128px);
     padding: var(--spacing-system-guides-corner-radius-3, 12px);
     flex-direction: column;
@@ -15,6 +16,7 @@
     cursor: pointer;
     transition: all 0.1s ease;
     flex-grow: 1;
+    flex-shrink: 1;
 }
 
 .cardStyle:hover,
