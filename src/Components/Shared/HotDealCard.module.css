@@ -18,6 +18,7 @@
     position: relative;
     transition: all 0.1s ease;
     flex-grow: 1;
+    flex-shrink: 1;
 }
 
 .CardStyle:hover,
