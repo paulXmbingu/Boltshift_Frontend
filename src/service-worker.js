@@ -2,8 +2,8 @@ const CACHE_NAME = 'boltshift-cache-v1';
 const urlsToCache = [
   '/',
   '/index.html',
-  '/styles.css',
-  '/main.js',
+  '/src/index.css',
+  '/src/main.jsx',
   '/icons/icon-72x72.png',
   '/icons/icon-96x96.png',
   // Add all other assets you want to cache
