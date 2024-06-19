@@ -49,6 +49,14 @@
       "type": "image/png"
     }
   ],
+  "screenshots": [
+    {
+      "src": "screenshots/BoltshiftDesktop.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "form_factor": "wide"
+    }
+  ],
   "prefer_related_applications": false,
   "scope": "/",
   "lang": "en",
