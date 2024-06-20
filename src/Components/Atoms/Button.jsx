@@ -29,6 +29,20 @@ const Btn_Sec_Gray_SM = ({ iconLeading, ButtonCTA, iconTrailing }) => {
     );
 };
 
+const Btn_Sec_Color_SM = ({ iconLeading, ButtonCTA, iconTrailing }) => {
+    return (
+        <button className={styles.secColorSM}>
+            {iconLeading && <img src={iconLeading} alt="Leading Icon" className={styles.leadingIconSecColorSM} />}
+            <div className={styles.textPaddingsecColorSM}>
+                <div className={styles.cTATextcColorSM}>
+                    {ButtonCTA}
+                </div>
+            </div>
+            {iconTrailing && <img src={iconTrailing} alt="Trailing Icon" className={styles.trailingIconSecColorSM} />}
+        </button>
+    );
+};
+
 const Btn_Primary_MD = ({ ButtonCTA }) => {
     return (
         <button className={styles.Btn_Primary_MD}>
@@ -73,4 +87,4 @@ const Btn_Pri_XL = ({ iconLeading, ButtonCTA, iconTrailing }) => {
     );
 };
 
-export { Btn_Pri_SM, Btn_Sec_Gray_SM, Btn_Primary_MD, Btn_Primary_LG, Btn_Ter_LG, Btn_Pri_XL };
+export { Btn_Pri_SM, Btn_Sec_Gray_SM, Btn_Sec_Color_SM, Btn_Primary_MD, Btn_Primary_LG, Btn_Ter_LG, Btn_Pri_XL };
