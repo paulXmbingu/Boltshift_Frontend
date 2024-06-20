@@ -5,7 +5,7 @@ import ConvenienceStore from "../../assets/Icons/Illustrated/Convenience store.s
 import ProductCardLandscapeSM from "../../Components/Shared/ProductCardLandscapeSM"
 import StoreLogo from "../../assets/Logos/Senjes Cuisines.svg"
 import StoreVerification from "../../assets/Icons/UI/Verified tick.svg"
-import { Btn_Sec_Color_SM, Btn_Ter_LG } from "../../Components/Atoms/Button";
+import { Btn_Sec_Color_SM, Btn_Ter_Grey_SM} from "../../Components/Atoms/Button";
 import { StarRating4 } from "../../Components/Molecules/StarRating";
 import { HorTabUnderLineSM, HorTabUnderLineSMSelected } from "../../Components/Atoms/Tab";
 import ChevronRight from "../../assets/Icons/UI/chevron-right (1).svg"
@@ -35,7 +35,7 @@ function FeaturedStoreSection() {
                     </div>
                     <div className={styles.storeCTAs}>
                         <Btn_Sec_Color_SM ButtonCTA={`Follow Us`} iconTrailing={PlusButton} />
-                        <Btn_Ter_LG ButtonCTA={`Visit Store`} iconTrailing={ChevronRight} />
+                        <Btn_Ter_Grey_SM ButtonCTA={`Visit Store`} iconTrailing={ChevronRight} />
                     </div>
                     <div className={styles.storeDescription}>
                         Senjes Cuisines is a celebrated eatery offering a fusion of global flavors with local ingredients. Our diverse menu features gourmet dishes, artisanal beverages, and exquisite desserts, all in a cozy, welcoming atmosphere.

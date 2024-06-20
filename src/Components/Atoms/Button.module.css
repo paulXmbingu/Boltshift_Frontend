@@ -231,8 +231,80 @@
     line-height: 20px; /* 142.857% */
 }
 
-
 .trailingIconSecColorSM {
+    width: 20px;
+    height: 20px;
+}
+
+/* BUTTON TERTIARY SMALL GREY */
+.terGreySM {
+    display: inline-flex;
+    padding: var(--spacing-md, 8px) var(--spacing-lg, 12px);
+    justify-content: center;
+    align-items: center;
+    gap: var(--spacing-xs, 4px);
+    border-radius: var(--radius-md, 8px);
+
+    background: var(--Colors-Background-bg-primary, #FFF, 0);
+    border: 0px solid var(--Colors-Border-border-primary, #D0D5DD);
+    cursor: pointer;
+    transition: all 0.1s ease;
+    outline: none;
+    width: 100%; 
+}
+
+.terGreySM:hover {
+    display: inline-flex;
+    padding: var(--spacing-md, 8px) var(--spacing-lg, 12px);
+    justify-content: center;
+    align-items: center;
+    gap: var(--spacing-xs, 4px);
+    border-radius: var(--radius-md, 8px);
+    background: var(--Component-colors-Components-Buttons-Tertiary-button-tertiary-bg_hover, #F9FAFB);
+}
+
+.terGreySM:focus {
+    display: inline-flex;
+    padding: var(--spacing-md, 8px) var(--spacing-lg, 12px);
+    justify-content: center;
+    align-items: center;
+    gap: var(--spacing-xs, 4px);
+    border-radius: var(--radius-md, 8px);
+}
+
+.terGreySM:disabled {
+    display: inline-flex;
+    padding: var(--spacing-md, 8px) var(--spacing-lg, 12px);
+    justify-content: center;
+    align-items: center;
+    gap: var(--spacing-xs, 4px);
+    border-radius: var(--radius-md, 8px);
+}
+
+.leadingIconTer_Grey_SM {
+    width: 20px;
+    height: 20px;
+}
+
+.textPaddingleadingIconTer_Grey_SM {
+    display: flex;
+    padding: var(--spacing-none, 0px) var(--spacing-xxs, 2px);
+    justify-content: center;
+    align-items: center;
+}
+
+.cTATextTer_Grey_SM {
+    color: var(--Component-colors-Components-Buttons-Tertiary-button-tertiary-fg, #475467);
+
+    /* Text sm/Semibold */
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px; /* 142.857% */
+}
+
+.trailingIconTer_Grey_SM {
     width: 20px;
     height: 20px;
 }
