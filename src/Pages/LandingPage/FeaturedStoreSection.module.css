@@ -46,7 +46,7 @@
 
 .storeDetails {
     display: flex;
-    max-width: var(--width-md, 560px);
+    max-width: var(--width-md, 584px);
     box-sizing: border-box;
     max-height: var(--Base-4-Premitives-128, 512px);
     flex-direction: column;
