@@ -10,6 +10,7 @@ import { StarRating4 } from "../../Components/Molecules/StarRating";
 import { HorTabUnderLineSM, HorTabUnderLineSMSelected } from "../../Components/Atoms/Tab";
 import ChevronRight from "../../assets/Icons/UI/chevron-right (1).svg"
 import PlusButton from "../../assets/Icons/UI/plus.svg"
+import { Pagination } from "../../Components/Molecules/Pagination";
 
 function FeaturedStoreSection() {
     return (
@@ -64,7 +65,7 @@ function FeaturedStoreSection() {
                     <ProductCardLandscapeSM price={`3,100`} productLabel={`Single Shoulder Strap Open-Back Sports Bra Brown XL`} ProductImage={`https://i.pinimg.com/736x/c7/0c/d5/c70cd58357fb4568a8d912ff520f787d.jpg`}  />
                     <ProductCardLandscapeSM price={`7,172`} productLabel={`13*4 Lace Front Wigs Human Hair Wig Front Lace Wig Human Hair Wigs Pre Plucked Remy Hair Wig 180 Density Human Hair Wig For Women / 180Density-13*4`} ProductImage={`https://i.pinimg.com/564x/93/70/6b/93706b357c37899781c86fad487107ad.jpg`}  />
                 </div>
-                <div> Pagination </div>
+                <Pagination />
             </div>
         </div>
     );
