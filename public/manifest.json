@@ -90,6 +90,36 @@
       "src": "screenshots/Desk-01-Home Screen.png",
       "sizes": "1280x720",
       "type": "image/png"
+    },
+    {
+      "src": "screenshots/Desk-02-Product Listing.png",
+      "sizes": "1280x720",
+      "type": "image/png"
+    },
+    {
+      "src": "screenshots/Desk-03-Product Details.png",
+      "sizes": "1280x720",
+      "type": "image/png"
+    },
+    {
+      "src": "screenshots/Desk-04-Wishlist.png",
+      "sizes": "1280x720",
+      "type": "image/png"
+    },
+    {
+      "src": "screenshots/Desk-05-Checkout.png",
+      "sizes": "1280x720",
+      "type": "image/png"
+    },
+    {
+      "src": "screenshots/Desk-06-Special Offers.png",
+      "sizes": "1280x720",
+      "type": "image/png"
+    },
+    {
+      "src": "screenshots/Desk-07-Closing.png",
+      "sizes": "1280x720",
+      "type": "image/png"
     }
   ],
   "prefer_related_applications": false,
