@@ -77,49 +77,34 @@
       "type": "image/png"
     },
     {
-      "src": "screenshots/Mob-06-Special Offers.png",
-      "sizes": "720x1280",
-      "type": "image/png"
-    },
-    {
-      "src": "screenshots/Mob-07-Closing.png",
-      "sizes": "720x1280",
-      "type": "image/png"
-    },
-    {
       "src": "screenshots/01_Home_Screen.png",
       "sizes": "1280x720",
-      "type": "image/png"
+      "type": "image/png",
+      "form_factor": "wide"
     },
     {
       "src": "screenshots/02_Product_Listing.png",
       "sizes": "1280x720",
-      "type": "image/png"
+      "type": "image/png",
+      "form_factor": "wide"
     },
     {
       "src": "screenshots/03_Product_Details.png",
       "sizes": "1280x720",
-      "type": "image/png"
+      "type": "image/png",
+      "form_factor": "wide"
     },
     {
       "src": "screenshots/04_Wishlist.png",
       "sizes": "1280x720",
-      "type": "image/png"
+      "type": "image/png",
+      "form_factor": "wide"
     },
     {
-      "src": "screenshots/05Checkout.png",
+      "src": "screenshots/05_Checkout.png",
       "sizes": "1280x720",
-      "type": "image/png"
-    },
-    {
-      "src": "screenshots/06_Special_Offers.png",
-      "sizes": "1280x720",
-      "type": "image/png"
-    },
-    {
-      "src": "screenshots/07_Closing.png",
-      "sizes": "1280x720",
-      "type": "image/png"
+      "type": "image/png",
+      "form_factor": "wide"
     }
   ],
   "prefer_related_applications": false,
