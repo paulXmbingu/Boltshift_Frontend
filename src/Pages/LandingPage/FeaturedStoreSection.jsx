@@ -35,8 +35,12 @@ function FeaturedStoreSection() {
                         </div>
                     </div>
                     <div className={styles.storeCTAs}>
-                        <Btn_Sec_Color_SM ButtonCTA={`Follow Us`} iconTrailing={PlusButton} />
-                        <Btn_Ter_Grey_SM ButtonCTA={`Visit Store`} iconTrailing={ChevronRight} />
+                        <div>
+                            <Btn_Sec_Color_SM ButtonCTA={`Follow Us`} iconTrailing={PlusButton} />
+                        </div>
+                        <div>
+                            <Btn_Ter_Grey_SM ButtonCTA={`Visit Store`} iconTrailing={ChevronRight} />
+                        </div>
                     </div>
                     <div className={styles.storeDescription}>
                         Senjes Cuisines is a celebrated eatery offering a fusion of global flavors with local ingredients. Our diverse menu features gourmet dishes, artisanal beverages, and exquisite desserts, all in a cozy, welcoming atmosphere.
