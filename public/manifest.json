@@ -87,37 +87,37 @@
       "type": "image/png"
     },
     {
-      "src": "screenshots/Desk-01-Home Screen.png",
+      "src": "screenshots/01_Home_Screen.png",
       "sizes": "1280x720",
       "type": "image/png"
     },
     {
-      "src": "screenshots/Desk-02-Product Listing.png",
+      "src": "screenshots/02_Product_Listing.png",
       "sizes": "1280x720",
       "type": "image/png"
     },
     {
-      "src": "screenshots/Desk-03-Product Details.png",
+      "src": "screenshots/03_Product_Details.png",
       "sizes": "1280x720",
       "type": "image/png"
     },
     {
-      "src": "screenshots/Desk-04-Wishlist.png",
+      "src": "screenshots/04_Wishlist.png",
       "sizes": "1280x720",
       "type": "image/png"
     },
     {
-      "src": "screenshots/Desk-05-Checkout.png",
+      "src": "screenshots/05Checkout.png",
       "sizes": "1280x720",
       "type": "image/png"
     },
     {
-      "src": "screenshots/Desk-06-Special Offers.png",
+      "src": "screenshots/06_Special_Offers.png",
       "sizes": "1280x720",
       "type": "image/png"
     },
     {
-      "src": "screenshots/Desk-07-Closing.png",
+      "src": "screenshots/07_Closing.png",
       "sizes": "1280x720",
       "type": "image/png"
     }
