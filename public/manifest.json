@@ -7,6 +7,7 @@
   "orientation": "portrait",
   "background_color": "#ffffff",
   "theme_color": "#DA154D",
+  "display_override": ["window-controls-overlay"],
   "icons": [
     {
       "src": "icons/icon-72x72.png",
@@ -51,14 +52,43 @@
   ],
   "screenshots": [
     {
-      "src": "screenshots/screenshot1.png",
-      "sizes": "1280x720",
-      "type": "image/png",
-      "form_factor": "wide"
+      "src": "screenshots/Mob-01-Home Screen.png",
+      "sizes": "720x1280",
+      "type": "image/png"
     },
     {
-      "src": "screenshots/screenshot2.png",
+      "src": "screenshots/Mob-02-Product Listing.png",
       "sizes": "720x1280",
+      "type": "image/png"
+    },
+    {
+      "src": "screenshots/Mob-03-Product Details.png",
+      "sizes": "720x1280",
+      "type": "image/png"
+    },
+    {
+      "src": "screenshots/Mob-04-Wishlist.png",
+      "sizes": "720x1280",
+      "type": "image/png"
+    },
+    {
+      "src": "screenshots/Mob-05-Checkout.png",
+      "sizes": "720x1280",
+      "type": "image/png"
+    },
+    {
+      "src": "screenshots/Mob-06-Special Offers.png",
+      "sizes": "720x1280",
+      "type": "image/png"
+    },
+    {
+      "src": "screenshots/Mob-07-Closing.png",
+      "sizes": "720x1280",
+      "type": "image/png"
+    },
+    {
+      "src": "screenshots/Desk-01-Home Screen.png",
+      "sizes": "1280x720",
       "type": "image/png"
     }
   ],
