@@ -1,20 +1,41 @@
-import React from "react";
+import React, { useState, useEffect, useRef } from "react";
 import styles from './TopNav.module.css';
 import ProductLogo from "../../assets/Logos/Brand Logo.svg";
 import MenuIcon from "../../assets/Icons/UI/menu-03.svg";
 import UserAvatar from "../../Components/Atoms/UserAvatar";
 import UserPhoto from '../../assets/Images/Photos/Paul Mbingu - Avatar.png';
 import NotificationIcon from "../../Components/Molecules/NotificationIcon";
-import Favorite from '../../assets/Icons/UI/heart.svg'
-import Cart from '../../assets/Icons/UI/shopping-cart-03.svg'
-import Bell from '../../assets/Icons/UI/bell-02.svg'
+import Favorite from '../../assets/Icons/UI/heart.svg';
+import Cart from '../../assets/Icons/UI/shopping-cart-03.svg';
+import Bell from '../../assets/Icons/UI/bell-02.svg';
 import SearchInput from "../../Components/Atoms/SearchInput";
+import { NavBarDropDownMenu } from "../Molecules/NavBarDropDownMenu";
 
 const TopNavLarge = () => {
+  const [showDropDown, setShowDropDown] = useState(false);
+  const dropdownRef = useRef(null);
+
+  const handleAvatarClick = () => {
+    setShowDropDown(!showDropDown);
+  };
+
+  const handleClickOutside = (event) => {
+    if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+      setShowDropDown(false);
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, []);
+
   return (
     <div className={styles.desktopNav}>
       <div className={styles.menu}>
-        <img src={MenuIcon} alt="Menu Icon" className={styles.desktopMenuIcon} /> 
+        <img src={MenuIcon} alt="Menu Icon" className={styles.desktopMenuIcon} />
       </div>
       <div className={styles.productLogo}>
         <img src={ProductLogo} alt="Product Logo" className={styles.logo} />
@@ -26,36 +47,60 @@ const TopNavLarge = () => {
         <NotificationIcon icon={Favorite} />
         <NotificationIcon icon={Cart} />
         <NotificationIcon icon={Bell} />
-        <UserAvatar userPhoto={`https://res.cloudinary.com/excit3/image/upload/v1718726412/Boltshift%20Branding/Paul_Mbingu_-_Avatar_-_Casual_-_Full_BG_tbr4ml.png`} />
+        <div className={styles.notificationAvatar} onClick={handleAvatarClick} ref={dropdownRef}>
+          <UserAvatar userPhoto={`https://res.cloudinary.com/excit3/image/upload/v1718726412/Boltshift%20Branding/Paul_Mbingu_-_Avatar_-_Casual_-_Full_BG_tbr4ml.png`} />
+          {showDropDown && <NavBarDropDownMenu className={styles.navBarDropDownMenu} />}
+        </div>
       </div>
     </div>
   );
-}
+};
 
 const TopNavSmall = () => {
+  const [showDropDown, setShowDropDown] = useState(false);
+  const dropdownRef = useRef(null);
+
+  const handleAvatarClick = () => {
+    setShowDropDown(!showDropDown);
+  };
+
+  const handleClickOutside = (event) => {
+    if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+      setShowDropDown(false);
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, []);
+
   return (
     <div className={styles.mobileNav}>
       <div className={styles.topNavMobile}>
         <div className={styles.menuLogoMobile}>
-          <div className={styles.menuWrapMobile}>
-            <img src={MenuIcon} alt="Menu Icon" className={styles.menuIconMobile} />
-          </div>
+          <img src={MenuIcon} alt="Menu Icon" className={styles.menuIconMobile} />
           <div className={styles.logoWrapMobile}>
-            <img src={ProductLogo} alt="Product Logo" className={styles.brandLogoMobile} />
+            <img src={ProductLogo} alt="Brand Logo" className={styles.brandLogoMobile} />
           </div>
         </div>
         <div className={styles.notificationsMobile}>
           <NotificationIcon icon={Favorite} />
           <NotificationIcon icon={Cart} />
           <NotificationIcon icon={Bell} />
-          <UserAvatar userPhoto={UserPhoto} /> 
+          <div className={styles.notificationAvatar} onClick={handleAvatarClick} ref={dropdownRef}>
+            <UserAvatar userPhoto={UserPhoto} />
+            {showDropDown && <NavBarDropDownMenu className={styles.navBarDropDownMenu} />}
+          </div>
         </div>
       </div>
-      <div className={styles.serchFilterMobile}> 
+      <div className={styles.serchFilterMobile}>
         <SearchInput />
       </div>
     </div>
   );
-}
+};
 
 export { TopNavLarge, TopNavSmall };

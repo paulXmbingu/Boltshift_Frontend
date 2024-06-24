@@ -15,6 +15,8 @@
     transition: border-color 0.3s ease;
 }
 
-.userPhoto:hover {
+.userPhoto:hover,
+.userPhoto:focus,
+.userPhoto:focus-within {
     border-color: var(--Colors-Border-border-brand-solid, #DA154D);
 }
