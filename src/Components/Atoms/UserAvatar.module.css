@@ -2,6 +2,8 @@
     width: var(--Base-4-Premitives-8, 32px);
     height: var(--Base-4-Premitives-8, 32px);
     flex-shrink: 0;
+    object-fit: cover;
+    aspect-ratio: 1 / 1;
 }
 
 .userPhoto {
@@ -13,6 +15,9 @@
     background: var(--Colors-Background-bg-quaternary, #EAECF0);
     cursor: pointer;
     transition: border-color 0.3s ease;
+    object-fit: cover;
+    aspect-ratio: 1 / 1;
+
 }
 
 .userPhoto:hover,
