@@ -4,6 +4,7 @@
     flex-shrink: 0;
     object-fit: cover;
     aspect-ratio: 1 / 1;
+    outline: none; /* Prevents default focus outline */
 }
 
 .userPhoto {
@@ -17,11 +18,11 @@
     transition: border-color 0.3s ease;
     object-fit: cover;
     aspect-ratio: 1 / 1;
-
 }
 
 .userPhoto:hover,
 .userPhoto:focus,
-.userPhoto:focus-within {
+.userPhoto:focus-within,
+.userPhoto.focused {
     border-color: var(--Colors-Border-border-brand-solid, #DA154D);
 }
