@@ -1,3 +1,4 @@
+/* MENU LISTS */
 .menuItemListWrap {
     display: flex;
     width: 100%;
@@ -8,7 +9,7 @@
     background: var(--Colors-Background-bg-primary, #FFF);
     box-sizing: border-box;
     cursor: pointer;
-    transition: all 0.1s ease;
+    /* transition: all 0.1s ease; */
 }
 
 .menuItemListWrap:hover,
@@ -72,4 +73,55 @@
 .menuItemListIcon {
     width: var(--Base-4-Premitives-6, 24px);
     height: var(--Base-4-Premitives-6, 24px);
+}
+
+/* DROP DOWN MENU HEADER */
+.menuHeaderWrap {
+    display: flex;
+    padding: var(--spacing-md, 8px);
+    align-items: center;
+    gap: var(--spacing-lg, 12px);
+    align-self: stretch;
+    border-radius: var(--radius-md, 8px);
+}
+
+.userNameEmail {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex: 1 0 0;
+}
+
+.userName {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    align-self: stretch;
+    overflow: hidden;
+    color: var(--colors-text-text-secondary-700, #344054);
+    text-overflow: ellipsis;
+
+    /* Text sm/Semibold */
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px; /* 142.857% */
+}
+
+.userEmail {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    align-self: stretch;
+    overflow: hidden;
+    color: var(--colors-text-text-tertiary-600, #475467);
+    text-overflow: ellipsis;
+
+    /* Text sm/Regular */
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 142.857% */
 }
