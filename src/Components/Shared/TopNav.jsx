@@ -9,7 +9,7 @@ import Favorite from '../../assets/Icons/UI/heart.svg';
 import Cart from '../../assets/Icons/UI/shopping-cart-03.svg';
 import Bell from '../../assets/Icons/UI/bell-02.svg';
 import SearchInput from "../../Components/Atoms/SearchInput";
-import { NavBarDropDownMenu } from "../Molecules/NavBarDropDownMenu";
+import { NavBarDropDownMenu, NavBarDropDownMenuMobile } from "../Molecules/NavBarDropDownMenu";
 
 const TopNavLarge = () => {
   const [showDropDown, setShowDropDown] = useState(false);

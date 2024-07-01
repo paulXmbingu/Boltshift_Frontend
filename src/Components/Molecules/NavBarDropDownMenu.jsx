@@ -22,4 +22,12 @@ const NavBarDropDownMenu = () => {
     )
 }
 
-export { NavBarDropDownMenu }
+const NavBarDropDownMenuMobile = () => {
+    return (
+        <div className={styles.navBarDropDownMenuMobileWrap}>
+            Mobile Menu
+        </div>
+    );
+};
+
+export { NavBarDropDownMenu, NavBarDropDownMenuMobile }
