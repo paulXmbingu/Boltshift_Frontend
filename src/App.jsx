@@ -11,6 +11,7 @@ import WishListEmptyPage from './Pages/WishListPage/WishListEmptyPage';
 import CheckOutPage from './Pages/CheckOutPage/CheckOutPage';
 import PersonalInfo from './Pages/PersonalInfoPage/PersonalInfo';
 import OrdersPage from './Pages/OrdersPage/OrdersPage';
+import PaymentsPage from './Pages//PaymentsPage/PaymentsPage';
 import VouchersPage from './Pages/VouchersPage/VouchersPage';
 import UnAvailablePage from './Pages/UnAvailablePage/UnAvailablePage';
 import SignInPage from './Pages/SignInPage/SignInPage';
@@ -51,6 +52,7 @@ function App() {
         <Route path='/checkout' element={ <CheckOutPage /> } />
         <Route path='/personalInfo' element={ <PersonalInfo /> } />
         <Route path='/order' element={ <OrdersPage /> } />
+        <Route path='/payments' element={ <PaymentsPage /> } />
         <Route path='/vouchers' element={ <VouchersPage /> } />
         <Route path='/404' element={ <UnAvailablePage /> } />
         <Route path='/signIn' element={ <SignInPage /> } />
