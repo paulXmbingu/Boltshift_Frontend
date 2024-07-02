@@ -19,6 +19,8 @@ import ForgotPasswordPage from './Pages/PasswordResetPages/ForgotPasswordPage';
 import CheckEmailPage from './Pages/PasswordResetPages/ResetEmail';
 import ResetEmail from './Pages/PasswordResetPages/ResetEmail';
 import SetNewPassword from './Pages/PasswordResetPages/SetNewPassword';
+import SuccessfulResetPage from './Pages/PasswordResetPages/SuccessfulResetPage';
+import SuccessfulPWResetEmailPage from './Pages/PasswordResetPages/SuccessfulPWResetEmailPage';
 
 
 function App() {
@@ -57,6 +59,8 @@ function App() {
         <Route path='/checkEmail' element={ <CheckEmailPage /> } />
         <Route path='/resetEmail' element={ <ResetEmail /> } />
         <Route path='/newPassword' element={ <SetNewPassword /> } />
+        <Route path='/successfulReset' element={ <SuccessfulResetPage /> } />
+        <Route path='/successfulPWResetEmail' element={ <SuccessfulPWResetEmailPage /> } />
       </Routes>
     </div>
   );
