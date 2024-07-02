@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
-import styles from "./VouchersPage.module.css";
+import styles from "./SuccessfulResetPage.module.css";
 import { TopNavLarge, TopNavSmall } from "../../Components/Shared/TopNav";
 import FooterSection from "../../Components/Shared/Footer";
 
-function VouchersPage() {
+function SuccessfulResetPage() {
     const [isLargeScreen, setIsLargeScreen] = useState(typeof window !== "undefined" ? window.innerWidth > 768 : false);
 
     useEffect(() => {
@@ -18,10 +18,10 @@ function VouchersPage() {
     return (
         <div className={styles.pageLayout}>
             {isLargeScreen ? <TopNavLarge /> : <TopNavSmall />}
-            <div> Vouchers Page </div>
+            <div> Successful Reset </div>
             <FooterSection />
         </div>
     );
 }
 
-export default VouchersPage;
+export default SuccessfulResetPage;
