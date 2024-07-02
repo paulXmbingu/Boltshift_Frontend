@@ -15,6 +15,7 @@
     cursor: pointer;
     transition: all 0.1s ease;
     flex-grow: 1;
+    text-decoration: none;
 }
 
 .cardStyle:hover,
