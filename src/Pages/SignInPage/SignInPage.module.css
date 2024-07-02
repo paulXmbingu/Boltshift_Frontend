@@ -1,0 +1,8 @@
+.pageLayout {
+    display: flex;
+    /* min-width: 375px; */
+    max-width: 1280px;
+    flex-direction: column;
+    align-items: center;
+    align-self: stretch;
+}

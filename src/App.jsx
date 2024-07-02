@@ -13,6 +13,8 @@ import PersonalInfo from './Pages/PersonalInfoPage/PersonalInfo';
 import OrdersPage from './Pages/OrdersPage/OrdersPage';
 import VouchersPage from './Pages/VouchersPage/VouchersPage';
 import UnAvailablePage from './Pages/UnAvailablePage/UnAvailablePage';
+import SignInPage from './Pages/SignInPage/SignInPage';
+import SignUpPage from './Pages/SignupPage/SignUpPage';
 
 
 function App() {
@@ -44,7 +46,9 @@ function App() {
         <Route path='/personalInfo' element={ <PersonalInfo /> } />
         <Route path='/order' element={ <OrdersPage /> } />
         <Route path='/vouchers' element={ <VouchersPage /> } />
-        <Route path='/404' element={ <UnAvailablePage /> }  />
+        <Route path='/404' element={ <UnAvailablePage /> } />
+        <Route path='/signIn' element={ <SignInPage /> } />
+        <Route path='/signUp' element={ <SignUpPage /> } />
       </Routes>
     </div>
   );
