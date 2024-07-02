@@ -33,7 +33,7 @@
     flex-direction: column;
     align-items: flex-start;
     text-decoration: none;
-
+    outline: none;
 }
 
 .productName {
@@ -162,6 +162,7 @@
     max-height: 160px;
     width: 100%;
     object-fit: cover;
+    outline: none;
 }
 
 .buttonStyles {

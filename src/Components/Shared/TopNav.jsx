@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import styles from './TopNav.module.css';
+import { Link } from "react-router-dom";
 import ProductLogo from "../../assets/Logos/Brand Logo.svg";
 import MenuIcon from "../../assets/Icons/UI/menu-03.svg";
 import UserAvatar from "../../Components/Atoms/UserAvatar";
@@ -10,6 +11,7 @@ import Cart from '../../assets/Icons/UI/shopping-cart-03.svg';
 import Bell from '../../assets/Icons/UI/bell-02.svg';
 import SearchInput from "../../Components/Atoms/SearchInput";
 import { NavBarDropDownMenu, NavBarDropDownMenuMobile } from "../Molecules/NavBarDropDownMenu";
+import { BrandLogoHor } from "../Atoms/BrandLogo";
 
 const TopNavLarge = () => {
   const [showDropDown, setShowDropDown] = useState(false);
@@ -37,9 +39,11 @@ const TopNavLarge = () => {
       <div className={styles.menu}>
         <img src={MenuIcon} alt="Menu Icon" className={styles.desktopMenuIcon} />
       </div>
-      <div className={styles.productLogo}>
-        <img src={ProductLogo} alt="Product Logo" className={styles.logo} />
-      </div>
+      <Link to='/' >
+        <BrandLogoHor className={styles.logo} />
+      </Link>
+      {/* <div className={styles.productLogo}>
+      </div> */}
       <div className={styles.searchFilter}>
         <SearchInput />
       </div>
@@ -82,9 +86,12 @@ const TopNavSmall = () => {
       <div className={styles.topNavMobile}>
         <div className={styles.menuLogoMobile}>
           <img src={MenuIcon} alt="Menu Icon" className={styles.menuIconMobile} />
-          <div className={styles.logoWrapMobile}>
+          <Link to='/' >
+            <BrandLogoHor className={styles.brandLogoMobile} />
+          </Link>
+          {/* <div className={styles.logoWrapMobile}>
             <img src={ProductLogo} alt="Brand Logo" className={styles.brandLogoMobile} />
-          </div>
+          </div> */}
         </div>
         <div className={styles.notificationsMobile}>
           <NotificationIcon icon={Favorite} />
