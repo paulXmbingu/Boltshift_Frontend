@@ -12,7 +12,7 @@ function HotDealCard({ imageSrc, productNameText, ammount, noSold }) {
             <div className={styles.favoriteButtonContainer}>
                 <FavoriteButton />
             </div>
-            <img src={imageSrc} alt="Product Image" className={styles.imageStyles} />
+            <Link to='/product' className={styles.imageStyles}> <img src={imageSrc} alt="Product Image" className={styles.imageStyles} /> </Link>
             <div className={styles.productDetailsStyles}>
                 <Link to='/product' className={styles.productNamePrice}>
                     <div className={styles.productName}>
