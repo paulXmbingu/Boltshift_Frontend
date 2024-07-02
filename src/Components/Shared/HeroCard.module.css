@@ -283,3 +283,7 @@
     line-height: 18px; /* 150% */
     height: auto;
 }
+
+.cTALink {
+    width: 100%;
+}
