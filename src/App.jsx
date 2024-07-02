@@ -15,6 +15,10 @@ import VouchersPage from './Pages/VouchersPage/VouchersPage';
 import UnAvailablePage from './Pages/UnAvailablePage/UnAvailablePage';
 import SignInPage from './Pages/SignInPage/SignInPage';
 import SignUpPage from './Pages/SignupPage/SignUpPage';
+import ForgotPasswordPage from './Pages/PasswordResetPages/ForgotPasswordPage';
+import CheckEmailPage from './Pages/PasswordResetPages/ResetEmail';
+import ResetEmail from './Pages/PasswordResetPages/ResetEmail';
+import SetNewPassword from './Pages/PasswordResetPages/SetNewPassword';
 
 
 function App() {
@@ -49,6 +53,10 @@ function App() {
         <Route path='/404' element={ <UnAvailablePage /> } />
         <Route path='/signIn' element={ <SignInPage /> } />
         <Route path='/signUp' element={ <SignUpPage /> } />
+        <Route path='/forgotPassword' element={ <ForgotPasswordPage /> } />
+        <Route path='/checkEmail' element={ <CheckEmailPage /> } />
+        <Route path='/resetEmail' element={ <ResetEmail /> } />
+        <Route path='/newPassword' element={ <SetNewPassword /> } />
       </Routes>
     </div>
   );

@@ -18,7 +18,7 @@ function SignInPage() {
     return (
         <div className={styles.pageLayout}>
             {isLargeScreen ? <TopNavLarge /> : <TopNavSmall />}
-            <div> Payments Page </div>
+            <div> Sign In Page </div>
             <FooterSection />
         </div>
     );
