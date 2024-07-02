@@ -4,6 +4,10 @@ import { Route, Routes } from 'react-router-dom';
 import LandingPage from './Pages/LandingPage/LandingPage';
 import CatalogPage from './Pages/CatalogPage/CatalogPage'
 import ProductPage from './Pages/ProductPage/ProductPage';
+import ShoppingCartPage from './Pages/ShoppingCartPage/ShoppingCartPage';
+import ShoppingCartEmpty from './Pages/ShoppingCartPage/ShoppingCartEmptyPage';
+import WishListPage from './Pages/WishListPage/WishListPage';
+import WishListEmptyPage from './Pages/WishListPage/WishListEmptyPage';
 
 
 function App() {
@@ -27,6 +31,10 @@ function App() {
         <Route path='/' element={ <LandingPage /> } />
         <Route path='/catalog' element={ <CatalogPage /> } />
         <Route path='/product' element={ <ProductPage /> } />
+        <Route path='/cart' element={ <ShoppingCartPage /> } />
+        <Route path='/cartEmpty' element={ <ShoppingCartEmpty /> } />
+        <Route path='/wishlist' element={ <WishListPage /> } />
+        <Route path='/wishlistEmpty' element={ <WishListEmptyPage /> } />
       </Routes>
     </div>
   );
