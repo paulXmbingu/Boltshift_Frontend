@@ -38,3 +38,8 @@
     border-radius: var(--radius-none, 0px);
     background: var(--Colors-Background-bg-primary, #FFF);
 }
+
+.links {
+    text-decoration: none;
+    width: 100%;
+}
