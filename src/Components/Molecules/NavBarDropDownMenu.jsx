@@ -16,7 +16,7 @@ const NavBarDropDownMenu = () => {
             <Link to={`/personalInfo`} className={styles.links} > <MenuListItem ActionLabel={`Personal Info`} MenuIcon={PersonalInfo} /> </Link>
             <Link to={`/order`} className={styles.links} > <MenuListItem ActionLabel={`Order`} MenuIcon={Order} /> </Link>
             <Link to={`/payments`} className={styles.links} > <MenuListItem ActionLabel={`Payment`} MenuIcon={Payment} /> </Link>
-            <MenuListItem ActionLabel={`Vouchers`} MenuIcon={Voucher} />
+            <Link to={`/vouchers`} className={styles.links} > <MenuListItem ActionLabel={`Vouchers`} MenuIcon={Voucher} /> </Link>
             <div className={styles.divider}></div>
             <MenuListItem ActionLabel={`Log Out`} MenuIcon={LogOut} />
         </div>
