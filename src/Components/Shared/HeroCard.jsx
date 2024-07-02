@@ -1,9 +1,10 @@
 import React from 'react';
+import styles from './HeroCard.module.css';
+import { Link } from 'react-router-dom';
 import TailIcon from '../../assets/Icons/UI/chevron-right.svg';
 import DiscountTag from '../../Components/Atoms/DiscountTag';
 import HeroPagination from './HeroPagination';
 import FavoriteButton from './FavoriteButton';
-import styles from './HeroCard.module.css';
 import { Btn_Pri_XL } from '../Atoms/Button';
 
 const HeroCardDesktop = () => {
@@ -27,7 +28,9 @@ const HeroCardDesktop = () => {
                             </div>
                         </div>
                     </div>
-                    <Btn_Pri_XL ButtonCTA={`Shop Now`} iconTrailing={TailIcon} />
+                    <Link to={`/product`} className={styles.cTALink}>
+                        <Btn_Pri_XL ButtonCTA={`Shop Now`} iconTrailing={TailIcon} />
+                    </Link>
                     <HeroPagination />
                 </div>
             </div>
@@ -68,7 +71,9 @@ const HeroCardMobile = () => {
                                 </div>
                             </div>
                         </div>
-                        <Btn_Pri_XL ButtonCTA={`Shop Now`} iconTrailing={TailIcon} />
+                        <Link to={`/product`} className={styles.cTALink}>
+                            <Btn_Pri_XL ButtonCTA={`Shop Now`} iconTrailing={TailIcon} />
+                        </Link>
                     </div>
                 </div>
             </div>
