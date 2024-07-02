@@ -1,6 +1,9 @@
 import React, { useEffect } from 'react';
 import './App.css';
 import LandingPage from './Pages/LandingPage/LandingPage';
+import CatalogPage from './Pages/CatalogPage/CatalogPage'
+
+import { Route, Routes } from 'react-router-dom';
 
 function App() {
   useEffect(() => {
@@ -19,7 +22,10 @@ function App() {
 
   return (
     <div>
-      <LandingPage />
+      <Routes>
+        <Route path='/' element={ <LandingPage /> } />
+        <Route path='/catalog' element={ <CatalogPage /> } />
+      </Routes>
     </div>
   );
 }

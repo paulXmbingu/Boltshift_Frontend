@@ -9,6 +9,7 @@
     gap: var(--container-padding-desktop, 32px);
     background: var(--Colors-Background-bg-primary, #FFF);
     box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    padding: 0px var(--spacing-xl, 16px);
 }
 
 .logoStores {
