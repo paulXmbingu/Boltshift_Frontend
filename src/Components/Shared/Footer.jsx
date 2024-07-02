@@ -10,16 +10,16 @@ import LinkedIn from "../../assets/Logos/LinkedIn.svg";
 import GitHub from "../../assets/Logos/GitHub.svg";
 import YouTube from "../../assets/Logos/YouTube.svg";
 import X from "../../assets/Logos/X.svg";
+import { BrandLogoHor } from "../Atoms/BrandLogo";
 
 const Footer = () => {
     return(
         <div className={styles.footerWrapper}>
             <div className={styles.logoStores}>
                 <div className={styles.productLogo}> 
-                    {/* <Link to='/' >
+                    <Link to='/' >
                         <BrandLogoHor className={styles.logo} />
-                    </Link> */}
-                    <img src={ProductLogo} alt="Product Logo" className={styles.logo} />
+                    </Link>
                 </div>
                 <div className={styles.appStores}>
                     <img src={AppleStore} alt="Apple Logo" className={styles.storeLogo} />
