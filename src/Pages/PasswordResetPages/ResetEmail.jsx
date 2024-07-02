@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
-import styles from "./SignUpPage.module.css";
+import styles from "./ResetEmail.module.css";
 import { TopNavLarge, TopNavSmall } from "../../Components/Shared/TopNav";
 import FooterSection from "../../Components/Shared/Footer";
 
-function SignUpPage() {
+function ResetEmail() {
     const [isLargeScreen, setIsLargeScreen] = useState(typeof window !== "undefined" ? window.innerWidth > 768 : false);
 
     useEffect(() => {
@@ -18,10 +18,10 @@ function SignUpPage() {
     return (
         <div className={styles.pageLayout}>
             {isLargeScreen ? <TopNavLarge /> : <TopNavSmall />}
-            <div> Sign Up Page </div>
+            <div> Reset Email Page </div>
             <FooterSection />
         </div>
     );
 }
 
-export default SignUpPage;
+export default ResetEmail;
