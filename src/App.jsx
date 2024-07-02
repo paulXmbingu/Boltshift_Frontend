@@ -1,9 +1,10 @@
 import React, { useEffect } from 'react';
 import './App.css';
+import { Route, Routes } from 'react-router-dom';
 import LandingPage from './Pages/LandingPage/LandingPage';
 import CatalogPage from './Pages/CatalogPage/CatalogPage'
+import ProductPage from './Pages/ProductPage/ProductPage';
 
-import { Route, Routes } from 'react-router-dom';
 
 function App() {
   useEffect(() => {
@@ -25,6 +26,7 @@ function App() {
       <Routes>
         <Route path='/' element={ <LandingPage /> } />
         <Route path='/catalog' element={ <CatalogPage /> } />
+        <Route path='/product' element={ <ProductPage /> } />
       </Routes>
     </div>
   );
