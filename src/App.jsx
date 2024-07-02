@@ -8,6 +8,11 @@ import ShoppingCartPage from './Pages/ShoppingCartPage/ShoppingCartPage';
 import ShoppingCartEmpty from './Pages/ShoppingCartPage/ShoppingCartEmptyPage';
 import WishListPage from './Pages/WishListPage/WishListPage';
 import WishListEmptyPage from './Pages/WishListPage/WishListEmptyPage';
+import CheckOutPage from './Pages/CheckOutPage/CheckOutPage';
+import PersonalInfo from './Pages/PersonalInfoPage/PersonalInfo';
+import OrdersPage from './Pages/OrdersPage/OrdersPage';
+import VouchersPage from './Pages/VouchersPage/VouchersPage';
+import UnAvailablePage from './Pages/UnAvailablePage/UnAvailablePage';
 
 
 function App() {
@@ -35,6 +40,11 @@ function App() {
         <Route path='/cartEmpty' element={ <ShoppingCartEmpty /> } />
         <Route path='/wishlist' element={ <WishListPage /> } />
         <Route path='/wishlistEmpty' element={ <WishListEmptyPage /> } />
+        <Route path='/checkout' element={ <CheckOutPage /> } />
+        <Route path='/personalInfo' element={ <PersonalInfo /> } />
+        <Route path='/order' element={ <OrdersPage /> } />
+        <Route path='/vouchers' element={ <VouchersPage /> } />
+        <Route path='/404' element={ <UnAvailablePage /> }  />
       </Routes>
     </div>
   );
