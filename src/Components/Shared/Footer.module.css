@@ -77,6 +77,21 @@
     font-style: normal;
     font-weight: 500;
     line-height: 24px; /* 150% */
+    text-decoration: none;
+    transition: all 0.1s ease;
+}
+
+.linkText:hover,
+.linkText:focus-within {
+    color: var(--colors-text-text-brand-tertiary-600, #DA154D);
+
+    /* Text md/Medium */
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 150% */
+    text-decoration: none;
 }
 
 .linksSocials {
