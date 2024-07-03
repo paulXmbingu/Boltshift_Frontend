@@ -39,8 +39,6 @@ const TopNavLarge = () => {
         <img src={MenuIcon} alt="Menu Icon" className={styles.desktopMenuIcon} />
       </div>
       <Link to='/' > <BrandLogoHor className={styles.logo} /> </Link>
-      {/* <div className={styles.productLogo}>
-      </div> */}
       <div className={styles.searchFilter}>
         <SearchInput />
       </div>

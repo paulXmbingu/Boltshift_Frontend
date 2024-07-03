@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./ReviewCard.module.css";
+import { Link } from "react-router-dom";
 import { Badge_PillColor_SM_LeadIcon_Success } from "../Atoms/Badge";
 import CheckIcon from "../../assets/Icons/UI/check.svg";
 import { StarRating4 } from "../Molecules/StarRating";
@@ -29,18 +30,20 @@ const ReviewCard = ({ ReviewerName, ReviewerPhoto,ReviewDate, Review, ProductIma
                     {Review}
                 </div>
             </div>
-            <div className={styles.reviewedProduct}>
-                <img src={ProductImage} alt="Product Image" className={styles.productImage}/>
-                <div className={styles.productNamePrice}>
-                    <div className={styles.productNameWrap}> 
-                        <div className={styles.productNameLabel}> {ProductNameLabel} </div>
-                    </div>
-                    <div className={styles.productPriceWrap}>
-                        <div className={styles.currency}> Ksh. </div>
-                        <div className={styles.priceLabel}> {PriceLabel} </div>
+            <Link to={`/product`} className={styles.link} >
+                <div className={styles.reviewedProduct}>
+                    <img src={ProductImage} alt="Product Image" className={styles.productImage}/>
+                    <div className={styles.productNamePrice}>
+                        <div className={styles.productNameWrap}> 
+                            <div className={styles.productNameLabel}> {ProductNameLabel} </div>
+                        </div>
+                        <div className={styles.productPriceWrap}>
+                            <div className={styles.currency}> Ksh. </div>
+                            <div className={styles.priceLabel}> {PriceLabel} </div>
+                        </div>
                     </div>
                 </div>
-            </div>
+            </Link>
         </div>
     );
 };
