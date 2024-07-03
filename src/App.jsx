@@ -23,7 +23,6 @@ import SetNewPassword from './Pages/PasswordResetPages/SetNewPassword';
 import SuccessfulResetPage from './Pages/PasswordResetPages/SuccessfulResetPage';
 import SuccessfulPWResetEmailPage from './Pages/PasswordResetPages/SuccessfulPWResetEmailPage';
 
-
 function App() {
   useEffect(() => {
     if ('serviceWorker' in navigator) {
