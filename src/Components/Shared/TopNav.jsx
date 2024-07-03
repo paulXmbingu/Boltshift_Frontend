@@ -38,9 +38,7 @@ const TopNavLarge = () => {
       <div className={styles.menu}>
         <img src={MenuIcon} alt="Menu Icon" className={styles.desktopMenuIcon} />
       </div>
-      <Link to='/' >
-        <BrandLogoHor className={styles.logo} />
-      </Link>
+      <Link to='/' > <BrandLogoHor className={styles.logo} /> </Link>
       {/* <div className={styles.productLogo}>
       </div> */}
       <div className={styles.searchFilter}>
@@ -85,12 +83,7 @@ const TopNavSmall = () => {
       <div className={styles.topNavMobile}>
         <div className={styles.menuLogoMobile}>
           <img src={MenuIcon} alt="Menu Icon" className={styles.menuIconMobile} />
-          <Link to='/' >
-            <BrandLogoHor className={styles.brandLogoMobile} />
-          </Link>
-          {/* <div className={styles.logoWrapMobile}>
-            <img src={ProductLogo} alt="Brand Logo" className={styles.brandLogoMobile} />
-          </div> */}
+          <Link to='/' > <BrandLogoHor className={styles.brandLogoMobile} /> </Link>
         </div>
         <div className={styles.notificationsMobile}>
           <NotificationIcon icon={Favorite} />
