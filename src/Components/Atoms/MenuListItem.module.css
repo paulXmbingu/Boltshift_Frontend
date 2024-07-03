@@ -21,8 +21,7 @@
     align-items: center;
     gap: var(--spacing-md, 8px);
     border-radius: var(--radius-md, 8px);
-    background: var(--Colors-Background-bg-brand-primary, #FEF1F5);
-    box-sizing: border-box;
+    background: var(--Colors-Background-bg-secondary_hover, #F2F4F7);    box-sizing: border-box;
 }
 
 .menuItemListWrap:disabled {
