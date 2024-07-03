@@ -126,3 +126,7 @@
     font-weight: 500;
     line-height: 18px; /* 150% */
 }
+
+.link {
+    text-decoration: none;
+}
