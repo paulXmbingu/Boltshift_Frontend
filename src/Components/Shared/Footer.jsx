@@ -21,8 +21,8 @@ const Footer = () => {
                     </Link>
                 </div>
                 <div className={styles.appStores}>
-                    <img src={AppleStore} alt="Apple Logo" className={styles.storeLogo} />
-                    <img src={GoogleStore} alt="Google Logo" className={styles.storeLogo} />
+                    <a href="https://play.google.com/store/games?hl=en_US" className={styles.link} target="_blank" rel="noopener noreferrer"> <img src={AppleStore} alt="Apple Logo" className={styles.storeLogo} /> </a>
+                    <a href="https://www.apple.com/app-store/" className={styles.link} target="_blank" rel="noopener noreferrer"> <img src={GoogleStore} alt="Google Logo" className={styles.storeLogo} /> </a>
                 </div>
             </div>
             <div className={styles.linksSocials}>
@@ -41,12 +41,12 @@ const Footer = () => {
                     <a href="https://excite.gitbook.io/boltshift" className={styles.linkText} target="_blank" rel="noopener noreferrer"> Resources </a>
                 </div>
                 <div className={styles.socialIcons}>
-                    <img src={Dribbble} alt="Dribbble" className={styles.socialLogo} />
-                    <img src={Instagram} alt="Instagram" className={styles.socialLogo} />
-                    <img src={LinkedIn} alt="LinkedIn" className={styles.socialLogo} />
-                    <img src={GitHub} alt="GitHub" className={styles.socialLogo} />
-                    <img src={YouTube} alt="YouTube" className={styles.socialLogo} />
-                    <img src={X} alt="X" className={styles.socialLogo} />
+                    <a href="https://dribbble.com/paulXmbingu" className={styles.link} target="_blank" rel="noopener noreferrer" > <img src={Dribbble} alt="Dribbble" className={styles.socialLogo} /> </a>
+                    <a href="https://www.instagram.com/paulxmbingu/" className={styles.link} target="_blank" rel="noopener noreferrer"> <img src={Instagram} alt="Instagram" className={styles.socialLogo} /> </a>
+                    <a href="https://www.linkedin.com/in/paulxmbingu/" className={styles.link} target="_blank" rel="noopener noreferrer"> <img src={LinkedIn} alt="LinkedIn" className={styles.socialLogo} /> </a>
+                    <a href="https://github.com/paulXmbingu" className={styles.link} target="_blank" rel="noopener noreferrer"> <img src={GitHub} alt="GitHub" className={styles.socialLogo} /> </a>
+                    <a href="https://www.youtube.com/@paulXmbingu" className={styles.link} target="_blank" rel="nooponer noreferrer"> <img src={YouTube} alt="YouTube" className={styles.socialLogo} /> </a>
+                    <a href="https://twitter.com/paulXmbingu" className={styles.link} target="_blank" rel="noopener noreferrer" > <img src={X} alt="X" className={styles.socialLogo} /> </a>
                 </div>
             </div>
             <div className={styles.copyrightInfoWrapper}>
