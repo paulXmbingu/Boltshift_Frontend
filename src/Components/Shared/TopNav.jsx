@@ -1,7 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import styles from './TopNav.module.css';
 import { Link } from "react-router-dom";
-import ProductLogo from "../../assets/Logos/Brand Logo.svg";
 import MenuIcon from "../../assets/Icons/UI/menu-03.svg";
 import UserAvatar from "../../Components/Atoms/UserAvatar";
 import UserPhoto from '../../assets/Images/Photos/Paul Mbingu - Avatar.png';
@@ -48,8 +47,8 @@ const TopNavLarge = () => {
         <SearchInput />
       </div>
       <div className={styles.notifications}>
-        <NotificationIcon icon={Favorite} />
-        <NotificationIcon icon={Cart} />
+        <Link to={`/wishlist`} > <NotificationIcon icon={Favorite} /> </Link> 
+        <Link to={`/cart`}> <NotificationIcon icon={Cart} /> </Link>
         <NotificationIcon icon={Bell} />
         <div className={styles.notificationAvatar} onClick={handleAvatarClick} ref={dropdownRef}>
           <UserAvatar userPhoto={`https://res.cloudinary.com/excit3/image/upload/v1718726412/Boltshift%20Branding/Paul_Mbingu_-_Avatar_-_Casual_-_Full_BG_tbr4ml.png`} />
