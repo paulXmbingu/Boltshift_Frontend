@@ -9,7 +9,7 @@
     gap: var(--container-padding-desktop, 32px);
     background: var(--Colors-Background-bg-primary, #FFF);
     box-sizing: border-box; /* Include padding and border in the element's total width and height */
-    padding: 0px var(--spacing-xl, 16px);
+    /* padding: 0px var(--spacing-xl, 16px); */
 }
 
 .logoStores {
@@ -92,6 +92,8 @@
     font-weight: 500;
     line-height: 24px; /* 150% */
     text-decoration: none;
+    cursor: pointer;
+    outline: none;
 }
 
 .linksSocials {
@@ -113,6 +115,9 @@
 .socialLogo {
     width: var(--Base-4-Premitives-6, 24px);
     height: var(--Base-4-Premitives-6, 24px);
+    cursor: pointer;
+    transition: fill 0.2s ease;
+    outline: none;
 }
 
 .copyrightInfoWrapper {
@@ -138,4 +143,16 @@
     font-style: normal;
     font-weight: 400;
     line-height: 18px; /* 150% */
+}
+
+.link {
+    outline: none;
+}
+
+.link:focus-visible,
+.link:focus-within {
+    border-radius: var(--radius-xs, 4px);
+    outline: 1px solid var(--Colors-Border-border-brand-solid, #DA154D);
+    /* Focus rings/ring-brand */
+    box-shadow: 0px 0px 0px 4px rgba(234, 39, 94, 0.24);
 }
