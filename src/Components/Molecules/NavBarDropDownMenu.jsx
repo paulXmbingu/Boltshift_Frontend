@@ -14,7 +14,7 @@ const NavBarDropDownMenu = () => {
             <DropDownMenuHeaderLoggedIn userName={`Paul Mbingu`} userEmail={`paul@excite.company`} />
             <div className={styles.divider}></div>
             <Link to={`/personalInfo`} className={styles.links} > <MenuListItem ActionLabel={`Personal Info`} MenuIcon={PersonalInfo} /> </Link>
-            <Link to={`/order`} className={styles.links} > <MenuListItem ActionLabel={`Order`} MenuIcon={Order} /> </Link>
+            <Link to={`/orders`} className={styles.links} > <MenuListItem ActionLabel={`Orders`} MenuIcon={Order} /> </Link>
             <Link to={`/payments`} className={styles.links} > <MenuListItem ActionLabel={`Payment`} MenuIcon={Payment} /> </Link>
             <Link to={`/vouchers`} className={styles.links} > <MenuListItem ActionLabel={`Vouchers`} MenuIcon={Voucher} /> </Link>
             <div className={styles.divider}></div>

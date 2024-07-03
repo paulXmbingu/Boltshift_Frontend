@@ -51,7 +51,7 @@ function App() {
         <Route path='/wishlistEmpty' element={ <WishListEmptyPage /> } />
         <Route path='/checkout' element={ <CheckOutPage /> } />
         <Route path='/personalInfo' element={ <PersonalInfo /> } />
-        <Route path='/order' element={ <OrdersPage /> } />
+        <Route path='/orders' element={ <OrdersPage /> } />
         <Route path='/payments' element={ <PaymentsPage /> } />
         <Route path='/vouchers' element={ <VouchersPage /> } />
         <Route path='/404' element={ <UnAvailablePage /> } />
