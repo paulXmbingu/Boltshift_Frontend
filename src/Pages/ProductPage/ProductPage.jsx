@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import styles from "./ProductPage.module.css";
 import { TopNavLarge, TopNavSmall } from "../../Components/Shared/TopNav";
 import FooterSection from "../../Components/Shared/Footer";
+import ProductMediaConfiguratorSection from "./ProductMediaConfiguratorSection";
+import Footer from "../../Components/Shared/Footer";
 
 function ProductPage() {
     const [isLargeScreen, setIsLargeScreen] = useState(typeof window !== "undefined" ? window.innerWidth > 768 : false);
@@ -18,8 +20,8 @@ function ProductPage() {
     return (
         <div className={styles.pageLayout}>
             {isLargeScreen ? <TopNavLarge /> : <TopNavSmall />}
-            <div> Product Page </div>
-            <FooterSection />
+            <ProductMediaConfiguratorSection />
+            <Footer />
         </div>
     );
 }

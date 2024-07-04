@@ -6,11 +6,11 @@ import HotDealTodaySection from "./HotDealTodaySection";
 import PopularCategoriesSection from "./PopularCategoriesSection";
 import VendorStoriesSection from "./VendorStoriesSection";
 import FeaturedProductsSection from "./FeaturedProductsSection";
-import FooterSection from "./FooterSection";
 import FeaturedStoreSection from "./FeaturedStoreSection";
 import PopularProductsSection from "./PopularProductsSection";
 import TrendingProductsSection from "./TrendingProductsSection";
 import RecentReviewSection from "./RecentReviewSection";
+import Footer from "../../Components/Shared/Footer";
 
 function LandingPage() {
     const [isLargeScreen, setIsLargeScreen] = useState(typeof window !== "undefined" ? window.innerWidth > 768 : false);
@@ -36,7 +36,7 @@ function LandingPage() {
             <PopularProductsSection />
             <TrendingProductsSection />
             <RecentReviewSection />
-            <FooterSection />
+            <Footer/>
         </div>
     );
 }
