@@ -22,8 +22,8 @@ const Footer = () => {
                     </Link>
                 </div>
                 <div className={styles.appStores}>
-                    <a href="https://play.google.com/store/games?hl=en_US" className={styles.link} target="_blank" rel="noopener noreferrer"> <img src={AppleStore} alt="Apple Logo" className={styles.storeLogo} /> </a>
-                    <a href="https://www.apple.com/app-store/" className={styles.link} target="_blank" rel="noopener noreferrer"> <img src={GoogleStore} alt="Google Logo" className={styles.storeLogo} /> </a>
+                    <a href="https://play.google.com/store/games?hl=en_US" className={styles.link} target="_blank" rel="noopener noreferrer"> <img src={GoogleStore} alt="Google Logo" className={styles.storeLogo} /> </a>
+                    <a href="https://www.apple.com/app-store/" className={styles.link} target="_blank" rel="noopener noreferrer"> <img src={AppleStore} alt="Apple Logo" className={styles.storeLogo} /> </a>
                 </div>
             </div>
             <div className={styles.linksSocials}>
