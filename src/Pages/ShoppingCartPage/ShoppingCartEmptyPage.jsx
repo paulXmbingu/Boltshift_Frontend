@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import styles from "./ShoppingCartEmpty.module.css";
+import styles from "./ShoppingCartEmptyPage.module.css";
 import { TopNavLarge, TopNavSmall } from "../../Components/Shared/TopNav";
 import FooterSection from "../../Components/Shared/Footer";
 
