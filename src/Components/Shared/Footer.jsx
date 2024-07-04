@@ -10,6 +10,7 @@ import GitHub from "../../assets/Logos/GitHub.svg";
 import YouTube from "../../assets/Logos/YouTube.svg";
 import X from "../../assets/Logos/X.svg";
 import PaulMbingu from "../../assets/Logos/Paul Mbingu Logo.svg";
+import Excite from "../../assets/Logos/Excite Logo.svg";
 import { BrandLogoHor } from "../Atoms/BrandLogo";
 
 const Footer = () => {
@@ -43,6 +44,7 @@ const Footer = () => {
                 </div>
                 <div className={styles.socialIcons}>
                     <a href="https://paulmbingu.com/" className={styles.link} target="_blank" rel="noopener noreferrer" > <img src={PaulMbingu} alt="Paul Mbingu" className={styles.socialLogo} /> </a>
+                    <a href="https://excite.company/" className={styles.link} target="_blank" rel="noopener noreferrer" > <img src={Excite} alt="Paul Mbingu" className={styles.socialLogo} /> </a>
                     <a href="https://dribbble.com/paulXmbingu" className={styles.link} target="_blank" rel="noopener noreferrer" > <img src={Dribbble} alt="Dribbble" className={styles.socialLogo} /> </a>
                     <a href="https://www.instagram.com/paulxmbingu/" className={styles.link} target="_blank" rel="noopener noreferrer"> <img src={Instagram} alt="Instagram" className={styles.socialLogo} /> </a>
                     <a href="https://www.linkedin.com/in/paulxmbingu/" className={styles.link} target="_blank" rel="noopener noreferrer"> <img src={LinkedIn} alt="LinkedIn" className={styles.socialLogo} /> </a>
