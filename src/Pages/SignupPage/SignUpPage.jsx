@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import styles from "./SignUpPage.module.css";
 import { TopNavLarge, TopNavSmall } from "../../Components/Shared/TopNav";
-import Footer from "../../Components/Shared/Footer";
 
 function SignUpPage() {
     const [isLargeScreen, setIsLargeScreen] = useState(typeof window !== "undefined" ? window.innerWidth > 768 : false);
@@ -19,7 +18,6 @@ function SignUpPage() {
         <div className={styles.pageLayout}>
             {isLargeScreen ? <TopNavLarge /> : <TopNavSmall />}
             <div> Sign Up Page </div>
-            <Footer />
         </div>
     );
 }
