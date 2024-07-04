@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import styles from "./CheckEmailPage.module.css";
 import { TopNavLarge, TopNavSmall } from "../../Components/Shared/TopNav";
-import FooterSection from "../../Components/Shared/Footer";
+import Footer from "../../Components/Shared/Footer";
 
 function CheckEmailPage() {
     const [isLargeScreen, setIsLargeScreen] = useState(typeof window !== "undefined" ? window.innerWidth > 768 : false);
@@ -19,7 +19,7 @@ function CheckEmailPage() {
         <div className={styles.pageLayout}>
             {isLargeScreen ? <TopNavLarge /> : <TopNavSmall />}
             <div> Check Email Page </div>
-            <FooterSection />
+            <Footer />
         </div>
     );
 }
