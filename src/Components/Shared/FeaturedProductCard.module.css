@@ -1,6 +1,8 @@
 .featuredProductCard {
     display: flex;
     width: var(--spacing-system-guides-corner-radius-84, 336px);
+    max-width: var(--spacing-system-guides-corner-radius-84, 384px);
+
     height: var(--spacing-system-guides-corner-radius-148, 606px);
     padding-bottom: var(--spacing-system-guides-corner-radius-3, 12px);
     flex-direction: column;
@@ -11,10 +13,13 @@
     background: var(--Colors-Background-bg-primary, #FFF);
     overflow: hidden;
     cursor: pointer;
-    transition: all 0.2s ease;
+    transition: all 0.1s ease;
+    position: relative;
+    flex-grow: 1;
 }
 
-.featuredProductCard:hover {
+.featuredProductCard:hover,
+.featuredProductCard:focus-within {
     border-radius: var(--spacing-system-guides-corner-radius-3, 12px);
     border: 1px solid var(--Colors-Border-border-brand-solid, #DA154D);
     background: var(--Colors-Background-bg-primary, #FFF);
@@ -156,4 +161,14 @@
     padding: var(--spacing-system-guides-corner-radius-1, 4px);
     align-items: flex-start;
     gap: var(--spacing-system-guides-corner-radius-1, 4px);
+}
+
+.favoriteButtonContainer {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.link {
+    text-decoration: none;
 }

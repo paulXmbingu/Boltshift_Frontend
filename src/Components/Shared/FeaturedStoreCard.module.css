@@ -1,0 +1,99 @@
+.defaultWrapper {
+    display: flex;
+    height: var(--Base-4-Premitives-128, 492px);
+    width: 100%;
+    /* min-width: var(--spacing-system-guides-corner-radius-84, 336px); */
+    /* max-width: var(--spacing-system-guides-corner-radius-128, 492px); */
+    min-height: var(--Grid-layouts-iPhone-375px, 375px);
+    max-height: var(--spacing-system-guides-corner-radius-128, 492px);
+    padding: var(--spacing-lg, 12px);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: var(--spacing-lg, 12px);
+    flex: 1 0 0;
+    border-radius: var(--radius-sm, 6px);
+    border: 1px solid var(--Colors-Border-border-secondary, #EAECF0);
+    background: var(--Gradient-Linear-Color-20, linear-gradient(45deg, #E9DEFA 0%, #FFF6EB 100%));
+
+    /* Focus ring/4px gray-100 */
+    box-shadow: 0px 0px 0px 4px #F2F4F7;
+}
+
+.storeInfo {
+    display: flex;
+    height: 310px;
+    padding: var(--spacing-3xl, 24px) var(--spacing-none, 0px);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: var(--spacing-system-guides-corner-radius-16, 64px);
+    flex: 1 0 0;
+}
+
+.storeDetails {
+    display: flex;
+    width: var(--Base-4-Premitives-64, 256px);
+    max-width: var(--Base-4-Premitives-64, 256px);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: var(--container-padding-mobile, 16px);
+}
+
+.logoContainer {
+    display: flex;
+    padding: var(--spacing-none, 0px);
+    justify-content: center;
+    align-items: center;
+    gap: var(--spacing-none, 0px);
+    border-radius: var(--radius-full, 9999px);
+    border: 1px solid var(--Colors-Border-border-secondary, #EAECF0);
+    overflow: hidden;
+}
+
+.storeIcon {
+    width: 96px;
+    height: 96px;
+}
+
+.storeDescription {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    align-self: stretch;
+    overflow: hidden;
+    color: var(--colors-text-text-primary-900, #101828);
+    text-align: center;
+    text-overflow: ellipsis;
+
+    /* Text sm/Regular */
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 142.857% */
+}
+
+.storeName {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.storeLabel {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+    color: var(--colors-text-text-primary-900, #101828);
+    text-align: center;
+    text-overflow: ellipsis;
+
+    /* Text xl/Semibold */
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 30px; /* 150% */
+}

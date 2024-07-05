@@ -10,11 +10,14 @@
   align-self: stretch;
   flex-wrap: wrap;
   border-radius: var(--spacing-system-guides-corner-radius-0, 0px);
-  background: var(--Base-White, #FFF);
+  background: var(--Component-colors-Alpha-alpha-white-90, rgba(255, 255, 255, 0.90));
+  
+  /* Backdrop blurs/backdrop-blur-md */
+  backdrop-filter: blur(8px);
 
   position: sticky;
   top: 0;
-  z-index: 999;
+  z-index: 1000;
 }
 
 .desktopMenuIcon {
@@ -59,73 +62,84 @@
 }
 
 /* MOBILE STYLING */
-.mobileNav {
+.mobileNav{
   display: flex;
-  width: var(--Breaking-Points-iPhone-375px, 375px);
-  min-width: var(--Breaking-Points-iPhone-375px, 375px);
-  max-width: var(--Breaking-Points-Desktop-1280px, 1280px);
-  min-height: var(--Base-4-Premitives-20, 80px);
-  padding: var(--Base-4-Premitives-4, 16px) var(--spacing-system-guides-corner-radius-4, 16px);
+  /* width: 841px; */
+  padding: var(--Base-4-Premitives-4, 16px) var(--container-padding-mobile, 16px);
   flex-direction: column;
-  align-items: flex-start;
+  justify-content: center;
+  align-items: center;
   gap: var(--Base-4-Premitives-4, 16px);
   border-radius: var(--spacing-system-guides-corner-radius-0, 0px);
-  background: var(--Colors-Background-bg-brand-primary, #FEF1F5);
+  background: var(--Component-colors-Alpha-alpha-white-90, rgba(255, 255, 255, 0.90));
+  
+  /* Backdrop blurs/backdrop-blur-md */
+  backdrop-filter: blur(8px);
 
+  width: 100%;
   position: sticky;
   top: 0;
   z-index: 999;
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  overflow-x: hidden; /* Prevent horizontal overflow */
 }
 
-.mobileTopNav {
+.topNavMobile{
   display: flex;
+  height: var(--Base-4-Premitives-10, 40px);
   justify-content: space-between;
   align-items: center;
-  align-content: center;
-  align-self: stretch;
-  flex-wrap: wrap;
-}
-
-.mobileSearchFilter {
-  display: flex;
-  height: var(--Base-4-Premitives-11, 44px);
-  min-width: var(--spacing-system-guides-corner-radius-80, 320px);
-  max-width: var(--spacing-system-guides-corner-radius-220, 880px);
-  align-items: center;
-  gap: var(--Base-4-Premitives-3, 12px);
   align-self: stretch;
 }
 
-.mobileMenu {
+.menuLogoMobile{
   display: flex;
   align-items: center;
-  gap: var(--spacing-system-guides-corner-radius-1, 4px);
+  gap: var(--spacing-md, 8px);
 }
 
-.MobileMenuIcon {
+.menuIconMobile{
   width: 24px;
   height: 24px;
+  cursor: pointer;
 }
 
-.mobileProductLogo {
+.logoWrapMobile{
   display: flex;
   align-items: center;
   gap: var(--spacing-system-guides-corner-radius-2, 8px);
 }
 
-.MobileLogo {
+.logoWrapMobile{
   display: flex;
-  width: 113.333px;
-  height: 32px;
-  padding: 1.333px 0.492px 1.333px 0px;
-  justify-content: center;
   align-items: center;
-  gap: 7.586px;
+  gap: var(--spacing-system-guides-corner-radius-2, 8px);
 }
 
-.mobileNotifications {
+.brandLogoMobile{
   display: flex;
+  width: 141.667px;
+  height: 40px;
+  padding: 1.667px 0.615px 1.667px 0px;
+  justify-content: center;
+  align-items: center;
+  gap: 9.483px;
+  cursor: pointer;
+}
+
+.notificationsMobile{
+  display: flex;
+  width: 140px;
   justify-content: flex-end;
   align-items: center;
-  gap: var(--spacing-system-guides-corner-radius-3, 12px);
+  gap: var(--spacing-xs, 4px);
+}
+
+.serchFilterMobile{
+  display: flex;
+  height: var(--Base-4-Premitives-11, 44px);
+  justify-content: center;
+  align-items: center;
+  gap: var(--spacing-lg, 12px);
+  align-self: stretch;
 }

@@ -1,0 +1,26 @@
+.Badge_PillColor_SM_LeadIcon_SuccessWrap{
+    display: inline-flex;
+    padding: var(--spacing-xxs, 2px) var(--spacing-md, 8px) var(--spacing-xxs, 2px) var(--spacing-sm, 6px);
+    align-items: center;
+    gap: var(--spacing-xxs, 2px);
+    border-radius: var(--radius-full, 9999px);
+    border: 1px solid var(--Component-colors-Utility-Success-utility-success-200, #ABEFC6);
+    background: var(--Component-colors-Utility-Success-utility-success-50, #ECFDF3);
+}
+
+.Badge_PillColor_SM_LeadIcon_SuccessLabel{
+    color: var(--Component-colors-Utility-Success-utility-success-700, #067647);
+    text-align: center;
+
+    /* Text xs/Medium */
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px; /* 150% */
+}
+
+.Badge_PillColor_SM_LeadIcon_SuccesIcon{
+    width: 12px;
+    height: 12px;
+}

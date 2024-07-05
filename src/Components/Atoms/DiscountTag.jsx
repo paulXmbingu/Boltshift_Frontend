@@ -4,7 +4,13 @@ import styles from './DiscountTag.module.css';
 // FUNCTIONALITY
 function DiscountTag(){
     return(
-        <button className={styles.tag}> Opening Sales Discount 50% </button>
+        <div className={styles.tag}>
+            <div className={styles.tagContent}>
+                <div className={styles.tagText}>
+                    Opening Sales Discount 50%
+                </div>
+            </div>
+        </div>
     );
 };
 

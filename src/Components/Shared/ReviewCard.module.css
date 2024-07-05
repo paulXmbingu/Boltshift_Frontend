@@ -1,0 +1,249 @@
+.reviewDetails{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--spacing-lg, 12px);
+    align-self: stretch;
+}
+
+.cardWrap{
+    display: flex;
+    width: var(--Base-4-Premitives-72, 256px);
+    height: var(--width-xxs, 296px);
+    padding: var(--spacing-system-guides-corner-radius-4, 16px);
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--spacing-xl, 16px);
+    flex-shrink: 0;
+    border-radius: var(--radius-xl, 12px);
+    border: 1px solid var(--Colors-Border-border-secondary, #EAECF0);
+    background: var(--Colors-Background-bg-secondary, #F9FAFB);
+}
+
+.testimonialText{
+    display: -webkit-box;
+    height:fit-content;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 5;
+    align-self: stretch;
+    overflow: hidden;
+    color: var(--colors-text-text-tertiary-600, #475467);
+    text-overflow: ellipsis;
+
+    /* Text xs/Regular */
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px; /* 150% */
+    white-space: pre-line;
+}
+
+.buyerDetails{
+    display: flex;
+    align-items: flex-start;
+    gap: var(--spacing-system-guides-corner-radius-3, 12px);
+}
+
+.buyerPhoto{
+    display: flex;
+    width: 72px;
+    height: 72px;
+    justify-content: center;
+    align-items: center;
+    border-radius: var(--radius-full, 9999px);
+    border: 4px solid var(--Colors-Border-border-tertiary, #F2F4F7);
+
+    /* Shadows/shadow-md */
+    box-shadow: 0px 4px 8px -2px rgba(16, 24, 40, 0.10), 0px 2px 4px -2px rgba(16, 24, 40, 0.06);
+    overflow: hidden;
+}
+
+.buyerAvatar{
+    width: 100%;
+    flex-shrink: 0;
+}
+
+.detailsStack{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    gap: var(--spacing-system-guides-corner-radius-1, 4px);
+    align-self: stretch;
+}
+
+.buyerNameVerification{
+    display: flex;
+    padding: var(--spacing-system-guides-corner-radius-0, 0px);
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: var(--spacing-system-guides-corner-radius-0, 0px);
+    align-self: stretch;
+}
+
+.buyerName{
+    color: var(--colors-text-text-secondary-700, #344054);
+
+    /* Text md/Semibold */
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px; /* 150% */
+}
+
+.dateWrap{
+    display: flex;
+    padding: var(--spacing-system-guides-corner-radius-0, 0px) var(--spacing-system-guides-corner-radius-1, 4px);
+    justify-content: left;
+    align-items: center;
+    gap: 10px;
+}
+
+.date{
+    color: var(--colors-text-text-quarterary-500, #667085);
+
+    /* Text xs/Regular */
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px; /* 150% */
+}
+
+.buyerRating{
+    display: flex;
+    padding: var(--spacing-system-guides-corner-radius-0, 0px);
+    align-items: center;
+    gap: var(--spacing-system-guides-corner-radius-1, 4px);
+    scale: 50%;
+}
+
+.reviewedProduct{
+    display: flex;
+    align-items: flex-start;
+    gap: var(--spacing-md, 8px);
+    align-self: stretch;
+    cursor: pointer;
+}
+
+.productImage{
+    display: flex;
+    width: var(--Base-4-Premitives-20, 80px);
+    height: var(--Base-4-Premitives-20, 80px);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    border-radius: var(--spacing-system-guides-corner-radius-3, 12px);
+    border: 1px solid var(--Gray-200, #EAECF0);
+    background: lightgray 50% / cover no-repeat, #FFF;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.productNamePrice{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--spacing-system-guides-corner-radius-1, 4px);
+    flex: 1 0 0;
+    align-self: stretch;
+}
+
+.productNameWrap{
+    display: flex;
+    align-items: flex-start;
+    align-self: stretch;
+}
+
+.productNameLabel{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    flex: 1 0 0;
+    overflow: hidden;
+    color: var(--colors-text-text-primary-900, #101828);
+    text-overflow: ellipsis;
+
+    /* Text xs/Semibold */
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 18px; /* 150% */
+    white-space: pre-line;
+}
+
+.productNameLabel:hover,
+.productNameLabel:focus,
+.productNameLabel:focus-within {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    flex: 1 0 0;
+    overflow: hidden;
+    color: var(--colors-text-text-brand-tertiary-600, #DA154D);
+    text-overflow: ellipsis;
+
+    /* Text xs/Semibold */
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 18px; /* 150% */
+    white-space: pre-line;
+    transition: all 0.1s ease;
+}
+
+.productPriceWrap{
+    display: flex;
+    align-items: flex-start;
+}
+
+.currency{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+    color: var(--colors-text-text-brand-tertiary-600, #DA154D);
+    text-align: center;
+    text-overflow: ellipsis;
+
+    /* Text xs/Regular */
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px; /* 150% */
+}
+
+.priceLabel{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+    color: var(--colors-text-text-brand-tertiary-600, #DA154D);
+    text-overflow: ellipsis;
+
+    /* Text xs/Medium */
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px; /* 150% */
+}
+
+.link {
+    text-decoration: none;
+}
+
+.link:focus-visible,
+.link:focus-within {
+    border-radius: var(--radius-xs, 4px);
+    outline: 1px solid var(--Colors-Border-border-brand-solid, #DA154D);
+    /* Focus rings/ring-brand */
+    box-shadow: 0px 0px 0px 4px rgba(234, 39, 94, 0.24);
+}

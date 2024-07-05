@@ -1,26 +1,36 @@
 import React from "react";
 import styles from "./FeaturedProductCard.module.css";
 import OfferCountDown from "./OfferCountDown";
+import { Btn_Pri_SM } from "../Atoms/Button";
+import FavoriteButton from "./FavoriteButton";
+import { Link } from "react-router-dom";
 
 const FeaturedProductCard = ( {productPhoto, productLabel} ) => {
     return(
         <div className={styles.featuredProductCard}>
-            <img src={productPhoto} alt="productPhoto" className={styles.productPhoto} />
+            <div className={styles.favoriteButtonContainer}>
+                <FavoriteButton />
+            </div>
+            <Link to={`/product`} className={styles.productPhoto} > <img src={productPhoto} alt="productPhoto" className={styles.productPhoto} /> </Link>
             <div className={styles.productDetails} >
-                <div className={styles.productNamePrice} >
-                <div className={`${styles.productName} ${styles.productLabel}`}>
-                    {productLabel}
-                </div >
-                <div className={styles.productPrice}>
-                    <div className={styles.currency}> Kshs.</div>
-                    <div className={styles.priceLabel}> 63,073 </div>
-                </div>
-                </div>
-                <div className={styles.counterCTA}>
-                    <div className={styles.offerCountDown}>
-                        <OfferCountDown />
+                <Link to={`/product`} className={styles.link} >
+                    <div className={styles.productNamePrice} >
+                        <div className={`${styles.productName} ${styles.productLabel}`}>
+                            {productLabel}
+                        </div >
+                        <div className={styles.productPrice}>
+                            <div className={styles.currency}> Kshs.</div>
+                            <div className={styles.priceLabel}> 63,073 </div>
+                        </div>
                     </div>
-                    <button className={styles.button}> Add to Cart </button>
+                </Link>
+                <div className={styles.counterCTA}>
+                    <Link to={`/product`} className={styles.link}>
+                        <div className={styles.offerCountDown}>
+                            <OfferCountDown />
+                        </div>
+                    </Link>
+                    <Btn_Pri_SM ButtonCTA={`Add to Cart`} />
                 </div>
             </div>
         </div>

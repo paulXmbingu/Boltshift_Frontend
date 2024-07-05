@@ -1,13 +1,16 @@
 import React from "react";
-import HeroCard from "../../Components/Shared/HeroCard";
+import { useMediaQuery } from "react-responsive";
+import { HeroCardDesktop, HeroCardMobile } from "../../Components/Shared/HeroCard";
 import styles from "./HeroSection.module.css";
 
 function HeroSection() {
-    return (
-        <div className={styles.heroSection}>
-            <HeroCard />
-        </div>
-    );
-};
+  const isLargeScreen = useMediaQuery({ query: "(min-width: 768px)" });
+
+  return (
+    <div className={styles.heroSection}>
+      {isLargeScreen ? <HeroCardDesktop /> : <HeroCardMobile />}
+    </div>
+  );
+}
 
 export default HeroSection;

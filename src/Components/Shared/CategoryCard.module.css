@@ -1,37 +1,33 @@
 .cardStyle {
     display: flex;
-    height: var(--spacing-system-guides-corner-radius-32, 128px);
-    min-height: var(--spacing-system-guides-corner-radius-12, 48px);
-    max-height: var(--spacing-system-guides-corner-radius-32, 128px);
-    min-width: 136px;
-    max-width: var(--spacing-system-guides-corner-radius-40, 136px);
+    width: var(--Base-4-Premitives-40, 136px);
+    max-width: var(--Base-4-Premitives-40, 160px);
+    height: var(--Base-4-Premitives-32, 128px);
     padding: var(--spacing-system-guides-corner-radius-3, 12px);
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: var(--spacing-system-guides-corner-radius-3, 12px);
-    flex: 1 0 0;
-    border-radius: var(--spacing-system-guides-corner-radius-2, 8px);
+    flex-shrink: 0;
+    border-radius: var(--spacing-system-guides-corner-radius-3, 12px);
     border: 1px solid var(--Colors-Border-border-secondary, #EAECF0);
     background: var(--Colors-Background-bg-primary, #FFF);
     cursor: pointer;
-    transition: all 0.2s ease;
+    transition: all 0.1s ease;
+    flex-grow: 1;
+    text-decoration: none;
+    outline: none;
 }
 
 .cardStyle:hover,
-.cardStyle:active {
-    transform: scale(1.0125);
-    border-radius: var(--spacing-system-guides-corner-radius-2, 8px);
+.cardStyle:focus-within {
+    border-radius: var(--spacing-system-guides-corner-radius-3, 12px);
     border: 1px solid var(--Colors-Border-border-brand-solid, #DA154D);
     background: var(--Colors-Background-bg-primary, #FFF);
+    
+    /* Shadow/lg */
     box-shadow: 0px 12px 16px -4px rgba(16, 24, 40, 0.08), 0px 4px 6px -2px rgba(16, 24, 40, 0.03);
-    height: var(--spacing-system-guides-corner-radius-32, 128px);
-    min-width: 136px;
-    max-width: var(--spacing-system-guides-corner-radius-40, 136px);
-    min-height: var(--spacing-system-guides-corner-radius-12, 48px);
-    max-height: var(--spacing-system-guides-corner-radius-32, 128px);
-    padding: var(--spacing-system-guides-corner-radius-3, 12px);
-    flex-shrink: 0;
+    transform: scale(1.0125);
 }
 
 .cardStyleWithShadow {
