@@ -76,7 +76,7 @@ Boltshift Marketplace is a cutting-edge e-commerce platform that combines high-q
 - Payment Processing: Stripe API
 - Backend Framework: Django
 
-## Core Product Engineering Team
+## Product Engineering Team
 
 - Special Contributions: **Marion Ngayi & The Senjes Cuisine Team**
 - Product Research & Design: **Paul Mbingu**
