@@ -28,9 +28,7 @@ const HeroCardDesktop = () => {
                             </div>
                         </div>
                     </div>
-                    <Link to={`/product`} className={styles.cTALink}>
-                        <Btn_Pri_XL ButtonCTA={`Shop Now`} iconTrailing={TailIcon} />
-                    </Link>
+                    <Link to={`/product`} className={styles.cTALink}> <Btn_Pri_XL ButtonCTA={`Shop Now`} iconTrailing={TailIcon} /> </Link>
                     <HeroPagination />
                 </div>
             </div>
