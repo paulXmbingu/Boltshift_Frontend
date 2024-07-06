@@ -80,9 +80,8 @@
   width: 100%;
   position: sticky;
   top: 0;
-  z-index: 999;
-  box-sizing: border-box; /* Include padding and border in the element's total width and height */
-  overflow-x: hidden; /* Prevent horizontal overflow */
+  z-index: 10;
+  box-sizing: border-box;
 }
 
 .topNavMobile{
@@ -143,4 +142,5 @@
   align-items: center;
   gap: var(--spacing-lg, 12px);
   align-self: stretch;
+  z-index: -10;
 }
