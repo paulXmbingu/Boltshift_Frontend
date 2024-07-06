@@ -9,7 +9,7 @@ import Favorite from '../../assets/Icons/UI/heart.svg';
 import Cart from '../../assets/Icons/UI/shopping-cart-03.svg';
 import Bell from '../../assets/Icons/UI/bell-02.svg';
 import SearchInput from "../../Components/Atoms/SearchInput";
-import { NavBarDropDownMenu, NavBarDropDownMenuMobile } from "../Molecules/NavBarDropDownMenu";
+import { NavBarDropDownMenu, NavBarDropDownMenuMobileLoggedIn } from "../Molecules/NavBarDropDownMenu";
 import { BrandLogoHor } from "../Atoms/BrandLogo";
 
 const TopNavLarge = () => {
@@ -89,7 +89,7 @@ const TopNavSmall = () => {
           <NotificationIcon icon={Bell} />
           <div className={styles.notificationAvatar} onClick={handleAvatarClick} ref={dropdownRef}>
             <UserAvatar userPhoto={UserPhoto} />
-            {showDropDown && <NavBarDropDownMenu className={styles.navBarDropDownMenu} />}
+            {showDropDown && <NavBarDropDownMenuMobileLoggedIn className={styles.navBarDropDownMenu} />}
           </div>
         </div>
       </div>
