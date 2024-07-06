@@ -39,8 +39,6 @@
     border-radius: var(--radius-none, 0px);
     border-left: 1px solid var(--Colors-Border-border-tertiary, #F2F4F7);
     background: var(--Colors-Background-bg-primary, #FFF);
-    /* Backdrop blurs/backdrop-blur-md */
-backdrop-filter: blur(8px);
     z-index: 10000px;
     position: absolute;
     top: 0%;

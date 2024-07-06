@@ -27,16 +27,19 @@ const NavBarDropDownMenuMobileLoggedIn = () => {
     return (
         <div className={styles.navBarDropDownMenuMobileWrap}>
             <div className={styles.mainMenu}>
-                <div> Nav Header </div>
+                <div>
+                <DropDownMenuHeaderLoggedIn userName={`Paul Mbingu`} userEmail={`paul@excite.company`} />
+                </div>
                 <div className={styles.divider}></div>
                 <div className={styles.menuItems}>
                     <Link to={`/personalInfo`} className={styles.links} > <MenuListItem ActionLabel={`Personal Info`} MenuIcon={PersonalInfo} /> </Link>
                     <Link to={`/orders`} className={styles.links} > <MenuListItem ActionLabel={`Orders`} MenuIcon={Order} /> </Link>
                     <Link to={`/payments`} className={styles.links} > <MenuListItem ActionLabel={`Payment`} MenuIcon={Payment} /> </Link>
                     <Link to={`/vouchers`} className={styles.links} > <MenuListItem ActionLabel={`Vouchers`} MenuIcon={Voucher} /> </Link>
+                    <MenuListItem ActionLabel={`Log Out`} MenuIcon={LogOut} classname={styles.logout} />
                 </div>
             </div>
-            <MenuListItem ActionLabel={`Log Out`} MenuIcon={LogOut} classname={styles.logout} />
+            <div> Logout </div>
         </div>
     );
 };
