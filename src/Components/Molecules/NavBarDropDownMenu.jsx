@@ -36,9 +36,9 @@ const NavBarDropDownMenuMobileLoggedIn = () => {
                     <Link to={`/orders`} className={styles.links} > <MenuListItem ActionLabel={`Orders`} MenuIcon={Order} /> </Link>
                     <Link to={`/payments`} className={styles.links} > <MenuListItem ActionLabel={`Payment`} MenuIcon={Payment} /> </Link>
                     <Link to={`/vouchers`} className={styles.links} > <MenuListItem ActionLabel={`Vouchers`} MenuIcon={Voucher} /> </Link>
-                    <MenuListItem ActionLabel={`Log Out`} MenuIcon={LogOut} classname={styles.logout} />
                 </div>
             </div>
+            <MenuListItem ActionLabel={`Log Out`} MenuIcon={LogOut} classname={styles.logout} />
             <div> Logout </div>
         </div>
     );
