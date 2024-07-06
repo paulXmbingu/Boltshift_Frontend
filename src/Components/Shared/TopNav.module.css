@@ -65,7 +65,6 @@
 /* MOBILE STYLING */
 .mobileNav{
   display: flex;
-  /* width: 841px; */
   padding: var(--Base-4-Premitives-4, 16px) var(--container-padding-mobile, 16px);
   flex-direction: column;
   justify-content: center;
