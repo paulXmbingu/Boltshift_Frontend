@@ -1,9 +1,21 @@
 import React from "react";
 import styles from "./DropdownListHeader.module.css"
-import { DropDownMenuHeaderLoggedIn } from "./MenuListItem";
 import { AvatarProfilePhotoMD } from "./AvatarProfilePhoto";
+import { AvatarOnlyMDPhoto } from "./Avatar";
 
-const DropdownHeaderLoggedinMobile = ({UserName, Email}) => {
+const DropdownHeaderLoggedinDesktop = ( {UserName, Email} ) => {
+    return(
+        <div className={styles.menuHeaderWrapDesktop}>
+            <AvatarOnlyMDPhoto />
+            <div className={styles.userNameEmailDesktop}>
+                <div className={styles.userNameDesktop}> {UserName}</div>
+                <div className={styles.userEmailDesktop}> {Email} </div>
+            </div>
+        </div>
+    );
+};
+
+const DropdownHeaderLoggedinMobile = ( {UserName, Email} ) => {
     return(
         <div className={styles.loggedinMobileWrapper}>
             <div className={styles.profileCover} > </div>
@@ -18,4 +30,4 @@ const DropdownHeaderLoggedinMobile = ({UserName, Email}) => {
     );
 };
 
-export { DropdownHeaderLoggedinMobile, };
+export { DropdownHeaderLoggedinDesktop, DropdownHeaderLoggedinMobile };

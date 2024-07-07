@@ -7,12 +7,12 @@ import Order from "../../assets/Icons/UI/shopping-bag-02.svg"
 import Payment from "../../assets/Icons/UI/shield-dollar.svg"
 import Voucher from "../../assets/Icons/UI/receipt-check.svg"
 import LogOut from "../../assets/Icons/UI/log-out-01.svg"
-import { DropdownHeaderLoggedinMobile } from "../Atoms/DropdownListHeader";
+import { DropdownHeaderLoggedinDesktop, DropdownHeaderLoggedinMobile } from "../Atoms/DropdownListHeader";
 
 const NavBarDropDownMenu = () => {
     return (
         <div className={styles.navBarDropDownMenuWrap}>
-            <DropDownMenuHeaderLoggedIn userName={`Paul Mbingu`} userEmail={`paul@excite.company`} />
+            <DropdownHeaderLoggedinDesktop UserName={`Paul Mbingu`} Email={`paul@excite.company`} />
             <div className={styles.divider}></div>
             <Link to={`/personalInfo`} className={styles.links} > <MenuListItem ActionLabel={`Personal Info`} MenuIcon={PersonalInfo} /> </Link>
             <Link to={`/orders`} className={styles.links} > <MenuListItem ActionLabel={`Orders`} MenuIcon={Order} /> </Link>
