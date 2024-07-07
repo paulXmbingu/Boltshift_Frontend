@@ -16,7 +16,7 @@ const NavBarDropDownMenu = () => {
             <div className={styles.divider}></div>
             <Link to={`/personalInfo`} className={styles.links} > <MenuListItem ActionLabel={`Personal Info`} MenuIcon={PersonalInfo} /> </Link>
             <Link to={`/orders`} className={styles.links} > <MenuListItem ActionLabel={`Orders`} MenuIcon={Order} /> </Link>
-            <Link to={`/payments`} className={styles.links} > <MenuListItem ActionLabel={`Payment`} MenuIcon={Payment} /> </Link>
+            <Link to={`/payments`} className={styles.links} > <MenuListItem ActionLabel={`Payments`} MenuIcon={Payment} /> </Link>
             <Link to={`/vouchers`} className={styles.links} > <MenuListItem ActionLabel={`Vouchers`} MenuIcon={Voucher} /> </Link>
             <div className={styles.divider}></div>
             <MenuListItem ActionLabel={`Log Out`} MenuIcon={LogOut} />
@@ -33,7 +33,7 @@ const NavBarDropDownMenuMobileLoggedIn = () => {
                 <div className={styles.menuItems}>
                     <Link to={`/personalInfo`} className={styles.links} > <MenuListItem ActionLabel={`Personal Info`} MenuIcon={PersonalInfo} /> </Link>
                     <Link to={`/orders`} className={styles.links} > <MenuListItem ActionLabel={`Orders`} MenuIcon={Order} /> </Link>
-                    <Link to={`/payments`} className={styles.links} > <MenuListItem ActionLabel={`Payment`} MenuIcon={Payment} /> </Link>
+                    <Link to={`/payments`} className={styles.links} > <MenuListItem ActionLabel={`Payments`} MenuIcon={Payment} /> </Link>
                     <Link to={`/vouchers`} className={styles.links} > <MenuListItem ActionLabel={`Vouchers`} MenuIcon={Voucher} /> </Link>
                     <MenuListItem ActionLabel={`Log Out`} MenuIcon={LogOut} classname={styles.logout} />
                 </div>
