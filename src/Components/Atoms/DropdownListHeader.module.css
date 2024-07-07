@@ -19,6 +19,7 @@
     align-self: stretch;
     border-radius: var(--radius-md, 8px);
     background: var(--Gradient-Linear-Color-69, linear-gradient(135deg, #F74FAC 0%, #FCB24F 100%));
+    position: absolute;
 }
 
 .userDetails {
@@ -30,6 +31,8 @@
     align-items: center;
     gap: var(--spacing-lg, 12px);
     align-self: stretch;
+    z-index: 1;
+    margin-top: 64px;
 }
 
 .userNameEmail {
