@@ -28,9 +28,7 @@ const NavBarDropDownMenuMobileLoggedIn = () => {
     return (
         <div className={styles.navBarDropDownMenuMobileWrap}>
             <div className={styles.mainMenu}>
-                <div>
-                <DropdownHeaderLoggedinMobile userName={`Paul Mbingu`} userEmail={`paul@excite.company`} />
-                </div>
+                <DropdownHeaderLoggedinMobile UserName={`Paul Mbingu`} Email={`paul@excite.company`}/>
                 <div className={styles.divider}></div>
                 <div className={styles.menuItems}>
                     <Link to={`/personalInfo`} className={styles.links} > <MenuListItem ActionLabel={`Personal Info`} MenuIcon={PersonalInfo} /> </Link>
