@@ -1,3 +1,4 @@
+/* Existing styles */
 .desktopNav {
   display: flex;
   min-width: var(--Grid-layouts-iPhone-375px, 375px);
@@ -11,8 +12,6 @@
   flex-wrap: wrap;
   border-radius: var(--spacing-system-guides-corner-radius-0, 0px);
   background: var(--Component-colors-Alpha-alpha-white-90, rgba(255, 255, 255, 0.90));
-  
-  /* Backdrop blurs/backdrop-blur-md */
   backdrop-filter: blur(8px);
   position: sticky;
   top: 0;
@@ -61,7 +60,6 @@
   flex: 1 0 0;
 }
 
-/* MOBILE STYLING */
 .mobileNav{
   display: flex;
   padding: var(--Base-4-Premitives-4, 16px) var(--container-padding-mobile, 16px);
@@ -71,10 +69,7 @@
   gap: var(--Base-4-Premitives-4, 16px);
   border-radius: var(--spacing-system-guides-corner-radius-0, 0px);
   background: var(--Component-colors-Alpha-alpha-white-90, rgba(255, 255, 255, 0.90));
-  
-  /* Backdrop blurs/backdrop-blur-md */
   backdrop-filter: blur(8px);
-
   width: 100%;
   position: sticky;
   top: 0;
@@ -146,6 +141,17 @@
 .navBarDropDownMenu {
   position: absolute;
   top: 48px;
+  right: 0;
+  z-index: 100;
+}
+
+.navBarDropDownMenuMobileLoggedIn {
+  position: absolute;
+  top: 48px;
+  left: -100%;
+  transition: left 100ms ease-out;
+}
+
+.navBarDropDownMenuMobileLoggedIn.show {
   left: 0;
-  margin-top: 8px;
 }

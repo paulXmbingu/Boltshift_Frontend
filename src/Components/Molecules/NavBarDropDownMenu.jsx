@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./NavBarDropDownMenu.module.css"
 import { Link } from "react-router-dom";
-import { DropDownMenuHeaderLoggedIn, MenuListItem } from "../Atoms/MenuListItem";
+import { MenuListItem } from "../Atoms/MenuListItem";
 import PersonalInfo from "../../assets/Icons/UI/user-01.svg"
 import Order from "../../assets/Icons/UI/shopping-bag-02.svg"
 import Payment from "../../assets/Icons/UI/shield-dollar.svg"
