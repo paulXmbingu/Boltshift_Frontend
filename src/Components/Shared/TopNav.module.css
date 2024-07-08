@@ -14,7 +14,6 @@
   
   /* Backdrop blurs/backdrop-blur-md */
   backdrop-filter: blur(8px);
-
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -42,6 +41,7 @@
   align-items: center;
   gap: 11.38px;
   cursor: pointer;
+  outline: none;
 }
 
 .notifications {
@@ -64,7 +64,6 @@
 /* MOBILE STYLING */
 .mobileNav{
   display: flex;
-  /* width: 841px; */
   padding: var(--Base-4-Premitives-4, 16px) var(--container-padding-mobile, 16px);
   flex-direction: column;
   justify-content: center;
@@ -79,9 +78,8 @@
   width: 100%;
   position: sticky;
   top: 0;
-  z-index: 999;
-  box-sizing: border-box; /* Include padding and border in the element's total width and height */
-  overflow-x: hidden; /* Prevent horizontal overflow */
+  z-index: 10;
+  box-sizing: border-box;
 }
 
 .topNavMobile{
@@ -142,4 +140,12 @@
   align-items: center;
   gap: var(--spacing-lg, 12px);
   align-self: stretch;
+  z-index: -10;
+}
+
+.navBarDropDownMenu {
+  position: absolute;
+  top: 48px;
+  left: 0;
+  margin-top: 8px;
 }

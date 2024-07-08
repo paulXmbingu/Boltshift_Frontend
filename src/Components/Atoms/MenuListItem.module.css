@@ -39,6 +39,7 @@
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 1;
+    line-clamp: 1;
     flex: 1 0 0;
     overflow: hidden;
     color: var(--colors-text-text-primary-900, #101828);
@@ -56,6 +57,7 @@
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 1;
+    line-clamp: 1;
     flex: 1 0 0;
     overflow: hidden;
     color: var(--Colors-Text-text-disabled, #667085);
@@ -95,6 +97,7 @@
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 1;
+    line-clamp: 1;
     align-self: stretch;
     overflow: hidden;
     color: var(--colors-text-text-secondary-700, #344054);
@@ -112,6 +115,7 @@
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 1;
+    line-clamp: 1;
     align-self: stretch;
     overflow: hidden;
     color: var(--colors-text-text-tertiary-600, #475467);
