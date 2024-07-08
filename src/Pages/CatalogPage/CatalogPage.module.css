@@ -6,3 +6,40 @@
     align-items: center;
     align-self: stretch;
 }
+
+.FilterAndProduct{
+    display: flex;
+    min-width: var(--Breaking-Points-iPhone-375px, 375px);
+    max-width: var(--Breaking-Points-Desktop-1280px, 1280px);
+    align-items: flex-start;
+    align-content: flex-start;
+    gap: 16px var(--spacing-system-guides-corner-radius-4, 16px);
+    align-self: stretch;
+    flex-wrap: wrap;
+    background: var(--Colors-Background-bg-primary, #FFF);
+}
+
+.filter{
+    display: flex;
+    min-width: var(--spacing-system-guides-corner-radius-88, 352px);
+    max-width: var(--spacing-system-guides-corner-radius-88, 352px);
+    padding: var(--Base-4-Premitives-4, 16px) var(--Base-4-Premitives-4, 16px) var(--Base-4-Premitives-12, 48px) var(--Base-4-Premitives-4, 16px);
+    flex-direction: column;
+    align-items: center;
+    gap: var(--Base-4-Premitives-4, 16px);
+    flex: 1 0 0;
+    border-radius: var(--spacing-system-guides-corner-radius-4, 16px);
+    background: var(--Colors-Background-bg-primary, #FFF);
+}
+
+.ProductListing{
+    display: flex;
+    min-width: var(--spacing-system-guides-corner-radius-88, 352px);
+    max-width: var(--spacing-system-guides-corner-radius-220, 880px);
+    padding: var(--Base-4-Premitives-4, 16px) var(--Base-4-Premitives-0, 0px) var(--Base-4-Premitives-12, 48px) var(--Base-4-Premitives-4, 16px);
+    align-items: flex-start;
+    align-content: flex-start;
+    gap: 16px var(--spacing-system-guides-corner-radius-4, 16px);
+    flex: 1 0 0;
+    flex-wrap: wrap;
+}
