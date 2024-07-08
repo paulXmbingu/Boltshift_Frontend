@@ -68,6 +68,7 @@
     width: 289px;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 2;
+    line-clamp: 2;
     flex-shrink: 0;
     overflow: hidden;
     color: var(--colors-text-text-primary-900, #101828);
@@ -92,6 +93,7 @@
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 1;
+    line-clamp: 1;
     overflow: hidden;
     color: var(--colors-text-text-brand-tertiary-600, #DA154D);
     text-align: center;
@@ -109,6 +111,7 @@
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 1;
+    line-clamp: 1;
     overflow: hidden;
     color: var(--colors-text-text-brand-tertiary-600, #DA154D);
     text-align: center;
