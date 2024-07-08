@@ -89,7 +89,9 @@ const TopNavSmall = () => {
           <NotificationIcon icon={Bell} />
           <div className={styles.notificationAvatar} onClick={handleAvatarClick} ref={dropdownRef}>
             <UserAvatar userPhoto={UserPhoto} />
-            {showDropDown && <NavBarDropDownMenuMobileLoggedIn className={styles.navBarDropDownMenu} />}
+            {showDropDown && (
+              <NavBarDropDownMenuMobileLoggedIn className={`${styles.navBarDropDownMenuMobileLoggedIn} ${styles.show}`} />
+            )}
           </div>
         </div>
       </div>
