@@ -1,9 +1,9 @@
-.productCatalogCard{
+.productCatalogCard {
     display: flex;
     width: 160px;
     height: var(--spacing-system-guides-corner-radius-72, 288px);
     min-width: var(--spacing-system-guides-corner-radius-40, 160px);
-    max-width: var(--spacing-system-guides-corner-radius-40, 160px);
+    max-width: var(--spacing-system-guides-corner-radius-40, 184px);
     min-height: var(--spacing-system-guides-corner-radius-72, 288px);
     max-height: var(--spacing-system-guides-corner-radius-64, 288px);
     flex-direction: column;
@@ -14,30 +14,19 @@
     border: 1px solid var(--Colors-Border-border-secondary, #EAECF0);
     background: var(--Colors-Background-bg-primary, #FFF);
     overflow: hidden;
-    }  
-.productCatalogCard:hover{
-    display: flex;
-    width: 160px;
-    height: var(--spacing-system-guides-corner-radius-72, 288px);
-    min-width: var(--spacing-system-guides-corner-radius-40, 160px);
-    max-width: var(--spacing-system-guides-corner-radius-40, 160px);
-    min-height: var(--spacing-system-guides-corner-radius-72, 288px);
-    max-height: var(--spacing-system-guides-corner-radius-64, 288px);
-    flex-direction: column;
-    align-items: center;
-    gap: 12px;
-    flex-shrink: 0;
-    border-radius: 12px;
+    transition: all 0.1s ease;
+    text-decoration: none;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+.productCatalogCard:hover {
+    transform: scale(1.0125);
     border: 1px solid var(--Colors-Border-border-brand-solid, #DA154D);
-    background: var(--Colors-Background-bg-primary, #FFF);
-
-    /* Shadows/shadow-lg */
     box-shadow: 0px 12px 16px -4px rgba(16, 24, 40, 0.08), 0px 4px 6px -2px rgba(16, 24, 40, 0.03);
-    }  
+}  
 
-
-
-.productimage{
+.productimage {
     display: flex;
     width: 160px;
     height: 160px;
@@ -50,14 +39,15 @@
     background: var(--colors-foreground-fg-senary-300, #D0D5DD);
     object-fit: cover;
     overflow: hidden;
-
 }    
 
-.Cardimage{
+.Cardimage {
     object-fit: cover;
-    width: 160px;
+    width: 100%;
+    height: 160px;
 }
-.productDetails{
+
+.productDetails {
     display: flex;
     padding: 0px var(--spacing-system-guides-corner-radius-3, 12px);
     flex-direction: column;
@@ -67,21 +57,21 @@
     align-self: stretch;
 }
 
-.NamePrice{
+.NamePrice {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     align-self: stretch;
 }
 
-.Name{
+.Name {
     display: flex;
     align-items: flex-start;
     align-content: flex-start;
     flex-wrap: wrap;
 }
 
-.Nametext{
+.Nametext {
     display: -webkit-box;
     width: 128px;
     max-width: var(--spacing-system-guides-corner-radius-32, 128px);
@@ -91,7 +81,6 @@
     overflow: hidden;
     color: var(--colors-text-text-primary-900, #101828);
     text-overflow: ellipsis;
-    
     /* Text xs/Medium */
     font-family: Inter;
     font-size: 12px;
@@ -100,13 +89,13 @@
     line-height: 18px; /* 150% */
 }
 
-.CurrencyPrice{
+.CurrencyPrice {
     display: flex;
     justify-content: center;
     align-items: flex-start;
 }
 
-.Currency{
+.Currency {
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 1;
@@ -116,7 +105,7 @@
     text-align: center;
     text-overflow: ellipsis;
 
-/* Text xs/Regular */
+    /* Text xs/Regular */
     font-family: Inter;
     font-size: 12px;
     font-style: normal;
@@ -124,7 +113,7 @@
     line-height: 18px; /* 150% */
 }
 
-.Price{
+.Price {
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 1;
@@ -141,7 +130,7 @@
     line-height: 18px; /* 150% */
 }
 
-.RatingAndViews{
+.RatingAndViews {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -150,14 +139,14 @@
     align-self: stretch;
 }
 
-.StarRating{
+.StarRating {
     display: flex;
     padding: var(--spacing-system-guides-corner-radius-0, 0px);
     align-items: center;
     gap: var(--spacing-system-guides-corner-radius-1, 4px);
 }
 
-.ViewsCounter{
+.ViewsCounter {
     display: flex;
     padding: var(--spacing-system-guides-corner-radius-0, 0px);
     justify-content: center;
@@ -165,10 +154,10 @@
     gap: var(--spacing-system-guides-corner-radius-0, 0px);
 }
 
-.CounterText{
+.CounterText {
     color: var(--colors-text-text-quarterary-500, #667085);
 
-/* Text xs/Regular */
+    /* Text xs/Regular */
     font-family: Inter;
     font-size: 12px;
     font-style: normal;
