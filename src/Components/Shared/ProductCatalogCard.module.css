@@ -42,9 +42,11 @@
 }    
 
 .Cardimage {
-    object-fit: cover;
-    width: 100%;
     height: 160px;
+    min-height: 160px;
+    max-height: 160px;
+    width: 100%;
+    object-fit: cover;
 }
 
 .productDetails {
