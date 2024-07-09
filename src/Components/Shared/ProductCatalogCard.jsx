@@ -29,7 +29,7 @@ const ProductCatalogCard = ({Images, Name, Currency,Price, CounterText }) => {
         </div>
         <div></div>
     </div>
-  )
-}
+  );
+};
 
-export default ProductCatalogCard
+export default ProductCatalogCard;

@@ -49,6 +49,7 @@
     max-width: var(--spacing-system-guides-corner-radius-32, 128px);
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 2;
+    line-clamp: 2;
     overflow: hidden;
     color: var(--colors-text-text-primary-900, #101828);
     text-overflow: ellipsis;
@@ -70,6 +71,7 @@
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 1;
+    line-clamp: 1;
     overflow: hidden;
     color: var(--colors-text-text-brand-tertiary-600, #DA154D);
     text-align: center;
@@ -85,6 +87,7 @@
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 1;
+    line-clamp: 1;
     overflow: hidden;
     color: var(--colors-text-text-brand-tertiary-600, #DA154D);
     text-overflow: ellipsis;
@@ -123,6 +126,7 @@
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 1;
+    line-clamp: 1;
     overflow: hidden;
     color: var(--colors-text-text-brand-tertiary-600, #DA154D);
     text-overflow: ellipsis;
@@ -137,6 +141,7 @@
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 1;
+    line-clamp: 1;
     overflow: hidden;
     color: var(--colors-text-text-brand-tertiary-600, #DA154D);
     text-align: center;
