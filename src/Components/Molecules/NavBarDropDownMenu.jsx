@@ -38,7 +38,6 @@ const NavBarDropDownMenuMobileLoggedIn = () => {
                     <MenuListItem ActionLabel={`Log Out`} MenuIcon={LogOut} classname={styles.logout} />
                 </div>
             </div>
-            <div> Logout </div>
         </div>
     );
 };
