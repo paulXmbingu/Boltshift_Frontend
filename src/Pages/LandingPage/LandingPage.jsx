@@ -11,6 +11,7 @@ import PopularProductsSection from "./PopularProductsSection";
 import TrendingProductsSection from "./TrendingProductsSection";
 import RecentReviewSection from "./RecentReviewSection";
 import Footer from "../../Components/Shared/Footer";
+import SpecialOfferSection from "./SpecialOfferSection";
 
 function LandingPage() {
     const [isLargeScreen, setIsLargeScreen] = useState(typeof window !== "undefined" ? window.innerWidth > 768 : false);
@@ -33,6 +34,7 @@ function LandingPage() {
             <HotDealTodaySection />
             <FeaturedProductsSection />
             <FeaturedStoreSection />
+            <SpecialOfferSection />
             <PopularProductsSection />
             <TrendingProductsSection />
             <RecentReviewSection />
