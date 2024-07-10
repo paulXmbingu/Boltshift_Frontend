@@ -1,0 +1,18 @@
+.productMediaThumbnailMD {
+    display: flex;
+    width: var(--spacing-system-guides-corner-radius-32, 128px);
+    height: var(--spacing-system-guides-corner-radius-32, 128px);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: var(--spacing-system-guides-corner-radius-3, 12px);
+    background: lightgray 50% / cover no-repeat, var(--Colors-Background-bg-primary, #FFF);
+    overflow: hidden;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.productMediaThumbnailMD:hover {
+    background: var(--Colors-Background-bg-secondary, #F9FAFB);
+}
