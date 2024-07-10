@@ -1,10 +1,9 @@
 .ProductMediaConfiguratorWrap {
     display: flex;
-    height: 740px;
+    width: 100%;
     align-items: flex-start;
     align-content: flex-start;
     gap: var(--spacing-system-guides-corner-radius-12, 48px);
-    align-self: stretch;
     flex-wrap: wrap;
 }
 
