@@ -19,7 +19,6 @@
 
 .productDetails {
     display: flex;
-    min-width: var(--width-xxs, 320px);
     max-width: var(--spacing-system-guides-corner-radius-84, 336px);
     padding: 0px var(--container-padding-mobile, 16px);
     flex-direction: column;
