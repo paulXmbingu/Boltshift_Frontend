@@ -2,6 +2,7 @@ import React from "react";
 import styles from './ProductMediaConfigurator.module.css'
 import { ProductMediaThumbnailMD } from "./ProductMediaThumbnail";
 import { Btn_Pri_XL, Btn_Sec_Color_SM, Btn_Sec_Gray_SM } from "../Atoms/Button";
+import { Link } from "react-router-dom";
 
 const ProductMediaConfigurator = () => {
     return (
@@ -38,7 +39,7 @@ const ProductMediaConfigurator = () => {
                         <Btn_Sec_Gray_SM ButtonCTA={`- 1 +`} />
                         <Btn_Sec_Color_SM ButtonCTA={`Add to Cart`} />
                     </div>
-                    <Btn_Pri_XL ButtonCTA={`Buy Now`} />
+                    <Link to='/checkout' className={styles.buyNowCTA}> <Btn_Pri_XL ButtonCTA={`Buy Now`} /> </Link>
                 </div>
             </div>
         </div>

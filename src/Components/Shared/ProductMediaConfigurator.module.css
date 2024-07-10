@@ -121,3 +121,7 @@
     gap: var(--spacing-md, 8px);
     align-self: stretch;
 }
+
+.buyNowCTA {
+    width: 100%;
+}
