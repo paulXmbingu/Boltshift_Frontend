@@ -20,7 +20,16 @@ const ProductMediaConfigurator = () => {
                     <ProductMediaThumbnailMD ThumbNailMedia={`https://www.avocadomall.com/cdn/shop/products/08045105-5848-4aba-aaa2-ab1d762eb42d-00651-2.jpg?v=1700124092`} />
                 </div>
             </div>
-            <div className={styles.productDetails}> Product Details </div>
+            <div className={styles.productDetails}>
+                <div> Top Badge </div>
+                <div> Store Label </div>
+                <div> Product Rating Summary </div>
+                <div> Product Tags </div>
+                <div> Product Options 1 </div>
+                <div> Product Options 2 </div>
+                <div> Price </div>
+                <div> CTAs </div>
+            </div>
         </div>
     );
 };
