@@ -15,6 +15,20 @@ const Btn_Pri_SM = ({ iconLeading, ButtonCTA, iconTrailing }) => {
     );
 };
 
+const Btn_Pri_XL = ({ iconLeading, ButtonCTA, iconTrailing }) => {
+    return (
+        <button className={styles.priXL}>
+            {iconLeading && <img src={iconLeading} alt="Leading Icon" className={styles.leadingIconPriXL} />}
+            <div className={styles.textPaddingPriXL}>
+                <div className={styles.cTATextPriXL}>
+                    {ButtonCTA}
+                </div>
+            </div>
+            {iconTrailing && <img src={iconTrailing} alt="Trailing Icon" className={styles.trailingIconPriXL} />}
+        </button>
+    );
+};
+
 const Btn_Sec_Gray_SM = ({ iconLeading, ButtonCTA, iconTrailing }) => {
     return (
         <button className={styles.secGraySM}>
@@ -83,20 +97,6 @@ const Btn_Ter_LG = ({ iconLeading, ButtonCTA, iconTrailing }) => {
                 </div>
             </div>
             {iconTrailing && <img src={iconTrailing} alt="Trailing Icon" className={styles.trailingIconTerLG} />}
-        </button>
-    );
-};
-
-const Btn_Pri_XL = ({ iconLeading, ButtonCTA, iconTrailing }) => {
-    return (
-        <button className={styles.priXL}>
-            {iconLeading && <img src={iconLeading} alt="Leading Icon" className={styles.leadingIconPriXL} />}
-            <div className={styles.textPaddingPriXL}>
-                <div className={styles.cTATextPriXL}>
-                    {ButtonCTA}
-                </div>
-            </div>
-            {iconTrailing && <img src={iconTrailing} alt="Trailing Icon" className={styles.trailingIconPriXL} />}
         </button>
     );
 };
