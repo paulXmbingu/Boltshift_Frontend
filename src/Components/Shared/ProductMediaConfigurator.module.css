@@ -64,3 +64,46 @@
     scrollbar-width: none;
     -ms-overflow-style: none;
 }
+
+.productRatingSummary {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--spacing-md, 8px);
+    align-self: stretch;
+}
+
+.productName {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    align-self: stretch;
+    overflow: hidden;
+    color: var(--colors-text-text-primary-900, #101828);
+    text-overflow: ellipsis;
+
+    /* Display sm/Semibold */
+    font-family: Inter;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 38px; /* 126.667% */
+}
+
+.productDescriptionSummary {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    align-self: stretch;overflow: hidden;
+    color: var(--colors-text-text-quarterary-500, #667085);
+    text-overflow: ellipsis;
+    
+    /* Text sm/Medium */
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px; /* 142.857% */
+    line-clamp: 3;
+}
