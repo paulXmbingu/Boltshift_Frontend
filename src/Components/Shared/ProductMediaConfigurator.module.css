@@ -1,10 +1,9 @@
 .ProductMediaConfiguratorWrap {
     display: flex;
-    height: 740px;
+    width: 100%;
     align-items: flex-start;
     align-content: flex-start;
     gap: var(--spacing-system-guides-corner-radius-12, 48px);
-    align-self: stretch;
     flex-wrap: wrap;
 }
 
@@ -34,30 +33,23 @@
 
 .mainProductImageWrap {
     display: flex;
-    min-width: var(--Base-4-Premitives-84, 336px);
-    max-width: var(--Base-4-Premitives-148, 592px);
-    min-height: var(--Base-4-Premitives-84, 336px);
-    max-height: var(--spacing-system-guides-corner-radius-148, 592px);
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    flex: 1 0 0;
-    align-self: stretch;
+    width: 100%;
+    padding-top: 100%;
+    position: relative;
     border-radius: var(--spacing-system-guides-corner-radius-3, 12px);
     background: var(--Colors-Background-bg-primary, #FFF);
+    overflow: hidden;
 }
 
 .mainProductImage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     display: flex;
-    min-width: var(--Base-4-Premitives-84, 336px);
-    max-width: var(--Base-4-Premitives-148, 592px);
-    min-height: var(--Base-4-Premitives-84, 336px);
-    max-height: var(--spacing-system-guides-corner-radius-148, 592px);
-    flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    flex: 1 0 0;
-    align-self: stretch;
     border-radius: var(--spacing-system-guides-corner-radius-3, 12px);
     background: var(--Colors-Background-bg-primary, #FFF);
     overflow: hidden;
