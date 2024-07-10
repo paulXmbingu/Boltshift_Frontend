@@ -1,6 +1,7 @@
 import React from "react";
 import styles from './ProductMediaConfigurator.module.css'
 import { ProductMediaThumbnailMD } from "./ProductMediaThumbnail";
+import { Btn_Pri_XL, Btn_Sec_Color_SM, Btn_Sec_Gray_SM } from "../Atoms/Button";
 
 const ProductMediaConfigurator = () => {
     return (
@@ -32,7 +33,13 @@ const ProductMediaConfigurator = () => {
                 <div> Product Options 1 </div>
                 <div> Product Options 2 </div>
                 <div> Price </div>
-                <div> CTAs </div>
+                <div className={styles.CTAs}> 
+                    <div className={styles.secondaryCTAs}>
+                        <Btn_Sec_Gray_SM ButtonCTA={`- 1 +`} />
+                        <Btn_Sec_Color_SM ButtonCTA={`Add to Cart`} />
+                    </div>
+                    <Btn_Pri_XL ButtonCTA={`Buy Now`} />
+                </div>
             </div>
         </div>
     );

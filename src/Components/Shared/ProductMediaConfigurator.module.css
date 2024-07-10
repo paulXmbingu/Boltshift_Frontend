@@ -107,3 +107,18 @@
     line-height: 20px; /* 142.857% */
     line-clamp: 3;
 }
+
+.CTAs {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--spacing-md, 8px);
+    align-self: stretch;
+}
+
+.secondaryCTAs {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-md, 8px);
+    align-self: stretch;
+}
