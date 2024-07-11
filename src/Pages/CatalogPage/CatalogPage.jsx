@@ -3,6 +3,9 @@ import styles from "./CatalogPage.module.css";
 import { TopNavLarge, TopNavSmall } from "../../Components/Shared/TopNav";
 import Footer from "../../Components/Shared/Footer";
 import ProductCatalogCard from "../../Components/Shared/ProductCatalogCard";
+import SectionHeader from "../../Components/Shared/SectionHeader";
+import bag from '../../assets/Icons/UI/Shopping bags (1).svg';
+import SearchResultOutput from "../../Components/Molecules/SearchResultOutput";
 
 function CatalogPage() {
     const [isLargeScreen, setIsLargeScreen] = useState(typeof window !== "undefined" ? window.innerWidth > 768 : false);
@@ -20,7 +23,12 @@ function CatalogPage() {
          <div className={styles.pageLayout}>
             {isLargeScreen ? <TopNavLarge /> : <TopNavSmall />}
             <div> Breadcrum </div> 
-            <div> Page Header Section </div> 
+            <div className={styles.PageHeader}>
+                <div className={styles.Header}>
+                  <SectionHeader icon={bag}  headerTitle={`Catalog`} />
+                </div>
+                <SearchResultOutput NoOfHits={`366 results for the search of`} SearchPhrase={`"luxury contemporary watch"`} />
+            </div> 
             <div className={styles.FilterAndProduct}>
                 <div className={styles.filter}>
                     Filter Section

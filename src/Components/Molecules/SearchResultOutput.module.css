@@ -1,0 +1,41 @@
+.SearchResultOutput {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    gap: 10px;
+    flex: 1 0 0;
+    flex-wrap: wrap;
+}
+
+.Header {
+    display: flex;
+    min-width: var(--Base-4-Premitives-84, 336px);
+    max-width: var(--spacing-system-guides-corner-radius-80, 336px);
+    align-items: flex-start;
+    gap: 4px;
+    flex: 1 0 0;
+}
+
+.NoOfHits {
+    color: var(--colors-text-text-tertiary-600, #475467);
+    text-align: center;
+
+    /* Text xl/Semibold */
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 30px; /* 150% */
+}
+
+.SearchPhrase {
+    color: var(--colors-text-text-brand-tertiary-600, #DA154D);
+    text-align: center;
+
+    /* Text xl/Semibold */
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 30px; /* 150% */
+}
