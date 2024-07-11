@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { ProductMediaThumbnailMD } from "./ProductMediaThumbnail";
 import { Btn_Pri_XL, Btn_Sec_Color_SM, Btn_Sec_Gray_SM } from "../Atoms/Button";
 import StoreLabel from "./StoreLabel";
-import { Badge_PillColor_SM_Brand, Badge_PillColor_SM_Error, Badge_PillColor_SM_Gray, Badge_PillColor_SM_Success, Badge_PillColor_SM_Warning, Badge_PillOutline_LG_LeadingIcon_BrandColor } from "../Atoms/Badge";
+import { Badge_PillColor_SM_BlueLight, Badge_PillColor_SM_Brand, Badge_PillColor_SM_Error, Badge_PillColor_SM_Gray, Badge_PillColor_SM_GrayBlue, Badge_PillColor_SM_Success, Badge_PillColor_SM_Warning, Badge_PillOutline_LG_LeadingIcon_BrandColor } from "../Atoms/Badge";
 import arrowdown from "../../assets/Icons/UI/arrow-down.svg"
 import { StarRating4 } from "../Molecules/StarRating";
 
@@ -39,16 +39,16 @@ const ProductMediaConfigurator = () => {
                 </div>
                 <div className={styles.productTags}>
                     <Badge_PillColor_SM_Gray BadgeLabel={`New Arrival`} />
-                    <Badge_PillColor_SM_Brand BadgeLabel={`Best Sellers`} />
+                    <Badge_PillColor_SM_Brand BadgeLabel={`Best Seller`} />
                     <Badge_PillColor_SM_Error BadgeLabel={`Popular`} />
                     <Badge_PillColor_SM_Warning BadgeLabel={`Clearance`} />
                     <Badge_PillColor_SM_Success BadgeLabel={`Limited Edition`} />
-                    <Badge_PillColor_SM_Gray BadgeLabel={`Exclusive`} />
-                    <Badge_PillColor_SM_Gray BadgeLabel={`Featured`} />
+                    <Badge_PillColor_SM_GrayBlue BadgeLabel={`Exclusive`} />
+                    <Badge_PillColor_SM_BlueLight BadgeLabel={`Featured`} />
                     <Badge_PillColor_SM_Gray BadgeLabel={`Trending`} />
-                    <Badge_PillColor_SM_Gray BadgeLabel={`Free Shipping`} />
+                    <Badge_PillColor_SM_Gray BadgeLabel={`Free Shiping`} />
                     <Badge_PillColor_SM_Gray BadgeLabel={`Seasonal`} />
-                    <Badge_PillColor_SM_Gray BadgeLabel={`Back in Store`} />
+                    <Badge_PillColor_SM_Gray BadgeLabel={`Restocked`} />
                     <Badge_PillColor_SM_Gray BadgeLabel={`Top Rated`} />
                 </div>
                 <div> Product Options 1 </div>
