@@ -46,13 +46,27 @@
 
 .PageHeaderSection {
     display: flex;
-min-width: var(--spacing-system-guides-corner-radius-84, 336px);
-max-width: var(--grid-layouts-desktop-1280-px, 1280px);
-padding: var(--Base-4-Premitives-4, 16px);
-align-items: center;
-align-content: center;
-gap: var(--Base-4-Premitives-6, 24px) var(--Base-4-Premitives-8, 32px);
-align-self: stretch;
-flex-wrap: wrap;
-background: var(--Colors-Background-bg-primary, #FFF);
+    min-width: var(--spacing-system-guides-corner-radius-84, 336px);
+    max-width: var(--grid-layouts-desktop-1280-px, 1280px);
+    padding: var(--Base-4-Premitives-4, 16px);
+    align-items: center;
+    align-content: center;
+    gap: var(--Base-4-Premitives-6, 24px) var(--Base-4-Premitives-8, 32px);
+    align-self: stretch;
+    flex-wrap: wrap;
+    background: var(--Colors-Background-bg-primary, #FFF);
+}
+
+.BreadCrumb{
+    display: flex;
+    height: 48px;
+    min-width: var(--Grid-layouts-iPhone-375px, 375px);
+    max-width: var(--Containers-xl, 1280px);
+    min-height: var(--Base-4-Premitives-12, 48px);
+    max-height: var(--Base-4-Premitives-12, 48px);
+    padding: var(--spacing-system-guides-corner-radius-4, 16px);
+    align-items: center;
+    gap: var(--spacing-xl, 16px);
+    align-self: stretch;
+    background: var(--Colors-Background-bg-primary, #FFF);
 }
