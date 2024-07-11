@@ -1,0 +1,70 @@
+.BreadCrumb {
+    display: flex;
+    width: 787px;
+    height: 48px;
+    min-width: var(--Grid-layouts-iPhone-375px, 375px);
+    max-width: var(--Containers-xl, 1280px);
+    min-height: var(--Base-4-Premitives-12, 48px);
+    max-height: var(--Base-4-Premitives-12, 48px);
+    padding: var(--spacing-system-guides-corner-radius-4, 16px);
+    align-items: center;
+    gap: var(--spacing-xl, 16px);
+    flex-shrink: 0;
+}
+
+.HomeIcon {
+    width: var(--Base-4-Premitives-5, 20px);
+    height: var(--Base-4-Premitives-5, 20px);
+    flex-shrink: 0;
+}
+
+.CatakogPage {
+     display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.chevron {
+    width: 16px;
+    height: 16px;
+}
+
+.BreadcrumbButon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.BreadcrumbCatalogText{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    line-clamp: 1;
+    overflow: hidden;
+    color: var(--colors-text-text-tertiary-600, #475467);
+    text-overflow: ellipsis;
+
+    /* Text sm/Medium */
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px; /* 142.857% */
+}
+
+.BreadCrumbRedText {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    line-clamp: 1;
+    overflow: hidden;
+    color: var(--colors-text-text-brand-tertiary-600, #DA154D);
+    text-overflow: ellipsis;
+
+    /* Text sm/Semibold */
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px; /* 142.857% */
+}
