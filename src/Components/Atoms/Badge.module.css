@@ -198,3 +198,24 @@
     font-weight: 500;
     line-height: 18px; /* 150% */
 }
+
+.Badge_PillColor_SM_BlueWrap {
+    display: inline-flex;
+    padding: var(--spacing-xxs, 2px) var(--spacing-md, 8px);
+    align-items: center;
+    border-radius: var(--radius-full, 9999px);
+    border: 1px solid var(--Component-colors-Utility-Blue-utility-blue-200, #B2DDFF);
+    background: var(--Component-colors-Utility-Blue-utility-blue-50, #EFF8FF);
+}
+
+.Badge_PillColor_SM_BlueLabel {
+    color: var(--Component-colors-Utility-Blue-utility-blue-700, #175CD3);
+    text-align: center;
+    
+    /* Text xs/Medium */
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px; /* 150% */
+}

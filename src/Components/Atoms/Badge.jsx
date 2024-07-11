@@ -78,6 +78,14 @@ const Badge_PillColor_SM_BlueLight = ({BadgeLabel,}) => {
     );
 };
 
+const Badge_PillColor_SM_Blue = ({BadgeLabel,}) => {
+    return (
+        <div className={styles.Badge_PillColor_SM_BlueWrap}>
+            <div className={styles.Badge_PillColor_SM_BlueLabel}> {BadgeLabel} </div>
+        </div>
+    );
+};
+
 export { Badge_PillColor_SM_LeadIcon_Success, Badge_PillOutline_LG_LeadingIcon_BrandColor,
     //PILL COLOR SMALL
     Badge_PillColor_SM_Gray,
@@ -87,4 +95,5 @@ export { Badge_PillColor_SM_LeadIcon_Success, Badge_PillOutline_LG_LeadingIcon_B
     Badge_PillColor_SM_Success,
     Badge_PillColor_SM_GrayBlue,
     Badge_PillColor_SM_BlueLight,
+    Badge_PillColor_SM_Blue,
 };
