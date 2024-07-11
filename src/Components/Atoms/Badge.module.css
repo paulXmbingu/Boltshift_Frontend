@@ -50,3 +50,46 @@
     width: 12px;
     height: 12px;
 }
+
+/* PILL COLOR SMALL */
+.Badge_PillColor_SM_GrayWrap {
+    display: inline-flex;
+    padding: var(--spacing-xxs, 2px) var(--spacing-md, 8px);
+    align-items: center;
+    border-radius: var(--radius-full, 9999px);
+    border: 1px solid var(--Component-colors-Utility-Gray-utility-gray-200, #EAECF0);
+    background: var(--Component-colors-Utility-Gray-utility-gray-50, #F9FAFB);
+}
+
+.Badge_PillColor_SM_GrayLabel {
+    color: var(--Component-colors-Utility-Gray-utility-gray-700, #344054);
+    text-align: center;
+
+    /* Text xs/Medium */
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px; /* 150% */
+}
+
+.Badge_PillColor_SM_BrandWrap {
+    display: inline-flex;
+    padding: var(--spacing-xxs, 2px) var(--spacing-md, 8px);
+    align-items: center;
+    border-radius: var(--radius-full, 9999px);
+    border: 1px solid var(--Component-colors-Utility-Brand-utility-brand-200, #FACCD9);
+    background: var(--Component-colors-Utility-Brand-utility-brand-50, #FEF1F5);
+}
+
+.Badge_PillColor_SM_BrandLabel {
+    color: var(--Component-colors-Utility-Brand-utility-brand-700, #BF1343);
+    text-align: center;
+    
+    /* Text xs/Medium */
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px; /* 150% */
+}

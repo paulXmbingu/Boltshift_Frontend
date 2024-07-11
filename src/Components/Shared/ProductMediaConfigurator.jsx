@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { ProductMediaThumbnailMD } from "./ProductMediaThumbnail";
 import { Btn_Pri_XL, Btn_Sec_Color_SM, Btn_Sec_Gray_SM } from "../Atoms/Button";
 import StoreLabel from "./StoreLabel";
-import { Badge_PillOutline_LG_LeadingIcon_BrandColor } from "../Atoms/Badge";
+import { Badge_PillColor_SM_Brand, Badge_PillColor_SM_Gray, Badge_PillOutline_LG_LeadingIcon_BrandColor } from "../Atoms/Badge";
 import arrowdown from "../../assets/Icons/UI/arrow-down.svg"
 import { StarRating4 } from "../Molecules/StarRating";
 
@@ -37,7 +37,20 @@ const ProductMediaConfigurator = () => {
                     </div>
                     <div className={styles.productDescriptionSummary}> Discover the essence of African craftsmanship with our elegant dress, meticulously designed in Voi town, Kenya. Embracing vibrant local culture and artistry, each dress is crafted with care, blending traditional motifs with contemporary flair. Perfect for any occasion, this dress embodies the rich heritage and craftsmanship of Kenya, offering both style and cultural significance. Dress up with a piece that celebrates authenticity and beauty from Voi town to the world. </div>
                 </div>
-                <div> Product Tags </div>
+                <div className={styles.productTags}>
+                    <Badge_PillColor_SM_Gray BadgeLabel={`New Arrival`} />
+                    <Badge_PillColor_SM_Brand BadgeLabel={`Best Sellers`} />
+                    <Badge_PillColor_SM_Gray BadgeLabel={`New Arrival`} />
+                    <Badge_PillColor_SM_Gray BadgeLabel={`New Arrival`} />
+                    <Badge_PillColor_SM_Gray BadgeLabel={`New Arrival`} />
+                    <Badge_PillColor_SM_Gray BadgeLabel={`New Arrival`} />
+                    <Badge_PillColor_SM_Gray BadgeLabel={`New Arrival`} />
+                    <Badge_PillColor_SM_Gray BadgeLabel={`New Arrival`} />
+                    <Badge_PillColor_SM_Gray BadgeLabel={`New Arrival`} />
+                    <Badge_PillColor_SM_Gray BadgeLabel={`New Arrival`} />
+                    <Badge_PillColor_SM_Gray BadgeLabel={`New Arrival`} />
+                    <Badge_PillColor_SM_Gray BadgeLabel={`New Arrival`} />
+                </div>
                 <div> Product Options 1 </div>
                 <div> Product Options 2 </div>
                 <div className={styles.price}>
