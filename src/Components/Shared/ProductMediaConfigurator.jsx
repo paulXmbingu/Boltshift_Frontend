@@ -6,6 +6,7 @@ import { Btn_Pri_XL, Btn_Sec_Color_SM, Btn_Sec_Gray_SM } from "../Atoms/Button";
 import StoreLabel from "./StoreLabel";
 import { Badge_PillOutline_LG_LeadingIcon_BrandColor } from "../Atoms/Badge";
 import arrowdown from "../../assets/Icons/UI/arrow-down.svg"
+import { StarRating4 } from "../Molecules/StarRating";
 
 const ProductMediaConfigurator = () => {
     return (
@@ -30,7 +31,10 @@ const ProductMediaConfigurator = () => {
                 <StoreLabel StoreName={`Senjes Cuisines Store`} />
                 <div className={styles.productRatingSummary}>
                     <div className={styles.productName}> Xpluswear Design Plus Size Mother Of The Bride Elegant Champagne Long Sleeve Split Pocket Satin Two Piece Dress Set View </div>
-                    <div> Rating & Review Counter </div>
+                    <div className={styles.starRatingReviewCounter}>
+                        <StarRating4 />
+                        <div className={styles.reviewCounter}> (123.46k reviews) </div>
+                    </div>
                     <div className={styles.productDescriptionSummary}> Discover the essence of African craftsmanship with our elegant dress, meticulously designed in Voi town, Kenya. Embracing vibrant local culture and artistry, each dress is crafted with care, blending traditional motifs with contemporary flair. Perfect for any occasion, this dress embodies the rich heritage and craftsmanship of Kenya, offering both style and cultural significance. Dress up with a piece that celebrates authenticity and beauty from Voi town to the world. </div>
                 </div>
                 <div> Product Tags </div>
