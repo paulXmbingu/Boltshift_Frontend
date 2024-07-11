@@ -43,3 +43,16 @@
     flex: 1 0 0;
     flex-wrap: wrap;
 }
+
+.PageHeaderSection {
+    display: flex;
+min-width: var(--spacing-system-guides-corner-radius-84, 336px);
+max-width: var(--grid-layouts-desktop-1280-px, 1280px);
+padding: var(--Base-4-Premitives-4, 16px);
+align-items: center;
+align-content: center;
+gap: var(--Base-4-Premitives-6, 24px) var(--Base-4-Premitives-8, 32px);
+align-self: stretch;
+flex-wrap: wrap;
+background: var(--Colors-Background-bg-primary, #FFF);
+}
