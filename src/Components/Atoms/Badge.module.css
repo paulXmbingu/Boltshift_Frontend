@@ -93,3 +93,66 @@
     font-weight: 500;
     line-height: 18px; /* 150% */
 }
+
+.Badge_PillColor_SM_ErrorWrap {
+    display: inline-flex;
+    padding: var(--spacing-xxs, 2px) var(--spacing-md, 8px);
+    align-items: center;
+    border-radius: var(--radius-full, 9999px);
+    border: 1px solid var(--Component-colors-Utility-Error-utility-error-200, #FECDCA);
+    background: var(--Component-colors-Utility-Error-utility-error-50, #FEF3F2);
+}
+
+.Badge_PillColor_SM_ErrorLabel {
+    color: var(--Component-colors-Utility-Error-utility-error-700, #B42318);
+    text-align: center;
+    
+    /* Text xs/Medium */
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px; /* 150% */
+}
+
+.Badge_PillColor_SM_WarningWrap {
+    display: inline-flex;
+    padding: var(--spacing-xxs, 2px) var(--spacing-md, 8px);
+    align-items: center;
+    border-radius: var(--radius-full, 9999px);
+    border: 1px solid var(--Component-colors-Utility-Warning-utility-warning-200, #FEDF89);
+    background: var(--Component-colors-Utility-Warning-utility-warning-50, #FFFAEB);
+}
+
+.Badge_PillColor_SM_WarningLabel {
+    color: var(--Component-colors-Utility-Warning-utility-warning-700, #B54708);
+    text-align: center;
+    
+    /* Text xs/Medium */
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px; /* 150% */
+}
+
+.Badge_PillColor_SM_SuccessWrap {
+    display: inline-flex;
+    padding: var(--spacing-xxs, 2px) var(--spacing-md, 8px);
+    align-items: center;
+    border-radius: var(--radius-full, 9999px);
+    border: 1px solid var(--Component-colors-Utility-Success-utility-success-200, #ABEFC6);
+    background: var(--Component-colors-Utility-Success-utility-success-50, #ECFDF3);
+}
+
+.Badge_PillColor_SM_SuccessLabel {
+    color: var(--Component-colors-Utility-Success-utility-success-700, #067647);
+    text-align: center;
+    
+    /* Text xs/Medium */
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px; /* 150% */
+}

@@ -38,8 +38,35 @@ const Badge_PillColor_SM_Brand = ({BadgeLabel,}) => {
     );
 };
 
+const Badge_PillColor_SM_Error = ({BadgeLabel,}) => {
+    return (
+        <div className={styles.Badge_PillColor_SM_ErrorWrap}>
+            <div className={styles.Badge_PillColor_SM_ErrorLabel}> {BadgeLabel} </div>
+        </div>
+    );
+};
+
+const Badge_PillColor_SM_Warning = ({BadgeLabel,}) => {
+    return (
+        <div className={styles.Badge_PillColor_SM_WarningWrap}>
+            <div className={styles.Badge_PillColor_SM_WarningLabel}> {BadgeLabel} </div>
+        </div>
+    );
+};
+
+const Badge_PillColor_SM_Success = ({BadgeLabel,}) => {
+    return (
+        <div className={styles.Badge_PillColor_SM_SuccessWrap}>
+            <div className={styles.Badge_PillColor_SM_SuccessLabel}> {BadgeLabel} </div>
+        </div>
+    );
+};
+
 export { Badge_PillColor_SM_LeadIcon_Success, Badge_PillOutline_LG_LeadingIcon_BrandColor,
     //PILL COLOR SMALL
     Badge_PillColor_SM_Gray,
     Badge_PillColor_SM_Brand,
+    Badge_PillColor_SM_Error,
+    Badge_PillColor_SM_Warning,
+    Badge_PillColor_SM_Success,
 };
