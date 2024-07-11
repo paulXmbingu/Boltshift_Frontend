@@ -33,7 +33,10 @@ const ProductMediaConfigurator = () => {
                 <div> Product Tags </div>
                 <div> Product Options 1 </div>
                 <div> Product Options 2 </div>
-                <div> Price </div>
+                <div className={styles.price}>
+                    <div className={styles.currency}> Ksh. </div>
+                    <div className={styles.priceValue}> 70,721 </div>
+                </div>
                 <div className={styles.CTAs}> 
                     <div className={styles.secondaryCTAs}>
                         <Btn_Sec_Gray_SM ButtonCTA={`- 1 +`} />
