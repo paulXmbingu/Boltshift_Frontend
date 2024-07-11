@@ -1,4 +1,4 @@
-.Badge_PillColor_SM_LeadIcon_SuccessWrap{
+.Badge_PillColor_SM_LeadIcon_SuccessWrap {
     display: inline-flex;
     padding: var(--spacing-xxs, 2px) var(--spacing-md, 8px) var(--spacing-xxs, 2px) var(--spacing-sm, 6px);
     align-items: center;
@@ -8,7 +8,7 @@
     background: var(--Component-colors-Utility-Success-utility-success-50, #ECFDF3);
 }
 
-.Badge_PillColor_SM_LeadIcon_SuccessLabel{
+.Badge_PillColor_SM_LeadIcon_SuccessLabel {
     color: var(--Component-colors-Utility-Success-utility-success-700, #067647);
     text-align: center;
 
@@ -20,7 +20,33 @@
     line-height: 18px; /* 150% */
 }
 
-.Badge_PillColor_SM_LeadIcon_SuccesIcon{
+.Badge_PillColor_SM_LeadIcon_SuccesIcon {
+    width: 12px;
+    height: 12px;
+}
+
+.badge_PillOutline_LG_LeadingIcon_BrandColorWrap {
+    display: inline-flex;
+    padding: var(--spacing-xs, 4px) var(--spacing-lg, 12px) var(--spacing-xs, 4px) 10px;
+    align-items: center;
+    gap: var(--spacing-xs, 4px);
+    border-radius: var(--radius-full, 9999px);
+    border: 1.5px solid var(--Component-colors-Utility-Brand-utility-brand-600, #DA154D);
+}
+
+.badge_PillOutline_LG_LeadingIcon_BrandColorBadgeLabel {
+    color: var(--Component-colors-Utility-Brand-utility-brand-700, #BF1343);
+    text-align: center;
+    
+    /* Text sm/Medium */
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px; /* 142.857% */
+}
+
+.badge_PillOutline_LG_LeadingIcon_BrandColorBadgeIcon {
     width: 12px;
     height: 12px;
 }
