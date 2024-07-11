@@ -517,3 +517,91 @@
     width: 20px;
     height: 20px;
 }
+
+.Btn_Sec_Color_XL {
+    display: inline-flex;
+    padding: var(--spacing-lg, 12px) 18px;
+    justify-content: center;
+    align-items: center;
+    gap: var(--spacing-sm, 6px);
+    border-radius: var(--radius-md, 8px);
+    border: 1px solid var(--Component-colors-Components-Buttons-Secondary-color-button-secondary-color-border, #F7ABC1);
+    background: var(--Component-colors-Components-Buttons-Secondary-color-button-secondary-color-bg, #FFF);
+
+    /* Shadows/shadow-xs */
+    box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+    cursor: pointer;
+    transition: all 0.1s ease;
+    outline: none;
+    width: 100%; 
+}
+
+.Btn_Sec_Color_XL:hover {
+    display: inline-flex;
+    padding: var(--spacing-lg, 12px) 18px;
+    justify-content: center;
+    align-items: center;
+    gap: var(--spacing-sm, 6px);
+    border-radius: var(--radius-md, 8px);
+    border: 1px solid var(--Component-colors-Components-Buttons-Secondary-color-button-secondary-color-border_hover, #F7ABC1);
+    background: var(--Component-colors-Components-Buttons-Secondary-color-button-secondary-color-bg_hover, #FEF1F5);
+
+    /* Shadows/shadow-xs */
+    box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+}
+
+.Btn_Sec_Color_XL:focus {
+    display: inline-flex;
+    padding: var(--spacing-lg, 12px) 18px;
+    justify-content: center;
+    align-items: center;
+    gap: var(--spacing-sm, 6px);
+    border-radius: var(--radius-md, 8px);
+    border: 1px solid var(--Component-colors-Components-Buttons-Secondary-color-button-secondary-color-border, #F7ABC1);
+    background: var(--Component-colors-Components-Buttons-Secondary-color-button-secondary-color-bg, #FFF);
+
+    /* Focus rings/ring-brand-shadow-xs */
+    box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05), 0px 0px 0px 4px rgba(234, 39, 94, 0.24);
+}
+
+.Btn_Sec_Color_XL:disabled {
+    display: inline-flex;
+    padding: var(--spacing-lg, 12px) 18px;
+    justify-content: center;
+    align-items: center;
+    gap: var(--spacing-sm, 6px);
+    border-radius: var(--radius-md, 8px);
+    border: 1px solid var(--Colors-Border-border-disabled_subtle, #EAECF0);
+    background: var(--Colors-Background-bg-primary, #FFF);
+
+    /* Shadows/shadow-xs */
+    box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+}
+
+.Btn_Sec_Color_XLLeadingIcon {
+    width: 20px;
+    height: 20px;
+}
+
+.Btn_Sec_Color_XLCTAWrap {
+    display: flex;
+    padding: var(--spacing-none, 0px) var(--spacing-xxs, 2px);
+    justify-content: center;
+    align-items: center;
+}
+
+.Btn_Sec_Color_XLCTA {
+    color: var(--Component-colors-Components-Buttons-Secondary-color-button-secondary-color-fg, #BF1343);
+
+    /* Text md/Semibold */
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px; /* 150% */
+}
+
+.Btn_Sec_Color_XLTrailingIcon {
+    width: 20px;
+    height: 20px;
+}
