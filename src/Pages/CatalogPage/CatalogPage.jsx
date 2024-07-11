@@ -5,7 +5,9 @@ import Footer from "../../Components/Shared/Footer";
 import ProductCatalogCard from "../../Components/Shared/ProductCatalogCard";
 import SectionHeader from "../../Components/Shared/SectionHeader";
 import bag from '../../assets/Icons/UI/Shopping bags (1).svg';
+import Chevron from '../../assets/Icons/UI/chevron-right (1).svg';
 import SearchResultOutput from "../../Components/Molecules/SearchResultOutput";
+import BreadCrumb from "../../Components/Shared/BreadCrumb";
 
 function CatalogPage() {
     const [isLargeScreen, setIsLargeScreen] = useState(typeof window !== "undefined" ? window.innerWidth > 768 : false);
@@ -22,7 +24,9 @@ function CatalogPage() {
     return (
          <div className={styles.pageLayout}>
             {isLargeScreen ? <TopNavLarge /> : <TopNavSmall />}
-            <div> Breadcrum </div> 
+            <div className={styles.BreadCrumb}>
+                <BreadCrumb BreadCrumbText={`CatalogPage`} chevron={Chevron} MenFashion={`Men's Fashion`} watches={`Whatches`} OrlandoWatch={`Orlando Men Stainless Steel Quartz Watch`} />
+            </div>
             <div className={styles.PageHeaderSection}>
                 <SectionHeader icon={bag}  headerTitle={`Catalog`} />
                 <SearchResultOutput NoOfHits={`366 results for the search of`} SearchPhrase={`"luxury contemporary watch"`} />
