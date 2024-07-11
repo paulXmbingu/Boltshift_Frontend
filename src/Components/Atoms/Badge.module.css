@@ -219,3 +219,24 @@
     font-weight: 500;
     line-height: 18px; /* 150% */
 }
+
+.Badge_PillColor_SM_IndigoWrap {
+    display: inline-flex;
+    padding: var(--spacing-xxs, 2px) var(--spacing-md, 8px);
+    align-items: center;
+    border-radius: var(--radius-full, 9999px);
+    border: 1px solid var(--Component-colors-Utility-Indigo-utility-indigo-200, #C7D7FE);
+    background: var(--Component-colors-Utility-Indigo-utility-indigo-50, #EEF4FF);
+}
+
+.Badge_PillColor_SM_IndigoLabel {
+    color: var(--Component-colors-Utility-Indigo-utility-indigo-700, #3538CD);
+    text-align: center;
+    
+    /* Text xs/Medium */
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px; /* 150% */
+}
