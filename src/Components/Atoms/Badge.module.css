@@ -282,3 +282,24 @@
     font-weight: 500;
     line-height: 18px; /* 150% */
 }
+
+.Badge_PillColor_SM_OrangeWrap {
+    display: inline-flex;
+    padding: var(--spacing-xxs, 2px) var(--spacing-md, 8px);
+    align-items: center;
+    border-radius: var(--radius-full, 9999px);
+    border: 1px solid var(--Component-colors-Utility-Orange-utility-orange-200, #F9DBAF);
+    background: var(--Component-colors-Utility-Orange-utility-orange-50, #FEF6EE);
+}
+
+.Badge_PillColor_SM_OrangeLabel {
+    color: var(--Component-colors-Utility-Orange-utility-orange-700, #B93815);
+    text-align: center;
+    
+    /* Text xs/Medium */
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px; /* 150% */
+}
