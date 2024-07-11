@@ -261,3 +261,24 @@
     font-weight: 500;
     line-height: 18px; /* 150% */
 }
+
+.Badge_PillColor_SM_PinkWrap {
+    display: inline-flex;
+    padding: var(--spacing-xxs, 2px) var(--spacing-md, 8px);
+    align-items: center;
+    border-radius: var(--radius-full, 9999px);
+    border: 1px solid var(--Component-colors-Utility-Pink-utility-pink-200, #FCCEEE);
+    background: var(--Component-colors-Utility-Pink-utility-pink-50, #FDF2FA);
+}
+
+.Badge_PillColor_SM_PinkLabel {
+    color: var(--Component-colors-Utility-Pink-utility-pink-700, #C11574);
+    text-align: center;
+    
+    /* Text xs/Medium */
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px; /* 150% */
+}
