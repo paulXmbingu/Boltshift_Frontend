@@ -1,8 +1,11 @@
 import React from "react";
 import styles from './ProductMediaConfigurator.module.css'
+import { Link } from "react-router-dom";
 import { ProductMediaThumbnailMD } from "./ProductMediaThumbnail";
 import { Btn_Pri_XL, Btn_Sec_Color_SM, Btn_Sec_Gray_SM } from "../Atoms/Button";
-import { Link } from "react-router-dom";
+import StoreLabel from "./StoreLabel";
+import { Badge_PillOutline_LG_LeadingIcon_BrandColor } from "../Atoms/Badge";
+import arrowdown from "../../assets/Icons/UI/arrow-down.svg"
 
 const ProductMediaConfigurator = () => {
     return (
@@ -23,8 +26,8 @@ const ProductMediaConfigurator = () => {
                 </div>
             </div>
             <div className={styles.productDetails}>
-                <div> Top Badge </div>
-                <div> Store Label </div>
+                <Badge_PillOutline_LG_LeadingIcon_BrandColor BadgeLabel={`50% Discount`} LeadingIcon={arrowdown} />
+                <StoreLabel StoreName={`Senjes Cuisines Store`} />
                 <div className={styles.productRatingSummary}>
                     <div className={styles.productName}> Xpluswear Design Plus Size Mother Of The Bride Elegant Champagne Long Sleeve Split Pocket Satin Two Piece Dress Set View </div>
                     <div> Rating & Review Counter </div>
@@ -33,7 +36,10 @@ const ProductMediaConfigurator = () => {
                 <div> Product Tags </div>
                 <div> Product Options 1 </div>
                 <div> Product Options 2 </div>
-                <div> Price </div>
+                <div className={styles.price}>
+                    <div className={styles.currency}> Ksh. </div>
+                    <div className={styles.priceValue}> 70,721 </div>
+                </div>
                 <div className={styles.CTAs}> 
                     <div className={styles.secondaryCTAs}>
                         <Btn_Sec_Gray_SM ButtonCTA={`- 1 +`} />
