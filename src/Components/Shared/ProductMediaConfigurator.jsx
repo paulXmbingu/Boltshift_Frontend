@@ -1,9 +1,11 @@
 import React from "react";
 import styles from './ProductMediaConfigurator.module.css'
+import { Link } from "react-router-dom";
 import { ProductMediaThumbnailMD } from "./ProductMediaThumbnail";
 import { Btn_Pri_XL, Btn_Sec_Color_SM, Btn_Sec_Gray_SM } from "../Atoms/Button";
-import { Link } from "react-router-dom";
 import StoreLabel from "./StoreLabel";
+import { Badge_PillOutline_LG_LeadingIcon_BrandColor } from "../Atoms/Badge";
+import arrowdown from "../../assets/Icons/UI/arrow-down.svg"
 
 const ProductMediaConfigurator = () => {
     return (
@@ -24,7 +26,7 @@ const ProductMediaConfigurator = () => {
                 </div>
             </div>
             <div className={styles.productDetails}>
-                <div> Top Badge </div>
+                <Badge_PillOutline_LG_LeadingIcon_BrandColor BadgeLabel={`50% Discount`} LeadingIcon={arrowdown} />
                 <StoreLabel StoreName={`Senjes Cuisines Store`} />
                 <div className={styles.productRatingSummary}>
                     <div className={styles.productName}> Xpluswear Design Plus Size Mother Of The Bride Elegant Champagne Long Sleeve Split Pocket Satin Two Piece Dress Set View </div>
