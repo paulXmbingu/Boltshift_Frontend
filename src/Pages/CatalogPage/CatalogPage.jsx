@@ -23,10 +23,8 @@ function CatalogPage() {
          <div className={styles.pageLayout}>
             {isLargeScreen ? <TopNavLarge /> : <TopNavSmall />}
             <div> Breadcrum </div> 
-            <div className={styles.PageHeader}>
-                <div className={styles.Header}>
-                  <SectionHeader icon={bag}  headerTitle={`Catalog`} />
-                </div>
+            <div className={styles.PageHeaderSection}>
+                <SectionHeader icon={bag}  headerTitle={`Catalog`} />
                 <SearchResultOutput NoOfHits={`366 results for the search of`} SearchPhrase={`"luxury contemporary watch"`} />
             </div> 
             <div className={styles.FilterAndProduct}>
