@@ -167,3 +167,23 @@
     line-height: 30px; /* 150% */
     line-clamp: 1;
  }
+
+ .starRatingReviewCounter {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    gap: 8px var(--spacing-system-guides-corner-radius-2, 8px);
+    align-self: stretch;
+    flex-wrap: wrap;
+ }
+
+ .reviewCounter {
+    color: var(--colors-text-text-quarterary-500, #667085);
+
+    /* Text sm/Regular */
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 142.857% */
+ }
