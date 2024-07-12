@@ -43,6 +43,18 @@ const Btn_Sec_Gray_SM = ({ iconLeading, ButtonCTA, iconTrailing }) => {
     );
 };
 
+const Btn_Sec_Color_XL = ({LeadingIcon, ButtonCTA, TrailingIcon}) => {
+    return (
+        <div className={styles.Btn_Sec_Color_XL}>
+            {LeadingIcon && <img src={LeadingIcon} alt="Leading Icon" className={styles.Btn_Sec_Color_XLLeadingIcon} />}
+            <div className={styles.Btn_Sec_Color_XLCTAWrap}>
+                <div className={styles.Btn_Sec_Color_XLCTA}> {ButtonCTA} </div>
+            </div>
+            {TrailingIcon && <img src={TrailingIcon} alt="Trailing Icon" className={styles.Btn_Sec_Color_XLTrailingIcon} />}
+        </div>
+    )
+}
+
 const Btn_Sec_Color_SM = ({ iconLeading, ButtonCTA, iconTrailing }) => {
     return (
         <button className={styles.secColorSM}>
@@ -101,4 +113,13 @@ const Btn_Ter_LG = ({ iconLeading, ButtonCTA, iconTrailing }) => {
     );
 };
 
-export { Btn_Pri_SM, Btn_Sec_Gray_SM, Btn_Sec_Color_SM, Btn_Ter_Grey_SM, Btn_Primary_MD, Btn_Primary_LG, Btn_Ter_LG, Btn_Pri_XL };
+export { Btn_Pri_SM,
+    Btn_Pri_XL,
+    Btn_Primary_MD,
+    Btn_Primary_LG, 
+    Btn_Sec_Gray_SM, 
+    Btn_Sec_Color_SM,
+    Btn_Sec_Color_XL,
+    Btn_Ter_Grey_SM,
+    Btn_Ter_LG, 
+ };

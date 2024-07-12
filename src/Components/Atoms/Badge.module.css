@@ -50,3 +50,256 @@
     width: 12px;
     height: 12px;
 }
+
+/* PILL COLOR SMALL */
+.Badge_PillColor_SM_GrayWrap {
+    display: inline-flex;
+    padding: var(--spacing-xxs, 2px) var(--spacing-md, 8px);
+    align-items: center;
+    border-radius: var(--radius-full, 9999px);
+    border: 1px solid var(--Component-colors-Utility-Gray-utility-gray-200, #EAECF0);
+    background: var(--Component-colors-Utility-Gray-utility-gray-50, #F9FAFB);
+}
+
+.Badge_PillColor_SM_GrayLabel {
+    color: var(--Component-colors-Utility-Gray-utility-gray-700, #344054);
+    text-align: center;
+
+    /* Text xs/Medium */
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px; /* 150% */
+}
+
+.Badge_PillColor_SM_BrandWrap {
+    display: inline-flex;
+    padding: var(--spacing-xxs, 2px) var(--spacing-md, 8px);
+    align-items: center;
+    border-radius: var(--radius-full, 9999px);
+    border: 1px solid var(--Component-colors-Utility-Brand-utility-brand-200, #FACCD9);
+    background: var(--Component-colors-Utility-Brand-utility-brand-50, #FEF1F5);
+}
+
+.Badge_PillColor_SM_BrandLabel {
+    color: var(--Component-colors-Utility-Brand-utility-brand-700, #BF1343);
+    text-align: center;
+    
+    /* Text xs/Medium */
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px; /* 150% */
+}
+
+.Badge_PillColor_SM_ErrorWrap {
+    display: inline-flex;
+    padding: var(--spacing-xxs, 2px) var(--spacing-md, 8px);
+    align-items: center;
+    border-radius: var(--radius-full, 9999px);
+    border: 1px solid var(--Component-colors-Utility-Error-utility-error-200, #FECDCA);
+    background: var(--Component-colors-Utility-Error-utility-error-50, #FEF3F2);
+}
+
+.Badge_PillColor_SM_ErrorLabel {
+    color: var(--Component-colors-Utility-Error-utility-error-700, #B42318);
+    text-align: center;
+    
+    /* Text xs/Medium */
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px; /* 150% */
+}
+
+.Badge_PillColor_SM_WarningWrap {
+    display: inline-flex;
+    padding: var(--spacing-xxs, 2px) var(--spacing-md, 8px);
+    align-items: center;
+    border-radius: var(--radius-full, 9999px);
+    border: 1px solid var(--Component-colors-Utility-Warning-utility-warning-200, #FEDF89);
+    background: var(--Component-colors-Utility-Warning-utility-warning-50, #FFFAEB);
+}
+
+.Badge_PillColor_SM_WarningLabel {
+    color: var(--Component-colors-Utility-Warning-utility-warning-700, #B54708);
+    text-align: center;
+    
+    /* Text xs/Medium */
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px; /* 150% */
+}
+
+.Badge_PillColor_SM_SuccessWrap {
+    display: inline-flex;
+    padding: var(--spacing-xxs, 2px) var(--spacing-md, 8px);
+    align-items: center;
+    border-radius: var(--radius-full, 9999px);
+    border: 1px solid var(--Component-colors-Utility-Success-utility-success-200, #ABEFC6);
+    background: var(--Component-colors-Utility-Success-utility-success-50, #ECFDF3);
+}
+
+.Badge_PillColor_SM_SuccessLabel {
+    color: var(--Component-colors-Utility-Success-utility-success-700, #067647);
+    text-align: center;
+    
+    /* Text xs/Medium */
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px; /* 150% */
+}
+
+.Badge_PillColor_SM_GrayBlueWrap {
+    display: inline-flex;
+    padding: var(--spacing-xxs, 2px) var(--spacing-md, 8px);
+    align-items: center;
+    border-radius: var(--radius-full, 9999px);
+    border: 1px solid var(--Component-colors-Utility-Gray-blue-utility-gray-blue-200, #D5D9EB);
+    background: var(--Component-colors-Utility-Gray-blue-utility-gray-blue-50, #F8F9FC);
+}
+
+.Badge_PillColor_SM_GrayBlueLabel {
+    color: var(--Component-colors-Utility-Gray-blue-utility-gray-blue-700, #363F72);
+    text-align: center;
+    
+    /* Text xs/Medium */
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px; /* 150% */
+}
+
+.Badge_PillColor_SM_BlueLightWrap {
+    display: inline-flex;
+    padding: var(--spacing-xxs, 2px) var(--spacing-md, 8px);
+    align-items: center;
+    border-radius: var(--radius-full, 9999px);
+    border: 1px solid var(--Component-colors-Utility-Blue-light-utility-blue-light-200, #B9E6FE);
+    background: var(--Component-colors-Utility-Blue-light-utility-blue-light-50, #F0F9FF);
+}
+
+.Badge_PillColor_SM_BlueLightLabel {
+    color: var(--Component-colors-Utility-Blue-light-utility-blue-light-700, #026AA2);
+    text-align: center;
+    
+    /* Text xs/Medium */
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px; /* 150% */
+}
+
+.Badge_PillColor_SM_BlueWrap {
+    display: inline-flex;
+    padding: var(--spacing-xxs, 2px) var(--spacing-md, 8px);
+    align-items: center;
+    border-radius: var(--radius-full, 9999px);
+    border: 1px solid var(--Component-colors-Utility-Blue-utility-blue-200, #B2DDFF);
+    background: var(--Component-colors-Utility-Blue-utility-blue-50, #EFF8FF);
+}
+
+.Badge_PillColor_SM_BlueLabel {
+    color: var(--Component-colors-Utility-Blue-utility-blue-700, #175CD3);
+    text-align: center;
+    
+    /* Text xs/Medium */
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px; /* 150% */
+}
+
+.Badge_PillColor_SM_IndigoWrap {
+    display: inline-flex;
+    padding: var(--spacing-xxs, 2px) var(--spacing-md, 8px);
+    align-items: center;
+    border-radius: var(--radius-full, 9999px);
+    border: 1px solid var(--Component-colors-Utility-Indigo-utility-indigo-200, #C7D7FE);
+    background: var(--Component-colors-Utility-Indigo-utility-indigo-50, #EEF4FF);
+}
+
+.Badge_PillColor_SM_IndigoLabel {
+    color: var(--Component-colors-Utility-Indigo-utility-indigo-700, #3538CD);
+    text-align: center;
+    
+    /* Text xs/Medium */
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px; /* 150% */
+}
+
+.Badge_PillColor_SM_PurpleWrap {
+    display: inline-flex;
+    padding: var(--spacing-xxs, 2px) var(--spacing-md, 8px);
+    align-items: center;
+    border-radius: var(--radius-full, 9999px);
+    border: 1px solid var(--Component-colors-Utility-Purple-utility-purple-200, #D9D6FE);
+    background: var(--Component-colors-Utility-Purple-utility-purple-50, #F4F3FF);
+}
+
+.Badge_PillColor_SM_PurpleLabel {
+    color: var(--Component-colors-Utility-Purple-utility-purple-700, #5925DC);
+    text-align: center;
+    
+    /* Text xs/Medium */
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px; /* 150% */
+}
+
+.Badge_PillColor_SM_PinkWrap {
+    display: inline-flex;
+    padding: var(--spacing-xxs, 2px) var(--spacing-md, 8px);
+    align-items: center;
+    border-radius: var(--radius-full, 9999px);
+    border: 1px solid var(--Component-colors-Utility-Pink-utility-pink-200, #FCCEEE);
+    background: var(--Component-colors-Utility-Pink-utility-pink-50, #FDF2FA);
+}
+
+.Badge_PillColor_SM_PinkLabel {
+    color: var(--Component-colors-Utility-Pink-utility-pink-700, #C11574);
+    text-align: center;
+    
+    /* Text xs/Medium */
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px; /* 150% */
+}
+
+.Badge_PillColor_SM_OrangeWrap {
+    display: inline-flex;
+    padding: var(--spacing-xxs, 2px) var(--spacing-md, 8px);
+    align-items: center;
+    border-radius: var(--radius-full, 9999px);
+    border: 1px solid var(--Component-colors-Utility-Orange-utility-orange-200, #F9DBAF);
+    background: var(--Component-colors-Utility-Orange-utility-orange-50, #FEF6EE);
+}
+
+.Badge_PillColor_SM_OrangeLabel {
+    color: var(--Component-colors-Utility-Orange-utility-orange-700, #B93815);
+    text-align: center;
+    
+    /* Text xs/Medium */
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px; /* 150% */
+}

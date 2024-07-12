@@ -20,4 +20,116 @@ const Badge_PillOutline_LG_LeadingIcon_BrandColor = ({LeadingIcon, BadgeLabel,})
     );
 };
 
-export { Badge_PillColor_SM_LeadIcon_Success, Badge_PillOutline_LG_LeadingIcon_BrandColor };
+//PILL COLOR SMALL
+
+const Badge_PillColor_SM_Gray = ({BadgeLabel,}) => {
+    return (
+        <div className={styles.Badge_PillColor_SM_GrayWrap}>
+            <div className={styles.Badge_PillColor_SM_GrayLabel}> {BadgeLabel} </div>
+        </div>
+    );
+};
+
+const Badge_PillColor_SM_Brand = ({BadgeLabel,}) => {
+    return (
+        <div className={styles.Badge_PillColor_SM_BrandWrap}>
+            <div className={styles.Badge_PillColor_SM_BrandLabel}> {BadgeLabel} </div>
+        </div>
+    );
+};
+
+const Badge_PillColor_SM_Error = ({BadgeLabel,}) => {
+    return (
+        <div className={styles.Badge_PillColor_SM_ErrorWrap}>
+            <div className={styles.Badge_PillColor_SM_ErrorLabel}> {BadgeLabel} </div>
+        </div>
+    );
+};
+
+const Badge_PillColor_SM_Warning = ({BadgeLabel,}) => {
+    return (
+        <div className={styles.Badge_PillColor_SM_WarningWrap}>
+            <div className={styles.Badge_PillColor_SM_WarningLabel}> {BadgeLabel} </div>
+        </div>
+    );
+};
+
+const Badge_PillColor_SM_Success = ({BadgeLabel,}) => {
+    return (
+        <div className={styles.Badge_PillColor_SM_SuccessWrap}>
+            <div className={styles.Badge_PillColor_SM_SuccessLabel}> {BadgeLabel} </div>
+        </div>
+    );
+};
+
+const Badge_PillColor_SM_GrayBlue = ({BadgeLabel,}) => {
+    return (
+        <div className={styles.Badge_PillColor_SM_GrayBlueWrap}>
+            <div className={styles.Badge_PillColor_SM_GrayBlueLabel}> {BadgeLabel} </div>
+        </div>
+    );
+};
+
+const Badge_PillColor_SM_BlueLight = ({BadgeLabel,}) => {
+    return (
+        <div className={styles.Badge_PillColor_SM_BlueLightWrap}>
+            <div className={styles.Badge_PillColor_SM_BlueLightLabel}> {BadgeLabel} </div>
+        </div>
+    );
+};
+
+const Badge_PillColor_SM_Blue = ({BadgeLabel,}) => {
+    return (
+        <div className={styles.Badge_PillColor_SM_BlueWrap}>
+            <div className={styles.Badge_PillColor_SM_BlueLabel}> {BadgeLabel} </div>
+        </div>
+    );
+};
+
+const Badge_PillColor_SM_Indigo = ({BadgeLabel,}) => {
+    return (
+        <div className={styles.Badge_PillColor_SM_IndigoWrap}>
+            <div className={styles.Badge_PillColor_SM_IndigoLabel}> {BadgeLabel} </div>
+        </div>
+    );
+};
+
+const Badge_PillColor_SM_Purple = ({BadgeLabel,}) => {
+    return (
+        <div className={styles.Badge_PillColor_SM_PurpleWrap}>
+            <div className={styles.Badge_PillColor_SM_PurpleLabel}> {BadgeLabel} </div>
+        </div>
+    );
+};
+
+const Badge_PillColor_SM_Pink = ({BadgeLabel,}) => {
+    return (
+        <div className={styles.Badge_PillColor_SM_PinkWrap}>
+            <div className={styles.Badge_PillColor_SM_PinkLabel}> {BadgeLabel} </div>
+        </div>
+    );
+};
+
+const Badge_PillColor_SM_Orange = ({BadgeLabel,}) => {
+    return (
+        <div className={styles.Badge_PillColor_SM_OrangeWrap}>
+            <div className={styles.Badge_PillColor_SM_OrangeLabel}> {BadgeLabel} </div>
+        </div>
+    );
+};
+
+export { Badge_PillColor_SM_LeadIcon_Success, Badge_PillOutline_LG_LeadingIcon_BrandColor,
+    //PILL COLOR SMALL
+    Badge_PillColor_SM_Gray,
+    Badge_PillColor_SM_Brand,
+    Badge_PillColor_SM_Error,
+    Badge_PillColor_SM_Warning,
+    Badge_PillColor_SM_Success,
+    Badge_PillColor_SM_GrayBlue,
+    Badge_PillColor_SM_BlueLight,
+    Badge_PillColor_SM_Blue,
+    Badge_PillColor_SM_Indigo,
+    Badge_PillColor_SM_Purple,
+    Badge_PillColor_SM_Pink,
+    Badge_PillColor_SM_Orange
+};
