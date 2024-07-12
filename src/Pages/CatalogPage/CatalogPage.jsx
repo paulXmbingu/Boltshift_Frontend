@@ -2,12 +2,12 @@ import React, { useState, useEffect } from "react";
 import styles from "./CatalogPage.module.css";
 import { TopNavLarge, TopNavSmall } from "../../Components/Shared/TopNav";
 import Footer from "../../Components/Shared/Footer";
-import ProductCatalogCard from "../../Components/Shared/ProductCatalogCard";
 import SectionHeader from "../../Components/Shared/SectionHeader";
 import bag from '../../assets/Icons/UI/Shopping bags (1).svg';
 import Chevron from '../../assets/Icons/UI/chevron-right (1).svg';
 import SearchResultOutput from "../../Components/Molecules/SearchResultOutput";
 import BreadCrumb from "../../Components/Shared/BreadCrumb";
+import ProductListing from "../../Components/Shared/ProductListing";
 
 function CatalogPage() {
     const [isLargeScreen, setIsLargeScreen] = useState(typeof window !== "undefined" ? window.innerWidth > 768 : false);
@@ -35,46 +35,7 @@ function CatalogPage() {
                 <div className={styles.filter}>
                     Filter Section
                 </div>
-                <div className={styles.ProductListing}>
-                    <ProductCatalogCard Images={`https://i.pinimg.com/564x/89/ef/81/89ef81b691654ec92ceafc1823a7e489.jpg`} Name={`Stylish Purple Double Breasted Men Two Piece Suit | Three Pocket Suit`} Currency={`Kshs `} Price={` 650`} CounterText={`(153.8k reviews)`} />
-                    <ProductCatalogCard Images={`https://i.pinimg.com/564x/89/ef/81/89ef81b691654ec92ceafc1823a7e489.jpg`} Name={`Stylish Purple Double Breasted Men Two Piece Suit | Three Pocket Suit`} Currency={`Kshs `} Price={` 650`} CounterText={`(153.8k reviews)`} />
-                    <ProductCatalogCard Images={`https://i.pinimg.com/564x/89/ef/81/89ef81b691654ec92ceafc1823a7e489.jpg`} Name={`Stylish Purple Double Breasted Men Two Piece Suit | Three Pocket Suit`} Currency={`Kshs `} Price={` 650`} CounterText={`(153.8k reviews)`} />
-                    <ProductCatalogCard Images={`https://i.pinimg.com/564x/89/ef/81/89ef81b691654ec92ceafc1823a7e489.jpg`} Name={`Stylish Purple Double Breasted Men Two Piece Suit | Three Pocket Suit`} Currency={`Kshs `} Price={` 650`} CounterText={`(153.8k reviews)`} />
-                    <ProductCatalogCard Images={`https://i.pinimg.com/564x/89/ef/81/89ef81b691654ec92ceafc1823a7e489.jpg`} Name={`Stylish Purple Double Breasted Men Two Piece Suit | Three Pocket Suit`} Currency={`Kshs `} Price={` 650`} CounterText={`(153.8k reviews)`} />
-                    <ProductCatalogCard Images={`https://i.pinimg.com/564x/89/ef/81/89ef81b691654ec92ceafc1823a7e489.jpg`} Name={`Stylish Purple Double Breasted Men Two Piece Suit | Three Pocket Suit`} Currency={`Kshs `} Price={` 650`} CounterText={`(153.8k reviews)`} />
-                    <ProductCatalogCard Images={`https://i.pinimg.com/564x/89/ef/81/89ef81b691654ec92ceafc1823a7e489.jpg`} Name={`Stylish Purple Double Breasted Men Two Piece Suit | Three Pocket Suit`} Currency={`Kshs `} Price={` 650`} CounterText={`(153.8k reviews)`} />
-                    <ProductCatalogCard Images={`https://i.pinimg.com/564x/89/ef/81/89ef81b691654ec92ceafc1823a7e489.jpg`} Name={`Stylish Purple Double Breasted Men Two Piece Suit | Three Pocket Suit`} Currency={`Kshs `} Price={` 650`} CounterText={`(153.8k reviews)`} />
-                    <ProductCatalogCard Images={`https://i.pinimg.com/564x/89/ef/81/89ef81b691654ec92ceafc1823a7e489.jpg`} Name={`Stylish Purple Double Breasted Men Two Piece Suit | Three Pocket Suit`} Currency={`Kshs `} Price={` 650`} CounterText={`(153.8k reviews)`} />
-                    <ProductCatalogCard Images={`https://i.pinimg.com/564x/89/ef/81/89ef81b691654ec92ceafc1823a7e489.jpg`} Name={`Stylish Purple Double Breasted Men Two Piece Suit | Three Pocket Suit`} Currency={`Kshs `} Price={` 650`} CounterText={`(153.8k reviews)`} />
-                    <ProductCatalogCard Images={`https://i.pinimg.com/564x/89/ef/81/89ef81b691654ec92ceafc1823a7e489.jpg`} Name={`Stylish Purple Double Breasted Men Two Piece Suit | Three Pocket Suit`} Currency={`Kshs `} Price={` 650`} CounterText={`(153.8k reviews)`} />
-                    <ProductCatalogCard Images={`https://i.pinimg.com/564x/89/ef/81/89ef81b691654ec92ceafc1823a7e489.jpg`} Name={`Stylish Purple Double Breasted Men Two Piece Suit | Three Pocket Suit`} Currency={`Kshs `} Price={` 650`} CounterText={`(153.8k reviews)`} />
-                    <ProductCatalogCard Images={`https://i.pinimg.com/564x/89/ef/81/89ef81b691654ec92ceafc1823a7e489.jpg`} Name={`Stylish Purple Double Breasted Men Two Piece Suit | Three Pocket Suit`} Currency={`Kshs `} Price={` 650`} CounterText={`(153.8k reviews)`} />
-                    <ProductCatalogCard Images={`https://i.pinimg.com/564x/89/ef/81/89ef81b691654ec92ceafc1823a7e489.jpg`} Name={`Stylish Purple Double Breasted Men Two Piece Suit | Three Pocket Suit`} Currency={`Kshs `} Price={` 650`} CounterText={`(153.8k reviews)`} />
-                    <ProductCatalogCard Images={`https://i.pinimg.com/564x/89/ef/81/89ef81b691654ec92ceafc1823a7e489.jpg`} Name={`Stylish Purple Double Breasted Men Two Piece Suit | Three Pocket Suit`} Currency={`Kshs `} Price={` 650`} CounterText={`(153.8k reviews)`} />
-                    <ProductCatalogCard Images={`https://i.pinimg.com/564x/89/ef/81/89ef81b691654ec92ceafc1823a7e489.jpg`} Name={`Stylish Purple Double Breasted Men Two Piece Suit | Three Pocket Suit`} Currency={`Kshs `} Price={` 650`} CounterText={`(153.8k reviews)`} />
-                    <ProductCatalogCard Images={`https://i.pinimg.com/564x/89/ef/81/89ef81b691654ec92ceafc1823a7e489.jpg`} Name={`Stylish Purple Double Breasted Men Two Piece Suit | Three Pocket Suit`} Currency={`Kshs `} Price={` 650`} CounterText={`(153.8k reviews)`} />
-                    <ProductCatalogCard Images={`https://i.pinimg.com/564x/89/ef/81/89ef81b691654ec92ceafc1823a7e489.jpg`} Name={`Stylish Purple Double Breasted Men Two Piece Suit | Three Pocket Suit`} Currency={`Kshs `} Price={` 650`} CounterText={`(153.8k reviews)`} />
-                    <ProductCatalogCard Images={`https://i.pinimg.com/564x/89/ef/81/89ef81b691654ec92ceafc1823a7e489.jpg`} Name={`Stylish Purple Double Breasted Men Two Piece Suit | Three Pocket Suit`} Currency={`Kshs `} Price={` 650`} CounterText={`(153.8k reviews)`} />
-                    <ProductCatalogCard Images={`https://i.pinimg.com/564x/89/ef/81/89ef81b691654ec92ceafc1823a7e489.jpg`} Name={`Stylish Purple Double Breasted Men Two Piece Suit | Three Pocket Suit`} Currency={`Kshs `} Price={` 650`} CounterText={`(153.8k reviews)`} />
-                    <ProductCatalogCard Images={`https://i.pinimg.com/564x/89/ef/81/89ef81b691654ec92ceafc1823a7e489.jpg`} Name={`Stylish Purple Double Breasted Men Two Piece Suit | Three Pocket Suit`} Currency={`Kshs `} Price={` 650`} CounterText={`(153.8k reviews)`} />
-                    <ProductCatalogCard Images={`https://i.pinimg.com/564x/89/ef/81/89ef81b691654ec92ceafc1823a7e489.jpg`} Name={`Stylish Purple Double Breasted Men Two Piece Suit | Three Pocket Suit`} Currency={`Kshs `} Price={` 650`} CounterText={`(153.8k reviews)`} />
-                    <ProductCatalogCard Images={`https://i.pinimg.com/564x/89/ef/81/89ef81b691654ec92ceafc1823a7e489.jpg`} Name={`Stylish Purple Double Breasted Men Two Piece Suit | Three Pocket Suit`} Currency={`Kshs `} Price={` 650`} CounterText={`(153.8k reviews)`} />
-                    <ProductCatalogCard Images={`https://i.pinimg.com/564x/89/ef/81/89ef81b691654ec92ceafc1823a7e489.jpg`} Name={`Stylish Purple Double Breasted Men Two Piece Suit | Three Pocket Suit`} Currency={`Kshs `} Price={` 650`} CounterText={`(153.8k reviews)`} />
-                    <ProductCatalogCard Images={`https://i.pinimg.com/564x/89/ef/81/89ef81b691654ec92ceafc1823a7e489.jpg`} Name={`Stylish Purple Double Breasted Men Two Piece Suit | Three Pocket Suit`} Currency={`Kshs `} Price={` 650`} CounterText={`(153.8k reviews)`} />
-                    <ProductCatalogCard Images={`https://i.pinimg.com/564x/89/ef/81/89ef81b691654ec92ceafc1823a7e489.jpg`} Name={`Stylish Purple Double Breasted Men Two Piece Suit | Three Pocket Suit`} Currency={`Kshs `} Price={` 650`} CounterText={`(153.8k reviews)`} />
-                    <ProductCatalogCard Images={`https://i.pinimg.com/564x/89/ef/81/89ef81b691654ec92ceafc1823a7e489.jpg`} Name={`Stylish Purple Double Breasted Men Two Piece Suit | Three Pocket Suit`} Currency={`Kshs `} Price={` 650`} CounterText={`(153.8k reviews)`} />
-                    <ProductCatalogCard Images={`https://i.pinimg.com/564x/89/ef/81/89ef81b691654ec92ceafc1823a7e489.jpg`} Name={`Stylish Purple Double Breasted Men Two Piece Suit | Three Pocket Suit`} Currency={`Kshs `} Price={` 650`} CounterText={`(153.8k reviews)`} />
-                    <ProductCatalogCard Images={`https://i.pinimg.com/564x/89/ef/81/89ef81b691654ec92ceafc1823a7e489.jpg`} Name={`Stylish Purple Double Breasted Men Two Piece Suit | Three Pocket Suit`} Currency={`Kshs `} Price={` 650`} CounterText={`(153.8k reviews)`} />
-                    <ProductCatalogCard Images={`https://i.pinimg.com/564x/89/ef/81/89ef81b691654ec92ceafc1823a7e489.jpg`} Name={`Stylish Purple Double Breasted Men Two Piece Suit | Three Pocket Suit`} Currency={`Kshs `} Price={` 650`} CounterText={`(153.8k reviews)`} />
-                    <ProductCatalogCard Images={`https://i.pinimg.com/564x/89/ef/81/89ef81b691654ec92ceafc1823a7e489.jpg`} Name={`Stylish Purple Double Breasted Men Two Piece Suit | Three Pocket Suit`} Currency={`Kshs `} Price={` 650`} CounterText={`(153.8k reviews)`} />
-                    <ProductCatalogCard Images={`https://i.pinimg.com/564x/89/ef/81/89ef81b691654ec92ceafc1823a7e489.jpg`} Name={`Stylish Purple Double Breasted Men Two Piece Suit | Three Pocket Suit`} Currency={`Kshs `} Price={` 650`} CounterText={`(153.8k reviews)`} />
-                    <ProductCatalogCard Images={`https://i.pinimg.com/564x/89/ef/81/89ef81b691654ec92ceafc1823a7e489.jpg`} Name={`Stylish Purple Double Breasted Men Two Piece Suit | Three Pocket Suit`} Currency={`Kshs `} Price={` 650`} CounterText={`(153.8k reviews)`} />
-                    <ProductCatalogCard Images={`https://i.pinimg.com/564x/89/ef/81/89ef81b691654ec92ceafc1823a7e489.jpg`} Name={`Stylish Purple Double Breasted Men Two Piece Suit | Three Pocket Suit`} Currency={`Kshs `} Price={` 650`} CounterText={`(153.8k reviews)`} />
-                    <ProductCatalogCard Images={`https://i.pinimg.com/564x/89/ef/81/89ef81b691654ec92ceafc1823a7e489.jpg`} Name={`Stylish Purple Double Breasted Men Two Piece Suit | Three Pocket Suit`} Currency={`Kshs `} Price={` 650`} CounterText={`(153.8k reviews)`} />
-                    <ProductCatalogCard Images={`https://i.pinimg.com/564x/89/ef/81/89ef81b691654ec92ceafc1823a7e489.jpg`} Name={`Stylish Purple Double Breasted Men Two Piece Suit | Three Pocket Suit`} Currency={`Kshs `} Price={` 650`} CounterText={`(153.8k reviews)`} />
-                    <ProductCatalogCard Images={`https://i.pinimg.com/564x/89/ef/81/89ef81b691654ec92ceafc1823a7e489.jpg`} Name={`Stylish Purple Double Breasted Men Two Piece Suit | Three Pocket Suit`} Currency={`Kshs `} Price={` 650`} CounterText={`(153.8k reviews)`} />
-                    <ProductCatalogCard Images={`https://i.pinimg.com/564x/89/ef/81/89ef81b691654ec92ceafc1823a7e489.jpg`} Name={`Stylish Purple Double Breasted Men Two Piece Suit | Three Pocket Suit`} Currency={`Kshs `} Price={` 650`} CounterText={`(153.8k reviews)`} />
-                </div>
+                <ProductListing/>
             </div>
             <Footer />
         </div>

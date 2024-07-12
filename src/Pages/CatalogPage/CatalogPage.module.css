@@ -32,18 +32,6 @@
     background: var(--Colors-Background-bg-primary, #FFF);
 }
 
-.ProductListing{
-    display: flex;
-    min-width: var(--spacing-system-guides-corner-radius-88, 352px);
-    max-width: var(--spacing-system-guides-corner-radius-220, 880px);
-    padding: var(--Base-4-Premitives-4, 16px) var(--Base-4-Premitives-0, 0px) var(--Base-4-Premitives-12, 48px) var(--Base-4-Premitives-4, 16px);
-    align-items: flex-start;
-    align-content: flex-start;
-    gap: 16px var(--spacing-system-guides-corner-radius-4, 16px);
-    flex: 1 0 0;
-    flex-wrap: wrap;
-}
-
 .PageHeaderSection {
     display: flex;
     min-width: var(--spacing-system-guides-corner-radius-84, 336px);
