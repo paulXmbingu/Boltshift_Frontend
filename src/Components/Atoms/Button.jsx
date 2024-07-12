@@ -45,13 +45,13 @@ const Btn_Sec_Gray_SM = ({ iconLeading, ButtonCTA, iconTrailing }) => {
 
 const Btn_Sec_Color_XL = ({LeadingIcon, ButtonCTA, TrailingIcon}) => {
     return (
-        <div className={styles.Btn_Sec_Color_XL}>
+        <button className={styles.Btn_Sec_Color_XL}>
             {LeadingIcon && <img src={LeadingIcon} alt="Leading Icon" className={styles.Btn_Sec_Color_XLLeadingIcon} />}
             <div className={styles.Btn_Sec_Color_XLCTAWrap}>
                 <div className={styles.Btn_Sec_Color_XLCTA}> {ButtonCTA} </div>
             </div>
             {TrailingIcon && <img src={TrailingIcon} alt="Trailing Icon" className={styles.Btn_Sec_Color_XLTrailingIcon} />}
-        </div>
+        </button>
     )
 }
 
