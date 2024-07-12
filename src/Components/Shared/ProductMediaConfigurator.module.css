@@ -210,3 +210,21 @@
     width: 100%;
     margin: 0px;
 }
+.countInput {
+    display: flex;
+    width: var(--Base-4-Premitives-16, 64px);
+    justify-content: center;
+    align-items: center;
+    gap: var(--spacing-md, 8px);
+    align-self: stretch;
+    border: 1px #fff0;
+    color: var(--colors-text-text-secondary-700, #344054);
+    text-align: center;
+
+    /* Text sm/Semibold */
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px; /* 142.857% */
+}
