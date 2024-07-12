@@ -7,7 +7,7 @@ import bag from '../../assets/Icons/UI/Shopping bags (1).svg';
 import Chevron from '../../assets/Icons/UI/chevron-right (1).svg';
 import SearchResultOutput from "../../Components/Molecules/SearchResultOutput";
 import BreadCrumb from "../../Components/Shared/BreadCrumb";
-import ProductListing from "../../Components/Shared/ProductListing";
+import ProductListingSection from "./ProductListingSection";
 
 function CatalogPage() {
     const [isLargeScreen, setIsLargeScreen] = useState(typeof window !== "undefined" ? window.innerWidth > 768 : false);
@@ -35,7 +35,7 @@ function CatalogPage() {
                 <div className={styles.filter}>
                     Filter Section
                 </div>
-                <ProductListing/>
+                <ProductListingSection />
             </div>
             <Footer />
         </div>
