@@ -42,6 +42,7 @@
 }
 
 .ButtonGroupCTA {
+    flex: 1 0 0;
     color: var(--colors-text-text-secondary-700, #344054);
 
     /* Text sm/Semibold */
