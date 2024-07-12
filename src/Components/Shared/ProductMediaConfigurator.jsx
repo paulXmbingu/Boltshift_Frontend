@@ -50,9 +50,9 @@ const ProductMediaConfigurator = () => {
                     <Badge_PillColor_SM_GrayBlue BadgeLabel={`Exclusive`} />
                     <Badge_PillColor_SM_BlueLight BadgeLabel={`Featured`} />
                     <Badge_PillColor_SM_Blue BadgeLabel={`Trending`} />
-                    <Badge_PillColor_SM_Indigo BadgeLabel={`Free Shiping`} />
+                    <Badge_PillColor_SM_Indigo BadgeLabel={`Free Shipping`} />
                     <Badge_PillColor_SM_Purple BadgeLabel={`Seasonal`} />
-                    <Badge_PillColor_SM_Pink BadgeLabel={`Restocked`} />
+                    <Badge_PillColor_SM_Pink BadgeLabel={`Back in Store`} />
                     <Badge_PillColor_SM_Orange BadgeLabel={`Top Rated`} />
                 </div>
                 <div> Product Options 1 </div>
