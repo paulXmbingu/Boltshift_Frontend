@@ -8,6 +8,9 @@ import { Badge_PillColor_SM_Blue, Badge_PillColor_SM_BlueLight, Badge_PillColor_
 import arrowdown from "../../assets/Icons/UI/arrow-down.svg"
 import { StarRating4 } from "../Molecules/StarRating";
 import shoppingcart03 from "../../assets/Icons/UI/shopping-cart-03 Brand.svg"
+import { ButtonGroup } from "../Atoms/ButtonGroup";
+import minus from "../../assets/Icons/UI/minus.svg"
+import plus from "../../assets/Icons/UI/plus fgSec700.svg"
 
 const ProductMediaConfigurator = () => {
     return (
@@ -47,9 +50,9 @@ const ProductMediaConfigurator = () => {
                     <Badge_PillColor_SM_GrayBlue BadgeLabel={`Exclusive`} />
                     <Badge_PillColor_SM_BlueLight BadgeLabel={`Featured`} />
                     <Badge_PillColor_SM_Blue BadgeLabel={`Trending`} />
-                    <Badge_PillColor_SM_Indigo BadgeLabel={`Free Shiping`} />
+                    <Badge_PillColor_SM_Indigo BadgeLabel={`Free Shipping`} />
                     <Badge_PillColor_SM_Purple BadgeLabel={`Seasonal`} />
-                    <Badge_PillColor_SM_Pink BadgeLabel={`Restocked`} />
+                    <Badge_PillColor_SM_Pink BadgeLabel={`Back in Store`} />
                     <Badge_PillColor_SM_Orange BadgeLabel={`Top Rated`} />
                 </div>
                 <div> Product Options 1 </div>
@@ -60,7 +63,11 @@ const ProductMediaConfigurator = () => {
                 </div>
                 <div className={styles.CTAs}> 
                     <div className={styles.secondaryCTAs}>
-                        <Btn_Sec_Gray_SM ButtonCTA={`- 1 +`} />
+                        <div className={styles.itemButtonGroup}>
+                            <ButtonGroup LeadingIcon={minus} />
+                            <input type="number" className={styles.countInput} defaultValue={1} />
+                            <ButtonGroup LeadingIcon={plus} />
+                        </div>
                         <Btn_Sec_Color_XL LeadingIcon={shoppingcart03} ButtonCTA={`Add to Cart`} />
                     </div>
                     <Link to='/checkout' className={styles.buyNowCTA}> <Btn_Pri_XL ButtonCTA={`Buy Now`} /> </Link>
