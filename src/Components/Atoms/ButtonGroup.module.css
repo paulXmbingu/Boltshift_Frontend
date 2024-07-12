@@ -1,0 +1,54 @@
+.buttonGroupWrap {
+    display: inline-flex;
+    height: 100%;
+    width: 100%;
+    padding: var(--spacing-md, 8px) var(--spacing-xl, 16px) var(--spacing-md, 8px) 14px;
+    justify-content: center;
+    align-items: center;
+    gap: var(--spacing-md, 8px);
+    border: 1px solid var(--Colors-Border-border-primary, #fff0);
+    background: var(--Colors-Background-bg-primary, #FFF0);
+    transition: all 0.1s ease;
+    outline: none;
+    cursor: pointer;
+}
+
+.buttonGroupWrap:hover {
+    background: var(--Colors-Background-bg-secondary_hover, #F2F4F7);
+}
+
+.buttonGroupWrap:focus {
+    background: var(--Colors-Background-bg-secondary_hover, #F2F4F7);
+}
+
+.buttonGroupWrap:disabled {
+    display: inline-flex;
+    padding: var(--spacing-md, 8px) var(--spacing-xl, 16px) var(--spacing-md, 8px) 14px;
+    justify-content: center;
+    align-items: center;
+    gap: var(--spacing-md, 8px);
+    border: 1px solid var(--Colors-Border-border-primary, #fff0);
+    background: var(--Colors-Background-bg-primary, #FFF);
+    transition: all 0.1s ease;
+    outline: none;
+    cursor:not-allowed;
+    height: 100%;
+    width: 100%;
+}
+
+.ButtonGroupLeadingIcon {
+    width: 20px;
+    height: 20px;
+}
+
+.ButtonGroupCTA {
+    color: var(--colors-text-text-secondary-700, #344054);
+
+    /* Text sm/Semibold */
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px; /* 142.857% */
+    cursor: text;
+}
