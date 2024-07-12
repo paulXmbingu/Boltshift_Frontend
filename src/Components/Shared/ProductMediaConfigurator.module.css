@@ -19,8 +19,7 @@
 
 .productDetails {
     display: flex;
-    max-width: var(--spacing-system-guides-corner-radius-84, 336px);
-    padding: 0px var(--container-padding-mobile, 16px);
+    max-width: var(--Base-4-Premitives-93, 372px);
     flex-direction: column;
     align-items: flex-start;
     gap: var(--spacing-xl, 16px);
@@ -209,4 +208,5 @@
     /* Shadows/shadow-xs */
     box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
     width: 100%;
+    margin: 0px;
 }
