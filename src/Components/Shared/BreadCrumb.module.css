@@ -1,15 +1,16 @@
 .BreadCrumb {
     display: flex;
-    width: 787px;
+    width: 100%;
     height: 48px;
-    min-width: var(--Grid-layouts-iPhone-375px, 375px);
-    max-width: var(--Containers-xl, 1280px);
     min-height: var(--Base-4-Premitives-12, 48px);
     max-height: var(--Base-4-Premitives-12, 48px);
-    padding: var(--spacing-system-guides-corner-radius-4, 16px);
+    /* padding: var(--spacing-system-guides-corner-radius-4, 16px); */
     align-items: center;
     gap: var(--spacing-xl, 16px);
     flex-shrink: 0;
+    overflow-x: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }
 
 .HomeIcon {
@@ -59,7 +60,7 @@
     line-clamp: 1;
     overflow: hidden;
     color: var(--colors-text-text-brand-tertiary-600, #DA154D);
-    text-overflow: ellipsis;
+    /* text-overflow: ellipsis; */
 
     /* Text sm/Semibold */
     font-family: Inter;
