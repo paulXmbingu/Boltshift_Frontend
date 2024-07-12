@@ -1,8 +1,8 @@
 import React from 'react';
-import styles from './ProductListing.module.css'
-import ProductCatalogCard from './ProductCatalogCard';
+import styles from './ProductListingSection.module.css'
+import ProductCatalogCard from '../../Components/Shared/ProductCatalogCard';
 
-const ProductListing = () => {
+const ProductListingSection = () => {
   return (
     <div className={styles.ProductListing}>
         <ProductCatalogCard Images={`https://i.pinimg.com/564x/89/ef/81/89ef81b691654ec92ceafc1823a7e489.jpg`} Name={`Stylish Purple Double Breasted Men Two Piece Suit | Three Pocket Suit`} Currency={`Kshs `} Price={` 650`} CounterText={`(153.8k reviews)`} />
@@ -45,7 +45,7 @@ const ProductListing = () => {
         <ProductCatalogCard Images={`https://i.pinimg.com/564x/89/ef/81/89ef81b691654ec92ceafc1823a7e489.jpg`} Name={`Stylish Purple Double Breasted Men Two Piece Suit | Three Pocket Suit`} Currency={`Kshs `} Price={` 650`} CounterText={`(153.8k reviews)`} />
 
     </div>
-  )
-}
+  );
+};
 
-export default ProductListing;
+export default ProductListingSection;
