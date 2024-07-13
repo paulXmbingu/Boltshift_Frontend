@@ -47,7 +47,7 @@ const ProductListingSection = () => {
           <ProductCatalogCard Images={`https://i.pinimg.com/564x/5f/49/1f/5f491f1a802b685f8c549a1dbe9e4106.jpg`} Name={`Stylish Purple Double Breasted Men Two Piece Suit | Three Pocket Suit`} Currency={`Kshs `} Price={` 650`} CounterText={`(153.8k reviews)`} />
           <ProductCatalogCard Images={`https://i.pinimg.com/564x/5f/49/1f/5f491f1a802b685f8c549a1dbe9e4106.jpg`} Name={`Stylish Purple Double Breasted Men Two Piece Suit | Three Pocket Suit`} Currency={`Kshs `} Price={` 650`} CounterText={`(153.8k reviews)`} />
       </div>
-      <div className={styles.pagination}> Pagination </div>
+      {/* <div className={styles.pagination}> Pagination </div> */}
     </div>
   );
 };

@@ -30,9 +30,7 @@ function CatalogPage() {
                 <SearchResultOutput NoOfHits={`366 results for the search of`} SearchPhrase={`"luxury contemporary watch"`} />
             </div> 
             <div className={styles.FilterAndProduct}>
-                    <div className={styles.filterList}> Drop Down </div>
-                {/* <div className={styles.filter}>
-                </div> */}
+                <div className={styles.filterSection}> Filter Section </div>
                 <ProductListingSection />
             </div>
             <Footer />
