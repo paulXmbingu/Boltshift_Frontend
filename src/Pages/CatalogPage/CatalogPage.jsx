@@ -25,7 +25,7 @@ function CatalogPage() {
          <div className={styles.pageLayout}>
             {isLargeScreen ? <TopNavLarge /> : <TopNavSmall />}
             <div className={styles.BreadCrumb}>
-                <BreadCrumb BreadCrumbText={`CatalogPage`} chevron={Chevron} BeautyAndPersionalCare={`Beauty & Persional Care`} HomeAndKitchen={`Home & Kitchen`} Furniture={`Furniture`} MenFashion={`Men's Fashion`} watches={`Watches`} Phones={`Phones`} OrlandoWatch={`Orlando Men Stainless Steel Quartz Watch`} />
+                <BreadCrumb Catalog={`Catalog`} Cartegory={`Men's Fashion`} Subcategory={`Watches`} ProductName={`Orlando Men Stainless Steel Quartz Watch`} />
             </div>
             <div className={styles.PageHeaderSection}>
                 <SectionHeader icon={bag}  headerTitle={`Catalog`} />
