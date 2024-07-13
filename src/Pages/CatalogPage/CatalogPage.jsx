@@ -24,9 +24,9 @@ function CatalogPage() {
     return (
          <div className={styles.pageLayout}>
             {isLargeScreen ? <TopNavLarge /> : <TopNavSmall />}
-            <div className={styles.BreadCrumb}>
                 <BreadCrumb Catalog={`Catalog`} Cartegory={`Men's Fashion`} Subcategory={`Watches`} ProductName={`Orlando Men Stainless Steel Quartz Watch`} />
-            </div>
+            {/* <div className={styles.BreadCrumb}>
+            </div> */}
             <div className={styles.PageHeaderSection}>
                 <SectionHeader icon={bag}  headerTitle={`Catalog`} />
                 <SearchResultOutput NoOfHits={`366 results for the search of`} SearchPhrase={`"luxury contemporary watch"`} />
