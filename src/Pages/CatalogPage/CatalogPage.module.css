@@ -48,8 +48,8 @@
 .BreadCrumb{
     display: flex;
     height: 48px;
-    min-width: var(--Grid-layouts-iPhone-375px, 375px);
-    max-width: var(--Containers-xl, 1280px);
+    /* min-width: var(--Grid-layouts-iPhone-375px, 375px);
+    max-width: var(--Containers-xl, 1280px); */
     min-height: var(--Base-4-Premitives-12, 48px);
     max-height: var(--Base-4-Premitives-12, 48px);
     padding: var(--spacing-system-guides-corner-radius-4, 16px);
@@ -57,4 +57,5 @@
     gap: var(--spacing-xl, 16px);
     align-self: stretch;
     background: var(--Colors-Background-bg-primary, #FFF);
+    overflow-x: auto;
 }

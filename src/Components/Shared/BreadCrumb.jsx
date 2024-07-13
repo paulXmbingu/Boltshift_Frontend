@@ -2,7 +2,7 @@ import React from 'react'
 import Styles from './BreadCrumb.module.css'
 import home from '../../assets/Icons/UI/home-line.svg'
 
-const BreadCrumb = ({BreadCrumbText, chevron, MenFashion, watches, OrlandoWatch }) => {
+const BreadCrumb = ({BreadCrumbText, chevron, MenFashion, watches, OrlandoWatch, Phones, BeautyAndPersionalCare, Furniture, HomeAndKitchen }) => {
   return (
     <div className={Styles.BreadCrumb}>
         <img src={home} alt="Breadcrumb home icon" className={Styles.HomeIcon} />
@@ -21,7 +21,73 @@ const BreadCrumb = ({BreadCrumbText, chevron, MenFashion, watches, OrlandoWatch 
         <div className={Styles.CatakogPage}>
             <img src={chevron} alt="chevron" className={Styles.chevron} />
             <div className={Styles.BreadcrumbButon}>
+                <span className={Styles.BreadcrumbCatalogText}>{MenFashion}</span>
+            </div>
+        </div>
+        <div className={Styles.CatakogPage}>
+            <img src={chevron} alt="chevron" className={Styles.chevron} />
+            <div className={Styles.BreadcrumbButon}>
+                <span className={Styles.BreadcrumbCatalogText}>{MenFashion}</span>
+            </div>
+        </div>
+        <div className={Styles.CatakogPage}>
+            <img src={chevron} alt="chevron" className={Styles.chevron} />
+            <div className={Styles.BreadcrumbButon}>
+                <span className={Styles.BreadcrumbCatalogText}>{MenFashion}</span>
+            </div>
+        </div>
+        <div className={Styles.CatakogPage}>
+            <img src={chevron} alt="chevron" className={Styles.chevron} />
+            <div className={Styles.BreadcrumbButon}>
+                <span className={Styles.BreadcrumbCatalogText}>{Phones}</span>
+            </div>
+        </div>
+        <div className={Styles.CatakogPage}>
+            <img src={chevron} alt="chevron" className={Styles.chevron} />
+            <div className={Styles.BreadcrumbButon}>
                 <span className={Styles.BreadcrumbCatalogText}>{watches}</span>
+            </div>
+        </div>
+        <div className={Styles.CatakogPage}>
+            <img src={chevron} alt="chevron" className={Styles.chevron} />
+            <div className={Styles.BreadcrumbButon}>
+                <span className={Styles.BreadcrumbCatalogText}>{Furniture}</span>
+            </div>
+        </div>
+        <div className={Styles.CatakogPage}>
+            <img src={chevron} alt="chevron" className={Styles.chevron} />
+            <div className={Styles.BreadcrumbButon}>
+                <span className={Styles.BreadcrumbCatalogText}>{HomeAndKitchen}</span>
+            </div>
+        </div>
+        <div className={Styles.CatakogPage}>
+            <img src={chevron} alt="chevron" className={Styles.chevron} />
+            <div className={Styles.BreadcrumbButon}>
+                <span className={Styles.BreadcrumbCatalogText}>{watches}</span>
+            </div>
+        </div>
+        <div className={Styles.CatakogPage}>
+            <img src={chevron} alt="chevron" className={Styles.chevron} />
+            <div className={Styles.BreadcrumbButon}>
+                <span className={Styles.BreadcrumbCatalogText}>{watches}</span>
+            </div>
+        </div>
+        <div className={Styles.CatakogPage}>
+            <img src={chevron} alt="chevron" className={Styles.chevron} />
+            <div className={Styles.BreadcrumbButon}>
+                <span className={Styles.BreadcrumbCatalogText}>{watches}</span>
+            </div>
+        </div>
+        <div className={Styles.CatakogPage}>
+            <img src={chevron} alt="chevron" className={Styles.chevron} />
+            <div className={Styles.BreadcrumbButon}>
+                <span className={Styles.BreadcrumbCatalogText}>{watches}</span>
+            </div>
+        </div>
+        <div className={Styles.CatakogPage}>
+            <img src={chevron} alt="chevron" className={Styles.chevron} />
+            <div className={Styles.BreadcrumbButon}>
+                <span className={Styles.BreadcrumbCatalogText}>{BeautyAndPersionalCare}</span>
             </div>
         </div>
         <div className={Styles.CatakogPage}>
