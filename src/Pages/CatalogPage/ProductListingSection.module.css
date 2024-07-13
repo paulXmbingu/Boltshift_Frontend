@@ -17,3 +17,8 @@
     align-items: flex-start;
     gap: var(--spacing-md, 8px);
 }
+
+.pagination {
+    padding: var(--Base-4-Premitives-4, 16px) var(--Base-4-Premitives-0, 0px) var(--spacing-xl, 16px) var(--Base-4-Premitives-4, 16px);
+    width: 100%;
+}
