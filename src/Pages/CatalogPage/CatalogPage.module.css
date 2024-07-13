@@ -36,7 +36,8 @@
     align-items: flex-start;
     gap: var(--Base-4-Premitives-1, 4px);
     align-self: stretch;
-    width: var(--spacing-system-guides-corner-radius-88, 352px);
+    width: var(--spacing-system-guides-corner-radius-88, 336px);
+    padding: var(--Base-4-Premitives-4, 16px) var(--Base-4-Premitives-4, 16px) var(--Base-4-Premitives-12, 48px) var(--Base-4-Premitives-4, 16px);
 
 }
 
