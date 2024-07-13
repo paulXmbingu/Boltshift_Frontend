@@ -1,99 +1,34 @@
 import React from 'react'
 import Styles from './BreadCrumb.module.css'
 import home from '../../assets/Icons/UI/home-line.svg'
+import chevron from "../../assets/Icons/UI/chevron-right (1).svg"
 
-const BreadCrumb = ({BreadCrumbText, chevron, MenFashion, watches, OrlandoWatch, Phones, BeautyAndPersionalCare, Furniture, HomeAndKitchen }) => {
+const BreadCrumb = ({Catalog, Cartegory, Subcategory, ProductName, }) => {
   return (
     <div className={Styles.BreadCrumb}>
         <img src={home} alt="Breadcrumb home icon" className={Styles.HomeIcon} />
         <div className={Styles.CatakogPage}>
             <img src={chevron} alt="chevron" className={Styles.chevron} />
             <div className={Styles.BreadcrumbButon}>
-                <span className={Styles.BreadcrumbCatalogText}>{BreadCrumbText}</span>
+                <span className={Styles.BreadcrumbCatalogText}>{Catalog}</span>
             </div>
         </div>
         <div className={Styles.CatakogPage}>
             <img src={chevron} alt="chevron" className={Styles.chevron} />
             <div className={Styles.BreadcrumbButon}>
-                <span className={Styles.BreadcrumbCatalogText}>{MenFashion}</span>
+                <span className={Styles.BreadcrumbCatalogText}>{Cartegory}</span>
             </div>
         </div>
         <div className={Styles.CatakogPage}>
             <img src={chevron} alt="chevron" className={Styles.chevron} />
             <div className={Styles.BreadcrumbButon}>
-                <span className={Styles.BreadcrumbCatalogText}>{MenFashion}</span>
+                <span className={Styles.BreadcrumbCatalogText}>{Subcategory}</span>
             </div>
         </div>
         <div className={Styles.CatakogPage}>
             <img src={chevron} alt="chevron" className={Styles.chevron} />
             <div className={Styles.BreadcrumbButon}>
-                <span className={Styles.BreadcrumbCatalogText}>{MenFashion}</span>
-            </div>
-        </div>
-        <div className={Styles.CatakogPage}>
-            <img src={chevron} alt="chevron" className={Styles.chevron} />
-            <div className={Styles.BreadcrumbButon}>
-                <span className={Styles.BreadcrumbCatalogText}>{MenFashion}</span>
-            </div>
-        </div>
-        <div className={Styles.CatakogPage}>
-            <img src={chevron} alt="chevron" className={Styles.chevron} />
-            <div className={Styles.BreadcrumbButon}>
-                <span className={Styles.BreadcrumbCatalogText}>{Phones}</span>
-            </div>
-        </div>
-        <div className={Styles.CatakogPage}>
-            <img src={chevron} alt="chevron" className={Styles.chevron} />
-            <div className={Styles.BreadcrumbButon}>
-                <span className={Styles.BreadcrumbCatalogText}>{watches}</span>
-            </div>
-        </div>
-        <div className={Styles.CatakogPage}>
-            <img src={chevron} alt="chevron" className={Styles.chevron} />
-            <div className={Styles.BreadcrumbButon}>
-                <span className={Styles.BreadcrumbCatalogText}>{Furniture}</span>
-            </div>
-        </div>
-        <div className={Styles.CatakogPage}>
-            <img src={chevron} alt="chevron" className={Styles.chevron} />
-            <div className={Styles.BreadcrumbButon}>
-                <span className={Styles.BreadcrumbCatalogText}>{HomeAndKitchen}</span>
-            </div>
-        </div>
-        <div className={Styles.CatakogPage}>
-            <img src={chevron} alt="chevron" className={Styles.chevron} />
-            <div className={Styles.BreadcrumbButon}>
-                <span className={Styles.BreadcrumbCatalogText}>{watches}</span>
-            </div>
-        </div>
-        <div className={Styles.CatakogPage}>
-            <img src={chevron} alt="chevron" className={Styles.chevron} />
-            <div className={Styles.BreadcrumbButon}>
-                <span className={Styles.BreadcrumbCatalogText}>{watches}</span>
-            </div>
-        </div>
-        <div className={Styles.CatakogPage}>
-            <img src={chevron} alt="chevron" className={Styles.chevron} />
-            <div className={Styles.BreadcrumbButon}>
-                <span className={Styles.BreadcrumbCatalogText}>{watches}</span>
-            </div>
-        </div>
-        <div className={Styles.CatakogPage}>
-            <img src={chevron} alt="chevron" className={Styles.chevron} />
-            <div className={Styles.BreadcrumbButon}>
-                <span className={Styles.BreadcrumbCatalogText}>{watches}</span>
-            </div>
-        </div>
-        <div className={Styles.CatakogPage}>
-            <img src={chevron} alt="chevron" className={Styles.chevron} />
-            <div className={Styles.BreadcrumbButon}>
-                <span className={Styles.BreadcrumbCatalogText}>{BeautyAndPersionalCare}</span>
-            </div>
-        </div>
-        <div className={Styles.CatakogPage}>
-            <img src={chevron} alt="chevron" className={Styles.chevron} />
-            <div className={Styles.BreadcrumbButon}>
-                <span className={Styles.BreadCrumbRedText}>{OrlandoWatch}</span>
+                <span className={Styles.BreadCrumbRedText}>{ProductName}</span>
             </div>
         </div>
     </div>
