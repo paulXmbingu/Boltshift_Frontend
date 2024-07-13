@@ -13,10 +13,11 @@
     max-width: var(--Breaking-Points-Desktop-1280px, 1280px);
     align-items: flex-start;
     align-content: flex-start;
-    gap: 16px var(--spacing-system-guides-corner-radius-4, 16px);
+    /* gap: 16px var(--spacing-system-guides-corner-radius-4, 16px); */
     align-self: stretch;
     flex-wrap: wrap;
     background: var(--Colors-Background-bg-primary, #FFF);
+    padding: 0%;
 }
 
 .filter{
@@ -32,6 +33,14 @@
     background: var(--Colors-Background-bg-primary, #FFF);
 }
 
+.filterList {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--Base-4-Premitives-1, 4px);
+    align-self: stretch;
+}
+
 .PageHeaderSection {
     display: flex;
     min-width: var(--spacing-system-guides-corner-radius-84, 336px);
@@ -43,19 +52,4 @@
     align-self: stretch;
     flex-wrap: wrap;
     background: var(--Colors-Background-bg-primary, #FFF);
-}
-
-.BreadCrumb{
-    display: flex;
-    height: 48px;
-    /* min-width: var(--Grid-layouts-iPhone-375px, 375px);
-    max-width: var(--Containers-xl, 1280px); */
-    min-height: var(--Base-4-Premitives-12, 48px);
-    max-height: var(--Base-4-Premitives-12, 48px);
-    padding: var(--spacing-system-guides-corner-radius-4, 16px);
-    align-items: center;
-    gap: var(--spacing-xl, 16px);
-    align-self: stretch;
-    background: var(--Colors-Background-bg-primary, #FFF);
-    overflow-x: auto;
 }

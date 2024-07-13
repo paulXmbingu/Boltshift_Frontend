@@ -24,16 +24,14 @@ function CatalogPage() {
     return (
          <div className={styles.pageLayout}>
             {isLargeScreen ? <TopNavLarge /> : <TopNavSmall />}
-                <BreadCrumb Catalog={`Catalog`} Cartegory={`Men's Fashion`} Subcategory={`Watches`} ProductName={`Orlando Men Stainless Steel Quartz Watch`} />
-            {/* <div className={styles.BreadCrumb}>
-            </div> */}
+            <BreadCrumb Catalog={`Catalog`} Cartegory={`Men's Fashion`} Subcategory={`Watches`} ProductName={`Orlando Men Stainless Steel Quartz Watch`} />
             <div className={styles.PageHeaderSection}>
                 <SectionHeader icon={bag}  headerTitle={`Catalog`} />
                 <SearchResultOutput NoOfHits={`366 results for the search of`} SearchPhrase={`"luxury contemporary watch"`} />
             </div> 
             <div className={styles.FilterAndProduct}>
                 <div className={styles.filter}>
-                    Filter Section
+                    <div className={styles.filterList}> Drop Down </div>
                 </div>
                 <ProductListingSection />
             </div>
