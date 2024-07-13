@@ -1,13 +1,14 @@
 .BreadCrumb {
     display: flex;
-    width: 100%;
-    height: 48px;
-    min-height: var(--Base-4-Premitives-12, 48px);
-    max-height: var(--Base-4-Premitives-12, 48px);
-    /* padding: var(--spacing-system-guides-corner-radius-4, 16px); */
+    /* height: 48px; */
+    /* min-width: var(--Grid-layouts-iPhone-375px, 375px);
+    max-width: var(--Containers-xl, 1280px); */
+    /* min-height: var(--Base-4-Premitives-12, 48px);
+    max-height: var(--Base-4-Premitives-12, 48px); */
+    padding: var(--spacing-system-guides-corner-radius-4, 16px);
     align-items: center;
     gap: var(--spacing-xl, 16px);
-    flex-shrink: 0;
+    align-self: stretch;
     overflow-x: scroll;
     -ms-overflow-style: none;
     scrollbar-width: none;
@@ -19,7 +20,7 @@
     flex-shrink: 0;
 }
 
-.CatakogPage {
+.CatalogPage {
     display: flex;
     align-items: center;
     gap: 12px;

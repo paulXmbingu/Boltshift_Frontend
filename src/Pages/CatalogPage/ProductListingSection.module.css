@@ -1,11 +1,23 @@
 .ProductListing{
     display: flex;
-    min-width: var(--spacing-system-guides-corner-radius-88, 352px);
-    max-width: var(--spacing-system-guides-corner-radius-220, 880px);
-    padding: var(--Base-4-Premitives-4, 16px) var(--Base-4-Premitives-0, 0px) var(--Base-4-Premitives-12, 48px) var(--Base-4-Premitives-4, 16px);
+    min-width: var(--width-xxs, 320px);
+    padding: var(--Base-4-Premitives-4, 16px) var(--container-padding-mobile, 16px) var(--spacing-xl, 16px) 16px;
     align-items: flex-start;
     align-content: flex-start;
-    gap: 16px var(--spacing-system-guides-corner-radius-4, 16px);
-    flex: 1 0 0;
+    gap: var(--spacing-xl, 16px) var(--spacing-system-guides-corner-radius-4, 16px);
+    align-self: stretch;
     flex-wrap: wrap;
+}
+
+.productListingSectionPagination {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--spacing-md, 8px);
+    flex: 1 0 0;
+}
+
+.pagination {
+    padding: var(--Base-4-Premitives-4, 16px) var(--Base-4-Premitives-0, 0px) var(--spacing-xl, 16px) var(--Base-4-Premitives-4, 16px);
+    width: 100%;
 }

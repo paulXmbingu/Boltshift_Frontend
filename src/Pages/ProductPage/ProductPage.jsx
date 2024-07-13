@@ -4,6 +4,7 @@ import { TopNavLarge, TopNavSmall } from "../../Components/Shared/TopNav";
 import FooterSection from "../../Components/Shared/Footer";
 import ProductMediaConfiguratorSection from "./ProductMediaConfiguratorSection";
 import Footer from "../../Components/Shared/Footer";
+import BreadCrumb from "../../Components/Shared/BreadCrumb";
 
 function ProductPage() {
     const [isLargeScreen, setIsLargeScreen] = useState(typeof window !== "undefined" ? window.innerWidth > 768 : false);
@@ -20,6 +21,7 @@ function ProductPage() {
     return (
         <div className={styles.pageLayout}>
             {isLargeScreen ? <TopNavLarge /> : <TopNavSmall />}
+            <BreadCrumb Catalog={`Catalog`} Cartegory={`Women's Fashion`} Subcategory={`Dresses`} ProductName={`Xpluswear Design Plus Size Mother Of The Bride Elegant Champagne Long Sleeve Split Pocket Satin Two Piece Dress Set View`} />
             <ProductMediaConfiguratorSection />
             <Footer />
         </div>
