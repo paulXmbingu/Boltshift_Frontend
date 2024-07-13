@@ -44,8 +44,8 @@ const ProductListingSection = () => {
           <ProductCatalogCard Images={`https://i.pinimg.com/564x/c0/ba/ea/c0baea27c75c1d63b2a17aed141e3140.jpg`} Name={`Autumn Mens Bomber Jackets Casual Male Outwear Fleece Thick - Dakr Blue / L`} Currency={`Kshs `} Price={` 650`} CounterText={`(153.8k reviews)`} />
           <ProductCatalogCard Images={`https://i.pinimg.com/564x/50/43/e4/5043e4c0e522c69c07f4d5bf88e797b3.jpg`} Name={`Hoodies Autumn Winter Long Sleeve Coat`} Currency={`Kshs `} Price={` 650`} CounterText={`(153.8k reviews)`} />
           <ProductCatalogCard Images={`https://i.pinimg.com/564x/5f/49/1f/5f491f1a802b685f8c549a1dbe9e4106.jpg`} Name={`Stylish Purple Double Breasted Men Two Piece Suit | Three Pocket Suit`} Currency={`Kshs `} Price={` 650`} CounterText={`(153.8k reviews)`} />
-          <ProductCatalogCard Images={`https://i.pinimg.com/564x/5f/49/1f/5f491f1a802b685f8c549a1dbe9e4106.jpg`} Name={`Stylish Purple Double Breasted Men Two Piece Suit | Three Pocket Suit`} Currency={`Kshs `} Price={` 650`} CounterText={`(153.8k reviews)`} />
-          <ProductCatalogCard Images={`https://i.pinimg.com/564x/5f/49/1f/5f491f1a802b685f8c549a1dbe9e4106.jpg`} Name={`Stylish Purple Double Breasted Men Two Piece Suit | Three Pocket Suit`} Currency={`Kshs `} Price={` 650`} CounterText={`(153.8k reviews)`} />
+          <ProductCatalogCard Images={`https://i.pinimg.com/564x/3c/87/58/3c87582f53b868866dc5790b3a0fbc51.jpg`} Name={`Fisdy - Formal A-Line Dress Collection: Patchwork Design - Green, XL`} Currency={`Kshs `} Price={` 4,999`} CounterText={`(153.8k reviews)`} />
+          <ProductCatalogCard Images={`https://i.pinimg.com/564x/01/df/5c/01df5c4fd9c419ccd47b288bbc8f5fe0.jpg`} Name={`Limited Edition Hm Leather Handbag Luxury Brand`} Currency={`Kshs `} Price={` 6,295`} CounterText={`(153.8k reviews)`} />
       </div>
       {/* <div className={styles.pagination}> Pagination </div> */}
     </div>
