@@ -1,5 +1,6 @@
 .ProductListing{
     display: flex;
+    min-width: var(--width-xxs, 320px);
     padding: var(--Base-4-Premitives-4, 16px) var(--container-padding-mobile, 16px) var(--spacing-xl, 16px) 16px;
     align-items: flex-start;
     align-content: flex-start;
