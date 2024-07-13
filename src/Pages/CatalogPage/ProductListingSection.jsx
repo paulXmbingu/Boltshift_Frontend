@@ -4,7 +4,7 @@ import ProductCatalogCard from '../../Components/Shared/ProductCatalogCard';
 
 const ProductListingSection = () => {
   return (
-    <div className={styles.roductListingSectionPagination}>
+    <div className={styles.productListingSectionPagination}>
       <div className={styles.ProductListing}>
           <ProductCatalogCard Images={`https://i.pinimg.com/564x/89/ef/81/89ef81b691654ec92ceafc1823a7e489.jpg`} Name={`Stylish Purple Double Breasted Men Two Piece Suit | Three Pocket Suit`} Currency={`Kshs `} Price={` 650`} CounterText={`(153.8k reviews)`} />
           <ProductCatalogCard Images={`https://i.pinimg.com/564x/c0/80/6f/c0806fea5af763b6ee86cd5fec5d4457.jpg`} Name={`His And Her Gold Stretch Band Quartz Watch Set-New | Color: Gold | Size: Os`} Currency={`Kshs `} Price={` 2430`} CounterText={`(153.8k reviews)`} />
