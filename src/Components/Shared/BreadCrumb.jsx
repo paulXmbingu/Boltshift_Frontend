@@ -14,24 +14,27 @@ const BreadCrumb = ({Catalog, Cartegory, Subcategory, ProductName, }) => {
                 <span className={Styles.BreadcrumbCatalogText}>{Catalog}</span>
             </div>
         </Link>
-        <div className={Styles.BreadCrumbButton}>
-            <img src={chevron} alt="chevron" className={Styles.chevron} />
-            <div className={Styles.BreadcrumbButon}>
-                <span className={Styles.BreadcrumbCatalogText}> {Cartegory} </span>
-            </div>
-        </div>
-        <div className={Styles.BreadCrumbButton}>
-            <img src={chevron} alt="chevron" className={Styles.chevron} />
-            <div className={Styles.BreadcrumbButon}>
-                <span className={Styles.BreadcrumbCatalogText}> {Subcategory} </span>
-            </div>
-        </div>
-        <div className={Styles.BreadCrumbButton}>
-            <img src={chevron} alt="chevron" className={Styles.chevron} />
-            <div className={Styles.BreadcrumbButon}>
-                <span className={Styles.BreadCrumbCurrent}>{ProductName}</span>
-            </div>
-        </div>
+        {Cartegory && (
+            <div className={Styles.BreadCrumbButton}>
+                <img src={chevron} alt="chevron" className={Styles.chevron} />
+                <div className={Styles.BreadcrumbButon}>
+                    <span className={Styles.BreadcrumbCatalogText}> {Cartegory} </span>
+                </div>
+            </div>)}
+        {Subcategory && (
+            <div className={Styles.BreadCrumbButton}>
+                <img src={chevron} alt="chevron" className={Styles.chevron} />
+                <div className={Styles.BreadcrumbButon}>
+                    <span className={Styles.BreadcrumbCatalogText}> {Subcategory} </span>
+                </div>
+            </div>)}
+        {ProductName && (
+            <div className={Styles.BreadCrumbButton}>
+                <img src={chevron} alt="chevron" className={Styles.chevron} />
+                <div className={Styles.BreadcrumbButon}>
+                    <span className={Styles.BreadCrumbCurrent}>{ProductName}</span>
+                </div>
+            </div>)}
     </div>
   );
 };
