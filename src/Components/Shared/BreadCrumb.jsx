@@ -15,19 +15,19 @@ const BreadCrumb = ({Catalog, Cartegory, Subcategory, ProductName, }) => {
             </div>
         </Link>
         {Cartegory && (
-            <div className={Styles.BreadCrumbButton}>
+            <Link className={Styles.BreadCrumbButton}>
                 <img src={chevron} alt="chevron" className={Styles.chevron} />
                 <div className={Styles.BreadcrumbButon}>
                     <span className={Styles.BreadcrumbCatalogText}> {Cartegory} </span>
                 </div>
-            </div>)}
+            </Link>)}
         {Subcategory && (
-            <div className={Styles.BreadCrumbButton}>
+            <Link className={Styles.BreadCrumbButton}>
                 <img src={chevron} alt="chevron" className={Styles.chevron} />
                 <div className={Styles.BreadcrumbButon}>
                     <span className={Styles.BreadcrumbCatalogText}> {Subcategory} </span>
                 </div>
-            </div>)}
+            </Link>)}
         {ProductName && (
             <div className={Styles.BreadCrumbButton}>
                 <img src={chevron} alt="chevron" className={Styles.chevron} />
