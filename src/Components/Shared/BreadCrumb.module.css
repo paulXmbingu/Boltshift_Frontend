@@ -20,10 +20,11 @@
     flex-shrink: 0;
 }
 
-.CatalogPage {
+.BreadCrumbButton {
     display: flex;
     align-items: center;
     gap: 12px;
+    text-decoration: none;
 }
 
 .chevron {
@@ -31,13 +32,13 @@
     height: 16px;
 }
 
-.BreadcrumbButon{
+.BreadcrumbButon {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.BreadcrumbCatalogText{
+.BreadcrumbCatalogText {
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 1;
@@ -54,7 +55,12 @@
     line-height: 20px; /* 142.857% */
 }
 
-.BreadCrumbRedText {
+.BreadcrumbCatalogText:hover {
+    color: var(--colors-text-text-brand-tertiary-600, #DA154D);
+    transition: all 0.2s ease;
+}
+
+.BreadCrumbCurrent {
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 1;
