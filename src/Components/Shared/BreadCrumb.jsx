@@ -32,7 +32,7 @@ const BreadCrumb = ({Catalog, Cartegory, Subcategory, ProductName, }) => {
             </div>
         </div>
     </div>
-  )
-}
+  );
+};
 
-export default BreadCrumb
+export default BreadCrumb;
