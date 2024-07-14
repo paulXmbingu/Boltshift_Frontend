@@ -26,12 +26,15 @@ const BreadCrumb = ({Catalog, Cartegory, Subcategory, ProductName, }) => {
                 <span className={Styles.BreadcrumbCatalogText}> {Subcategory} </span>
             </div>
         </div>
-        <div className={Styles.BreadCrumbButton}>
-            <img src={chevron} alt="chevron" className={Styles.chevron} />
-            <div className={Styles.BreadcrumbButon}>
-                <span className={Styles.BreadCrumbCurrent}>{ProductName}</span>
+        {ProductName && (
+            <div className={Styles.BreadCrumbButton}>
+                <img src={chevron} alt="chevron" className={Styles.chevron} />
+                <div className={Styles.BreadcrumbButon}>
+                    <span className={Styles.BreadCrumbCurrent}>{ProductName}</span>
+                </div>
             </div>
-        </div>
+        )}
+
     </div>
   );
 };
