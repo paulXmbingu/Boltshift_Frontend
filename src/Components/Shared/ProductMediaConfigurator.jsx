@@ -24,8 +24,8 @@ const ProductMediaConfigurator = () => {
                     <ProductMediaThumbnailMD ThumbNailMedia={`https://i.pinimg.com/736x/a7/cd/c8/a7cdc8f41910734cfdeb5c42258a029c.jpg`} />
                     <ProductMediaThumbnailMD ThumbNailMedia={`https://i.pinimg.com/736x/0d/97/c5/0d97c54c0e0f845a6f5741b6b78598b3.jpg`} />
                     <ProductMediaThumbnailMD ThumbNailMedia={`https://i.pinimg.com/736x/8e/57/c0/8e57c01507456463c55da3dcf21c78d2.jpg`} />
-                    <ProductMediaThumbnailMD ThumbNailMedia={`https://i.pinimg.com/736x/eb/ea/4b/ebea4b4488cd4d1d47cc352e9ade2265.jpg`} />
-                    <ProductMediaThumbnailMD ThumbNailMedia={`https://www.avocadomall.com/cdn/shop/products/1w6T8S7y9t2N4O8O2i3O2P2g5i-00651.jpg?v=1700124092`} />
+                    <ProductMediaThumbnailMD ThumbNailMedia={`https://i.pinimg.com/736x/b9/a4/1c/b9a41c493e385d96a3a470c3662dd6c8.jpg`} />
+                    <ProductMediaThumbnailMD ThumbNailMedia={`https://i.pinimg.com/736x/67/ff/16/67ff16257c0fbb21bde0af00c7524a3c.jpg`} />
                     <ProductMediaThumbnailMD ThumbNailMedia={`https://www.avocadomall.com/cdn/shop/products/08045105-5848-4aba-aaa2-ab1d762eb42d-00651-0.jpg?v=1700124092`} />
                     <ProductMediaThumbnailMD ThumbNailMedia={`https://www.avocadomall.com/cdn/shop/products/08045105-5848-4aba-aaa2-ab1d762eb42d-00651-2.jpg?v=1700124092`} />
                 </div>
