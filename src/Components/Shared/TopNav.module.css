@@ -156,3 +156,11 @@
 .navBarDropDownMenuMobileLoggedIn.show {
   left: 0;
 }
+
+.notificationsMobileIcon {
+  outline: none;
+}
+
+.notificationsDesktopIcon {
+  outline: none;
+}
