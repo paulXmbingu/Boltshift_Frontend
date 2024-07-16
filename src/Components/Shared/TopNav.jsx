@@ -84,7 +84,7 @@ const TopNavSmall = () => {
           <Link to='/' > <BrandLogoHor className={styles.brandLogoMobile} /> </Link>
         </div>
         <div className={styles.notificationsMobile}>
-          <NotificationIcon icon={Favorite} />
+          <Link to="/wishlist"> <NotificationIcon icon={Favorite} /> </Link>
           <NotificationIcon icon={Cart} />
           <NotificationIcon icon={Bell} />
           <div className={styles.notificationAvatar} onClick={handleAvatarClick} ref={dropdownRef}>
