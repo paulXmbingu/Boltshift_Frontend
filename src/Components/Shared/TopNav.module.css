@@ -118,6 +118,7 @@
   align-items: center;
   gap: 9.483px;
   cursor: pointer;
+  outline: none;
 }
 
 .notificationsMobile{
@@ -154,4 +155,12 @@
 
 .navBarDropDownMenuMobileLoggedIn.show {
   left: 0;
+}
+
+.notificationsMobileIcon {
+  outline: none;
+}
+
+.notificationsDesktopIcon {
+  outline: none;
 }

@@ -8,10 +8,12 @@
     border-radius: var(--radius-full, 9999px);
 }
 
-.notificationHolder:hover {
-    background: var(--Colors-Background-bg-brand-secondary, #FDE8EE);
+.notificationHolder:hover,
+.notificationHolder:focus,
+.notificationHolder:focus-within {
+    background: var(--Colors-Background-bg-secondary_hover, #F2F4F7);
     cursor: pointer;
-    transition: all 0.1s ease;
+    transition: all 0.2s ease;
 }
 
 .icons {

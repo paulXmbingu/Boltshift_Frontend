@@ -43,7 +43,7 @@ const TopNavLarge = () => {
         <SearchInput />
       </div>
       <div className={styles.notifications}>
-        <Link to={`/wishlist`} > <NotificationIcon icon={Favorite} /> </Link> 
+        <Link to={`/wishlist`} > <NotificationIcon icon={Favorite} className={styles.notificationsDesktopIcon} /> </Link> 
         <Link to={`/cart`}> <NotificationIcon icon={Cart} /> </Link>
         <NotificationIcon icon={Bell} />
         <div className={styles.notificationAvatar} onClick={handleAvatarClick} ref={dropdownRef}>
@@ -84,9 +84,9 @@ const TopNavSmall = () => {
           <Link to='/' > <BrandLogoHor className={styles.brandLogoMobile} /> </Link>
         </div>
         <div className={styles.notificationsMobile}>
-          <NotificationIcon icon={Favorite} />
-          <NotificationIcon icon={Cart} />
-          <NotificationIcon icon={Bell} />
+          <Link to={`/wishlist`}> <NotificationIcon icon={Favorite} className={styles.notificationsMobileIcon} /> </Link>
+          <Link to={`/cart`}> <NotificationIcon icon={Cart} className={styles.notificationsMobileIcon} /> </Link>
+          <NotificationIcon icon={Bell} className={styles.notificationsMobileIcon} />
           <div className={styles.notificationAvatar} onClick={handleAvatarClick} ref={dropdownRef}>
             <UserAvatar userPhoto={UserPhoto} />
             {showDropDown && (
