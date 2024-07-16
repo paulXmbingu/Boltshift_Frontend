@@ -1,7 +1,7 @@
 {
   "id": "/",
-  "name": "Boltshift Shopper",
-  "short_name": "Shopper",
+  "name": "Boltshift Marketple",
+  "short_name": "Boltshift",
   "description": "Shop top brands across different categories. Secure, fast, and hassle-free.",
   "start_url": "/",
   "display": "standalone",
