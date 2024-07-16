@@ -118,6 +118,7 @@
   align-items: center;
   gap: 9.483px;
   cursor: pointer;
+  outline: none;
 }
 
 .notificationsMobile{
