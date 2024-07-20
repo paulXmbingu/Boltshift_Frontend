@@ -113,7 +113,16 @@ const Btn_Ter_LG = ({ iconLeading, ButtonCTA, iconTrailing }) => {
     );
 };
 
-export { Btn_Pri_SM,
+const Btn_Icon_Only_Sec_LG = ({ Icon }) => {
+    return (
+        <button className={styles.Btn_Icon_Only_Sec_LGWrap}>
+            {iconLeading && <img src={Icon} alt="Icon" className={styles.Btn_Icon_Only_Sec_LGIcon} />}
+        </button>
+    );
+};
+
+export {
+    Btn_Pri_SM,
     Btn_Pri_XL,
     Btn_Primary_MD,
     Btn_Primary_LG, 
@@ -121,5 +130,6 @@ export { Btn_Pri_SM,
     Btn_Sec_Color_SM,
     Btn_Sec_Color_XL,
     Btn_Ter_Grey_SM,
-    Btn_Ter_LG, 
+    Btn_Ter_LG,
+    Btn_Icon_Only_Sec_LG,
  };

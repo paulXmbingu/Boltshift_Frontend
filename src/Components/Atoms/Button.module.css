@@ -605,3 +605,24 @@
     width: 20px;
     height: 20px;
 }
+
+.Btn_Icon_Only_Sec_LGWrap {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    padding: var(--spacing-lg, 12px);
+    justify-content: center;
+    align-items: center;
+    gap: var(--spacing-md, 8px);
+    border-radius: var(--radius-md, 8px);
+    border: 1px solid var(--Component-colors-Components-Buttons-Secondary-button-secondary-border, #D0D5DD);
+    background: var(--Component-colors-Components-Buttons-Secondary-button-secondary-bg, #FFF);
+
+    /* Shadows/shadow-xs */
+    box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+}
+
+.Btn_Icon_Only_Sec_LGIcon {
+    width: 20px;
+    height: 20px;
+}
