@@ -11,6 +11,8 @@ import Bell from '../../assets/Icons/UI/bell-02.svg';
 import SearchInput from "../../Components/Atoms/SearchInput";
 import { NavBarDropDownMenu, NavBarDropDownMenuMobileLoggedIn } from "../Molecules/NavBarDropDownMenu";
 import { BrandLogoHor } from "../Atoms/BrandLogo";
+import Filter from "../../assets/Icons/UI/filter-funnel-02.svg"
+import { Btn_Icon_Only_Sec_LG } from "../Atoms/Button";
 
 const TopNavLarge = () => {
   const [showDropDown, setShowDropDown] = useState(false);
@@ -40,6 +42,7 @@ const TopNavLarge = () => {
       </div>
       <Link to='/' > <BrandLogoHor className={styles.logo} /> </Link>
       <div className={styles.searchFilter}>
+      {/* <Btn_Icon_Only_Sec_LG Icon={Filter} /> */}
         <SearchInput />
       </div>
       <div className={styles.notifications}>
@@ -96,6 +99,7 @@ const TopNavSmall = () => {
         </div>
       </div>
       <div className={styles.serchFilterMobile}>
+        <Btn_Icon_Only_Sec_LG Icon={Filter} />
         <SearchInput />
       </div>
     </div>
