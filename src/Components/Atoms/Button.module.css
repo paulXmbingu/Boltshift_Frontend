@@ -605,3 +605,44 @@
     width: 20px;
     height: 20px;
 }
+
+.Btn_Icon_Only_Sec_LGWrap {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    padding: var(--spacing-lg, 12px);
+    justify-content: center;
+    align-items: center;
+    gap: var(--spacing-md, 8px);
+    border-radius: var(--radius-md, 8px);
+    border: 1px solid var(--Component-colors-Components-Buttons-Secondary-button-secondary-border, #D0D5DD);
+    background: var(--Component-colors-Components-Buttons-Secondary-button-secondary-bg, #FFF);
+
+    /* Shadows/shadow-xs */
+    box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+}
+
+.Btn_Icon_Only_Sec_LGWrap:hover {
+    border-radius: var(--radius-md, 8px);
+    border: 1px solid var(--Component-colors-Components-Buttons-Secondary-button-secondary-border_hover, #D0D5DD);
+    background: var(--Component-colors-Components-Buttons-Secondary-button-secondary-bg_hover, #F9FAFB);
+
+    /* Shadows/shadow-xs */
+    box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+}
+
+.Btn_Icon_Only_Sec_LGWrap:focus,
+.Btn_Icon_Only_Sec_LGWrap:focus-within,
+.Btn_Icon_Only_Sec_LGWrap:focus-visible {
+    border-radius: var(--radius-md, 8px);
+    border: 1px solid var(--Component-colors-Components-Buttons-Secondary-button-secondary-border, #D0D5DD);
+    background: var(--Component-colors-Components-Buttons-Secondary-button-secondary-bg, #FFF);
+    
+    /* Focus rings/ring-gray-shadow-xs */
+    box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05), 0px 0px 0px 4px rgba(152, 162, 179, 0.14);
+}
+
+.Btn_Icon_Only_Sec_LGIcon {
+    width: 20px;
+    height: 20px;
+}

@@ -134,7 +134,7 @@
   height: var(--Base-4-Premitives-11, 44px);
   justify-content: center;
   align-items: center;
-  gap: var(--spacing-lg, 12px);
+  gap: var(--spacing-md, 8px);
   align-self: stretch;
   z-index: -10;
 }
