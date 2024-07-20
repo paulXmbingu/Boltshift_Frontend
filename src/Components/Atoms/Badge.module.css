@@ -35,15 +35,20 @@
 }
 
 .badge_PillOutline_LG_LeadingIcon_BrandColorBadgeLabel {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
     color: var(--Component-colors-Utility-Brand-utility-brand-700, #BF1343);
-    text-align: center;
-    
+    text-overflow: ellipsis;
+
     /* Text sm/Medium */
     font-family: Inter;
     font-size: 14px;
     font-style: normal;
     font-weight: 500;
     line-height: 20px; /* 142.857% */
+    line-clamp: 1;
 }
 
 .badge_PillOutline_LG_LeadingIcon_BrandColorBadgeIcon {
