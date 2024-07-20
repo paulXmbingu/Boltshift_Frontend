@@ -116,7 +116,7 @@ const Btn_Ter_LG = ({ iconLeading, ButtonCTA, iconTrailing }) => {
 const Btn_Icon_Only_Sec_LG = ({ Icon }) => {
     return (
         <button className={styles.Btn_Icon_Only_Sec_LGWrap}>
-            {iconLeading && <img src={Icon} alt="Icon" className={styles.Btn_Icon_Only_Sec_LGIcon} />}
+            {Icon && <img src={Icon} alt="Icon" className={styles.Btn_Icon_Only_Sec_LGIcon} />}
         </button>
     );
 };
@@ -132,4 +132,4 @@ export {
     Btn_Ter_Grey_SM,
     Btn_Ter_LG,
     Btn_Icon_Only_Sec_LG,
- };
+};
