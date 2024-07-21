@@ -4,15 +4,6 @@
 
 Welcome to the official repository for the Boltshift E-commerce Web App! This project aims to provide an exceptional online shopping experience for our customers while showcasing a wide range of products. Whether you're a seasoned shopper or a first-time visitor, we're here to make your online shopping journey enjoyable and hassle-free.
 
-# The Design & Prototype
-
-**Viewing Prototype in Figma:**
-Control or Command-Click the buttons below to access the interactive prototype in Figma instantly. Explore the design by interacting with its elements. If you have any questions or encounter any issues, please don't hesitate to reach out to the designers in the Core Engineering Team for assistance (See credits list below). Your engagement with the prototype is appreciated!
-
-[![Design](https://img.shields.io/badge/Design-Ctrl%20or%20Cmd%20Click-c644a3?style=flat)](https://www.figma.com/file/0NuM2ZQjyX4Nvatd58oMMM/Boltshift?type=design&node-id=1411%3A11643&mode=dev) [![Prototype](https://img.shields.io/badge/Prototype-Ctrl%20or%20Cmd%20Click-ff692e?style=flat)](https://www.figma.com/proto/0NuM2ZQjyX4Nvatd58oMMM/Boltshift?node-id=1663-14632&scaling=scale-down-width&page-id=1411%3A11643&starting-point-node-id=1663%3A14632&t=gYFeccmlX2jdKlsn-8&hide-ui=1)
-
-![Boltshift Marketplace Product Cover Artwork](https://res.cloudinary.com/excit3/image/upload/Boltshift%20Branding/Boltshift_Marketplace_Product_Cover_Artwork_viisbm.png)
-
 ## Table of Contents
 
 - [Introduction](#introduction)
@@ -23,11 +14,13 @@ Control or Command-Click the buttons below to access the interactive prototype i
 - [Technologies](#technologies)
 - [Core Product Engineering Team](#core_product_engineering_team)
 - [Contributing](#contributing)
-- [License](#license)
+
 
 ## Introduction
 
-Boltshift Marketplace is a cutting-edge e-commerce platform that combines high-quality products from various categories, providing customers with a seamless shopping experience. Our website is designed to be user-friendly, responsive, and visually appealing, ensuring that customers can easily browse, search for, and purchase their favorite items.
+Boltshift Marketplace is a cutting-edge e-commerce platform that combines high-quality products from various categories and vendors, providing customers with a seamless shopping experience and a near infinite catalog. Our website is designed to be user-friendly, responsive, and visually appealing, ensuring that customers can easily browse, search for, and purchase their favorite items.
+
+![Boltshift Marketplace Product Cover Artwork](https://res.cloudinary.com/excit3/image/upload/Boltshift%20Branding/Boltshift_Marketplace_Product_Cover_Artwork_viisbm.png)
 
 ## Features
 
@@ -94,13 +87,9 @@ We welcome contributions from the community! If you'd like to contribute to the 
 
 For major changes or feature ideas, it's best to open an issue to discuss it first.
 
-## License
-
-This project is licensed under the [MIT License](LICENSE).
-
 ---
 
 Thank you for your interest in the Boltshift Ecommerce Website! We look forward to providing an exceptional shopping experience for our users. If you have any questions or feedback, please don't hesitate to reach out.
 
-[Website Link]([https://ecommerce-excite.vercel.app/](https://boltshift.vercel.app/))
+[Website Link]([https://boltshift.vercel.app/](https://boltshift.vercel.app/))
 [Contact Us](mailto:paulXmbingu@gmail.com)
