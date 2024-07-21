@@ -78,5 +78,4 @@ Boltshift Marketplace is a cutting-edge e-commerce platform that combines high-q
 
 Thank you for your interest in the Boltshift Ecommerce Website! We look forward to providing an exceptional shopping experience for our users. If you have any questions or feedback, please don't hesitate to reach out.
 
-[Website Link]([https://boltshift.vercel.app/](https://boltshift.vercel.app/))
 [Contact Us](mailto:paulXmbingu@gmail.com)
