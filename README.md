@@ -4,8 +4,6 @@
 
 Welcome to the official repository for the Boltshift E-commerce Web App! This project aims to provide an exceptional online shopping experience for our customers while showcasing a wide range of products. Whether you're a seasoned shopper or a first-time visitor, we're here to make your online shopping journey enjoyable and hassle-free.
 
-![Boltshift Marketplace Product Cover Artwork](https://res.cloudinary.com/excit3/image/upload/Boltshift%20Branding/Boltshift_Marketplace_Product_Cover_Artwork_viisbm.png)
-
 ## Table of Contents
 
 - [Introduction](#introduction)
@@ -17,9 +15,12 @@ Welcome to the official repository for the Boltshift E-commerce Web App! This pr
 - [Core Product Engineering Team](#core_product_engineering_team)
 - [Contributing](#contributing)
 
+
 ## Introduction
 
-Boltshift Marketplace is a cutting-edge e-commerce platform that combines high-quality products from various categories, providing customers with a seamless shopping experience. Our website is designed to be user-friendly, responsive, and visually appealing, ensuring that customers can easily browse, search for, and purchase their favorite items.
+Boltshift Marketplace is a cutting-edge e-commerce platform that combines high-quality products from various categories and vendors, providing customers with a seamless shopping experience and a near infinite catalog. Our website is designed to be user-friendly, responsive, and visually appealing, ensuring that customers can easily browse, search for, and purchase their favorite items.
+
+![Boltshift Marketplace Product Cover Artwork](https://res.cloudinary.com/excit3/image/upload/Boltshift%20Branding/Boltshift_Marketplace_Product_Cover_Artwork_viisbm.png)
 
 ## Features
 
