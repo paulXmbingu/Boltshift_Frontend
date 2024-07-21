@@ -13,8 +13,6 @@ Welcome to the official repository for the Boltshift E-commerce Web App! This pr
   - [Usage](#usage)
 - [Technologies](#technologies)
 - [Core Product Engineering Team](#core_product_engineering_team)
-- [Contributing](#contributing)
-
 
 ## Introduction
 
@@ -74,18 +72,7 @@ Boltshift Marketplace is a cutting-edge e-commerce platform that combines high-q
 - Special Contributions: **Marion Ngayi & The Senjes Cuisine Team**
 - Product Research & Design: **Paul Mbingu**
 - Frontend Engineers: **Paul Mbingu, & Felix Ouma**
-  
-## Contributing
-
-We welcome contributions from the community! If you'd like to contribute to the Boltshift E-commerce Website, please follow these steps:
-
-1. Fork the repository.
-2. Create a new branch for your feature/bug fix.
-3. Make your changes and commit them with descriptive messages.
-4. Push your changes to your fork.
-5. Submit a pull request detailing your changes.
-
-For major changes or feature ideas, it's best to open an issue to discuss it first.
+- Backend Engineers: **Samuel Maingi, & Paul Mbingu**
 
 ---
 
