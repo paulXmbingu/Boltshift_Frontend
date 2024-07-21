@@ -24,7 +24,7 @@ const Btn_Pri_XL = ({ iconLeading, ButtonCTA, iconTrailing }) => {
                     {ButtonCTA}
                 </div>
             </div>
-            {iconTrailing && <img src={iconTrailing} alt="Trailing Icon" className={styles.trailingIconPriXL} />}
+            {iconTrailing && <img src={ iconTrailing } alt="Trailing Icon" className={styles.trailingIconPriXL} />}
         </button>
     );
 };
