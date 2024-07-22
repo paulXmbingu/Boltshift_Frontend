@@ -1,4 +1,4 @@
-![Boltshift Marketplace Project Cover](https://res.cloudinary.com/excit3/image/upload/v1716652242/Boltshift%20Branding/Github_Front-end_Codebase_File_Cover_doqfbz.png)
+![Boltshift Marketplace Project Cover](https://res.cloudinary.com/excit3/image/upload/v1721684091/Boltshift%20Branding/Github_Front-end_Codebase_File_Cover_doqfbz.png)
 
 # Boltshift Marketplace Frontend
 
