@@ -1,8 +1,8 @@
-![Boltshift Marketplace Project Cover](https://res.cloudinary.com/excit3/image/upload/v1716652242/Boltshift%20Branding/Github_Front-end_Codebase_File_Cover_doqfbz.png)
+![Boltshift Marketplace Project Cover](https://res.cloudinary.com/excit3/image/upload/v1721684091/Boltshift%20Branding/Github_Front-end_Codebase_File_Cover_doqfbz.png)
 
 # Boltshift Marketplace Frontend
 
-Welcome to the official repository for the Boltshift E-commerce Web App! This project aims to provide an exceptional online shopping experience for our customers while showcasing a wide range of products. Whether you're a seasoned shopper or a first-time visitor, we're here to make your online shopping journey enjoyable and hassle-free.
+Welcome to the official repository for the Boltshift eCcommerce Web App! This project aims to provide an exceptional online shopping experience for our customers while showcasing a wide range of high quality products. Whether they're seasoned shoppers or first-time visitors, we're here to make their online shopping journey enjoyable and hassle-free.
 
 ## Features
 
