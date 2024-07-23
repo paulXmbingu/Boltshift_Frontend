@@ -6,5 +6,8 @@ export default defineConfig({
   plugins: [react()],
   server: {
     historyApiFallback: true
+  },
+  optimizeDeps: {
+    exclude: ['chunk-QI53LHDY']
   }
 })
