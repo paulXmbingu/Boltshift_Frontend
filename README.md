@@ -2,7 +2,7 @@
 
 # Boltshift Marketplace Frontend
 
-Welcome to the official repository for the Boltshift E-commerce Web App! This project aims to provide an exceptional online shopping experience for our customers while showcasing a wide range of high quality products. Whether they're seasoned shoppers or a first-time visitors, we're here to make their online shopping journey enjoyable and hassle-free.
+Welcome to the official repository for the Boltshift eCcommerce Web App! This project aims to provide an exceptional online shopping experience for our customers while showcasing a wide range of high quality products. Whether they're seasoned shoppers or a first-time visitors, we're here to make their online shopping journey enjoyable and hassle-free.
 
 ## Features
 
