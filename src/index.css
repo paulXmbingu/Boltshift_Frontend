@@ -1,3 +1,12 @@
+::selection {
+  background: var(--Colors-Background-bg-brand-secondary, #FDE8EE);
+  color: var(--colors-text-text-brand-tertiary-600, #DA154D);
+}
+
+body {
+  margin: auto;
+}
+
 :root {
   transform-origin: top;
   max-width: 1280px;
@@ -8,13 +17,7 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  
 }
 
-::selection {
-  background: var(--Colors-Background-bg-brand-secondary, #FDE8EE);
-  color: var(--colors-text-text-brand-tertiary-600, #DA154D);
-}
-
-body {
-  margin: auto;
-}
