@@ -18,19 +18,19 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  color-scheme: light dark;
+  /* color-scheme: light dark; */
 }
 
 @media (prefers-color-scheme: light) {
   .element {
-    color: black;
-    background-color: white;
+    color: var(--colors-text-text-primary-900, #101828);
+    background: var(--Colors-Background-bg-primary, #FFF);
   }
 }
 
 @media (prefers-color-scheme: dark) {
   .element {
-    color: white;
-    background-color: black;
+    color: var(--colors-text-text-primary-900, #F5F5F6);
+    background: var(--Colors-Background-bg-primary, #0C111D);
   }
 }
