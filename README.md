@@ -15,8 +15,6 @@ Welcome to the official repository for the Boltshift eCcommerce Web App! This pr
 - **Order Tracking**: Track the status of orders from purchase to delivery.
 - **Responsive Design**: Enjoy a consistent experience across various devices, from smartphones to desktops.
 
-![Boltshift Marketplace Product Cover Artwork](https://res.cloudinary.com/excit3/image/upload/Boltshift%20Branding/Boltshift_Marketplace_Product_Cover_Artwork_viisbm.png)
-
 ## Getting Started
 
 ### Installation
