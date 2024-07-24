@@ -37,7 +37,9 @@ Welcome to the official repository for the Boltshift eCcommerce Web App! This pr
 
 ### Installation
 
-1. Install and update [Node.js & Node Package Manager](https://nodejs.org/en)
+1. <a href="https://nodejs.org/en" target="_blank">Install and update Node.js & Node Package Manager</a>
+
+
 
 2. Clone this repository to your local machine using: 
    ```
