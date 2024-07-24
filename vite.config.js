@@ -7,7 +7,4 @@ export default defineConfig({
   server: {
     historyApiFallback: true
   },
-  optimizeDeps: {
-    exclude: ['chunk-QI53LHDY']
-  }
 })
