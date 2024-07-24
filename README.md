@@ -15,6 +15,24 @@ Welcome to the official repository for the Boltshift eCcommerce Web App! This pr
 - **Order Tracking**: Track the status of orders from purchase to delivery.
 - **Responsive Design**: Enjoy a consistent experience across various devices, from smartphones to desktops.
 
+## Technologies
+
+- **Figma**: Design & Prototyping
+- **Dovetail**: Research Analysis & Repository
+- **Maze**: Usability Study
+- **React.js**: Frontend Framework
+- **CSS Modules**: Styling
+- **React Router**: Routing
+- **Redux**: State Management
+- **Django**: Backend Framework
+
+## Product Engineering Team
+
+- Special Contributions: **Marion Ngayi & The Senjes Cuisine Team**
+- Product Research & Design: **Paul Mbingu**
+- Frontend Engineers: **Paul Mbingu, & Felix Ouma**
+- Backend Engineers: **Samuel Maingi, & Paul Mbingu**
+
 ## Getting Started
 
 ### Installation
@@ -39,21 +57,3 @@ Welcome to the official repository for the Boltshift eCcommerce Web App! This pr
    ```
 
 2. Open your web browser and visit the listed addresses either locally or remotely on the network
-
-## Technologies
-
-- **Figma**: Design & Prototyping
-- **Dovetail**: Research Analysis & Repository
-- **Maze**: Usability Study
-- **React.js**: Frontend Framework
-- **CSS Modules**: Styling
-- **React Router**: Routing
-- **Redux**: State Management
-- **Django**: Backend Framework
-
-## Product Engineering Team
-
-- Special Contributions: **Marion Ngayi & The Senjes Cuisine Team**
-- Product Research & Design: **Paul Mbingu**
-- Frontend Engineers: **Paul Mbingu, & Felix Ouma**
-- Backend Engineers: **Samuel Maingi, & Paul Mbingu**
