@@ -14,6 +14,7 @@ Welcome to the official repository for the Boltshift eCcommerce Web App! This pr
 - **Secure Payments**: Multiple payment options with enhanced security to ensure safe transactions.
 - **Order Tracking**: Track the status of orders from purchase to delivery.
 - **Responsive Design**: Enjoy a consistent experience across various devices, from smartphones to desktops.
+- **Live Chat**: Connect with customer service representatives in real-time to address queries and resolve issues.
 
 ## Technologies
 
@@ -24,6 +25,7 @@ Welcome to the official repository for the Boltshift eCcommerce Web App! This pr
 - **CSS Modules**: Styling
 - **React Router**: Routing
 - **Redux**: State Management
+- **tawk.to**: Live Chat
 - **Django**: Backend Framework
 
 ## Product Engineering Team
