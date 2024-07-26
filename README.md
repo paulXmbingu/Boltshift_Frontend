@@ -8,7 +8,7 @@ Welcome to the official repository for the Boltshift eCcommerce Web App! This pr
 
 - **User Authentication**: Secure user accounts and authentication to manage profiles and track order history.
 - **Product Catalog**: A comprehensive listing of products, organized into categories for easy navigation.
-- **Search and Filters**: Effortlessly find products using the search functionality and apply filters to narrow down choices.
+- **Search and Filters**: Effortlessly find products using the search functionality & apply filters to narrow down choices.
 - **Shopping Cart**: Add products to cart, review before purchasing, and easily adjust quantities.
 - **Wishlist**: Curate shopping desires! Collect and save items they love—your personalized shopping inspiration.
 - **Secure Payments**: Multiple payment options with enhanced security to ensure safe transactions.
