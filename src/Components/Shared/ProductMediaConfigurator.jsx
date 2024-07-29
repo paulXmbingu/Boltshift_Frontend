@@ -3,7 +3,6 @@ import styles from './ProductMediaConfigurator.module.css'
 import { Link } from "react-router-dom";
 import { ProductMediaThumbnailMD } from "./ProductMediaThumbnail";
 import { Btn_Pri_XL, Btn_Sec_Color_XL } from "../Atoms/Button";
-import StoreLabel from "./StoreLabel";
 import { Badge_PillColor_SM_Blue,
     Badge_PillColor_SM_BlueLight,
     Badge_PillColor_SM_Brand,
@@ -20,6 +19,7 @@ import { Badge_PillColor_SM_Blue,
 } from "../Atoms/Badge";
 import { StarRating4 } from "../Molecules/StarRating";
 import { ButtonGroup } from "../Atoms/ButtonGroup";
+import StoreLabel from "./StoreLabel";
 import arrowdown from "../../assets/Icons/UI/arrow-down.svg"
 import shoppingcart03 from "../../assets/Icons/UI/shopping-cart-03 Brand.svg"
 import minus from "../../assets/Icons/UI/minus.svg"
@@ -78,7 +78,11 @@ const ProductMediaConfigurator = () => {
                     <div className={styles.secondaryCTAs}>
                         <div className={styles.itemButtonGroup}>
                             <ButtonGroup LeadingIcon={minus} />
-                            <input type="number" className={styles.countInput} defaultValue={1} />
+                            <input
+                                type="number"
+                                className={styles.countInput}
+                                defaultValue={1}
+                            />
                             <ButtonGroup LeadingIcon={plus} />
                         </div>
                         <Btn_Sec_Color_XL LeadingIcon={shoppingcart03} ButtonCTA={`Add to Cart`} />
