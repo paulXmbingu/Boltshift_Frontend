@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from './ProductMediaConfigurator.module.css'
 import { Link } from "react-router-dom";
 import { ProductMediaThumbnailMD } from "./ProductMediaThumbnail";
@@ -26,6 +26,16 @@ import minus from "../../assets/Icons/UI/minus.svg"
 import plus from "../../assets/Icons/UI/plus fgSec700.svg"
 
 const ProductMediaConfigurator = () => {
+    const [quantity, setQuantity] = useState(1);
+
+    const handleAdd = () => {
+        setQuantity (quantity + 1);
+    };
+
+    const handleSubtract = () => {
+        setQuantity (quantity - 1);
+    };
+
     return (
         <div className={styles.ProductMediaConfiguratorWrap}>
             <div className={styles.productMediaBrowser}>
@@ -77,13 +87,13 @@ const ProductMediaConfigurator = () => {
                 <div className={styles.CTAs}> 
                     <div className={styles.secondaryCTAs}>
                         <div className={styles.itemButtonGroup}>
-                            <ButtonGroup LeadingIcon={minus} />
+                            <ButtonGroup LeadingIcon={minus} onClick={handleSubtract} />
                             <input
                                 type="number"
                                 className={styles.countInput}
                                 defaultValue={1}
                             />
-                            <ButtonGroup LeadingIcon={plus} />
+                            <ButtonGroup LeadingIcon={plus} onClick={handleAdd} />
                         </div>
                         <Btn_Sec_Color_XL LeadingIcon={shoppingcart03} ButtonCTA={`Add to Cart`} />
                     </div>
