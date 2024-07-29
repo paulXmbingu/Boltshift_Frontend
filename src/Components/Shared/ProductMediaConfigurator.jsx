@@ -1,18 +1,41 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from './ProductMediaConfigurator.module.css'
 import { Link } from "react-router-dom";
 import { ProductMediaThumbnailMD } from "./ProductMediaThumbnail";
 import { Btn_Pri_XL, Btn_Sec_Color_XL, Btn_Sec_Gray_SM } from "../Atoms/Button";
 import StoreLabel from "./StoreLabel";
-import { Badge_PillColor_SM_Blue, Badge_PillColor_SM_BlueLight, Badge_PillColor_SM_Brand, Badge_PillColor_SM_Error, Badge_PillColor_SM_Gray, Badge_PillColor_SM_GrayBlue, Badge_PillColor_SM_Indigo, Badge_PillColor_SM_Orange, Badge_PillColor_SM_Pink, Badge_PillColor_SM_Purple, Badge_PillColor_SM_Success, Badge_PillColor_SM_Warning, Badge_PillOutline_LG_LeadingIcon_BrandColor } from "../Atoms/Badge";
-import arrowdown from "../../assets/Icons/UI/arrow-down.svg"
+import { Badge_PillColor_SM_Blue,
+    Badge_PillColor_SM_BlueLight,
+    Badge_PillColor_SM_Brand,
+    Badge_PillColor_SM_Error,
+    Badge_PillColor_SM_Gray,
+    Badge_PillColor_SM_GrayBlue,
+    Badge_PillColor_SM_Indigo,
+    Badge_PillColor_SM_Orange,
+    Badge_PillColor_SM_Pink,
+    Badge_PillColor_SM_Purple,
+    Badge_PillColor_SM_Success,
+    Badge_PillColor_SM_Warning,
+    Badge_PillOutline_LG_LeadingIcon_BrandColor 
+    } from "../Atoms/Badge";
 import { StarRating4 } from "../Molecules/StarRating";
-import shoppingcart03 from "../../assets/Icons/UI/shopping-cart-03 Brand.svg"
 import { ButtonGroup } from "../Atoms/ButtonGroup";
+import arrowdown from "../../assets/Icons/UI/arrow-down.svg"
+import shoppingcart03 from "../../assets/Icons/UI/shopping-cart-03 Brand.svg"
 import minus from "../../assets/Icons/UI/minus.svg"
 import plus from "../../assets/Icons/UI/plus fgSec700.svg"
 
 const ProductMediaConfigurator = () => {
+    const [itemCount, setItemCount] = useState(1);
+
+    const addItemCount = () => {
+        setItemCount(itemCount + 1);
+    };
+
+    const subtractItemCount = () => {
+        setItemCount(itemCount > 1 ? itemCount - 1 : 1);
+    };
+
     return (
         <div className={styles.ProductMediaConfiguratorWrap}>
             <div className={styles.productMediaBrowser}>
@@ -64,9 +87,15 @@ const ProductMediaConfigurator = () => {
                 <div className={styles.CTAs}> 
                     <div className={styles.secondaryCTAs}>
                         <div className={styles.itemButtonGroup}>
-                            <ButtonGroup LeadingIcon={minus} />
-                            <input type="number" className={styles.countInput} defaultValue={1} />
-                            <ButtonGroup LeadingIcon={plus} />
+                            <ButtonGroup LeadingIcon={minus} onClick={subtractItemCount} />
+                            <input
+                                type="number"
+                                className={styles.countInput}
+                                value={itemCount}
+                                onChange={(e) => setItemCount(Number(e.target.value))}
+                                min="1"
+                            />
+                            <ButtonGroup LeadingIcon={plus} onClick={addItemCount} />
                         </div>
                         <Btn_Sec_Color_XL LeadingIcon={shoppingcart03} ButtonCTA={`Add to Cart`} />
                     </div>
