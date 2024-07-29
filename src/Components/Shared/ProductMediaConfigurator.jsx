@@ -2,13 +2,26 @@ import React from "react";
 import styles from './ProductMediaConfigurator.module.css'
 import { Link } from "react-router-dom";
 import { ProductMediaThumbnailMD } from "./ProductMediaThumbnail";
-import { Btn_Pri_XL, Btn_Sec_Color_XL, Btn_Sec_Gray_SM } from "../Atoms/Button";
+import { Btn_Pri_XL, Btn_Sec_Color_XL } from "../Atoms/Button";
 import StoreLabel from "./StoreLabel";
-import { Badge_PillColor_SM_Blue, Badge_PillColor_SM_BlueLight, Badge_PillColor_SM_Brand, Badge_PillColor_SM_Error, Badge_PillColor_SM_Gray, Badge_PillColor_SM_GrayBlue, Badge_PillColor_SM_Indigo, Badge_PillColor_SM_Orange, Badge_PillColor_SM_Pink, Badge_PillColor_SM_Purple, Badge_PillColor_SM_Success, Badge_PillColor_SM_Warning, Badge_PillOutline_LG_LeadingIcon_BrandColor } from "../Atoms/Badge";
-import arrowdown from "../../assets/Icons/UI/arrow-down.svg"
+import { Badge_PillColor_SM_Blue,
+    Badge_PillColor_SM_BlueLight,
+    Badge_PillColor_SM_Brand,
+    Badge_PillColor_SM_Error,
+    Badge_PillColor_SM_Gray,
+    Badge_PillColor_SM_GrayBlue,
+    Badge_PillColor_SM_Indigo,
+    Badge_PillColor_SM_Orange,
+    Badge_PillColor_SM_Pink,
+    Badge_PillColor_SM_Purple,
+    Badge_PillColor_SM_Success,
+    Badge_PillColor_SM_Warning,
+    Badge_PillOutline_LG_LeadingIcon_BrandColor
+} from "../Atoms/Badge";
 import { StarRating4 } from "../Molecules/StarRating";
-import shoppingcart03 from "../../assets/Icons/UI/shopping-cart-03 Brand.svg"
 import { ButtonGroup } from "../Atoms/ButtonGroup";
+import arrowdown from "../../assets/Icons/UI/arrow-down.svg"
+import shoppingcart03 from "../../assets/Icons/UI/shopping-cart-03 Brand.svg"
 import minus from "../../assets/Icons/UI/minus.svg"
 import plus from "../../assets/Icons/UI/plus fgSec700.svg"
 
