@@ -8,12 +8,13 @@ Welcome to the official repository for the Boltshift eCcommerce Web App! This pr
 
 - **User Authentication**: Secure user accounts and authentication to manage profiles and track order history.
 - **Product Catalog**: A comprehensive listing of products, organized into categories for easy navigation.
-- **Search and Filters**: Effortlessly find products using the search functionality and apply filters to narrow down choices.
+- **Search and Filters**: Effortlessly find products using the search functionality & apply filters to narrow down choices.
 - **Shopping Cart**: Add products to cart, review before purchasing, and easily adjust quantities.
 - **Wishlist**: Curate shopping desires! Collect and save items they love—your personalized shopping inspiration.
 - **Secure Payments**: Multiple payment options with enhanced security to ensure safe transactions.
 - **Order Tracking**: Track the status of orders from purchase to delivery.
 - **Responsive Design**: Enjoy a consistent experience across various devices, from smartphones to desktops.
+- **Live Chat**: Connect with customer service representatives in real-time to address queries and resolve issues.
 
 ## Technologies
 
@@ -24,6 +25,7 @@ Welcome to the official repository for the Boltshift eCcommerce Web App! This pr
 - **CSS Modules**: Styling
 - **React Router**: Routing
 - **Redux**: State Management
+- **tawk.to**: Live Chat
 - **Django**: Backend Framework
 
 ## Product Engineering Team
@@ -38,6 +40,8 @@ Welcome to the official repository for the Boltshift eCcommerce Web App! This pr
 ### Installation
 
 1. Install and update [Node.js & Node Package Manager](https://nodejs.org/en)
+
+
 
 2. Clone this repository to your local machine using: 
    ```
