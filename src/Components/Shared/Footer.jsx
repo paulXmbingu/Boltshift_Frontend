@@ -43,8 +43,8 @@ const Footer = () => {
                     <a href="https://excite.gitbook.io/boltshift" className={styles.linkText} target="_blank" rel="noopener noreferrer"> Resources </a>
                 </div>
                 <div className={styles.socialIcons}>
-                    <a href="https://paulmbingu.com/" className={styles.link} target="_blank" rel="noopener noreferrer" > <img src={PaulMbingu} alt="Paul Mbingu" className={styles.socialLogo} /> </a>
-                    <a href="https://excite.company/" className={styles.link} target="_blank" rel="noopener noreferrer" > <img src={Excite} alt="Paul Mbingu" className={styles.socialLogo} /> </a>
+                    {/* <a href="https://paulmbingu.com/" className={styles.link} target="_blank" rel="noopener noreferrer" > <img src={PaulMbingu} alt="Paul Mbingu" className={styles.socialLogo} /> </a> */}
+                    {/* <a href="https://excite.company/" className={styles.link} target="_blank" rel="noopener noreferrer" > <img src={Excite} alt="Paul Mbingu" className={styles.socialLogo} /> </a> */}
                     <a href="https://dribbble.com/paulXmbingu" className={styles.link} target="_blank" rel="noopener noreferrer" > <img src={Dribbble} alt="Dribbble" className={styles.socialLogo} /> </a>
                     <a href="https://www.instagram.com/paulxmbingu/" className={styles.link} target="_blank" rel="noopener noreferrer"> <img src={Instagram} alt="Instagram" className={styles.socialLogo} /> </a>
                     <a href="https://www.linkedin.com/in/paulxmbingu/" className={styles.link} target="_blank" rel="noopener noreferrer"> <img src={LinkedIn} alt="LinkedIn" className={styles.socialLogo} /> </a>
