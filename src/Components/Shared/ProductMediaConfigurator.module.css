@@ -58,9 +58,13 @@
     gap: var(--spacing-system-guides-corner-radius-4, 16px);
     flex-shrink: 0;
     align-self: stretch;
-    overflow-x:scroll;
+    overflow-x: scroll;
     scrollbar-width: none;
     -ms-overflow-style: none;
+}
+
+.thumbnailsContainer::-webkit-scrollbar {
+    display: none;
 }
 
 .productRatingSummary {
@@ -93,7 +97,8 @@
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 3;
-    align-self: stretch;overflow: hidden;
+    align-self: stretch;
+    overflow: hidden;
     color: var(--colors-text-text-quarterary-500, #667085);
     text-overflow: ellipsis;
     
@@ -125,13 +130,13 @@
     width: 100%;
 }
 
- .price {
+.price {
     display: flex;
     align-items: flex-start;
     gap: var(--spacing-system-guides-corner-radius-1, 4px);
 }
 
- .currency {
+.currency {
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 1;
@@ -149,7 +154,7 @@
     line-clamp: 1;
 }
 
- .priceValue {
+.priceValue {
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 1;
@@ -167,7 +172,7 @@
     line-clamp: 1;
 }
 
- .starRatingReviewCounter {
+.starRatingReviewCounter {
     display: flex;
     align-items: center;
     align-content: center;
@@ -176,7 +181,7 @@
     flex-wrap: wrap;
 }
 
- .reviewCounter {
+.reviewCounter {
     color: var(--colors-text-text-quarterary-500, #667085);
 
     /* Text sm/Regular */
@@ -187,7 +192,7 @@
     line-height: 20px; /* 142.857% */
 }
 
- .productTags {
+.productTags {
     display: flex;
     align-items: flex-start;
     align-content: flex-start;
@@ -210,6 +215,7 @@
     width: 100%;
     margin: 0px;
 }
+
 .countInput {
     display: flex;
     width: var(--Base-4-Premitives-16, 64px);
@@ -228,7 +234,16 @@
     font-style: normal;
     font-weight: 600;
     line-height: 20px; /* 142.857% */
+    -moz-appearance: textfield; /* Firefox */
+    appearance: textfield; /* Other browsers */
 }
+
+.countInput::-webkit-outer-spin-button,
+.countInput::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
 .countInput:focus,
 .countInput:hover {
     display: flex;
