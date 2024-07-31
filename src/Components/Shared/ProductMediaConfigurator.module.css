@@ -233,6 +233,12 @@
     line-height: 28px; /* 155.556% */
 }
 
+.opt1Selector {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-system-guides-corner-radius-5, 20px);
+}
+
 .itemButtonGroup {
     display: flex;
     align-items: center;

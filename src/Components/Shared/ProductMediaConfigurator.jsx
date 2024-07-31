@@ -24,6 +24,7 @@ import arrowdown from "../../assets/Icons/UI/arrow-down.svg"
 import shoppingcart03 from "../../assets/Icons/UI/shopping-cart-03 Brand.svg"
 import minus from "../../assets/Icons/UI/minus.svg"
 import plus from "../../assets/Icons/UI/plus fgSec700.svg"
+import RadioButton from "../Atoms/RadioButton";
 
 const ProductMediaConfigurator = () => {
     const [quantity, setQuantity] = useState(1);
@@ -81,6 +82,13 @@ const ProductMediaConfigurator = () => {
                 <div className={styles.productOption1}>
                     <div className={styles.opt1Label}>
                         <div className={styles.opt1Text}> Color </div>
+                    </div>
+                    <div className={styles.opt1Selector}>
+                        <RadioButton />
+                        <RadioButton />
+                        <RadioButton />
+                        <RadioButton />
+                        <RadioButton />
                     </div>
                 </div>
                 <div> Product Options 2 </div>
