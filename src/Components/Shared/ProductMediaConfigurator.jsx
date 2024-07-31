@@ -78,7 +78,11 @@ const ProductMediaConfigurator = () => {
                     <Badge_PillColor_SM_Pink BadgeLabel={`Back in Store`} />
                     <Badge_PillColor_SM_Orange BadgeLabel={`Top Rated`} />
                 </div>
-                <div> Product Options 1 </div>
+                <div className={styles.productOption1}>
+                    <div className={styles.opt1Label}>
+                        <div className={styles.opt1Text}> Color </div>
+                    </div>
+                </div>
                 <div> Product Options 2 </div>
                 <div className={styles.price}>
                     <div className={styles.currency}> Ksh. </div>

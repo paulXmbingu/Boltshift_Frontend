@@ -200,6 +200,38 @@
     align-self: stretch;
     flex-wrap: wrap;
 }
+.productOption1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: var(--spacing-md, 8px);
+    align-self: stretch;
+}
+
+.opt1Label {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.opt1Text {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    line-clamp: 1;
+    overflow: hidden;
+    color: var(--colors-text-text-primary-900, #101828);
+    text-align: center;
+    text-overflow: ellipsis;
+
+    /* Text lg/Medium */
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px; /* 155.556% */
+}
 
 .itemButtonGroup {
     display: flex;
