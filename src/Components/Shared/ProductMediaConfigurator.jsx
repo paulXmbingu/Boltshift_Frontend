@@ -84,11 +84,11 @@ const ProductMediaConfigurator = () => {
                         <div className={styles.opt1Text}> Color </div>
                     </div>
                     <div className={styles.opt1Selector}>
-                        <RadioButton />
-                        <RadioButton />
-                        <RadioButton />
-                        <RadioButton />
-                        <RadioButton />
+                        <RadioButton color="var(--Colors-Background-bg-brand-solid,#DA154D)" />
+                        <RadioButton color="var(--Component-colors-Utility-Warning-utility-warning-500, #F79009)" />
+                        <RadioButton color="var(--Component-colors-Utility-Success-utility-success-500, #17B26A)" />
+                        <RadioButton color="var(--Component-colors-Utility-Blue-light-utility-blue-light-500, #0BA5EC)" />
+                        <RadioButton color="var(--Component-colors-Utility-Fuchsia-utility-fuchsia-500, #D444F1)" />
                     </div>
                 </div>
                 <div> Product Options 2 </div>

@@ -236,7 +236,7 @@
 .opt1Selector {
     display: flex;
     align-items: center;
-    gap: var(--spacing-system-guides-corner-radius-5, 20px);
+    gap: var(--spacing-lg, 12px);
 }
 
 .itemButtonGroup {
