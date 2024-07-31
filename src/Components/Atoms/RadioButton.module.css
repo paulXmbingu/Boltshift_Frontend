@@ -1,7 +1,6 @@
 .radio {
     border-radius: var(--radius-full, 9999px);
     border: 1px solid var(--Colors-Border-border-primary, #D0D5DD);
-
     appearance: none;
     -webkit-appearance: none;
     -moz-appearance: none;

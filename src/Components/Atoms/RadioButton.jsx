@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./RadioButton.module.css"
 
-const RadioButton = ({ color }) => {
+const RadioButton = ({ color, checked }) => {
     return (
         <input
             type="radio"
@@ -9,6 +9,7 @@ const RadioButton = ({ color }) => {
             id=""
             className={styles.radio}
             style={{ backgroundColor:color }}
+            checked={checked}
         />
     );
 };
