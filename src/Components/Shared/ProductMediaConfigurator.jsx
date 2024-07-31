@@ -24,6 +24,7 @@ import arrowdown from "../../assets/Icons/UI/arrow-down.svg"
 import shoppingcart03 from "../../assets/Icons/UI/shopping-cart-03 Brand.svg"
 import minus from "../../assets/Icons/UI/minus.svg"
 import plus from "../../assets/Icons/UI/plus fgSec700.svg"
+import RadioButton from "../Atoms/RadioButton";
 
 const ProductMediaConfigurator = () => {
     const [quantity, setQuantity] = useState(1);
@@ -78,7 +79,18 @@ const ProductMediaConfigurator = () => {
                     <Badge_PillColor_SM_Pink BadgeLabel={`Back in Store`} />
                     <Badge_PillColor_SM_Orange BadgeLabel={`Top Rated`} />
                 </div>
-                <div> Product Options 1 </div>
+                <div className={styles.productOption1}>
+                    <div className={styles.opt1Label}>
+                        <div className={styles.opt1Text}> Color </div>
+                    </div>
+                    <div className={styles.opt1Selector}>
+                        <RadioButton />
+                        <RadioButton />
+                        <RadioButton />
+                        <RadioButton />
+                        <RadioButton />
+                    </div>
+                </div>
                 <div> Product Options 2 </div>
                 <div className={styles.price}>
                     <div className={styles.currency}> Ksh. </div>
