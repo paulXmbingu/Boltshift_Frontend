@@ -3,10 +3,11 @@ import styles from "./RadioButton.module.css"
 
 const RadioButton = () => {
     return (
-        <input 
+        <input
             type="radio"
             name="radio"
             id=""
+            className={styles.radio}
         />
     );
 };
