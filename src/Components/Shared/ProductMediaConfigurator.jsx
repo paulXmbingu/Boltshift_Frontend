@@ -3,17 +3,9 @@ import styles from './ProductMediaConfigurator.module.css'
 import { Link } from "react-router-dom";
 import { ProductMediaThumbnailMD } from "./ProductMediaThumbnail";
 import { Btn_Pri_XL, Btn_Sec_Color_XL } from "../Atoms/Button";
-import { Badge_PillColor_SM_Blue,
-    Badge_PillColor_SM_BlueLight,
-    Badge_PillColor_SM_Brand,
-    Badge_PillColor_SM_Error,
-    Badge_PillColor_SM_Gray,
-    Badge_PillColor_SM_GrayBlue,
+import {  Badge_PillColor_SM_Error,
     Badge_PillColor_SM_Indigo,
     Badge_PillColor_SM_Orange,
-    Badge_PillColor_SM_Pink,
-    Badge_PillColor_SM_Purple,
-    Badge_PillColor_SM_Success,
     Badge_PillColor_SM_Warning,
     Badge_PillOutline_LG_LeadingIcon_BrandColor
 } from "../Atoms/Badge";
@@ -66,17 +58,9 @@ const ProductMediaConfigurator = () => {
                     <div className={styles.productDescriptionSummary}> Discover the essence of African craftsmanship with our elegant dress, meticulously designed in Voi town, Kenya. Embracing vibrant local culture and artistry, each dress is crafted with care, blending traditional motifs with contemporary flair. Perfect for any occasion, this dress embodies the rich heritage and craftsmanship of Kenya, offering both style and cultural significance. Dress up with a piece that celebrates authenticity and beauty from Voi town to the world. </div>
                 </div>
                 <div className={styles.productTags}>
-                    {/* <Badge_PillColor_SM_Gray BadgeLabel={`New Arrival`} /> */}
-                    {/* <Badge_PillColor_SM_Brand BadgeLabel={`Best Seller`} /> */}
                     <Badge_PillColor_SM_Error BadgeLabel={`Popular`} />
                     <Badge_PillColor_SM_Warning BadgeLabel={`Clearance`} />
-                    {/* <Badge_PillColor_SM_Success BadgeLabel={`Limited Edition`} /> */}
-                    {/* <Badge_PillColor_SM_GrayBlue BadgeLabel={`Exclusive`} /> */}
-                    {/* <Badge_PillColor_SM_BlueLight BadgeLabel={`Featured`} /> */}
-                    {/* <Badge_PillColor_SM_Blue BadgeLabel={`Trending`} /> */}
                     <Badge_PillColor_SM_Indigo BadgeLabel={`Free Shipping`} />
-                    {/* <Badge_PillColor_SM_Purple BadgeLabel={`Seasonal`} /> */}
-                    {/* <Badge_PillColor_SM_Pink BadgeLabel={`Back in Store`} /> */}
                     <Badge_PillColor_SM_Orange BadgeLabel={`Top Rated`} />
                 </div>
                 <div className={styles.productOption1}>
