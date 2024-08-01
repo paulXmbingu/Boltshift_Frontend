@@ -43,8 +43,8 @@ const Footer = () => {
                     <a href="https://excite.gitbook.io/boltshift" className={styles.linkText} target="_blank" rel="noopener noreferrer"> Resources </a>
                 </div>
                 <div className={styles.socialIcons}>
-                    <a href="https://paulmbingu.com/" className={styles.link} target="_blank" rel="noopener noreferrer" > <img src={PaulMbingu} alt="Paul Mbingu" className={styles.socialLogo} /> </a>
-                    <a href="https://excite.company/" className={styles.link} target="_blank" rel="noopener noreferrer" > <img src={Excite} alt="Paul Mbingu" className={styles.socialLogo} /> </a>
+                    {/* <a href="https://paulmbingu.com/" className={styles.link} target="_blank" rel="noopener noreferrer" > <img src={PaulMbingu} alt="Paul Mbingu" className={styles.socialLogo} /> </a> */}
+                    {/* <a href="https://excite.company/" className={styles.link} target="_blank" rel="noopener noreferrer" > <img src={Excite} alt="Paul Mbingu" className={styles.socialLogo} /> </a> */}
                     <a href="https://dribbble.com/paulXmbingu" className={styles.link} target="_blank" rel="noopener noreferrer" > <img src={Dribbble} alt="Dribbble" className={styles.socialLogo} /> </a>
                     <a href="https://www.instagram.com/paulxmbingu/" className={styles.link} target="_blank" rel="noopener noreferrer"> <img src={Instagram} alt="Instagram" className={styles.socialLogo} /> </a>
                     <a href="https://www.linkedin.com/in/paulxmbingu/" className={styles.link} target="_blank" rel="noopener noreferrer"> <img src={LinkedIn} alt="LinkedIn" className={styles.socialLogo} /> </a>
@@ -55,7 +55,7 @@ const Footer = () => {
             </div>
             <div className={styles.copyrightInfoWrapper}>
                 <div className={styles.copyrightInfoText}>
-                    © 2010 - 2024 Paul Mbingu and/or Excite! Innovation Company. All rights reserved. All other trademarks, service marks, and company names are the property of their respective owners. <b>Excite! Innovation Company</b> is a Premier Digital Product Innovation Company that specializes in UIUX Research, Design & Software Engineering. <b>Boltshift</b> is an intellectual property designed & built by <b>Paul Mbingu</b> for Excite! Innovation Company. Special thanks to <b>Senje's Cuisines</b>, <b>Marion Ngayi</b>, <b>Mercy Mbingu</b>, <b>Kombo Mwanake</b>, and <b>Felix Ouma</b> as trainee frontend web developer.
+                    © 2024 Excite! Innovation Company. All rights reserved. All other trademarks, service marks, company names, and media assets are the property of their respective owners and are used for illustration purpose only. <b>Excite! Innovation Company</b> is a Premier Digital Product Innovation Company that specializes in UIUX Research, Design & Software Engineering. <b>Boltshift</b> is an intellectual property designed & built by <b>Paul Mbingu</b> for Excite! Innovation Company for illustration purpose only. Special thanks to <b>Senje's Cuisines</b>, <b>Marion Ngayi</b>, <b>Mercy Mbingu</b>, <b>Kombo Mwanake</b>, and <b>Felix Ouma</b> as trainee frontend web developer.
                 </div>
             </div>
         </div>

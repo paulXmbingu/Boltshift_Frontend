@@ -1,0 +1,25 @@
+.radio {
+    border-radius: var(--radius-full, 9999px);
+    border: 1px solid var(--Colors-Border-border-primary, #D0D5DD);
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    position: relative;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+  
+.radio:checked::before {
+    width: 8px;
+    height: 8px;
+    flex-shrink: 0;
+    border-radius: var(--radius-full, 9999px);
+    background: var(--Colors-Foreground-fg-white, #FFF);
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

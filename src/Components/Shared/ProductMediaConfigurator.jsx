@@ -1,18 +1,42 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from './ProductMediaConfigurator.module.css'
 import { Link } from "react-router-dom";
 import { ProductMediaThumbnailMD } from "./ProductMediaThumbnail";
-import { Btn_Pri_XL, Btn_Sec_Color_XL, Btn_Sec_Gray_SM } from "../Atoms/Button";
-import StoreLabel from "./StoreLabel";
-import { Badge_PillColor_SM_Blue, Badge_PillColor_SM_BlueLight, Badge_PillColor_SM_Brand, Badge_PillColor_SM_Error, Badge_PillColor_SM_Gray, Badge_PillColor_SM_GrayBlue, Badge_PillColor_SM_Indigo, Badge_PillColor_SM_Orange, Badge_PillColor_SM_Pink, Badge_PillColor_SM_Purple, Badge_PillColor_SM_Success, Badge_PillColor_SM_Warning, Badge_PillOutline_LG_LeadingIcon_BrandColor } from "../Atoms/Badge";
-import arrowdown from "../../assets/Icons/UI/arrow-down.svg"
+import { Btn_Pri_XL, Btn_Sec_Color_XL } from "../Atoms/Button";
+import { Badge_PillColor_SM_Blue,
+    Badge_PillColor_SM_BlueLight,
+    Badge_PillColor_SM_Brand,
+    Badge_PillColor_SM_Error,
+    Badge_PillColor_SM_Gray,
+    Badge_PillColor_SM_GrayBlue,
+    Badge_PillColor_SM_Indigo,
+    Badge_PillColor_SM_Orange,
+    Badge_PillColor_SM_Pink,
+    Badge_PillColor_SM_Purple,
+    Badge_PillColor_SM_Success,
+    Badge_PillColor_SM_Warning,
+    Badge_PillOutline_LG_LeadingIcon_BrandColor
+} from "../Atoms/Badge";
 import { StarRating4 } from "../Molecules/StarRating";
-import shoppingcart03 from "../../assets/Icons/UI/shopping-cart-03 Brand.svg"
 import { ButtonGroup } from "../Atoms/ButtonGroup";
+import StoreLabel from "./StoreLabel";
+import arrowdown from "../../assets/Icons/UI/arrow-down.svg"
+import shoppingcart03 from "../../assets/Icons/UI/shopping-cart-03 Brand.svg"
 import minus from "../../assets/Icons/UI/minus.svg"
 import plus from "../../assets/Icons/UI/plus fgSec700.svg"
+import RadioButton from "../Atoms/RadioButton";
 
 const ProductMediaConfigurator = () => {
+    const [quantity, setQuantity] = useState(1);
+
+    const handleAdd = () => {
+        setQuantity (quantity + 1);
+    };
+
+    const handleSubtract = () => {
+        setQuantity (quantity - 1);
+    };
+
     return (
         <div className={styles.ProductMediaConfiguratorWrap}>
             <div className={styles.productMediaBrowser}>
@@ -42,20 +66,31 @@ const ProductMediaConfigurator = () => {
                     <div className={styles.productDescriptionSummary}> Discover the essence of African craftsmanship with our elegant dress, meticulously designed in Voi town, Kenya. Embracing vibrant local culture and artistry, each dress is crafted with care, blending traditional motifs with contemporary flair. Perfect for any occasion, this dress embodies the rich heritage and craftsmanship of Kenya, offering both style and cultural significance. Dress up with a piece that celebrates authenticity and beauty from Voi town to the world. </div>
                 </div>
                 <div className={styles.productTags}>
-                    <Badge_PillColor_SM_Gray BadgeLabel={`New Arrival`} />
-                    <Badge_PillColor_SM_Brand BadgeLabel={`Best Seller`} />
+                    {/* <Badge_PillColor_SM_Gray BadgeLabel={`New Arrival`} /> */}
+                    {/* <Badge_PillColor_SM_Brand BadgeLabel={`Best Seller`} /> */}
                     <Badge_PillColor_SM_Error BadgeLabel={`Popular`} />
                     <Badge_PillColor_SM_Warning BadgeLabel={`Clearance`} />
-                    <Badge_PillColor_SM_Success BadgeLabel={`Limited Edition`} />
-                    <Badge_PillColor_SM_GrayBlue BadgeLabel={`Exclusive`} />
-                    <Badge_PillColor_SM_BlueLight BadgeLabel={`Featured`} />
-                    <Badge_PillColor_SM_Blue BadgeLabel={`Trending`} />
+                    {/* <Badge_PillColor_SM_Success BadgeLabel={`Limited Edition`} /> */}
+                    {/* <Badge_PillColor_SM_GrayBlue BadgeLabel={`Exclusive`} /> */}
+                    {/* <Badge_PillColor_SM_BlueLight BadgeLabel={`Featured`} /> */}
+                    {/* <Badge_PillColor_SM_Blue BadgeLabel={`Trending`} /> */}
                     <Badge_PillColor_SM_Indigo BadgeLabel={`Free Shipping`} />
-                    <Badge_PillColor_SM_Purple BadgeLabel={`Seasonal`} />
-                    <Badge_PillColor_SM_Pink BadgeLabel={`Back in Store`} />
+                    {/* <Badge_PillColor_SM_Purple BadgeLabel={`Seasonal`} /> */}
+                    {/* <Badge_PillColor_SM_Pink BadgeLabel={`Back in Store`} /> */}
                     <Badge_PillColor_SM_Orange BadgeLabel={`Top Rated`} />
                 </div>
-                <div> Product Options 1 </div>
+                <div className={styles.productOption1}>
+                    <div className={styles.opt1Label}>
+                        <div className={styles.opt1Text}> Color </div>
+                    </div>
+                    <div className={styles.opt1Selector}>
+                        <RadioButton color="var(--Colors-Background-bg-brand-solid,#DA154D)" checked />
+                        <RadioButton color="var(--Component-colors-Utility-Warning-utility-warning-500, #F79009)" />
+                        <RadioButton color="var(--Component-colors-Utility-Success-utility-success-500, #17B26A)" />
+                        <RadioButton color="var(--Component-colors-Utility-Blue-light-utility-blue-light-500, #0BA5EC)" />
+                        <RadioButton color="var(--Component-colors-Utility-Fuchsia-utility-fuchsia-500, #D444F1)" />
+                    </div>
+                </div>
                 <div> Product Options 2 </div>
                 <div className={styles.price}>
                     <div className={styles.currency}> Ksh. </div>
@@ -64,9 +99,13 @@ const ProductMediaConfigurator = () => {
                 <div className={styles.CTAs}> 
                     <div className={styles.secondaryCTAs}>
                         <div className={styles.itemButtonGroup}>
-                            <ButtonGroup LeadingIcon={minus} />
-                            <input type="number" className={styles.countInput} defaultValue={1} />
-                            <ButtonGroup LeadingIcon={plus} />
+                            <ButtonGroup LeadingIcon={minus} onClick={handleSubtract} />
+                            <input
+                                type="number"
+                                className={styles.countInput}
+                                defaultValue={1}
+                            />
+                            <ButtonGroup LeadingIcon={plus} onClick={handleAdd} />
                         </div>
                         <Btn_Sec_Color_XL LeadingIcon={shoppingcart03} ButtonCTA={`Add to Cart`} />
                     </div>
