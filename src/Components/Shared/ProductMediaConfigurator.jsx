@@ -16,10 +16,11 @@ import arrowdown from "../../assets/Icons/UI/arrow-down.svg"
 import shoppingcart03 from "../../assets/Icons/UI/shopping-cart-03 Brand.svg"
 import minus from "../../assets/Icons/UI/minus.svg"
 import plus from "../../assets/Icons/UI/plus fgSec700.svg"
-import RadioButton from "../Atoms/RadioButton";
+import RadioInput from "../Atoms/RadioInput";
 
 const ProductMediaConfigurator = () => {
     const [quantity, setQuantity] = useState(1);
+    const [selectedRadio, setSelectedRadio] = useState('option1');
 
     const handleAdd = () => {
         setQuantity (quantity + 1);
@@ -68,11 +69,31 @@ const ProductMediaConfigurator = () => {
                         <div className={styles.opt1Text}> Color </div>
                     </div>
                     <div className={styles.opt1Selector}>
-                        <RadioButton color="var(--Colors-Background-bg-brand-solid,#DA154D)" checked />
-                        <RadioButton color="var(--Component-colors-Utility-Warning-utility-warning-500, #F79009)" />
-                        <RadioButton color="var(--Component-colors-Utility-Success-utility-success-500, #17B26A)" />
-                        <RadioButton color="var(--Component-colors-Utility-Blue-light-utility-blue-light-500, #0BA5EC)" />
-                        <RadioButton color="var(--Component-colors-Utility-Fuchsia-utility-fuchsia-500, #D444F1)" />
+                        <RadioInput
+                            color="var(--Colors-Background-bg-brand-solid,#DA154D)"
+                            checked={selectedRadio === 'option1'}
+                            onChange={ ()=> setSelectedRadio('option1') }
+                        />
+                        <RadioInput
+                            color="var(--Component-colors-Utility-Warning-utility-warning-500, #F79009)"
+                            checked={selectedRadio === 'option2'}
+                            onChange={ ()=> setSelectedRadio('option2') }
+                        />
+                        <RadioInput
+                            color="var(--Component-colors-Utility-Success-utility-success-500, #17B26A)"
+                            checked={selectedRadio === 'option3'}
+                            onChange={ ()=> setSelectedRadio('option3') }
+                        />
+                        <RadioInput
+                            color="var(--Component-colors-Utility-Blue-light-utility-blue-light-500, #0BA5EC)"
+                            checked={selectedRadio === 'option4'}
+                            onChange={ ()=> setSelectedRadio('option4') }
+                        />
+                        <RadioInput
+                            color="var(--Component-colors-Utility-Fuchsia-utility-fuchsia-500, #D444F1)"
+                            checked={selectedRadio === 'option5'}
+                            onChange={ ()=> setSelectedRadio('option5') }
+                        />
                     </div>
                 </div>
                 <div> Product Options 2 </div>
