@@ -1,22 +1,4 @@
 .TagCheckboxSM {
-    appearance: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    display: inline-flex;
-    padding: 3px var(--spacing-md, 8px) 3px 5px;
-    justify-content: center;
-    align-items: center;
-    gap: 3px;
-    border-radius: var(--radius-sm, 6px);
-    border: 1px solid var(--Colors-Border-border-primary, #D0D5DD);
-    background: var(--Colors-Background-bg-primary, #FFF);
-    cursor: pointer;
-}
-
-.TagCheckboxSM {
-    appearance: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
     display: inline-flex;
     padding: 3px var(--spacing-md, 8px) 3px 5px;
     justify-content: center;
