@@ -37,6 +37,7 @@ const ProductMediaConfigurator = () => {
                     <img src={`https://i.pinimg.com/736x/eb/ea/4b/ebea4b4488cd4d1d47cc352e9ade2265.jpg`} alt="Main Product Image" className={styles.mainProductImage} />
                 </div>
                 <div className={styles.thumbnailsContainer}>
+                    <ProductMediaThumbnailMD ThumbNailMedia={`https://i.pinimg.com/736x/eb/ea/4b/ebea4b4488cd4d1d47cc352e9ade2265.jpg`} />
                     <ProductMediaThumbnailMD ThumbNailMedia={`https://i.pinimg.com/736x/2b/21/ac/2b21ac39398f6ede03e66c708610835d.jpg`} />
                     <ProductMediaThumbnailMD ThumbNailMedia={`https://i.pinimg.com/736x/a7/cd/c8/a7cdc8f41910734cfdeb5c42258a029c.jpg`} />
                     <ProductMediaThumbnailMD ThumbNailMedia={`https://i.pinimg.com/736x/0d/97/c5/0d97c54c0e0f845a6f5741b6b78598b3.jpg`} />
@@ -44,7 +45,6 @@ const ProductMediaConfigurator = () => {
                     <ProductMediaThumbnailMD ThumbNailMedia={`https://i.pinimg.com/736x/b9/a4/1c/b9a41c493e385d96a3a470c3662dd6c8.jpg`} />
                     <ProductMediaThumbnailMD ThumbNailMedia={`https://i.pinimg.com/736x/67/ff/16/67ff16257c0fbb21bde0af00c7524a3c.jpg`} />
                     <ProductMediaThumbnailMD ThumbNailMedia={`https://i.pinimg.com/736x/dc/ce/4a/dcce4aefc6aa896485a4942b7ebcfcdb.jpg`} />
-                    <ProductMediaThumbnailMD ThumbNailMedia={`https://i.pinimg.com/736x/12/50/31/125031389d00319bdd50bb9de815dce2.jpg`} />
                 </div>
             </div>
             <div className={styles.productDetails}>
