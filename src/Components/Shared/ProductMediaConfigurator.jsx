@@ -107,8 +107,9 @@ const ProductMediaConfigurator = () => {
                         <TagCheckboxSM Label={`M`} />
                         <TagCheckboxSM Label={`L`} />
                         <TagCheckboxSM Label={`XL`} />
-                        <TagCheckboxSM Label={`XXL`} />
-                        <TagCheckboxSM Label={`XXXL`} />
+                        <TagCheckboxSM Label={`2XL`} />
+                        <TagCheckboxSM Label={`3XL`} />
+                        <TagCheckboxSM Label={`4XL`} />
                     </div>
                 </div>
                 <div className={styles.price}>

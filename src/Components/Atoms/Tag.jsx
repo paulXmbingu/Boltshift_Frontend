@@ -1,11 +1,11 @@
 import React from "react";
 import styles from "./Tag.module.css"
 
- const TagCheckboxSM = ({ Icon, Label, Action }) => {
+export default function TagCheckboxSM( { Icon, Label, Action }) {
     return (
         <div className={styles.TagCheckboxSM}>
             <input
-                type="checkbox" 
+                type="radio" 
                 name="" 
                 id=""
             />
@@ -15,7 +15,3 @@ import styles from "./Tag.module.css"
         </div>
     );
 };
-
-export {
-    TagCheckboxSM
-}
