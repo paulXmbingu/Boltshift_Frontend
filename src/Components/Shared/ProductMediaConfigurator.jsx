@@ -17,6 +17,7 @@ import shoppingcart03 from "../../assets/Icons/UI/shopping-cart-03 Brand.svg"
 import minus from "../../assets/Icons/UI/minus.svg"
 import plus from "../../assets/Icons/UI/plus fgSec700.svg"
 import RadioInput from "../Atoms/RadioInput";
+import TagCheckboxSM from "../Atoms/Tag";
 
 const ProductMediaConfigurator = () => {
     const [quantity, setQuantity] = useState(1);
@@ -101,7 +102,13 @@ const ProductMediaConfigurator = () => {
                         <div className={styles.opt2Text}> Size </div>
                     </div>
                     <div className={styles.opt2Selector}>
-                        Option 2 Selector
+                        <TagCheckboxSM RightLabel={`XS`} />
+                        <TagCheckboxSM RightLabel={`S`} />
+                        <TagCheckboxSM RightLabel={`M`} />
+                        <TagCheckboxSM RightLabel={`L`} />
+                        <TagCheckboxSM RightLabel={`XL`} />
+                        <TagCheckboxSM RightLabel={`XXL`} />
+                        <TagCheckboxSM RightLabel={`XXXL`} />
                     </div>
                 </div>
                 <div className={styles.price}>
