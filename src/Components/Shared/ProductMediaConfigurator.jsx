@@ -96,7 +96,14 @@ const ProductMediaConfigurator = () => {
                         />
                     </div>
                 </div>
-                <div> Product Options 2 </div>
+                <div className={styles.productOption2}>
+                    <div className={styles.opt2Label}>
+                        <div className={styles.opt2Text}> Size </div>
+                    </div>
+                    <div className={styles.opt2Selector}>
+                        Option 2 Selector
+                    </div>
+                </div>
                 <div className={styles.price}>
                     <div className={styles.currency}> Ksh. </div>
                     <div className={styles.priceValue}> 70,721 </div>

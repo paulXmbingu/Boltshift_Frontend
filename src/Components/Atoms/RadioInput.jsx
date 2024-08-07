@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./RadioInput.module.css"
 
-const RadioInput = ({ color, checked, onChange }) => {
+const RadioInput = ({ color, checked, onChange, labelLeft, labelRight }) => {
     return (
         <input
             type="radio"
