@@ -1,4 +1,7 @@
-._TagCheckboxSM {
+.TagCheckboxSM {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
     display: inline-flex;
     padding: 3px var(--spacing-md, 8px) 3px 5px;
     justify-content: center;
@@ -7,4 +10,32 @@
     border-radius: var(--radius-sm, 6px);
     border: 1px solid var(--Colors-Border-border-primary, #D0D5DD);
     background: var(--Colors-Background-bg-primary, #FFF);
+    cursor: pointer;
+}
+
+.TagCheckboxSM {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    display: inline-flex;
+    padding: 3px var(--spacing-md, 8px) 3px 5px;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+    border-radius: var(--radius-sm, 6px);
+    border: 1px solid var(--Colors-Border-border-primary, #D0D5DD);
+    background: var(--Colors-Background-bg-primary, #FFF);
+    cursor: pointer;
+}
+
+.labelSM {
+    color: var(--colors-text-text-secondary-700, #344054);
+    text-align: center;
+
+    /* Text xs/Medium */
+    font-family: var(--Font-family-font-family-body, Inter);
+    font-size: var(--Font-size-text-xs, 12px);
+    font-style: normal;
+    font-weight: 500;
+    line-height: var(--Line-height-text-xs, 18px); /* 150% */
 }

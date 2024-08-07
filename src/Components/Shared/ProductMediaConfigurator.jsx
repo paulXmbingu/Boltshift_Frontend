@@ -102,13 +102,13 @@ const ProductMediaConfigurator = () => {
                         <div className={styles.opt2Text}> Size </div>
                     </div>
                     <div className={styles.opt2Selector}>
-                        <TagCheckboxSM RightLabel={`XS`} />
-                        <TagCheckboxSM RightLabel={`S`} />
-                        <TagCheckboxSM RightLabel={`M`} />
-                        <TagCheckboxSM RightLabel={`L`} />
-                        <TagCheckboxSM RightLabel={`XL`} />
-                        <TagCheckboxSM RightLabel={`XXL`} />
-                        <TagCheckboxSM RightLabel={`XXXL`} />
+                        <TagCheckboxSM Label={`XS`} />
+                        <TagCheckboxSM Label={`S`} />
+                        <TagCheckboxSM Label={`M`} />
+                        <TagCheckboxSM Label={`L`} />
+                        <TagCheckboxSM Label={`XL`} />
+                        <TagCheckboxSM Label={`XXL`} />
+                        <TagCheckboxSM Label={`XXXL`} />
                     </div>
                 </div>
                 <div className={styles.price}>
