@@ -109,17 +109,17 @@ const ProductMediaConfigurator = () => {
                             onChange={ ()=>setSelectedTag('tag1') }
                         />
                         <TagCheckboxSM
-                            Label={`S`}
+                            Label={`Sm`}
                             checkedTag={selectedTag === 'tag2'}
                             onChange={ ()=>setSelectedTag('tag2') }
                         />
                         <TagCheckboxSM
-                            Label={`M`}
+                            Label={`Md`}
                             checkedTag={selectedTag === 'tag3'}
                             onChange={ ()=>setSelectedTag('tag3') }
                         />
                         <TagCheckboxSM
-                            Label={`L`}
+                            Label={`Lg`}
                             checkedTag={selectedTag === 'tag4'}
                             onChange={ ()=>setSelectedTag('tag4') }
                         />
