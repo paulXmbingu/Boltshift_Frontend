@@ -1,23 +1,56 @@
-.TagCheckboxSM {
-    display: inline-flex;
-    padding: 3px var(--spacing-md, 8px) 3px 5px;
+.tagWrapSM {
+    display: flex;
+    padding: var(--spacing-xs, 4px) 10px var(--spacing-xs, 4px) 5px;
     justify-content: center;
     align-items: center;
     gap: 3px;
     border-radius: var(--radius-sm, 6px);
     border: 1px solid var(--Colors-Border-border-primary, #D0D5DD);
     background: var(--Colors-Background-bg-primary, #FFF);
+}
+
+.tagContent {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm, 2px);
+}
+
+.tagRadioSM {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border-radius: var(--radius-full, 9999px);
+    border: 1px solid var(--Colors-Border-border-primary, #D0D5DD);
+    position: relative;
+    width: 18px;
+    height: 18px;
     cursor: pointer;
+    background: var(--Colors-Background-bg-primary, #FFF);
+}
+
+.tagRadioSM:checked {
+    background: var(--Colors-Background-bg-brand-solid, #DA154D);
+}
+
+.tagRadioSM:checked::before {
+    width: 6.75px;
+    height: 6.75px;
+    border-radius: var(--radius-full, 9999px);
+    background: var(--Colors-Foreground-fg-white, #FFF);
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .labelSM {
     color: var(--colors-text-text-secondary-700, #344054);
-    text-align: center;
 
-    /* Text xs/Medium */
+    /* Text sm/Medium */
     font-family: var(--Font-family-font-family-body, Inter);
-    font-size: var(--Font-size-text-xs, 12px);
+    font-size: var(--Font-size-text-sm, 14px);
     font-style: normal;
     font-weight: 500;
-    line-height: var(--Line-height-text-xs, 18px); /* 150% */
+    line-height: var(--Line-height-text-sm, 20px); /* 142.857% */
 }

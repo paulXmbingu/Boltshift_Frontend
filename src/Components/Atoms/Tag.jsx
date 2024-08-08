@@ -1,17 +1,20 @@
 import React from "react";
 import styles from "./Tag.module.css"
 
-export default function TagCheckboxSM( { Icon, Label, Action }) {
+export default function TagCheckboxSM( { Label, checkedTag, onChange }) {
     return (
-        <div className={styles.TagCheckboxSM}>
-            <input
-                type="radio" 
-                name="" 
-                id=""
-            />
-            {Icon}
-            <div className={styles.labelSM}> {Label} </div>
-            {Action}
+        <div className={styles.tagWrapSM}>
+            <div className={styles.tagContent}>
+                <input
+                    type="radio" 
+                    name="tag" 
+                    id="tagID"
+                    className={styles.tagRadioSM}
+                    checked={checkedTag}
+                    onChange={onChange}
+                />
+                <div className={styles.labelSM}> {Label} </div>
+            </div>
         </div>
     );
 };
