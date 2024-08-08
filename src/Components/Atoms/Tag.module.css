@@ -1,6 +1,6 @@
 .tagWrap {
     display: flex;
-    padding: 3px var(--spacing-md, 8px) 3px 5px;
+    padding: 3px var(--spacing-md, 8px) 3px 2px;
     justify-content: center;
     align-items: center;
     gap: 3px;
