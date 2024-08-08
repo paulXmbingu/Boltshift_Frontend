@@ -26,10 +26,12 @@
     height: 18px;
     cursor: pointer;
     background: var(--Colors-Background-bg-primary, #FFF);
+    top: -1.5px;
 }
 
 .tagRadioSM:checked {
     background: var(--Colors-Background-bg-brand-solid, #DA154D);
+    border: var(--Colors-Background-bg-brand-solid, #DA154D);;
 }
 
 .tagRadioSM:checked::before {
