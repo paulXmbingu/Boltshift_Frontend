@@ -6,13 +6,13 @@
     gap: 3px;
     border-radius: var(--radius-sm, 6px);
     border: 1px solid var(--Colors-Border-border-primary, #D0D5DD);
-    background: var(--Colors-Background-bg-secondary, #F9FAFB);
+    background: var(--Colors-Background-bg-primary, #FFF);
 }
 
 .tagContent {
     display: flex;
     align-items: center;
-    gap: var(--spacing-xs, 4px);
+    gap: var(--spacing-xs, 2px);
 }
 
 .tagRadio {
@@ -22,8 +22,8 @@
     border-radius: var(--radius-full, 9999px);
     border: 1px solid var(--Colors-Border-border-primary, #D0D5DD);
     position: relative;
-    width: 16px;
-    height: 16px;
+    width: 14px;
+    height: 14px;
     cursor: pointer;
     background: var(--Colors-Background-bg-primary, #FFF);
     top: -1.5px;
@@ -35,8 +35,8 @@
 }
 
 .tagRadio:checked::before {
-    width: 7px;
-    height: 7px;
+    width: 6px;
+    height: 6px;
     border-radius: var(--radius-full, 9999px);
     background: var(--Colors-Foreground-fg-white, #FFF);
     content: '';
