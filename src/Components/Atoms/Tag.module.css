@@ -1,6 +1,6 @@
 .tagWrapSM {
     display: flex;
-    padding: var(--spacing-xs, 4px) 10px var(--spacing-xs, 4px) 5px;
+    padding: 3px var(--spacing-md, 8px) 3px 5px;
     justify-content: center;
     align-items: center;
     gap: 3px;
@@ -12,7 +12,7 @@
 .tagContent {
     display: flex;
     align-items: center;
-    gap: var(--spacing-sm, 2px);
+    gap: var(--spacing-xs, 4px);
 }
 
 .tagRadioSM {
@@ -22,8 +22,8 @@
     border-radius: var(--radius-full, 9999px);
     border: 1px solid var(--Colors-Border-border-primary, #D0D5DD);
     position: relative;
-    width: 18px;
-    height: 18px;
+    width: 14px;
+    height: 14px;
     cursor: pointer;
     background: var(--Colors-Background-bg-primary, #FFF);
     top: -1.5px;
@@ -35,8 +35,8 @@
 }
 
 .tagRadioSM:checked::before {
-    width: 6.75px;
-    height: 6.75px;
+    width: 6px;
+    height: 6px;
     border-radius: var(--radius-full, 9999px);
     background: var(--Colors-Foreground-fg-white, #FFF);
     content: '';
@@ -49,10 +49,10 @@
 .labelSM {
     color: var(--colors-text-text-secondary-700, #344054);
 
-    /* Text sm/Medium */
+    /* Text xs/Medium */
     font-family: var(--Font-family-font-family-body, Inter);
-    font-size: var(--Font-size-text-sm, 14px);
+    font-size: var(--Font-size-text-xs, 12px);
     font-style: normal;
     font-weight: 500;
-    line-height: var(--Line-height-text-sm, 20px); /* 142.857% */
+    line-height: var(--Line-height-text-xs, 18px); /* 150% */
 }
