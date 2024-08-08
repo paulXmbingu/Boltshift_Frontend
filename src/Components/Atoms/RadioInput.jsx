@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./RadioInput.module.css"
 
-export const RadioInput = ({ color, checked, onChange }) => {
+const RadioInput = ({ color, checked, onChange }) => {
     return (
         <input
             type="radio"
@@ -15,15 +15,4 @@ export const RadioInput = ({ color, checked, onChange }) => {
     );
 };
 
-export const RadioInputBrand = ({ checked, onChange }) => {
-    return (
-        <input
-            type="radio"
-            name="RadioInputBrand"
-            id="RadioInputBrandID"
-            className={styles.RadioInputBrand}
-            checked={checked}
-            onChange={onChange}
-        />
-    );
-};
+export default RadioInput;
