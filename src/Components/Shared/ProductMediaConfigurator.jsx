@@ -104,44 +104,39 @@ const ProductMediaConfigurator = () => {
                     </div>
                     <div className={styles.opt2Selector}>
                         <TagCheckboxSM
-                            Label={`XS`}
+                            Label={`Extra Small`}
                             checkedTag={selectedTag === 'tag1'}
                             onChange={ ()=>setSelectedTag('tag1') }
                         />
                         <TagCheckboxSM
-                            Label={`Sm`}
+                            Label={`Small`}
                             checkedTag={selectedTag === 'tag2'}
                             onChange={ ()=>setSelectedTag('tag2') }
                         />
                         <TagCheckboxSM
-                            Label={`Md`}
+                            Label={`Medium`}
                             checkedTag={selectedTag === 'tag3'}
                             onChange={ ()=>setSelectedTag('tag3') }
                         />
                         <TagCheckboxSM
-                            Label={`Lg`}
+                            Label={`Large`}
                             checkedTag={selectedTag === 'tag4'}
                             onChange={ ()=>setSelectedTag('tag4') }
                         />
                         <TagCheckboxSM
-                            Label={`XL`}
+                            Label={`Extra Large`}
                             checkedTag={selectedTag === 'tag5'}
                             onChange={ ()=>setSelectedTag('tag5') }
                         />
                         <TagCheckboxSM
-                            Label={`2XL`}
+                            Label={`Double XL`}
                             checkedTag={selectedTag === 'tag6'}
                             onChange={ ()=>setSelectedTag('tag6') }
                         />
                         <TagCheckboxSM
-                            Label={`3XL`}
+                            Label={`Tripple XL`}
                             checkedTag={selectedTag === 'tag7'}
                             onChange={ ()=>setSelectedTag('tag7') }
-                        />
-                        <TagCheckboxSM
-                            Label={`4XL`}
-                            checkedTag={selectedTag === 'tag8'}
-                            onChange={ ()=>setSelectedTag('tag8') }
                         />
                     </div>
                 </div>
