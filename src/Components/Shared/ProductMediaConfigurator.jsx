@@ -17,10 +17,12 @@ import shoppingcart03 from "../../assets/Icons/UI/shopping-cart-03 Brand.svg"
 import minus from "../../assets/Icons/UI/minus.svg"
 import plus from "../../assets/Icons/UI/plus fgSec700.svg"
 import RadioInput from "../Atoms/RadioInput";
+import TagCheckboxSM from "../Atoms/Tag";
 
 const ProductMediaConfigurator = () => {
     const [quantity, setQuantity] = useState(1);
     const [selectedRadio, setSelectedRadio] = useState('option1');
+    const [selectedTag, setSelectedTag] = useState('tag1')
 
     const handleAdd = () => {
         setQuantity (quantity + 1);
@@ -37,6 +39,7 @@ const ProductMediaConfigurator = () => {
                     <img src={`https://i.pinimg.com/736x/eb/ea/4b/ebea4b4488cd4d1d47cc352e9ade2265.jpg`} alt="Main Product Image" className={styles.mainProductImage} />
                 </div>
                 <div className={styles.thumbnailsContainer}>
+                    <ProductMediaThumbnailMD ThumbNailMedia={`https://i.pinimg.com/736x/eb/ea/4b/ebea4b4488cd4d1d47cc352e9ade2265.jpg`} />
                     <ProductMediaThumbnailMD ThumbNailMedia={`https://i.pinimg.com/736x/2b/21/ac/2b21ac39398f6ede03e66c708610835d.jpg`} />
                     <ProductMediaThumbnailMD ThumbNailMedia={`https://i.pinimg.com/736x/a7/cd/c8/a7cdc8f41910734cfdeb5c42258a029c.jpg`} />
                     <ProductMediaThumbnailMD ThumbNailMedia={`https://i.pinimg.com/736x/0d/97/c5/0d97c54c0e0f845a6f5741b6b78598b3.jpg`} />
@@ -44,7 +47,6 @@ const ProductMediaConfigurator = () => {
                     <ProductMediaThumbnailMD ThumbNailMedia={`https://i.pinimg.com/736x/b9/a4/1c/b9a41c493e385d96a3a470c3662dd6c8.jpg`} />
                     <ProductMediaThumbnailMD ThumbNailMedia={`https://i.pinimg.com/736x/67/ff/16/67ff16257c0fbb21bde0af00c7524a3c.jpg`} />
                     <ProductMediaThumbnailMD ThumbNailMedia={`https://i.pinimg.com/736x/dc/ce/4a/dcce4aefc6aa896485a4942b7ebcfcdb.jpg`} />
-                    <ProductMediaThumbnailMD ThumbNailMedia={`https://i.pinimg.com/736x/12/50/31/125031389d00319bdd50bb9de815dce2.jpg`} />
                 </div>
             </div>
             <div className={styles.productDetails}>
@@ -96,7 +98,48 @@ const ProductMediaConfigurator = () => {
                         />
                     </div>
                 </div>
-                <div> Product Options 2 </div>
+                <div className={styles.productOption2}>
+                    <div className={styles.opt2Label}>
+                        <div className={styles.opt2Text}> Size </div>
+                    </div>
+                    <div className={styles.opt2Selector}>
+                        <TagCheckboxSM
+                            Label={`Extra Small`}
+                            checkedTag={selectedTag === 'tag1'}
+                            onChange={ ()=>setSelectedTag('tag1') }
+                        />
+                        <TagCheckboxSM
+                            Label={`Small`}
+                            checkedTag={selectedTag === 'tag2'}
+                            onChange={ ()=>setSelectedTag('tag2') }
+                        />
+                        <TagCheckboxSM
+                            Label={`Medium`}
+                            checkedTag={selectedTag === 'tag3'}
+                            onChange={ ()=>setSelectedTag('tag3') }
+                        />
+                        <TagCheckboxSM
+                            Label={`Large`}
+                            checkedTag={selectedTag === 'tag4'}
+                            onChange={ ()=>setSelectedTag('tag4') }
+                        />
+                        <TagCheckboxSM
+                            Label={`Extra Large`}
+                            checkedTag={selectedTag === 'tag5'}
+                            onChange={ ()=>setSelectedTag('tag5') }
+                        />
+                        <TagCheckboxSM
+                            Label={`Double XL`}
+                            checkedTag={selectedTag === 'tag6'}
+                            onChange={ ()=>setSelectedTag('tag6') }
+                        />
+                        <TagCheckboxSM
+                            Label={`Tripple XL`}
+                            checkedTag={selectedTag === 'tag7'}
+                            onChange={ ()=>setSelectedTag('tag7') }
+                        />
+                    </div>
+                </div>
                 <div className={styles.price}>
                     <div className={styles.currency}> Ksh. </div>
                     <div className={styles.priceValue}> 70,721 </div>
