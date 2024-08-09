@@ -12,19 +12,24 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@eslint/config-array": "^0.17.1",
+    "@eslint/object-schema": "^2.1.4",
+    "@jridgewell/sourcemap-codec": "^1.5.0",
     "@vercel/analytics": "^1.2.2",
     "framer-motion": "^11.3.4",
+    "glob": "^11.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-responsive": "^10.0.0",
-    "react-router-dom": "^6.24.0"
+    "react-router-dom": "^6.24.0",
+    "rimraf": "^6.0.1"
   },
   "devDependencies": {
     "@testing-library/jest-dom": "^6.4.6",
     "@testing-library/react": "^16.0.0",
     "@types/react": "^18.2.66",
     "@types/react-dom": "^18.2.22",
-    "@vitejs/plugin-react-swc": "^3.5.0",
+    "@vitejs/plugin-react-swc": "^3.7.0",
     "connect-history-api-fallback": "^2.0.0",
     "eslint": "^8.57.0",
     "eslint-plugin-react": "^7.34.1",
