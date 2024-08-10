@@ -147,13 +147,19 @@ const ProductMediaConfigurator = () => {
                 <div className={styles.CTAs}> 
                     <div className={styles.secondaryCTAs}>
                         <div className={styles.itemButtonGroup}>
-                            <ButtonGroup LeadingIcon={minus} onClick={handleSubtract} />
+                            <ButtonGroup
+                                LeadingIcon={minus}
+                                onClick={handleSubtract}
+                            />
                             <input
                                 type="number"
                                 className={styles.countInput}
                                 defaultValue={1}
                             />
-                            <ButtonGroup LeadingIcon={plus} onClick={handleAdd} />
+                            <ButtonGroup
+                                LeadingIcon={plus}
+                                onClick={handleAdd}
+                            />
                         </div>
                         <Btn_Sec_Color_XL LeadingIcon={shoppingcart03} ButtonCTA={`Add to Cart`} />
                     </div>
