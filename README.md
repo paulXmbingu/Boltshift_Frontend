@@ -3,6 +3,28 @@
 # Boltshift Marketplace Frontend
 Welcome to the official repository for the Boltshift eCcommerce Web App! This project aims to provide an exceptional online shopping experience for our customers while showcasing a wide range of high quality products. Whether they're seasoned shoppers or first-time visitors, we're here to make their online shopping journey enjoyable and hassle-free.
 
+## Getting Started
+
+### Setup
+
+1. Install and update [Node.js & Node Package Manager](https://nodejs.org/en)
+
+2. Clone this repository to your local machine using: 
+   ```
+   git clone https://github.com/paulXmbingu/Boltshift-Frontend
+   ```
+3. Install the required dependencies:
+   ```
+   npm i
+   ```
+### Usage
+1. Start the development server with a specified host:
+   ```
+   npm run dev -- --host
+   ```
+
+2. Open your web browser and visit the listed addresses either locally or remotely on the network
+
 ## Features
 - **User Authentication**: Secure user accounts and authentication to manage profiles and track order history.
 - **Product Catalog**: A comprehensive listing of products, organized into categories for easy navigation.
@@ -31,25 +53,3 @@ Welcome to the official repository for the Boltshift eCcommerce Web App! This pr
 - Product Research & Design: **Paul Mbingu**
 - Frontend Engineers: **Paul Mbingu, & Felix Ouma**
 - Backend Engineers: **Samuel Maingi, & Paul Mbingu**
-
-## Getting Started
-
-### Setup
-
-1. Install and update [Node.js & Node Package Manager](https://nodejs.org/en)
-
-2. Clone this repository to your local machine using: 
-   ```
-   git clone https://github.com/paulXmbingu/Boltshift-Frontend
-   ```
-3. Install the required dependencies:
-   ```
-   npm i
-   ```
-### Usage
-1. Start the development server with a specified host:
-   ```
-   npm run dev -- --host
-   ```
-
-2. Open your web browser and visit the listed addresses either locally or remotely on the network
