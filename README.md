@@ -34,7 +34,7 @@ Welcome to the official repository for the Boltshift eCcommerce Web App! This pr
 
 ## Getting Started
 
-### Installation
+### Setup
 
 1. Install and update [Node.js & Node Package Manager](https://nodejs.org/en)
 
