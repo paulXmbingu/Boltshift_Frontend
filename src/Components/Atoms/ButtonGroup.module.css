@@ -11,6 +11,8 @@
     transition: all 0.1s ease;
     outline: none;
     cursor: pointer;
+    overflow: hidden;
+    border-radius: 8px;
 }
 
 .buttonGroupWrap:hover {
