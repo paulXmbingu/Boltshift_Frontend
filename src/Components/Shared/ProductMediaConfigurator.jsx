@@ -40,6 +40,10 @@ const ProductMediaConfigurator = () => {
 
     const calculatePrice = () => (productPrice * quantity).toLocaleString();
 
+    const handleThumbnailClick = (Image) => {
+        setMainProductImage(Image);
+    };
+
     const productThumbnails = [
         'https://i.pinimg.com/736x/eb/ea/4b/ebea4b4488cd4d1d47cc352e9ade2265.jpg',
         'https://i.pinimg.com/736x/2b/21/ac/2b21ac39398f6ede03e66c708610835d.jpg',
@@ -50,10 +54,6 @@ const ProductMediaConfigurator = () => {
         'https://i.pinimg.com/736x/67/ff/16/67ff16257c0fbb21bde0af00c7524a3c.jpg',
         'https://i.pinimg.com/736x/dc/ce/4a/dcce4aefc6aa896485a4942b7ebcfcdb.jpg'
     ];
-
-    const handleThumbnailClick = (Image) => {
-        setMainProductImage(Image);
-    };
 
     return (
         <div className={styles.ProductMediaConfiguratorWrap}>
