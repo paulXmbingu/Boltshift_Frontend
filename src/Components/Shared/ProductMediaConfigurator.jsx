@@ -21,6 +21,7 @@ import TagCheckboxSM from "../Atoms/Tag";
 
 const ProductMediaConfigurator = () => {
     const [quantity, setQuantity] = useState(1);
+    const [productPrice, setProductPrice] = useState(10000)
     const [selectedRadio, setSelectedRadio] = useState('option1');
     const [selectedTag, setSelectedTag] = useState('tag1')
 
@@ -29,8 +30,10 @@ const ProductMediaConfigurator = () => {
     };
 
     const handleSubtract = () => {
-        setQuantity (quantity > 1? quantity- 1 : 1);
+        setQuantity (quantity > 1? quantity - 1 : 1);
     };
+
+    const calculatePrice = () => productPrice * quantity
 
     return (
         <div className={styles.ProductMediaConfiguratorWrap}>
@@ -142,7 +145,7 @@ const ProductMediaConfigurator = () => {
                 </div>
                 <div className={styles.price}>
                     <div className={styles.currency}> Ksh. </div>
-                    <div className={styles.priceValue}> 70,721 </div>
+                    <div className={styles.priceValue}> {calculatePrice()} </div>
                 </div>
                 <div className={styles.CTAs}> 
                     <div className={styles.secondaryCTAs}>
@@ -155,7 +158,6 @@ const ProductMediaConfigurator = () => {
                                 type="number"
                                 className={styles.countInput}
                                 value={quantity}
-
                             />
                             <ButtonGroup
                                 LeadingIcon={plus}

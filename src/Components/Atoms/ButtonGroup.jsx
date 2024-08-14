@@ -5,7 +5,8 @@ const ButtonGroup = ( {LeadingIcon, ButtonCTA, handleClick } ) => {
     return (
         <button 
             className={styles.buttonGroupWrap} 
-            onClick={handleClick}>
+            onClick={handleClick}
+            >
             {LeadingIcon && <img 
                 src={LeadingIcon} 
                 alt="Leading Icon" 
