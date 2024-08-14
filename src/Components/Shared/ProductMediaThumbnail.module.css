@@ -19,6 +19,6 @@
 .productMediaThumbnailMD:active,
 .productMediaThumbnailMD:focus-visible,
 .productMediaThumbnailMD:focus-within {
-    scale: 90%;
+    scale: 95%;
     opacity: 50%;
 }
