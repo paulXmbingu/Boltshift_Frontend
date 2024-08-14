@@ -29,7 +29,7 @@ const ProductMediaConfigurator = () => {
     };
 
     const handleSubtract = () => {
-        setQuantity (quantity - 1);
+        setQuantity (quantity > 1? quantity- 1 : 1);
     };
 
     return (
