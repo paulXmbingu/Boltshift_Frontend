@@ -21,7 +21,7 @@ import TagCheckboxSM from "../Atoms/Tag";
 
 const ProductMediaConfigurator = () => {
     const [quantity, setQuantity] = useState(1);
-    const [productPrice, setProductPrice] = useState(10000)
+    const [productPrice, setProductPrice] = useState(9600)
     const [selectedRadio, setSelectedRadio] = useState('option1');
     const [selectedTag, setSelectedTag] = useState('tag1')
 
@@ -33,7 +33,7 @@ const ProductMediaConfigurator = () => {
         setQuantity (quantity > 1? quantity - 1 : 1);
     };
 
-    const calculatePrice = () => productPrice * quantity
+    const calculatePrice = () => (productPrice * quantity).toLocaleString()
 
     return (
         <div className={styles.ProductMediaConfiguratorWrap}>
