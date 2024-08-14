@@ -7,7 +7,7 @@
     align-items: center;
     flex-shrink: 0;
     border-radius: var(--spacing-system-guides-corner-radius-3, 12px);
-    background: lightgray 50% / cover no-repeat, var(--Colors-Background-bg-primary, #FFF);
+    background: var(--Colors-Background-bg-primary, #FFF);
     overflow: hidden;
     object-fit: cover;
     cursor: pointer;
