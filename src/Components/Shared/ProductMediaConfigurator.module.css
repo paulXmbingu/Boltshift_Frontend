@@ -51,7 +51,9 @@
     object-fit: cover;
 }
 
-.thumbnailsContainer {
+.thumbnailsContainer,
+.thumbnailsContainer:focus-visible,
+.thumbnailsContainer:focus-within {
     display: flex;
     height: var(--Base-4-Premitives-32, 128px);
     align-items: center;
