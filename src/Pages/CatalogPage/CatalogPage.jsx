@@ -8,6 +8,7 @@ import Chevron from '../../assets/Icons/UI/chevron-right (1).svg';
 import SearchResultOutput from "../../Components/Molecules/SearchResultOutput";
 import BreadCrumb from "../../Components/Shared/BreadCrumb";
 import ProductListingSection from "./ProductListingSection";
+import CatalogFilterSection from "./CatalogFilterSection";
 
 function CatalogPage() {
     const [isLargeScreen, setIsLargeScreen] = useState(typeof window !== "undefined" ? window.innerWidth > 768 : false);
@@ -30,7 +31,7 @@ function CatalogPage() {
                 <SearchResultOutput NoOfHits={`366 results for the search of`} SearchPhrase={`"luxury contemporary watch"`} />
             </div> 
             <div className={styles.FilterAndProduct}>
-                <div className={styles.filterSection}> Filter Section </div>
+                <CatalogFilterSection />
                 <ProductListingSection />
             </div>
             <Footer />
