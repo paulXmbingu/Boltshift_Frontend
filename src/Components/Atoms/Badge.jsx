@@ -118,7 +118,9 @@ const Badge_PillColor_SM_Orange = ({BadgeLabel,}) => {
     );
 };
 
-export { Badge_PillColor_SM_LeadIcon_Success, Badge_PillOutline_LG_LeadingIcon_BrandColor,
+export {
+    Badge_PillColor_SM_LeadIcon_Success,
+    Badge_PillOutline_LG_LeadingIcon_BrandColor,
     //PILL COLOR SMALL
     Badge_PillColor_SM_Gray,
     Badge_PillColor_SM_Brand,
