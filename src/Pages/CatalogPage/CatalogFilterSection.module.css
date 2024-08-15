@@ -11,3 +11,64 @@
     border-radius: var(--spacing-system-guides-corner-radius-4, 16px);
     background: var(--Colors-Background-bg-primary, #FFF);
 }
+
+.imputField{
+    display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: var(--Base-4-Premitives-1, 4px);
+align-self: stretch;
+}
+
+.ImputWithLabel{
+    display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 6px;
+align-self: stretch;
+}
+
+.SortBy{
+    color: var(--colors-text-text-secondary-700, #344054);
+
+/* Text xs/Medium */
+font-family: var(--Font-family-font-family-body, Inter);
+font-size: var(--Font-size-text-xs, 12px);
+font-style: normal;
+font-weight: 500;
+line-height: var(--Line-height-text-xs, 18px); /* 150% */
+}
+
+.Sortings{
+    display: flex;
+height: 44px;
+min-width: var(--Base-4-Premitives-32, 128px);
+max-width: var(--Base-4-Premitives-220, 880px);
+max-height: var(--Base-4-Premitives-11, 44px);
+padding: var(--Base-4-Premitives-1, 4px) var(--Base-4-Premitives-3, 12px);
+align-items: center;
+gap: 8px;
+align-self: stretch;
+border-radius: var(--Base-4-Premitives-2, 8px);
+border: 1px solid var(--Colors-Border-border-primary, #D0D5DD);
+background: var(--Colors-Base-white, #FFF);
+}
+
+.optionRext{
+    display: -webkit-box;
+min-width: var(--Base-4-Premitives-40, 160px);
+-webkit-box-orient: vertical;
+-webkit-line-clamp: 1;
+line-clamp: 1;
+flex: 1 0 0;
+overflow: hidden;
+color: var(--Base-Black, var(--Colors-Base-black, #000));
+text-overflow: ellipsis;
+
+/* Text sm/Regular */
+font-family: var(--Font-family-font-family-body, Inter);
+font-size: var(--Font-size-text-sm, 14px);
+font-style: normal;
+font-weight: 400;
+line-height: var(--Line-height-text-sm, 20px); /* 142.857% */
+}
