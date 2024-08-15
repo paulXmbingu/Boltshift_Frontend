@@ -11,7 +11,7 @@ import Bell from '../../assets/Icons/UI/bell-02.svg';
 import SearchInput from "../../Components/Atoms/SearchInput";
 import { NavBarDropDownMenu, NavBarDropDownMenuMobileLoggedIn } from "../Molecules/NavBarDropDownMenu";
 import { BrandLogoHor } from "../Atoms/BrandLogo";
-import Filter from "../../assets/Icons/UI/filter-funnel-02.svg"
+import Filter from "../../assets/Icons/UI/sliders-04.svg"
 import { Btn_Icon_Only_Sec_LG } from "../Atoms/Button";
 
 const TopNavLarge = () => {

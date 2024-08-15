@@ -7,12 +7,18 @@
     align-items: center;
     flex-shrink: 0;
     border-radius: var(--spacing-system-guides-corner-radius-3, 12px);
-    background: lightgray 50% / cover no-repeat, var(--Colors-Background-bg-primary, #FFF);
+    background: var(--Colors-Background-bg-primary, #FFF);
     overflow: hidden;
     object-fit: cover;
     cursor: pointer;
+    transition: transform 0.2s ease, 0.2s ease;
+    
 }
 
-.productMediaThumbnailMD:hover {
-    background: var(--Colors-Background-bg-secondary, #F9FAFB);
+.productMediaThumbnailMD:hover,
+.productMediaThumbnailMD:active,
+.productMediaThumbnailMD:focus-visible,
+.productMediaThumbnailMD:focus-within {
+    scale: 95%;
+    opacity: 50%;
 }
