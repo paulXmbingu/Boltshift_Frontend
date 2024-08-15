@@ -6,6 +6,7 @@ import ProductMediaConfiguratorSection from "./ProductMediaConfiguratorSection";
 import Footer from "../../Components/Shared/Footer";
 import BreadCrumb from "../../Components/Shared/BreadCrumb";
 import FeaturedStoreSection from "../LandingPage/FeaturedStoreSection";
+import ConvenienceStore from "../../assets/Icons/Illustrated/Convenience store.svg";
 
 function ProductPage() {
     const [isLargeScreen, setIsLargeScreen] = useState(typeof window !== "undefined" ? window.innerWidth > 768 : false);
@@ -24,7 +25,7 @@ function ProductPage() {
             {isLargeScreen ? <TopNavLarge /> : <TopNavSmall />}
             <BreadCrumb Catalog={`Catalog`} Cartegory={`Ladies Fashion`} Subcategory={`Dresses`} ProductName={`Xpluswear Design Plus Size Mother Of The Bride Elegant Champagne Long Sleeve Split Pocket`} />
             <ProductMediaConfiguratorSection />
-            <FeaturedStoreSection />
+            <FeaturedStoreSection HeaderTitle={`More from this Store`} />
             <Footer />
         </div>
     );

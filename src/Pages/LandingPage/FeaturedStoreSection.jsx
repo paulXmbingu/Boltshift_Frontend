@@ -1,7 +1,6 @@
 import React from "react";
 import styles from "./FeaturedStoreSection.module.css";
 import SectionHeader from "../../Components/Shared/SectionHeader";
-import ConvenienceStore from "../../assets/Icons/Illustrated/Convenience store.svg";
 import ProductCardLandscapeSM from "../../Components/Shared/ProductCardLandscapeSM"
 import StoreLogo from "../../assets/Logos/Senjes Cuisines.svg"
 import StoreVerification from "../../assets/Icons/UI/Verified tick.svg"
@@ -12,10 +11,14 @@ import ChevronRight from "../../assets/Icons/UI/chevron-right (1).svg"
 import PlusButton from "../../assets/Icons/UI/plus.svg"
 import { Pagination } from "../../Components/Molecules/Pagination";
 
-function FeaturedStoreSection() {
+function FeaturedStoreSection({ HeaderTitle, HeaderIcon }) {
     return (
         <div className={styles.catSection}>
-            <SectionHeader headerTitle="Featured Store" icon={ConvenienceStore} />
+            {/* <SectionHeader headerTitle="Featured Store" icon={ConvenienceStore} /> */}
+            <div className={styles.headerContainer}>
+                {HeaderIcon && <img src={HeaderIcon} className={styles.headerIcon} alt="icon"/>}
+                <div className={styles.headerTitle}> {HeaderTitle} </div>
+            </div>
             <div className={styles.featureStoreWrapper}>
                 <div className={styles.storeBackgoundWrapper}>
                     <img src={`https://res.cloudinary.com/excit3/image/upload/v1718663336/Boltshift%20Branding/Store_Background_y8a6x7.jpg`} alt="Store Background" className={styles.storeBackgound} /> 

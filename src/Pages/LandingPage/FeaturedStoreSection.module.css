@@ -8,6 +8,39 @@
     align-self: stretch;
 }
 
+.headerContainer {
+    display: flex;
+    min-width: 336px;
+    max-width: 1280px;
+    align-items: flex-start;
+    align-content: flex-start;
+    gap: 4px;
+    align-self: stretch;
+    flex-wrap: wrap;
+}
+
+.headerIcon {
+    width: 32px;
+    height: 32px;
+}
+
+.headerTitle {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    line-clamp: 1;
+    overflow: hidden;
+    color: #333741;
+    text-align: center;
+    text-overflow: ellipsis;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px;
+}
+
+
 .featureStoreWrapper {
     display: flex;
     padding: var(--spacing-10xl, 128px) var(--spacing-xl, 16px) var(--spacing-xl, 16px) var(--spacing-xl, 16px);
