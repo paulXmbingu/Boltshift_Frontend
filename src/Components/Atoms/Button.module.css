@@ -51,6 +51,7 @@
     
     /* Focus rings/ring-brand-shadow-xs */
     box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05), 0px 0px 0px 4px rgba(234, 39, 94, 0.24);
+    scale: 95%;
 }
 
 .priSM:disabled {
@@ -125,6 +126,7 @@
     
     /* Focus rings/ring-gray-shadow-xs */
     box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05), 0px 0px 0px 4px rgba(152, 162, 179, 0.14);
+    scale: 95%;
 }
 
 .secGraySM:disabled {
@@ -192,6 +194,7 @@
 
     /* Focus rings/ring-brand-shadow-xs */
     box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05), 0px 0px 0px 4px rgba(234, 39, 94, 0.24);
+    scale: 95%;
 }
 
 .secColorSM:disabled {
@@ -270,6 +273,7 @@
     align-items: center;
     gap: var(--spacing-xs, 4px);
     border-radius: var(--radius-md, 8px);
+    scale: 95%;
 }
 
 .terGreySM:disabled {
@@ -362,6 +366,7 @@
 
     /* Focus rings/ring-brand-shadow-xs */
     box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05), 0px 0px 0px 4px rgba(234, 39, 94, 0.24);
+    scale: 95%;
 }
 
 .Btn_Primary_LG:disabled {
@@ -428,6 +433,7 @@
 
 .TerLG:focus {
     border-radius: var(--radius-md, 8px);
+    scale: 95%;
 }
 
 .TerLG:disabled {
@@ -497,6 +503,7 @@
     
     /* Focus rings/ring-brand-shadow-xs */
     box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05), 0px 0px 0px 4px rgba(234, 39, 94, 0.24);
+    scale: 95%;
 }
 
 .priXL:disabled {
@@ -562,6 +569,7 @@
 
     /* Focus rings/ring-brand-shadow-xs */
     box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05), 0px 0px 0px 4px rgba(234, 39, 94, 0.24);
+    scale: 95%;
 }
 
 .Btn_Sec_Color_XL:disabled {
@@ -640,6 +648,7 @@
     
     /* Focus rings/ring-gray-shadow-xs */
     box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05), 0px 0px 0px 4px rgba(152, 162, 179, 0.14);
+    scale: 95%;
 }
 .Btn_Icon_Only_Sec_LGWrap:disabled {
     display: inline-flex;
