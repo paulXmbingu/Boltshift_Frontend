@@ -1,0 +1,27 @@
+
+.secSectionHeaderWrap {
+    display: flex;
+    /* width: 1280px; */
+    align-items: flex-start;
+    gap: var(--spacing-system-guides-corner-radius-1, 4px);
+    background: var(--Colors-Background-bg-primary, #FFF);
+    width: 100%;
+}
+
+.secSectionHeaderTitle {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+    color: var(--colors-text-text-primary-900, #101828);
+    text-align: center;
+    text-overflow: ellipsis;
+
+    /* Display xs/Semibold */
+    font-family: var(--Font-family-font-family-display, Inter);
+    font-size: var(--Font-size-display-xs, 24px);
+    font-style: normal;
+    font-weight: 600;
+    line-height: var(--Line-height-display-xs, 32px); /* 133.333% */
+    line-clamp: 1;
+}

@@ -12,6 +12,7 @@ import TrendingProductsSection from "./TrendingProductsSection";
 import RecentReviewSection from "./RecentReviewSection";
 import Footer from "../../Components/Shared/Footer";
 import SpecialOfferSection from "./SpecialOfferSection";
+import ConvenienceStore from "../../assets/Icons/Illustrated/Convenience store.svg";
 
 function LandingPage() {
     const [isLargeScreen, setIsLargeScreen] = useState(typeof window !== "undefined" ? window.innerWidth > 768 : false);
@@ -33,7 +34,7 @@ function LandingPage() {
             <PopularCategoriesSection />
             <HotDealTodaySection />
             <FeaturedProductsSection />
-            <FeaturedStoreSection />
+            <FeaturedStoreSection HeaderIcon={ConvenienceStore} HeaderTitle={`Featured Store`} />
             <SpecialOfferSection />
             <PopularProductsSection />
             <TrendingProductsSection />
