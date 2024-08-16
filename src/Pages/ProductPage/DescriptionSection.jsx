@@ -8,7 +8,7 @@ const DescriptionSection = () => {
             <SecSectionHeader headerTitle={`Description`} />
             <div className={styles.productDescriptionWrap}>
                 <div className={styles.productDescriptionText}>   
-                    Elegant Tradition: Xpluswear's Design Plus Size Mother Of The Bride Dress
+                    Xpluswear's Design Plus Size Mother Of The Bride Dress
                     combines timeless sophistication with modern elegance. Since its inception,
                     Xpluswear has been dedicated to crafting dresses that blend classic charm
                     with contemporary style, making it a trusted name in plus-size fashion.
