@@ -8,6 +8,7 @@ import BreadCrumb from "../../Components/Shared/BreadCrumb";
 import FeaturedStoreSection from "../LandingPage/FeaturedStoreSection";
 import { DescriptionSection } from "./DescriptionSection";
 import { ProductDetailsSection } from "./ProductDetailsSection";
+import RelatedProductsSection from "./RelatedProductsSection";
 
 function ProductPage() {
     const [isLargeScreen, setIsLargeScreen] = useState(typeof window !== "undefined" ? window.innerWidth > 768 : false);
@@ -28,6 +29,7 @@ function ProductPage() {
             <ProductMediaConfiguratorSection />
             <DescriptionSection />
             <ProductDetailsSection />
+            <RelatedProductsSection />
             <FeaturedStoreSection HeaderTitle={`More from this Store`} />
             <Footer />
         </div>
