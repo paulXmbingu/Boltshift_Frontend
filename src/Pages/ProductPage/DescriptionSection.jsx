@@ -8,25 +8,30 @@ const DescriptionSection = () => {
             <SecSectionHeader headerTitle={`Description`} />
             <div className={styles.productDescriptionWrap}>
                 <div className={styles.productDescriptionText}>   
-                    Since 1881, Movado has been a brand in motion - always changing, always
-                    innovating, always moving forward. This quest for innovation has made us
-                    one of the world's premier watchmakers, with a proud heritage of Swiss
-                    craftsmanship, design excellence, and technological innovation.
+                    Elegant Tradition: Xpluswear's Design Plus Size Mother Of The Bride Dress
+                    combines timeless sophistication with modern elegance. Since its inception,
+                    Xpluswear has been dedicated to crafting dresses that blend classic charm
+                    with contemporary style, making it a trusted name in plus-size fashion.
                     <ul>
                         <li> 
-                            <span className={styles.productDescriptionTextBold}> Contemporary Chic: </span> Sleek ceramic and sparkling crystals define this modern must have timepiece.
+                            <span className={styles.productDescriptionTextBold}> Contemporary Elegance: </span>
+                            This dress features an exquisite champagne color and a graceful long silhouette, creating a look that is both chic and refined. The flowing fabric and elegant design make it a standout choice for any formal occasion.
                         </li>
                         <li>
-                            <span className={styles.productDescriptionTextBold}> Modern Designed: </span> Women's Movado Bold, stainless steel case with crystals, silver-toned metallic Museum dial with crystal set dot, blush ceramic and stainless steel link bracelet.
+                            <span className={styles.productDescriptionTextBold}> Modern Design: </span>
+                            Tailored specifically for plus sizes, this dress offers a flattering fit with a tailored bodice and a graceful skirt that drapes beautifully. The delicate detailing and high-quality fabric ensure both comfort and style.
                         </li>
                         <li>
-                            <span className={styles.productDescriptionTextBold}> Swiss Quartz Accuracy: </span> Swiss quartz movement provides incredibly precise timekeeping, superior craftsmanship and minimal maintenance for a reliable and worry-free timepiece.
+                            <span className={styles.productDescriptionTextBold}> High-Quality Fabric: </span>
+                            Made from premium materials, this dress provides a luxurious feel and exceptional durability. The fabric is designed to move gracefully with you, ensuring that you look and feel your best throughout the event.
                         </li>
                         <li>
-                            <span className={styles.productDescriptionTextBold}> K1 Mineral Crystal Glass: </span> K1 mineral crystal is the most common crystal used in designer watches and more scratch-resistant than regular mineral crystal—and is even more shatter-resistant than sapphire crystal.
+                            <span className={styles.productDescriptionTextBold}> Elegant Detailing: </span>
+                            The dress is adorned with subtle embellishments that add a touch of sparkle without overwhelming the design. The sophisticated champagne hue complements a wide range of accessories and bridal party themes.
                         </li>
                         <li>
-                            <span className={styles.productDescriptionTextBold}> Caring for Your Timepiece: </span> Like any finely crafted mechanism, your Movado watch requires periodic maintenance to ensure optimal performance. A maintenance interval of 3 to 5 years is recommended, in addition to any required battery replacement. Never open the watch yourself.
+                            <span className={styles.productDescriptionTextBold}> Caring for Your Dress: </span>
+                            To maintain the beauty of your Xpluswear dress, follow the care instructions provided. Dry clean only to preserve the fabric and embellishments. Store in a cool, dry place to prevent damage and ensure that your dress remains as stunning as the day you wore it.
                         </li>
                     </ul>
                 </div>
