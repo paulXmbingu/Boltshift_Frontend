@@ -11,7 +11,7 @@ const ProductDetailsSection = () => {
                     <ul>
                         <li> 
                             <span className={styles.productDetailsTextBold}> Package Dimensions: </span>
-                            7.5 x 6.5 x 5.0 inches; 15.5 ounces
+                            7.5 x 6.5 x 5.0 in; 15.5 oz
                         </li>
                         <li> 
                             <span className={styles.productDetailsTextBold}> Item Model Number: </span>
