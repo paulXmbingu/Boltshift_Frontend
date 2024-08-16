@@ -10,15 +10,5 @@ const SectionHeader = ({ headerTitle, icon }) => {
     );
 }
 
-const SectionHeader_Sec = ( {headerTitle} ) => {
-    return (
-        <div clas>
-            Secondary Section Header
-        </div>
-    );
-};
 
-export {
-    SectionHeader,
-    SectionHeader_Sec,
-};
+export default SectionHeader;

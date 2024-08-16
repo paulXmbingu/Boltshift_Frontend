@@ -8,5 +8,36 @@
     gap: var(--spacing-system-guides-corner-radius-10, 40px);
     align-self: stretch;
     background: var(--Colors-Background-bg-primary, #FFF);
-    width: 100%;
+}
+
+.productDescriptionWrap {
+    display: flex;
+    min-width: var(--spacing-system-guides-corner-radius-84, 336px);
+    align-items: flex-start;
+    align-self: stretch;
+}
+
+.productDescriptionText {
+    /* min-width: var(--spacing-system-guides-corner-radius-84, 336px); */
+    max-width: var(--spacing-system-guides-corner-radius-128, 512px);
+    flex: 1 0 0;
+    color: var(--colors-text-text-tertiary-600, #475467);
+
+    /* Text sm/Regular */
+    font-family: var(--Font-family-font-family-body, Inter);
+    font-size: var(--Font-size-text-sm, 14px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: var(--Line-height-text-sm, 20px); /* 142.857% */
+}
+
+.productDescriptionTextBold {
+    color: var(--colors-text-text-tertiary-600, #475467);
+
+    /* Text sm/Semibold */
+    font-family: var(--Font-family-font-family-body, Inter);
+    font-size: var(--Font-size-text-sm, 14px);
+    font-style: normal;
+    font-weight: 600;
+    line-height: var(--Line-height-text-sm, 20px);
 }
