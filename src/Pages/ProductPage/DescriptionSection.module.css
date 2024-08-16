@@ -1,0 +1,12 @@
+.productDescriptionSection {
+    display: flex;
+    /* min-width: var(--Grid-layouts-iPhone-375px, 375px); */
+    /* max-width: var(--grid-layouts-desktop-1280-px, 1280px); */
+    padding: var(--spacing-system-guides-corner-radius-12, 48px) var(--spacing-system-guides-corner-radius-4, 16px);
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--spacing-system-guides-corner-radius-10, 40px);
+    align-self: stretch;
+    background: var(--Colors-Background-bg-primary, #FFF);
+    width: 100%;
+}
