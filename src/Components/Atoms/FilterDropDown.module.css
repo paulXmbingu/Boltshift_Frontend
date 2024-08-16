@@ -42,7 +42,6 @@
     font-size: 14px;
     line-height: 20px;
     color: #344054;
-    appearance: none; /* Hide default dropdown arrow */
     position: relative;
 }
 
