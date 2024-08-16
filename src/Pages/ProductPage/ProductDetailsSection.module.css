@@ -1,4 +1,4 @@
-.productDescriptionSection {
+.productDetailsSection {
     display: flex;
     /* min-width: var(--Grid-layouts-iPhone-375px, 375px); */
     /* max-width: var(--grid-layouts-desktop-1280-px, 1280px); */
@@ -10,14 +10,14 @@
     background: var(--Colors-Background-bg-primary, #FFF);
 }
 
-.productDescriptionWrap {
+.productDetailsWrap {
     display: flex;
     min-width: var(--spacing-system-guides-corner-radius-84, 336px);
     align-items: flex-start;
     align-self: stretch;
 }
 
-.productDescriptionText {
+.productDetailsText {
     /* min-width: var(--spacing-system-guides-corner-radius-84, 336px); */
     max-width: var(--spacing-system-guides-corner-radius-128, 512px);
     flex: 1 0 0;
@@ -31,7 +31,7 @@
     line-height: var(--Line-height-text-sm, 20px); /* 142.857% */
 }
 
-.productDescriptionTextBold {
+.productDetailsTextBold {
     color: var(--colors-text-text-tertiary-600, #475467);
 
     /* Text sm/Semibold */
