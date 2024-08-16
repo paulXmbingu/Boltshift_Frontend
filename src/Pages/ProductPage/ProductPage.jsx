@@ -29,8 +29,10 @@ function ProductPage() {
             <ProductMediaConfiguratorSection />
             <DescriptionSection />
             <ProductDetailsSection />
-            <RelatedProductsSection />
-            <FeaturedStoreSection HeaderTitle={`More from this Store`} />
+                <RelatedProductsSection />
+                <FeaturedStoreSection HeaderTitle={`More from this Store`} />
+            <div className={styles.ratingsReviewsRecomendationsSection}>
+            </div>
             <Footer />
         </div>
     );
