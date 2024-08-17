@@ -21,6 +21,7 @@
 
 .buttonGroupWrap:focus {
     background: var(--Colors-Background-bg-secondary_hover, #F2F4F7);
+    scale: 95%;
 }
 
 .buttonGroupWrap:disabled {
