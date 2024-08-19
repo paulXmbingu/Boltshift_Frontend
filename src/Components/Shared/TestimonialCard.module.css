@@ -44,7 +44,7 @@
 
 .reviewTitleWrap {
     display: flex;
-    width: 1216px;
+    /* width: 1216px; */
     max-width: var(--spacing-system-guides-corner-radius-304, 1216px);
     padding: 0px 0px 0px var(--spacing-system-guides-corner-radius-0, 0px);
     flex-direction: column;
@@ -79,5 +79,4 @@
     font-weight: 400;
     line-height: var(--Line-height-text-sm, 20px); /* 142.857% */
     line-clamp: 3;
-    width: 100%;
 }
