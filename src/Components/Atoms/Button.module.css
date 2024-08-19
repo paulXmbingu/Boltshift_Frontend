@@ -675,7 +675,7 @@
     align-items: center;
     gap: var(--spacing-sm, 6px);
     background: var(--Colors-Background-bg-primary, #FFF, 0);
-    border: #FFF, 0;
+    border: none;
     cursor: pointer;
 }
 
