@@ -79,5 +79,4 @@
     font-weight: 400;
     line-height: var(--Line-height-text-sm, 20px); /* 142.857% */
     line-clamp: 3;
-    width: 100%;
 }
