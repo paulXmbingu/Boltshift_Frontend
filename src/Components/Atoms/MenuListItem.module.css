@@ -9,7 +9,7 @@
     background: var(--Colors-Background-bg-primary, #FFF);
     box-sizing: border-box;
     cursor: pointer;
-    /* transition: all 0.1s ease; */
+    transition: all 0.2s ease-in-out;
 }
 
 .menuItemListWrap:hover,
@@ -22,6 +22,8 @@
     gap: var(--spacing-md, 8px);
     border-radius: var(--radius-md, 8px);
     background: var(--Colors-Background-bg-secondary_hover, #F2F4F7);    box-sizing: border-box;
+    scale: 95%;
+    
 }
 
 .menuItemListWrap:disabled {
