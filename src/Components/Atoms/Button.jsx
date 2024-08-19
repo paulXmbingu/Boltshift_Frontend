@@ -121,9 +121,9 @@ const Btn_Icon_Only_Sec_LG = ({ Icon }) => {
     );
 };
 
-const Btn_LinkGray_SM = ({ iconLeading, ButtonCTA, iconTrailing }) => {
+const Btn_LinkGray_SM = ({ iconLeading, ButtonCTA, iconTrailing, handleClick }) => {
     return (
-        <button className={styles.btn_LinkGray_SMWrap}>
+        <button className={styles.btn_LinkGray_SMWrap} onClick={handleClick}>
             {iconLeading && <img src={iconLeading} alt="Leading Icon" className={styles.linkGray_SMIconLeading} />}
             <div className={styles.buttonCTALinkGray_SM}> 
                 {ButtonCTA} 

@@ -8,7 +8,7 @@ const TestimonialCard_LoggedIn = ({TestimonialTitle, TestomonialText}) => {
         <div className={styles.testimonialCard_LoggedInWrap}>
             <div className={styles.buyerDetails}> Buyer Details </div>
             <div className={styles.buyerTestimonial}>
-                <TestimonialTextColapsed TestimonialTitle={TestimonialTitle} TestomonialText={TestomonialText} />
+                <TestimonialText TestimonialTitle={TestimonialTitle} TestomonialText={TestomonialText} />
                 <div> Buyer Review </div>
             </div>
             <div className={styles.uploadedMediaThumbnailsReactions}> User Product Media Thumbnails & Reactions </div>
@@ -16,18 +16,23 @@ const TestimonialCard_LoggedIn = ({TestimonialTitle, TestomonialText}) => {
     );
 };
 
-const TestimonialTextColapsed = ({TestimonialTitle, TestomonialText}) => {
+const TestimonialText = ({TestimonialTitle, TestomonialText}) => {
     return (
         <div className={styles.reviewTitleWrap}>
             <span className={styles.reviewTitle}> {TestimonialTitle} </span>
-            <span className={styles.testimonialText}> {TestomonialText} </span>
-            <Btn_LinkGray_SM ButtonCTA={`Show More`} iconTrailing={chevrondown}/>
+            <span className={styles.testimonialTextCollapsed}> {TestomonialText} </span>
+            <span className={styles.testimonialTextexpanded}> {TestomonialText} </span>
+            <Btn_LinkGray_SM
+                ButtonCTA={`Show More`}
+                iconTrailing={chevrondown}
+                handleClick={``}
+            />
         </div>
     );
 };
 
 export {
     TestimonialCard_LoggedIn,
-    TestimonialTextColapsed,
+    TestimonialText,
 
 };
