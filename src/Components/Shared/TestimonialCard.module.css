@@ -1,0 +1,43 @@
+.testimonialCard_LoggedInWrap {
+    display: flex;
+    /* width: 1263px; */
+    /* min-width: var(--spacing-system-guides-corner-radius-84, 336px); */
+    /* max-width: var(--width-3xl, 1280px); */
+    min-height: var(--spacing-system-guides-corner-radius-64, 256px);
+    padding: var(--spacing-system-guides-corner-radius-8, 32px) var(--spacing-system-guides-corner-radius-0, 0px);
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--spacing-system-guides-corner-radius-5, 20px);
+    border-radius: var(--spacing-system-guides-corner-radius-0, 0px);
+    border-bottom: 1px solid var(--Colors-Border-border-secondary, #EAECF0);
+    background: var(--Colors-Background-bg-primary, #FFF);
+    width: 100%;
+}
+
+.buyerDetails {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-content: flex-start;
+    row-gap: var(--spacing-2xl, 20px);
+    align-self: stretch;
+    flex-wrap: wrap;
+}
+
+.buyerTestimonial {
+    display: flex;
+    max-width: var(--spacing-system-guides-corner-radius-304, 1216px);
+    padding: 0px 0px 0px var(--spacing-system-guides-corner-radius-0, 0px);
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--spacing-lg, 12px);
+    align-self: stretch;
+}
+
+.uploadedMediaThumbnailsReactions {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--spacing-system-guides-corner-radius-2, 8px);
+    align-self: stretch;
+}

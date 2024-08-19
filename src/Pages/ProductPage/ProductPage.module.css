@@ -18,3 +18,11 @@
     align-self: stretch;
     background: var(--Colors-Background-bg-primary, #FFF);
 }
+
+.buyerReview {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-5xl, 40px);
+    align-self: stretch;  
+}
