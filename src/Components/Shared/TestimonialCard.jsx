@@ -24,7 +24,6 @@ const TestimonialText = ({TestimonialTitle, TestomonialText}) => {
 		setIsExpanded (!isExpanded);
 	};
 
-
     return (
         <div className={styles.reviewTitleWrap}>
             <span className={styles.reviewTitle}> {TestimonialTitle} </span>
