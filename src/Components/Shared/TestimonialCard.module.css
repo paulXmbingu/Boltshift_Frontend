@@ -44,7 +44,7 @@
 
 .reviewTitleWrap {
     display: flex;
-    width: 1216px;
+    /* width: 1216px; */
     max-width: var(--spacing-system-guides-corner-radius-304, 1216px);
     padding: 0px 0px 0px var(--spacing-system-guides-corner-radius-0, 0px);
     flex-direction: column;
