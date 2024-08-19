@@ -38,12 +38,12 @@ function ProductPage() {
                     />
                     <Pagination />
                 </div>
-                <RelatedProductsSection />
-                <FeaturedStoreSection HeaderTitle={`More from this Store`} />
             </div>
+            <RelatedProductsSection />
+            <FeaturedStoreSection HeaderTitle={`More from this Store`} />
             <Footer />
         </div>
     );
-}
+};
 
 export default ProductPage;
