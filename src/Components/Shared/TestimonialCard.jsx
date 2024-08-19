@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./TestimonialCard.module.css"
 import { Btn_LinkGray_SM } from "../Atoms/Button";
 import chevrondown from "../../assets/Icons/UI/chevron-down.svg"
+import chevronup from "../../assets/Icons/UI/chevron-up.svg"
 
 const TestimonialCard_LoggedIn = ({TestimonialTitle, TestomonialText}) => {
     return (
@@ -17,15 +18,21 @@ const TestimonialCard_LoggedIn = ({TestimonialTitle, TestomonialText}) => {
 };
 
 const TestimonialText = ({TestimonialTitle, TestomonialText}) => {
+	const [isExpanded, setIsExpanded] = useState (false);
+
+	const toggleReview = () => {
+		setIsExpanded (!isExpanded);
+	};
+
+
     return (
         <div className={styles.reviewTitleWrap}>
             <span className={styles.reviewTitle}> {TestimonialTitle} </span>
-            <span className={styles.testimonialTextCollapsed}> {TestomonialText} </span>
-            <span className={styles.testimonialTextexpanded}> {TestomonialText} </span>
+            <span className={isExpanded? styles.testimonialTextexpanded : styles.testimonialTextCollapsed}> {TestomonialText} </span>
             <Btn_LinkGray_SM
-                ButtonCTA={`Show More`}
-                iconTrailing={chevrondown}
-                handleClick={``}
+                ButtonCTA={isExpanded? `Show Less` : `Show More`}
+                iconTrailing={isExpanded? chevronup : chevrondown }
+                handleClick={toggleReview}
             />
         </div>
     );
@@ -34,5 +41,4 @@ const TestimonialText = ({TestimonialTitle, TestomonialText}) => {
 export {
     TestimonialCard_LoggedIn,
     TestimonialText,
-
 };
