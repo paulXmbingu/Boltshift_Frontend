@@ -1,8 +1,5 @@
 .testimonialCard_LoggedInWrap {
     display: flex;
-    /* width: 1263px; */
-    /* min-width: var(--spacing-system-guides-corner-radius-84, 336px); */
-    /* max-width: var(--width-3xl, 1280px); */
     min-height: var(--spacing-system-guides-corner-radius-64, 256px);
     padding: var(--spacing-system-guides-corner-radius-8, 32px) var(--spacing-system-guides-corner-radius-0, 0px);
     flex-direction: column;
@@ -12,6 +9,7 @@
     border-bottom: 1px solid var(--Colors-Border-border-secondary, #EAECF0);
     background: var(--Colors-Background-bg-primary, #FFF);
     width: 100%;
+    transition: all 0.2s ease-in-out;
 }
 
 .buyerDetails {
@@ -44,7 +42,6 @@
 
 .reviewTitleWrap {
     display: flex;
-    /* width: 1216px; */
     max-width: var(--spacing-system-guides-corner-radius-304, 1216px);
     padding: 0px 0px 0px var(--spacing-system-guides-corner-radius-0, 0px);
     flex-direction: column;
@@ -54,8 +51,6 @@
 
 .reviewTitle {
     color: var(--colors-text-text-primary-900, #101828);
-
-    /* Text md/Semibold */
     font-family: var(--Font-family-font-family-body, Inter);
     font-size: var(--Font-size-text-md, 16px);
     font-style: normal;
@@ -63,7 +58,8 @@
     line-height: var(--Line-height-text-md, 24px); /* 150% */
 }
 
-.testimonialText {
+.testimonialTextCollapsed {
+    max-height: 60px; /* Adjust this value to match the collapsed state */
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 3;
@@ -71,12 +67,27 @@
     overflow: hidden;
     color: var(--colors-text-text-tertiary-600, #475467);
     text-overflow: ellipsis;
-
-    /* Text sm/Regular */
     font-family: var(--Font-family-font-family-body, Inter);
     font-size: var(--Font-size-text-sm, 14px);
     font-style: normal;
     font-weight: 400;
     line-height: var(--Line-height-text-sm, 20px); /* 142.857% */
+    transition: max-height 0.2s ease-in-out;
     line-clamp: 3;
+}
+
+.testimonialTextexpanded {
+    max-height: 1280px; /* Adjust this value to match the expanded state */
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    align-self: stretch;
+    overflow: hidden;
+    color: var(--colors-text-text-tertiary-600, #475467);
+    text-overflow: ellipsis;
+    font-family: var(--Font-family-font-family-body, Inter);
+    font-size: var(--Font-size-text-sm, 14px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: var(--Line-height-text-sm, 20px); /* 142.857% */
+    transition: max-height 0.4s ease-in-out;
 }
