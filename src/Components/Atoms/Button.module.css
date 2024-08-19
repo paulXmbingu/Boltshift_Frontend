@@ -668,3 +668,34 @@
     width: 20px;
     height: 20px;
 }
+
+.btn_LinkGray_SMWrap {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--spacing-sm, 6px);
+    background: var(--Colors-Background-bg-primary, #FFF, 0);
+    border: #FFF, 0;
+    cursor: pointer;
+}
+
+.linkGray_SMIconLeading {
+    width: 20px;
+    height: 20px;
+}
+
+.buttonCTALinkGray_SM {
+    color: var(--Component-colors-Components-Buttons-Tertiary-button-tertiary-fg, #475467);
+    
+    /* Text sm/Semibold */
+    font-family: var(--Font-family-font-family-body, Inter);
+    font-size: var(--Font-size-text-sm, 14px);
+    font-style: normal;
+    font-weight: 600;
+    line-height: var(--Line-height-text-sm, 20px); /* 142.857% */
+}
+
+.linkGray_SMiconTrailing {
+    width: 20px;
+    height: 20px;
+}
