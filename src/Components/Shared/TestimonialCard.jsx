@@ -63,8 +63,4 @@ const _TestimonialText = ({ TestimonialTitle, TestomonialText }) => {
     );
 };
 
-export {
-    TestimonialCard_LoggedIn,
-    _TestimonialText,
-    _CustomerMediaThumbnails,
-};
+export { TestimonialCard_LoggedIn };
