@@ -8,6 +8,7 @@
     align-items: center;
     flex-shrink: 0;
     border-radius: var(--spacing-system-guides-corner-radius-3, 12px);
+    border: 1px solid var(--Colors-Border-border-secondary, #E4E7EC);
     background: var(--Colors-Background-bg-primary, #FFF);
     overflow: hidden;
     object-fit: cover;
@@ -33,6 +34,7 @@
     align-items: center;
     flex-shrink: 0;
     border-radius: var(--spacing-system-guides-corner-radius-3, 12px);
+    border: 1px solid var(--Colors-Border-border-secondary, #E4E7EC);
     background: var(--Colors-Background-bg-primary, #FFF);
     transition: transform 0.2s ease, 0.2s ease;
     cursor: pointer;
