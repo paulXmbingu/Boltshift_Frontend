@@ -26,6 +26,61 @@
     flex-wrap: wrap;
 }
 
+.reviewInfo {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--spacing-lg, 12px);
+}
+
+.ratingDetails {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    gap: var(--spacing-system-guides-corner-radius-1, 4px);
+    align-self: stretch;
+}
+
+.buyerNameVerification {
+    display: flex;
+    padding: var(--spacing-system-guides-corner-radius-0, 0px);
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: var(--spacing-system-guides-corner-radius-0, 0px);
+    align-self: stretch;
+}
+
+.buyerName {
+    color: var(--colors-text-text-secondary-700, #344054);
+
+    /* Text md/Semibold */
+    font-family: var(--Font-family-font-family-body, Inter);
+    font-size: var(--Font-size-text-md, 16px);
+    font-style: normal;
+    font-weight: 600;
+    line-height: var(--Line-height-text-md, 24px); /* 150% */
+}
+
+.dateRating {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: var(--spacing-system-guides-corner-radius-0, 0px);
+}
+
+.datePurchase {
+    color: var(--colors-text-text-quarterary-500, #667085);
+    
+    /* Text xs/Regular */
+    font-family: var(--Font-family-font-family-body, Inter);
+    font-size: var(--Font-size-text-xs, 12px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: var(--Line-height-text-xs, 18px); /* 150% */
+}
+
 .buyerTestimonial {
     display: flex;
     max-width: var(--spacing-system-guides-corner-radius-304, 1216px);
