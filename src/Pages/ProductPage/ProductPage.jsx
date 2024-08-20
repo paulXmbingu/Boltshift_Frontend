@@ -39,7 +39,7 @@ function ProductPage() {
                 <div className={styles.buyerReview}>
                     <TestimonialCard_LoggedIn
                         BuyerName={`Paul Mbingu`}
-                        UserPhoto={`https://res.cloudinary.com/excit3/image/upload/v1718726412/Boltshift%20Branding/Paul_Mbingu_-_Avatar_-_Casual_-_Full_BG_tbr4ml.png`}
+                        UserPhoto={`https://res.cloudinary.com/excit3/image/upload/v1718726067/Boltshift%20Branding/Marion_Ngayi_Profile_Picture_jahbhr.png`}
                         DatePurchased={`Nov 26th, 2023`}
                         TestimonialTitle={`Elegant and Flattering Dress - Perfect for Special Occasions!`}
                         TestomonialText=
