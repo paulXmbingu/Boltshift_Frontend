@@ -26,7 +26,12 @@ function ProductPage() {
     return (
         <div className={styles.pageLayout}>
             {isLargeScreen ? <TopNavLarge /> : <TopNavSmall />}
-            <BreadCrumb Catalog={`Catalog`} Cartegory={`Ladies Fashion`} Subcategory={`Dresses`} ProductName={`Xpluswear Design Plus Size Mother Of The Bride Elegant Champagne Long Sleeve Split Pocket`} />
+            <BreadCrumb 
+                Catalog={`Catalog`} 
+                Cartegory={`Ladies Fashion`} 
+                Subcategory={`Dresses`} 
+                ProductName={`Xpluswear Design Plus Size Mother Of The Bride Elegant Champagne Long Sleeve Split Pocket`} 
+            />
             <ProductMediaConfiguratorSection />
             <DescriptionSection />
             <ProductDetailsSection />
@@ -37,7 +42,10 @@ function ProductPage() {
                         TestomonialText={`
                             I recently purchased the Xpluswear Design Plus Size Mother Of The Bride Dress, and I couldn't be happier with my choice. The dress is absolutely stunning with its elegant champagne color and beautifully flowing silhouette. The attention to detail is evident in the delicate embellishments, which add just the right amount of sparkle without being over the top.
                             What truly impressed me was the flattering fit—designed specifically for plus sizes, this dress made me feel confident and comfortable throughout the event. The high-quality fabric not only felt luxurious but also moved gracefully as I walked, making it perfect for a formal occasion.
-                            I also appreciate the care instructions provided, as they ensure the dress will stay in pristine condition for future events. Overall, this dress is a wonderful blend of timeless sophistication and modern elegance. I highly recommend it to anyone looking for a standout piece for a special occasion!`}
+                            I also appreciate the care instructions provided, as they ensure the dress will stay in pristine condition for future events. Overall, this dress is a wonderful blend of timeless sophistication and modern elegance. I highly recommend it to anyone looking for a standout piece for a special occasion!
+                        `}
+                        Media={`https://i.pinimg.com/564x/53/c2/e0/53c2e07209f94217e9b6f55eb8ec0b84.jpg`}
+                        Media2={`https://i.pinimg.com/564x/cd/c1/f1/cdc1f1987feac94fb007a7c8e48bae1c.jpg`}
                     />
                     <Pagination />
                 </div>
