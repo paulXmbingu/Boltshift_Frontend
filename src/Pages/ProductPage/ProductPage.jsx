@@ -39,17 +39,18 @@ function ProductPage() {
                 <div className={styles.buyerReview}>
                     <TestimonialCard_LoggedIn
                         TestimonialTitle={`Elegant and Flattering Dress - Perfect for Special Occasions!`}
-                        TestomonialText={`
-                            I recently purchased the Xpluswear Design Plus Size Mother Of The Bride Dress, and I couldn't be happier with my choice. The dress is absolutely stunning with its elegant champagne color and beautifully flowing silhouette. The attention to detail is evident in the delicate embellishments, which add just the right amount of sparkle without being over the top.
-                            What truly impressed me was the flattering fit—designed specifically for plus sizes, this dress made me feel confident and comfortable throughout the event. The high-quality fabric not only felt luxurious but also moved gracefully as I walked, making it perfect for a formal occasion.
-                            I also appreciate the care instructions provided, as they ensure the dress will stay in pristine condition for future events. Overall, this dress is a wonderful blend of timeless sophistication and modern elegance. I highly recommend it to anyone looking for a standout piece for a special occasion!
-                        `}
-                        Media={`https://i.pinimg.com/474x/26/30/c9/2630c9ebba4d2a639234b45a40150793.jpg`}
-                        Media2={`https://i.pinimg.com/736x/ef/eb/de/efebdef03c74d76fe34144970ae1a573.jpg`}
-                        Media3={`https://i.pinimg.com/736x/1f/e3/19/1fe319a103a9bda50747caa9fda8e83d.jpg`}
-                        Media4={`https://i.pinimg.com/474x/1e/6d/5f/1e6d5f1d930f7ed20d0501f68bc8f0b9.jpg`}
-                        Media5={`https://i.pinimg.com/564x/1c/3b/b1/1c3bb14f744106323785fb63f3e0d3b1.jpg`}
-                        Media6={`https://i.pinimg.com/564x/e3/26/30/e3263061c8f6b6aaa4b56fbae254d947.jpg`}
+                        TestomonialText=
+                            {`
+                                I recently purchased the Xpluswear Design Plus Size Mother Of The Bride Dress, and I couldn't be happier with my choice. The dress is absolutely stunning with its elegant champagne color and beautifully flowing silhouette. The attention to detail is evident in the delicate embellishments, which add just the right amount of sparkle without being over the top.
+                                What truly impressed me was the flattering fit—designed specifically for plus sizes, this dress made me feel confident and comfortable throughout the event. The high-quality fabric not only felt luxurious but also moved gracefully as I walked, making it perfect for a formal occasion.
+                                I also appreciate the care instructions provided, as they ensure the dress will stay in pristine condition for future events. Overall, this dress is a wonderful blend of timeless sophistication and modern elegance. I highly recommend it to anyone looking for a standout piece for a special occasion!
+                            `}
+                        Media={`https://i.pinimg.com/736x/89/89/27/89892721aaf1d5c185d42e3fda147245.jpg`}
+                        Media2={`https://i.pinimg.com/736x/21/f6/09/21f609feaa1541d19dc786c5119d820a.jpg`}
+                        Media3={`https://i.pinimg.com/736x/e9/4f/2d/e94f2d494fe56fce2fa3b6a3b57ce4db.jpg`}
+                        Media4={`https://i.pinimg.com/736x/ad/08/a5/ad08a556b929990d3cc634cc27a60c36.jpg`}
+                        Media5={`https://i.pinimg.com/736x/fd/3c/77/fd3c77ea9cfd97383c67518e2df601ee.jpg`}
+                        Media6={`https://i.pinimg.com/736x/d8/5a/70/d85a708d098ad45aeccc2f3e7942571c.jpg`}
                     />
                     <Pagination />
                 </div>
