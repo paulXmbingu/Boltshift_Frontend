@@ -9,8 +9,10 @@ const TestimonialCard_LoggedIn = ({TestimonialTitle, TestomonialText}) => {
         <div className={styles.testimonialCard_LoggedInWrap}>
             <div className={styles.buyerDetails}> Buyer Details </div>
             <div className={styles.buyerTestimonial}>
-                <TestimonialText TestimonialTitle={TestimonialTitle} TestomonialText={TestomonialText} />
-                <div> Buyer Review </div>
+                <TestimonialText 
+					TestimonialTitle={TestimonialTitle}
+					TestomonialText={TestomonialText}
+				/>
             </div>
             <div className={styles.uploadedMediaThumbnailsReactions}> User Product Media Thumbnails & Reactions </div>
         </div>
