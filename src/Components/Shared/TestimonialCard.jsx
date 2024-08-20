@@ -4,11 +4,17 @@ import { Btn_LinkGray_SM } from "../Atoms/Button";
 import chevrondown from "../../assets/Icons/UI/chevron-down.svg";
 import chevronup from "../../assets/Icons/UI/chevron-up.svg";
 import { ProductMediaThumbnailSM } from "./ProductMediaThumbnail";
+import { AvatarProfilePhotoSM } from "../Atoms/AvatarProfilePhoto";
+import { Badge_PillColor_SM_Success } from "../Atoms/Badge";
 
-const TestimonialCard_LoggedIn = ({ TestimonialTitle, TestomonialText, Media, MediaAltText, Media2, MediaAltText2, Media3, MediaAltText3, Media4, MediaAltText4, Media5, MediaAltText5, Media6, MediaAltText6 }) => {
+const TestimonialCard_LoggedIn = ({BuyerName, UserPhoto, DatePurchased, TestimonialTitle, TestomonialText, Media, MediaAltText, Media2, MediaAltText2, Media3, MediaAltText3, Media4, MediaAltText4, Media5, MediaAltText5, Media6, MediaAltText6 }) => {
     return (
         <div className={styles.testimonialCard_LoggedInWrap}>
-            <_BuyerDetails />
+            <_BuyerDetails
+                BuyerName={BuyerName}
+                UserPhoto={UserPhoto}
+                DatePurchased={DatePurchased}
+            />
             <div className={styles.buyerTestimonial}>
                 <_TestimonialText 
                     TestimonialTitle={TestimonialTitle}
@@ -28,10 +34,22 @@ const TestimonialCard_LoggedIn = ({ TestimonialTitle, TestomonialText, Media, Me
     );
 };
 
-const _BuyerDetails = () => {
+const _BuyerDetails = ({ UserPhoto, BuyerName, DatePurchased }) => {
     return (
         <div className={styles.buyerDetails}>
-            <div> Reviewer Info </div>
+            <div className={styles.reviewInfo}> 
+                <AvatarProfilePhotoSM UserPhoto={UserPhoto} /> 
+                <div className={styles.ratingDetails}> 
+                    <div className={styles.buyerNameVerification}>
+                        <span className={styles.buyerName}> {BuyerName} </span>
+                        <Badge_PillColor_SM_Success BadgeLabel={`Verified Buyer`} />
+                    </div>
+                    <div className={styles.dateRating}>
+                        <span className={styles.datePurchase}> {DatePurchased} </span>
+                        <span> Star Rating </span>
+                    </div>
+                </div>
+            </div>
             <div> User Review Badge </div>
         </div>
     );
