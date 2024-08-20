@@ -12,6 +12,10 @@
     transition: all 0.2s ease-in-out;
 }
 
+.testimonialCard_LoggedInWrap:last-child {
+    border-bottom: none;
+}
+
 .buyerDetails {
     display: flex;
     justify-content: space-between;
@@ -32,11 +36,10 @@
     align-self: stretch;
 }
 
-.uploadedMediaThumbnailsReactions {
+.customerMediaThumbnails {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: var(--spacing-system-guides-corner-radius-2, 8px);
+    align-items: center;
+    gap: var(--spacing-system-guides-corner-radius-3, 12px);
     align-self: stretch;
 }
 
