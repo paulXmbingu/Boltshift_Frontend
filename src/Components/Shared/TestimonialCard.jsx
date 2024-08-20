@@ -51,7 +51,7 @@ const _BuyerDetails = ({ UserPhoto, BuyerName, DatePurchased }) => {
                     </div>
                 </div>
             </div>
-            <div> User Review Badge </div>
+            {/* <div> User Review Badge </div> */}
         </div>
     );
 };
