@@ -41,6 +41,8 @@
     align-items: center;
     gap: var(--spacing-system-guides-corner-radius-3, 12px);
     align-self: stretch;
+    overflow-x: scroll;
+    scrollbar-width: none;
 }
 
 .reviewTitleWrap {
