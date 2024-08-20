@@ -8,7 +8,7 @@ import { ProductMediaThumbnailSM } from "./ProductMediaThumbnail";
 const TestimonialCard_LoggedIn = ({ TestimonialTitle, TestomonialText, Media, MediaAltText, Media2, MediaAltText2, Media3, MediaAltText3, Media4, MediaAltText4, Media5, MediaAltText5, Media6, MediaAltText6 }) => {
     return (
         <div className={styles.testimonialCard_LoggedInWrap}>
-            <div className={styles.buyerDetails}>Buyer Details</div>
+            <_BuyerDetails />
             <div className={styles.buyerTestimonial}>
                 <_TestimonialText 
                     TestimonialTitle={TestimonialTitle}
@@ -24,6 +24,15 @@ const TestimonialCard_LoggedIn = ({ TestimonialTitle, TestomonialText, Media, Me
                 Media6={Media6} MediaAltText6={MediaAltText6}
             />
             <div className={styles.peerReactions}>Peer Reactions</div>
+        </div>
+    );
+};
+
+const _BuyerDetails = () => {
+    return (
+        <div className={styles.buyerDetails}>
+            <div> Reviewer Info </div>
+            <div> User Review Badge </div>
         </div>
     );
 };
