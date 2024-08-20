@@ -6,6 +6,7 @@ import chevronup from "../../assets/Icons/UI/chevron-up.svg";
 import { ProductMediaThumbnailSM } from "./ProductMediaThumbnail";
 import { AvatarProfilePhotoSM } from "../Atoms/AvatarProfilePhoto";
 import { Badge_PillColor_SM_Success } from "../Atoms/Badge";
+import { StarRating4 } from "../Molecules/StarRating";
 
 const TestimonialCard_LoggedIn = ({BuyerName, UserPhoto, DatePurchased, TestimonialTitle, TestomonialText, Media, MediaAltText, Media2, MediaAltText2, Media3, MediaAltText3, Media4, MediaAltText4, Media5, MediaAltText5, Media6, MediaAltText6 }) => {
     return (
@@ -46,7 +47,7 @@ const _BuyerDetails = ({ UserPhoto, BuyerName, DatePurchased }) => {
                     </div>
                     <div className={styles.dateRating}>
                         <span className={styles.datePurchase}> {DatePurchased} </span>
-                        <span> Star Rating </span>
+                        <StarRating4 />
                     </div>
                 </div>
             </div>
