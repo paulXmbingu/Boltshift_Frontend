@@ -6,7 +6,7 @@
     align-items: flex-start;
     gap: var(--spacing-system-guides-corner-radius-5, 20px);
     border-radius: var(--spacing-system-guides-corner-radius-0, 0px);
-    border-bottom: 1px solid var(--Colors-Border-border-secondary, #EAECF0);
+    /* border-bottom: 1px solid var(--Colors-Border-border-secondary, #EAECF0); */
     background: var(--Colors-Background-bg-primary, #FFF);
     width: 100%;
     transition: all 0.2s ease-in-out;
@@ -106,6 +106,12 @@
     font-style: normal;
     font-weight: 600;
     line-height: var(--Line-height-text-sm, 20px); /* 142.857% */
+}
+
+.reactions {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-system-guides-corner-radius-1, 4px);
 }
 
 .customerMediaThumbnails {

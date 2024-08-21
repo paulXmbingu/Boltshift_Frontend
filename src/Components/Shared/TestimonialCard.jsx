@@ -7,6 +7,7 @@ import { ProductMediaThumbnailSM } from "./ProductMediaThumbnail";
 import { AvatarProfilePhotoSM } from "../Atoms/AvatarProfilePhoto";
 import { Badge_PillColor_SM_Success } from "../Atoms/Badge";
 import { StarRating4 } from "../Molecules/StarRating";
+import { ReactionNeg, ReactionPos } from "./ReactionIcon";
 
 const TestimonialCard_LoggedIn = ({BuyerName, UserPhoto, DatePurchased, TestimonialTitle, TestomonialText, Media, MediaAltText, Media2, MediaAltText2, Media3, MediaAltText3, Media4, MediaAltText4, Media5, MediaAltText5, Media6, MediaAltText6 }) => {
     return (
@@ -32,7 +33,10 @@ const TestimonialCard_LoggedIn = ({BuyerName, UserPhoto, DatePurchased, Testimon
             />
             <div className={styles.peerReactions}>
                 <div className={styles.feedBackQuestion}> Was this review helpful? </div>
-                <div> Reactions </div>
+                <div className={styles.reactions}>
+                    <ReactionPos />
+                    <ReactionNeg />
+                </div>
             </div>
         </div>
     );
