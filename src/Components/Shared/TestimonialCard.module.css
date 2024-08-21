@@ -6,7 +6,6 @@
     align-items: flex-start;
     gap: var(--spacing-system-guides-corner-radius-5, 20px);
     border-radius: var(--spacing-system-guides-corner-radius-0, 0px);
-    /* border-bottom: 1px solid var(--Colors-Border-border-secondary, #EAECF0); */
     background: var(--Colors-Background-bg-primary, #FFF);
     width: 100%;
     transition: all 0.2s ease-in-out;
