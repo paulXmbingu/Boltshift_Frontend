@@ -91,7 +91,7 @@ const Btn_Primary_MD = ({ ButtonCTA }) => {
     );
 };
 
-const Btn_Primary_LG = ({ ButtonCTA }) => {
+const Btn_Primary_LG = ({ iconLeading, ButtonCTA, iconTrailing }) => {
     return (
         <button className={styles.Btn_Primary_LG}>
             {ButtonCTA}

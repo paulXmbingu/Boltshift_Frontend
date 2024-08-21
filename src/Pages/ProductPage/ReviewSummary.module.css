@@ -42,3 +42,46 @@
     gap: var(--spacing-system-guides-corner-radius-2, 8px);
     flex: 1 0 0;
 }
+
+.ratingSummary {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-system-guides-corner-radius-2, 8px);
+}
+
+.ratingSummaryFigure {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+    color: var(--colors-text-text-brand-tertiary-600, #DA154D);
+    text-align: center;
+    text-overflow: ellipsis;
+
+    /* Display xl/Bold */
+    font-family: var(--Font-family-font-family-display, Inter);
+    font-size: var(--Font-size-display-xl, 60px);
+    font-style: normal;
+    font-weight: 700;
+    line-height: var(--Line-height-display-xl, 72px); /* 120% */
+    letter-spacing: -1.2px;
+    line-clamp: 1;
+}
+
+.starNumberReview {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--spacing-system-guides-corner-radius-2, 8px);
+}
+
+.avareageReviewCount {
+    color: var(--colors-text-text-primary-900, #101828);
+    
+    /* Text sm/Semibold */
+    font-family: var(--Font-family-font-family-body, Inter);
+    font-size: var(--Font-size-text-sm, 14px);
+    font-style: normal;
+    font-weight: 600;
+    line-height: var(--Line-height-text-sm, 20px); /* 142.857% */
+}

@@ -1,7 +1,9 @@
 import React from "react";
 import styles from './ReviewSummary.module.css'
 import { SecSectionHeader } from "../../Components/Shared/SecondarySectionHeader";
-import { Btn_Primary_LG } from "../../Components/Atoms/Button";
+import { Btn_Pri_XL, } from "../../Components/Atoms/Button";
+import { StarRating4 } from "../../Components/Molecules/StarRating";
+import pencilline from "../../assets/Icons/UI/pencil-line.svg"
 
 const ReviewSummary = () => {
     return (
@@ -9,8 +11,14 @@ const ReviewSummary = () => {
             <SecSectionHeader headerTitle={`Reviews`} />
             <div className={styles.reviewInfographics}>
                 <div className={styles.ratingInfographic}>
-                    <div> Rating Summary </div>
-                    <div> CTA Button </div>
+                    <div className={styles.ratingSummary}> 
+                        <div className={styles.ratingSummaryFigure}> 4.1 </div>
+                        <div className={styles.starNumberReview}> 
+                            <StarRating4 />
+                            <div className={styles.avareageReviewCount}> 123.46k Reviews </div>
+                        </div>
+                    </div>
+                    <Btn_Pri_XL ButtonCTA={`Share a Review`} iconLeading={pencilline} />
                 </div>
                 <div className={styles.starsInfographic}> Stars Infographic </div>
             </div>
