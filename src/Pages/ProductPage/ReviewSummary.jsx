@@ -18,14 +18,32 @@ const ReviewSummary = () => {
                             <div className={styles.avareageReviewCount}> 123.46k Reviews </div>
                         </div>
                     </div>
-                    <Btn_Pri_XL ButtonCTA={`Share a Review`} iconLeading={pencilline} />
+                    <Btn_Pri_XL
+                        ButtonCTA={`Share a Review`}
+                        iconLeading={pencilline}
+                    />
                 </div>
-                <div className={styles.starsInfographic}> Stars Infographic </div>
+                <div className={styles.starsInfographics}>
+                    <StarsInfographic />
+                    <StarsInfographic />
+                    <StarsInfographic />
+                    <StarsInfographic />
+                    <StarsInfographic />
+                </div>
             </div>
         </div>
     );
 };
 
+const StarsInfographic = () => {
+    return (
+        <div className={styles.starsInfographic}>
+            Stars Infographic
+        </div>
+    );
+};
+
 export {
-    ReviewSummary
+    ReviewSummary,
+    
 };
