@@ -15,9 +15,9 @@ const Btn_Pri_SM = ({ iconLeading, ButtonCTA, iconTrailing }) => {
     );
 };
 
-const Btn_Pri_XL = ({ iconLeading, ButtonCTA, iconTrailing }) => {
+const Btn_Pri_XL = ({ iconLeading, ButtonCTA, iconTrailing, handleClick }) => {
     return (
-        <button className={styles.priXL}>
+        <button className={styles.priXL} onClick={handleClick} >
             {iconLeading && <img src={iconLeading} alt="Leading Icon" className={styles.leadingIconPriXL} />}
             <div className={styles.textPaddingPriXL}>
                 <div className={styles.cTATextPriXL}>

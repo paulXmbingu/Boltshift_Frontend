@@ -32,7 +32,7 @@
     gap: var(--spacing-system-guides-corner-radius-4, 16px);
 }
 
-.starsInfographic {
+.starsInfographics {
     display: flex;
     min-width: var(--spacing-system-guides-corner-radius-72, 288px);
     max-width: var(--spacing-system-guides-corner-radius-64, 288px);
@@ -77,7 +77,7 @@
 
 .avareageReviewCount {
     color: var(--colors-text-text-primary-900, #101828);
-    
+
     /* Text sm/Semibold */
     font-family: var(--Font-family-font-family-body, Inter);
     font-size: var(--Font-size-text-sm, 14px);
@@ -85,3 +85,11 @@
     font-weight: 600;
     line-height: var(--Line-height-text-sm, 20px); /* 142.857% */
 }
+
+.starsInfographic {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-system-guides-corner-radius-2, 8px);
+    align-self: stretch;
+}
+
