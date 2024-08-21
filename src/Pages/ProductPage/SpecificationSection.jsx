@@ -1,11 +1,11 @@
 import React from "react";
-import styles from './ProductDetailsSection.module.css'
+import styles from './SpecificationSection.module.css'
 import { SecSectionHeader } from "../../Components/Shared/SecondarySectionHeader";
 
-const ProductDetailsSection = () => {
+const SpecificationSection = () => {
     return(
         <div className={styles.productDetailsSection}>
-            <SecSectionHeader headerTitle={`Product Details`} />
+            <SecSectionHeader headerTitle={`Specifications`} />
             <div className={styles.productDetailsWrap}>
                 <div className={styles.productDetailsText}>   
                     <ul>
@@ -49,5 +49,5 @@ const ProductDetailsSection = () => {
 };
 
 export {
-    ProductDetailsSection
+    SpecificationSection
 };

@@ -6,11 +6,11 @@ import Footer from "../../Components/Shared/Footer";
 import BreadCrumb from "../../Components/Shared/BreadCrumb";
 import FeaturedStoreSection from "../LandingPage/FeaturedStoreSection";
 import { DescriptionSection } from "./DescriptionSection";
-import { ProductDetailsSection } from "./ProductDetailsSection";
 import RelatedProductsSection from "./RelatedProductsSection";
 import { Pagination } from "../../Components/Molecules/Pagination";
 import { TestimonialCard_LoggedIn } from "../../Components/Shared/TestimonialCard";
 import { ReviewSummary } from "./ReviewSummary";
+import { SpecificationSection } from "./SpecificationSection";
 
 function ProductPage() {
     const [isLargeScreen, setIsLargeScreen] = useState(typeof window !== "undefined" ? window.innerWidth > 768 : false);
@@ -35,7 +35,7 @@ function ProductPage() {
             />
             <ProductMediaConfiguratorSection />
             <DescriptionSection />
-            <ProductDetailsSection />
+            <SpecificationSection />
             <div className={styles.ratingsReviewsSection}>
                 <ReviewSummary />
                 <div className={styles.buyerReview}>
