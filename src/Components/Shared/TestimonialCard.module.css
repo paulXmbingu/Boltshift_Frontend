@@ -91,6 +91,23 @@
     align-self: stretch;
 }
 
+.peerReactions {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-system-guides-corner-radius-6, 24px);
+}
+
+.feedBackQuestion {
+    color: var(--colors-text-text-primary-900, #101828);
+
+    /* Text sm/Semibold */
+    font-family: var(--Font-family-font-family-body, Inter);
+    font-size: var(--Font-size-text-sm, 14px);
+    font-style: normal;
+    font-weight: 600;
+    line-height: var(--Line-height-text-sm, 20px); /* 142.857% */
+}
+
 .customerMediaThumbnails {
     display: flex;
     align-items: center;

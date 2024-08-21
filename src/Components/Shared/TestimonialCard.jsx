@@ -30,7 +30,10 @@ const TestimonialCard_LoggedIn = ({BuyerName, UserPhoto, DatePurchased, Testimon
                 Media5={Media5} MediaAltText5={MediaAltText5}
                 Media6={Media6} MediaAltText6={MediaAltText6}
             />
-            <div className={styles.peerReactions}>Peer Reactions</div>
+            <div className={styles.peerReactions}>
+                <div className={styles.feedBackQuestion}> Was this review helpful? </div>
+                <div> Reactions </div>
+            </div>
         </div>
     );
 };
