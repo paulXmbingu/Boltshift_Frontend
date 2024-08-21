@@ -4,7 +4,7 @@
     /* width: 1280px; */
     align-items: flex-start;
     gap: var(--spacing-system-guides-corner-radius-1, 4px);
-    background: var(--Colors-Background-bg-primary, #FFF);
+    /* background: var(--Colors-Background-bg-primary, #FFF); */
     width: 100%;
 }
 

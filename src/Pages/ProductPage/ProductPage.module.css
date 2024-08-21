@@ -7,7 +7,7 @@
     align-self: stretch;
 }
 
-.ratingsReviewsRecomendationsSection {
+.ratingsReviewsSection {
     display: flex;
     /* min-width: var(--Grid-layouts-iPhone-375px, 375px); */
     /* max-width: var(--grid-layouts-desktop-1280-px, 1280px); */

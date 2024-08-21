@@ -1,0 +1,23 @@
+.reviewSummaryWrap {
+    display: flex;
+    padding: var(--spacing-system-guides-corner-radius-12, 48px) var(--Base-4-Premitives-12, 48px);
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--spacing-system-guides-corner-radius-5, 20px);
+    align-self: stretch;
+    border-radius: var(--spacing-system-guides-corner-radius-4, 16px);
+    border-top: 1px solid var(--Colors-Border-border-tertiary, #F2F4F7);
+    border-right: 1px solid var(--Colors-Border-border-tertiary, #F2F4F7);
+    border-bottom: 1px solid var(--Colors-Border-border-tertiary, #F2F4F7);
+    border-left: 1px solid var(--Colors-Border-border-tertiary, #F2F4F7);
+    background: var(--Colors-Background-bg-tertiary, #F2F4F7);
+}
+
+.reviewInfographics {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    gap: 16px var(--spacing-system-guides-corner-radius-4, 16px);
+    align-self: stretch;
+    flex-wrap: wrap;
+}
