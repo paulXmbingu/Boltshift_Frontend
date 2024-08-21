@@ -24,21 +24,27 @@ const ReviewSummary = () => {
                     />
                 </div>
                 <div className={styles.starsInfographics}>
-                    <StarsInfographic />
-                    <StarsInfographic />
-                    <StarsInfographic />
-                    <StarsInfographic />
-                    <StarsInfographic />
+                    <StarsInfographic nTHNumber={`5`} />
+                    <StarsInfographic nTHNumber={`4`} />
+                    <StarsInfographic nTHNumber={`3`} />
+                    <StarsInfographic nTHNumber={`2`} />
+                    <StarsInfographic nTHNumber={`1`} />
                 </div>
             </div>
         </div>
     );
 };
 
-const StarsInfographic = () => {
+const StarsInfographic = ({ nTHNumber, }) => {
     return (
         <div className={styles.starsInfographic}>
-            Stars Infographic
+            <div className={styles.nTHStar}>
+                <div className={styles.nTHWrapper}> 
+                    <span className={styles.nTHNumber}> { nTHNumber } </span>
+                </div>
+                <div> ⭐️ </div>
+            </div>
+            <div className={styles.progressMeterReviewCount}> Progress & Review Count </div>
         </div>
     );
 };
