@@ -49,12 +49,12 @@ function ProductPage() {
                                 What truly impressed me was the flattering fit—designed specifically for plus sizes, this dress made me feel confident and comfortable throughout the event. The high-quality fabric not only felt luxurious but also moved gracefully as I walked, making it perfect for a formal occasion.
                                 I also appreciate the care instructions provided, as they ensure the dress will stay in pristine condition for future events. Overall, this dress is a wonderful blend of timeless sophistication and modern elegance. I highly recommend it to anyone looking for a standout piece for a special occasion!
                             `}
-                        Media={`https://i.pinimg.com/736x/89/89/27/89892721aaf1d5c185d42e3fda147245.jpg`}
-                        Media2={`https://i.pinimg.com/736x/21/f6/09/21f609feaa1541d19dc786c5119d820a.jpg`}
-                        Media3={`https://i.pinimg.com/736x/e9/4f/2d/e94f2d494fe56fce2fa3b6a3b57ce4db.jpg`}
-                        Media4={`https://i.pinimg.com/736x/ad/08/a5/ad08a556b929990d3cc634cc27a60c36.jpg`}
-                        Media5={`https://i.pinimg.com/736x/fd/3c/77/fd3c77ea9cfd97383c67518e2df601ee.jpg`}
-                        Media6={`https://i.pinimg.com/736x/d8/5a/70/d85a708d098ad45aeccc2f3e7942571c.jpg`}
+                        Media={`https://i.pinimg.com/736x/56/79/c1/5679c19a2853cdc11528970fd2a29980.jpg`}
+                        Media2={`https://i.pinimg.com/736x/56/79/c1/5679c19a2853cdc11528970fd2a29980.jpg`}
+                        Media3={`https://i.pinimg.com/736x/82/d9/da/82d9da1a681125eaba47b265812f9903.jpg`}
+                        Media4={`https://i.pinimg.com/564x/41/8b/9b/418b9bf5a3a89e7422aeda1fa0aee863.jpg`}
+                        Media5={`https://i.pinimg.com/736x/a7/96/81/a796810ea10629e1d5b3e3a61da1b5c5.jpg`}
+                        Media6={`https://i.pinimg.com/736x/f9/be/2d/f9be2d6708f2a243bfbec1ce539ce23d.jpg`}
                     />
                     <TestimonialCard_LoggedIn
                         BuyerName={`Mercy Mbingu`}
@@ -91,12 +91,12 @@ function ProductPage() {
                         TestimonialTitle={`A Stunning Dress That Exceeds Expectations!`}
                         TestomonialText=
                             {`  I recently wore the Xpluswear Design Plus Size Mother Of The Bride Dress to my niece’s wedding, and it was simply perfect. The moment I slipped it on, I felt like it was made just for me. The fit is flawless, hugging my figure in the most flattering way without feeling restrictive. The quality of the fabric is top-notch, with a soft, luxurious feel that drapes beautifully. I chose the dress in a gorgeous emerald green, and the color was even more vibrant in person than I had hoped. The intricate lace overlay and subtle sequins added a sophisticated touch, making me feel both elegant and radiant. The attention to detail is incredible, and I couldn’t be happier with how comfortable and confident I felt throughout the day. I would recommend this dress to anyone looking for a high-quality, stunning piece that is sure to impress at any formal event!`}
-                        Media={`https://i.pinimg.com/736x/56/79/c1/5679c19a2853cdc11528970fd2a29980.jpg`}
-                        Media2={`https://i.pinimg.com/736x/56/79/c1/5679c19a2853cdc11528970fd2a29980.jpg`}
-                        Media3={`https://i.pinimg.com/736x/82/d9/da/82d9da1a681125eaba47b265812f9903.jpg`}
-                        Media4={`https://i.pinimg.com/564x/41/8b/9b/418b9bf5a3a89e7422aeda1fa0aee863.jpg`}
-                        Media5={`https://i.pinimg.com/736x/a7/96/81/a796810ea10629e1d5b3e3a61da1b5c5.jpg`}
-                        Media6={`https://i.pinimg.com/736x/f9/be/2d/f9be2d6708f2a243bfbec1ce539ce23d.jpg`}
+                        Media={`https://i.pinimg.com/736x/89/89/27/89892721aaf1d5c185d42e3fda147245.jpg`}
+                        Media2={`https://i.pinimg.com/736x/21/f6/09/21f609feaa1541d19dc786c5119d820a.jpg`}
+                        Media3={`https://i.pinimg.com/736x/e9/4f/2d/e94f2d494fe56fce2fa3b6a3b57ce4db.jpg`}
+                        Media4={`https://i.pinimg.com/736x/ad/08/a5/ad08a556b929990d3cc634cc27a60c36.jpg`}
+                        Media5={`https://i.pinimg.com/736x/fd/3c/77/fd3c77ea9cfd97383c67518e2df601ee.jpg`}
+                        Media6={`https://i.pinimg.com/736x/d8/5a/70/d85a708d098ad45aeccc2f3e7942571c.jpg`}
                     />
                     <Pagination />
                 </div>
