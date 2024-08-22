@@ -4,6 +4,7 @@ import { SecSectionHeader } from "../../Components/Shared/SecondarySectionHeader
 import { Btn_Pri_XL, } from "../../Components/Atoms/Button";
 import { StarRating4 } from "../../Components/Molecules/StarRating";
 import pencilline from "../../assets/Icons/UI/pencil-line.svg"
+import { Star_Yellow_100pc } from "../../Components/Atoms/MisIcons";
 
 const ReviewSummary = () => {
     return (
@@ -42,7 +43,7 @@ const StarsInfographic = ({ nTHNumber, }) => {
                 <div className={styles.nTHWrapper}> 
                     <span className={styles.nTHNumber}> { nTHNumber } </span>
                 </div>
-                <div> ⭐️ </div>
+                <Star_Yellow_100pc width={20} height={20} />
             </div>
             <div className={styles.progressMeterReviewCount}> Progress & Review Count </div>
         </div>
