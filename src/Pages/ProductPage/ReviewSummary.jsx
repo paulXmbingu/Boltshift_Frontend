@@ -43,7 +43,7 @@ const StarsInfographic = ({ nTHNumber, }) => {
                 <div className={styles.nTHWrapper}> 
                     <span className={styles.nTHNumber}> { nTHNumber } </span>
                 </div>
-                <Star_Yellow_100pc width={20} height={20} />
+                <Star_Yellow_100pc size={20} />
             </div>
             <div className={styles.progressMeterReviewCount}> Progress & Review Count </div>
         </div>

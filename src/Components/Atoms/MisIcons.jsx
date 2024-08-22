@@ -1,23 +1,24 @@
 import React from "react";
-import styles from './MisIcons.module.css'
-import Yellow100pcStar from '../../assets/Icons/Illustrated/Star Fill100pc ColorYellow.svg'
+import Yellow100pcStar from '../../assets/Icons/Illustrated/Star Fill100pc ColorYellow.svg';
 
 //MISCELLANEOUS ICONS
 //Star Icons
 
 //Yellow Stars
 
-const Star_Yellow_100pc = ({ width = 20, height = 20 }) => {
+const Star_Yellow_100pc = ({ size = 20 }) => {
     return (
         <img
             src={Yellow100pcStar}
             alt={`Star Icon`} 
-            style={{ width: `${width}px`, height: `${height}px` }}
+            style={{ 
+                width: `${size}px`, 
+                height: `${size}px`
+            }}
         />
     );
 };
 
-
 export {
     Star_Yellow_100pc,
-}
+};
