@@ -13,7 +13,7 @@ const Star_Yellow_100pc = ({ size = 20 }) => {
             alt={`Star Icon`} 
             style={{ 
                 width: `${size}px`, 
-                height: `${size}px`
+                height: `${size}px` 
             }}
         />
     );
