@@ -7,6 +7,9 @@ import pencilline from "../../assets/Icons/UI/pencil-line.svg"
 import { Star_Yellow_100pc } from "../../Components/Atoms/MisIcons";
 
 const ReviewSummary = ( { nTHStarReview5, nTHStarReview4, nTHStarReview3, nTHStarReview2, nTHStarReview1 }) => {
+
+    const TotalReviews = nTHStarReview5 + nTHStarReview4 + nTHStarReview3 + nTHStarReview2 + nTHStarReview1;
+
     return (
         <div className={styles.reviewSummaryWrap}>
             <SecSectionHeader headerTitle={`Reviews`} />
@@ -36,14 +39,6 @@ const ReviewSummary = ( { nTHStarReview5, nTHStarReview4, nTHStarReview3, nTHSta
     );
 };
 
-const TotalReviews = () => {
-    return (
-        <div>
-
-        </div>
-    );
-};
-
 const StarsInfographic = ({ nTHNumber, nTHStarReviews }) => {
     return (
         <div className={styles.starsInfographic}>
@@ -65,5 +60,4 @@ const StarsInfographic = ({ nTHNumber, nTHStarReviews }) => {
 
 export {
     ReviewSummary,
-    
 };
