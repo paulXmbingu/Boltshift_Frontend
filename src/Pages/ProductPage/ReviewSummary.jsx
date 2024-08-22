@@ -25,27 +25,32 @@ const ReviewSummary = () => {
                     />
                 </div>
                 <div className={styles.starsInfographics}>
-                    <StarsInfographic nTHNumber={`5`} />
-                    <StarsInfographic nTHNumber={`4`} />
-                    <StarsInfographic nTHNumber={`3`} />
-                    <StarsInfographic nTHNumber={`2`} />
-                    <StarsInfographic nTHNumber={`1`} />
+                    <StarsInfographic nTHNumber={`5`} nTHStarReviews={`800`} />
+                    <StarsInfographic nTHNumber={`4`} nTHStarReviews={`400`} />
+                    <StarsInfographic nTHNumber={`3`} nTHStarReviews={`200`} />
+                    <StarsInfographic nTHNumber={`2`} nTHStarReviews={`100`} />
+                    <StarsInfographic nTHNumber={`1`} nTHStarReviews={`50`} />
                 </div>
             </div>
         </div>
     );
 };
 
-const StarsInfographic = ({ nTHNumber, }) => {
+const StarsInfographic = ({ nTHNumber, nTHStarReviews }) => {
     return (
         <div className={styles.starsInfographic}>
             <div className={styles.nTHStar}>
                 <div className={styles.nTHWrapper}> 
                     <span className={styles.nTHNumber}> { nTHNumber } </span>
                 </div>
-                <Star_Yellow_100pc width={20} height={20} />
+                <Star_Yellow_100pc size={20} />
             </div>
-            <div className={styles.progressMeterReviewCount}> Progress & Review Count </div>
+            <div className={styles.progressMeterReviewCount}> 
+                <div> Progress Bar </div>
+                <div className={styles.nTHStarReviewsWrap}> 
+                    <span className={styles.nTHStarReviews}> {nTHStarReviews} </span>
+                </div>
+            </div>
         </div>
     );
 };
