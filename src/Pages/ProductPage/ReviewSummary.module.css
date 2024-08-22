@@ -129,3 +129,22 @@
     flex: 1 0 0;
     align-self: stretch;
 }
+
+.nTHStarReviewsWrap {
+    display: flex;
+    padding: var(--spacing-system-guides-corner-radius-0, 0px) var(--spacing-system-guides-corner-radius-1, 4px);
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+}
+
+.nTHStarReviews {
+    color: var(--colors-text-text-brand-tertiary-600, #DA154D);
+
+    /* Text sm/Medium */
+    font-family: var(--Font-family-font-family-body, Inter);
+    font-size: var(--Font-size-text-sm, 14px);
+    font-style: normal;
+    font-weight: 500;
+    line-height: var(--Line-height-text-sm, 20px); /* 142.857% */
+}

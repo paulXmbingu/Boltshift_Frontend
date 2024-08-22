@@ -10,7 +10,7 @@ const Star_Yellow_100pc = ({ size = 20 }) => {
     return (
         <img
             src={Yellow100pcStar}
-            alt={`Star Icon`} 
+            alt={`Star Yellow 100% Filled`} 
             style={{ 
                 width: `${size}px`, 
                 height: `${size}px` 
