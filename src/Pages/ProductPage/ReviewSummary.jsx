@@ -49,7 +49,9 @@ const StarsInfographic = ({ nTHNumber, nTHStarReviews }) => {
                 <Star_Yellow_100pc size={20} />
             </div>
             <div className={styles.progressMeterReviewCount}> 
-                <div> Progress Bar </div>
+                <div className={styles.progressBarFull}>
+                    <div className={styles.progressBarnTHStarReview}></div>
+                </div>
                 <div className={styles.nTHStarReviewsWrap}> 
                     <span className={styles.nTHStarReviews}> {nTHStarReviews} </span>
                 </div>
