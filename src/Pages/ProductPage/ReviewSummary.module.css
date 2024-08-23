@@ -148,3 +148,24 @@
     font-weight: 500;
     line-height: var(--Line-height-text-sm, 20px); /* 142.857% */
 }
+
+.progressBarFull {
+    display: flex;
+    width: 136px;
+    height: var(--Base-4-Premitives-1, 4px);
+    align-items: flex-start;
+    border-radius: var(--spacing-system-guides-corner-radius-2, 8px);
+    background: var(--Colors-Background-bg-quaternary, #EAECF0);
+    position: relative;
+    overflow: hidden;
+}
+
+.progressBarnTHStarReview {
+    width: var(--spacing-system-guides-corner-radius-32, 64px);
+    height: var(--Base-4-Premitives-1, 4px);
+    flex-shrink: 0;
+    border-radius: var(--spacing-system-guides-corner-radius-1, 4px);
+    background: var(--colors-foreground-fg-brand-primary-600, #DA154D);
+    position: absolute;
+    overflow: hidden;
+}
