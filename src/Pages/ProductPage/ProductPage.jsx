@@ -38,11 +38,11 @@ function ProductPage() {
             <SpecificationSection />
             <div className={styles.ratingsReviewsSection}>
                 <ReviewSummary
-                     nTHStarReview5={800}
-                     nTHStarReview4={400}
-                     nTHStarReview3={200}
-                     nTHStarReview2={100}
-                     nTHStarReview1={50}
+                     nTHStarReview5={4000}
+                     nTHStarReview4={1000}
+                     nTHStarReview3={900}
+                     nTHStarReview2={400}
+                     nTHStarReview1={200}
                 />
                 <div className={styles.buyerReview}>
                     <TestimonialCard_LoggedIn
