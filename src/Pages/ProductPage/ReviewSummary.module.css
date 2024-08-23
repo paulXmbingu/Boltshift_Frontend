@@ -161,7 +161,6 @@
 }
 
 .progressBarnTHStarReview {
-    width: var(--spacing-system-guides-corner-radius-32, 64px);
     height: var(--Base-4-Premitives-1, 4px);
     flex-shrink: 0;
     border-radius: var(--spacing-system-guides-corner-radius-1, 4px);

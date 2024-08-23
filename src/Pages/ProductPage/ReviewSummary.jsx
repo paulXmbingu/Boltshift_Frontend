@@ -28,18 +28,21 @@ const ReviewSummary = ( { nTHStarReview5, nTHStarReview4, nTHStarReview3, nTHSta
                     />
                 </div>
                 <div className={styles.starsInfographics}>
-                    <StarsInfographic nTHNumber={`5`} nTHStarReviews={nTHStarReview5} />
-                    <StarsInfographic nTHNumber={`4`} nTHStarReviews={nTHStarReview4} />
-                    <StarsInfographic nTHNumber={`3`} nTHStarReviews={nTHStarReview3} />
-                    <StarsInfographic nTHNumber={`2`} nTHStarReviews={nTHStarReview2} />
-                    <StarsInfographic nTHNumber={`1`} nTHStarReviews={nTHStarReview1} />
+                    <StarsInfographic nTHNumber={`5`} nTHStarReviews={nTHStarReview5} totalReviews={TotalReviews} />
+                    <StarsInfographic nTHNumber={`4`} nTHStarReviews={nTHStarReview4} totalReviews={TotalReviews} />
+                    <StarsInfographic nTHNumber={`3`} nTHStarReviews={nTHStarReview3} totalReviews={TotalReviews} />
+                    <StarsInfographic nTHNumber={`2`} nTHStarReviews={nTHStarReview2} totalReviews={TotalReviews} />
+                    <StarsInfographic nTHNumber={`1`} nTHStarReviews={nTHStarReview1} totalReviews={TotalReviews} />
                 </div>
             </div>
         </div>
     );
 };
 
-const StarsInfographic = ({ nTHNumber, nTHStarReviews }) => {
+const StarsInfographic = ({ nTHNumber, nTHStarReviews, totalReviews }) => {
+
+    const widthPercentage = (nTHStarReviews / totalReviews) * 100;
+
     return (
         <div className={styles.starsInfographic}>
             <div className={styles.nTHStar}>
@@ -50,7 +53,10 @@ const StarsInfographic = ({ nTHNumber, nTHStarReviews }) => {
             </div>
             <div className={styles.progressMeterReviewCount}> 
                 <div className={styles.progressBarFull}>
-                    <div className={styles.progressBarnTHStarReview}></div>
+                    <div 
+                        className={styles.progressBarnTHStarReview}
+                        style={{ width: `${widthPercentage}%` }}
+                    ></div>
                 </div>
                 <div className={styles.nTHStarReviewsWrap}> 
                     <span className={styles.nTHStarReviews}> {nTHStarReviews} </span>
