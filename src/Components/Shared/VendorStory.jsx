@@ -5,7 +5,7 @@ import styles from './VendorStory.module.css';
 function VendorStory({logo, label}) {
     return(
         <div className={styles.story}>
-            <img src={logo} alt="Vendor Logo" className={styles.vendorLogo} />
+            {logo && <img src={logo} alt="Vendor Logo" className={styles.vendorLogo} /> }
             <div className={styles.vendorName}>
                 <div className={styles.vendorLabel}> {label} </div>
             </div>
