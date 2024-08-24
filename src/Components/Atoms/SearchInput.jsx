@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import styles from './SearchInput.module.css';
 import SearchIcon from '../../assets/Icons/UI/search-sm.svg';
+import ClearSearch from '../../assets/Icons/UI/x-circle-filled.svg';
 
 const SearchInput = () => {
     const [query, setQuery] = useState('');
@@ -31,10 +32,8 @@ const SearchInput = () => {
                     onChange={handleInputChange}
                     autoComplete='on'
                 />
-                <button 
-                    type='submit' 
-                    className={styles.searchButton}>
-                        Search
+                <button type='submit' className={styles.searchButton} >
+                    Search
                 </button>
             </form>
         </div>
@@ -42,3 +41,4 @@ const SearchInput = () => {
 };
 
 export default SearchInput;
+
