@@ -13,10 +13,8 @@
 
 .reviewModalDesktopWrap {
     display: flex;
-    width: var(--width-md, 560px);
-    height: var(--Base-4-Premitives-201, 804px);
     max-width: var(--width-md, 560px);
-    padding: 0px 0px var(--spacing-system-guides-corner-radius-0, 0px) 0px;
+    max-height: var(--Base-4-Premitives-201, 804px);
     flex-direction: column;
     align-items: center;
     flex-shrink: 0;
@@ -26,4 +24,33 @@
     z-index: 1001;
     position: relative;
     pointer-events: none;
+}
+
+.modalHeader {
+    display: flex;
+    max-width: var(--width-md, 560px);
+    padding: var(--spacing-system-guides-corner-radius-6, 24px) var(--spacing-system-guides-corner-radius-8, 32px);
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+}
+
+.reviewDetails {
+    display: flex;
+    max-width: var(--width-md, 560px);
+    padding: var(--spacing-system-guides-corner-radius-6, 24px) var(--spacing-system-guides-corner-radius-8, 32px);
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--spacing-system-guides-corner-radius-8, 32px);
+    flex: 1 0 0;
+    align-self: stretch;
+}
+
+.modalFooter {
+    display: flex;
+    max-width: var(--width-md, 560px);
+    padding: var(--spacing-system-guides-corner-radius-6, 24px) var(--spacing-system-guides-corner-radius-8, 32px);
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
 }
