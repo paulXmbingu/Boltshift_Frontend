@@ -1,9 +1,9 @@
 import React from "react";
 import styles from "./Button.module.css";
 
-const Btn_Pri_SM = ({ iconLeading, ButtonCTA, iconTrailing }) => {
+const Btn_Pri_SM = ({ iconLeading, ButtonCTA, iconTrailing, handleClick }) => {
     return (
-        <button className={styles.priSM}>
+        <button className={styles.priSM} onClick={handleClick}>
             {iconLeading && <img src={iconLeading} alt="Leading Icon" className={styles.leadingIconPriSM} />}
             <div className={styles.textPaddingPriSM}>
                 <div className={styles.cTATextPriSM}>
@@ -29,9 +29,9 @@ const Btn_Pri_XL = ({ iconLeading, ButtonCTA, iconTrailing, handleClick }) => {
     );
 };
 
-const Btn_Sec_Gray_SM = ({ iconLeading, ButtonCTA, iconTrailing }) => {
+const Btn_Sec_Gray_SM = ({ iconLeading, ButtonCTA, iconTrailing, handleClick }) => {
     return (
-        <button className={styles.secGraySM}>
+        <button className={styles.secGraySM} onClick={handleClick} >
             {iconLeading && <img src={iconLeading} alt="Leading Icon" className={styles.leadingIcon} />}
             <div className={styles.textPadding}>
                 <div className={styles.cTAText}>
@@ -43,9 +43,9 @@ const Btn_Sec_Gray_SM = ({ iconLeading, ButtonCTA, iconTrailing }) => {
     );
 };
 
-const Btn_Sec_Color_XL = ({LeadingIcon, ButtonCTA, TrailingIcon}) => {
+const Btn_Sec_Color_XL = ({LeadingIcon, ButtonCTA, TrailingIcon, handleClick}) => {
     return (
-        <button className={styles.Btn_Sec_Color_XL}>
+        <button className={styles.Btn_Sec_Color_XL} onClick={handleClick}>
             {LeadingIcon && <img src={LeadingIcon} alt="Leading Icon" className={styles.Btn_Sec_Color_XLLeadingIcon} />}
             <div className={styles.Btn_Sec_Color_XLCTAWrap}>
                 <div className={styles.Btn_Sec_Color_XLCTA}> {ButtonCTA} </div>
@@ -55,9 +55,9 @@ const Btn_Sec_Color_XL = ({LeadingIcon, ButtonCTA, TrailingIcon}) => {
     )
 }
 
-const Btn_Sec_Color_SM = ({ iconLeading, ButtonCTA, iconTrailing }) => {
+const Btn_Sec_Color_SM = ({ iconLeading, ButtonCTA, iconTrailing, handleClick }) => {
     return (
-        <button className={styles.secColorSM}>
+        <button className={styles.secColorSM} onClick={handleClick}>
             {iconLeading && <img src={iconLeading} alt="Leading Icon" className={styles.leadingIconSecColorSM} />}
             <div className={styles.textPaddingsecColorSM}>
                 <div className={styles.cTATextcColorSM}>
@@ -69,9 +69,9 @@ const Btn_Sec_Color_SM = ({ iconLeading, ButtonCTA, iconTrailing }) => {
     );
 };
 
-const Btn_Ter_Grey_SM = ({ iconLeading, ButtonCTA, iconTrailing }) => {
+const Btn_Ter_Grey_SM = ({ iconLeading, ButtonCTA, iconTrailing, handleClick }) => {
     return (
-        <button className={styles.terGreySM}>
+        <button className={styles.terGreySM} onClick={handleClick}>
             {iconLeading && <img src={iconLeading} alt="Leading Icon" className={styles.leadingIconTer_Grey_SM} />}
             <div className={styles.textPaddingleadingIconTer_Grey_SM}>
                 <div className={styles.cTATextTer_Grey_SM}>
@@ -83,25 +83,25 @@ const Btn_Ter_Grey_SM = ({ iconLeading, ButtonCTA, iconTrailing }) => {
     );
 };
 
-const Btn_Primary_MD = ({ ButtonCTA }) => {
+const Btn_Primary_MD = ({ ButtonCTA, handleClick }) => {
     return (
-        <button className={styles.Btn_Primary_MD}>
+        <button className={styles.Btn_Primary_MD} onClick={handleClick}>
             {ButtonCTA}
         </button>
     );
 };
 
-const Btn_Primary_LG = ({ iconLeading, ButtonCTA, iconTrailing }) => {
+const Btn_Primary_LG = ({ iconLeading, ButtonCTA, iconTrailing, handleClick }) => {
     return (
-        <button className={styles.Btn_Primary_LG}>
+        <button className={styles.Btn_Primary_LG} onClick={handleClick}>
             {ButtonCTA}
         </button>
     );
 };
 
-const Btn_Ter_LG = ({ iconLeading, ButtonCTA, iconTrailing }) => {
+const Btn_Ter_LG = ({ iconLeading, ButtonCTA, iconTrailing, handleClick }) => {
     return (
-        <button className={styles.TerLG}>
+        <button className={styles.TerLG} onClick={handleClick}>
             {iconLeading && <img src={iconLeading} alt="Leading Icon" className={styles.leadingIconTerLG} />}
             <div className={styles.textPaddingTerLG}>
                 <div className={styles.cTATextTerLG}>
@@ -113,9 +113,9 @@ const Btn_Ter_LG = ({ iconLeading, ButtonCTA, iconTrailing }) => {
     );
 };
 
-const Btn_Icon_Only_Sec_LG = ({ Icon }) => {
+const Btn_Icon_Only_Sec_LG = ({ Icon, handleClick }) => {
     return (
-        <button className={styles.Btn_Icon_Only_Sec_LGWrap}>
+        <button className={styles.Btn_Icon_Only_Sec_LGWrap} onClick={handleClick}>
             {Icon && <img src={Icon} alt="Icon" className={styles.Btn_Icon_Only_Sec_LGIcon} />}
         </button>
     );

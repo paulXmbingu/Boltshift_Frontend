@@ -8,7 +8,8 @@ const config = {
     "@storybook/addon-essentials",
     "@chromatic-com/storybook",
     "@storybook/addon-interactions",
-    "@storybook/addon-mdx-gfm"
+    "@storybook/addon-mdx-gfm",
+    "@storybook/addon-designs"
   ],
 
   framework: {
@@ -20,6 +21,10 @@ const config = {
 
   typescript: {
     reactDocgen: "react-docgen-typescript"
+  },
+
+  core: {
+    disableWhatsNewNotifications: true
   }
 };
 export default config;

@@ -4,7 +4,7 @@
     align-items: flex-start;
     gap: var(--container-padding-desktop, 32px);
     background: var(--Colors-Background-bg-primary, #FFF);
-    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    box-sizing: border-box;
     padding: var(--spacing-system-guides-corner-radius-0, 0px) var(--container-padding-mobile, 16px) var(--spacing-6xl, 48px) var(--container-padding-mobile, 16px);
 }
 
@@ -68,22 +68,15 @@
     font-weight: 500;
     line-height: 24px; /* 150% */
     text-decoration: none;
-    transition: all 0.1s ease;
+    transition: all 0.2s ease;
+    cursor: pointer;
 }
 
 .linkText:hover,
 .linkText:focus-within {
     color: var(--colors-text-text-brand-tertiary-600, #DA154D);
-
-    /* Text md/Medium */
-    font-family: Inter;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 24px; /* 150% */
-    text-decoration: none;
-    cursor: pointer;
     outline: none;
+    transform: scale(95%);
 }
 
 .linksSocials {
@@ -106,9 +99,14 @@
     width: var(--Base-4-Premitives-6, 24px);
     height: var(--Base-4-Premitives-6, 24px);
     cursor: pointer;
-    transition: fill 0.2s ease;
     outline: none;
+    transition: transform 0.2s ease-in-out;
 }
+
+.socialLogo:hover {
+    transform: scale(90%);
+}
+
 
 .copyrightInfoWrapper {
     display: flex;
