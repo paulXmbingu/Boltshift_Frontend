@@ -1,9 +1,9 @@
 import React from 'react';
-import { ReviewModalDesktop } from './ReviewModalDesktop'; // Adjust import path as necessary
+import { ReviewModalDesktop } from './ReviewModal';
 
 // Default export with metadata
 export default {
-    title: 'Components/ReviewModalDesktop', // Adjust title to match your Storybook hierarchy
+    title: 'Components/ReviewModalDesktop',  // Adjust title as needed for Storybook hierarchy
     component: ReviewModalDesktop,
 };
 
