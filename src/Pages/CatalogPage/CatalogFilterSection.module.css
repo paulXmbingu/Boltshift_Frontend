@@ -1,8 +1,7 @@
 .CatalogFilterSection{
     
     display: flex;
-    min-width: var(--spacing-system-guides-corner-radius-88, 352px);
-    max-width: var(--spacing-system-guides-corner-radius-88, 352px);
+    max-width: var(--spacing-system-guides-corner-radius-88, 320px);
     padding: var(--Base-4-Premitives-4, 16px) var(--Base-4-Premitives-4, 16px) var(--Base-4-Premitives-12, 48px) var(--Base-4-Premitives-4, 16px);
     flex-direction: column;
     align-items: center;

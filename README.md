@@ -45,8 +45,10 @@ Welcome to the frontend codebase of Boltshift Marketplace – built using React.
 - **CSS Modules**: Styling
 - **React Router**: Routing
 - **Redux**: State Management
-- **tawk.to**: Live Chat
+- **Storybook.js**: Component Development & Testing
+- **Jest**: Testing Framework
 - **Django**: Backend Framework
+- **tawk.to**: Live Chat
 
 ## Product Engineering Team
 - Special Contributions: **Marion Ngayi & The Senjes Cuisine Team**

@@ -1,0 +1,38 @@
+.Section {
+    display: flex;
+    /* min-width: 375px; */
+    max-width: 1280px;
+    padding: 48px 16px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+    align-self: stretch;
+    overflow-x: hidden;
+}
+
+.Section::-webkit-scrollbar {
+    display: none;
+}
+
+.smallLandscapeCards {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--spacing-system-guides-corner-radius-4, 16px);
+    align-self: stretch;
+    overflow-x: auto;
+    white-space: nowrap;
+    -ms-overflow-style: none; /* for Internet Explorer and Edge */
+    scrollbar-width: none; /* for Firefox */
+    padding: 2px;
+}
+
+.smallLandscapeCards::-webkit-scrollbar {
+    display: none;  /* for Safari and Chrome */
+}
+
+.cardStacking {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--container-padding-mobile, 16px);
+}

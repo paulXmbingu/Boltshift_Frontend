@@ -1,0 +1,56 @@
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: hsla(0, 0%, 0%, 0.25);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.reviewModalDesktopWrap {
+    display: flex;
+    max-width: var(--width-md, 560px);
+    max-height: var(--Base-4-Premitives-201, 804px);
+    flex-direction: column;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: var(--radius-2xl, 16px);
+    border: 1px solid var(--Colors-Border-border-secondary, #E4E7EC);
+    background: var(--Colors-Background-bg-primary, #FFF);
+    z-index: 1001;
+    position: relative;
+    pointer-events: none;
+}
+
+.modalHeader {
+    display: flex;
+    max-width: var(--width-md, 560px);
+    padding: var(--spacing-system-guides-corner-radius-6, 24px) var(--spacing-system-guides-corner-radius-8, 32px);
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+}
+
+.reviewDetails {
+    display: flex;
+    max-width: var(--width-md, 560px);
+    padding: var(--spacing-system-guides-corner-radius-6, 24px) var(--spacing-system-guides-corner-radius-8, 32px);
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--spacing-system-guides-corner-radius-8, 32px);
+    flex: 1 0 0;
+    align-self: stretch;
+}
+
+.modalFooter {
+    display: flex;
+    max-width: var(--width-md, 560px);
+    padding: var(--spacing-system-guides-corner-radius-6, 24px) var(--spacing-system-guides-corner-radius-8, 32px);
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+}

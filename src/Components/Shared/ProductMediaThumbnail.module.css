@@ -1,3 +1,4 @@
+/* MEDIUM PRODUCT MEDIA THUMBNAIL */
 .productMediaThumbnailMD {
     display: flex;
     width: var(--spacing-system-guides-corner-radius-32, 128px);
@@ -7,18 +8,44 @@
     align-items: center;
     flex-shrink: 0;
     border-radius: var(--spacing-system-guides-corner-radius-3, 12px);
+    border: 1px solid var(--Colors-Border-border-secondary, #E4E7EC);
     background: var(--Colors-Background-bg-primary, #FFF);
     overflow: hidden;
     object-fit: cover;
     cursor: pointer;
     transition: transform 0.2s ease, 0.2s ease;
-    
 }
 
 .productMediaThumbnailMD:hover,
 .productMediaThumbnailMD:active,
 .productMediaThumbnailMD:focus-visible,
 .productMediaThumbnailMD:focus-within {
+    scale: 95%;
+    opacity: 50%;
+}
+
+/* SMALL PRODUCT MEDIA THUMBNAIL */
+.ProductMediaThumbnailSM {
+    display: flex;
+    width: var(--spacing-system-guides-corner-radius-24, 96px);
+    height: var(--spacing-system-guides-corner-radius-24, 96px);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: var(--spacing-system-guides-corner-radius-3, 12px);
+    border: 1px solid var(--Colors-Border-border-secondary, #E4E7EC);
+    background: var(--Colors-Background-bg-primary, #FFF);
+    transition: transform 0.2s ease, 0.2s ease;
+    cursor: pointer;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.ProductMediaThumbnailSM:hover,
+.ProductMediaThumbnailSM:active,
+.ProductMediaThumbnailSM:focus-visible,
+.ProductMediaThumbnailSM:focus-within {
     scale: 95%;
     opacity: 50%;
 }

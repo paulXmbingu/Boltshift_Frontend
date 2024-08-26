@@ -30,7 +30,7 @@
     /* Shadows/shadow-xs */
     box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
     cursor: pointer;
-    transition: all 0.1s ease;
+    transition: all 0.1s ease-in-out;
     outline: none;
     width: 100%; 
 }
@@ -42,6 +42,7 @@
     
     /* Shadows/shadow-xs */
     box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+    scale: 95%;
 }
 
 .priSM:focus {
@@ -51,6 +52,7 @@
     
     /* Focus rings/ring-brand-shadow-xs */
     box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05), 0px 0px 0px 4px rgba(234, 39, 94, 0.24);
+    scale: 95%;
 }
 
 .priSM:disabled {
@@ -125,6 +127,7 @@
     
     /* Focus rings/ring-gray-shadow-xs */
     box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05), 0px 0px 0px 4px rgba(152, 162, 179, 0.14);
+    scale: 95%;
 }
 
 .secGraySM:disabled {
@@ -192,6 +195,7 @@
 
     /* Focus rings/ring-brand-shadow-xs */
     box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05), 0px 0px 0px 4px rgba(234, 39, 94, 0.24);
+    scale: 95%;
 }
 
 .secColorSM:disabled {
@@ -270,6 +274,7 @@
     align-items: center;
     gap: var(--spacing-xs, 4px);
     border-radius: var(--radius-md, 8px);
+    scale: 95%;
 }
 
 .terGreySM:disabled {
@@ -330,7 +335,6 @@
     font-style: normal;
     font-weight: 500;
     line-height: 20px; /* 142.857% */
-
     cursor: pointer;
     transition: all 0.1s ease;
     outline: none;
@@ -362,6 +366,11 @@
 
     /* Focus rings/ring-brand-shadow-xs */
     box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05), 0px 0px 0px 4px rgba(234, 39, 94, 0.24);
+    scale: 95%;
+}
+
+.Btn_Primary_LG {
+    display: inline-flex;
 }
 
 .Btn_Primary_LG:disabled {
@@ -428,6 +437,7 @@
 
 .TerLG:focus {
     border-radius: var(--radius-md, 8px);
+    scale: 95%;
 }
 
 .TerLG:disabled {
@@ -497,6 +507,7 @@
     
     /* Focus rings/ring-brand-shadow-xs */
     box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05), 0px 0px 0px 4px rgba(234, 39, 94, 0.24);
+    scale: 95%;
 }
 
 .priXL:disabled {
@@ -562,6 +573,7 @@
 
     /* Focus rings/ring-brand-shadow-xs */
     box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05), 0px 0px 0px 4px rgba(234, 39, 94, 0.24);
+    scale: 95%;
 }
 
 .Btn_Sec_Color_XL:disabled {
@@ -640,6 +652,7 @@
     
     /* Focus rings/ring-gray-shadow-xs */
     box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05), 0px 0px 0px 4px rgba(152, 162, 179, 0.14);
+    scale: 95%;
 }
 .Btn_Icon_Only_Sec_LGWrap:disabled {
     display: inline-flex;
@@ -656,6 +669,37 @@
 }
 
 .Btn_Icon_Only_Sec_LGIcon {
+    width: 20px;
+    height: 20px;
+}
+
+.btn_LinkGray_SMWrap {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--spacing-sm, 6px);
+    background: var(--Colors-Background-bg-primary, #FFF, 0);
+    border: none;
+    cursor: pointer;
+}
+
+.linkGray_SMIconLeading {
+    width: 20px;
+    height: 20px;
+}
+
+.buttonCTALinkGray_SM {
+    color: var(--Component-colors-Components-Buttons-Tertiary-button-tertiary-fg, #475467);
+    
+    /* Text sm/Semibold */
+    font-family: var(--Font-family-font-family-body, Inter);
+    font-size: var(--Font-size-text-sm, 14px);
+    font-style: normal;
+    font-weight: 600;
+    line-height: var(--Line-height-text-sm, 20px); /* 142.857% */
+}
+
+.linkGray_SMiconTrailing {
     width: 20px;
     height: 20px;
 }
