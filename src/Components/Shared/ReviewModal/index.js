@@ -1,3 +1,3 @@
-export { ReviewModalDesktop } from './ReviewModalDesktop';
+export { ReviewModalDesktop } from './ReviewModal';
 
 export { ReviewSummary } from './ReviewSummary';
