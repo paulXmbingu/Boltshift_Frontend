@@ -46,6 +46,17 @@
     align-self: stretch;
 }
 
+.starRatingLabel {
+    color: var(--colors-text-text-primary-900, #101828);
+
+    /* Text sm/Medium */
+    font-family: var(--Font-family-font-family-body, Inter);
+    font-size: var(--Font-size-text-sm, 14px);
+    font-style: normal;
+    font-weight: 500;
+    line-height: var(--Line-height-text-sm, 20px); /* 142.857% */
+}
+
 .modalFooter {
     display: flex;
     max-width: var(--width-md, 560px);

@@ -3,7 +3,7 @@ import { ReviewModalDesktop } from './ReviewModal';
 
 // Default export with metadata
 export default {
-    title: 'Components/ReviewModalDesktop',  // Adjust title as needed for Storybook hierarchy
+    title: 'Shared/ReviewModalDesktop',  // Adjust title as needed for Storybook hierarchy
     component: ReviewModalDesktop,
 };
 
