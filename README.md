@@ -23,7 +23,12 @@ Welcome to the frontend codebase of Boltshift Marketplace – built using React.
    npm run dev -- --host
    ```
 
-2. Open your web browser and visit the listed addresses either locally or remotely on the network
+2. Start the Storybook js server:
+   ```
+   npm run storybook
+   ```
+
+3. Open your web browser and visit the listed addresses either locally or remotely on the network
 
 ## Features
 - **User Authentication**: Secure user accounts and authentication to manage profiles and track order history.
