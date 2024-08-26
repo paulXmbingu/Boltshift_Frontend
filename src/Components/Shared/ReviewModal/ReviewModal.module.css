@@ -23,7 +23,6 @@
     background: var(--Colors-Background-bg-primary, #FFF);
     z-index: 1001;
     position: relative;
-    pointer-events: none;
 }
 
 .modalHeader {
