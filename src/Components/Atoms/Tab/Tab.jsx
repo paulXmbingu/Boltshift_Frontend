@@ -17,4 +17,7 @@ const HorTabUnderLineSMSelected = ({ tabLabel }) => {
     );
 };
 
-export { HorTabUnderLineSM, HorTabUnderLineSMSelected }
+export 
+    {   HorTabUnderLineSM, 
+        HorTabUnderLineSMSelected 
+};
