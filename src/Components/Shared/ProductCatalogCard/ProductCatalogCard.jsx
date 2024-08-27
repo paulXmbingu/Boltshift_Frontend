@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './ProductCatalogCard.module.css';
-import { StarRating4 } from '../Molecules/StarRating';
+import { StarRating4 } from '../../Molecules/StarRating';
 import { Link } from 'react-router-dom';
 
 const ProductCatalogCard = ({ Images, Name, Currency, Price, CounterText }) => {

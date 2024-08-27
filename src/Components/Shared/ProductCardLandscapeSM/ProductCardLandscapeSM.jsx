@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./ProductCardLandscapeSM.module.css"
 import { Link } from "react-router-dom";
-import { Btn_Sec_Gray_SM } from "../Atoms/Button";
+import { Btn_Sec_Gray_SM } from "../../Atoms/Button";
 
 const ProductCardLandscapeSM = ( {ProductImage, productLabel, price } ) => {
     return(
