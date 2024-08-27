@@ -7,7 +7,7 @@ Welcome to the frontend codebase of Boltshift Marketplace – built using React.
 
 ### Setup
 
-1. Install and update [Node.js & Node Package Manager](https://nodejs.org/en)
+1. Install and update [Node.js & Node Package Manager](https://nodejs.org/en) [LTS ONLY]
 
 2. Clone this repository to your local machine using: 
    ```
@@ -18,12 +18,17 @@ Welcome to the frontend codebase of Boltshift Marketplace – built using React.
    npm i
    ```
 ### Usage
-1. Start the development server with a specified host:
+1. Start the development server:
    ```
    npm run dev -- --host
    ```
 
-2. Open your web browser and visit the listed addresses either locally or remotely on the network
+2. Start the Storybook js server:
+   ```
+   npm run storybook
+   ```
+
+3. Ctrl or Cmd click the links on the terminal to view the app or storybook in your browser eg. ➜ http://192.168.1.101:5173/ || ➜ http://192.168.1.101:6006/  
 
 ## Features
 - **User Authentication**: Secure user accounts and authentication to manage profiles and track order history.
