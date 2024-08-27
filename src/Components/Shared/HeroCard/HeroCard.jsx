@@ -1,11 +1,11 @@
 import React from 'react';
 import styles from './HeroCard.module.css';
 import { Link } from 'react-router-dom';
-import TailIcon from '../../assets/Icons/UI/chevron-right.svg';
-import DiscountTag from '../../Components/Atoms/DiscountTag';
-import HeroPagination from './HeroPagination';
-import FavoriteButton from './FavoriteButton';
-import { Btn_Pri_XL } from '../Atoms/Button';
+import TailIcon from '../../../assets/Icons/UI/chevron-right.svg';
+import DiscountTag from '../../Atoms/DiscountTag';
+import HeroPagination from '../HeroPagination';
+import FavoriteButton from '../FavoriteButton';
+import { Btn_Pri_XL } from '../../Atoms/Button';
 
 const HeroCardDesktop = () => {
     return (

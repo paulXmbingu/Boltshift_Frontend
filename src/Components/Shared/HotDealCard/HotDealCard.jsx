@@ -1,8 +1,8 @@
 import React from "react";
-import FireIcon from "../../assets/Icons/Illustrated/Fire.svg";
-import FavoriteButton from "./FavoriteButton";
+import FireIcon from "../../../assets/Icons/Illustrated/Fire.svg";
+import FavoriteButton from "../FavoriteButton";
 import styles from './HotDealCard.module.css';
-import { Btn_Sec_Gray_SM } from "../Atoms/Button";
+import { Btn_Sec_Gray_SM } from "../../Atoms/Button";
 import { Link } from "react-router-dom";
 
 function HotDealCard({ imageSrc, productNameText, ammount, noSold }) {

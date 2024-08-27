@@ -1,8 +1,8 @@
 import React from "react";
 import styles from "./FeaturedProductCard.module.css";
-import OfferCountDown from "./OfferCountDown";
-import { Btn_Pri_SM } from "../Atoms/Button";
-import FavoriteButton from "./FavoriteButton";
+import OfferCountDown from "../OfferCountDown";
+import { Btn_Pri_SM } from "../../Atoms/Button";
+import FavoriteButton from "../FavoriteButton";
 import { Link } from "react-router-dom";
 
 const FeaturedProductCard = ( {productPhoto, productLabel} ) => {
