@@ -1,8 +1,8 @@
 import React from 'react'
 import Styles from './BreadCrumb.module.css'
 import { Link } from 'react-router-dom';
-import home from '../../assets/Icons/UI/home-line.svg'
-import chevron from "../../assets/Icons/UI/chevron-right (1).svg"
+import home from '../../../assets/Icons/UI/home-line.svg'
+import chevron from "../../../assets/Icons/UI/chevron-right (1).svg"
 
 const BreadCrumb = ({Catalog, Cartegory, Subcategory, ProductName, }) => {
   return (
