@@ -23,7 +23,6 @@
     background: var(--Colors-Background-bg-primary, #FFF);
     z-index: 1001;
     position: relative;
-    pointer-events: none;
 }
 
 .modalHeader {
@@ -44,6 +43,17 @@
     gap: var(--spacing-system-guides-corner-radius-8, 32px);
     flex: 1 0 0;
     align-self: stretch;
+}
+
+.starRatingLabel {
+    color: var(--colors-text-text-primary-900, #101828);
+
+    /* Text sm/Medium */
+    font-family: var(--Font-family-font-family-body, Inter);
+    font-size: var(--Font-size-text-sm, 14px);
+    font-style: normal;
+    font-weight: 500;
+    line-height: var(--Line-height-text-sm, 20px); /* 142.857% */
 }
 
 .modalFooter {
