@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./MenuListItem.module.css"
-import UserAvatar from "../Atoms/UserAvatar"
+import UserAvatar from "../UserAvatar"
 
 // MENU LISTS
 
