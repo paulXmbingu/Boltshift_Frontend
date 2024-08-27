@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./StoreLabel.module.css"
-import VerifiedTick from "../../assets/Icons/Illustrated/Verified tick.svg"
+import VerifiedTick from "../../../assets/Icons/Illustrated/Verified tick.svg"
 
 const StoreLabel = ({ StoreName }) => {
     return (

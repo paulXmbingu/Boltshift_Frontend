@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 import styles from "./TestimonialCard.module.css";
-import { Btn_LinkGray_SM } from "../Atoms/Button";
+import { Btn_LinkGray_SM } from "../../Atoms/Button";
 import chevrondown from "../../assets/Icons/UI/chevron-down.svg";
 import chevronup from "../../assets/Icons/UI/chevron-up.svg";
-import { ProductMediaThumbnailSM } from "./ProductMediaThumbnail";
-import { AvatarProfilePhotoSM } from "../Atoms/AvatarProfilePhoto";
-import { Badge_PillColor_SM_Success } from "../Atoms/Badge";
-import { StarRating4 } from "../Molecules/StarRating";
-import { ReactionNeg, ReactionPos } from "./ReactionIcon";
+import { ProductMediaThumbnailSM } from "../ProductMediaThumbnail";
+import { AvatarProfilePhotoSM } from "../../Atoms/AvatarProfilePhoto";
+import { Badge_PillColor_SM_Success } from "../../Atoms/Badge";
+import { StarRating4 } from "../../Molecules/StarRating";
+import { ReactionNeg, ReactionPos } from "../ReactionIcon";
 
 const TestimonialCard_LoggedIn = ({BuyerName, UserPhoto, DatePurchased, TestimonialTitle, TestomonialText, Media, MediaAltText, Media2, MediaAltText2, Media3, MediaAltText3, Media4, MediaAltText4, Media5, MediaAltText5, Media6, MediaAltText6 }) => {
     return (
