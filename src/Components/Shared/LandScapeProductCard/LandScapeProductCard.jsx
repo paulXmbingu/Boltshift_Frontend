@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './LandScapeProductCard.module.css';
-import { Btn_Sec_Gray_SM } from '../Atoms/Button';
-import FavoriteButton from './FavoriteButton';
+import { Btn_Sec_Gray_SM } from '../../Atoms/Button';
+import FavoriteButton from '../FavoriteButton';
 
 const LandScapeProductCard = ({productImage, productText, price }) => {
     return (
