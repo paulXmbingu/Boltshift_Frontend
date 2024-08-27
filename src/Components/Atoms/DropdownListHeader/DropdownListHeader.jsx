@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./DropdownListHeader.module.css"
-import { AvatarProfilePhotoMD } from "./AvatarProfilePhoto";
-import { AvatarOnlyMDPhoto } from "./Avatar";
+import { AvatarProfilePhotoMD } from "../AvatarProfilePhoto";
+import { AvatarOnlyMDPhoto } from "../Avatar";
 
 const DropdownHeaderLoggedinDesktop = ( {UserName, Email} ) => {
     return(
