@@ -1,5 +1,5 @@
 import React from "react";
-import Yellow100pcStar from '../../assets/Icons/Illustrated/Star Fill100pc ColorYellow.svg';
+import Yellow100pcStar from '../../../assets/Icons/Illustrated/Star Fill100pc ColorYellow.svg';
 
 //MISCELLANEOUS ICONS
 //Star Icons
