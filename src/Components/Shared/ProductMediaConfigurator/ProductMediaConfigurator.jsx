@@ -1,27 +1,27 @@
 import React, { useState } from "react";
 import styles from './ProductMediaConfigurator.module.css';
 import { Link } from "react-router-dom";
-import { ProductMediaThumbnailMD } from "./ProductMediaThumbnail";
+import { ProductMediaThumbnailMD } from "../ProductMediaThumbnail";
 import {
     Btn_Pri_XL,
     Btn_Sec_Color_XL
-} from "../Atoms/Button";
+} from "../../Atoms/Button";
 import {
     Badge_PillColor_SM_Error,
     Badge_PillColor_SM_Indigo,
     Badge_PillColor_SM_Orange,
     Badge_PillColor_SM_Warning,
     Badge_PillOutline_LG_LeadingIcon_BrandColor
-} from "../Atoms/Badge";
-import { StarRating4 } from "../Molecules/StarRating";
-import { ButtonGroup } from "../Atoms/ButtonGroup";
-import StoreLabel from "./StoreLabel";
-import arrowdown from "../../assets/Icons/UI/arrow-down.svg";
-import shoppingcart03 from "../../assets/Icons/UI/shopping-cart-03 Brand.svg";
-import minus from "../../assets/Icons/UI/minus.svg";
-import plus from "../../assets/Icons/UI/plus fgSec700.svg";
-import RadioInput from "../Atoms/RadioInput";
-import TagCheckboxSM from "../Atoms/Tag";
+} from "../../Atoms/Badge";
+import { StarRating4 } from "../../Molecules/StarRating";
+import { ButtonGroup } from "../../Atoms/ButtonGroup";
+import StoreLabel from "../StoreLabel";
+import arrowdown from "../../../assets/Icons/UI/arrow-down.svg";
+import shoppingcart03 from "../../../assets/Icons/UI/shopping-cart-03 Brand.svg";
+import minus from "../../../assets/Icons/UI/minus.svg";
+import plus from "../../../assets/Icons/UI/plus fgSec700.svg";
+import RadioInput from "../../Atoms/RadioInput";
+import TagCheckboxSM from "../../Atoms/Tag";
 
 const ProductMediaConfigurator = () => {
     const [quantity, setQuantity] = useState(1);
