@@ -1,8 +1,8 @@
 import React from "react";
 import styles from "./FeaturedStoreCard.module.css"
-import { Btn_Ter_LG } from "../Atoms/Button";
+import { Btn_Ter_LG } from "../../Atoms/Button";
 import chevronRight from '../../assets/Icons/UI/chevron-right (1).svg';
-import { StoreStatusButton } from "../Atoms/ShopStatusButton";
+import { StoreStatusButton } from "../../Atoms/ShopStatusButton";
 
 const FeaturedStoreCard = ({ storeIcon, storeDescription, storeLabel }) => {
     return(

@@ -1,17 +1,17 @@
 import React from "react";
 import styles from "./Footer.module.css";
 import { Link } from "react-router-dom";
-import AppleStore from "../../assets/Logos/Apple Mobile app store badge.svg";
-import GoogleStore from "../../assets/Logos/Google Mobile app store badge.svg";
-import Dribbble from "../../assets/Logos/Dribbble.svg";
-import Instagram from "../../assets/Logos/Instagram.svg";
-import LinkedIn from "../../assets/Logos/LinkedIn.svg";
-import GitHub from "../../assets/Logos/GitHub.svg";
-import YouTube from "../../assets/Logos/YouTube.svg";
-import X from "../../assets/Logos/X.svg";
-import PaulMbingu from "../../assets/Logos/Paul Mbingu Logo.svg";
-import Excite from "../../assets/Logos/Excite Logo.svg";
-import { BrandLogoHor } from "../Atoms/BrandLogo";
+import AppleStore from "../../../assets/Logos/Apple Mobile app store badge.svg";
+import GoogleStore from "../../../assets/Logos/Google Mobile app store badge.svg";
+import Dribbble from "../../../assets/Logos/Dribbble.svg";
+import Instagram from "../../../assets/Logos/Instagram.svg";
+import LinkedIn from "../../../assets/Logos/LinkedIn.svg";
+import GitHub from "../../../assets/Logos/GitHub.svg";
+import YouTube from "../../../assets/Logos/YouTube.svg";
+import X from "../../../assets/Logos/X.svg";
+import PaulMbingu from "../../../assets/Logos/Paul Mbingu Logo.svg";
+import Excite from "../../../assets/Logos/Excite Logo.svg";
+import { BrandLogoHor } from "../../Atoms/BrandLogo";
 
 const Footer = () => {
     return (
