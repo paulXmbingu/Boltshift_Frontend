@@ -1,18 +1,18 @@
 import React, { useState, useEffect, useRef } from "react";
 import styles from './TopNav.module.css';
 import { Link } from "react-router-dom";
-import MenuIcon from "../../assets/Icons/UI/menu-03.svg";
-import UserAvatar from "../../Components/Atoms/UserAvatar/";
-import UserPhoto from '../../assets/Images/Photos/Paul Mbingu - Avatar.png';
-import NotificationIcon from "../../Components/Molecules/NotificationIcon";
-import Favorite from '../../assets/Icons/UI/heart.svg';
-import Cart from '../../assets/Icons/UI/shopping-cart-03.svg';
-import Bell from '../../assets/Icons/UI/bell-02.svg';
-import SearchInput from "../../Components/Atoms/SearchInput";
-import { NavBarDropDownMenu, NavBarDropDownMenuMobileLoggedIn } from "../Molecules/NavBarDropDownMenu";
-import { BrandLogoHor } from "../Atoms/BrandLogo";
-import Filter from "../../assets/Icons/UI/sliders-04.svg"
-import { Btn_Icon_Only_Sec_LG } from "../Atoms/Button";
+import UserAvatar from "../../Atoms/UserAvatar";
+import NotificationIcon from "../../Molecules/NotificationIcon";
+import UserPhoto from '../../../assets/Images/Photos/Paul Mbingu - Avatar.png';
+import MenuIcon from "../../../assets/Icons/UI/menu-03.svg";
+import Favorite from '../../../assets/Icons/UI/heart.svg';
+import Cart from '../../../assets/Icons/UI/shopping-cart-03.svg';
+import Bell from '../../../assets/Icons/UI/bell-02.svg';
+import Filter from "../../../assets/Icons/UI/sliders-04.svg"
+import SearchInput from "../../Atoms/SearchInput";
+import { NavBarDropDownMenu, NavBarDropDownMenuMobileLoggedIn } from "../../Molecules/NavBarDropDownMenu";
+import { BrandLogoHor } from "../../Atoms/BrandLogo";
+import { Btn_Icon_Only_Sec_LG } from "../../Atoms/Button";
 
 const TopNavLarge = () => {
   const [showDropDown, setShowDropDown] = useState(false);
