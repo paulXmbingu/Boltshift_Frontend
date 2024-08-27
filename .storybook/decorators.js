@@ -24,3 +24,9 @@ addDecorator((story) => (
 export const parameters = {
     layout: 'centered', // Center all stories by default
 };
+
+// Exports decorators globally
+export const globalDecorators = [
+    withDesign
+]
+

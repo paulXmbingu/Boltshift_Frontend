@@ -1,4 +1,4 @@
-.TextareaInputFieldContainer {
+.textareaInputFieldContainer {
     display: flex;
     width: var(--width-xxs, 320px);
     height: 180px;
@@ -53,6 +53,7 @@
     font-style: normal;
     font-weight: 400;
     line-height: var(--Line-height-text-md, 24px); /* 150% */
+    
 }
 
 .hintText {

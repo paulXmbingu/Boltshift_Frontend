@@ -3,7 +3,7 @@ import styles from "./Inputs.module.css"
 
 const TextareaInputField = () => {
     return (
-        <div className={styles.TextareaInputFieldContainer}>
+        <div className={styles.textareaInputFieldContainer}>
             <label htmlFor="textarea" className={styles.textareaLabel}>
                 Your Label Here <span className={styles.required}>*</span>
             </label>
@@ -15,7 +15,7 @@ const TextareaInputField = () => {
                 required
                 rows="8"
                 cols="40"
-                style={{ resize: 'both' }} // Allows resizing
+                style={{ resize: 'both' }}
             />
             <div className={styles.HelpIcon}>
                 <span role="img" aria-label="info" className={styles.hintText}> This is a hint text to help user. </span>
