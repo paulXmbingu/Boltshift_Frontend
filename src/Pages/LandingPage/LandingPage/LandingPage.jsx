@@ -1,18 +1,18 @@
 import React, { useState, useEffect } from "react";
 import styles from "./LandingPage.module.css";
-import { TopNavLarge, TopNavSmall } from "../../Components/Shared/TopNav";
-import HeroSection from "./HeroSection";
-import HotDealTodaySection from "./HotDealTodaySection";
-import PopularCategoriesSection from "./PopularCategoriesSection";
-import VendorStoriesSection from "./VendorStoriesSection";
-import FeaturedProductsSection from "./FeaturedProductsSection";
-import FeaturedStoreSection from "./FeaturedStoreSection";
-import PopularProductsSection from "./PopularProductsSection";
-import TrendingProductsSection from "./TrendingProductsSection";
-import RecentReviewSection from "./RecentReviewSection";
-import Footer from "../../Components/Shared/Footer";
-import SpecialOfferSection from "./SpecialOfferSection";
-import ConvenienceStore from "../../assets/Icons/Illustrated/Convenience store.svg";
+import { TopNavLarge, TopNavSmall } from "../../../Components/Shared/TopNav";
+import HeroSection from "../HeroSection";
+import HotDealTodaySection from "../HotDealTodaySection";
+import PopularCategoriesSection from "../PopularCategoriesSection";
+import VendorStoriesSection from "../VendorStoriesSection";
+import FeaturedProductsSection from "../FeaturedProductsSection";
+import FeaturedStoreSection from "../FeaturedStoreSection";
+import PopularProductsSection from "../PopularProductsSection";
+import TrendingProductsSection from "../TrendingProductsSection";
+import RecentReviewSection from "../RecentReviewSection";
+import Footer from "../../../Components/Shared/Footer";
+import SpecialOfferSection from "../SpecialOfferSection";
+import ConvenienceStore from "../../../assets/Icons/Illustrated/Convenience store.svg";
 
 function LandingPage() {
     const [isLargeScreen, setIsLargeScreen] = useState(typeof window !== "undefined" ? window.innerWidth > 768 : false);
