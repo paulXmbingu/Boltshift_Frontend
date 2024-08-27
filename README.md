@@ -18,7 +18,7 @@ Welcome to the frontend codebase of Boltshift Marketplace – built using React.
    npm i
    ```
 ### Usage
-1. Start the development server with a specified host:
+1. Start the development server:
    ```
    npm run dev -- --host
    ```
@@ -28,7 +28,7 @@ Welcome to the frontend codebase of Boltshift Marketplace – built using React.
    npm run storybook
    ```
 
-3. Open your web browser and visit the listed addresses either locally or remotely on the network
+3. Ctrl or Cmd click the links on the terminal to view the app or storybook in your browser eg. ➜ http://localhost:5173/ ➜ http://192.168.1.101:5173/ || ➜ http://localhost:6006/ ➜ http://192.168.1.101:6006/  
 
 ## Features
 - **User Authentication**: Secure user accounts and authentication to manage profiles and track order history.
