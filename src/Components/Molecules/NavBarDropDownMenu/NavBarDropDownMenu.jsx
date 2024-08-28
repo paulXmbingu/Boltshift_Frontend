@@ -34,7 +34,7 @@ const NavBarDropDownMenu = () => {
 
 const NavBarDropDownMenuMobileLoggedIn = () => {
     const handleClick = (event) => {
-        event.stopPropagation(); // Prevent the event from closing the menu
+        event.stopPropagation();
     };
 
     return (
