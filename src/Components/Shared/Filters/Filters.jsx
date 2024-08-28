@@ -1,15 +1,8 @@
 import React from 'react'
 import styles from "./Filters.module.css"
 
-const Filters = () => {
-  return (
-    <div>
-
-    </div>
-  )
-}
-
-const HeaderLabel = ({HeaderLabelText, PlusIcon}) =>{
+// Components
+const HeaderLabel = ({ HeaderLabelText, PlusIcon }) => {
     return (
         <div className={styles.HeaderLabel}>
             <div className={styles.HeaderLabelText}>{HeaderLabelText}</div>
@@ -19,7 +12,8 @@ const HeaderLabel = ({HeaderLabelText, PlusIcon}) =>{
         </div>
     )
 }
-const HeaderLabelMinusIcon = ({HeaderLabelText, MinusIcon}) =>{
+
+const HeaderLabelMinusIcon = ({ HeaderLabelText, MinusIcon }) => {
     return (
         <div className={styles.HeaderLabel}>
             <div className={styles.HeaderLabelText}>{HeaderLabelText}</div>
@@ -30,8 +24,8 @@ const HeaderLabelMinusIcon = ({HeaderLabelText, MinusIcon}) =>{
     )
 }
 
-const SubHeaderLabel = ({subHeaderIcon,}) =>{
-    return(
+const SubHeaderLabel = ({ subHeaderIcon }) => {
+    return (
         <div className={styles.SubHeaderLabel}>
             <div className={styles.subHeaderIcon}>
                 {subHeaderIcon}
@@ -40,9 +34,19 @@ const SubHeaderLabel = ({subHeaderIcon,}) =>{
                 <input type="checkbox" className={styles.imputCheckbox}/>
                 <div className={styles.subLabelText}></div>
             </div>
-            <div></div>
         </div>
     )
 }
 
-export {Filters, HeaderLabel, HeaderLabelMinusIcon, SubHeaderLabel, };
+// Main Filter component
+const Filters = () => {
+  return (
+    <div>
+      <HeaderLabel HeaderLabelText="Label with Plus" PlusIcon={<PlusIconComponent />} />
+      <HeaderLabelMinusIcon HeaderLabelText="Label with Minus" MinusIcon={<MinusIconComponent />} />
+      <SubHeaderLabel subHeaderIcon={<SubHeaderIconComponent />} />
+    </div>
+  )
+}
+
+export { Filters }
