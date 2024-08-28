@@ -7,7 +7,7 @@ import MenuIcon from "../../../assets/Icons/UI/menu-03.svg";
 import Favorite from '../../../assets/Icons/UI/heart.svg';
 import Cart from '../../../assets/Icons/UI/shopping-cart-03.svg';
 import Bell from '../../../assets/Icons/UI/bell-02.svg';
-import Filter from "../../../assets/Icons/UI/sliders-04.svg"
+import Filter from "../../../assets/Icons/UI/filter-lines.svg"
 import SearchInput from "../../Atoms/SearchInput";
 import { NavBarDropDownMenu, NavBarDropDownMenuMobileLoggedIn } from "../../Molecules/NavBarDropDownMenu";
 import { BrandLogoHor } from "../../Atoms/BrandLogo";
