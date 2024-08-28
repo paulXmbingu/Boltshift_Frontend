@@ -9,8 +9,8 @@ import LinkedIn from "./Assets/LinkedIn.svg";
 import GitHub from "./Assets/GitHub.svg";
 import YouTube from "./Assets/YouTube.svg";
 import X from "./Assets/X.svg";
-import PaulMbingu from "./assets/Paul Mbingu Logo.svg";
-import Excite from "./assets/Excite Logo.svg";
+import PaulMbingu from "./Assets/Paul Mbingu Logo.svg";
+import Excite from "./Assets/Excite Logo.svg";
 import { BrandLogoHor } from "../../Atoms/BrandLogo";
 
 const Footer = () => {
