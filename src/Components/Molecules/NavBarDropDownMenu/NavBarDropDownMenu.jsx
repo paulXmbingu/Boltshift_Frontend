@@ -32,30 +32,32 @@ const NavBarDropDownMenu = () => {
     );
 };
 
-const NavBarDropDownMenuMobileLoggedIn = () => {
+const NavBarDropDownMenuMobileLoggedIn = ({ onClose }) => {
     const handleClick = (event) => {
-        event.stopPropagation(); // Prevent the event from closing the menu
+        event.stopPropagation(); // Prevent closing the menu when clicking inside it
     };
 
     return (
-        <div className={styles.navBarDropDownMenuMobileWrap} onClick={handleClick}>
-            <div className={styles.mainMenu}>
-                <DropdownHeaderLoggedinMobile UserName="Paul Mbingu" Email="paul@excite.company"/>
-                <div className={styles.divider}></div>
-                <div className={styles.menuItems}>
-                    <Link to="/personalInfo" className={styles.links}> 
-                        <MenuListItem ActionLabel="Personal Info" MenuIcon={PersonalInfo} /> 
-                    </Link>
-                    <Link to="/orders" className={styles.links}> 
-                        <MenuListItem ActionLabel="Orders" MenuIcon={Order} /> 
-                    </Link>
-                    <Link to="/payments" className={styles.links}> 
-                        <MenuListItem ActionLabel="Payments" MenuIcon={Payment} /> 
-                    </Link>
-                    <Link to="/vouchers" className={styles.links}> 
-                        <MenuListItem ActionLabel="Vouchers" MenuIcon={Voucher} /> 
-                    </Link>
-                    <MenuListItem ActionLabel="Log Out" MenuIcon={LogOut} classname={styles.logout} />
+        <div className={styles.navBarDropDownMenuOverlay} onClick={onClose}>
+            <div className={styles.navBarDropDownMenuMobileWrap} onClick={handleClick}>
+                <div className={styles.mainMenu}>
+                    <DropdownHeaderLoggedinMobile UserName="Paul Mbingu" Email="paul@excite.company" />
+                    <div className={styles.divider}></div>
+                    <div className={styles.menuItems}>
+                        <Link to="/personalInfo" className={styles.links}>
+                            <MenuListItem ActionLabel="Personal Info" MenuIcon={PersonalInfo} />
+                        </Link>
+                        <Link to="/orders" className={styles.links}>
+                            <MenuListItem ActionLabel="Orders" MenuIcon={Order} />
+                        </Link>
+                        <Link to="/payments" className={styles.links}>
+                            <MenuListItem ActionLabel="Payments" MenuIcon={Payment} />
+                        </Link>
+                        <Link to="/vouchers" className={styles.links}>
+                            <MenuListItem ActionLabel="Vouchers" MenuIcon={Voucher} />
+                        </Link>
+                        <MenuListItem ActionLabel="Log Out" MenuIcon={LogOut} className={styles.logout} />
+                    </div>
                 </div>
             </div>
         </div>
