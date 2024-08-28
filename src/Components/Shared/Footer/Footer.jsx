@@ -1,8 +1,8 @@
 import React from "react";
 import styles from "./Footer.module.css";
 import { Link } from "react-router-dom";
-import AppleStore from "./Assets/Apple Mobile app store badge.svg";
-import GoogleStore from "./Assets/Google Mobile app store badge.svg";
+import AppleStore from "./Assets/Apple Store.svg";
+import GoogleStore from "./Assets/Google Store.svg";
 import Dribbble from "./Assets/Dribbble.svg";
 import Instagram from "./Assets/Instagram.svg";
 import LinkedIn from "./Assets/LinkedIn.svg";
