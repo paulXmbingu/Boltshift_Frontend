@@ -10,7 +10,7 @@ const CatalogCartegoriesFilter = () => {
     <div className={styles.CartegoriesSection}>
         <div className={styles.Filters}>
             <span className={styles.HeaderLabelFilters}>
-            <HeaderLabel HeaderLabelText={`Categes`} HeaderLabelIcon={icon}/>
+            <HeaderLabel HeaderLabelText={`Categories`} HeaderLabelIcon={icon}/>
             </span>
         </div>
     </div>
