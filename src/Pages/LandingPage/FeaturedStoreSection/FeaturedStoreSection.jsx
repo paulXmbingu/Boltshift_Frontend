@@ -1,15 +1,15 @@
 import React from "react";
 import styles from "./FeaturedStoreSection.module.css";
-import SectionHeader from "../../Components/Shared/SectionHeader";
-import ProductCardLandscapeSM from "../../Components/Shared/ProductCardLandscapeSM"
-import StoreLogo from "../../assets/Logos/Senjes Cuisines.svg"
-import StoreVerification from "../../assets/Icons/UI/Verified tick.svg"
-import { Btn_Sec_Color_SM, Btn_Ter_Grey_SM} from "../../Components/Atoms/Button";
-import { StarRating4 } from "../../Components/Molecules/StarRating";
-import { HorTabUnderLineSM, HorTabUnderLineSMSelected } from "../../Components/Atoms/Tab";
-import ChevronRight from "../../assets/Icons/UI/chevron-right (1).svg"
-import PlusButton from "../../assets/Icons/UI/plus.svg"
-import { Pagination } from "../../Components/Molecules/Pagination";
+import SectionHeader from "../../../Components/Shared/SectionHeader";
+import ProductCardLandscapeSM from "../../../Components/Shared/ProductCardLandscapeSM"
+import StoreLogo from "./Assets/Senjes Cuisines.svg"
+import StoreVerification from "./Assets/Verified tick.svg"
+import { Btn_Sec_Color_SM, Btn_Ter_Grey_SM} from "../../../Components/Atoms/Button";
+import { StarRating4 } from "../../../Components/Molecules/StarRating";
+import { HorTabUnderLineSM, HorTabUnderLineSMSelected } from "../../../Components/Atoms/Tab";
+import ChevronRight from "./Assets/chevron-right (1).svg"
+import PlusButton from "./Assets/plus.svg"
+import { Pagination } from "../../../Components/Molecules/Pagination";
 
 function FeaturedStoreSection({ HeaderTitle, HeaderIcon }) {
     return (

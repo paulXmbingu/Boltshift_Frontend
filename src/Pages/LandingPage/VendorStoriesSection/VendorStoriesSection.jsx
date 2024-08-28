@@ -1,30 +1,29 @@
 import React from "react";
-import VendorStory from "../../Components/Shared/VendorStory";
+import VendorStory from "../../../Components/Shared/VendorStory";
 import styles from "./VendorStoriesSection.module.css";
-
-import SenjesCuisines from "../../assets/Logos/Senjes Cuisines.svg";
-import Excite from "../../assets/Logos/Untitled UI.svg";
-import AcmeGroup from "../../assets/Logos/Acme Group.svg";
-import AltShift from "../../assets/Logos/AltShift.svg";
-import Biosynthesis from "../../assets/Logos/Biosynthesis.svg";
-import Capsule from "../../assets/Logos/Capsule.svg";
-import Catalog from "../../assets/Logos/Catalog.svg";
-import CloudWatch from "../../assets/Logos/CloudWatch.svg";
-import CommandR from "../../assets/Logos/Command+R.svg";
-import Epicurious from "../../assets/Logos/Epicurious.svg";
-import FeatherDev from "../../assets/Logos/FeatherDev.svg";
-import FocalPoint from "../../assets/Logos/FocalPoint.svg";
-import Galileo from "../../assets/Logos/Galileo.svg";
-import GlobalBank from "../../assets/Logos/GlobalBank.svg";
-import Hourglass from "../../assets/Logos/Hourglass.svg";
-import Interlock from "../../assets/Logos/Interlock.svg";
-import Layers from "../../assets/Logos/Layers.svg";
-import Lightbox from "../../assets/Logos/Lightbox.svg";
-import Luminous from "../../assets/Logos/Luminous.svg";
-import Polymath from "../../assets/Logos/Polymath.svg";
-import Segment from "../../assets/Logos/Segment.svg";
-import Sisyphus from "../../assets/Logos/Sisyphus.svg";
-import Spherule from "../../assets/Logos/Spherule.svg";
+import SenjesCuisines from "./assets/Senjes Cuisines.svg";
+import Excite from "./assets/Untitled UI.svg";
+import AcmeGroup from "./assets/Acme Group.svg";
+import AltShift from "./assets/AltShift.svg";
+import Biosynthesis from "./assets/Biosynthesis.svg";
+import Capsule from "./assets/Capsule.svg";
+import Catalog from "./assets/Catalog.svg";
+import CloudWatch from "./assets/CloudWatch.svg";
+import CommandR from "./assets/Command+R.svg";
+import Epicurious from "./assets/Epicurious.svg";
+import FeatherDev from "./assets/FeatherDev.svg";
+import FocalPoint from "./assets/FocalPoint.svg";
+import Galileo from "./assets/Galileo.svg";
+import GlobalBank from "./assets/GlobalBank.svg";
+import Hourglass from "./assets/Hourglass.svg";
+import Interlock from "./assets/Interlock.svg";
+import Layers from "./assets/Layers.svg";
+import Lightbox from "./assets/Lightbox.svg";
+import Luminous from "./assets/Luminous.svg";
+import Polymath from "./assets/Polymath.svg";
+import Segment from "./assets/Segment.svg";
+import Sisyphus from "./assets/Sisyphus.svg";
+import Spherule from "./assets/Spherule.svg";
 
 function VendorStoriesSection() {
     return (

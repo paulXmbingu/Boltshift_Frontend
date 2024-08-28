@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./FeaturedStoreSection.module.css";
+import styles from "./SpecialOfferSection.module.css";
 import SectionHeader from "../../Components/Shared/SectionHeader";
 import OfferLabel from "../../assets/Icons/Illustrated/Label.svg";
 import ProductMediaConfigurator from "../../Components/Shared/ProductMediaConfigurator";
