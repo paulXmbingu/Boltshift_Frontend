@@ -1,22 +1,22 @@
 import React from 'react';
-import CategoryCard from '../../Components/Shared/CategoryCard';
-import SectionHeader from '../../Components/Shared/SectionHeader';
+import CategoryCard from '../../../Components/Shared/CategoryCard';
+import SectionHeader from '../../../Components/Shared/SectionHeader';
 import styles from './PopularCategoriesSection.module.css';
-import ShoppingBags from "../../assets/Icons/Illustrated/Shopping bags.svg";
-import Clothing from '../../assets/Icons/Illustrated/T-shirt.svg';
-import WomenClothing from '../../assets/Icons/Illustrated/Dress.svg';
-import Watches from '../../assets/Icons/Illustrated/Watch.svg';
-import HomeAppliance from '../../assets/Icons/Illustrated/Fork and knife with plate.svg';
-import SportOutdoor from '../../assets/Icons/Illustrated/Soccer ball.svg';
-import BooksStationery from '../../assets/Icons/Illustrated/Books.svg';
-import HomeLiving from '../../assets/Icons/Illustrated/Shallow pan of food.svg';
-import Health from '../../assets/Icons/Illustrated/Stethoscope.svg';
-import Mobile from '../../assets/Icons/Illustrated/Mobile phone.svg';
-import Laptop from '../../assets/Icons/Illustrated/Laptop.svg';
-import Desktop from '../../assets/Icons/Illustrated/Desktop computer.svg';
-import Headphones from '../../assets/Icons/Illustrated/Headphone.svg';
-import Jewelery from '../../assets/Icons/Illustrated/Ring.svg';
-import AllCategories from '../../assets/Icons/Illustrated/Shopping bags.svg';
+import ShoppingBags from "./Assets/Shopping bags.svg";
+import Clothing from './Assets/T-shirt.svg';
+import WomenClothing from './Assets/Dress.svg';
+import Watches from './Assets/Watch.svg';
+import HomeAppliance from './Assets/Fork and knife with plate.svg';
+import SportOutdoor from './Assets/Soccer ball.svg';
+import BooksStationery from './Assets/Books.svg';
+import HomeLiving from './Assets/Shallow pan of food.svg';
+import Health from './Assets/Stethoscope.svg';
+import Mobile from './Assets/Mobile phone.svg';
+import Laptop from './Assets/Laptop.svg';
+import Desktop from './Assets/Desktop computer.svg';
+import Headphones from './Assets/Headphone.svg';
+import Jewelery from './Assets/Ring.svg';
+import AllCategories from './Assets/Shopping bags.svg';
 
 function PopularCategoriesSection() {
     const categories = [
