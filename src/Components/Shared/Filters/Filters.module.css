@@ -1,4 +1,4 @@
-/* FilterHeader */
+/* FILLTER HEADER */
 .filterHeaderWrap {
     display: inline-flex;
     min-width: var(--spacing-system-guides-corner-radius-80, 320px);
@@ -6,6 +6,15 @@
     padding: var(--spacing-system-guides-corner-radius-2, 8px) var(--spacing-system-guides-corner-radius-2, 8px) var(--spacing-system-guides-corner-radius-2, 8px) var(--spacing-system-guides-corner-radius-3, 12px);
     align-items: center;
     gap: 10px;
+    cursor: pointer;
+    transition: all ease-in-out 200ms;
+}
+
+.filterHeaderWrap:hover {
+    border-radius: var(--radius-md, 8px);
+    background: var(--Colors-Background-bg-secondary_hover, #F2F4F7);
+    overflow: hidden;
+    scale: 99%;
 }
 
 .filterHeaderLabel {
@@ -39,3 +48,60 @@
     height: 20px;
 }
 
+/* FILTER SUBHEADER */
+.filterSubHeaderWrap {
+    display: flex;
+    width: 320px;
+    min-width: var(--spacing-system-guides-corner-radius-80, 320px);
+    max-width: var(--spacing-system-guides-corner-radius-80, 320px);
+    padding: var(--spacing-system-guides-corner-radius-2, 8px);
+    align-items: center;
+    gap: 4px;
+    cursor: pointer;
+    transition: all ease-in-out 200ms;
+}
+
+.filterSubHeaderWrap:hover {
+    border-radius: var(--spacing-system-guides-corner-radius-0, 0px);
+    background: var(--Colors-Background-bg-secondary_hover, #F2F4F7);
+    scale: 99%;
+}
+
+.checkMarkSubheader {
+    display: flex;
+    height: 24px;
+    align-items: center;
+    gap: var(--spacing-system-guides-corner-radius-1, 4px);
+    flex: 1 0 0;
+}
+
+.filterSubHeaderLabel {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    flex: 1 0 0;
+    overflow: hidden;
+    color: var(--colors-text-text-primary-900, #101828);
+    text-overflow: ellipsis;
+
+    /* Text md/Medium */
+    font-family: var(--Font-family-font-family-body, Inter);
+    font-size: var(--Font-size-text-md, 16px);
+    font-style: normal;
+    font-weight: 500;
+    line-height: var(--Line-height-text-md, 24px); /* 150% */
+    line-clamp: 1;
+}
+
+.subHeaderTailIconWrap {
+    display: flex;
+    padding: var(--spacing-system-guides-corner-radius-0, 0px);
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.subHeaderTailIcon {
+    width: 20px;
+    height: 20px;
+}

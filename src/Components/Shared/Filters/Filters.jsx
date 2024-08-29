@@ -3,7 +3,7 @@ import styles from "./Filters.module.css"
 
 const FilterHeader = ( {FilterHeaderLabel, FilterHeaderIcon} ) => {
     return (
-        <div className={styles.filterHeaderWrap}> 
+        <div className={styles.filterHeaderWrap} > 
             <span className={styles.filterHeaderLabel}> {FilterHeaderLabel} </span>
             <div className={styles.filterHeaderIconWrap}>
                 {FilterHeaderIcon && 
@@ -18,10 +18,21 @@ const FilterHeader = ( {FilterHeaderLabel, FilterHeaderIcon} ) => {
     );
 };
 
-const FilterSubHeader = () => {
+const FilterSubHeader = ({ FilterSubHeader, subHeaderTailIcon }) => {
     return (
-        <div> 
-            FilterSubHeader 
+        <div className={styles.filterSubHeaderWrap}> 
+            <div className={styles.checkMarkSubheader} > 
+                <input type="checkbox" />
+                <span className={styles.filterSubHeaderLabel}> {FilterSubHeader} </span>
+            </div>
+            <div className={styles.subHeaderTailIconWrap}>
+                {subHeaderTailIcon &&
+                    <img
+                    src={subHeaderTailIcon} 
+                    alt="Sub Header TailIcon"
+                    className={styles.subHeaderTailIcon}
+                />}
+            </div>
         </div>
     );
 };
