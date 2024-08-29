@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import styles from "./CheckOutPage.module.css";
-import { TopNavLarge, TopNavSmall } from "../../../Components/Shared/TopNav";
-import Footer from "../../../Components/Shared/Footer";
+import { TopNavLarge, TopNavSmall } from "../../Components/Shared/TopNav";
+import Footer from "../../Components/Shared/Footer";
 
 function CheckOutPage() {
     const [isLargeScreen, setIsLargeScreen] = useState(typeof window !== "undefined" ? window.innerWidth > 768 : false);
