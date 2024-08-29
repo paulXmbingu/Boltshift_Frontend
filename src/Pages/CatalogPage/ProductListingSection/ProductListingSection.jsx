@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './ProductListingSection.module.css'
-import ProductCatalogCard from '../../Components/Shared/ProductCatalogCard';
+import ProductCatalogCard from '../../../Components/Shared/ProductCatalogCard';
 
 const ProductListingSection = () => {
   return (
@@ -27,7 +27,7 @@ const ProductListingSection = () => {
           <ProductCatalogCard Images={`https://i.pinimg.com/564x/ca/1b/94/ca1b945690cd0abf1cbf354fb93e356f.jpg`} Name={`Punklens Leather Casual Sneakers Autumn Wedges Men's Shoes 2021 Superstar Trainers Boy School Sneakers Fashion Shoes Men Footwear MA-218 White-CN46(insole 28cm`} Currency={`Kshs `} Price={` 650`} CounterText={`(153.8k reviews)`} />
           <ProductCatalogCard Images={`https://i.pinimg.com/564x/c6/b6/c7/c6b6c77a206a64386cfd10646c9ab046.jpg`} Name={`Palm Air Cushion Casual Breathable Sports Shoes Bandage Student Running Shoes - Black / 42`} Currency={`Kshs `} Price={` 650`} CounterText={`(153.8k reviews)`} />
           <ProductCatalogCard Images={`https://i.pinimg.com/564x/f4/89/19/f489196942f695d7d909e0404aae546a.jpg`} Name={`Tiffany & Co. Mickey Mouse Hoodie Leggings Luxury Brand Clothing Clothes Outfit For Women Disney Gifts 112 Hcst`} Currency={`Kshs `} Price={` 650`} CounterText={`(153.8k reviews)`} />
-          <ProductCatalogCard Images={`https://i.pinimg.com/564x/2c/e5/97/2ce5975d7f140a524420d0a1647a0b77.jpg`} Name={`Temu｜Women's Casual Sneakers, Color-block Thick Sole Chunky Sneakers, Warm Plush Lined Anti-slip Running Shoes`} Currency={`Kshs `} Price={` 650`} CounterText={`(153.8k reviews)`} />
+          <ProductCatalogCard Images={`https://i.pinimg.com/564x/2c/e5/97/2ce5975d7f140a524420d0a1647a0b77.jpg`} Name={`Women's Casual Sneakers, Color-block Thick Sole Chunky Sneakers, Warm Plush Lined Anti-slip Running Shoes`} Currency={`Kshs `} Price={` 650`} CounterText={`(153.8k reviews)`} />
           <ProductCatalogCard Images={`https://i.pinimg.com/564x/73/98/56/73985628cd72d818d61cf47c6ed193ac.jpg`} Name={`Bear Leader Fashion Kids Girls Princess 2pcs Clothes Set Autumn Winter Children Coat Outwear+Skirts Vintage Outfit`} Currency={`Kshs `} Price={` 650`} CounterText={`(153.8k reviews)`} />
           <ProductCatalogCard Images={`https://i.pinimg.com/564x/c8/4a/82/c84a82f66450634b7d26d315f4257966.jpg`} Name={`Stylish Purple Double Breasted Men Two Piece Suit | Three Pocket Suit`} Currency={`Kshs `} Price={` 650`} CounterText={`(153.8k reviews)`} />
           <ProductCatalogCard Images={`https://i.pinimg.com/564x/4a/0a/fd/4a0afd181031c0197047104bc1304dd0.jpg`} Name={`Stylish Purple Double Breasted Men Two Piece Suit | Three Pocket Suit`} Currency={`Kshs `} Price={` 650`} CounterText={`(153.8k reviews)`} />
