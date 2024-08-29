@@ -150,3 +150,16 @@
     line-height: var(--Line-height-text-sm, 20px); /* 142.857% */
     line-clamp: 1;
 }
+
+.filterLabelTailIconWrap {
+    display: flex;
+    padding: var(--spacing-system-guides-corner-radius-0, 0px);
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.filterTailIcon {
+    width: 20px;
+    height: 20px;
+}

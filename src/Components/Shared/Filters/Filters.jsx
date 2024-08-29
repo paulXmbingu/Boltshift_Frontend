@@ -28,23 +28,32 @@ const FilterSubHeader = ({ FilterSubHeader, subHeaderTailIcon }) => {
             <div className={styles.subHeaderTailIconWrap}>
                 {subHeaderTailIcon &&
                     <img
-                    src={subHeaderTailIcon} 
-                    alt="Sub Header TailIcon"
-                    className={styles.subHeaderTailIcon}
-                />}
+                        src={subHeaderTailIcon} 
+                        alt="Sub Header TailIcon"
+                        className={styles.subHeaderTailIcon}
+                    />
+                }
             </div>
         </div>
     );
 };
 
-const FilterLabel = ( {FilterLabel, } ) => {
+const FilterLabel = ( {FilterLabel, FilterTailIcon } ) => {
     return (
         <div className={styles.filterLabelWrap}> 
             <div className={styles.checkmarkFilterLabel}>
                 <input type="checkbox" />
                 <span className={styles.filterLabel}> {FilterLabel}  </span>
             </div>
-            {/* <div> Filter Label Icon </div> */}
+            <div className={styles.filterLabelTailIconWrap}> 
+                {FilterTailIcon && 
+                    <img 
+                        src={FilterTailIcon}
+                        alt="Filter Tail Icon"
+                        className={styles.filterTailIcon}
+                    />
+                }
+            </div>
         </div>
     );
 };
