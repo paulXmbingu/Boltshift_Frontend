@@ -10,3 +10,17 @@
     border-radius: var(--spacing-system-guides-corner-radius-4, 16px);
     background: var(--Colors-Background-bg-primary, #FFF);
 }
+
+.subHeaderStackWrap {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.filtersLists {
+    display: flex;
+    padding: var(--spacing-system-guides-corner-radius-0, 0px);
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--spacing-system-guides-corner-radius-0, 0px);
+}
