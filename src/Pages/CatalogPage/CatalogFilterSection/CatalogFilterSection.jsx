@@ -12,7 +12,7 @@ const CatalogFilterSection = () => {
           <FilterSubHeader FilterSubHeader={`Automotive`} subHeaderTailIcon={chevrondown}/>
           <FilterSubHeader FilterSubHeader={`Baby`} subHeaderTailIcon={chevrondown}/>
           <FilterSubHeader FilterSubHeader={`Beauty and Personal Care`} subHeaderTailIcon={chevrondown}/>
-            <FilterLabel FilterLabel={`Make Up`} /> 
+            <FilterLabel FilterLabel={`Make Up & Facial Products`} /> 
         <FilterHeader FilterHeaderLabel={`Brands`} FilterHeaderIcon={plusSquare} />
         <FilterHeader FilterHeaderLabel={`Price Range`} FilterHeaderIcon={plusSquare} />
         <FilterHeader FilterHeaderLabel={`Rating`} FilterHeaderIcon={plusSquare} />

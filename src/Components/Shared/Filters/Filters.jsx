@@ -1,9 +1,9 @@
 import React from "react";
 import styles from "./Filters.module.css"
 
-const FilterHeader = ( {FilterHeaderLabel, FilterHeaderIcon} ) => {
+const FilterHeader = ( {FilterHeaderLabel, FilterHeaderIcon, handleFilterHeader}  ) => {
     return (
-        <div className={styles.filterHeaderWrap} > 
+        <div className={styles.filterHeaderWrap} onClick={handleFilterHeader} > 
             <span className={styles.filterHeaderLabel}> {FilterHeaderLabel} </span>
             <div className={styles.filterHeaderIconWrap}>
                 {FilterHeaderIcon && 
@@ -18,9 +18,9 @@ const FilterHeader = ( {FilterHeaderLabel, FilterHeaderIcon} ) => {
     );
 };
 
-const FilterSubHeader = ({ FilterSubHeader, subHeaderTailIcon }) => {
+const FilterSubHeader = ({ FilterSubHeader, subHeaderTailIcon, handleFilterSubHeader }) => {
     return (
-        <div className={styles.filterSubHeaderWrap}> 
+        <div className={styles.filterSubHeaderWrap} onClick={handleFilterSubHeader}> 
             <div className={styles.checkMarkSubheader} > 
                 <input type="checkbox" />
                 <span className={styles.filterSubHeaderLabel}> {FilterSubHeader} </span>
@@ -38,9 +38,9 @@ const FilterSubHeader = ({ FilterSubHeader, subHeaderTailIcon }) => {
     );
 };
 
-const FilterLabel = ( {FilterLabel, FilterTailIcon } ) => {
+const FilterLabel = ( {FilterLabel, FilterTailIcon, handleFilterLabel } ) => {
     return (
-        <div className={styles.filterLabelWrap}> 
+        <div className={styles.filterLabelWrap} onClick={handleFilterLabel}> 
             <div className={styles.checkmarkFilterLabel}>
                 <input type="checkbox" />
                 <span className={styles.filterLabel}> {FilterLabel}  </span>
