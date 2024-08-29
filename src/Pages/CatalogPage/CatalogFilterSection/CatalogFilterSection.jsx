@@ -10,6 +10,7 @@ const CatalogFilterSection = () => {
     <div className={styles.CatalogFilterSection}>
         <FilterHeader FilterHeaderLabel={`Categories`} FilterHeaderIcon={plusSquare} />
         <SubHeaderStack />
+        <SubHeaderStack />
         <FilterSubHeader FilterSubHeader={`Baby`} subHeaderTailIcon={chevrondown}/>
         <FilterSubHeader FilterSubHeader={`Beauty and Personal Care`} subHeaderTailIcon={chevrondown}/>
         <FilterHeader FilterHeaderLabel={`Brands`} FilterHeaderIcon={plusSquare} />
