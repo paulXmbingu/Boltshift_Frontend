@@ -105,3 +105,17 @@
     width: 20px;
     height: 20px;
 }
+
+/* FILTER LABEL */
+.filterLabelWrap {
+    display: inline-flex;
+    min-width: var(--spacing-system-guides-corner-radius-80, 320px);
+    max-width: var(--spacing-system-guides-corner-radius-80, 320px);
+    padding: var(--spacing-system-guides-corner-radius-1, 4px) var(--spacing-system-guides-corner-radius-2, 8px) var(--spacing-system-guides-corner-radius-1, 4px) var(--spacing-system-guides-corner-radius-12, 48px);
+    align-items: center;
+    gap: 4px;
+}
+
+.checkmarkFilterLabel {
+    
+}

@@ -37,10 +37,13 @@ const FilterSubHeader = ({ FilterSubHeader, subHeaderTailIcon }) => {
     );
 };
 
-const FilterLabel = () => {
+const FilterLabel = ( {FilterLabel, } ) => {
     return (
-        <div> 
-            FilterLabel 
+        <div className={styles.filterLabelWrap}> 
+            <div className={styles.checkmarkFilterLabel}>
+                
+            </div>
+            <div> Filter Label Icon </div>
         </div>
     );
 };
