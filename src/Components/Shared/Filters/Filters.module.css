@@ -1,0 +1,41 @@
+/* FilterHeader */
+.filterHeaderWrap {
+    display: inline-flex;
+    min-width: var(--spacing-system-guides-corner-radius-80, 320px);
+    max-width: var(--spacing-system-guides-corner-radius-80, 320px);
+    padding: var(--spacing-system-guides-corner-radius-2, 8px) var(--spacing-system-guides-corner-radius-2, 8px) var(--spacing-system-guides-corner-radius-2, 8px) var(--spacing-system-guides-corner-radius-3, 12px);
+    align-items: center;
+    gap: 10px;
+}
+
+.filterHeaderLabel {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    flex: 1 0 0;
+    overflow: hidden;
+    color: var(--colors-text-text-primary-900, #101828);
+    text-overflow: ellipsis;
+
+    /* Text xl/Semibold */
+    font-family: var(--Font-family-font-family-body, Inter);
+    font-size: var(--Font-size-text-xl, 20px);
+    font-style: normal;
+    font-weight: 600;
+    line-height: var(--Line-height-text-xl, 30px); /* 150% */
+    line-clamp: 1;
+}
+
+.filterHeaderIconWrap {
+    display: flex;
+    padding: var(--spacing-system-guides-corner-radius-1, 4px) var(--spacing-system-guides-corner-radius-0, 0px);
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.filterHeaderIcon {
+    width: 20px;
+    height: 20px;
+}
+
