@@ -114,9 +114,39 @@
     padding: var(--spacing-system-guides-corner-radius-1, 4px) var(--spacing-system-guides-corner-radius-2, 8px) var(--spacing-system-guides-corner-radius-1, 4px) var(--spacing-system-guides-corner-radius-12, 48px);
     align-items: center;
     gap: 4px;
+    cursor: pointer;
+    transition: all ease-in-out 200ms;
 }
 
-/* .checkmarkFilterLabel {
+.filterLabelWrap:hover {
+    border-radius: var(--spacing-system-guides-corner-radius-0, 0px);
+    background: var(--Colors-Background-bg-secondary_hover, #F2F4F7);
+    overflow: hidden;
+    scale: 99%;
+}
 
-} */
- 
+.checkmarkFilterLabel {
+    display: flex;
+    width: 244px;
+    height: 20px;
+    align-items: center;
+    gap: var(--spacing-system-guides-corner-radius-1, 4px);
+}
+
+.filterLabel {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    flex: 1 0 0;
+    overflow: hidden;
+    color: var(--colors-text-text-tertiary-600, #475467);
+    text-overflow: ellipsis;
+
+    /* Text sm/Medium */
+    font-family: var(--Font-family-font-family-body, Inter);
+    font-size: var(--Font-size-text-sm, 14px);
+    font-style: normal;
+    font-weight: 500;
+    line-height: var(--Line-height-text-sm, 20px); /* 142.857% */
+    line-clamp: 1;
+}

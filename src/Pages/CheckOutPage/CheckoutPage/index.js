@@ -1,1 +1,1 @@
-export {default} from "./CheckOutPage"
+export { default } from './CheckOutPage';

@@ -41,9 +41,10 @@ const FilterLabel = ( {FilterLabel, } ) => {
     return (
         <div className={styles.filterLabelWrap}> 
             <div className={styles.checkmarkFilterLabel}>
-                
+                <input type="checkbox" />
+                <span className={styles.filterLabel}> {FilterLabel}  </span>
             </div>
-            <div> Filter Label Icon </div>
+            {/* <div> Filter Label Icon </div> */}
         </div>
     );
 };
