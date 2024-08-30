@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import styles from "./TrendingProductsSection.module.css";
-import SectionHeader from "../../Components/Shared/SectionHeader";
-import ChartIncreasing from "../../assets/Icons/Illustrated/Chart increasing.svg";
-import PortraitProductCardMD from "../../Components/Shared/PortraitProductCardMD";
+import SectionHeader from "../../../Components/Shared/SectionHeader";
+import ChartIncreasing from "./Assets/Chart increasing.svg";
+import PortraitProductCardMD from "../../../Components/Shared/PortraitProductCardMD";
 
 function TrendingProductsSection() {
 
