@@ -1,8 +1,8 @@
 import React from "react";
 import styles from "./Pagination.module.css"
 import { Btn_Sec_Gray_SM } from "../../Atoms/Button";
-import ArrowLeft from "../../../assets/Icons/UI/arrow-left.svg"
-import ArrowRight from "../../../assets/Icons/UI/arrow-right.svg"
+import ArrowLeft from "./Assets/arrow-left.svg"
+import ArrowRight from "./Assets/arrow-right.svg"
 
 const Pagination = () => {
     return(
