@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import styles from './SearchInput.module.css';
-import SearchIcon from '../../../assets/Icons/UI/search-sm.svg';
-import ClearSearch from '../../../assets/Icons/UI/x-circle-filled.svg';
+import SearchIcon from './Assets/search-sm.svg';
+import ClearSearch from './Assets/x-circle-filled.svg';
 
 const SearchInput = () => {
     const [query, setQuery] = useState('');

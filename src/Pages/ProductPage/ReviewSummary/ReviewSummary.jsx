@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import styles from './ReviewSummary.module.css';
-import { SecSectionHeader } from "../../Components/Shared/SecondarySectionHeader";
-import { Btn_Pri_XL } from "../../Components/Atoms/Button";
-import { StarRating4 } from "../../Components/Molecules/StarRating";
-import pencilline from "../../assets/Icons/UI/pencil-line.svg";
-import { Star_Yellow_100pc } from "../../Components/Atoms/MisIcons";
-import { ReviewModalDesktop } from '../../Components/Shared/ReviewModal/ReviewModal'; // Import the modal component
+import { SecSectionHeader } from "../../../Components/Shared/SecondarySectionHeader";
+import { Btn_Pri_XL } from "../../../Components/Atoms/Button";
+import { StarRating4 } from "../../../Components/Molecules/StarRating";
+import pencilline from "./Assets/pencil-line.svg";
+import { Star_Yellow_100pc } from "../../../Components/Atoms/MisIcons";
+import { ReviewModalDesktop } from '../../../Components/Shared/ReviewModal/ReviewModal';
 
 const ReviewSummary = ({ nTHStarReview5, nTHStarReview4, nTHStarReview3, nTHStarReview2, nTHStarReview1 }) => {
     const [isModalOpen, setIsModalOpen] = useState(false); // State to control modal visibility

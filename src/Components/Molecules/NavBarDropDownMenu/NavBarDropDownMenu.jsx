@@ -2,11 +2,11 @@ import React from "react";
 import styles from "./NavBarDropDownMenu.module.css";
 import { Link } from "react-router-dom";
 import { MenuListItem } from "../../Atoms/MenuListItem";
-import PersonalInfo from "../../../assets/Icons/UI/user-01.svg";
-import Order from "../../../assets/Icons/UI/shopping-bag-02.svg";
-import Payment from "../../../assets/Icons/UI/shield-dollar.svg";
-import Voucher from "../../../assets/Icons/UI/receipt-check.svg";
-import LogOut from "../../../assets/Icons/UI/log-out-01.svg";
+import PersonalInfo from "./Assets/user-01.svg";
+import Order from "./Assets/shopping-bag-02.svg";
+import Payment from "./Assets/shield-dollar.svg";
+import Voucher from "./Assets/receipt-check.svg";
+import LogOut from "./Assets/log-out-01.svg";
 import { DropdownHeaderLoggedinDesktop, DropdownHeaderLoggedinMobile } from "../../Atoms/DropdownListHeader";
 
 const NavBarDropDownMenu = () => {
