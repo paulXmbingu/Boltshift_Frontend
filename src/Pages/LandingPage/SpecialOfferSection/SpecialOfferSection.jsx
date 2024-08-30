@@ -1,8 +1,8 @@
 import React from "react";
 import styles from "./SpecialOfferSection.module.css";
-import SectionHeader from "../../Components/Shared/SectionHeader";
-import OfferLabel from "../../assets/Icons/Illustrated/Label.svg";
-import ProductMediaConfigurator from "../../Components/Shared/ProductMediaConfigurator";
+import SectionHeader from "../../../Components/Shared/SectionHeader";
+import OfferLabel from "./Assets/Label.svg";
+import ProductMediaConfigurator from "../../../Components/Shared/ProductMediaConfigurator";
 
 function SpecialOfferSection() {
     return (
