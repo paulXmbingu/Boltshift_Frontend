@@ -1,7 +1,7 @@
 import React from "react";
-import HotDealCard from "../../Components/Shared/HotDealCard";
-import SectionHeader from "../../Components/Shared/SectionHeader";
-import Fire from "../../assets/Icons/Illustrated/Fire.svg";
+import HotDealCard from "../../../Components/Shared/HotDealCard";
+import SectionHeader from "../../../Components/Shared/SectionHeader";
+import Fire from "./Assets/Fire.svg";
 import styles from "./HotDealTodaySection.module.css";
 
 function HotDealTodaySection() {

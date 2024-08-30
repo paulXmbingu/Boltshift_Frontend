@@ -1,5 +1,5 @@
 import React from "react";
-import FireIcon from "../../../assets/Icons/Illustrated/Fire.svg";
+import FireIcon from "./Assets/Fire.svg";
 import FavoriteButton from "../FavoriteButton";
 import styles from './HotDealCard.module.css';
 import { Btn_Sec_Gray_SM } from "../../Atoms/Button";
