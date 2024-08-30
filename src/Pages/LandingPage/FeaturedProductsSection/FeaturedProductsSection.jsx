@@ -1,10 +1,10 @@
 import React from "react";
 import styles from "./FeaturedProductsSection.module.css";
-import HotDealCard from "../../Components/Shared/HotDealCard";
-import SectionHeader from "../../Components/Shared/SectionHeader";
-import Clipboard from "../../assets/Icons/Illustrated/Clipboard.svg";
-import FeaturedProductCard from "../../Components/Shared/FeaturedProductCard";
-import HotDealCardLandscape from "../../Components/Shared/HotDealCardLandscape";
+import HotDealCard from "../../../Components/Shared/HotDealCard";
+import SectionHeader from "../../../Components/Shared/SectionHeader";
+import Clipboard from "./Assets/Clipboard.svg";
+import FeaturedProductCard from "../../../Components/Shared/FeaturedProductCard";
+import HotDealCardLandscape from "../../../Components/Shared/HotDealCardLandscape";
 
 function FeaturedProductsSection() {
     return (
