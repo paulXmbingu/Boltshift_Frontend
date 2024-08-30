@@ -1,8 +1,8 @@
 import React from "react";
 import styles from "./RecentReviewSection.module.css";
-import ThumbsUp from '../../assets/Icons/Illustrated/Thumbs up.svg';
-import SectionHeader from "../../Components/Shared/SectionHeader";
-import ReviewCard from "../../Components/Shared/ReviewCard";
+import ThumbsUp from './Assets/Thumbs up.svg';
+import SectionHeader from "../../../Components/Shared/SectionHeader";
+import ReviewCard from "../../../Components/Shared/ReviewCard";
 
 const RecentReviewSection = () => {
   return (
