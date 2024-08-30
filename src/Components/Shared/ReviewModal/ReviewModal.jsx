@@ -33,7 +33,7 @@ const ReviewDetails = () => {
                 <span className={styles.starRatingLabel}> Rating* </span>
                 <StarRating5 />
             </div>
-            <div> Media Drop Zone </div>
+            <input type="file" />
         </div>
     );
 };
