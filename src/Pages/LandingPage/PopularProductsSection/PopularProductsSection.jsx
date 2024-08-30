@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import styles from "./PopularProductsSection.module.css";
-import SectionHeader from "../../Components/Shared/SectionHeader";
-import RedHeart from "../../assets/Icons/Illustrated/Red heart.svg";
-import ProductCardLandscapeSM from "../../Components/Shared/ProductCardLandscapeSM";
-import { HorTabUnderLineSM, HorTabUnderLineSMSelected } from "../../Components/Atoms/Tab";
+import SectionHeader from "../../../Components/Shared/SectionHeader";
+import RedHeart from "./Assets/Red heart.svg";
+import ProductCardLandscapeSM from "../../../Components/Shared/ProductCardLandscapeSM";
+import { HorTabUnderLineSM, HorTabUnderLineSMSelected } from "../../../Components/Atoms/Tab";
 
 function PopularProductsSection() {
     const [selectedTab, setSelectedTab] = useState('Featured Products');
