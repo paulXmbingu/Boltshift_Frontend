@@ -1,6 +1,7 @@
 .CatalogFilterSection{
-    
+    width: 100%;
     display: flex;
+    min-width: var(--spacing-system-guides-corner-radius-88, 320px);
     max-width: var(--spacing-system-guides-corner-radius-88, 320px);
     padding: var(--Base-4-Premitives-4, 16px) var(--Base-4-Premitives-4, 16px) var(--Base-4-Premitives-12, 48px) var(--Base-4-Premitives-4, 16px);
     flex-direction: column;
@@ -23,4 +24,10 @@
     flex-direction: column;
     align-items: flex-start;
     gap: var(--spacing-system-guides-corner-radius-0, 0px);
+}
+
+.headerStackWrap {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
