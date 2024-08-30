@@ -23,7 +23,7 @@ const TextareaInputField = ({
                 required={required}
                 rows={rows}
                 cols={cols}
-                style={{ resize }} // Allows resizing based on prop
+                style={{ resize }}
             />
             <div className={styles.HelpIcon}>
                 <span role="img" aria-label="info" className={styles.hintText}>{hintText}</span>
