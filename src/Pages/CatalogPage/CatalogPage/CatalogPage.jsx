@@ -1,14 +1,14 @@
 import React, { useState, useEffect } from "react";
 import styles from "./CatalogPage.module.css";
-import { TopNavLarge, TopNavSmall } from "../../Components/Shared/TopNav";
-import Footer from "../../Components/Shared/Footer";
-import SectionHeader from "../../Components/Shared/SectionHeader";
-import bag from '../../assets/Icons/UI/Shopping bags (1).svg';
-import Chevron from '../../assets/Icons/UI/chevron-right (1).svg';
-import SearchResultOutput from "../../Components/Molecules/SearchResultOutput";
-import BreadCrumb from "../../Components/Shared/BreadCrumb";
-import ProductListingSection from "./ProductListingSection";
-import CatalogFilterSection from "./CatalogFilterSection";
+import { TopNavLarge, TopNavSmall } from "../../../Components/Shared/TopNav";
+import Footer from "../../../Components/Shared/Footer";
+import SectionHeader from "../../../Components/Shared/SectionHeader";
+import bag from './Assets/Shopping bags (1).svg';
+import Chevron from './Assets/chevron-right.svg';
+import SearchResultOutput from "../../../Components/Molecules/SearchResultOutput";
+import BreadCrumb from "../../../Components/Shared/BreadCrumb";
+import ProductListingSection from "../ProductListingSection";
+import CatalogFilterSection from "../CatalogFilterSection";
 
 function CatalogPage() {
     const [isLargeScreen, setIsLargeScreen] = useState(typeof window !== "undefined" ? window.innerWidth > 768 : false);

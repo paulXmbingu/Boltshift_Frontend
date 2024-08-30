@@ -18,12 +18,12 @@ const FilterHeader = ( {FilterHeaderLabel, FilterHeaderIcon, handleFilterHeader}
     );
 };
 
-const FilterSubHeader = ({ FilterSubHeader, subHeaderTailIcon, handleFilterSubHeader }) => {
+const FilterSubHeader = ({ FilterSubHeaderLabel, subHeaderTailIcon, handleFilterSubHeader }) => {
     return (
         <div className={styles.filterSubHeaderWrap} onClick={handleFilterSubHeader}> 
             <div className={styles.checkMarkSubheader} > 
                 <input type="checkbox" />
-                <span className={styles.filterSubHeaderLabel}> {FilterSubHeader} </span>
+                <span className={styles.filterSubHeaderLabel}> {FilterSubHeaderLabel} </span>
             </div>
             <div className={styles.subHeaderTailIconWrap}>
                 {subHeaderTailIcon &&

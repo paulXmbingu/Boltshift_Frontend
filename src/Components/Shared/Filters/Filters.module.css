@@ -1,6 +1,7 @@
 /* FILLTER HEADER */
 .filterHeaderWrap {
     display: inline-flex;
+    width: 320px;
     min-width: var(--spacing-system-guides-corner-radius-80, 320px);
     max-width: var(--spacing-system-guides-corner-radius-80, 320px);
     padding: var(--spacing-system-guides-corner-radius-2, 8px) var(--spacing-system-guides-corner-radius-2, 8px) var(--spacing-system-guides-corner-radius-2, 8px) var(--spacing-system-guides-corner-radius-3, 12px);
@@ -8,10 +9,11 @@
     gap: 10px;
     cursor: pointer;
     transition: all ease-in-out 200ms;
+    overflow: hidden;
 }
 
 .filterHeaderWrap:hover {
-    border-radius: var(--radius-md, 8px);
+    border-radius: var(--spacing-system-guides-corner-radius-0, 0px);
     background: var(--Colors-Background-bg-secondary_hover, #F2F4F7);
     overflow: hidden;
     scale: 99%;
@@ -59,6 +61,7 @@
     gap: 4px;
     cursor: pointer;
     transition: all ease-in-out 200ms;
+    overflow: hidden;
 }
 
 .filterSubHeaderWrap:hover {
@@ -109,6 +112,7 @@
 /* FILTER LABEL */
 .filterLabelWrap {
     display: inline-flex;
+    width: 320px;
     min-width: var(--spacing-system-guides-corner-radius-80, 320px);
     max-width: var(--spacing-system-guides-corner-radius-80, 320px);
     padding: var(--spacing-system-guides-corner-radius-1, 4px) var(--spacing-system-guides-corner-radius-2, 8px) var(--spacing-system-guides-corner-radius-1, 4px) var(--spacing-system-guides-corner-radius-12, 48px);
@@ -116,6 +120,7 @@
     gap: 4px;
     cursor: pointer;
     transition: all ease-in-out 200ms;
+    overflow: hidden;
 }
 
 .filterLabelWrap:hover {
