@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import styles from "./TestimonialCard.module.css";
 import { Btn_LinkGray_SM } from "../../Atoms/Button";
-import chevrondown from "../../../assets/Icons/UI/chevron-down.svg";
-import chevronup from "../../../assets/Icons/UI/chevron-up.svg";
+import chevrondown from "./Assets/chevron-down.svg";
+import chevronup from "./Assets/chevron-up.svg";
 import { ProductMediaThumbnailSM } from "../ProductMediaThumbnail";
 import { AvatarProfilePhotoSM } from "../../Atoms/AvatarProfilePhoto";
 import { Badge_PillColor_SM_Success } from "../../Atoms/Badge";

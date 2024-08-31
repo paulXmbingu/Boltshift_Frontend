@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './HeroCard.module.css';
 import { Link } from 'react-router-dom';
-import TailIcon from '../../../assets/Icons/UI/chevron-right.svg';
+import TailIcon from './Assets/chevron-right.svg';
 import DiscountTag from '../../Atoms/DiscountTag';
 import HeroPagination from '../HeroPagination';
 import FavoriteButton from '../FavoriteButton';

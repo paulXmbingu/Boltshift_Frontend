@@ -1,52 +1,65 @@
-import React from 'react'
+import React from "react";
 import styles from "./Filters.module.css"
 
-// Components
-const HeaderLabel = ({ HeaderLabelText, PlusIcon }) => {
+const FilterHeader = ( {FilterHeaderLabel, FilterHeaderIcon, handleFilterHeader}  ) => {
     return (
-        <div className={styles.HeaderLabel}>
-            <div className={styles.HeaderLabelText}>{HeaderLabelText}</div>
-            <div className={styles.HeaderLabelIcon}>
-                {PlusIcon}
+        <div className={styles.filterHeaderWrap} onClick={handleFilterHeader} > 
+            <span className={styles.filterHeaderLabel}> {FilterHeaderLabel} </span>
+            <div className={styles.filterHeaderIconWrap}>
+                {FilterHeaderIcon && 
+                    <img 
+                        src={FilterHeaderIcon} 
+                        alt="Filter Header Icon" 
+                        className={styles.filterHeaderIcon} 
+                    />
+                }
             </div>
         </div>
-    )
-}
+    );
+};
 
-const HeaderLabelMinusIcon = ({ HeaderLabelText, MinusIcon }) => {
+const FilterSubHeader = ({ FilterSubHeaderLabel, subHeaderTailIcon, handleFilterSubHeader }) => {
     return (
-        <div className={styles.HeaderLabel}>
-            <div className={styles.HeaderLabelText}>{HeaderLabelText}</div>
-            <div className={styles.HeaderLabelIcon}>
-                {MinusIcon}
+        <div className={styles.filterSubHeaderWrap} onClick={handleFilterSubHeader}> 
+            <div className={styles.checkMarkSubheader} > 
+                <input type="checkbox" />
+                <span className={styles.filterSubHeaderLabel}> {FilterSubHeaderLabel} </span>
+            </div>
+            <div className={styles.subHeaderTailIconWrap}>
+                {subHeaderTailIcon &&
+                    <img
+                        src={subHeaderTailIcon} 
+                        alt="Sub Header TailIcon"
+                        className={styles.subHeaderTailIcon}
+                    />
+                }
             </div>
         </div>
-    )
-}
+    );
+};
 
-const SubHeaderLabel = ({ subHeaderIcon }) => {
+const FilterLabel = ( {FilterLabel, FilterTailIcon, handleFilterLabel } ) => {
     return (
-        <div className={styles.SubHeaderLabel}>
-            <div className={styles.subHeaderIcon}>
-                {subHeaderIcon}
+        <div className={styles.filterLabelWrap} onClick={handleFilterLabel}> 
+            <div className={styles.checkmarkFilterLabel}>
+                <input type="checkbox" />
+                <span className={styles.filterLabel}> {FilterLabel}  </span>
             </div>
-            <div className={styles.CheckboxAndTittle}>
-                <input type="checkbox" className={styles.imputCheckbox}/>
-                <div className={styles.subLabelText}></div>
+            <div className={styles.filterLabelTailIconWrap}> 
+                {FilterTailIcon && 
+                    <img 
+                        src={FilterTailIcon}
+                        alt="Filter Tail Icon"
+                        className={styles.filterTailIcon}
+                    />
+                }
             </div>
         </div>
-    )
-}
+    );
+};
 
-// Main Filter component
-const Filters = () => {
-  return (
-    <div>
-      <HeaderLabel HeaderLabelText="Label with Plus" PlusIcon={<PlusIconComponent />} />
-      <HeaderLabelMinusIcon HeaderLabelText="Label with Minus" MinusIcon={<MinusIconComponent />} />
-      <SubHeaderLabel subHeaderIcon={<SubHeaderIconComponent />} />
-    </div>
-  )
-}
-
-export { Filters }
+export 
+    {   FilterHeader,
+        FilterSubHeader, 
+        FilterLabel 
+    }

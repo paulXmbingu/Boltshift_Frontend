@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./StarRating.module.css"
-import StarIcon from "../../../assets/Icons/Illustrated/Star.svg"
-import StarIconBackground from "../../../assets/Icons/Illustrated/Star Background.svg"
+import StarIcon from "./Assets/Star.svg"
+import StarIconBackground from "./Assets/Star Background.svg"
 
 const Star = () => {
     return (

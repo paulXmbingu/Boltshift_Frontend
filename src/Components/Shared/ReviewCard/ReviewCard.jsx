@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./ReviewCard.module.css";
 import { Link } from "react-router-dom";
 import { Badge_PillColor_SM_LeadIcon_Success } from "../../Atoms/Badge";
-import CheckIcon from "../../../assets/Icons/UI/check.svg";
+import CheckIcon from "./Assets/check.svg";
 import { StarRating4 } from "../../Molecules/StarRating";
 
 const ReviewCard = ({ ReviewerName, ReviewerPhoto,ReviewDate, Review, ProductImage, ProductNameLabel, PriceLabel }) => {

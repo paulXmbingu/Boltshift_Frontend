@@ -16,10 +16,10 @@ import {
 import { StarRating4 } from "../../Molecules/StarRating";
 import { ButtonGroup } from "../../Atoms/ButtonGroup";
 import StoreLabel from "../StoreLabel";
-import arrowdown from "../../../assets/Icons/UI/arrow-down.svg";
-import shoppingcart03 from "../../../assets/Icons/UI/shopping-cart-03 Brand.svg";
-import minus from "../../../assets/Icons/UI/minus.svg";
-import plus from "../../../assets/Icons/UI/plus fgSec700.svg";
+import arrowdown from "./Assets/arrow-down.svg";
+import shoppingcart03 from "./Assets/shopping-cart-03 Brand.svg";
+import minus from "./Assets/minus.svg";
+import plus from "./Assets/plus fgSec700.svg";
 import RadioInput from "../../Atoms/RadioInput";
 import TagCheckboxSM from "../../Atoms/Tag";
 

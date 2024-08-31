@@ -1,6 +1,6 @@
 import React from "react";
 import styles from './ReviewModal.module.css';
-import { Btn_Primary_MD } from "../../Atoms/Button";
+import { Btn_Pri_XL } from "../../Atoms/Button";
 import { StarRating5 } from "../../Molecules/StarRating";
 import { TextareaInputField } from "../../Atoms/Inputs";
 
@@ -33,7 +33,7 @@ const ReviewDetails = () => {
                 <span className={styles.starRatingLabel}> Rating* </span>
                 <StarRating5 />
             </div>
-            <div> Media Drop Zone </div>
+            <input type="file" />
         </div>
     );
 };
@@ -41,7 +41,7 @@ const ReviewDetails = () => {
 const ModalFooter = () => {
     return (
         <div className={styles.modalFooter}>
-            <Btn_Primary_MD ButtonCTA={`Submit Review`}/>
+            <Btn_Pri_XL ButtonCTA={`Submit Review`}/>
         </div>
     );
 };

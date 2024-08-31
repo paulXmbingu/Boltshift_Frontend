@@ -1,7 +1,7 @@
 import React from "react";
 import styles from './HotDealCardLandscape.module.css';
 import FavoriteButton from "../FavoriteButton";
-import FireIcon from "../../../assets/Icons/Illustrated/Fire.svg";
+import FireIcon from "./Assets/Fire.svg";
 import { Btn_Sec_Gray_SM } from "../../Atoms/Button";
 
 function HotDealCardLandscape({ imageSrc, productNameText, ammount, noSold }) {

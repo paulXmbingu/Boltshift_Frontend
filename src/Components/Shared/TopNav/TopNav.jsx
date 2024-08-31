@@ -3,11 +3,11 @@ import styles from './TopNav.module.css';
 import { Link } from "react-router-dom";
 import UserAvatar from "../../Atoms/UserAvatar";
 import NotificationIcon from "../../Molecules/NotificationIcon";
-import MenuIcon from "../../../assets/Icons/UI/menu-03.svg";
-import Favorite from '../../../assets/Icons/UI/heart.svg';
-import Cart from '../../../assets/Icons/UI/shopping-cart-03.svg';
-import Bell from '../../../assets/Icons/UI/bell-02.svg';
-import Filter from "../../../assets/Icons/UI/filter-lines.svg"
+import MenuIcon from "./Assets/menu-03.svg";
+import Favorite from './Assets/heart.svg';
+import Cart from './Assets/shopping-cart-03.svg';
+import Bell from './Assets/bell-02.svg';
+import Filter from "./Assets/filter-lines.svg"
 import SearchInput from "../../Atoms/SearchInput";
 import { NavBarDropDownMenu, NavBarDropDownMenuMobileLoggedIn } from "../../Molecules/NavBarDropDownMenu";
 import { BrandLogoHor } from "../../Atoms/BrandLogo";

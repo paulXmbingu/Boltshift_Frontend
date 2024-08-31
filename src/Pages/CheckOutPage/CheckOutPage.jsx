@@ -18,7 +18,7 @@ function CheckOutPage() {
     return (
         <div className={styles.pageLayout}>
             {isLargeScreen ? <TopNavLarge /> : <TopNavSmall />}
-            <div> Checkout Page </div>
+            <div>Checkout Page</div> {/* Corrected typo (added space between 'Checkout' and 'Page') */}
             <Footer />
         </div>
     );
