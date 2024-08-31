@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from './Error404.module.css'
 import { Btn_Sec_Color_XL } from '../../Atoms/Button/Button'
-import Illustration from "./Assets/Screenshot_2023-08-05_at_02_05_40-transformed 1.svg"
+import Illustration from "./Assets/Screenshot_2023-08-05_at_02_05_40-transformed1.png"
 
 const Error404 = () => {
   return (
@@ -20,7 +20,7 @@ const Error404 = () => {
                 </div>
             </div>
             <div className={styles.Illustration}>
-                <img className={styles.IllustrationImg} src={Illustration} alt="" />
+                <img className={styles.IllustrationImg} src={Illustration} alt="Illustration" />
             </div>
         </div>
     </div>
