@@ -1,0 +1,116 @@
+.Error404{
+    display: flex;
+    min-width: var(--Breaking-Points-iPhone-375px, 375px);
+    max-width: var(--Breaking-Points-Desktop-1280px, 1280px);
+    min-height: var(--Breaking-Points-Tablet-768px, 768px);
+    padding: var(--Base-4-Premitives-0, 0px) var(--Base-4-Premitives-4, 16px);
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 64px;
+    align-self: stretch;
+    flex-wrap: wrap;
+    background: var(--Colors-Background-bg-primary, #FFF);
+}
+
+.ErrorContainer{
+    display: flex;
+    padding: 0px var(--Base-4-Premitives-0, 0px);
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    row-gap: 32px;
+    flex: 1 0 0;
+    flex-wrap: wrap;
+}
+
+.Content{
+    display: flex;
+    min-width: var(--Base-4-Premitives-80, 320px);
+    max-width: var(--Base-4-Premitives-148, 592px);
+    padding: 0px var(--Base-4-Premitives-0, 0px);
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 48px;
+    flex: 1 0 0;
+}
+
+.HeadingSurpotingTxt{
+    display: flex;
+    min-width: var(--Base-4-Premitives-80, 320px);
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--Base-4-Premitives-4, 16px);
+    align-self: stretch;
+}
+
+.Heading{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    align-self: stretch;
+}
+
+.subHeading{
+    color: var(--colors-text-text-error-primary-600, #D92D20);
+
+    /* Text md/Semibold */
+    font-family: var(--Font-family-font-family-body, Inter);
+    font-size: var(--Font-size-text-md, 16px);
+    font-style: normal;
+    font-weight: 600;
+    line-height: var(--Line-height-text-md, 24px); /* 150% */
+    align-self: stretch;
+}
+
+.SurpotingText{
+    color: var(--colors-text-text-tertiary-600, #475467);
+
+    /* Text lg/Regular */
+    font-family: var(--Font-family-font-family-body, Inter);
+    font-size: var(--Font-size-text-lg, 18px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: var(--Line-height-text-lg, 28px); /* 155.556% */
+    max-width: var(--Base-4-Premitives-132, 528px);
+    align-self: stretch;
+}
+
+.ErrorHeading{
+    color: var(--colors-text-text-brand-tertiary-600, #DA154D);
+
+    /* Display lg/Semibold */
+    font-family: var(--Font-family-font-family-display, Inter);
+    font-size: var(--Font-size-display-lg, 48px);
+    font-style: normal;
+    font-weight: 600;
+    line-height: var(--Line-height-display-lg, 60px); /* 125% */
+    letter-spacing: -0.96px;
+    align-self: stretch;
+}
+
+.action{
+    display: flex;
+    align-items: flex-start;
+    align-content: flex-start;
+    gap: 12px;
+    align-self: stretch;
+    flex-wrap: wrap;
+}
+
+.Illustration{
+    display: flex;
+    min-width: var(--Base-4-Premitives-84, 336px);
+    padding: var(--Base-4-Premitives-0, 0px) 0px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1 0 0;
+    background: #FFF;
+}
+
+.IllustrationImg{
+    width: 469px;
+    height: 482px;
+}
