@@ -11,7 +11,7 @@ function CategoryCard({ icon, name, isAllCategories }) {
             <div className={styles.categoryName}>
                 <div className={styles.categoryText}>{name}</div>
             </div>
-        </Link>
+        </Link >
     );
 }
 
