@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import styles from "./UnAvailablePage.module.css";
 import { TopNavLarge, TopNavSmall } from "../../Components/Shared/TopNav";
 import Footer from "../../Components/Shared/Footer";
+import Error404 from "../../Components/Shared/404Section/Error404";
 
 function UnAvailablePage() {
     const [isLargeScreen, setIsLargeScreen] = useState(typeof window !== "undefined" ? window.innerWidth > 768 : false);
@@ -18,7 +19,7 @@ function UnAvailablePage() {
     return (
         <div className={styles.pageLayout}>
             {isLargeScreen ? <TopNavLarge /> : <TopNavSmall />}
-            <div> 404 Page </div>
+            <Error404 />
             <Footer />
         </div>
     );
