@@ -1,13 +1,14 @@
-import React, { useState } from "react";
-import styles from "./Inputs.module.css";
-import DefaultHelpIcon from "./Assets/help-circle.svg";
+import React from "react";
+import styles from "./Inputs.module.css"
+import DefaultHelpIcon from "./Assets/help-circle.svg"
 
-// TEXTAREA INPUT FIELD
+//TEXTAREA INPUT FIELD
 const TextareaInputField = ({ 
     Label = "Description", 
     Asterisk = "*", 
     HelpIcon = DefaultHelpIcon, 
     HintText = "Hint text.",
+    //
     TextArea = "TextArea",
     PlaceHolderText = "Place Holder Text",
     maxLength,
@@ -18,17 +19,10 @@ const TextareaInputField = ({
     HandleTextAreaChange,
     TextAreaID,
     AriaLabel,
-    width = "auto",
+    width = "auto" ,
     height = "auto",
     Resizeable = true
 }) => {
-    const [hasText, setHasText] = useState(false);
-
-    const handleChange = (event) => {
-        setHasText(event.target.value.length > 0);
-        HandleTextAreaChange(event);
-    };
-
     return (
         <div className={styles.textareaInputFieldWrap}>
             <div className={styles.labelwithInput}>
@@ -39,20 +33,20 @@ const TextareaInputField = ({
                 </div>
                 <textarea 
                     name={TextArea}
-                    className={`${styles.textInputArea} ${hasText ? styles.focusedState : styles.defaultState}`}
+                    className={styles.textInputArea}
                     placeholder={PlaceHolderText}
                     maxLength={maxLength}
                     minLength={minLength}
                     value={value}
                     cols={col}
                     rows={row}
-                    onChange={handleChange}
+                    onChange={HandleTextAreaChange}
                     id={TextAreaID}
                     aria-label={AriaLabel}
                     style={{ 
-                        width: width, 
-                        height: height,
-                        resize: Resizeable ? "none" : "both"
+                        width:width, 
+                        height:height,
+                        resize: Resizeable? "none" : "both"
                     }}
                 />
                 {HintText && <div className={styles.hintText}> {HintText} </div>}
@@ -61,4 +55,6 @@ const TextareaInputField = ({
     );
 };
 
-export { TextareaInputField };
+export {
+    TextareaInputField,
+}

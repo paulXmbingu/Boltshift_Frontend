@@ -77,25 +77,31 @@
     line-height: var(--Line-height-text-md, 24px); /* 150% */
     outline: none;
     transition: all ease-in-out 200ms;
+
 }
 
-.textInputArea.defaultState {
+.textInputArea:focus,
+.textInputArea:hover {
+    display: flex;
+    padding: var(--spacing-lg, 12px) 14px;
+    align-items: flex-start;
+    gap: var(--spacing-md, 8px);
+    flex: 1 0 0;
+    align-self: stretch;
+    border-radius: var(--radius-md, 8px);
+    border: 1px solid var(--Colors-Border-border-brand, #EA275E);
+    background: var(--Colors-Background-bg-primary, #FFF);
+
+    /* Shadows/shadow-xs */
+    box-shadow: 0px 1px 2px 0px var(--Colors-Effects-Shadows-shadow-xs, rgba(16, 24, 40, 0.05));
     color: var(--colors-text-text-primary-900, #101828);
+
+    /* Text md/Regular */
     font-family: var(--Font-family-font-family-body, Inter);
     font-size: var(--Font-size-text-sm, 14px);
     font-style: normal;
     font-weight: 400;
     line-height: var(--Line-height-text-md, 24px); /* 150% */
-}
-
-.textInputArea.focusedState {
-    border: 1px solid var(--Colors-Border-border-brand, #EA275E);
-    color: var(--colors-text-text-primary-900, #101828);
-}
-
-.textInputArea:hover {
-    border: 1px solid var(--Colors-Border-border-brand, #EA275E);
-    color: var(--colors-text-text-primary-900, #101828);
 }
 
 .hintText {
