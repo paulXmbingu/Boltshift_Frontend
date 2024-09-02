@@ -1,15 +1,8 @@
 import React from "react";
 import styles from "./Inputs.module.css"
 
-const TextareaInputField = ({
-    label,
-    placeholder,
-    required,
-    rows,
-    cols,
-    resize,
-    hintText,
-}) => {
+//TEXTAREA INPUT FIELD
+const TextareaInputField = ({ label, placeholder, required, rows, cols, resize, hintText, }) => {
     return (
         <div className={styles.TextareaInputFieldContainer}>
             <label htmlFor="textarea" className={styles.textareaLabel}>

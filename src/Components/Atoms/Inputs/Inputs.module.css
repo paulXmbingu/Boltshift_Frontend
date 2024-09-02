@@ -1,3 +1,4 @@
+/* TEXTAREA INPUT FIELD */
 .textareaInputFieldContainer {
     display: flex;
     width: var(--width-xxs, 320px);

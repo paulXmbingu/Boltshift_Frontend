@@ -28,7 +28,7 @@ const ReviewDetails = () => {
     return (
         <div className={styles.reviewDetails}>
             <div> Review Title </div>
-            <TextareaInputField />
+            <TextareaInputField label={`Review (690 Characters max)`} />
             <div className={styles.starRating}>
                 <span className={styles.starRatingLabel}> Rating* </span>
                 <StarRating5 />
