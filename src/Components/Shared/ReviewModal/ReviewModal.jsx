@@ -1,8 +1,9 @@
 import React from "react";
 import styles from './ReviewModal.module.css';
 import { Btn_Pri_XL } from "../../Atoms/Button";
-import { StarRating5 } from "../../Molecules/StarRating";
+import { Star, StarBackground, StarRating5 } from "../../Molecules/StarRating";
 import { TextareaInputField } from "../../Atoms/Inputs";
+import { Star_Yellow_100pc } from "../../Atoms/MisIcons/MisIcons";
 
 const ReviewModalDesktop = ({ onClose }) => {
     return (
@@ -37,6 +38,10 @@ const ReviewDetails = () => {
             <div className={styles.starRating}>
                 <span className={styles.starRatingLabel}> Rating* </span>
                 <StarRating5 />
+                <Star_Yellow_100pc size={`40`} />
+                <Star_Yellow_100pc size={`40`} />
+                <Star_Yellow_100pc size={`40`} />
+                <Star_Yellow_100pc size={`40`} />
             </div>
             <input type="file" />
         </div>
