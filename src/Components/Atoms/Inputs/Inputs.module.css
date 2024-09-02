@@ -93,6 +93,11 @@
     color: var(--colors-text-text-primary-900, #101828);
 }
 
+.textInputArea:hover {
+    border: 1px solid var(--Colors-Border-border-brand, #EA275E);
+    color: var(--colors-text-text-primary-900, #101828);
+}
+
 .hintText {
     align-self: stretch;
     color: var(--colors-text-text-tertiary-600, #475467);
