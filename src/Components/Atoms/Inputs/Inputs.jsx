@@ -1,37 +1,64 @@
-import React from "react";
-import styles from "./Inputs.module.css"
+import React, { useState } from "react";
+import styles from "./Inputs.module.css";
+import DefaultHelpIcon from "./Assets/help-circle.svg";
 
-const TextareaInputField = ({
-    label,
-    placeholder,
-    required,
-    rows,
-    cols,
-    resize,
-    hintText,
+// TEXTAREA INPUT FIELD
+const TextareaInputField = ({ 
+    Label = "Description", 
+    Asterisk = "*", 
+    HelpIcon = DefaultHelpIcon, 
+    HintText = "Hint text.",
+    TextArea = "TextArea",
+    PlaceHolderText = "Place Holder Text",
+    maxLength,
+    minLength,
+    value,
+    col,
+    row,
+    HandleTextAreaChange,
+    TextAreaID,
+    AriaLabel,
+    width = "auto",
+    height = "auto",
+    Resizeable = true
 }) => {
+    const [hasText, setHasText] = useState(false);
+
+    const handleChange = (event) => {
+        setHasText(event.target.value.length > 0);
+        HandleTextAreaChange(event);
+    };
+
     return (
-        <div className={styles.TextareaInputFieldContainer}>
-            <label htmlFor="textarea" className={styles.textareaLabel}>
-                {label} {required && <span className={styles.required}>*</span>}
-            </label>
-            <textarea
-                id="textarea"
-                name="textarea"
-                className={styles.TextareaInputFieldWrap}
-                placeholder={placeholder}
-                required={required}
-                rows={rows}
-                cols={cols}
-                style={{ resize }}
-            />
-            <div className={styles.HelpIcon}>
-                <span role="img" aria-label="info" className={styles.hintText}>{hintText}</span>
+        <div className={styles.textareaInputFieldWrap}>
+            <div className={styles.labelwithInput}>
+                <div className={styles.labelWraper}>
+                    {Label && <div className={styles.label}> {Label} </div>}
+                    {Asterisk && <div className={styles.asterisk}> {Asterisk} </div>}
+                    {HelpIcon && <div className={styles.helpIcon}> <img src={HelpIcon} alt="Help Icon" /> </div>}
+                </div>
+                <textarea 
+                    name={TextArea}
+                    className={`${styles.textInputArea} ${hasText ? styles.focusedState : styles.defaultState}`}
+                    placeholder={PlaceHolderText}
+                    maxLength={maxLength}
+                    minLength={minLength}
+                    value={value}
+                    cols={col}
+                    rows={row}
+                    onChange={handleChange}
+                    id={TextAreaID}
+                    aria-label={AriaLabel}
+                    style={{ 
+                        width: width, 
+                        height: height,
+                        resize: Resizeable ? "none" : "both"
+                    }}
+                />
+                {HintText && <div className={styles.hintText}> {HintText} </div>}
             </div>
         </div>
     );
 };
 
-export {
-    TextareaInputField,
-}
+export { TextareaInputField };
