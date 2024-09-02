@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./StarRating.module.css"
 import StarIcon from "./Assets/Star.svg"
 import StarIconBackground from "./Assets/Star Background.svg"
+import { Star_Yellow_100pc } from "../../Atoms/MisIcons/MisIcons";
 
 const Star = () => {
     return (
@@ -67,14 +68,14 @@ const StarRating4 = () => {
     );
 };
 
-const StarRating5 = () => {
+const StarRating5 = ( {size} ) => {
     return (
         <div className={styles.starRating}>
-            <Star />
-            <Star />
-            <Star />
-            <Star />
-            <Star />
+            <Star_Yellow_100pc size={size} />
+            <Star_Yellow_100pc size={size} />
+            <Star_Yellow_100pc size={size} />
+            <Star_Yellow_100pc size={size} />
+            <Star_Yellow_100pc size={size} />
         </div>
     );
 };

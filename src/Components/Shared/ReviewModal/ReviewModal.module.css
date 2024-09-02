@@ -3,6 +3,7 @@
     top: 0;
     left: 0;
     width: 100%;
+    max-width: ;
     height: 100%;
     background-color: hsla(0, 0%, 0%, 0.25);
     display: flex;
@@ -36,7 +37,7 @@
 
 .reviewDetails {
     display: flex;
-    max-width: var(--width-md, 560px);
+    /* max-width: var(--width-md, 560px); */
     padding: var(--spacing-system-guides-corner-radius-6, 24px) var(--spacing-system-guides-corner-radius-8, 32px);
     flex-direction: column;
     align-items: flex-start;

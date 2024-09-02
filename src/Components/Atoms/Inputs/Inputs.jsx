@@ -8,7 +8,7 @@ const TextareaInputField = ({
     Asterisk = "*", 
     HelpIcon = DefaultHelpIcon, 
     HintText = "Hint text.",
-    //
+    //Text Area
     TextArea = "TextArea",
     PlaceHolderText = "Place Holder Text",
     maxLength,

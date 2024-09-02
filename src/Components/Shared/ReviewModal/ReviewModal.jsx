@@ -37,11 +37,7 @@ const ReviewDetails = () => {
             />
             <div className={styles.starRating}>
                 <span className={styles.starRatingLabel}> Rating* </span>
-                <StarRating5 />
-                <Star_Yellow_100pc size={`40`} />
-                <Star_Yellow_100pc size={`40`} />
-                <Star_Yellow_100pc size={`40`} />
-                <Star_Yellow_100pc size={`40`} />
+                <StarRating5 size={`40`} />
             </div>
             <input type="file" />
         </div>
