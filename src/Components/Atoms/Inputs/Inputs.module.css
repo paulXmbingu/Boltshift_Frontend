@@ -1,15 +1,30 @@
 /* TEXTAREA INPUT FIELD */
-.textareaInputFieldContainer {
+.textareaInputFieldWrap {
     display: flex;
-    width: var(--width-xxs, 320px);
-    height: 180px;
+    width: var(--width-xxs, 420px);
+    height: 240px;
     flex-direction: column;
     align-items: flex-start;
     gap: var(--spacing-sm, 6px);
     flex-shrink: 0;
 }
 
-.textareaLabel {
+.labelwithInput {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--spacing-sm, 6px);
+    flex: 1 0 0;
+    align-self: stretch;
+}
+
+.labelWraper {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-xxs, 2px);
+}
+
+.label {
     color: var(--colors-text-text-secondary-700, #344054);
 
     /* Text sm/Medium */
@@ -20,7 +35,7 @@
     line-height: var(--Line-height-text-sm, 20px); /* 142.857% */
 }
 
-.required {
+.asterisk {
     color: var(--colors-text-text-brand-tertiary-600, #DA154D);
 
     /* Text sm/Medium */
@@ -31,7 +46,15 @@
     line-height: var(--Line-height-text-sm, 20px); /* 142.857% */
 }
 
-.TextareaInputFieldWrap {
+.helpIcon {
+    display: flex;
+    width: 16px;
+    height: 16px;
+    justify-content: center;
+    align-items: center;
+}
+
+.textInputArea {
     display: flex;
     padding: var(--spacing-lg, 12px) 14px;
     align-items: flex-start;
@@ -44,19 +67,30 @@
 
     /* Shadows/shadow-xs */
     box-shadow: 0px 1px 2px 0px var(--Colors-Effects-Shadows-shadow-xs, rgba(16, 24, 40, 0.05));
-    flex: 1 0 0;
-    align-self: stretch;
     color: var(--Colors-Text-text-placeholder, #667085);
 
     /* Text md/Regular */
     font-family: var(--Font-family-font-family-body, Inter);
-    font-size: var(--Font-size-text-md, 16px);
+    font-size: var(--Font-size-text-sm, 14px);
     font-style: normal;
     font-weight: 400;
     line-height: var(--Line-height-text-md, 24px); /* 150% */
-    width: 280px;
-    height: 160px;
-    resize: none;
+    outline: none;
+    transition: all ease-in-out 200ms;
+}
+
+.textInputArea.defaultState {
+    color: var(--colors-text-text-primary-900, #101828);
+    font-family: var(--Font-family-font-family-body, Inter);
+    font-size: var(--Font-size-text-sm, 14px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: var(--Line-height-text-md, 24px); /* 150% */
+}
+
+.textInputArea.focusedState {
+    border: 1px solid var(--Colors-Border-border-brand, #EA275E);
+    color: var(--colors-text-text-primary-900, #101828);
 }
 
 .hintText {
