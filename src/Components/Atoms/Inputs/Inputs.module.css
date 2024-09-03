@@ -161,6 +161,11 @@
     line-height: var(--Line-height-text-sm, 20px); /* 142.857% */
 }
 
+.inputFieldWrap {
+    position: relative;
+    width: 100%;
+}
+
 .inputField {
     display: flex;
     padding: var(--spacing-md, 8px) var(--spacing-lg, 12px);
@@ -173,10 +178,7 @@
 
     /* Shadows/shadow-xs */
     box-shadow: 0px 1px 2px 0px var(--Colors-Effects-Shadows-shadow-xs, rgba(16, 24, 40, 0.05));
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 1;
-    flex: 1 0 0;
+    flex: 1 0 auto;
     overflow: hidden;
     color: var(--colors-text-text-primary-900, #101828);
     text-overflow: ellipsis;
@@ -190,7 +192,9 @@
     line-clamp: 1;
     outline: none;
     transition: all ease-in-out 200ms;
-    height: 40px;
+    position: relative;
+    padding-right: 32px;
+    padding-left: 24px;
 }
 
 .inputField:hover,
@@ -206,6 +210,30 @@
 
     /* Shadows/shadow-xs */
     box-shadow: 0px 1px 2px 0px var(--Colors-Effects-Shadows-shadow-xs, rgba(16, 24, 40, 0.05));
+    padding-right: 32px;
+    padding-left: 24px;
+}
+
+.inputFieldLeadingIcon {
+    position: absolute;
+    left: var(--spacing-lg, 8px);
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inputFieldTailingIcon {
+    position: absolute;
+    right: var(--spacing-lg, 12px);
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .inputFieldHintText {

@@ -61,6 +61,8 @@ const InputField = ({
     InputFieldLabel = "Input Label",
     Asterisk = "*",
     HintText = "Hint Text",
+    InputFieldTailingIcon = DefaultHelpIcon,
+    InputFieldLeadingIcon = DefaultHelpIcon,
     InputFieldPlaceholder = "Place Holder Text"
 }) => {
     return (
@@ -70,11 +72,15 @@ const InputField = ({
                     {InputFieldLabel && <label htmlFor={htmlForInputFieldLabel} className={styles.inputFieldLabel}> {InputFieldLabel} </label>}
                     {Asterisk && <div className={styles.inputFieldAsterisk}> {Asterisk} </div>}
                 </div>
-                <input  
-                    type="text" 
-                    className={styles.inputField}
-                    placeholder={InputFieldPlaceholder}
-                />
+                <div className={styles.inputFieldWrap}>
+                    <input  
+                        type="text" 
+                        className={styles.inputField}
+                        placeholder={InputFieldPlaceholder}
+                    />
+                    {InputFieldLeadingIcon && <div className={styles.inputFieldLeadingIcon}> <img src={InputFieldLeadingIcon} alt="Input Field Leading Icon" /> </div>}
+                    {InputFieldTailingIcon && <div className={styles.inputFieldTailingIcon}> <img src={InputFieldTailingIcon} alt="Input Field Tailing Icon" /> </div>}
+                </div>
             </div>
             {HintText && <label htmlFor="" className={styles.inputFieldHintText}> {HintText} </label>}
         </div>
