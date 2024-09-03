@@ -3,7 +3,6 @@ import styles from './ReviewModal.module.css';
 import { Btn_Pri_XL } from "../../Atoms/Button";
 import { Star, StarBackground, StarRating5 } from "../../Molecules/StarRating";
 import { InputField, TextareaInputField } from "../../Atoms/Inputs";
-import { Star_Yellow_100pc } from "../../Atoms/MisIcons/MisIcons";
 
 const ReviewModalDesktop = ({ onClose }) => {
     return (
@@ -28,7 +27,10 @@ const ModalHeader = () => {
 const ReviewDetails = () => {
     return (
         <div className={styles.reviewDetails}>
-            <InputField />
+            <InputField 
+                InputFieldLabel="Review Title"
+                HintText=""
+            />
             <TextareaInputField 
                 Label="Review (690 Characters max)" 
                 HelpIcon={``}

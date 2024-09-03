@@ -56,17 +56,22 @@ const TextareaInputField = ({
 };
 
 //INPUT FIELD
-const InputField = () => {
+const InputField = ({
+    htmlForInputFieldLabel,
+    InputFieldLabel = "Input Label",
+    Asterisk = "*",
+    HintText = "Hint Text"
+}) => {
     return (
         <div className={styles.inputFieldWrap}> 
             <div className={styles.labelInputFieldWrap}>
                 <div className={styles.labelFieldWapper}>
-                    <label htmlFor="" className={styles.inputFieldLabel}> Label </label>
-                    <div className={styles.inputFieldAsterisk}> * </div>
+                    {InputFieldLabel && <label htmlFor={htmlForInputFieldLabel} className={styles.inputFieldLabel}> {InputFieldLabel} </label>}
+                    {Asterisk && <div className={styles.inputFieldAsterisk}> {Asterisk} </div>}
                 </div>
                 <input type="text" className={styles.inputField} />
             </div>
-            <label htmlFor="" className={styles.inputFieldHintText}>Hint Text </label>
+            {HintText && <label htmlFor="" className={styles.inputFieldHintText}> {HintText} </label>}
         </div>
     );
 };
