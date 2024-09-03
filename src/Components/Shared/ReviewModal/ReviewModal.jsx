@@ -30,6 +30,7 @@ const ReviewDetails = () => {
             <InputField 
                 InputFieldLabel="Review Title"
                 HintText=""
+                InputFieldPlaceholder="Enter Your Review Title"
             />
             <TextareaInputField 
                 Label="Review (690 Characters max)" 
