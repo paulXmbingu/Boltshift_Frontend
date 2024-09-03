@@ -42,7 +42,7 @@ const ReviewDetails = () => {
                 <span className={styles.starRatingLabel}> Rating* </span>
                 <StarRating5 size={`40`} />
             </div>
-            <input type="file" />
+            {/* <input type="file" /> */}
         </div>
     );
 };
