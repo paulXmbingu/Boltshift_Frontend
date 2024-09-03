@@ -60,7 +60,8 @@ const InputField = ({
     htmlForInputFieldLabel,
     InputFieldLabel = "Input Label",
     Asterisk = "*",
-    HintText = "Hint Text"
+    HintText = "Hint Text",
+    InputFieldPlaceholder = "Place Holder Text"
 }) => {
     return (
         <div className={styles.inputFieldWrap}> 
@@ -69,7 +70,11 @@ const InputField = ({
                     {InputFieldLabel && <label htmlFor={htmlForInputFieldLabel} className={styles.inputFieldLabel}> {InputFieldLabel} </label>}
                     {Asterisk && <div className={styles.inputFieldAsterisk}> {Asterisk} </div>}
                 </div>
-                <input type="text" className={styles.inputField} />
+                <input  
+                    type="text" 
+                    className={styles.inputField}
+                    placeholder={InputFieldPlaceholder}
+                />
             </div>
             {HintText && <label htmlFor="" className={styles.inputFieldHintText}> {HintText} </label>}
         </div>
