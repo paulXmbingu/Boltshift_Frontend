@@ -1,51 +1,76 @@
-import React from "react";
-import { TextareaInputField } from "./Inputs";
-import "./Inputs.module.css";
+// TextareaInputField.stories.js
+
+import React from 'react';
+import { TextareaInputField } from './Inputs';
+import DefaultHelpIcon from "./Assets/help-circle.svg";
 
 export default {
-    title: 'Atomic/TextareaInputField',
-    component: TextareaInputField,
-    argTypes: {
-        label: { 
-            control: 'text', 
-            defaultValue: 'Your Label Here',
-            description: 'The label displayed above the textarea.'
-        },
-        placeholder: { 
-            control: 'text', 
-            defaultValue: 'Hint text here...',
-            description: 'The placeholder text shown inside the textarea before user input.' 
-        },
-        required: { 
-            control: 'boolean', 
-            defaultValue: true,
-            description: 'Determines if the textarea is required for form submission.' 
-        },
-        rows: { 
-            control: 'number', 
-            defaultValue: 8,
-            description: 'The number of visible text lines in the textarea.' 
-        },
-        cols: { 
-            control: 'number', 
-            defaultValue: 40,
-            description: 'The number of visible character columns in the textarea.' 
-        },
-        resize: { 
-            control: 'select', 
-            options: ['none', 'both', 'horizontal', 'vertical'], 
-            defaultValue: 'both',
-            description: 'Allows control over textarea resizing.' 
-        },
-        hintText: { 
-            control: 'text', 
-            defaultValue: 'This is a hint text to help user.',
-            description: 'Helper text displayed below the textarea to guide the user.' 
-        },
-    },
+  title: 'Components/TextareaInputField',
+  component: TextareaInputField,
+  argTypes: {
+    Label: { control: 'text' },
+    Asterisk: { control: 'text' },
+    HelpIcon: { control: 'text' },
+    HintText: { control: 'text' },
+    TextArea: { control: 'text' },
+    PlaceHolderText: { control: 'text' },
+    maxLength: { control: 'number' },
+    minLength: { control: 'number' },
+    value: { control: 'text' },
+    col: { control: 'number' },
+    row: { control: 'number' },
+    HandleTextAreaChange: { action: 'changed' },
+    TextAreaID: { control: 'text' },
+    AriaLabel: { control: 'text' },
+    width: { control: 'text' },
+    height: { control: 'text' },
+    Resizeable: { control: 'boolean' },
+  },
+  args: {
+    Label: 'Description',
+    Asterisk: '*',
+    HelpIcon: DefaultHelpIcon,
+    HintText: 'Hint text.',
+    TextArea: 'TextArea',
+    PlaceHolderText: 'Place Holder Text',
+    col: 40,
+    row: 5,
+    width: '100%',
+    height: 'auto',
+    Resizeable: true,
+  },
 };
 
 const Template = (args) => <TextareaInputField {...args} />;
 
 export const Default = Template.bind({});
-Default.args = {};
+Default.args = {
+  value: '',
+};
+
+export const WithCustomLabel = Template.bind({});
+WithCustomLabel.args = {
+  Label: 'Custom Label',
+  value: '',
+};
+
+export const WithHelpIcon = Template.bind({});
+WithHelpIcon.args = {
+  HelpIcon: DefaultHelpIcon,
+  value: '',
+};
+
+export const DisabledResize = Template.bind({});
+DisabledResize.args = {
+  Resizeable: false,
+  value: '',
+};
+
+// Documentation (optional)
+Default.parameters = {
+  docs: {
+    description: {
+      component: 'This component renders a customizable textarea input field with label, hint text, and an optional help icon.',
+    },
+  },
+};
