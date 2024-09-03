@@ -174,6 +174,22 @@
     /* Shadows/shadow-xs */
     box-shadow: 0px 1px 2px 0px var(--Colors-Effects-Shadows-shadow-xs, rgba(16, 24, 40, 0.05));
     outline: none;
+    transition: all ease-in-out 200ms;
+}
+
+.inputField:hover,
+.inputField:focus {
+    display: flex;
+    padding: var(--spacing-md, 8px) var(--spacing-lg, 12px);
+    align-items: center;
+    gap: var(--spacing-md, 8px);
+    align-self: stretch;
+    border-radius: var(--radius-md, 8px);
+    border: 1px solid var(--Colors-Border-border-brand, #EA275E);
+    background: var(--Colors-Background-bg-primary, #FFF);
+
+    /* Shadows/shadow-xs */
+    box-shadow: 0px 1px 2px 0px var(--Colors-Effects-Shadows-shadow-xs, rgba(16, 24, 40, 0.05));
 }
 
 .inputFieldHintText {
