@@ -161,6 +161,12 @@
     line-height: var(--Line-height-text-sm, 20px); /* 142.857% */
 }
 
+
+.inputFieldWrap {
+    position: relative;
+    width: 100%;
+}
+
 .inputField {
     display: flex;
     padding: var(--spacing-md, 8px) var(--spacing-lg, 12px);
@@ -187,6 +193,8 @@
     line-clamp: 1;
     outline: none;
     transition: all ease-in-out 200ms;
+    position: relative;
+    padding-right: 40px;
 }
 
 .inputField:hover,
@@ -202,6 +210,17 @@
 
     /* Shadows/shadow-xs */
     box-shadow: 0px 1px 2px 0px var(--Colors-Effects-Shadows-shadow-xs, rgba(16, 24, 40, 0.05));
+}
+
+.inputFieldTailingIcon {
+    position: absolute;
+    right: var(--spacing-lg, 12px);
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .inputFieldHintText {
