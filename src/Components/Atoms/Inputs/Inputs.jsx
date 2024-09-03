@@ -63,7 +63,14 @@ const InputField = ({
     HintText = "Hint Text",
     InputFieldTailingIcon = DefaultHelpIcon,
     InputFieldLeadingIcon = DefaultHelpIcon,
-    InputFieldPlaceholder = "Place Holder Text"
+    InputFieldPlaceholder = "Place Holder Text",
+    maxLength,
+    minLength,
+    HandleTextAreaChange,
+    InputFieldID,
+    AriaLabel,
+    width,
+    height
 }) => {
     return (
         <div className={styles.inputFieldWrap}> 
@@ -77,6 +84,12 @@ const InputField = ({
                         type="text" 
                         className={styles.inputField}
                         placeholder={InputFieldPlaceholder}
+                        maxLength={maxLength}
+                        minLength={minLength}
+                        onChange={HandleTextAreaChange}
+                        id={InputFieldID}
+                        aria-label={AriaLabel}
+                        style={{ width:width, height:height }}
                     />
                     {InputFieldLeadingIcon && <div className={styles.inputFieldLeadingIcon}> <img src={InputFieldLeadingIcon} alt="Input Field Leading Icon" /> </div>}
                     {InputFieldTailingIcon && <div className={styles.inputFieldTailingIcon}> <img src={InputFieldTailingIcon} alt="Input Field Tailing Icon" /> </div>}
