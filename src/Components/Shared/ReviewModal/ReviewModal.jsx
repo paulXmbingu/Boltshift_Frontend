@@ -1,7 +1,7 @@
 import React from "react";
 import styles from './ReviewModal.module.css';
 import { Btn_Pri_XL } from "../../Atoms/Button";
-import { Star, StarBackground, StarRating5 } from "../../Molecules/StarRating";
+import { StarRating5 } from "../../Molecules/StarRating";
 import { InputField, TextareaInputField } from "../../Atoms/Inputs";
 
 const ReviewModalDesktop = ({ onClose }) => {
@@ -27,7 +27,7 @@ const ModalHeader = () => {
 const ReviewDetails = () => {
     return (
         <div className={styles.reviewDetails}>
-            <InputField 
+            <InputField
                 InputFieldLabel="Review Title"
                 HintText=""
                 InputFieldPlaceholder="Enter Your Review Title"
