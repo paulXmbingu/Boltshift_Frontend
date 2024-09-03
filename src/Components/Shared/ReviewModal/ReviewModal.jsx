@@ -2,7 +2,7 @@ import React from "react";
 import styles from './ReviewModal.module.css';
 import { Btn_Pri_XL } from "../../Atoms/Button";
 import { Star, StarBackground, StarRating5 } from "../../Molecules/StarRating";
-import { TextareaInputField } from "../../Atoms/Inputs";
+import { InputField, TextareaInputField } from "../../Atoms/Inputs";
 import { Star_Yellow_100pc } from "../../Atoms/MisIcons/MisIcons";
 
 const ReviewModalDesktop = ({ onClose }) => {
@@ -28,7 +28,7 @@ const ModalHeader = () => {
 const ReviewDetails = () => {
     return (
         <div className={styles.reviewDetails}>
-            <div> Review Title </div>
+            <InputField />
             <TextareaInputField 
                 Label="Review (690 Characters max)" 
                 HelpIcon={``}

@@ -1,1 +1,6 @@
-export { TextareaInputField } from './Inputs';
+export { 
+    TextareaInputField,
+    InputField
+} 
+from
+    './Inputs';

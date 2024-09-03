@@ -115,3 +115,75 @@
     font-weight: 400;
     line-height: var(--Line-height-text-sm, 20px); /* 142.857% */
 }
+
+/* INPUT FIELD */
+.inputFieldWrap {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--spacing-sm, 6px);
+}
+
+.labelInputFieldWrap {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--spacing-sm, 6px);
+    align-self: stretch;
+}
+
+.labelFieldWapper {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--spacing-xxs, 2px);
+}
+
+.inputFieldLabel {
+    color: var(--colors-text-text-secondary-700, #344054);
+
+    /* Text sm/Medium */
+    font-family: var(--Font-family-font-family-body, Inter);
+    font-size: var(--Font-size-text-sm, 14px);
+    font-style: normal;
+    font-weight: 500;
+    line-height: var(--Line-height-text-sm, 20px); /* 142.857% */
+}
+
+.inputFieldAsterisk {
+    color: var(--colors-text-text-brand-tertiary-600, #DA154D);
+
+    /* Text sm/Medium */
+    font-family: var(--Font-family-font-family-body, Inter);
+    font-size: var(--Font-size-text-sm, 14px);
+    font-style: normal;
+    font-weight: 500;
+    line-height: var(--Line-height-text-sm, 20px); /* 142.857% */
+}
+
+.inputField {
+    display: flex;
+    padding: var(--spacing-md, 8px) var(--spacing-lg, 12px);
+    align-items: center;
+    gap: var(--spacing-md, 8px);
+    align-self: stretch;
+    border-radius: var(--radius-md, 8px);
+    border: 1px solid var(--Colors-Border-border-primary, #D0D5DD);
+    background: var(--Colors-Background-bg-primary, #FFF);
+
+    /* Shadows/shadow-xs */
+    box-shadow: 0px 1px 2px 0px var(--Colors-Effects-Shadows-shadow-xs, rgba(16, 24, 40, 0.05));
+    outline: none;
+}
+
+.inputFieldHintText {
+    align-self: stretch;
+    color: var(--colors-text-text-tertiary-600, #475467);
+
+    /* Text sm/Regular */
+    font-family: var(--Font-family-font-family-body, Inter);
+    font-size: var(--Font-size-text-sm, 14px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: var(--Line-height-text-sm, 20px); /* 142.857% */
+}
