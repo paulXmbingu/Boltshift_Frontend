@@ -20,10 +20,10 @@ const StarBackground = () => {
     );
 };
 
-const StarRating1 = () => {
+const StarRating1 = ( {size} ) => {
     return (
         <div className={styles.starRating}>
-            <Star />
+            <Star_Yellow_100pc size={size} />
             <StarBackground />
             <StarBackground />
             <StarBackground />
@@ -32,11 +32,11 @@ const StarRating1 = () => {
     );
 };
 
-const StarRating2 = () => {
+const StarRating2 = ( {size} ) => {
     return (
         <div className={styles.starRating}>
-            <Star />
-            <Star />
+            <Star_Yellow_100pc size={size} />
+            <Star_Yellow_100pc size={size} />
             <StarBackground />
             <StarBackground />
             <StarBackground />
@@ -44,25 +44,25 @@ const StarRating2 = () => {
     );
 };
 
-const StarRating3 = () => {
+const StarRating3 = ( {size} ) => {
     return (
         <div className={styles.starRating}>
-            <Star />
-            <Star />
-            <Star />
+            <Star_Yellow_100pc size={size} />
+            <Star_Yellow_100pc size={size} />
+            <Star_Yellow_100pc size={size} />
             <StarBackground />
             <StarBackground />
         </div>
     );
 };
 
-const StarRating4 = () => {
+const StarRating4 = ( {size} ) => {
     return (
         <div className={styles.starRating}>
-            <Star />
-            <Star />
-            <Star />
-            <Star />
+            <Star_Yellow_100pc size={size} />
+            <Star_Yellow_100pc size={size} />
+            <Star_Yellow_100pc size={size} />
+            <Star_Yellow_100pc size={size} />
             <StarBackground />
         </div>
     );
