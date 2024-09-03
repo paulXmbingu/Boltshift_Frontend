@@ -19,8 +19,8 @@ const TextareaInputField = ({
     HandleTextAreaChange,
     TextAreaID,
     AriaLabel,
-    width = "auto" ,
-    height = "auto",
+    width = "100%" ,
+    height = "100%",
     Resizeable = true
 }) => {
     return (
@@ -66,7 +66,8 @@ const InputField = ({
     InputFieldPlaceholder = "Place Holder Text",
     maxLength,
     minLength,
-    HandleTextAreaChange,
+    HandleInputFieldChange,
+    HandleInputFieldClick,
     InputFieldID,
     AriaLabel,
     width,
@@ -86,7 +87,8 @@ const InputField = ({
                         placeholder={InputFieldPlaceholder}
                         maxLength={maxLength}
                         minLength={minLength}
-                        onChange={HandleTextAreaChange}
+                        onChange={HandleInputFieldChange}
+                        onClick={HandleInputFieldClick}
                         id={InputFieldID}
                         aria-label={AriaLabel}
                         style={{ width:width, height:height }}

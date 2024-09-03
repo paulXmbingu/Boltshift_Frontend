@@ -14,6 +14,7 @@
 
 .reviewModalDesktopWrap {
     display: flex;
+    width: 560px;
     max-width: var(--width-md, 560px);
     max-height: var(--Base-4-Premitives-201, 804px);
     flex-direction: column;
