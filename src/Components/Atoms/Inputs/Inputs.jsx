@@ -62,6 +62,7 @@ const InputField = ({
     Asterisk = "*",
     HintText = "Hint Text",
     InputFieldTailingIcon = DefaultHelpIcon,
+    InputFieldLeadingIcon = DefaultHelpIcon,
     InputFieldPlaceholder = "Place Holder Text"
 }) => {
     return (
@@ -77,6 +78,7 @@ const InputField = ({
                         className={styles.inputField}
                         placeholder={InputFieldPlaceholder}
                     />
+                    {InputFieldLeadingIcon && <div className={styles.inputFieldLeadingIcon}> <img src={InputFieldLeadingIcon} alt="Input Field Leading Icon" /> </div>}
                     {InputFieldTailingIcon && <div className={styles.inputFieldTailingIcon}> <img src={InputFieldTailingIcon} alt="Input Field Tailing Icon" /> </div>}
                 </div>
             </div>
