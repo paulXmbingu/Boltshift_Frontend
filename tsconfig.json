@@ -2,7 +2,7 @@
   "compilerOptions": {
     /* Visit https://aka.ms/tsconfig to read more about this file */
 
-    /* Projects */
+    // /* Projects */
     // "incremental": true,                              /* Save .tsbuildinfo files to allow for incremental compilation of projects. */
     // "composite": true,                                /* Enable constraints that allow a TypeScript project to be used with project references. */
     // "tsBuildInfoFile": "./.tsbuildinfo",              /* Specify the path to .tsbuildinfo incremental compilation file. */
@@ -50,7 +50,7 @@
     // "maxNodeModuleJsDepth": 1,                        /* Specify the maximum folder depth used for checking JavaScript files from 'node_modules'. Only applicable with 'allowJs'. */
 
     /* Emit */
-    // "declaration": true,                              /* Generate .d.ts files from TypeScript and JavaScript files in your project. */
+    // "declaration": true,                              /* Generate .d.ts files from TypeScript and JavaScript files. */
     // "declarationMap": true,                           /* Create sourcemaps for d.ts files. */
     // "emitDeclarationOnly": true,                      /* Only output d.ts files and not JavaScript files. */
     // "sourceMap": true,                                /* Create source map files for emitted JavaScript files. */
@@ -89,22 +89,40 @@
     // "strictBindCallApply": true,                      /* Check that the arguments for 'bind', 'call', and 'apply' methods match the original function. */
     // "strictPropertyInitialization": true,             /* Check for class properties that are declared but not set in the constructor. */
     // "strictBuiltinIteratorReturn": true,              /* Built-in iterators are instantiated with a 'TReturn' type of 'undefined' instead of 'any'. */
-    // "noImplicitThis": true,                           /* Enable error reporting when 'this' is given the type 'any'. */
-    // "useUnknownInCatchVariables": true,               /* Default catch clause variables as 'unknown' instead of 'any'. */
-    // "alwaysStrict": true,                             /* Ensure 'use strict' is always emitted. */
-    // "noUnusedLocals": true,                           /* Enable error reporting when local variables aren't read. */
-    // "noUnusedParameters": true,                       /* Raise an error when a function parameter isn't read. */
-    // "exactOptionalPropertyTypes": true,               /* Interpret optional property types as written, rather than adding 'undefined'. */
-    // "noImplicitReturns": true,                        /* Enable error reporting for codepaths that do not explicitly return in a function. */
-    // "noFallthroughCasesInSwitch": true,               /* Enable error reporting for fallthrough cases in switch statements. */
-    // "noUncheckedIndexedAccess": true,                 /* Add 'undefined' to a type when accessed using an index. */
-    // "noImplicitOverride": true,                       /* Ensure overriding members in derived classes are marked with an override modifier. */
-    // "noPropertyAccessFromIndexSignature": true,       /* Enforces using indexed accessors for keys declared using an indexed type. */
-    // "allowUnusedLabels": true,                        /* Disable error reporting for unused labels. */
-    // "allowUnreachableCode": true,                     /* Disable error reporting for unreachable code. */
+    // "noImplicitThis": true,                           /* Raise an error on 'this' expressions with an implicit 'any' type. */
+    // "noImplicitReturns": true,                        /* Raise an error if a function has some code paths that do not return a value. */
+    // "noFallthroughCasesInSwitch": true,               /* Report errors for fall-through cases in switch statements. */
+    // "noUncheckedIndexedAccess": true,                 /* Report errors when indexing arrays or tuples with an out-of-bounds number. */
+    // "useUnknownInCatchVariables": true,               /* Force catch variables to be of type 'unknown' instead of 'any'. */
 
-    /* Completeness */
-    // "skipDefaultLibCheck": true,                      /* Skip type checking .d.ts files that are included with TypeScript. */
-    "skipLibCheck": true                                 /* Skip type checking all .d.ts files. */
-  }
+    /* Debugging */
+    // "preserveConstEnums": true,                       /* Disable erasing 'const enum' declarations in generated code. */
+    // "sourceMap": true,                                /* Generate source maps for the emitted JavaScript. */
+    // "inlineSourceMap": true,                          /* Include source maps inside the emitted JavaScript. */
+    // "inlineSources": true,                            /* Include source code in the sourcemaps inside the emitted JavaScript. */
+
+    /* Additional */
+    // "skipDefaultLibCheck": true,                      /* Skip type checking of all default library declaration files. */
+    // "skipLibCheck": true,                            /* Skip type checking of declaration files. */
+    // "allowSyntheticDefaultImports": true,             /* Allow 'import x from y' when a module doesn't have a default export. */
+    // "esModuleInterop": true,                          /* Enable emitting helper functions for CommonJS imports and exports. */
+    // "useUnknownInCatchVariables": true,               /* Force catch variables to be of type 'unknown' instead of 'any'. */
+    // "noEmit": true,                                  /* Disable emitting files from a compilation. */
+    // "noEmitOnError": true,                            /* Disable emitting files if any type checking errors are reported. */
+    // "preserveConstEnums": true,                       /* Disable erasing 'const enum' declarations in generated code. */
+    // "downlevelIteration": true,                       /* Emit more compliant, but verbose and less performant JavaScript for iteration. */
+    // "emitDeclarationOnly": true,                      /* Only output declaration files and not JavaScript files. */
+    // "preserveSymlinks": true,                         /* Disable resolving symlinks to their real path. */
+    // "disableSourceOfProjectReferenceRedirect": true,  /* Disable preferring source files instead of declaration files when referencing composite projects. */
+
+    "moduleResolution": "node",                          /* Use Node.js module resolution strategy. */
+    "allowJs": true,                                    /* Allow JavaScript files to be compiled. */
+    "resolveJsonModule": true,                          /* Allow importing .json files. */
+    "noEmit": false,                                    /* Ensure that files are emitted. */
+    "emitDeclarationOnly": false,                       /* Allow generating declaration files with emitting JavaScript files. */
+    "outDir": "./dist",                                 /* Directory for output files. */
+    "rootDir": "./src"                                  /* Directory of input files. */
+  },
+  "include": ["src/**/*"],                              /* Specify files to include in the compilation. */
+  "exclude": ["node_modules", "**/*.spec.ts"]           /* Specify files to exclude from the compilation. */
 }
