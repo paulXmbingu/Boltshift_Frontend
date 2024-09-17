@@ -7,16 +7,11 @@ Welcome to the frontend codebase of Boltshift Marketplace – built using React.
 
 ### Setup
 
-1. Installing and updating Node.js & Node Package Manager [LTS ONLY]
-   ```
-   https://nodejs.org/en
-   ```
-
-2. Cloning repository: 
+1. Cloning repository: 
    ```
    git clone https://github.com/paulXmbingu/Boltshift-Frontend
    ```
-3. Installing dependencies:
+2. Installing dependencies:
    ```
    npm i
    ```
@@ -30,8 +25,6 @@ Welcome to the frontend codebase of Boltshift Marketplace – built using React.
    ```
    npm run storybook
    ```
-
-3. Ctrl or Cmd click the links on the terminal to view the app or storybook in your browser eg. http://192.168.1.101:5173/ || http://192.168.1.101:6006/
 
 ## Features
 - **User Authentication**: Secure user accounts and authentication to manage profiles and track order history.
