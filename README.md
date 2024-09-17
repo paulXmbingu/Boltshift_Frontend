@@ -7,7 +7,10 @@ Welcome to the frontend codebase of Boltshift Marketplace – built using React.
 
 ### Setup
 
-1. Installing and updating [Node.js & Node Package Manager](https://nodejs.org/en) [LTS ONLY]
+1. Installing and updating Node.js & Node Package Manager [LTS ONLY]
+   ```
+   https://nodejs.org/en
+   ```
 
 2. Cloning repository: 
    ```
