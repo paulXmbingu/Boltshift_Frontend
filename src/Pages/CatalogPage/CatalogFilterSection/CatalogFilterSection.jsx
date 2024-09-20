@@ -1,195 +1,50 @@
-import React from 'react'
-import styles from "./CatalogFilterSection.module.css"
+import React from 'react';
+import styles from './CatalogFilterSection.module.css';
 import { FilterHeader, FilterLabel, FilterSubHeader } from '../../../Components/Shared/Filters/Filters';
-import plusSquare from "./Assets/plus-square.svg"
-import chevrondown from "./Assets/chevron-down.svg"
-
 
 const CatalogFilterSection = () => {
+  const categories = [
+    {
+      subHeader: 'Automotive',
+      filters: ['Car Care & Detailing', 'Oil & Fluids', 'Tires & Wheels', 'Performance Parts', 'Exterior Accessories'],
+    },
+    {
+      subHeader: 'Electronics',
+      filters: ['TV & Video', 'Home Audio', 'Wearable Technology', 'Camera & Photo', 'Video Games'],
+    },
+    {
+      subHeader: 'Home & Kitchen',
+      filters: ['Furniture', 'Kitchen & Dining', 'Bedding', 'Bath', 'Home Décor'],
+    },
+    // Add more categories as needed
+  ];
+
   return (
     <div className={styles.CatalogFilterSection}>
-      <HeaderStack 
-        FilterHeaderLabel={`Categories`}
-        FilterSubHeaderLabel={`Automotive`}
-        FilterLabel1={`Car Care & Detailing`}
-      />
+      <HeaderStack FilterHeaderLabel="Categories" categories={categories} />
     </div>
   );
 };
 
-const HeaderStack = ({ 
-  FilterHeaderLabel, 
-  FilterSubHeaderLabel, 
-  FilterLabel1, FilterLabel2, FilterLabel3, FilterLabel4, FilterLabel5, 
-  FilterLabel6, FilterLabel7, FilterLabel8, FilterLabel9, FilterLabel10 
-}) => {
+const HeaderStack = ({ FilterHeaderLabel, categories }) => {
   return (
     <div className={styles.headerStackWrap}>
       <FilterHeader FilterHeaderLabel={FilterHeaderLabel} />
-      <SubHeaderStack 
-        FilterSubHeaderLabel={FilterSubHeaderLabel} 
-        FilterLabel1={FilterLabel1}
-        FilterLabel2={FilterLabel2}
-        FilterLabel3={FilterLabel3}
-        FilterLabel4={FilterLabel4}
-        FilterLabel5={FilterLabel5}
-        FilterLabel6={FilterLabel6}
-        FilterLabel7={FilterLabel7}
-        FilterLabel8={FilterLabel8}
-        FilterLabel9={FilterLabel9}
-        FilterLabel10={FilterLabel10}
-      />
-      <SubHeaderStack 
-        FilterSubHeaderLabel={FilterSubHeaderLabel} 
-        FilterLabel1={FilterLabel1}
-        FilterLabel2={FilterLabel2}
-        FilterLabel3={FilterLabel3}
-        FilterLabel4={FilterLabel4}
-        FilterLabel5={FilterLabel5}
-        FilterLabel6={FilterLabel6}
-        FilterLabel7={FilterLabel7}
-        FilterLabel8={FilterLabel8}
-        FilterLabel9={FilterLabel9}
-        FilterLabel10={FilterLabel10}
-      />
-      <SubHeaderStack 
-        FilterSubHeaderLabel={FilterSubHeaderLabel} 
-        FilterLabel1={FilterLabel1}
-        FilterLabel2={FilterLabel2}
-        FilterLabel3={FilterLabel3}
-        FilterLabel4={FilterLabel4}
-        FilterLabel5={FilterLabel5}
-        FilterLabel6={FilterLabel6}
-        FilterLabel7={FilterLabel7}
-        FilterLabel8={FilterLabel8}
-        FilterLabel9={FilterLabel9}
-        FilterLabel10={FilterLabel10}
-      />
-      <SubHeaderStack 
-        FilterSubHeaderLabel={FilterSubHeaderLabel} 
-        FilterLabel1={FilterLabel1}
-        FilterLabel2={FilterLabel2}
-        FilterLabel3={FilterLabel3}
-        FilterLabel4={FilterLabel4}
-        FilterLabel5={FilterLabel5}
-        FilterLabel6={FilterLabel6}
-        FilterLabel7={FilterLabel7}
-        FilterLabel8={FilterLabel8}
-        FilterLabel9={FilterLabel9}
-        FilterLabel10={FilterLabel10}
-      />
-      <SubHeaderStack 
-        FilterSubHeaderLabel={FilterSubHeaderLabel} 
-        FilterLabel1={FilterLabel1}
-        FilterLabel2={FilterLabel2}
-        FilterLabel3={FilterLabel3}
-        FilterLabel4={FilterLabel4}
-        FilterLabel5={FilterLabel5}
-        FilterLabel6={FilterLabel6}
-        FilterLabel7={FilterLabel7}
-        FilterLabel8={FilterLabel8}
-        FilterLabel9={FilterLabel9}
-        FilterLabel10={FilterLabel10}
-      />
-      <SubHeaderStack 
-        FilterSubHeaderLabel={FilterSubHeaderLabel} 
-        FilterLabel1={FilterLabel1}
-        FilterLabel2={FilterLabel2}
-        FilterLabel3={FilterLabel3}
-        FilterLabel4={FilterLabel4}
-        FilterLabel5={FilterLabel5}
-        FilterLabel6={FilterLabel6}
-        FilterLabel7={FilterLabel7}
-        FilterLabel8={FilterLabel8}
-        FilterLabel9={FilterLabel9}
-        FilterLabel10={FilterLabel10}
-      />
-      <SubHeaderStack 
-        FilterSubHeaderLabel={FilterSubHeaderLabel} 
-        FilterLabel1={FilterLabel1}
-        FilterLabel2={FilterLabel2}
-        FilterLabel3={FilterLabel3}
-        FilterLabel4={FilterLabel4}
-        FilterLabel5={FilterLabel5}
-        FilterLabel6={FilterLabel6}
-        FilterLabel7={FilterLabel7}
-        FilterLabel8={FilterLabel8}
-        FilterLabel9={FilterLabel9}
-        FilterLabel10={FilterLabel10}
-      />
-      <SubHeaderStack 
-        FilterSubHeaderLabel={FilterSubHeaderLabel} 
-        FilterLabel1={FilterLabel1}
-        FilterLabel2={FilterLabel2}
-        FilterLabel3={FilterLabel3}
-        FilterLabel4={FilterLabel4}
-        FilterLabel5={FilterLabel5}
-        FilterLabel6={FilterLabel6}
-        FilterLabel7={FilterLabel7}
-        FilterLabel8={FilterLabel8}
-        FilterLabel9={FilterLabel9}
-        FilterLabel10={FilterLabel10}
-      />
-      <SubHeaderStack 
-        FilterSubHeaderLabel={FilterSubHeaderLabel} 
-        FilterLabel1={FilterLabel1}
-        FilterLabel2={FilterLabel2}
-        FilterLabel3={FilterLabel3}
-        FilterLabel4={FilterLabel4}
-        FilterLabel5={FilterLabel5}
-        FilterLabel6={FilterLabel6}
-        FilterLabel7={FilterLabel7}
-        FilterLabel8={FilterLabel8}
-        FilterLabel9={FilterLabel9}
-        FilterLabel10={FilterLabel10}
-      />
-      <SubHeaderStack 
-        FilterSubHeaderLabel={FilterSubHeaderLabel} 
-        FilterLabel1={FilterLabel1}
-        FilterLabel2={FilterLabel2}
-        FilterLabel3={FilterLabel3}
-        FilterLabel4={FilterLabel4}
-        FilterLabel5={FilterLabel5}
-        FilterLabel6={FilterLabel6}
-        FilterLabel7={FilterLabel7}
-        FilterLabel8={FilterLabel8}
-        FilterLabel9={FilterLabel9}
-        FilterLabel10={FilterLabel10}
-      />
-      <SubHeaderStack 
-        FilterSubHeaderLabel={FilterSubHeaderLabel} 
-        FilterLabel1={FilterLabel1}
-        FilterLabel2={FilterLabel2}
-        FilterLabel3={FilterLabel3}
-        FilterLabel4={FilterLabel4}
-        FilterLabel5={FilterLabel5}
-        FilterLabel6={FilterLabel6}
-        FilterLabel7={FilterLabel7}
-        FilterLabel8={FilterLabel8}
-        FilterLabel9={FilterLabel9}
-        FilterLabel10={FilterLabel10}
-      />
+      {categories.map((category, index) => (
+        <SubHeaderStack key={index} FilterSubHeaderLabel={category.subHeader} filters={category.filters} />
+      ))}
     </div>
   );
 };
 
-
-
-const SubHeaderStack = ({ FilterSubHeaderLabel, FilterLabel1, FilterLabel2, FilterLabel3, FilterLabel4, FilterLabel5, FilterLabel6, FilterLabel7, FilterLabel8, FilterLabel9, FilterLabel10 }) => {
+const SubHeaderStack = ({ FilterSubHeaderLabel, filters }) => {
   return (
     <div className={styles.subHeaderStackWrap}>
       <FilterSubHeader FilterSubHeaderLabel={FilterSubHeaderLabel} />
       <div className={styles.filtersLists}>
-        <FilterLabel FilterLabel={FilterLabel1} />
-        <FilterLabel FilterLabel={FilterLabel2}  />
-        <FilterLabel FilterLabel={FilterLabel3}  />
-        <FilterLabel FilterLabel={FilterLabel4}  />
-        <FilterLabel FilterLabel={FilterLabel5}  />
-        <FilterLabel FilterLabel={FilterLabel6}  />
-        <FilterLabel FilterLabel={FilterLabel7}  />
-        <FilterLabel FilterLabel={FilterLabel8}  />
-        <FilterLabel FilterLabel={FilterLabel9}  />
-        <FilterLabel FilterLabel={FilterLabel10} />
+        {filters.map((filter, index) => (
+          <FilterLabel key={index} FilterLabel={filter} />
+        ))}
       </div>
     </div>
   );
