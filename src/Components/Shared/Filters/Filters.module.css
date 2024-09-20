@@ -1,7 +1,7 @@
 /* FILLTER HEADER */
 .filterHeaderWrap {
     display: inline-flex;
-    width: 320px;
+    width: 100%;
     min-width: var(--spacing-system-guides-corner-radius-80, 320px);
     max-width: var(--spacing-system-guides-corner-radius-80, 320px);
     padding: var(--spacing-system-guides-corner-radius-2, 8px) var(--spacing-system-guides-corner-radius-2, 8px) var(--spacing-system-guides-corner-radius-2, 8px) var(--spacing-system-guides-corner-radius-3, 12px);
@@ -53,8 +53,8 @@
 /* FILTER SUBHEADER */
 .filterSubHeaderWrap {
     display: flex;
-    width: 320px;
-    min-width: var(--spacing-system-guides-corner-radius-80, 320px);
+    width: 100%;
+    /* min-width: var(--spacing-system-guides-corner-radius-80, 320px); */
     max-width: var(--spacing-system-guides-corner-radius-80, 320px);
     padding: var(--spacing-system-guides-corner-radius-2, 8px);
     align-items: center;
@@ -112,9 +112,8 @@
 /* FILTER LABEL */
 .filterLabelWrap {
     display: inline-flex;
-    width: 320px;
-    min-width: var(--spacing-system-guides-corner-radius-80, 320px);
-    max-width: var(--spacing-system-guides-corner-radius-80, 320px);
+    /* min-width: var(--spacing-system-guides-corner-radius-80, 320px); */
+    /* max-width: var(--spacing-system-guides-corner-radius-80, 320px); */
     padding: var(--spacing-system-guides-corner-radius-1, 4px) var(--spacing-system-guides-corner-radius-2, 8px) var(--spacing-system-guides-corner-radius-1, 4px) var(--spacing-system-guides-corner-radius-12, 48px);
     align-items: center;
     gap: 4px;
