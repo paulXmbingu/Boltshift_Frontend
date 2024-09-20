@@ -19,21 +19,6 @@ const CatalogFilterSection = () => {
         'Tools & Equipment',
       ],
     },
-    {
-      subHeader: 'Baby',
-      filters: [
-        'Activity & Entertainment',
-        'Apparel & Accessories',
-        'Baby & Toddler',
-        'Toys Baby',
-        'Care Baby Stationery',
-        'Diapering Feeding Gifts',
-        'Nursery Potty Training',
-        'Pregnancy & Maternity Safety',
-        'Baby Furniture',
-        'Baby Monitors',
-      ],
-    },
   ];
   
   return (
