@@ -6,22 +6,42 @@ const CatalogFilterSection = () => {
   const categories = [
     {
       subHeader: 'Automotive',
-      filters: ['Car Care & Detailing', 'Oil & Fluids', 'Tires & Wheels', 'Performance Parts', 'Exterior Accessories'],
+      filters: [
+        'Car Care',
+        'Electronics & Accessories',
+        'Exterior Accessories',
+        'Lights & Lighting Accessories',
+        'Interior Accessories',
+        'Motorcycle & Power Sports',
+        'Oils & Fluids',
+        'Paint & Paint',
+        'Tires & Wheels',
+        'Tools & Equipment',
+      ],
     },
     {
-      subHeader: 'Electronics',
-      filters: ['TV & Video', 'Home Audio', 'Wearable Technology', 'Camera & Photo', 'Video Games'],
+      subHeader: 'Baby',
+      filters: [
+        'Activity & Entertainment',
+        'Apparel & Accessories',
+        'Baby & Toddler',
+        'Toys Baby',
+        'Care Baby Stationery',
+        'Diapering Feeding Gifts',
+        'Nursery Potty Training',
+        'Pregnancy & Maternity Safety',
+        'Baby Furniture',
+        'Baby Monitors',
+      ],
     },
-    {
-      subHeader: 'Home & Kitchen',
-      filters: ['Furniture', 'Kitchen & Dining', 'Bedding', 'Bath', 'Home Décor'],
-    },
-    // Add more categories as needed
   ];
-
+  
   return (
     <div className={styles.CatalogFilterSection}>
-      <HeaderStack FilterHeaderLabel="Categories" categories={categories} />
+      <HeaderStack 
+        FilterHeaderLabel="Categories" 
+        categories={categories} 
+      />
     </div>
   );
 };
