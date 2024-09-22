@@ -24,19 +24,125 @@ const CatalogFilterSection = () => {
     {
       subHeader: 'Baby',
       filters: [
-        'Diapering',
-        'Feeding',
-        'Bathing & Skin Care',
-        'Baby Clothing',
-        'Baby Health Care',
-        'Baby Toys',
-        'Strollers & Car Seats',
-        'Nursery Furniture',
-        'Safety Products',
+        'Activity & Entertainment',
+        'Apparel & Accessories',
+        'Baby & Toddler',
+        'Toys Baby',
+        'Care Baby Stationery',
+        'Diapering Feeding Gifts',
+        'Nursery Potty Training',
+        'Pregnancy & Maternity Safety',
+        'Baby Furniture',
         'Baby Monitors',
       ],
     },
+    {
+      subHeader: 'Beauty and Personal Care',
+      filters: [
+        'Makeup',
+        'Skin Care',
+        'Hair Care',
+        'Fragrance',
+        'Foot, Hand & Nail Care',
+        'Tools & Accessories',
+        'Shave & Hair Removal',
+        'Personal Care Oral Care',
+        'Bath & Body',
+        'Beauty Tools',
+      ],
+    },
+    {
+      subHeader: 'Health & Household',
+      filters: [
+        'Baby & Child Care',
+        'Health Care',
+        'Household Supplies',
+        'Medical Supplies & Equipment',
+        'Oral Care',
+        'Personal Care',
+        'Sexual Wellness',
+        'Sports Nutrition',
+        'First Aid',
+        'Vitamins & Supplements',
+      ],
+    },
+    {
+      subHeader: 'Home & Kitchen',
+      filters: [
+        'Kids’ Home Store',
+        'Kitchen & Dining',
+        'Bedding',
+        'Bath',
+        'Furniture',
+        'Home Décor',
+        'Wall Art',
+        'Lighting & Ceiling Fans',
+        'Storage & Organization',
+        'Small Appliances',
+      ],
+    },
+    {
+      subHeader: 'Luggage',
+      filters: [
+        'Carry-ons',
+        'Backpacks',
+        'Garment Bags',
+        'Travel Totes',
+        'Luggage Sets',
+        'Laptop Bags',
+        'Suitcases',
+        'Kids Luggage',
+        'Duffel Bags',
+        'Luggage Accessories',
+      ],
+    },
+    {
+      subHeader: 'Men\'s Fashion',
+      filters: [
+        'Shorts',
+        'Shirts',
+        'Activewear',
+        'Hoodies & Sweatshirts',
+        'Jeans',
+        'Pants',
+        'Pajamas & Robes',
+        'Occupational & Workwear',
+        'Jackets & Coats',
+        'Socks & Underwear',
+      ],
+    },
+    {
+      subHeader: 'Women\'s Fashion',
+      filters: [
+        'Clothing',
+        'Shoes',
+        'Jewelry',
+        'Watches',
+        'Handbags',
+        'Accessories',
+        'Lingerie',
+        'Filter Label',
+        'Dresses',
+        'Scarves & Wraps',
+      ],
+    },
+    {
+      subHeader: 'Pet Supplies',
+      filters: [
+        'Dogs',
+        'Cats',
+        'Fish & Aquatic Pets',
+        'Birds',
+        'Horses',
+        'Reptiles & Amphibians',
+        'Small Animals',
+        'Filter Label',
+        'Pet Food',
+        'Pet Grooming',
+      ],
+    },
   ];
+  
   
   return (
     <div className={styles.CatalogFilterSection}>
@@ -81,7 +187,10 @@ const SubHeaderStack = ({ FilterSubHeaderLabel, filters }) => {
       />
       <div className={isExpanded? styles.filtersListsExpanded : styles.filtersListsCollapsed}>
         {filters.map((filter, index) => (
-          <FilterLabel key={index} FilterLabel={filter} />
+          <FilterLabel
+            key={index} 
+            FilterLabel={filter}
+          />
         ))
         }
       </div>
