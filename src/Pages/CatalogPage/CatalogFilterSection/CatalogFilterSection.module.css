@@ -8,7 +8,7 @@
     align-items: left;
     gap: var(--Base-4-Premitives-4, 16px);
     flex: 1 0 0;
-    border-radius: var(--spacing-system-guides-corner-radius-4, 16px);
+    /* border-radius: var(--spacing-system-guides-corner-radius-4, 16px); */
     background: var(--Colors-Background-bg-primary, #FFF);
 }
 
