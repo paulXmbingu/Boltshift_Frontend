@@ -7,6 +7,8 @@ function CheckOutPage() {
     const [isLargeScreen, setIsLargeScreen] = useState(typeof window !== "undefined" ? window.innerWidth > 768 : false);
 
     useEffect(() => {
+        window.scrollTo(0,0);
+
         const handleResize = () => {
             setIsLargeScreen(window.innerWidth > 768);
         };
@@ -18,7 +20,7 @@ function CheckOutPage() {
     return (
         <div className={styles.pageLayout}>
             {isLargeScreen ? <TopNavLarge /> : <TopNavSmall />}
-            <div>Checkout Page</div> {/* Corrected typo (added space between 'Checkout' and 'Page') */}
+            <div>Checkout Page</div>
             <Footer />
         </div>
     );
