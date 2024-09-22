@@ -30,4 +30,18 @@
     flex-direction: column;
     align-items: flex-start;
     gap: var(--spacing-system-guides-corner-radius-0, 0px);
+    transition: max-height 0.3s ease-out;
+    overflow: hidden;
+}
+
+.filtersListsCollapsed {
+    max-height: 0;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.filtersListsExpanded {
+    max-height: 100%;
+    opacity: 1;
+    visibility: visible;
 }
