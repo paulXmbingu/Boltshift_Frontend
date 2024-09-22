@@ -164,13 +164,13 @@ const HeaderStack = ({ FilterHeaderLabel, categories }) => {
   };
 
   return (
-    <div className={styles.headerStackWrap}>
+    <div className={isHeaderStackExpanded ? styles.headerStackWrapExpanded : styles.headerStackWrapCollapsed}>
       <FilterHeader
         FilterHeaderLabel={FilterHeaderLabel}
-        FilterHeaderIcon={isHeaderStackExpanded? MinusSquare : PlusSquare}
+        FilterHeaderIcon={isHeaderStackExpanded ? MinusSquare : PlusSquare}
         handleFilterHeader={handleFilterHeader}
       />
-      {categories.map((category, index) => (
+      {isHeaderStackExpanded && categories.map((category, index) => (
         <SubHeaderStack 
           key={index} 
           FilterSubHeaderLabel={category.subHeader} 
@@ -202,8 +202,7 @@ const SubHeaderStack = ({ FilterSubHeaderLabel, filters }) => {
             key={index} 
             FilterLabel={filter}
           />
-        ))
-        }
+        ))}
       </div>
     </div>
   );
