@@ -14,6 +14,8 @@ function CatalogPage() {
     const [isLargeScreen, setIsLargeScreen] = useState(typeof window !== "undefined" ? window.innerWidth > 768 : false);
 
     useEffect(() => {
+        window.scrollTo(0,0);
+
         const handleResize = () => {
             setIsLargeScreen(window.innerWidth > 768);
         };
