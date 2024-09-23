@@ -218,7 +218,7 @@ const BrandStack = () => {
     setBrandStackExpanded (!isBrandStackExpanded)
   };
 
-  const Brands = [
+  const brands = [
     `3M Company`,
     `Apple`,
     `Dell`,
@@ -239,8 +239,11 @@ const BrandStack = () => {
         handleFilterHeader={handleFilterHeader}
       />
       <div className={isBrandStackExpanded ? styles.filtersListsExpanded : styles.filtersListsCollapsed}>
-        {Brands.map (( Brands, index) => (
-          < FilterSubHeader key={index} FilterSubHeaderLabel={Brands} />
+        {brands.map (( brands, index) => (
+          <FilterSubHeader 
+            FilterSubHeaderLabel={brands}
+            key={index} 
+          />
         ))}
       </div>
     </div>
