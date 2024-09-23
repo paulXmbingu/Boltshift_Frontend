@@ -3,6 +3,8 @@ import styles from './CatalogFilterSection.module.css';
 import { FilterHeader, FilterLabel, FilterSubHeader } from '../../../Components/Shared/Filters/Filters';
 import ChevronUp from "./Assets/chevron-up.svg"
 import ChevronDown from "./Assets/chevron-down.svg"
+import MinusSquare from "./Assets/minus-square.svg"
+import PlusSquare from "./Assets/plus-square.svg"
 
 const CatalogFilterSection = () => {
   const categories = [
@@ -142,8 +144,7 @@ const CatalogFilterSection = () => {
       ],
     },
   ];
-  
-  
+
   return (
     <div className={styles.CatalogFilterSection}>
       <HeaderStack 
@@ -154,13 +155,22 @@ const CatalogFilterSection = () => {
   );
 };
 
+//HEADER STACK
 const HeaderStack = ({ FilterHeaderLabel, categories }) => {
+  const [isHeaderStackExpanded, setHeaderStackExpanded] = useState(true)
+
+  const handleFilterHeader = ()=> {
+    setHeaderStackExpanded(!isHeaderStackExpanded)
+  };
+
   return (
-    <div className={styles.headerStackWrap}>
+    <div className={isHeaderStackExpanded ? styles.headerStackWrapExpanded : styles.headerStackWrapCollapsed}>
       <FilterHeader
         FilterHeaderLabel={FilterHeaderLabel}
+        FilterHeaderIcon={isHeaderStackExpanded ? MinusSquare : PlusSquare}
+        handleFilterHeader={handleFilterHeader}
       />
-      {categories.map((category, index) => (
+      {isHeaderStackExpanded && categories.map((category, index) => (
         <SubHeaderStack 
           key={index} 
           FilterSubHeaderLabel={category.subHeader} 
@@ -171,6 +181,7 @@ const HeaderStack = ({ FilterHeaderLabel, categories }) => {
   );
 };
 
+//SUBHEADER STACK
 const SubHeaderStack = ({ FilterSubHeaderLabel, filters }) => {
   const [isExpanded, setIsExpanded] = useState (false);
 
@@ -191,8 +202,7 @@ const SubHeaderStack = ({ FilterSubHeaderLabel, filters }) => {
             key={index} 
             FilterLabel={filter}
           />
-        ))
-        }
+        ))}
       </div>
     </div>
   );
