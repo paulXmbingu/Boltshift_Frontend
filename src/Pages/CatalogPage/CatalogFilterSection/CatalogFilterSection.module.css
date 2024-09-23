@@ -9,6 +9,7 @@
     gap: var(--Base-4-Premitives-4, 16px);
     flex: 1 0 0;
     background: var(--Colors-Background-bg-primary, #FFF);
+    overflow: hidden;
 }
 
 .headerStackWrap {
