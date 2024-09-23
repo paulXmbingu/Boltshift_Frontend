@@ -44,3 +44,10 @@
     opacity: 1;
     visibility: visible;
 }
+
+/* BRAND STACK */
+.brandStackWrap {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}

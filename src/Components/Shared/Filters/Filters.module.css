@@ -54,7 +54,7 @@
 .filterSubHeaderWrap {
     display: flex;
     width: 100%;
-    /* min-width: var(--spacing-system-guides-corner-radius-80, 320px); */
+    min-width: var(--spacing-system-guides-corner-radius-80, 320px);
     max-width: var(--spacing-system-guides-corner-radius-80, 320px);
     padding: var(--spacing-system-guides-corner-radius-2, 8px);
     align-items: center;

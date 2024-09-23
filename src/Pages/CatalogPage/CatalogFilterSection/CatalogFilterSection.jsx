@@ -6,6 +6,7 @@ import ChevronDown from "./Assets/chevron-down.svg"
 import MinusSquare from "./Assets/minus-square.svg"
 import PlusSquare from "./Assets/plus-square.svg"
 
+//CATALOG FILTERS
 const CatalogFilterSection = () => {
   const categories = [
     {
@@ -151,6 +152,7 @@ const CatalogFilterSection = () => {
         FilterHeaderLabel="Categories" 
         categories={categories} 
       />
+      <BrandStack />
     </div>
   );
 };
@@ -202,6 +204,43 @@ const SubHeaderStack = ({ FilterSubHeaderLabel, filters }) => {
             key={index} 
             FilterLabel={filter}
           />
+        ))}
+      </div>
+    </div>
+  );
+};
+
+//BRANDSTACK
+const BrandStack = () => {
+  const [isBrandStackExpanded, setBrandStackExpanded] = useState(true);
+
+  const handleFilterHeader = ()=> {
+    setBrandStackExpanded (!isBrandStackExpanded)
+  };
+
+  const Brands = [
+    `3M Company`,
+    `Apple`,
+    `Dell`,
+    `Dyson`,
+    `Microsoft`,
+    `Nike`,
+    `Samsung`,
+    `Sony`,
+    `Under Armor`,
+    `Zeplin`,
+  ];
+
+  return (
+    <div className={styles.brandStackWrap}>
+      <FilterHeader
+        FilterHeaderLabel={`Brands`}
+        FilterHeaderIcon={isBrandStackExpanded? MinusSquare : PlusSquare }
+        handleFilterHeader={handleFilterHeader}
+      />
+      <div className={isBrandStackExpanded ? styles.filtersListsExpanded : styles.filtersListsCollapsed}>
+        {Brands.map (( Brands, index) => (
+          < FilterSubHeader key={index} FilterSubHeaderLabel={Brands} />
         ))}
       </div>
     </div>
