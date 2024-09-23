@@ -2,8 +2,8 @@
 .filterHeaderWrap {
     display: inline-flex;
     width: 100%;
-    min-width: var(--spacing-system-guides-corner-radius-80, 320px);
-    max-width: var(--spacing-system-guides-corner-radius-80, 320px);
+    /* min-width: var(--spacing-system-guides-corner-radius-80, 320px); */
+    /* max-width: var(--spacing-system-guides-corner-radius-80, 320px); */
     padding: var(--spacing-system-guides-corner-radius-2, 8px) var(--spacing-system-guides-corner-radius-2, 8px) var(--spacing-system-guides-corner-radius-2, 8px) var(--spacing-system-guides-corner-radius-3, 12px);
     align-items: center;
     gap: 10px;
@@ -54,8 +54,8 @@
 .filterSubHeaderWrap {
     display: flex;
     width: 100%;
-    min-width: var(--spacing-system-guides-corner-radius-80, 320px);
-    max-width: var(--spacing-system-guides-corner-radius-80, 320px);
+    /* min-width: var(--spacing-system-guides-corner-radius-80, 320px); */
+    /* max-width: var(--spacing-system-guides-corner-radius-80, 320px); */
     padding: var(--spacing-system-guides-corner-radius-2, 8px);
     align-items: center;
     gap: 4px;
@@ -120,6 +120,7 @@
     cursor: pointer;
     transition: all ease-in-out 200ms;
     overflow: hidden;
+    width: 100%;
 }
 
 .filterLabelWrap:hover {
