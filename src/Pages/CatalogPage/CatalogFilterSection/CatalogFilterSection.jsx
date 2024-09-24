@@ -5,6 +5,8 @@ import ChevronUp from "./Assets/chevron-up.svg"
 import ChevronDown from "./Assets/chevron-down.svg"
 import MinusSquare from "./Assets/minus-square.svg"
 import PlusSquare from "./Assets/plus-square.svg"
+import Tag from '../../../Components/Atoms/Tag';
+import { Badge_PillColor_SM_Blue, Badge_PillColor_SM_BlueLight, Badge_PillColor_SM_Brand, Badge_PillColor_SM_Error, Badge_PillColor_SM_Gray, Badge_PillColor_SM_GrayBlue, Badge_PillColor_SM_Indigo, Badge_PillColor_SM_LeadIcon_Success, Badge_PillColor_SM_Orange, Badge_PillColor_SM_Pink, Badge_PillColor_SM_Purple, Badge_PillColor_SM_Success, Badge_PillColor_SM_Warning } from '../../../Components/Atoms/Badge';
 
 //CATALOG FILTERS
 const CatalogFilterSection = () => {
@@ -148,11 +150,9 @@ const CatalogFilterSection = () => {
 
   return (
     <div className={styles.CatalogFilterSection}>
-      <HeaderStack 
-        FilterHeaderLabel="Categories" 
-        categories={categories} 
-      />
+      <HeaderStack FilterHeaderLabel="Categories" categories={categories} />
       <BrandStack />
+      <PopularTagsFilters />
     </div>
   );
 };
@@ -218,7 +218,7 @@ const BrandStack = () => {
     setBrandStackExpanded (!isBrandStackExpanded)
   };
 
-  const brands = [
+  const brand = [
     `3M Company`,
     `Apple`,
     `Dell`,
@@ -239,12 +239,43 @@ const BrandStack = () => {
         handleFilterHeader={handleFilterHeader}
       />
       <div className={isBrandStackExpanded ? styles.filtersListsExpanded : styles.filtersListsCollapsed}>
-        {brands.map (( brands, index) => (
+        {brand.map (( brands, index) => (
           <FilterSubHeader 
             FilterSubHeaderLabel={brands}
             key={index} 
           />
         ))}
+      </div>
+    </div>
+  );
+};
+
+//POPULAR TAGS FILTER STACK
+const PopularTagsFilters = () => {
+  return(
+    <div className={styles.popularTgasFilters}>
+      <FilterHeader 
+        FilterHeaderLabel={`Popular Tags`}
+        FilterHeaderIcon={MinusSquare}
+      />
+      <div className={styles.tagsGroup}>
+        <Badge_PillColor_SM_Blue BadgeLabel={`New Arrivals`} />
+        <Badge_PillColor_SM_BlueLight BadgeLabel={`Best Sellers`} />
+        <Badge_PillColor_SM_Brand BadgeLabel={`On Sale`} />
+        <Badge_PillColor_SM_Error BadgeLabel={`Free Shipping`} />
+        <Badge_PillColor_SM_Gray BadgeLabel={`Limited Edition`} />
+        <Badge_PillColor_SM_GrayBlue BadgeLabel={`Trending Now`} />
+        <Badge_PillColor_SM_Indigo BadgeLabel={`Exclusive`} />
+        <Badge_PillColor_SM_Orange BadgeLabel={`Top Rated`} />
+        <Badge_PillColor_SM_Pink BadgeLabel={`Featured Products`} />
+        <Badge_PillColor_SM_Purple BadgeLabel={`Back in Stock`} />
+        <Badge_PillColor_SM_Success BadgeLabel={`Seasonal Sale`} />
+        <Badge_PillColor_SM_Warning BadgeLabel={`Popular Items`} />
+        <Badge_PillColor_SM_Blue BadgeLabel={`Hot Deals`} />
+        <Badge_PillColor_SM_BlueLight BadgeLabel={`Last Chance`} />
+        <Badge_PillColor_SM_Brand BadgeLabel={`Customer Favorites`} />
+        <Badge_PillColor_SM_Error BadgeLabel={`Special Offers`} />
+        <Badge_PillColor_SM_Gray BadgeLabel={`Flash Sale`} />
       </div>
     </div>
   );
