@@ -52,3 +52,23 @@
     flex-direction: column;
     align-items: flex-start;
 }
+
+/* POPULAR TAGS FILTER STACK */
+.popularTgasFilters {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--spacing-system-guides-corner-radius-3, 12px);
+}
+
+.tagsGroup {
+    display: flex;
+    min-width: var(--spacing-system-guides-corner-radius-80, 320px);
+    max-width: var(--spacing-system-guides-corner-radius-80, 320px);
+    padding: 0px var(--spacing-system-guides-corner-radius-2, 8px);
+    align-items: flex-start;
+    align-content: flex-start;
+    gap: var(--spacing-system-guides-corner-radius-3, 12px) var(--spacing-system-guides-corner-radius-2, 8px);
+    align-self: stretch;
+    flex-wrap: wrap;
+}
