@@ -252,31 +252,42 @@ const BrandStack = () => {
 
 //POPULAR TAGS FILTER STACK
 const PopularTagsFilters = () => {
-  return(
-    <div className={styles.popularTgasFilters}>
+  const [isTagsFilterExpanded, setTagsFiltersExpanded] = useState(true);
+  const [areTagsVisible, setTagsVisible] = useState(true); // New state for tags visibility
+
+  const toggleTagsFilter = () => {
+    setTagsFiltersExpanded(!isTagsFilterExpanded);
+    setTagsVisible(!areTagsVisible); // Toggle tags visibility
+  };
+
+  return (
+    <div className={styles.popularTagsFilters}>
       <FilterHeader 
         FilterHeaderLabel={`Popular Tags`}
-        FilterHeaderIcon={MinusSquare}
+        FilterHeaderIcon={isTagsFilterExpanded ? MinusSquare : PlusSquare}
+        handleFilterHeader={toggleTagsFilter} // Use new toggle function
       />
-      <div className={styles.tagsGroup}>
-        <Badge_PillColor_SM_Blue BadgeLabel={`New Arrivals`} />
-        <Badge_PillColor_SM_BlueLight BadgeLabel={`Best Sellers`} />
-        <Badge_PillColor_SM_Brand BadgeLabel={`On Sale`} />
-        <Badge_PillColor_SM_Error BadgeLabel={`Free Shipping`} />
-        <Badge_PillColor_SM_Gray BadgeLabel={`Limited Edition`} />
-        <Badge_PillColor_SM_GrayBlue BadgeLabel={`Trending Now`} />
-        <Badge_PillColor_SM_Indigo BadgeLabel={`Exclusive`} />
-        <Badge_PillColor_SM_Orange BadgeLabel={`Top Rated`} />
-        <Badge_PillColor_SM_Pink BadgeLabel={`Featured Products`} />
-        <Badge_PillColor_SM_Purple BadgeLabel={`Back in Stock`} />
-        <Badge_PillColor_SM_Success BadgeLabel={`Seasonal Sale`} />
-        <Badge_PillColor_SM_Warning BadgeLabel={`Popular Items`} />
-        <Badge_PillColor_SM_Blue BadgeLabel={`Hot Deals`} />
-        <Badge_PillColor_SM_BlueLight BadgeLabel={`Last Chance`} />
-        <Badge_PillColor_SM_Brand BadgeLabel={`Customer Favorites`} />
-        <Badge_PillColor_SM_Error BadgeLabel={`Special Offers`} />
-        <Badge_PillColor_SM_Gray BadgeLabel={`Flash Sale`} />
-      </div>
+      {areTagsVisible && ( // Render tags only if visible
+        <div className={styles.tagsGroup}>
+          <Badge_PillColor_SM_Blue BadgeLabel={`New Arrivals`} />
+          <Badge_PillColor_SM_BlueLight BadgeLabel={`Best Sellers`} />
+          <Badge_PillColor_SM_Brand BadgeLabel={`On Sale`} />
+          <Badge_PillColor_SM_Error BadgeLabel={`Free Shipping`} />
+          <Badge_PillColor_SM_Gray BadgeLabel={`Limited Edition`} />
+          <Badge_PillColor_SM_GrayBlue BadgeLabel={`Trending Now`} />
+          <Badge_PillColor_SM_Indigo BadgeLabel={`Exclusive`} />
+          <Badge_PillColor_SM_Orange BadgeLabel={`Top Rated`} />
+          <Badge_PillColor_SM_Pink BadgeLabel={`Featured Products`} />
+          <Badge_PillColor_SM_Purple BadgeLabel={`Back in Stock`} />
+          <Badge_PillColor_SM_Success BadgeLabel={`Seasonal Sale`} />
+          <Badge_PillColor_SM_Warning BadgeLabel={`Popular Items`} />
+          <Badge_PillColor_SM_Blue BadgeLabel={`Hot Deals`} />
+          <Badge_PillColor_SM_BlueLight BadgeLabel={`Last Chance`} />
+          <Badge_PillColor_SM_Brand BadgeLabel={`Customer Favorites`} />
+          <Badge_PillColor_SM_Error BadgeLabel={`Special Offers`} />
+          <Badge_PillColor_SM_Gray BadgeLabel={`Flash Sale`} />
+        </div>
+      )}
     </div>
   );
 };
