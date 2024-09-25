@@ -40,6 +40,7 @@
     opacity: 0;
     /* visibility: hidden; */
     width: 100%;
+    overflow: hidden;
 }
 
 .filtersListsExpanded {
@@ -47,6 +48,7 @@
     opacity: 1;
     visibility: visible;
     width: 100%;
+    overflow: hidden;
 }
 
 /* BRAND STACK */
