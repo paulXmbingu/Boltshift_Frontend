@@ -5,8 +5,8 @@ import ChevronUp from "./Assets/chevron-up.svg"
 import ChevronDown from "./Assets/chevron-down.svg"
 import MinusSquare from "./Assets/minus-square.svg"
 import PlusSquare from "./Assets/plus-square.svg"
-import Tag from '../../../Components/Atoms/Tag';
 import { Badge_PillColor_SM_Blue, Badge_PillColor_SM_BlueLight, Badge_PillColor_SM_Brand, Badge_PillColor_SM_Error, Badge_PillColor_SM_Gray, Badge_PillColor_SM_GrayBlue, Badge_PillColor_SM_Indigo, Badge_PillColor_SM_LeadIcon_Success, Badge_PillColor_SM_Orange, Badge_PillColor_SM_Pink, Badge_PillColor_SM_Purple, Badge_PillColor_SM_Success, Badge_PillColor_SM_Warning } from '../../../Components/Atoms/Badge';
+import { StarRating1, StarRating2, StarRating3, StarRating4, StarRating5 } from '../../../Components/Molecules/StarRating';
 
 //CATALOG FILTERS
 const CatalogFilterSection = () => {
@@ -153,6 +153,7 @@ const CatalogFilterSection = () => {
       <HeaderStack FilterHeaderLabel="Categories" categories={categories} />
       <BrandStack />
       <PopularTagsFilters />
+      <StarRatingsFilter />
     </div>
   );
 };
@@ -288,6 +289,32 @@ const PopularTagsFilters = () => {
           <Badge_PillColor_SM_Gray BadgeLabel={`Flash Sale`} />
         </div>
       )}
+    </div>
+  );
+};
+
+//STAR RATING FILTERS
+const StarRatingsFilter = () => {
+  const [isRatingsFilterExpanded, setRatingsFiltersExpanded] = useState(true);
+
+  const handleRatingHeader = () => {
+    setRatingsFiltersExpanded (!isRatingsFilterExpanded);
+  };
+
+  return (
+    <div className={styles.starRatingFilter}>
+      <FilterHeader
+        FilterHeaderLabel={`Rating`}
+        FilterHeaderIcon={isRatingsFilterExpanded ? MinusSquare : PlusSquare}
+        handleFilterHeader={handleRatingHeader}
+      />
+      <div className={styles.starRatingFilters}>
+        <StarRating5 size={`20px`} />
+        <StarRating4 />
+        <StarRating3 />
+        <StarRating2 />
+        <StarRating1 />
+      </div>
     </div>
   );
 };
