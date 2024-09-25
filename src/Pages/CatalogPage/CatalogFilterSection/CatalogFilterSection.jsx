@@ -339,11 +339,11 @@ const StarRatingsFilter = () => {
         handleFilterHeader={handleFilterHeader}
       />
       <div className={isStarRatingExpanded ? styles.filtersListsExpanded : styles.filtersListsCollapsed}>
-        <StarRating1 />
-        <StarRating2 />
-        <StarRating3 />
-        <StarRating4 />
         <StarRating5 />
+        <StarRating4 />
+        <StarRating3 />
+        <StarRating2 />
+        <StarRating1 />
       </div>
     </div>
   );
