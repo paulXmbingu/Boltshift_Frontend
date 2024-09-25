@@ -312,7 +312,7 @@ const PopularTagsFilters = () => {
           <Badge_PillColor_SM_GrayBlue BadgeLabel={`Refurbished`} />
           <Badge_PillColor_SM_Indigo BadgeLabel={`Exclusive`} />
           <Badge_PillColor_SM_Orange BadgeLabel={`In-Stock`} />
-          <Badge_PillColor_SM_Pink BadgeLabel={`Gift`} />
+          <Badge_PillColor_SM_Pink BadgeLabel={`Pre-orders`} />
           <Badge_PillColor_SM_Purple BadgeLabel={`Limited Edition`} />
           <Badge_PillColor_SM_Success BadgeLabel={`Out of Stock`} />
           <Badge_PillColor_SM_Warning BadgeLabel={`Backorder`} />
