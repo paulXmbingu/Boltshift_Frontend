@@ -154,6 +154,7 @@ const CatalogFilterSection = () => {
       <BrandStack />
       <PopularTagsFilters />
       <StarRatingsFilter />
+      <ShippingOptions />
     </div>
   );
 };
@@ -243,6 +244,39 @@ const BrandStack = () => {
         {brand.map (( brands, index) => (
           <FilterSubHeader 
             FilterSubHeaderLabel={brands}
+            key={index} 
+          />
+        ))}
+      </div>
+    </div>
+  );
+};
+
+//SHIPPING OPTIONS
+const ShippingOptions = () => {
+  const [isBrandStackExpanded, setBrandStackExpanded] = useState(true);
+
+  const handleFilterHeader = ()=> {
+    setBrandStackExpanded (!isBrandStackExpanded)
+  };
+
+  const shippingOptions = [
+    `Fast`,
+    `Saving`,
+    `Free`
+  ];
+
+  return (
+    <div className={styles.brandStackWrap}>
+      <FilterHeader
+        FilterHeaderLabel={`Shipping`}
+        FilterHeaderIcon={isBrandStackExpanded? MinusSquare : PlusSquare }
+        handleFilterHeader={handleFilterHeader}
+      />
+      <div className={isBrandStackExpanded ? styles.filtersListsExpanded : styles.filtersListsCollapsed}>
+        {shippingOptions.map (( shipping, index) => (
+          <FilterSubHeader 
+            FilterSubHeaderLabel={shipping}
             key={index} 
           />
         ))}
