@@ -1,15 +1,34 @@
 import React, { useState } from 'react';
 import styles from './CatalogFilterSection.module.css';
 import { FilterHeader, FilterLabel, FilterSubHeader } from '../../../Components/Shared/Filters/Filters';
-import ChevronUp from "./Assets/chevron-up.svg"
-import ChevronDown from "./Assets/chevron-down.svg"
-import MinusSquare from "./Assets/minus-square.svg"
-import PlusSquare from "./Assets/plus-square.svg"
+import ChevronUp from "./Assets/chevron-up.svg";
+import ChevronDown from "./Assets/chevron-down.svg";
+import MinusSquare from "./Assets/minus-square.svg";
+import PlusSquare from "./Assets/plus-square.svg";
 import { Badge_PillColor_SM_Blue, Badge_PillColor_SM_BlueLight, Badge_PillColor_SM_Brand, Badge_PillColor_SM_Error, Badge_PillColor_SM_Gray, Badge_PillColor_SM_GrayBlue, Badge_PillColor_SM_Indigo, Badge_PillColor_SM_LeadIcon_Success, Badge_PillColor_SM_Orange, Badge_PillColor_SM_Pink, Badge_PillColor_SM_Purple, Badge_PillColor_SM_Success, Badge_PillColor_SM_Warning } from '../../../Components/Atoms/Badge';
 import { StarRating1, StarRating2, StarRating3, StarRating4, StarRating5 } from '../../../Components/Molecules/StarRating';
 
-//CATALOG FILTERS
+// CATALOG FILTERS
 const CatalogFilterSection = () => {
+  return (
+    <div className={styles.CatalogFilterSection}>
+      <HeaderStack FilterHeaderLabel="Categories" />
+      <BrandStack />
+      <PopularTagsFilters />
+      <StarRatingsFilter />
+      <ShippingOptions />
+    </div>
+  );
+};
+
+// HEADER STACK
+const HeaderStack = ({ FilterHeaderLabel }) => {
+  const [isHeaderStackExpanded, setHeaderStackExpanded] = useState(true);
+
+  const handleFilterHeader = () => {
+    setHeaderStackExpanded(!isHeaderStackExpanded);
+  };
+
   const categories = [
     {
       subHeader: 'Automotive',
@@ -149,25 +168,6 @@ const CatalogFilterSection = () => {
   ];
 
   return (
-    <div className={styles.CatalogFilterSection}>
-      <HeaderStack FilterHeaderLabel="Categories" categories={categories} />
-      <BrandStack />
-      <PopularTagsFilters />
-      <StarRatingsFilter />
-      <ShippingOptions />
-    </div>
-  );
-};
-
-//HEADER STACK
-const HeaderStack = ({ FilterHeaderLabel, categories }) => {
-  const [isHeaderStackExpanded, setHeaderStackExpanded] = useState(true)
-
-  const handleFilterHeader = ()=> {
-    setHeaderStackExpanded(!isHeaderStackExpanded)
-  };
-
-  return (
     <div className={isHeaderStackExpanded ? styles.headerStackWrapExpanded : styles.headerStackWrapCollapsed}>
       <FilterHeader
         FilterHeaderLabel={FilterHeaderLabel}
@@ -185,22 +185,22 @@ const HeaderStack = ({ FilterHeaderLabel, categories }) => {
   );
 };
 
-//SUBHEADER STACK
+// SUBHEADER STACK
 const SubHeaderStack = ({ FilterSubHeaderLabel, filters }) => {
-  const [isExpanded, setIsExpanded] = useState (false);
+  const [isExpanded, setIsExpanded] = useState(false);
 
-  const handleFilterSubHeader = ()=> {
-    setIsExpanded(!isExpanded)
+  const handleFilterSubHeader = () => {
+    setIsExpanded(!isExpanded);
   };
 
   return (
     <div className={styles.subHeaderStackWrap}>
       <FilterSubHeader
         FilterSubHeaderLabel={FilterSubHeaderLabel}
-        subHeaderTailIcon={isExpanded? ChevronUp : ChevronDown}
+        subHeaderTailIcon={isExpanded ? ChevronUp : ChevronDown}
         handleFilterSubHeader={handleFilterSubHeader}
       />
-      <div className={isExpanded? styles.filtersListsExpanded : styles.filtersListsCollapsed}>
+      <div className={isExpanded ? styles.filtersListsExpanded : styles.filtersListsCollapsed}>
         {filters.map((filter, index) => (
           <FilterLabel
             key={index} 
@@ -212,12 +212,12 @@ const SubHeaderStack = ({ FilterSubHeaderLabel, filters }) => {
   );
 };
 
-//BRANDSTACK
+// BRANDSTACK
 const BrandStack = () => {
   const [isBrandStackExpanded, setBrandStackExpanded] = useState(true);
 
-  const handleFilterHeader = ()=> {
-    setBrandStackExpanded (!isBrandStackExpanded)
+  const handleFilterHeader = () => {
+    setBrandStackExpanded(!isBrandStackExpanded);
   };
 
   const brand = [
@@ -237,11 +237,11 @@ const BrandStack = () => {
     <div className={styles.brandStackWrap}>
       <FilterHeader
         FilterHeaderLabel={`Brands`}
-        FilterHeaderIcon={isBrandStackExpanded? MinusSquare : PlusSquare }
+        FilterHeaderIcon={isBrandStackExpanded ? MinusSquare : PlusSquare}
         handleFilterHeader={handleFilterHeader}
       />
       <div className={isBrandStackExpanded ? styles.filtersListsExpanded : styles.filtersListsCollapsed}>
-        {brand.map (( brands, index) => (
+        {brand.map((brands, index) => (
           <FilterSubHeader 
             FilterSubHeaderLabel={brands}
             key={index} 
@@ -252,29 +252,29 @@ const BrandStack = () => {
   );
 };
 
-//SHIPPING OPTIONS
+// SHIPPING OPTIONS
 const ShippingOptions = () => {
-  const [isBrandStackExpanded, setBrandStackExpanded] = useState(true);
+  const [isShippingStackExpanded, setShippingStackExpanded] = useState(true);
 
-  const handleFilterHeader = ()=> {
-    setBrandStackExpanded (!isBrandStackExpanded)
+  const handleFilterHeader = () => {
+    setShippingStackExpanded(!isShippingStackExpanded);
   };
 
   const shippingOptions = [
     `Fast`,
     `Saving`,
-    `Free`
+    `Free`,
   ];
 
   return (
     <div className={styles.brandStackWrap}>
       <FilterHeader
         FilterHeaderLabel={`Shipping`}
-        FilterHeaderIcon={isBrandStackExpanded? MinusSquare : PlusSquare }
+        FilterHeaderIcon={isShippingStackExpanded ? MinusSquare : PlusSquare}
         handleFilterHeader={handleFilterHeader}
       />
-      <div className={isBrandStackExpanded ? styles.filtersListsExpanded : styles.filtersListsCollapsed}>
-        {shippingOptions.map (( shipping, index) => (
+      <div className={isShippingStackExpanded ? styles.filtersListsExpanded : styles.filtersListsCollapsed}>
+        {shippingOptions.map((shipping, index) => (
           <FilterSubHeader 
             FilterSubHeaderLabel={shipping}
             key={index} 
@@ -285,7 +285,7 @@ const ShippingOptions = () => {
   );
 };
 
-//POPULAR TAGS FILTER STACK
+// POPULAR TAGS FILTER STACK
 const PopularTagsFilters = () => {
   const [isTagsFilterExpanded, setTagsFiltersExpanded] = useState(true);
   const [areTagsVisible, setTagsVisible] = useState(true); // New state for tags visibility
@@ -307,43 +307,39 @@ const PopularTagsFilters = () => {
           <Badge_PillColor_SM_Blue BadgeLabel={`New Arrivals`} />
           <Badge_PillColor_SM_BlueLight BadgeLabel={`Best Sellers`} />
           <Badge_PillColor_SM_Brand BadgeLabel={`On Sale`} />
-          <Badge_PillColor_SM_Error BadgeLabel={`Free Shipping`} />
-          <Badge_PillColor_SM_Gray BadgeLabel={`Limited Edition`} />
-          <Badge_PillColor_SM_GrayBlue BadgeLabel={`Trending Now`} />
+          <Badge_PillColor_SM_Error BadgeLabel={`Featured`} />
+          <Badge_PillColor_SM_Gray BadgeLabel={`Clearance`} />
+          <Badge_PillColor_SM_GrayBlue BadgeLabel={`Refurbished`} />
           <Badge_PillColor_SM_Indigo BadgeLabel={`Exclusive`} />
-          <Badge_PillColor_SM_Orange BadgeLabel={`Top Rated`} />
-          <Badge_PillColor_SM_Pink BadgeLabel={`Featured Products`} />
-          <Badge_PillColor_SM_Purple BadgeLabel={`Back in Stock`} />
-          <Badge_PillColor_SM_Success BadgeLabel={`Seasonal Sale`} />
-          <Badge_PillColor_SM_Warning BadgeLabel={`Popular Items`} />
-          <Badge_PillColor_SM_Blue BadgeLabel={`Hot Deals`} />
-          <Badge_PillColor_SM_BlueLight BadgeLabel={`Last Chance`} />
-          <Badge_PillColor_SM_Brand BadgeLabel={`Customer Favorites`} />
-          <Badge_PillColor_SM_Error BadgeLabel={`Special Offers`} />
-          <Badge_PillColor_SM_Gray BadgeLabel={`Flash Sale`} />
+          <Badge_PillColor_SM_LeadIcon_Success BadgeLabel={`Pre-order`} />
+          <Badge_PillColor_SM_Orange BadgeLabel={`In-Stock`} />
+          <Badge_PillColor_SM_Pink BadgeLabel={`Gift`} />
+          <Badge_PillColor_SM_Purple BadgeLabel={`Limited Edition`} />
+          <Badge_PillColor_SM_Success BadgeLabel={`Out of Stock`} />
+          <Badge_PillColor_SM_Warning BadgeLabel={`Backorder`} />
         </div>
       )}
     </div>
   );
 };
 
-//STAR RATING FILTERS
+// STAR RATINGS FILTER STACK
 const StarRatingsFilter = () => {
-  const [isRatingsFilterExpanded, setRatingsFiltersExpanded] = useState(true);
+  const [isStarRatingExpanded, setStarRatingExpanded] = useState(true);
 
-  const handleRatingHeader = () => {
-    setRatingsFiltersExpanded (!isRatingsFilterExpanded);
+  const handleFilterHeader = () => {
+    setStarRatingExpanded(!isStarRatingExpanded);
   };
 
   return (
-    <div className={styles.starRatingFilter}>
+    <div className={styles.brandStackWrap}>
       <FilterHeader
-        FilterHeaderLabel={`Rating`}
-        FilterHeaderIcon={isRatingsFilterExpanded ? MinusSquare : PlusSquare}
-        handleFilterHeader={handleRatingHeader}
+        FilterHeaderLabel={`Star Ratings`}
+        FilterHeaderIcon={isStarRatingExpanded ? MinusSquare : PlusSquare}
+        handleFilterHeader={handleFilterHeader}
       />
-      <div className={styles.starRatingFilters}>
-        <StarRating5 size={`20px`} />
+      <div className={isStarRatingExpanded ? styles.filtersListsExpanded : styles.filtersListsCollapsed}>
+        <StarRating5 />
         <StarRating4 />
         <StarRating3 />
         <StarRating2 />
