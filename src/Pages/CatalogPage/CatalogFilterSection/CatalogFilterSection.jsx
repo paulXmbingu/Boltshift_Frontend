@@ -405,7 +405,7 @@ const StarRatingsFilter = () => {
                 <div className={styles.starRatingsReview}>
                 <StarRating1 />
                 <div className={styles.ratingsStarCountWrap}>
-                  <span className={styles.ratingsStarCount}> 1 Stars </span>
+                  <span className={styles.ratingsStarCount}> 1 Star </span>
                 </div>
                 </div>
             </div>
