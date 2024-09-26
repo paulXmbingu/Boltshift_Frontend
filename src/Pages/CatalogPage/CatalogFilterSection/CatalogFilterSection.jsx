@@ -360,7 +360,7 @@ const StarRatingsFilter = () => {
                 <div className={styles.starRatingsReview}>
                 <StarRating4 />
                 <div className={styles.ratingsStarCountWrap}>
-                  <span className={styles.ratingsStarCount}> 5 Stars </span>
+                  <span className={styles.ratingsStarCount}> 4 Stars </span>
                 </div>
                 </div>
             </div>
@@ -375,7 +375,7 @@ const StarRatingsFilter = () => {
                 <div className={styles.starRatingsReview}>
                 <StarRating3 />
                 <div className={styles.ratingsStarCountWrap}>
-                  <span className={styles.ratingsStarCount}> 5 Stars </span>
+                  <span className={styles.ratingsStarCount}> 3 Stars </span>
                 </div>
                 </div>
             </div>
@@ -390,7 +390,7 @@ const StarRatingsFilter = () => {
                 <div className={styles.starRatingsReview}>
                 <StarRating2 />
                 <div className={styles.ratingsStarCountWrap}>
-                  <span className={styles.ratingsStarCount}> 5 Stars </span>
+                  <span className={styles.ratingsStarCount}> 2 Stars </span>
                 </div>
                 </div>
             </div>
@@ -405,7 +405,7 @@ const StarRatingsFilter = () => {
                 <div className={styles.starRatingsReview}>
                 <StarRating1 />
                 <div className={styles.ratingsStarCountWrap}>
-                  <span className={styles.ratingsStarCount}> 5 Stars </span>
+                  <span className={styles.ratingsStarCount}> 1 Stars </span>
                 </div>
                 </div>
             </div>
