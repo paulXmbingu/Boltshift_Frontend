@@ -338,11 +338,79 @@ const StarRatingsFilter = () => {
         handleFilterHeader={handleFilterHeader}
       />
       <div className={isStarRatingExpanded ? styles.filtersListsExpanded : styles.filtersListsCollapsed}>
-        <StarRating5 />
-        <StarRating4 />
-        <StarRating3 />
-        <StarRating2 />
-        <StarRating1 />
+        <div className={styles.subfiltersGroup}>
+          <div className={styles.ratingsSubfilters}>
+            <div className={styles.ratingsSubfilterHeader}>
+                <div className={styles.ratingsCheckBox}> <input type="checkbox" name="" id="" /> </div>
+                <div className={styles.starRatingsReview}>
+                <StarRating5 />
+                <div className={styles.ratingsStarCountWrap}>
+                  <span className={styles.ratingsStarCount}> 5 Stars </span>
+                </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className={isStarRatingExpanded ? styles.filtersListsExpanded : styles.filtersListsCollapsed}>
+        <div className={styles.subfiltersGroup}>
+          <div className={styles.ratingsSubfilters}>
+            <div className={styles.ratingsSubfilterHeader}>
+                <div className={styles.ratingsCheckBox}> <input type="checkbox" name="" id="" /> </div>
+                <div className={styles.starRatingsReview}>
+                <StarRating4 />
+                <div className={styles.ratingsStarCountWrap}>
+                  <span className={styles.ratingsStarCount}> 5 Stars </span>
+                </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className={isStarRatingExpanded ? styles.filtersListsExpanded : styles.filtersListsCollapsed}>
+        <div className={styles.subfiltersGroup}>
+          <div className={styles.ratingsSubfilters}>
+            <div className={styles.ratingsSubfilterHeader}>
+                <div className={styles.ratingsCheckBox}> <input type="checkbox" name="" id="" /> </div>
+                <div className={styles.starRatingsReview}>
+                <StarRating3 />
+                <div className={styles.ratingsStarCountWrap}>
+                  <span className={styles.ratingsStarCount}> 5 Stars </span>
+                </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className={isStarRatingExpanded ? styles.filtersListsExpanded : styles.filtersListsCollapsed}>
+        <div className={styles.subfiltersGroup}>
+          <div className={styles.ratingsSubfilters}>
+            <div className={styles.ratingsSubfilterHeader}>
+                <div className={styles.ratingsCheckBox}> <input type="checkbox" name="" id="" /> </div>
+                <div className={styles.starRatingsReview}>
+                <StarRating2 />
+                <div className={styles.ratingsStarCountWrap}>
+                  <span className={styles.ratingsStarCount}> 5 Stars </span>
+                </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className={isStarRatingExpanded ? styles.filtersListsExpanded : styles.filtersListsCollapsed}>
+        <div className={styles.subfiltersGroup}>
+          <div className={styles.ratingsSubfilters}>
+            <div className={styles.ratingsSubfilterHeader}>
+                <div className={styles.ratingsCheckBox}> <input type="checkbox" name="" id="" /> </div>
+                <div className={styles.starRatingsReview}>
+                <StarRating1 />
+                <div className={styles.ratingsStarCountWrap}>
+                  <span className={styles.ratingsStarCount}> 5 Stars </span>
+                </div>
+                </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
