@@ -205,6 +205,7 @@ const SubHeaderStack = ({ FilterSubHeaderLabel, filters }) => {
           <FilterLabel
             key={index} 
             FilterLabel={filter}
+            showCheckbox={true}
           />
         ))}
       </div>
@@ -245,6 +246,7 @@ const BrandStack = () => {
           <FilterSubHeader 
             FilterSubHeaderLabel={brands}
             key={index} 
+            showCheckbox={true}
           />
         ))}
       </div>
