@@ -5,8 +5,10 @@ import ChevronUp from "./Assets/chevron-up.svg";
 import ChevronDown from "./Assets/chevron-down.svg";
 import MinusSquare from "./Assets/minus-square.svg";
 import PlusSquare from "./Assets/plus-square.svg";
+import X_ClearIcon from "./Assets/x.svg";
 import { Badge_PillColor_SM_Blue, Badge_PillColor_SM_BlueLight, Badge_PillColor_SM_Brand, Badge_PillColor_SM_Error, Badge_PillColor_SM_Gray, Badge_PillColor_SM_GrayBlue, Badge_PillColor_SM_Indigo, Badge_PillColor_SM_LeadIcon_Success, Badge_PillColor_SM_Orange, Badge_PillColor_SM_Pink, Badge_PillColor_SM_Purple, Badge_PillColor_SM_Success, Badge_PillColor_SM_Warning } from '../../../Components/Atoms/Badge';
 import { StarRating1, StarRating2, StarRating3, StarRating4, StarRating5 } from '../../../Components/Molecules/StarRating';
+import { Btn_Sec_Color_XL } from '../../../Components/Atoms/Button';
 
 // CATALOG FILTERS
 const CatalogFilterSection = () => {
@@ -17,6 +19,7 @@ const CatalogFilterSection = () => {
       <PopularTagsFilters />
       <StarRatingsFilter />
       <ShippingOptions />
+      <Btn_Sec_Color_XL LeadingIcon={X_ClearIcon} ButtonCTA={`Clear All Filters`} />
     </div>
   );
 };
