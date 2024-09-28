@@ -1,9 +1,9 @@
 import React from "react";
-import styles from "./Filters.module.css"
+import styles from "./Filters.module.css";
 
-const FilterHeader = ( {FilterHeaderLabel, FilterHeaderIcon, handleFilterHeader}  ) => {
+const FilterHeader = ({ FilterHeaderLabel, FilterHeaderIcon, handleFilterHeader }) => {
     return (
-        <div className={styles.filterHeaderWrap} onClick={handleFilterHeader} > 
+        <div className={styles.filterHeaderWrap} onClick={handleFilterHeader}> 
             <span className={styles.filterHeaderLabel}> {FilterHeaderLabel} </span>
             <div className={styles.filterHeaderIconWrap}>
                 {FilterHeaderIcon && 
@@ -18,11 +18,11 @@ const FilterHeader = ( {FilterHeaderLabel, FilterHeaderIcon, handleFilterHeader}
     );
 };
 
-const FilterSubHeader = ({ FilterSubHeaderLabel, subHeaderTailIcon, handleFilterSubHeader }) => {
+const FilterSubHeader = ({ FilterSubHeaderLabel, subHeaderTailIcon, handleFilterSubHeader, showCheckbox }) => {
     return (
         <div className={styles.filterSubHeaderWrap} onClick={handleFilterSubHeader}> 
-            <div className={styles.checkMarkSubheader} > 
-                <input type="checkbox" />
+            <div className={styles.checkMarkSubheader}> 
+                {showCheckbox && <input type="checkbox" />}
                 <span className={styles.filterSubHeaderLabel}> {FilterSubHeaderLabel} </span>
             </div>
             <div className={styles.subHeaderTailIconWrap}>
@@ -38,12 +38,12 @@ const FilterSubHeader = ({ FilterSubHeaderLabel, subHeaderTailIcon, handleFilter
     );
 };
 
-const FilterLabel = ( {FilterLabel, FilterTailIcon, handleFilterLabel } ) => {
+const FilterLabel = ({ FilterLabel, FilterTailIcon, handleFilterLabel, showCheckbox }) => {
     return (
         <div className={styles.filterLabelWrap} onClick={handleFilterLabel}> 
             <div className={styles.checkmarkFilterLabel}>
-                <input type="checkbox" />
-                <span className={styles.filterLabel}> {FilterLabel}  </span>
+                {showCheckbox && <input type="checkbox" />}
+                <span className={styles.filterLabel}> {FilterLabel} </span>
             </div>
             <div className={styles.filterLabelTailIconWrap}> 
                 {FilterTailIcon && 
@@ -58,8 +58,4 @@ const FilterLabel = ( {FilterLabel, FilterTailIcon, handleFilterLabel } ) => {
     );
 };
 
-export 
-    {   FilterHeader,
-        FilterSubHeader, 
-        FilterLabel 
-    }
+export { FilterHeader, FilterSubHeader, FilterLabel };
