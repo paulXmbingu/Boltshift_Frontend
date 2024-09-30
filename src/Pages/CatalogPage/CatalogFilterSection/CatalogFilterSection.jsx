@@ -9,6 +9,7 @@ import X_ClearIcon from "./Assets/x.svg";
 import { Badge_PillColor_SM_Blue, Badge_PillColor_SM_BlueLight, Badge_PillColor_SM_Brand, Badge_PillColor_SM_Error, Badge_PillColor_SM_Gray, Badge_PillColor_SM_GrayBlue, Badge_PillColor_SM_Indigo, Badge_PillColor_SM_LeadIcon_Success, Badge_PillColor_SM_Orange, Badge_PillColor_SM_Pink, Badge_PillColor_SM_Purple, Badge_PillColor_SM_Success, Badge_PillColor_SM_Warning } from '../../../Components/Atoms/Badge';
 import { StarRating1, StarRating2, StarRating3, StarRating4, StarRating5 } from '../../../Components/Molecules/StarRating';
 import { Btn_Sec_Color_XL } from '../../../Components/Atoms/Button';
+import CheckBox from '../../../Components/Atoms/CheckBox/CheckBox';
 
 // CATALOG FILTERS
 const CatalogFilterSection = () => {
@@ -346,7 +347,7 @@ const StarRatingsFilter = () => {
         <div className={styles.subfiltersGroup}>
           <div className={styles.ratingsSubfilters}>
             <div className={styles.ratingsSubfilterHeader}>
-                <div className={styles.ratingsCheckBox}> <input type="checkbox" name="" id="" /> </div>
+                <div className={styles.ratingsCheckBox}> <CheckBox /> </div>
                 <div className={styles.starRatingsReview}>
                 <StarRating5 />
                 <div className={styles.ratingsStarCountWrap}>
@@ -361,7 +362,7 @@ const StarRatingsFilter = () => {
         <div className={styles.subfiltersGroup}>
           <div className={styles.ratingsSubfilters}>
             <div className={styles.ratingsSubfilterHeader}>
-                <div className={styles.ratingsCheckBox}> <input type="checkbox" name="" id="" /> </div>
+                <div className={styles.ratingsCheckBox}> <CheckBox /> </div>
                 <div className={styles.starRatingsReview}>
                 <StarRating4 />
                 <div className={styles.ratingsStarCountWrap}>
@@ -376,7 +377,7 @@ const StarRatingsFilter = () => {
         <div className={styles.subfiltersGroup}>
           <div className={styles.ratingsSubfilters}>
             <div className={styles.ratingsSubfilterHeader}>
-                <div className={styles.ratingsCheckBox}> <input type="checkbox" name="" id="" /> </div>
+                <div className={styles.ratingsCheckBox}> <CheckBox /> </div>
                 <div className={styles.starRatingsReview}>
                 <StarRating3 />
                 <div className={styles.ratingsStarCountWrap}>
@@ -391,7 +392,7 @@ const StarRatingsFilter = () => {
         <div className={styles.subfiltersGroup}>
           <div className={styles.ratingsSubfilters}>
             <div className={styles.ratingsSubfilterHeader}>
-                <div className={styles.ratingsCheckBox}> <input type="checkbox" name="" id="" /> </div>
+                <div className={styles.ratingsCheckBox}> <CheckBox /> </div>
                 <div className={styles.starRatingsReview}>
                 <StarRating2 />
                 <div className={styles.ratingsStarCountWrap}>
@@ -406,7 +407,7 @@ const StarRatingsFilter = () => {
         <div className={styles.subfiltersGroup}>
           <div className={styles.ratingsSubfilters}>
             <div className={styles.ratingsSubfilterHeader}>
-                <div className={styles.ratingsCheckBox}> <input type="checkbox" name="" id="" /> </div>
+                <div className={styles.ratingsCheckBox}> <CheckBox /> </div>
                 <div className={styles.starRatingsReview}>
                 <StarRating1 />
                 <div className={styles.ratingsStarCountWrap}>
