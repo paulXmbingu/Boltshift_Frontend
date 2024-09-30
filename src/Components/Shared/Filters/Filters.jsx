@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./Filters.module.css";
+import CheckBox from "../../Atoms/CheckBox/CheckBox";
 
 const FilterHeader = ({ FilterHeaderLabel, FilterHeaderIcon, handleFilterHeader }) => {
     return (
@@ -22,7 +23,7 @@ const FilterSubHeader = ({ FilterSubHeaderLabel, subHeaderTailIcon, handleFilter
     return (
         <div className={styles.filterSubHeaderWrap} onClick={handleFilterSubHeader}> 
             <div className={styles.checkMarkSubheader}> 
-                {showCheckbox && <input type="checkbox" />}
+                {showCheckbox && <CheckBox/>}
                 <span className={styles.filterSubHeaderLabel}> {FilterSubHeaderLabel} </span>
             </div>
             <div className={styles.subHeaderTailIconWrap}>
@@ -42,7 +43,7 @@ const FilterLabel = ({ FilterLabel, FilterTailIcon, handleFilterLabel, showCheck
     return (
         <div className={styles.filterLabelWrap} onClick={handleFilterLabel}> 
             <div className={styles.checkmarkFilterLabel}>
-                {showCheckbox && <input type="checkbox" />}
+                {showCheckbox && <CheckBox/>}
                 <span className={styles.filterLabel}> {FilterLabel} </span>
             </div>
             <div className={styles.filterLabelTailIconWrap}> 
