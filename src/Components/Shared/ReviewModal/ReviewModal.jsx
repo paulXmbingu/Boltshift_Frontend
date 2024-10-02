@@ -1,14 +1,14 @@
-import React from "react";
 import styles from './ReviewModal.module.css';
 import { Btn_Pri_XL } from "../../Atoms/Button";
 import { StarRating5 } from "../../Molecules/StarRating";
 import { InputField, TextareaInputField } from "../../Atoms/Inputs";
+import ModalHeader from '../ModalHeader/ModalHeader';
 
 const ReviewModalDesktop = ({ onClose }) => {
     return (
         <div className={styles.modalOverlay} onClick={onClose}>
             <div className={styles.reviewModalDesktopWrap} onClick={(e) => e.stopPropagation()}>
-                <ModalHeader />
+                <ModalHeaderWrapper />
                 <ReviewDetails />
                 <ModalFooter />
             </div>
@@ -16,10 +16,10 @@ const ReviewModalDesktop = ({ onClose }) => {
     );
 };
 
-const ModalHeader = () => {
+const ModalHeaderWrapper = () => {
     return (
         <div className={styles.modalHeader}>
-            Modal Header
+            <ModalHeader />
         </div>
     );
 };

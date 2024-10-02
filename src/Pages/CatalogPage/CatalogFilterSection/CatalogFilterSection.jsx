@@ -281,7 +281,7 @@ const ShippingOptions = () => {
       />
       <div className={isShippingStackExpanded ? styles.filtersListsExpanded : styles.filtersListsCollapsed}>
         {shippingOptions.map((shipping, index) => (
-          <FilterSubHeader 
+          <FilterSubHeader
             FilterSubHeaderLabel={shipping}
             key={index} 
           />

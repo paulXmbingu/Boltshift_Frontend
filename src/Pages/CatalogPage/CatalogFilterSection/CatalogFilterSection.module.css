@@ -108,7 +108,7 @@
     display: flex;
     min-width: var(--spacing-system-guides-corner-radius-80, 320px);
     max-width: var(--spacing-system-guides-corner-radius-80, 320px);
-    padding: var(--spacing-system-guides-corner-radius-1, 4px) var(--spacing-system-guides-corner-radius-2, 8px) var(--spacing-system-guides-corner-radius-1, 4px) var(--spacing-system-guides-corner-radius-8, 32px);
+    padding: var(--spacing-system-guides-corner-radius-1, 4px) var(--spacing-system-guides-corner-radius-2, 8px) var(--spacing-system-guides-corner-radius-1, 4px) var(--spacing-lg, 12px);
     align-items: center;
     gap: var(--spacing-system-guides-corner-radius-1, 4px);
     align-self: stretch;
