@@ -27,6 +27,7 @@
     position: relative;
 }
 
+/* MODAL HEADER */
 .modalHeader {
     display: flex;
     max-width: var(--width-md, 560px);
