@@ -2,19 +2,19 @@
 
 # Setup and usage
 
-**Cloning repository:**
+**Clone repository:**
    ```
    git clone https://github.com/paulXmbingu/Boltshift-Frontend
    ```
-**Installing dependencies:**
+**Install dependencies:**
    ```
    npm i
    ```
-**Starting development server:**
+**Start development server:**
    ```
    npm run dev -- --host
    ```
-**Starting Storybook js server:**
+**Start Storybook js server:**
    ```
    npm run storybook
    ```
