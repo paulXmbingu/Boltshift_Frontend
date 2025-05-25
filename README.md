@@ -2,14 +2,6 @@
 
 # Setup and usage
 
-**Clone repository:**
-   ```
-   git clone https://github.com/paulXmbingu/Boltshift-Frontend
-   ```
-**Install dependencies:**
-   ```
-   npm i
-   ```
 **Start development server:**
    ```
    npm run dev -- --host
