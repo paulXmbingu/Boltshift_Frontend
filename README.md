@@ -1,27 +1,12 @@
 ![Boltshift Marketplace Project Cover](https://res.cloudinary.com/excit3/image/upload/v1721684091/Boltshift%20Branding/Github_Front-end_Codebase_File_Cover_doqfbz.png)
 
-# Boltshift Marketplace Frontend
-Welcome to the frontend codebase of Boltshift Marketplace – built using React. This repository contains the client-side code responsible for handling the user interface and interactions on the platform.
+# Setup and usage
 
-## Getting Started
-
-### Setup
-
-1. Cloning repository: 
-   ```
-   git clone https://github.com/paulXmbingu/Boltshift-Frontend
-   ```
-2. Installing dependencies:
-   ```
-   npm i
-   ```
-### Usage
-1. Starting development server:
+**Start development server:**
    ```
    npm run dev -- --host
    ```
-
-2. Starting Storybook js server:
+**Start Storybook js server:**
    ```
    npm run storybook
    ```
@@ -53,6 +38,6 @@ Welcome to the frontend codebase of Boltshift Marketplace – built using React.
 
 ## Product Engineering Team
 - Special Contributions: **Marion Ngayi & The Senjes Cuisine Team**
-- Product Research & Design: **Paul Mbingu**
+- Product Design & Research: **Paul Mbingu**
 - Frontend Engineers: **Paul Mbingu, & Felix Ouma**
 - Backend Engineers: **Samuel Maingi, & Paul Mbingu**
