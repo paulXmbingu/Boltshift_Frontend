@@ -1,16 +1,5 @@
 ![Boltshift Marketplace Project Cover](https://res.cloudinary.com/excit3/image/upload/v1721684091/Boltshift%20Branding/Github_Front-end_Codebase_File_Cover_doqfbz.png)
 
-# Setup and usage
-
-**Start development server:**
-   ```
-   npm run dev -- --host
-   ```
-**Start Storybook js server:**
-   ```
-   npm run storybook
-   ```
-
 ## Features
 - **User Authentication**: Secure user accounts and authentication to manage profiles and track order history.
 - **Product Catalog**: A comprehensive listing of products, organized into categories for easy navigation.
