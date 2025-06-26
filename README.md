@@ -29,4 +29,4 @@
 - Special Contributions: **Marion Ngayi & The Senjes Cuisine Team**
 - Product Design & Research: **Paul Mbingu**
 - Frontend Engineers: **Paul Mbingu, & Felix Ouma**
-- Backend Engineers: **Samuel Maingi, & Paul Mbingu**
+- Backend Engineers: **Paul Mbingu**
