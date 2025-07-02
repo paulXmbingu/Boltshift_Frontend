@@ -5,6 +5,7 @@
 
 body {
   margin: auto;
+  background-color: #FFF;
 }
 
 :root {
@@ -17,8 +18,6 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
-  /* color-scheme: light dark; */
 }
 
 @media (prefers-color-scheme: light) {
