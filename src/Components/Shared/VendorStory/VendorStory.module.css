@@ -13,22 +13,18 @@
     border-radius: var(--radius-full, 9999px);
     border: 1px solid var(--Colors-Border-border-secondary, #EAECF0);
     background: var(--Avatar-company-logo-Senjes-Cuisines, lightgray 50% / cover no-repeat);
+    transition: all 0.1s ease;
 }
 
 .vendorLogo:active,
 .vendorLogo:hover,
 .vendorLogo:checked,
 .vendorLogo:focus {
-  width: var(--Base-4-Premitives-16, 64px);
-  height: var(--Base-4-Premitives-16, 64px);
-  border-radius: var(--radius-full, 9999px);
-  border: 1px solid var(--Colors-Border-border-brand-solid, #DA154D);
-  background: var(--Avatar-company-logo-Senjes-Cuisines, lightgray 50% / cover no-repeat);
+    border: 1px solid var(--Colors-Border-border-secondary, #E9EAEB);
+    background: var(lightgray 50% / cover no-repeat);
 
-  /* Focus rings/ring-brand */
-  box-shadow: 0px 0px 0px 4px rgba(234, 39, 94, 0.24);
-  transition: all 0.2s ease-in-out;
-  scale: 95%;
+    /* Focus rings/focus-ring */
+    box-shadow: 0px 0px 0px 2px var(--Colors-Background-bg-primary, #FFF), 0px 0px 0px 4px var(--Colors-Effects-Focus-rings-focus-ring, #EA275E);
 } 
   
 .vendorName {
