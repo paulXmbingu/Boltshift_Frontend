@@ -25,8 +25,8 @@
     height: var(--Base-4-Premitives-11, 44px);
     padding-left: var(--Base-4-Premitives-7, 36px); /* Adjust to make space for the icon */
     border-radius: var(--Base-4-Premitives-2, 8px) 0 0 var(--Base-4-Premitives-2, 8px);
-    border: 1px solid var(--Colors-Border-border-primary, #D0D5DD);
-    background: var(--Colors-Base-white, #FFF);
+    border: 1px solid var(--Colors-Border-border-tertiary, #F5F5F5);
+    background: var(--Colors-Background-bg-tertiary, #F5F5F5);
     transition: all 0.1s ease;
     overflow: hidden;
     color: var(--Base-Black, var(--Colors-Base-black, #000));
@@ -96,8 +96,10 @@
 .input:focus, 
 .input:active, 
 .input:checked {
-    border: 1px solid var(--Colors-Border-border-brand-solid, #DA154D);
-    box-shadow: 0px 0px 0px 4px rgba(234, 39, 94, 0.24);
+    border: 1px solid var(--Colors-Border-border-primary, #D5D7DA);
+    background: var(--Colors-Background-bg-primary, #FFF);
+    /* Focus rings/focus-ring */
+    box-shadow: 0px 0px 0px 2px var(--Colors-Background-bg-primary, #FFF), 0px 0px 0px 4px var(--Colors-Effects-Focus-rings-focus-ring, #EA275E);
     outline: none;
 }
 
