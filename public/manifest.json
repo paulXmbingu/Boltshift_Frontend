@@ -12,18 +12,7 @@
   "theme_color": "#DA154D",
   "lang": "en",
   "dir": "ltr",
-  "prefer_related_applications": true,
-  "related_applications": [
-    {
-      "platform": "play",
-      "url": "https://play.google.com/store/apps/details?id=com.boltshift.marketplace",
-      "id": "com.boltshift.marketplace"
-    },
-    {
-      "platform": "itunes",
-      "url": "https://apps.apple.com/app/id1234567890"
-    }
-  ],
+  "prefer_related_applications": false,
   
   "icons": [
     { "src": "icons/icon-72x72.png", "sizes": "72x72", "type": "image/png" },
