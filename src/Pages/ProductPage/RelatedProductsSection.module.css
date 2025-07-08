@@ -23,7 +23,7 @@
     white-space: nowrap;
     -ms-overflow-style: none; /* for Internet Explorer and Edge */
     scrollbar-width: none; /* for Firefox */
-    padding: 2px;
+    padding: 4px;
 }
 
 .smallLandscapeCards::-webkit-scrollbar {
