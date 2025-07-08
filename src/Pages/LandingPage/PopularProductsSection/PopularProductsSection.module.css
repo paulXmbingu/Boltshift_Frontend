@@ -32,11 +32,11 @@
     align-items: flex-start;
     gap: var(--spacing-system-guides-corner-radius-4, 16px);
     align-self: stretch;
-    overflow-x: auto;
+    overflow-x: scroll;
     white-space: nowrap;
-    -ms-overflow-style: none; /* for Internet Explorer and Edge */
-    scrollbar-width: none; /* for Firefox */
-    padding: 2px;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    padding: 4px;
 }
 
 .smallLandscapeCards::-webkit-scrollbar {
